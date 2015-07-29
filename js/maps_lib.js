@@ -337,9 +337,9 @@ var MapsLib = {
     map = new google.maps.Map($("#map_canvas")[0],myOptions);
 
     // maintains map centerpoint for responsive design
-    google.maps.event.addDomListener(map, 'idle', function() {
+   /* google.maps.event.addDomListener(map, 'idle', function() {
         MapsLib.calculateCenter();
-    });
+    });*/
 
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(MapsLib.map_centroid);
@@ -549,10 +549,6 @@ var MapsLib = {
     return x1 + x2;
   },
 
-  // maintains map centerpoint for responsive design
-  calculateCenter: function() {
-    center = map.getCenter();
-  },
 
   clearSearch: function() {
    MapsLib.polygonTableID=null;
