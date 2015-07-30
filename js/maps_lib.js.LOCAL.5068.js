@@ -346,9 +346,9 @@ var MapsLib = {
     map = new google.maps.Map($("#map_canvas")[0],myOptions);
 
     // maintains map centerpoint for responsive design
-   /* google.maps.event.addDomListener(map, 'idle', function() {
+    google.maps.event.addDomListener(map, 'idle', function() {
         MapsLib.calculateCenter();
-    });*/
+    });
 
        
     google.maps.event.addDomListener(window, 'resize', function() {
@@ -557,7 +557,6 @@ var MapsLib = {
     return x1 + x2;
   },
 
-<<<<<<< HEAD
   // maintains map centerpoint for responsive design
   calculateCenter: function() {
     center = map.getCenter();
@@ -579,9 +578,6 @@ var MapsLib = {
                 });
               }
   },
-=======
-
->>>>>>> d61da7f9104d697616173550eb58b59ae77c7488
   clearSearch: function() {
    MapsLib.polygonTableID=null;
 	for(var i=0;i<MapsLib.polygon.length;i++)

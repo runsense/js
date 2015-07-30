@@ -17,10 +17,10 @@
 
 // Enable the visual refresh
 google.maps.visualRefresh = true;
-var bn=false;
+var bcoll=false;
 var ptbid=["1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV","1pXRpIDoonJjBECHhUEtKjcG_AmiRC43vnejF1UXq","1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"];
 var source = [
-                { id:"BPn",label: "Bras-Panon",  items: [
+                { id:"BPn",label: "Bras-Panon", expanded: true, items: [
                     { id:"BPn_s", label: "sentier", checked: true, value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},
                     { id:"BPn_md", label: "manger et dormir", value:"1Bzgou8rOmmto6PjPp71N_-JkAsIAOZI8ezXu_eFp"},
 					{ id:"BPn_v", label: "visite", value:"1JqQPaUTMc-kjl8xVIWHnE6s0z4oW4WXhhSZbmm6p"},
@@ -60,11 +60,11 @@ var source = [
 					{ id:"PP_v", label: "visite", value:"1DxmzBkR4z4qdMDV6bIl8P3ysFbbdWr41h83yK7wn"},
 					{ id:"PP_a", label: "activité",value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}						
 				 ] },
-				 { id:"Pos", label: "La Possession", items: [
-                    { id:"Pos_s", label: "sentier", value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
-                    {  id:"Pos_md", label: "manger et dormir", value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
-					{ id:"Pos_v", label: "visite",value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
-					{ id:"Pos_a", label: "activité",value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
+				 { id:"Po", label: "La Possession", items: [
+                    { id:"Po_s", label: "sentier", value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
+                    {  id:"Po_md", label: "manger et dormir", value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
+					{ id:"Po_v", label: "visite",value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
+					{ id:"Po_a", label: "activité",value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
 				 ] },
 				 { id:"Por", label: "Le Port", items: [
                     { id:"Por_s", label: "sentier",value:"19Zl9W3yXp0IdmcANjF_MlHX1R9hk8X27mFhJnmZH"},
@@ -90,11 +90,11 @@ var source = [
 					{ id:"PI_v", label: "visite",value:"1Ecnj4R9f0uL_nliqIHl36utyF5K6f0tw9UvErgER"},
 					{ id:"PI_a", label: "activité",value:"1_NSMIuxAJzXnBeRFUXt4Z6iYLCJgrKlXttllLfOh"}						
 				 ] },
-				 { id:"SAd", label: "Saint-André", items: [
-                    { id:"SAd_s", label: "sentier",value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
-                    {  id:"SAd_md", label: "manger et dormir",value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
-					{ id:"SAd_v", label: "visite",value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},
-					{ id:"SAd_a", label: "activité",value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
+				 { id:"SA", label: "Saint-André", items: [
+                    { id:"SA_s", label: "sentier",value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
+                    {  id:"SA_md", label: "manger et dormir",value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
+					{ id:"SA_v", label: "visite",value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},
+					{ id:"SA_a", label: "activité",value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
 				 ] },
 				 { id:"SB", label: "Saint-Benoit", items: [
                     { id:"SB_s", label: "sentier",value:"1K5q_Z_O-QIXt74ZKG9de3lF_uEbKKrBX13HJq1AX"},
@@ -110,10 +110,10 @@ var source = [
 					{ id:"SD_n", label: "nuit",value:"1PSVZqIwSOlIbOWgXTdUhMXe4Pj-IIhaOEiEz_kaV"},
 					{ id:"SD_a", label: "activité",value:"1yJfcFEbn1487U-HHCv9UcihepFv3kVS7U82pMS3A"}						
 				 ] },
-				 { id:"SAn", label: "Sainte-Anne", items: [
-                    { id:"SAn_s", label: "sentier",value:"120SVl3kmLTTetv0_mrthuHsAUgRr8bG8t8ywKsgi"},
-                    {  id:"SAn_md", label: "manger et dormir",value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},
-					{ id:"SAn_v", label: "visite",value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}						
+				 { id:"SA", label: "Sainte-Anne", items: [
+                    { id:"SA_s", label: "sentier",value:"120SVl3kmLTTetv0_mrthuHsAUgRr8bG8t8ywKsgi"},
+                    {  id:"SA_md", label: "manger et dormir",value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},
+					{ id:"SA_v", label: "visite",value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}						
 				 ] },
 				 { id:"SM", label: "Sainte-Marie", items: [
                     { id:"SM_s", label: "sentier",value:"1vGSpCnOiCfNeAQvIpPscZ26cUq7x31imy_VShUZd"},
@@ -145,7 +145,7 @@ var source = [
 					{ id:"SJ_n", label: "nuit",value:"1mGP2D37TYcg7aKBRPuDLofmhIziluf9i-rnGf5wx"},
 					{ id:"SJ_a", label: "activité",value:"1DnBh8sOLdiSlZlq4oLZkAH84JiLW4BQN0l2xdFxc"}						
 				 ] },
-				 { id:"SL", label: "Saint-Leu",  items: [
+				 { id:"SL", label: "Saint-Leu", expanded: true, items: [
                     { id:"SL_s", label: "sentier",value:"11W_793Vb7vxwFp6vLsGV9n83by8wA0NJOD0_urIV"},
                     {  id:"SL_md", label: "manger et dormir",value:"1zurSKheMQdZ7cFgw5B7y3ihGUWXutuHHhsIonkhS"},
 					{ id:"SL_v", label: "visite",checked:true,value:"1pXRpIDoonJjBECHhUEtKjcG_AmiRC43vnejF1UXq"},
@@ -242,13 +242,6 @@ var source = [
 						rplc='#'+items[i].id;
 						$("#jqxTree").jqxTree('checkItem', $(rplc)[0], false)
 					}
-					
-					 items = $('#jqxTree').jqxTree('getCheckedItems')
-				for(var i in items)
-					{
-						rplc='#'+items[i].id;
-						$("#jqxTree").jqxTree('checkItem', $(rplc)[0], false)
-					}
 					ptbid=null;
 					MapsLib.doSearch();
 			bn=true;
@@ -297,8 +290,7 @@ var source = [
 			if(source[i].label==lbprt)
 				return source[i];
 			
-	}   
-	
+	}      
 var MapsLib = MapsLib || {};
 var MapsLib = {
 
@@ -340,17 +332,15 @@ var MapsLib = {
       zoom: MapsLib.defaultZoom,
       center: MapsLib.map_centroid,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styleId: 2,
-	  templateId: 1
+      
     };
     map = new google.maps.Map($("#map_canvas")[0],myOptions);
 
     // maintains map centerpoint for responsive design
-   /* google.maps.event.addDomListener(map, 'idle', function() {
+    google.maps.event.addDomListener(map, 'idle', function() {
         MapsLib.calculateCenter();
-    });*/
+    });
 
-       
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(MapsLib.map_centroid);
     });
@@ -376,7 +366,9 @@ var MapsLib = {
 				  query: {
 					from:   MapsLib.polygonTableID[i],
 					select: "geometry"
-				  }
+				  },
+				  styleId: 2,
+				  templateId: 2
 				}));
 			MapsLib.polygon[i].setMap(map);	
 		}
@@ -557,39 +549,16 @@ var MapsLib = {
     return x1 + x2;
   },
 
-<<<<<<< HEAD
   // maintains map centerpoint for responsive design
   calculateCenter: function() {
     center = map.getCenter();
-  
-              var bounds = new google.maps.LatLngBounds();
-              map.data.forEach(function(feature) {
-            //    MapsLib.processPoints(feature.getGeometry(), bounds.extend, bounds);
-              });
-             // map.fitBounds(bounds);
   },
-	processPoints: function (geometry, callback, thisArg) {
-              if (geometry instanceof google.maps.LatLng) {
-                callback.call(thisArg, geometry);
-              } else if (geometry instanceof google.maps.Data.Point) {
-                callback.call(thisArg, geometry.get());
-              } else {
-                geometry.getArray().forEach(function(g) {
-                  processPoints(g, callback, thisArg);
-                });
-              }
-  },
-=======
 
->>>>>>> d61da7f9104d697616173550eb58b59ae77c7488
   clearSearch: function() {
    MapsLib.polygonTableID=null;
 	for(var i=0;i<MapsLib.polygon.length;i++)
 		if (MapsLib.polygon[i] != null)
-			{
-				MapsLib.polygon[i].setMap(null);
-				MapsLib.polygon[i]=null;
-			}
+			MapsLib.polygon[i].setMap(null);
     
   },
   
