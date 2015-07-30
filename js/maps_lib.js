@@ -557,7 +557,6 @@ var MapsLib = {
     return x1 + x2;
   },
 
-<<<<<<< HEAD
   // maintains map centerpoint for responsive design
   calculateCenter: function() {
     center = map.getCenter();
@@ -579,9 +578,7 @@ var MapsLib = {
                 });
               }
   },
-=======
 
->>>>>>> d61da7f9104d697616173550eb58b59ae77c7488
   clearSearch: function() {
    MapsLib.polygonTableID=null;
 	for(var i=0;i<MapsLib.polygon.length;i++)
