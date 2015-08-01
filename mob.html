@@ -1,13 +1,39 @@
-/*!
- * Runsense 97Kafr
- *
- * Copyright 2018, Dalleau Pascal
- *
- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>JavaScript Tree - Mobile Example</title>
+    <link rel="stylesheet" href="./jqx/demo.css" type="text/css" />
+    <link rel="stylesheet" href="./jqx/jqx.windowsphone.css" type="text/css" />
+    <link rel="stylesheet" href="./jqx/jqx.blackberry.css" type="text/css" />
+    <link rel="stylesheet" href="./jqx/jqx.android.css" type="text/css" />
+    <link rel="stylesheet" href="./jqx/jqx.mobile.css" type="text/css" />
+	<link rel="stylesheet" href="./jqx/jqx.ui-le-frog.css" type="text/css" />
+    <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
 
-google.maps.visualRefresh = true;
+    
+	<script type="text/javascript" src="./js/mob/simulator.js"></script>
+	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+ 
 
-var ptbid=new Array();
+	
+    <script type="text/javascript" src="./jqx/jqxcore.js"></script>
+	<script type="text/javascript" src="./jqx/jqxdata.js"></script>
+    <script type="text/javascript" src="./jqx/jqxbuttons.js"></script>
+    <script type="text/javascript" src="./jqx/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="./jqx/jqxpanel.js"></script>
+    <script type="text/javascript" src="./jqx/jqxtree.js"></script>
+	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
+    </script>
+</head>
+  <script type="text/javascript">
+ $(document).ready(function () {
+            
+         
+var theme = prepareSimulator("tree");
 var source = [
 			{ id:"E",label: "EST",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
 				{ id:"BPn",label: "Bras-Panon", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",  items: [
@@ -15,15 +41,15 @@ var source = [
                     { id:"BPn_s", label: "sentier", value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},
                     { id:"BPn_md", label: "manger et dormir", value:"1Bzgou8rOmmto6PjPp71N_-JkAsIAOZI8ezXu_eFp"},
 					{ id:"BPn_v", label: "visite", value:"1JqQPaUTMc-kjl8xVIWHnE6s0z4oW4WXhhSZbmm6p"},
-					{ id:"BPn_a",label: "activitÃ©",value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}					
+					{ id:"BPn_a",label: "activité",value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}					
 				 ]
                 },
-				 { id:"SAd", label: "Saint-AndrÃ©", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
+				 { id:"SAd", label: "Saint-André", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
 					{ id:"SAd_t", label: "terrain",value:"1vWcldb-WuU1rtH-ElhKI-f_4pLEeJDzzvMaWJSrC"},
                     { id:"SAd_s", label: "sentier",value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
                     {  id:"SAd_md", label: "manger et dormir",value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
 					{ id:"SAd_v", label: "visite",value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},
-					{ id:"SAd_a", label: "activitÃ©",value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
+					{ id:"SAd_a", label: "activité",value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
 				 ] },
 				 { id:"SB", label: "Saint-Benoit", value:"1gdjt3qeIeAvBxMRhmLwlnCgzr7CTt71iJrZ8dCTY", items: [
 					 { id:"SB_t", label: "terrain",value:"1zvWu4e_eyQ1Ho7T4wM63hhl6JtFqOixA7PZDWxPa"},
@@ -31,7 +57,7 @@ var source = [
                     {  id:"SB_md", label: "manger et dormir",value:"1VHstJP2RjDAvnmoDCGgJrtOTLWkgNAHltpI97KYx"},
 					{ id:"SB_v", label: "visite",value:"1hjSY4vwWwCRB8bQJ3uX7c7TyhvrX5c7p5jMDmhtO"},
 					{ id:"SB_n", label: "nuit",value:"1z9NOfJnMEtQxerYyCFif9xX3g6YT91tRxZJiNzcb"},
-					{ id:"SB_a", label: "activitÃ©",value:"1u5cwPRUeVIpuiDkPw1lv_gzrO2DuQ20W0zERTTdc"}						
+					{ id:"SB_a", label: "activité",value:"1u5cwPRUeVIpuiDkPw1lv_gzrO2DuQ20W0zERTTdc"}						
 				 ] },
 				 { id:"SAn", label: "Sainte-Anne", value:"1s911vZP-Ftzh8TA3JoQSzwuRNbTwkJoZmYna_SFn", items: [
 					{ id:"SAn_t", label: "terrain",value:"1nFu8dd5l9fDV2Fn-87mWp_cMrRwjxSjO-vy2Cv7b"},
@@ -49,14 +75,14 @@ var source = [
                     { id:"PP_s", label: "sentier", value:"1_ucovZZ5C18rlh_cGO6Uc2YgB23EmR-IQ9epBop4"},
                     {  id:"PP_md", label: "manger et dormir", value:"15V8aJ6r5JNfr4xP4ZKnmi4i9mZTt6f0l8WG5hbE3"},
 					{ id:"PP_v", label: "visite", value:"1DxmzBkR4z4qdMDV6bIl8P3ysFbbdWr41h83yK7wn"},
-					{ id:"PP_a", label: "activitÃ©",value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}						
+					{ id:"PP_a", label: "activité",value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}						
 				 ] },
 				 { id:"S", label: "Salazie", value:"1zRn7YirASic3zXNjwr0jPpwlUURx5v1w0wK2JGSZ", items: [
 					{ id:"S_t", label: "terrain",value:"1UzSHUROSXlwSlMlCe4WQBDyucf1m83YsGbX4FYhP"},
                     { id:"S_s", label: "sentier",value:"166vivC3Sr59gCaQR98o8-9sXHBfnKiJdX5hH_7tz"},
                     {  id:"S_md", label: "manger et dormir",value:"1wOqplnMkWf_CHXezRZBC3HvMSf2lcKcnNzgUx8Jp"},
 					{ id:"S_v", label: "visite",value:"1oWl8XUdryHiQxlg83t_pu6ERxi4PPOjrvx2Vbuhj"},
-					{ id:"S_a", label: "activitÃ©",value:"1TjFpDyS3jwXAsLdAUL92BdcjM__2SLu71VDkkli_"}						
+					{ id:"S_a", label: "activité",value:"1TjFpDyS3jwXAsLdAUL92BdcjM__2SLu71VDkkli_"}						
 				 ] }
 			]
 			},
@@ -67,14 +93,14 @@ var source = [
                     {  id:"SD_md", label: "manger et dormir",value:"1Wx6ZbbFLkEIdbxfS2AHJyUprIINfqtWLLhA_ngNZ"},
 					{ id:"SD_v", label: "visite",value:"1OIG0YWzJA6nr_Nr6F-lNVsnYfsKtA8ubbGA_Tx0v"},
 					{ id:"SD_n", label: "nuit",value:"1PSVZqIwSOlIbOWgXTdUhMXe4Pj-IIhaOEiEz_kaV"},
-					{ id:"SD_a", label: "activitÃ©",value:"1yJfcFEbn1487U-HHCv9UcihepFv3kVS7U82pMS3A"}						
+					{ id:"SD_a", label: "activité",value:"1yJfcFEbn1487U-HHCv9UcihepFv3kVS7U82pMS3A"}						
 				 ] },
 				 { id:"SM", label: "Sainte-Marie",value:"192A1s6RA93KPg1cXOC7QYPI6MyGBb-AZtNpFNnyt", items: [
 					{ id:"SM_t", label: "terrain",value:"1O2m7YXKBxLcAQZkuX1oOrA6dJFiZNv7KEZqkUTuZ"},
                     { id:"SM_s", label: "sentier",value:"1vGSpCnOiCfNeAQvIpPscZ26cUq7x31imy_VShUZd"},
                     {  id:"SM_md", label: "manger et dormir",value:"1FKB-9QH0VtpFGMtMeZZD_c2Fze2g9hYoxivizqav"},
 					{ id:"SM_v", label: "visite",value:"1hYkKYnkxqvjmRc7IKgAz9xdYPiNI2VqZ6oWnLMLd"},
-					{ id:"SM_a", label: "activitÃ©",value:"1CpsXyW6UwS2Ix6oTHfy64PKixJGYml3lnUjj_Rta"}						
+					{ id:"SM_a", label: "activité",value:"1CpsXyW6UwS2Ix6oTHfy64PKixJGYml3lnUjj_Rta"}						
 				 ] },
 				 { id:"SS", label: "Sainte-Suzanne",value: "11hA_F8nvGsVVgrtgSs0i4ehviHgHc1kmGDHv1JgS", items: [
 					{ id:"SS_s", label: "sentier",value:"1uP6kIJhbe2VDpT-bXB9uMosjNNejhQGt_P7Ey2jf"},
@@ -87,7 +113,7 @@ var source = [
                     { id:"Pos_s", label: "sentier", value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
                     {  id:"Pos_md", label: "manger et dormir", value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
 					{ id:"Pos_v", label: "visite",value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
-					{ id:"Pos_a", label: "activitÃ©",value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
+					{ id:"Pos_a", label: "activité",value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
 				 ] },
 				 { id:"Por", label: "Le Port",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0", items: [
 					{ id:"Por_t", label: "terrain",value:"1egvMm3Q0a8ISZ3dbmydPFqMdsLvDuHwUemNkY1mi"},
@@ -95,7 +121,7 @@ var source = [
                     {  id:"Por_md", label: "manger et dormir",value:"1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"},
 					{ id:"Por_v", label: "visite",value:"1aOiWEpC7YfSJL10AebsxUpSpg-h-A4fcbIvjZxi8"},
 					{ id:"Por_n", label: "nuit",value:"1YHjpqYf1aJqw-gylQDId1rCF_qDZDMSxUbxjRGG_"},
-					{ id:"Por_a", label: "activitÃ©",value:"13B6si8MulZuOUFdcGkzj67HPwrMXklYzZOUuEi7Q"}						
+					{ id:"Por_a", label: "activité",value:"13B6si8MulZuOUFdcGkzj67HPwrMXklYzZOUuEi7Q"}						
 				 ] }
 				 
 			]
@@ -112,7 +138,7 @@ var source = [
                     {  id:"SG_md", label: "manger et dormir",value:"12undvS9IMnRnEeTYClqje8BFf7nQYlQvD0VJmlb4"},
 					{ id:"SG_v", label: "visite",value:"1hMxXypHObu1TaGNVj6Hig_bgSG6FEx68w8p3psqa"},
 					{ id:"SG_n", label: "nuit",value:"1NEArpXB8yKypvOY0FlhXeg_BC-3AbUUvQIvxVyfI"},
-					{ id:"SG_a", label: "activitÃ©",value:"13Tj9i_c7p5qrbFYM5a6OXBgGIhxUetOh-DAIVpDC"}						
+					{ id:"SG_a", label: "activité",value:"13Tj9i_c7p5qrbFYM5a6OXBgGIhxUetOh-DAIVpDC"}						
 				 ] },
 				 { id:"SL", label: "Saint-Leu",value:"1ahKjlUXShjRwyOlo7ZCcZMSvEpJfRG9hY7_Qg6TA",  items: [
 					{ id:"SL_t", label: "terrain",value:"1WreJYQyzcURwYIN8UqJUNUJHJ5k_xiyUeIzTkhTm"},
@@ -120,13 +146,13 @@ var source = [
                     {  id:"SL_md", label: "manger et dormir",value:"1zurSKheMQdZ7cFgw5B7y3ihGUWXutuHHhsIonkhS"},
 					{ id:"SL_v", label: "visite",value:"1pXRpIDoonJjBECHhUEtKjcG_AmiRC43vnejF1UXq"},
 					{ id:"SL_n", label: "nuit",value:"1teakmILV4AZcMznt3ihFWUbLAH1W1ILNYxpi6Tz8"},
-					{ id:"SL_a", label: "activitÃ©",value:"1v6kmzTDGRK_q66oyNuyr0842W4drPkVFJjoMDaRH"}						
+					{ id:"SL_a", label: "activité",value:"1v6kmzTDGRK_q66oyNuyr0842W4drPkVFJjoMDaRH"}						
 				 ] },
 				 { id:"TB", label: "TroisBassins",value:"12g6QNhlYlaTgGoEN_K3Tyl6QV31y6TUPuHXjM-g-", items: [
                     { id:"TB_s", label: "sentier",value:"11YVBN4CqL6oLdASJEJ_lJ13WWNEJc6_yZxQrQeoZ"},
                     {  id:"TB_md", label: "manger et dormir",value:"1yBld8_oUcv_2Ccnqz7xV2dKo16xbYoqtbhjjQIIC"},
 					{ id:"TB_v", label: "visite",value:"1KbxFddq2D4uo3RNMruBz17I266wO9OYjXpwQNxoS"},
-					{ id:"TB_a", label: "activitÃ©",value:"1uzRedo3Qe9b4HZjHlgcDxReLo6r3udNWyBIaOM7L"}						
+					{ id:"TB_a", label: "activité",value:"1uzRedo3Qe9b4HZjHlgcDxReLo6r3udNWyBIaOM7L"}						
 				 ] },
 				 { id:"SPA", label: "Saint-Paul",value:"1yPMDk3KG56Dero7Lway4oMIw42daQVKtK0PLjKNZ", items: [
 					{ id:"SPA_t", label: "terrain",value:"1pF55Ecb8S5nMLRADZ_ZrYqhTdGXLQRu2v4knP32n"},
@@ -134,25 +160,25 @@ var source = [
                     {  id:"SPA_md", label: "manger et dormir",value:"1arbnu4e3HPRxM4ys0AZEvHGk6cAZjSEE0tHPE07R"},
 					{ id:"SPA_v", label: "visite",value:"1cX2TaI47iZtEMnZIu2ZDPRUSllt6MxhgQ7SVxE2O"},
 					{ id:"SPA_n", label: "nuit",value:"1uAUFKQbO3b4azglINq0byh6IMTt0tcsew-ZDhHVK"},
-					{ id:"SPA_a", label: "activitÃ©",value:"1yvNIMDlSsqd6REMTpDqNBKabGeFft-kquWsWvPA1"}						
+					{ id:"SPA_a", label: "activité",value:"1yvNIMDlSsqd6REMTpDqNBKabGeFft-kquWsWvPA1"}						
 				 ] },
-				 { id:"ES", label: "Etang SalÃ©",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
+				 { id:"ES", label: "Etang Salé",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
 					{ id:"ES_t",label: "terrain",value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp"},
                     { id:"ES_s",label: "sentier",value:"1Um2dvNwSoRN_SYsZMLjTwCR-qEhSVcCMZQgjncBF"},
                     {  id:"ES_md", label: "manger et dormir", value:"1Ya4SFxo6lr8uNoEBRhH_E8Zpq3InMkNmEilUdVfT"},
 					{ id:"ES_v", label: "visite", value:"1ngS7I2W3ZEACE4VpYby5j0cKYTBJCzmtmYxUkPap"},
 					{ id:"ES_n", label: "nuit",value:"1aaXjKHD9gFKajSSFONppPltXcSgAUKWvrbZ94gEG"},
-					{ id:"ES_a", label: "activitÃ©", value:"1PL-tDeZMX1uhb3pgNaVFnX0T3eNs8aK60PKx5xd1"}						
+					{ id:"ES_a", label: "activité", value:"1PL-tDeZMX1uhb3pgNaVFnX0T3eNs8aK60PKx5xd1"}						
 				 ] },
 				{ id:"ED", label: "Entre-Deux", value:"1uU-__tmwAmqtTXPsi57LhiD969SwF0xWjbnDEw-7", items: [
-					{ id:"ED_a", label: "activitÃ©", value:"1rZG5fmVIUptJwXk5uiJfjVuIn-ooM9WuII0UkEy3"}						
+					{ id:"ED_a", label: "activité", value:"1rZG5fmVIUptJwXk5uiJfjVuIn-ooM9WuII0UkEy3"}						
 				 ] },
 				 { id:"Av", label: "Les Avirons", items: [
 					{ id:"Av_t", label: "terrain",value:"1mWz8sMkRVFm7820e4XBNqBEFRI0gWQ_0-OxVQ0_B"},
                     { id:"Av_s", label: "sentier",value:"1mMsbTg4i0b6n8cXi4TYQzK6Ckbe4MMYzTqQ9fniT"},
                     {  id:"Av_md", label: "manger et dormir",value:"1hv5ee8OPODPryBpl0DqrwwzAzV0yvt3DnJ-AZBDB"},
 					{ id:"Av_v", label: "visite",value:"14wzoLVQ3p-nHkPW1SuCOBTEQxmOLTDenF66Ywkb7"},
-					{ id:"Av_a", label: "activitÃ©",value:"1XtwmwdSCQllPPQuge9CPbJtf5KIL71w3ZGON7Evm"}						
+					{ id:"Av_a", label: "activité",value:"1XtwmwdSCQllPPQuge9CPbJtf5KIL71w3ZGON7Evm"}						
 				 ] }
 			]
 			},
@@ -163,7 +189,7 @@ var source = [
                     {  id:"SPI_md", label: "manger et dormir",value:"1SgbVz3eHKfSPWp9XNk5NWxvNP_ahskNvyjKLeRtZ"},
 					{ id:"SPI_v", label: "visite",value:"1Gjgt4ZhaV4RgzAzE4VkzI06ZWTV_-v97WQIs_0jx"},
 					{ id:"SPI_n", label: "nuit",value:"1jg739vX36Xn5o4jgy_CUko40GooVm-4RQCNb8IE8"},
-					{ id:"SPI_a", label: "activitÃ©",value:"1bRyWWEF7wu5Zy6Rg5Qm_zGuMfKyQhlK11FrsA7XD"}						
+					{ id:"SPI_a", label: "activité",value:"1bRyWWEF7wu5Zy6Rg5Qm_zGuMfKyQhlK11FrsA7XD"}						
 				 ] },
 				{ id:"SJ", label: "Saint-Joseph", value:"1EdNBxumLvo_ZKbDvIAmdG4kL4aK8mwn715beAfxU", items: [
 					{ id:"SJ_t", label: "terrain",value:"1FYDeFbUGzcd8BXd-486iI4wbbuOpp7kpFO-DXu53"},
@@ -171,28 +197,28 @@ var source = [
                     {  id:"SJ_md", label: "manger et dormir",value:"1et5h1MbG_qX1K3iLNCTvQWS5_uj2vayNXSXwwXVU"},
 					{ id:"SJ_v", label: "visite",value:"12F1H2X-rQrYMAyn3T4lEp7J6XkRig3C5MB1vV1nN"},
 					{ id:"SJ_n", label: "nuit",value:"1mGP2D37TYcg7aKBRPuDLofmhIziluf9i-rnGf5wx"},
-					{ id:"SJ_a", label: "activitÃ©",value:"1DnBh8sOLdiSlZlq4oLZkAH84JiLW4BQN0l2xdFxc"}						
+					{ id:"SJ_a", label: "activité",value:"1DnBh8sOLdiSlZlq4oLZkAH84JiLW4BQN0l2xdFxc"}						
 				 ] },
 				{ id:"PI", label: "Petite Ile", value:"1dcDRLQyzoX7G70X4VjHYe5sgNtyiurA4pk5cvwXH", items: [
 					{ id:"PI_t", label: "terrain",value:"1ZXBQvZmy7a-TdVUxcZZW0dEkl0VigG_nIx6cjnva"},
                     { id:"PI_s", label: "sentier",value:"1eO6-9Sir2Tl-MHrHyyXY6Ws5hJZBszblOM1b_7fg"},
                     {  id:"PI_md", label: "manger et dormir",value:"1wTC3c07JmeEexULCOeoCe5i12g95r7sPXZbIxDoQ"},
 					{ id:"PI_v", label: "visite",value:"1Ecnj4R9f0uL_nliqIHl36utyF5K6f0tw9UvErgER"},
-					{ id:"PI_a", label: "activitÃ©",value:"1_NSMIuxAJzXnBeRFUXt4Z6iYLCJgrKlXttllLfOh"}						
+					{ id:"PI_a", label: "activité",value:"1_NSMIuxAJzXnBeRFUXt4Z6iYLCJgrKlXttllLfOh"}						
 				 ] },
 				 { id:"SLO", label: "Saint-Louis", value:"1M1iYxQ8PEELVmrQr_3bGh_-7UU09ghn1cvNo8WCV", items: [
 					{ id:"SLO_t", label: "terrain",value:"1VavGGOruqsPbe6GqtS0-ysRBhQDhodfOUYH49Enf"},
                     { id:"SLO_s", label: "sentier",value:"1ESOd1qko4uxhvuUAltY5ZYMq00Ov_kqfpFl71FIO"},
                     {  id:"SLO_md", label: "manger et dormir",value:"1ETrdbfbNxfmKIGa7u6MC21igP8p16Hu8OvaM1ODL"},
 					{ id:"SLO_v", label: "visite",value:"1wezhGcWJshrYRFFPdEUpnIWrHp6ggkrAjjNwNnAM"},
-					{ id:"SLO_a", label: "activitÃ©",value:"1WQqAVJWl43bFI8l-3Sw6UMmxBlzgj-CvNo06T8tJ"}						
+					{ id:"SLO_a", label: "activité",value:"1WQqAVJWl43bFI8l-3Sw6UMmxBlzgj-CvNo06T8tJ"}						
 				 ] },
 				 { id:"Ci", label: "Cilaos",value:"1Z0zITHQac_xwSfmHpvliZoioY58jZhUjWs9KX8Ln", items: [
 					{ id:"Ci_t",label: "terrain", value:"18xgZcIBvJ1w2bk_gemnKh52HOkqmdDYsxYSjpS26"},
                     { id:"Ci_s",label: "sentier", value:"1hR6kwS000LgXzL2wt-TJayI0SG9AZemcnNctwoPe"},
                     {  id:"Ci_md", label: "manger et dormir",value:"1tdQ_vkcdqDJB037eDiyXo3YR-XlJUVvs_IcD3kD8"},
 					{ id:"Ci_v", label: "visite", value:"1a0FJN_DioGC6sPhOJyt5Q4d7tUcae5GmRBNXemXP"},
-					{ id:"Ci_a", label: "activitÃ©", value:"1JDZYdWYIysK0dxS9Rt6pEi7SGv864A5_BUgfi39u"}						
+					{ id:"Ci_a", label: "activité", value:"1JDZYdWYIysK0dxS9Rt6pEi7SGv864A5_BUgfi39u"}						
 				 ] },
 				 { id:"T", label: "Tampon", value:"1fS6sn1x_MDXE8mPT2dJGBE4mLyTseyvgQmt8fS7w", items: [
 					{ id:"T_t", label: "terrain",value:"1TVMj_ErRYZSUl8IRlxS2A45BPf6yZBLmrdPUqLqx"},
@@ -200,13 +226,13 @@ var source = [
                     {  id:"T_md", label: "manger et dormir",value:"1Tetq4TXpTTgtp0lBEGx6GSjZnurzUt4CFXlKaiOB"},
 					{ id:"T_v", label: "visite",value:"1RHM6iPa9admK-4DMQpOEv8cZ3Sx8cix5taZzWOs_"},
 					{ id:"T_n", label: "nuit",value:"195dI4uyd_AKasWDtn4eTQz3v6gcKlgE55N9_1zwE"}	,
-					{ id:"T_a", label: "activitÃ©",value:"1x-iqx3tCYREWFoCBzt8ezhx0uVeiXaqrm8o6_ZKU"}						
+					{ id:"T_a", label: "activité",value:"1x-iqx3tCYREWFoCBzt8ezhx0uVeiXaqrm8o6_ZKU"}						
 				 ] },
 				 { id:"PC", label: "La Plaine Des Cafres", value:"1r3TOcxghV2VoLauNU6PnoY3kzdcSIbtey0pnhWWz", items: [
                     { id:"PC_s", label: "sentier", value:"1NpjpyxxMv9KIki_DtXtzPRLdNwzJ7uBjxzoxJOoV"},
                     {  id:"PC_md", label: "manger et dormir",value:"1RPot4Hw0B_ogvWoGAu3sW2Tz-nP6NSLREbaDZsXJ"},
 					{ id:"PC_v", label: "visite", value:"1EBGjcCB-FRK6AXy9EJ-lmLaQHfNsnXS_uhSNWz71"},
-					{ id:"PC_a", label: "activitÃ©", value:"1iTq7746ceYVrcXqcM3Ugu1CYAO_qNR09CoWCUuNP"}						
+					{ id:"PC_a", label: "activité", value:"1iTq7746ceYVrcXqcM3Ugu1CYAO_qNR09CoWCUuNP"}						
 				 ] },
 				  { id:"eT", label: "enclos du Tremblet", value:"1NId8irdjYKXfpFKk5NZ-SD7ZGkUhl2w6m1LL5t4F", items: [
                     { id:"eT_s",label: "sentier", value:"1HG3aQEg2D1q_4d5n2_Gmk8rMQl6a995HY7dPJCZR"},
@@ -218,310 +244,35 @@ var source = [
                     { id:"T_s", label: "sentier",value:"1tk1Ncnn2rK7hh9uNag18vlksj_ZETxBqzxX6edbw"},
                     {  id:"T_md", label: "manger et dormir",value:"1tJJW6s2ELbV-cSIecvLroNt9u1pY_ExyTSxEsyDG"},
 					{ id:"T_v", label: "visite",value:"1p3_0vNQxgdOQMXhkO6PWCzUoBD5XLVThjWcFzDrL"},
-					{ id:"T_a", label: "activitÃ©",value:"136pTZ-NKGCp0d1jqeOBXKXJJmK3sdF51h6lhiiF5"}
+					{ id:"T_a", label: "activité",value:"136pTZ-NKGCp0d1jqeOBXKXJJmK3sdF51h6lhiiF5"}
 				  ] }
 				  
 				  
 			]
 			}
             ];
-	
-	applyChild=function(items){
-		for(var i in items)
-					{
-						chkItm(items[i]);
-						
-					}
-	};
-	
-	chkItm=function(elmt){
-		var rplc='#'+elmt.id;
-				$("#jqxTree").jqxTree('checkItem', $(rplc)[0], true);
-	};
-	
-	
-	$('#jqxTree').jqxTree({checkboxes: true, source: source, height: '300px', width: '300px',theme: 'summer' });
-	$('#jqxTree').on('expand', function (event) {
-		
-		
-				var elmt = event.args.element;
-                var item = $('#jqxTree').jqxTree('getItem',elmt );
-					
-				/*$('#jqxTree').jqxTree('selectItem', elmt);
-					$('#jqxTree').jqxTree('refresh');*/
-					//chkItm(item);
-				/*try{
-					var elmSrce =schrrefifd(item.label);
-				alert(elmSrce);
-					var items=elmSrce.items;
-						applyChild(items);
-					}catch( ex)	
-					{
-						alert(ex.toString);
-					}*/
-					applysrch(item);
-					MapsLib.doSearch();
-				
-           });
-    $('#jqxTree').on('collapse', function (event) {
-	ptbid=new Array();
-	$('#jqxTree').jqxTree('uncheckAll');
-                var args = event.args;
-                var elmt = args.element;
-                var item = $('#jqxTree').jqxTree('getItem',elmt );
-				/*$('#jqxTree').jqxTree('selectItem', elmt);
-					$('#jqxTree').jqxTree('refresh');*/
-				
-					
-					ptbid=null;
-					applysrch(null);
-					MapsLib.doSearch();
-			
-            });
-	$('#jqxTree').bind('select', function (event) {
-			
-                var htmlElement = event.args.element;
-                var item = $('#jqxTree').jqxTree('getItem', htmlElement);
-				
-				if(!item.checked)
-					{
-					
-						$("#jqxTree").jqxTree('checkItem', htmlElement, true);
-					//clear check	
-					}
-				else{
-					
-						$('#jqxTree').jqxTree('uncheckItem', htmlElement);
-					//check item
-				}
-				
-					
-            });
-	$("#jqxTree").bind('checkChange', function (event) {
-				
-						applysrch(null);
-						MapsLib.doSearch();
-					
-			});
-	applysrch=function(item)
-	{
-		ptbid=new Array();
-		try{
-		var items = $('#jqxTree').jqxTree('getCheckedItems');
-			items.push(item);
-			//$('#listv').remove();
-			//$('#listv').append(  '<table>' );
-			for(var i in items)
-				if(items[i]!=null)
-					{
-						ptbid.push(items[i].value);
-						//$('#listv').append( '<tr><td>' + items[i].label+ '</td></tr>' );
-					}
-
-			 //$('#listv').append(  '</table>' );
-			}catch(ex)
-			{
-				;
-			}
-		
-	}
-	schrrefifd=function(lbprt)
-	{
-		for(var i=0; i<source.length;i++)
-			if(source[i].label==lbprt)
-				return source[i];
-			
-	}   
-
 
 	
-var MapsLib = MapsLib || {};
-var MapsLib = {
-  s                 :"",
-  e                 :"",
-  chad:               '#dep',
-  directionsDisplay : new google.maps.DirectionsRenderer(),
-  directionsService : new google.maps.DirectionsService(),
-  geocoder          : new google.maps.Geocoder(),
-  polygonTableID    :[],
-  polygon           : new Array(),
-  googleApiKey:       "AIzaSyBT0oZNxCp8JSSQwaG0gq1U-MLIMF30bL4",
-  locationColumn:     "lat",
-  map_centroid:       new google.maps.LatLng(-21.137472,55.546906),
-  locationScope:      "reunion", 
-  recordName:         "result", 
-  recordNamePlural:   "results",
-  searchRadius:       805,  
-  defaultZoom:        10,   
-  addrMarkerImage:    'images/blue-pushpin.png',
-  currentPinpoint:    null,
-
-  initialize: function() {
-	MapsLib.geocoder = new google.maps.Geocoder();
-	MapsLib.directionsDisplay = new google.maps.DirectionsRenderer();
-    var myOptions = {
-      zoom: MapsLib.defaultZoom,
-      center: MapsLib.map_centroid,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styleId: 2,
-	  templateId: 1
-    };
-    map = new google.maps.Map($("#map_canvas")[0],myOptions);
+	   $('#tree').jqxTree({ theme: theme, checkSize: 15, hasThreeStates: true, checkboxes: true, source: source, width: '100%', height: '100%' });
+            initSimulator("tree");
 	
-	google.maps.event.addListener(map, "click", function(event) {
-                        MapsLib.clickmap(event);
-    });
-						 
+	
+
+ 
         
-		
-    google.maps.event.addDomListener(window, 'resize', function() {
-        map.setCenter(MapsLib.map_centroid);
-    });
-
-    MapsLib.directionsDisplay.setMap(map);
-
-	map.data.addListener('mouseover', function(event) {
-                alert(
-                    event.feature);
-              });
-    MapsLib.doSearch();
-	
-  },
-
-  doSearch: function(location) {
-	MapsLib.clearSearch();
-  
-	MapsLib.polygonTableID=ptbid;
-    MapsLib.polygon=new Array();
-	try{
-		var tl=MapsLib.polygonTableID.length;
-		if(tl>1)
-			map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
-		else if(MapsLib.e=='')
-			map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-		
-		for(var i=0; i<tl; i++)
-			{
-				
-				MapsLib.polygon.push(
-					new google.maps.FusionTablesLayer({
-					  query: {
-						from:   MapsLib.polygonTableID[i],
-						select: "geometry"
-					  }
-					}));
-				MapsLib.polygon[i].setMap(map);	
-			}
-			
-		}catch( ex)
-		{
-			;
-		}
-		
-	},
-	calcRoute: function () {
-			
-              var start = MapsLib.s;
-                var end = MapsLib.e;
-			if(end!==null)
-			{
-				  var request = {
-					  origin:start,
-					  destination:end,
-					  travelMode: google.maps.TravelMode.DRIVING
-				  };
-				  MapsLib.directionsService.route(request, function(response, status) {
-						
-					if (status == google.maps.DirectionsStatus.OK) {
-						
-					  MapsLib.directionsDisplay.setDirections(response);
-					  // MapsLib.zoom(map);
-					}
-				  });
-				  
-				  MapsLib.directionsDisplay.setPanel(document.getElementById('panel'));
-				  MapsLib.doSearch();
-			  }
-    },
-	findMe: function() {
-    // Try W3C Geolocation (Preferred)
-    var foundLocation;
-
-    if(navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        foundLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-        MapsLib.addrFromLatLng(foundLocation);
-      }, null);
-    }
-    else {
-      alert("Sorry, we could not find your location.");
-    }
-  },
-  addrFromLatLng: function(latLngPoint) {
-    MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-		$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);
-        if(MapsLib.chad=='#dep')
-			MapsLib.s=results[0].formatted_address;
-		else
-			MapsLib.e=results[0].formatted_address;
-      } else {
-        alert("Geocoder failed due to: " + status);
-      }
-    });
-  },
-  zoom: function(map) {
-              var bounds = new google.maps.LatLngBounds();
-			
-              map.data.forEach(function(feature) {
-			  
-                MapsLib.processPoints(feature.getGeometry(), bounds.extend, bounds);
-              });
-              map.fitBounds(bounds);
-  },
-  processPoints: function(geometry, callback, thisArg) {
-              if (geometry instanceof google.maps.LatLng) {
-                callback.call(thisArg, geometry);
-              } else if (geometry instanceof google.maps.Data.Point) {
-                callback.call(thisArg, geometry.get());
-              } else {
-                geometry.getArray().forEach(function(g) {
-                  MapsLib.processPoints(g, callback, thisArg);
-                });
-              }
-  },
-  additi :function(butiti){
-              MapsLib.chad ='#'+ butiti;
-  },
-  clickmap: function(pos)
-                {
-                 
-                   if(pos!=null)
-                    {
-                        MapsLib.addrFromLatLng(pos.latLng);
-                       
-                    }else
-                    {
-                        MapsLib.takeInf(map);
-                    }
-                   
-
-                    map.setMapTypeId(google.maps.MapTypeId.HYBRID)
-
-  },
-  takeInf:function(map){ 
-                     map.data.forEach(function(feature) {
-                          alert('takeinf');
-						  });
-  },
-  clearSearch: function() {
-   MapsLib.polygonTableID=null;
-	for(var i=0;i<MapsLib.polygon.length;i++)
-		if (MapsLib.polygon[i] != null)
-			{
-				MapsLib.polygon[i].setMap(null);
-				MapsLib.polygon[i]=null;
-			}
-    
-  }
-}
+        });
+    </script>
+</head>
+<body>
+    <div id="demoContainer" class="device-mobile">
+        <div id="container" class="device-mobile-container">
+            <div style="border: none;" id='tree'>
+            </div>
+        </div>
+		<div id="map" class="device-mobile-map">
+            <div id="map_canvas" style="border: none;" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
