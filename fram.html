@@ -44,8 +44,11 @@ and open the template in the editor.
         border: 1px solid #999;
       }
 	  #listv {
-		width: 30%;
-		}
+	   position: absolute;
+	   bottom:1px;
+	   height: 15%;
+		width: auto;
+	}
     </style>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -55,6 +58,8 @@ and open the template in the editor.
     <script type="text/javascript" src="./jqx/jqxpanel.js"></script>
     <script type="text/javascript" src="./jqx/jqxtree.js"></script>
 	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
+	<script type="text/javascript" src="./jqx/jqxdatatable.js"></script>
+	<script type="text/javascript" src="./jqx/jqxdata.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -67,15 +72,16 @@ and open the template in the editor.
 </head>
 <body class='default'> 
 	<div id="map_canvas"></div>
-
+	
         <div id="panel">
-			<div id='listv'>
-			</div>
+			
 			<small>(<a id='find_me' href='#'>ou suis-je</a>) legend: (terrain: de foot, de tennis), sentier (promenade, velo, trail), manger & dormir(restaurant, snack), nuit (boite et pub), visite (lieu dit, point interet), activite (sportifs et touristique)</small>
-			<div id='jqxTree'>
-			</div>
+			
+						<div id='jqxTree' >
+						</div>
+					
+						
 			<table>
-				
 				<tr>				
 					<td> depart :</td><td><input id="dep" type="text" /></td><td rowspan="2"><button id='iti' >Itineraire</button></td>
 				</tr>
@@ -85,7 +91,8 @@ and open the template in the editor.
 			</table>
 			
 		</div>
-	
+	<div id='listv' >
+						</div>
 	 <script type="text/javascript" src="js/maps_lib.js"></script>	
     <script type='text/javascript'>
       //<![CDATA[

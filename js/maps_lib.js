@@ -7,8 +7,11 @@
 
 google.maps.visualRefresh = true;
 
-var ptbid=new Array();
-var source = [
+
+var FuncTree = FuncTree || {};
+var FuncTree = {
+	ptbid		:new Array(),
+	source 		: [
 			{ id:"E",label: "EST",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
 				{ id:"BPn",label: "Bras-Panon", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",  items: [
 					{ id:"BPn_t", label: "terrain", value:"1SjOgOCz9LrImoNYW3dlV8AVwekzwgkwkIFrnL9r5"},
@@ -224,23 +227,51 @@ var source = [
 				  
 			]
 			}
-            ];
-	
-	applyChild=function(items){
+            ],
+	applyChild	:function(items){
 		for(var i in items)
 					{
-						chkItm(items[i]);
+						FuncTree.chkItm(items[i]);
 						
 					}
-	};
-	
-	chkItm=function(elmt){
+	},
+	chkItm :function(elmt){
 		var rplc='#'+elmt.id;
 				$("#jqxTree").jqxTree('checkItem', $(rplc)[0], true);
-	};
+	},
+	applysrch :function(item)
+	{
+		FuncTree.ptbid=new Array();
+		try{
+		var items = $('#jqxTree').jqxTree('getCheckedItems');
+			items.push(item);
+			//$('#listv').remove();
+			//$('#listv').append(  '<table>' );
+			for(var i in items)
+				if(items[i]!=null)
+					{
+						FuncTree.ptbid.push(items[i].value);
+						//$('#listv').append( '<tr><td>' + items[i].label+ '</td></tr>' );
+					}
+
+			 //$('#listv').append(  '</table>' );
+			}catch(ex)
+			{
+				;
+			}
+		
+	},
+	schrrefifd :function(lbprt)
+	{
+		for(var i=0; i<FuncTree.source.length;i++)
+			if(FuncTree.source[i].label==lbprt)
+				return FuncTree.source[i];
+			
+	}
 	
-	
-	$('#jqxTree').jqxTree({checkboxes: true, source: source, height: '300px', width: '300px',theme: 'summer' });
+};
+
+	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
 	$('#jqxTree').on('expand', function (event) {
 		
 		
@@ -259,25 +290,24 @@ var source = [
 					{
 						alert(ex.toString);
 					}*/
-					applysrch(item);
+					FuncTree.applysrch(item);
 					MapsLib.doSearch();
 				
            });
     $('#jqxTree').on('collapse', function (event) {
-	ptbid=new Array();
-	$('#jqxTree').jqxTree('uncheckAll');
+		FuncTree.ptbid=new Array();
+		$('#jqxTree').jqxTree('uncheckAll');
                 var args = event.args;
                 var elmt = args.element;
                 var item = $('#jqxTree').jqxTree('getItem',elmt );
 				/*$('#jqxTree').jqxTree('selectItem', elmt);
 					$('#jqxTree').jqxTree('refresh');*/
 				
-					
-					ptbid=null;
-					applysrch(null);
+					$("#listv").empty();
+					FuncTree.applysrch(null);
 					MapsLib.doSearch();
 			
-            });
+    });
 	$('#jqxTree').bind('select', function (event) {
 			
                 var htmlElement = event.args.element;
@@ -299,62 +329,36 @@ var source = [
             });
 	$("#jqxTree").bind('checkChange', function (event) {
 				
-						applysrch(null);
+						FuncTree.applysrch(null);
 						MapsLib.doSearch();
 					
 			});
-	applysrch=function(item)
-	{
-		ptbid=new Array();
-		try{
-		var items = $('#jqxTree').jqxTree('getCheckedItems');
-			items.push(item);
-			//$('#listv').remove();
-			//$('#listv').append(  '<table>' );
-			for(var i in items)
-				if(items[i]!=null)
-					{
-						ptbid.push(items[i].value);
-						//$('#listv').append( '<tr><td>' + items[i].label+ '</td></tr>' );
-					}
-
-			 //$('#listv').append(  '</table>' );
-			}catch(ex)
-			{
-				;
-			}
-		
-	}
-	schrrefifd=function(lbprt)
-	{
-		for(var i=0; i<source.length;i++)
-			if(source[i].label==lbprt)
-				return source[i];
-			
-	}   
+	 
 
 
-	
+//"AIzaSyDc_KEt2MhrQFwbLEZz-DFzZAIE3Dyr_NA" 
 var MapsLib = MapsLib || {};
 var MapsLib = {
   s                 :"",
   e                 :"",
+  cpte				:0,
   chad:               '#dep',
+  datajson          :['',''],
   directionsDisplay : new google.maps.DirectionsRenderer(),
   directionsService : new google.maps.DirectionsService(),
   geocoder          : new google.maps.Geocoder(),
   polygonTableID    :[],
   polygon           : new Array(),
-  googleApiKey:       "AIzaSyBT0oZNxCp8JSSQwaG0gq1U-MLIMF30bL4",
-  locationColumn:     "lat",
-  map_centroid:       new google.maps.LatLng(-21.137472,55.546906),
-  locationScope:      "reunion", 
-  recordName:         "result", 
-  recordNamePlural:   "results",
-  searchRadius:       805,  
-  defaultZoom:        10,   
-  addrMarkerImage:    'images/blue-pushpin.png',
-  currentPinpoint:    null,
+  googleApiKey		: "AIzaSyD49JCPjbwMZpVekOIPjWM6GQwEr6VCe8A",
+  locationColumn	: "lat",
+  map_centroid		: new google.maps.LatLng(-21.137472,55.546906),
+  locationScope		: "reunion", 
+  recordName		: "result", 
+  recordNamePlural	: "results",
+  searchRadius		: 805,  
+  defaultZoom		: 10,   
+  addrMarkerImage	: 'images/blue-pushpin.png',
+  currentPinpoint	: null,
 
   initialize: function() {
 	MapsLib.geocoder = new google.maps.Geocoder();
@@ -391,7 +395,7 @@ var MapsLib = {
   doSearch: function(location) {
 	MapsLib.clearSearch();
   
-	MapsLib.polygonTableID=ptbid;
+	MapsLib.polygonTableID=FuncTree.ptbid;
     MapsLib.polygon=new Array();
 	try{
 		var tl=MapsLib.polygonTableID.length;
@@ -417,6 +421,8 @@ var MapsLib = {
 		{
 			;
 		}
+		
+		MapsLib.getList();
 		
 	},
 	calcRoute: function () {
@@ -523,5 +529,100 @@ var MapsLib = {
 				MapsLib.polygon[i]=null;
 			}
     
+  },
+  query: function(selectColumns, limit, callback) {
+	for(var i in MapsLib.polygonTableID)
+	{
+		MapsLib.cpte=i;
+		$("#listv").append("<div id="+i+" />");
+		var queryStr = [];
+		queryStr.push("SELECT " + selectColumns);
+		queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
+	
+
+		var sql = encodeURIComponent(queryStr.join(" "));
+		$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
+	
+	}
+	
+	
+  },
+  
+  getList: function() {
+    var selectColumns = "nom, description";
+    MapsLib.query(selectColumns, 500, "MapsLib.displayList");
+  },
+
+  displayList: function(json) {
+	
+    MapsLib.handleError(json);
+    var columns = json["columns"];
+	
+    var rows = json["rows"];
+	
+   var results = $("#listv");
+    results.empty(); //hide the existing list and empty it out first
+
+    if (rows == null) {
+      //clear results list
+      results.append("<span class='lead'>No results found</span>");
+      }
+    else {
+
+      //set table headers
+      var list_table = "\
+      <table class='table' id ='list_table'>\
+        <thead>\
+          <tr>\
+            <th>Nom</th>\
+          </tr>\
+        </thead>\
+        <tbody>";
+
+      for (var row in rows) {
+
+        var nom = rows[row][0];
+        var desc = rows[row][1];
+	
+        list_table += "\
+          <tr>\
+            <td >" + nom + "</td>\
+			<td >" + desc + "</td>\
+          </tr>";
+      }
+
+      list_table += "\
+          </tbody>\
+        </table>";
+
+      results.append(list_table);
+      
+
+      $("#list_table").dataTable({
+          "aoColumns": [ // tells DataTables how to perform sorting for each column
+              null, //School name with HTML for the link, which we want to ignore
+              null
+          ],
+		  
+          "bFilter": false, // disable search box 
+          "bInfo": false, //results count
+          "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
+          "bAutoWidth": true
+      });
+    }
+
+   },
+ 
+  handleError: function(json) {
+    if (json["error"] != undefined) {
+      var error = json["error"]["errors"]
+      console.log("Error in Fusion Table call!");
+      for (var row in error) {
+        console.log(" Domain: " + error[row]["domain"]);
+        console.log(" Reason: " + error[row]["reason"]);
+        console.log(" Message: " + error[row]["message"]);
+      }
+    }
   }
 }
+
