@@ -70,8 +70,7 @@ var MapsLib = {
 		var tl=MapsLib.polygonTableID.length;
 		if(tl>1)
 			map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
-		else if(MapsLib.e=='')
-			map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+		
 		
 		for(var i=0; i<tl; i++)
 			{
@@ -81,8 +80,7 @@ var MapsLib = {
 						select: "geometry"
 					  }
 					});
-				MapsLib.polygon.push(
-					);
+				MapsLib.polygon.push(layer);
 				MapsLib.polygon[i].setMap(map);	
 				
 			}
@@ -243,8 +241,8 @@ var MapsLib = {
 	
 	}
 	$('#itin').empty();
-	$('#itin').append("poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)");
-						$('#itin').css("color","green");
+	$('#itin').append("poser la souris sur le texte en BAS pour la description");
+						$('#itin').css("color","blue");
 	
 	
   },
