@@ -78,7 +78,15 @@ var MapsLib = {
 					  query: {
 						from:   MapsLib.polygonTableID[i],
 						select: "geometry"
-					  }
+					  },
+						styles: [{
+						  polygonOptions: {
+							fillColor: '#00FF00',
+							fillOpacity: 0.3
+						  }
+						}]
+						
+					  
 					});
 				MapsLib.polygon.push(layer);
 				MapsLib.polygon[i].setMap(map);	
@@ -93,6 +101,7 @@ var MapsLib = {
 		MapsLib.getList();
 		
 	},
+	
 	calcRoute: function () {
 			$('#itin').empty();
               var start = MapsLib.s;
@@ -123,9 +132,26 @@ var MapsLib = {
 							$('#itin').hide();
 							$('#dep').val(null);$('#arv').val(null);
 							MapsLib.s=null;MapsLib.e=null;
+							$("#listv").on("mouseenter",function(){
+		  
+								$(this).animate({
+									opacity: '1',
+									height: '100%',
+									width: '70%'
+								});
+								$('#map_canvas').animate({
+									opacity: '0.3'
+								});
+								$('#itin').empty();
+								$('#itin').append("poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)");
+										$('#itin').css("color","green");
+							});
+							MapsLib.initialize();
 					});
 					   $('#btn').show();
 					   $('#btn').css("color","red");
+					
+					   $("#listv").off();
 					   
 					}else
 					{
@@ -155,7 +181,10 @@ var MapsLib = {
   addrFromLatLng: function(latLngPoint) {
     MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
-		$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);
+		  if(results.length>1)
+			$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);
+		  else
+			$(MapsLib.chad).val(results[0].formatted_address);
         if(MapsLib.chad=='#dep')
 			{
 				MapsLib.s=results[0].formatted_address;
@@ -210,11 +239,7 @@ var MapsLib = {
                     map.setMapTypeId(google.maps.MapTypeId.HYBRID)
 
   },
-  takeInf:function(map){ 
-                     map.data.forEach(function(feature) {
-                          alert('takeinf');
-						  });
-  },
+ 
   clearSearch: function() {
    MapsLib.polygonTableID=null;
 	for(var i=0;i<MapsLib.polygon.length;i++)
@@ -223,7 +248,8 @@ var MapsLib = {
 				MapsLib.polygon[i].setMap(null);
 				MapsLib.polygon[i]=null;
 			}
-    
+    map.setCenter(MapsLib.map_centroid);
+	map.setZoom(MapsLib.defaultZoom);
   },
   query: function(selectColumns, limit, callback) {
 	
@@ -240,6 +266,7 @@ var MapsLib = {
 		$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
 	
 	}
+	
 	$('#itin').empty();
 	$('#itin').append("poser la souris sur le texte en BAS pour la description");
 						$('#itin').css("color","blue");

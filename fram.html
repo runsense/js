@@ -112,7 +112,7 @@ and open the template in the editor.
         $(function() {
 		
           MapsLib.initialize();
-		  $("#listv").hover(function(){
+		  $("#listv").on("mouseenter",function(){
 		  
 				$(this).animate({
 					opacity: '1',
@@ -144,6 +144,8 @@ and open the template in the editor.
             $('#jqxTree').show();
 			$('#itin').hide();
 			$('#dep').val(null);$('#arv').val(null);
+			$('#listv').show();
+			
 			MapsLib.s=null;MapsLib.e=null;
           });
 		
