@@ -78,14 +78,7 @@ var MapsLib = {
 					  query: {
 						from:   MapsLib.polygonTableID[i],
 						select: "geometry"
-					  },
-						styles: [{
-						  polygonOptions: {
-							fillColor: '#00FF00',
-							fillOpacity: 0.3
-						  }
-						}]
-						
+					  }
 					  
 					});
 				MapsLib.polygon.push(layer);
