@@ -281,6 +281,7 @@ var FuncTree = {
 					{
 						alert(ex.toString);
 					}*/
+					$('small').show();
 					FuncTree.applysrch(item);
 					MapsLib.doSearch();
 				
@@ -296,6 +297,7 @@ var FuncTree = {
 				
 					$("#listv").empty();
 					FuncTree.applysrch(null);
+					$('small').hide();
 					MapsLib.doSearch();
 			
     });

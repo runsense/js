@@ -60,8 +60,10 @@ and open the template in the editor.
 	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
 	<script type="text/javascript" src="./jqx/jqxdatatable.js"></script>
 	<script type="text/javascript" src="./jqx/jqxdata.js"></script>
+	
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
     </script>
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.address.js"></script>
     <script type="text/javascript" src="js/jquery.geocomplete.min.js"></script>
@@ -73,15 +75,17 @@ and open the template in the editor.
 <body class='default'> 
 	<div id="map_canvas"></div>
 	
-        <div id="panel">
+        <div id="panel" title='poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)'>
+			<button id='btn'  style="display:none" >Arbre</button>
 			
 			<small>(<a id='find_me' href='#'>ou suis-je</a>) legend: (terrain: de foot, de tennis), sentier (promenade, velo, trail), manger & dormir(restaurant, snack), nuit (boite et pub), visite (lieu dit, point interet), activite (sportifs et touristique)</small>
 			
 						<div id='jqxTree' >
 						</div>
 					
-						
-			<table>
+				
+			<div id="itin"></div>
+			<table id="itin">
 				<tr>				
 					<td> depart :</td><td><input id="dep" type="text" /></td><td rowspan="2"><button id='iti' >Itineraire</button></td>
 				</tr>
@@ -89,6 +93,7 @@ and open the template in the editor.
 					<td> arrive :</td><td><input id="arv" type="text" /></td>
 				</tr>
 			</table>
+			
 			
 		</div>
 	<div id='listv' >
@@ -107,20 +112,53 @@ and open the template in the editor.
         $(function() {
 		
           MapsLib.initialize();
+		  $("#listv").hover(function(){
 		  
+				$(this).animate({
+					opacity: '1',
+					height: '100%',
+					width: '70%'
+				});
+				$('#map_canvas').animate({
+					opacity: '0.3'
+				});
+			})
+			;
+		
+		  $("small").hover(function(){
+				$('#listv').animate({
+					opacity: '0.3',
+					height: '30%',
+					width: '30%'
+				});
+				$('#map_canvas').animate({
+					opacity: '1'
+				});
+			
+			});
+		  $('#btn').bind('click',function(){
+			$('small').show();
+            $('#jqxTree').show();
+			$('#itin').hide();
+			$('#dep').val(null);$('#arv').val(null);
+			MapsLib.s=null;MapsLib.e=null;
+          });
+		
 		  $('#find_me').click(function(){
             MapsLib.findMe(); 
             return false;
           });
 		  $('#dep').click(function(){
             MapsLib.additi('dep'); 
-				
             return true;
           });
 		  $('#arv').click(function(){
             MapsLib.additi('arv'); 
-				
-            return true;
+			 return true;
+          });
+		  $('#map_canvas').mouseleave(function(){
+			MapsLib.calcRoute();
+			 return true;
           });
 		  $('#iti').click(function(){
              MapsLib.calcRoute();

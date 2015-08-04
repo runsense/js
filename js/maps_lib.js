@@ -11,8 +11,8 @@ google.maps.visualRefresh = true;
 //"AIzaSyDc_KEt2MhrQFwbLEZz-DFzZAIE3Dyr_NA" 
 var MapsLib = MapsLib || {};
 var MapsLib = {
-  s                 :"",
-  e                 :"",
+  s                 :null,
+  e                 :null,
   cpte				:0,
   chad:               '#dep',
   datajson          :['',''],
@@ -26,11 +26,8 @@ var MapsLib = {
   map_centroid		: new google.maps.LatLng(-21.137472,55.546906),
   locationScope		: "reunion", 
   recordName		: "result", 
-  recordNamePlural	: "results",
-  searchRadius		: 805,  
-  defaultZoom		: 10,   
-  addrMarkerImage	: 'images/blue-pushpin.png',
-  currentPinpoint	: null,
+  recordNamePlural	: "results",  
+  defaultZoom		: 10,
 
   initialize: function() {
 	MapsLib.geocoder = new google.maps.Geocoder();
@@ -78,15 +75,16 @@ var MapsLib = {
 		
 		for(var i=0; i<tl; i++)
 			{
-				
-				MapsLib.polygon.push(
-					new google.maps.FusionTablesLayer({
+				var layer = new google.maps.FusionTablesLayer({
 					  query: {
 						from:   MapsLib.polygonTableID[i],
 						select: "geometry"
 					  }
-					}));
+					});
+				MapsLib.polygon.push(
+					);
 				MapsLib.polygon[i].setMap(map);	
+				
 			}
 			
 		}catch( ex)
@@ -98,7 +96,7 @@ var MapsLib = {
 		
 	},
 	calcRoute: function () {
-			
+			$('#itin').empty();
               var start = MapsLib.s;
                 var end = MapsLib.e;
 			if(end!==null)
@@ -113,11 +111,32 @@ var MapsLib = {
 					if (status == google.maps.DirectionsStatus.OK) {
 						
 					  MapsLib.directionsDisplay.setDirections(response);
-					  // MapsLib.zoom(map);
+					   MapsLib.zoom(map);
+					   MapsLib.directionsDisplay.setPanel(document.getElementById('itin'));
+					  
+					   $('#jqxTree').hide();
+					   $('small').hide();
+					   
+					   $('#btn').unbind();
+					   $('#btn').val("Arbre");
+					   $('#btn').bind('click',function(){
+							$(this).hide();
+							$('#jqxTree').show();
+							$('#itin').hide();
+							$('#dep').val(null);$('#arv').val(null);
+							MapsLib.s=null;MapsLib.e=null;
+					});
+					   $('#btn').show();
+					   $('#btn').css("color","red");
+					   
+					}else
+					{
+						$('#itin').append("impossible de tracer l'itinéraire");
+						$('#itin').css("color","red");
 					}
 				  });
 				  
-				  MapsLib.directionsDisplay.setPanel(document.getElementById('panel'));
+				  
 				  MapsLib.doSearch();
 			  }
     },
@@ -140,11 +159,17 @@ var MapsLib = {
       if (status == google.maps.GeocoderStatus.OK) {
 		$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);
         if(MapsLib.chad=='#dep')
-			MapsLib.s=results[0].formatted_address;
+			{
+				MapsLib.s=results[0].formatted_address;
+				MapsLib.chad='#arv';
+			}
 		else
-			MapsLib.e=results[0].formatted_address;
+			{
+				MapsLib.e=results[0].formatted_address;
+				MapsLib.chad='#dep';
+			}
       } else {
-        alert("Geocoder failed due to: " + status);
+        //alert("Geocoder failed due to: " + status);
       }
     });
   },
@@ -203,10 +228,11 @@ var MapsLib = {
     
   },
   query: function(selectColumns, limit, callback) {
+	
 	for(var i in MapsLib.polygonTableID)
 	{
 		MapsLib.cpte=i;
-		$("#listv").append("<div id="+i+" />");
+		$("#listv").append("<div title='poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)' id="+i+" />");
 		var queryStr = [];
 		queryStr.push("SELECT " + selectColumns);
 		queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
@@ -216,12 +242,15 @@ var MapsLib = {
 		$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
 	
 	}
+	$('#itin').empty();
+	$('#itin').append("poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)");
+						$('#itin').css("color","green");
 	
 	
   },
   
   getList: function() {
-    var selectColumns = "nom, description";
+    var selectColumns = "nom,description,lat,lng";
     MapsLib.query(selectColumns, 500, "MapsLib.displayList");
   },
 
@@ -231,8 +260,8 @@ var MapsLib = {
     var columns = json["columns"];
 	
     var rows = json["rows"];
-	
-   var results = $("#listv");
+	var rplc="#"+MapsLib.cpte;
+   var results = $(rplc);
     results.empty(); //hide the existing list and empty it out first
 
     if (rows == null) {
@@ -247,19 +276,25 @@ var MapsLib = {
         <thead>\
           <tr>\
             <th>Nom</th>\
+			<th>Description</th>\
+			<th>Lat</th>\
+			<th>Lng</th>\
           </tr>\
         </thead>\
         <tbody>";
 
       for (var row in rows) {
-
         var nom = rows[row][0];
         var desc = rows[row][1];
+		var lat = rows[row][2];
+		var lng = rows[row][3];
 	
         list_table += "\
           <tr>\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
+			<td >" + lat + "</td>\
+			<td >" + lng+ "</td>\
           </tr>";
       }
 
@@ -270,7 +305,7 @@ var MapsLib = {
       results.append(list_table);
       
 
-      $("#list_table").dataTable({
+      /*$("#list_table").dataTable({
           "aoColumns": [ // tells DataTables how to perform sorting for each column
               null, //School name with HTML for the link, which we want to ignore
               null
@@ -280,7 +315,7 @@ var MapsLib = {
           "bInfo": false, //results count
           "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
           "bAutoWidth": true
-      });
+      });*/
     }
 
    },
