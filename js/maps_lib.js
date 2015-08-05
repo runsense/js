@@ -96,8 +96,10 @@ var MapsLib = {
 					  
 					});
 				google.maps.event.addListener(layer, 'click', function(e) {
+				   var tmp=$("#listv").html();
 				   $("#listv").empty();
 				   $("#listv").append(e.infoWindowHtml);
+				   $("#listv").append(tmp);
 				   MapsLib.chad='#arv';
 				   MapsLib.addrFromLatLng(e.latLng);
 				    
