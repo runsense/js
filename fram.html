@@ -49,6 +49,11 @@ and open the template in the editor.
 	   height: 15%;
 		width: auto;
 	}
+	#btn {
+		display:none;
+		text-align: center;
+		size:100%;
+	}
     </style>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -76,7 +81,7 @@ and open the template in the editor.
 	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
 	
         <div id="panel" title='poser la souris sur le panneau pour revenir a la MAP ( A DROITE)'>
-			<button id='btn'  style="display:none" >Arbre</button>
+			<button id='btn' >revenir aux choix de l'Arbre</button>
 			
 			<small>(<a id='find_me' href='#'>ou suis-je</a>) legend: (terrain: de foot, de tennis), sentier (promenade, velo, trail), manger & dormir(restaurant, snack), nuit (boite et pub), visite (lieu dit, point interet), activite (sportifs et touristique)</small>
 			
@@ -85,7 +90,7 @@ and open the template in the editor.
 					
 				
 			<div id="itin"></div>
-			<table id="itin">
+			<table id="itinv">
 				<tr>				
 					<td><input id="dep" title="ENTRER ADRESSE OU POINTER" type="text" placeholder="depart :"/></td><td rowspan="2"><button id='iti' >Itineraire</button></td>
 				</tr>
@@ -98,6 +103,7 @@ and open the template in the editor.
 		</div>
 	<div id="listv"  title="poser la souris sur le panneau pour revenir a la MAP ( A DROITE)" >
 						</div>
+	<script type="text/javascript" src="js/FuncRoute.js"></script>
 	<script type="text/javascript" src="js/FuncTree.js"></script>						
 	 <script type="text/javascript" src="js/maps_lib.js"></script>	
     <script type='text/javascript'>
@@ -172,11 +178,11 @@ and open the template in the editor.
 			 return true;
           });
 		  $('#map_canvas').mouseleave(function(){
-			MapsLib.calcRoute();
+			FuncRoute.calcRoute();
 			 return true;
           });
 		  $('#iti').click(function(){
-             MapsLib.calcRoute();
+             FuncRoute.calcRoute();
 				
             return true;
           });

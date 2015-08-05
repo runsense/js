@@ -16,8 +16,6 @@ var MapsLib = {
   cpte				:0,
   chad:               '',
   datajson          :['',''],
-  directionsDisplay : new google.maps.DirectionsRenderer(),
-  directionsService : new google.maps.DirectionsService(),
   geocoder          : new google.maps.Geocoder(),
   polygonTableID    :[],
   polygon           : new Array(),
@@ -31,7 +29,7 @@ var MapsLib = {
 
   initialize: function() {
 	MapsLib.geocoder = new google.maps.Geocoder();
-	MapsLib.directionsDisplay = new google.maps.DirectionsRenderer();
+	FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
     var myOptions = {
       zoom: MapsLib.defaultZoom,
       center: MapsLib.map_centroid,
@@ -52,7 +50,7 @@ var MapsLib = {
 		map.setZoom(FuncTree.zoom);
     });
 
-    MapsLib.directionsDisplay.setMap(map);
+    FuncRoute.directionsDisplay.setMap(map);
 
 	google.maps.event.addListener(map, 'mouseover', function(event) {
                 map.setZoom(FuncTree.zoom);
@@ -95,6 +93,12 @@ var MapsLib = {
 					}] 
 					  
 					});
+				if(FuncTree.styles[i].charAt(0)=='#')
+					{
+						//$("#jqxTree").css('color', FuncTree.styles[i]);
+						$("body").css('background-color', FuncTree.styles[i]);
+					}
+					
 				google.maps.event.addListener(layer, 'click', function(e) {
 				   var tmp=$("#listv").html();
 				   $("#listv").empty();
@@ -120,70 +124,6 @@ var MapsLib = {
 		MapsLib.getList();
 		
 	},
-	
-	calcRoute: function () {
-			$('#itin').empty();
-              var start = MapsLib.s;
-                var end = MapsLib.e;
-			if(end!==null)
-			{
-				  var request = {
-					  origin:start,
-					  destination:end,
-					  travelMode: google.maps.TravelMode.DRIVING
-				  };
-				  MapsLib.directionsService.route(request, function(response, status) {
-						
-					if (status == google.maps.DirectionsStatus.OK) {
-						
-					  MapsLib.directionsDisplay.setDirections(response);
-					   MapsLib.zoom(map);
-					   MapsLib.directionsDisplay.setPanel(document.getElementById('itin'));
-					  
-					   $('#jqxTree').hide();
-					   $('small').hide();
-					   
-					   $('#btn').unbind();
-					   $('#btn').val("Arbre");
-					   $('#btn').bind('click',function(){
-							$(this).hide();
-							$('#jqxTree').show();
-							$('#itin').hide();
-							$('#dep').val(null);$('#arv').val(null);
-							MapsLib.s=null;MapsLib.e=null;
-							$("#listv").on("mouseenter",function(){
-		  
-								$(this).animate({
-									opacity: '1',
-									height: '100%',
-									width: '70%'
-								});
-								$('#map_canvas').animate({
-									opacity: '0.3'
-								});
-								$('#itin').empty();
-								FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
-								,"green");
-							})
-							;
-							MapsLib.initialize();
-					});
-					   $('#btn').show();
-					   $('#btn').css("color","red");
-					
-					   $("#listv").off();
-					   
-					}else
-					{
-						$('#itin').append("impossible de tracer l'itinéraire");
-						$('#itin').css("color","red");
-					}
-				  });
-				  
-				  
-				  MapsLib.doSearch();
-			  }
-    },
 	findMe: function() {
     // Try W3C Geolocation (Preferred)
     var foundLocation;
