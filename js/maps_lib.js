@@ -14,7 +14,7 @@ var MapsLib = {
   s                 :null,
   e                 :null,
   cpte				:0,
-  chad:               '#dep',
+  chad:               '',
   datajson          :['',''],
   directionsDisplay : new google.maps.DirectionsRenderer(),
   directionsService : new google.maps.DirectionsService(),
@@ -54,10 +54,9 @@ var MapsLib = {
 
     MapsLib.directionsDisplay.setMap(map);
 
-	map.data.addListener('mouseover', function(event) {
-                alert(
-                    event.feature);
-              });
+	google.maps.event.addListener(map, 'mouseover', function(event) {
+                map.setZoom(FuncTree.zoom);
+    });
     MapsLib.doSearch();
 	
   },
@@ -101,7 +100,8 @@ var MapsLib = {
 				   $("#listv").append(e.infoWindowHtml);
 				   MapsLib.chad='#arv';
 				   MapsLib.addrFromLatLng(e.latLng);
-				   
+				    
+						map.setZoom(13);
 				});
 				
 				MapsLib.polygon.push(layer);
@@ -160,7 +160,8 @@ var MapsLib = {
 									opacity: '0.3'
 								});
 								$('#itin').empty();
-								FuncTree.append();
+								FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
+								,"green");
 							})
 							;
 							MapsLib.initialize();
@@ -210,7 +211,7 @@ var MapsLib = {
 		else
 			{
 				MapsLib.e=results[0].formatted_address;
-				MapsLib.chad='#dep';
+				
 			}
       } else {
         //alert("Geocoder failed due to: " + status);
@@ -273,7 +274,7 @@ var MapsLib = {
 	for(var i in MapsLib.polygonTableID)
 	{
 		MapsLib.cpte=i;
-		$("#listv").append("<div title='poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)' id="+i+" />");
+		$("#listv").append("<div title='<small>Revenir MAP </small>(A DROITE)' id="+i+" />");
 		var queryStr = [];
 		queryStr.push("SELECT " + selectColumns);
 		queryStr.push(" FROM " + MapsLib.polygonTableID[i]);

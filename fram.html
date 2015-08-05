@@ -73,9 +73,9 @@ and open the template in the editor.
    
 </head>
 <body class='default'> 
-	<div id="map_canvas"></div>
+	<div id="map_canvas" title="la CARTE apparait en posant la SOURIS sur le panneau de DROITE"></div>
 	
-        <div id="panel" title='poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)'>
+        <div id="panel" title='poser la souris sur le panneau pour revenir a la MAP ( A DROITE)'>
 			<button id='btn'  style="display:none" >Arbre</button>
 			
 			<small>(<a id='find_me' href='#'>ou suis-je</a>) legend: (terrain: de foot, de tennis), sentier (promenade, velo, trail), manger & dormir(restaurant, snack), nuit (boite et pub), visite (lieu dit, point interet), activite (sportifs et touristique)</small>
@@ -87,16 +87,16 @@ and open the template in the editor.
 			<div id="itin"></div>
 			<table id="itin">
 				<tr>				
-					<td> depart :</td><td><input id="dep" type="text" /></td><td rowspan="2"><button id='iti' >Itineraire</button></td>
+					<td><input id="dep" title="ENTRER ADRESSE OU POINTER" type="text" placeholder="depart :"/></td><td rowspan="2"><button id='iti' >Itineraire</button></td>
 				</tr>
 				<tr>
-					<td> arrive :</td><td><input id="arv" type="text" /></td>
+					<td><input id="arv" title="ENTRER ADRESSE OU POINTER" type="text" placeholder="arrive :"/></td>
 				</tr>
 			</table>
 			
 			
 		</div>
-	<div id='listv' >
+	<div id="listv" title="poser la souris sur le panneau pour revenir a la MAP ( A DROITE)" >
 						</div>
 	<script type="text/javascript" src="js/FuncTree.js"></script>						
 	 <script type="text/javascript" src="js/maps_lib.js"></script>	
@@ -123,11 +123,11 @@ and open the template in the editor.
 					opacity: '0.3'
 				});
 				$('#itin').empty();
-				FuncTree.append();
+				FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
+								,"green");
 			})
 			;
-		
-		  $("small").hover(function(){
+		  $("#panel").hover(function(){
 				$('#listv').animate({
 					opacity: '0.3',
 					height: '30%',
@@ -138,6 +138,17 @@ and open the template in the editor.
 				});
 			
 			});
+		 /* $("small").hover(function(){
+				$('#listv').animate({
+					opacity: '0.3',
+					height: '30%',
+					width: '30%'
+				});
+				$('#map_canvas').animate({
+					opacity: '1'
+				});
+			
+			});*/
 		  $('#btn').bind('click',function(){
 			$('small').show();
             $('#jqxTree').show();
