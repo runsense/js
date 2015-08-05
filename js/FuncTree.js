@@ -6,7 +6,7 @@ var FuncTree = {
 	zoom		:10,
 	srcStyle		:[
 					{label: txtInit[0],value: "play"},
-					{label: txtInit[1],value: "#B8860B"},
+					{label: txtInit[1],value: "#FF1493"},
 					{label: txtInit[2],value: "dining"},
 					{label: txtInit[3],value: "realestate"},
 					{label: txtInit[4],value: "star"},
