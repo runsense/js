@@ -208,7 +208,7 @@ var MapsLib = {
         if(MapsLib.chad=='#dep')
 			{
 				MapsLib.s=results[0].formatted_address;
-				MapsLib.chad='#arv';
+				
 			}
 		else
 			{
