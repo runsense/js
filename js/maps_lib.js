@@ -274,7 +274,7 @@ var MapsLib = {
 	for(var i in MapsLib.polygonTableID)
 	{
 		MapsLib.cpte=i;
-		$("#listv").append("<div title='<small>Revenir MAP </small>(A DROITE)' id="+i+" />");
+		$("#listv").append("<div title='Revenir MAP (A DROITE)' id="+i+" style='background-color: #FFFFFF;'/>");
 		var queryStr = [];
 		queryStr.push("SELECT " + selectColumns);
 		queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
