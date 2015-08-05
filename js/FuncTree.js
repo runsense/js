@@ -309,6 +309,22 @@ var FuncTree = {
 		for(var i=0; i<FuncTree.srcStyle.length;i++)
 			if(FuncTree.srcStyle[i].label==lbprt)
 				return FuncTree.srcStyle[i].value;
+	},
+	append : function()
+	{
+		$('#itin').append("<small>poser la souris sur la LEGENDE pour revenir a la MAP </small>(EN HAUT A DROITE)");
+						$('#itin').css("color","green");
+		$("small").hover(function(){
+				$('#listv').animate({
+					opacity: '0.3',
+					height: '30%',
+					width: '30%'
+				});
+				$('#map_canvas').animate({
+					opacity: '1'
+				});
+			
+			});
 	}
 	
 };
