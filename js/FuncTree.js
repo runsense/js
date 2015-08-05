@@ -11,39 +11,39 @@ var FuncTree = {
 					{label: txtInit[3],value: "realestate"},
 					{label: txtInit[4],value: "star"},
 					{label: txtInit[5],value: "ranger_station"},
-					{label: "EST",value: "#DAA520"},
-						{label: "Bras-Panon",value: "#4B0082"},
-						{label: "Saint-André",value: "#006400"},
-						{label: "Saint-Benoit",value: "#008B8B"},
-						{label: "Sainte-Anne",value: "#800000"},
-						{label: "Sainte-Rose",value: "#98FB98"},
-						{label: "La Plaine Des Palmistes",value: "#CD5C5C"},
-						{label: "Salazie",value: "#000080"},
-					{label:"OUEST", value:"#8B0000"},
-						{label: "Mafate",value: "#4B0082"},
-						{label: "Saint-Gilles",value: "#006400"},
-						{label: "Saint-Leu",value: "#008B8B"},
-						{label: "TroisBassins",value: "#800000"},
-						{label: "Saint-Paul",value: "#98FB98"},
-						{label: "Etang Salé",value: "#CD5C5C"},
-						{label: "Entre-Deux",value: "#000080"},
-						{label: "Les Avirons",value: "#FFD700"},
-					{label: "SUD",value:"#66CDAA"},
-						{label: "Saint-Pierre",value: "#4B0082"},
-						{label: "Saint-Joseph",value: "#006400"},
-						{label: "Petite Ile",value: "#008B8B"},
-						{label: "Saint-Louis",value: "#800000"},
-						{label: "Cilaos",value: "#98FB98"},
-						{label: "Tampon",value: "#CD5C5C"},
-						{label: "La Plaine Des Cafres",value: "#000080"},
-						{label: "enclos du Tremblet",value: "#FFD700"},
-						{label: "Saint-Phillipe",value: "#66CDAA"},
-					{label: "NORD",value: "#4169E1"},
-						{label: "Saint-Denis",value: "#4B0082"},
-						{label: "Sainte-Marie",value: "#006400"},
-						{label: "Sainte-Suzanne",value: "#008B8B"},
-						{label: "La Possession",value: "#800000"},
-						{label: "Le Port",value: "#98FB98"}
+					{label: "EST",value: "#DAA520",lien:"NO"},
+						{label: "Bras-Panon",value: "#4B0082",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Vanilla_fragrans_4.jpg/800px-Vanilla_fragrans_4.jpg" },
+						{label: "Saint-André",value: "#006400",lien:"https://upload.wikimedia.org/wikipedia/commons/c/c1/Petit-pont-%C3%A9tang-Colosse.JPG"},
+						{label: "Saint-Benoit",value: "#008B8B",lien:"NO"},
+						{label: "Sainte-Anne",value: "#800000",lien:"https://upload.wikimedia.org/wikipedia/commons/f/fd/Eglise_Sainte-Anne_La_Reunion.jpg"},
+						{label: "Sainte-Rose",value: "#98FB98",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sainte-Rose_eglise.jpg/800px-Sainte-Rose_eglise.jpg"},
+						{label: "La Plaine Des Palmistes",value: "#CD5C5C",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b3/Ppalmistes2.jpg"},
+						{label: "Salazie",value: "#000080",lien:"https://upload.wikimedia.org/wikipedia/commons/3/3a/R%C3%A9union_Salazie.JPG"},
+					{label:"OUEST", value:"#8B0000",lien:"NO"},
+						{label: "Mafate",value: "#4B0082",lien:"https://upload.wikimedia.org/wikipedia/commons/1/10/Mafate_Marla_from_Taibit_dsc00570.jpg"},
+						{label: "Saint-Gilles",value: "#006400",lien:"NO"},
+						{label: "Saint-Leu",value: "#008B8B",lien:"NO"},
+						{label: "TroisBassins",value: "#800000",lien:"NO"},
+						{label: "Saint-Paul",value: "#98FB98",lien:"NO"},
+						{label: "Etang Salé",value: "#CD5C5C",lien:"NO"},
+						{label: "Entre-Deux",value: "#000080",lien:"NO"},
+						{label: "Les Avirons",value: "#FFD700",lien:"NO"},
+					{label: "SUD",value:"#66CDAA",lien:"NO"},
+						{label: "Saint-Pierre",value: "#4B0082",lien:"NO"},
+						{label: "Saint-Joseph",value: "#006400",lien:"NO"},
+						{label: "Petite Ile",value: "#008B8B",lien:"NO"},
+						{label: "Saint-Louis",value: "#800000",lien:"NO"},
+						{label: "Cilaos",value: "#98FB98",lien:"https://upload.wikimedia.org/wikipedia/commons/4/43/Cirque_De_Cilaos_On_Reunion.jpg"},
+						{label: "Tampon",value: "#CD5C5C",lien:"NO"},
+						{label: "La Plaine Des Cafres",value: "#000080",lien:"NO"},
+						{label: "enclos du Tremblet",value: "#FFD700",lien:"https://upload.wikimedia.org/wikipedia/commons/3/37/Piton_de_la_Fournaise%2C_R%C3%A9union_Island_%28High_Resolution%29.jpg"},
+						{label: "Saint-Phillipe",value: "#66CDAA",lien:"NO"},
+					{label: "NORD",value: "#4169E1",lien:"NO"},
+						{label: "Saint-Denis",value: "#4B0082",lien: "https://upload.wikimedia.org/wikipedia/commons/b/b9/SaintDenisReunion003.jpg"},
+						{label: "Sainte-Marie",value: "#006400",lien:"NO"},
+						{label: "Sainte-Suzanne",value: "#008B8B",lien:"NO"},
+						{label: "La Possession",value: "#800000",lien:"NO"},
+						{label: "Le Port",value: "#98FB98",lien:"NO"}
 				],
 	source 		: [   
 			{ id:"E",label: "EST",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
@@ -278,20 +278,13 @@ var FuncTree = {
 		FuncTree.ptbid=new Array();
 		FuncTree.styles=new Array();
 		try{
-		var items = $('#jqxTree').jqxTree('getCheckedItems');
-			items.push(item);
-			//$('#listv').remove();
-			//$('#listv').append(  '<table>' );
-			for(var i in items)
-				if(items[i]!=null)
-					{
-						FuncTree.ptbid.push(items[i].value);
+		
 						
-						FuncTree.styles.push(FuncTree.chStyle(items[i].label));
-						//$('#listv').append( '<tr><td>' + items[i].label+ '</td></tr>' );
-					}
-
-			 //$('#listv').append(  '</table>' );
+						FuncTree.ptbid.push(item.value);
+						
+						FuncTree.styles.push(FuncTree.chStyle(item.label));
+						FuncTree.styles.push(FuncTree.chURL(item.label));
+					
 			}catch(ex)
 			{
 				;
@@ -310,6 +303,12 @@ var FuncTree = {
 		for(var i=0; i<FuncTree.srcStyle.length;i++)
 			if(FuncTree.srcStyle[i].label==lbprt)
 				return FuncTree.srcStyle[i].value;
+	},
+	chURL:function(lbprt)
+	{
+		for(var i=0; i<FuncTree.srcStyle.length;i++)
+			if(FuncTree.srcStyle[i].label==lbprt)
+				return FuncTree.srcStyle[i].lien;
 	},
 	append : function(txt,color)
 	{

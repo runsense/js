@@ -95,9 +95,17 @@ var MapsLib = {
 					});
 				if(FuncTree.styles[i].charAt(0)=='#')
 					{
-						//$("#jqxTree").css('color', FuncTree.styles[i]);
-						$("body").css('background-color', FuncTree.styles[i]);
+						if(FuncTree.styles[i+1]!="NO")
+						{
+							$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
+						}else
+						{
+							$("body").css('background-color', FuncTree.styles[i]);
+						}
+						
+						
 					}
+					FuncTree.styles=new Array();
 					
 				google.maps.event.addListener(layer, 'click', function(e) {
 				   var tmp=$("#listv").html();
