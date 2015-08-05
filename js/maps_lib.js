@@ -68,17 +68,31 @@ var MapsLib = {
     MapsLib.polygon=new Array();
 	try{
 		var tl=MapsLib.polygonTableID.length;
-		if(tl>1)
+		if(tl!=0)
 			map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
 		
 		
 		for(var i=0; i<tl; i++)
 			{
+			
 				var layer = new google.maps.FusionTablesLayer({
 					  query: {
 						from:   MapsLib.polygonTableID[i],
 						select: "geometry"
-					  }
+					  },
+					  styles: [{
+					  markerOptions: {
+						iconName: FuncTree.styles[i]
+					  },
+					  polygonOptions: {
+						fillColor: FuncTree.styles[i],
+						strokeColor: "#FFFFF0",
+						strokeWeight: "int"
+					  },
+					  polylineOptions: {
+						strokeColor: FuncTree.styles[i],
+						strokeWeight: "int"  }
+					}] 
 					  
 					});
 				MapsLib.polygon.push(layer);
