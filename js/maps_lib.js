@@ -49,6 +49,7 @@ var MapsLib = {
 		
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(MapsLib.map_centroid);
+		map.setZoom(FuncTree.zoom);
     });
 
     MapsLib.directionsDisplay.setMap(map);
@@ -95,8 +96,17 @@ var MapsLib = {
 					}] 
 					  
 					});
+				google.maps.event.addListener(layer, 'click', function(e) {
+				   $("#listv").empty();
+				   $("#listv").append(e.infoWindowHtml);
+				   MapsLib.chad='#arv';
+				   MapsLib.addrFromLatLng(e.latLng);
+				   
+				});
+				
 				MapsLib.polygon.push(layer);
 				MapsLib.polygon[i].setMap(map);	
+				
 				
 			}
 			
@@ -150,9 +160,9 @@ var MapsLib = {
 									opacity: '0.3'
 								});
 								$('#itin').empty();
-								$('#itin').append("poser la souris sur la LEGENDE pour revenir a la MAP (EN HAUT A DROITE)");
-										$('#itin').css("color","green");
-							});
+								FuncTree.append();
+							})
+							;
 							MapsLib.initialize();
 					});
 					   $('#btn').show();
@@ -256,7 +266,7 @@ var MapsLib = {
 				MapsLib.polygon[i]=null;
 			}
     map.setCenter(MapsLib.map_centroid);
-	map.setZoom(MapsLib.defaultZoom);
+	map.setZoom(FuncTree.zoom);
   },
   query: function(selectColumns, limit, callback) {
 	
@@ -283,7 +293,7 @@ var MapsLib = {
   
   getList: function() {
     var selectColumns = "nom,description,lat,lng";
-    MapsLib.query(selectColumns, 500, "MapsLib.displayList");
+    MapsLib.query(selectColumns, 10, "MapsLib.displayList");
   },
 
   displayList: function(json) {
@@ -314,26 +324,35 @@ var MapsLib = {
           </tr>\
         </thead>\
         <tbody>";
-
+		var lat=null;
+		var lng=null;
       for (var row in rows) {
         var nom = rows[row][0];
         var desc = rows[row][1];
-		var lat = rows[row][2];
-		var lng = rows[row][3];
-	
+		 lat = rows[row][2];
+		 lng = rows[row][3];
+		
         list_table += "\
-          <tr>\
+          <tr id="+nom+">\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
 			<td >" + lat + "</td>\
 			<td >" + lng+ "</td>\
           </tr>";
       }
-
+		
       list_table += "\
           </tbody>\
         </table>";
-
+		if(lat!=""&&lng!="")
+			{
+				if(lng<60)
+				{
+					MapsLib.map_centroid= new google.maps.LatLng(lat,lng);
+					map.setCenter(MapsLib.map_centroid);
+				}
+				
+			}
       results.append(list_table);
       
 
