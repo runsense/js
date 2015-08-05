@@ -275,16 +275,23 @@ var MapsLib = {
 	
 	for(var i in MapsLib.polygonTableID)
 	{
-		MapsLib.cpte=i;
-		$("#listv").append("<div title='Revenir MAP (A DROITE)' id="+i+" style='background-color: #FFFFFF;'/>");
-		var queryStr = [];
-		queryStr.push("SELECT " + selectColumns);
-		queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
-	
+		if(MapsLib.polygonTableID[i]!="NO")
+		{
+			MapsLib.cpte=i;
+			$("#listv").append("<div title='Revenir MAP (A DROITE)' id="+i+" style='background-color: #FFFFFF;'/>");
+			var queryStr = [];
+			queryStr.push("SELECT " + selectColumns);
+			queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
+			
 
-		var sql = encodeURIComponent(queryStr.join(" "));
-		$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
-	
+			var sql = encodeURIComponent(queryStr.join(" "));
+			$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
+		}else
+		{
+			$("#listv").empty();
+			$("#listv").append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");
+		}
+			
 	}
 	
 	$('#itin').empty();
@@ -300,8 +307,10 @@ var MapsLib = {
   },
 
   displayList: function(json) {
-	
-    MapsLib.handleError(json);
+	try{
+		MapsLib.handleError(json);
+		}catch( e)
+		{ ;}
     var columns = json["columns"];
 	
     var rows = json["rows"];
@@ -349,8 +358,9 @@ var MapsLib = {
         </table>";
 		if(lat!=""&&lng!="")
 			{
-				if(lng<60)
+				if(lng<55.8)
 				{
+					
 					MapsLib.map_centroid= new google.maps.LatLng(lat,lng);
 					map.setCenter(MapsLib.map_centroid);
 				}

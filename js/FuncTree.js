@@ -76,7 +76,7 @@ var FuncTree = {
                     {  id:"SAn_md", label: txtInit[2],value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},
 					{ id:"SAn_v", label: txtInit[3],value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}						
 				 ] },
-				 { id:"SR", label: "Sainte-Rose", value:"SainteRose", items: [
+				 { id:"SR", label: "Sainte-Rose", value:"1gIcPI4SAohpVFM0seVxdlBAw2b2zesvpZH4QJ6DC", items: [
 					{ id:"SR_t", label: txtInit[0],value:"1GKArjzvczShC_oTmoeSPVyxL_kfMEiyriOq4njIt"},
                     { id:"SR_s", label: txtInit[1],value:"1fWsTyPLLg_jZbHXLmn921wWRYNpp7Mph64n9PaCA"},
                     {  id:"SR_md", label: txtInit[2],value:"1JelP0FaMsEp22nh7DWvjGWA-HHEll4WsusdNze3W"},
@@ -174,7 +174,7 @@ var FuncTree = {
 					{ id:"SPA_a", label: txtInit[5],value:"1yvNIMDlSsqd6REMTpDqNBKabGeFft-kquWsWvPA1"}						
 				 ] },
 				 { id:"ES", label: "Etang Salé",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
-					{ id:"ES_t",label: txtInit[0],value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp"},
+					{ id:"ES_t",label: txtInit[0],value:"1YXAJweeNZAKU2-Waa64ZIymHQ0bSI7lISM6bYHd6"},
                     { id:"ES_s",label: txtInit[1],value:"1Um2dvNwSoRN_SYsZMLjTwCR-qEhSVcCMZQgjncBF"},
                     {  id:"ES_md", label: txtInit[2], value:"1Ya4SFxo6lr8uNoEBRhH_E8Zpq3InMkNmEilUdVfT"},
 					{ id:"ES_v", label: txtInit[3], value:"1ngS7I2W3ZEACE4VpYby5j0cKYTBJCzmtmYxUkPap"},
@@ -184,7 +184,7 @@ var FuncTree = {
 				{ id:"ED", label: "Entre-Deux", value:"1uU-__tmwAmqtTXPsi57LhiD969SwF0xWjbnDEw-7", items: [
 					{ id:"ED_a", label: txtInit[5], value:"1rZG5fmVIUptJwXk5uiJfjVuIn-ooM9WuII0UkEy3"}						
 				 ] },
-				 { id:"Av", label: "Les Avirons", items: [
+				 { id:"Av", label: "Les Avirons", value:"NO", items: [
 					{ id:"Av_t", label: txtInit[0],value:"1mWz8sMkRVFm7820e4XBNqBEFRI0gWQ_0-OxVQ0_B"},
                     { id:"Av_s", label: txtInit[1],value:"1mMsbTg4i0b6n8cXi4TYQzK6Ckbe4MMYzTqQ9fniT"},
                     {  id:"Av_md", label: txtInit[2],value:"1hv5ee8OPODPryBpl0DqrwwzAzV0yvt3DnJ-AZBDB"},
@@ -245,17 +245,17 @@ var FuncTree = {
 					{ id:"PC_v", label: txtInit[3], value:"1EBGjcCB-FRK6AXy9EJ-lmLaQHfNsnXS_uhSNWz71"},
 					{ id:"PC_a", label: txtInit[5], value:"1iTq7746ceYVrcXqcM3Ugu1CYAO_qNR09CoWCUuNP"}						
 				 ] },
-				  { id:"eT", label: "enclos du Tremblet", value:"1NId8irdjYKXfpFKk5NZ-SD7ZGkUhl2w6m1LL5t4F", items: [
+				  { id:"eT", label: "enclos du Tremblet", value:"1b17WXT7XV9FbqVEmjlYXe45ZoIUPCK1sG_sn_WuO", items: [
                     { id:"eT_s",label: txtInit[1], value:"1HG3aQEg2D1q_4d5n2_Gmk8rMQl6a995HY7dPJCZR"},
 					{ id:"eT_v", label: txtInit[3], value:"1cRObSW2PCNmCjRlONmIKRdj2VYbee9_bpa2oTHiX"}
 				  ] }
 				  ,
-				  { id:"eT", label: "Saint-Phillipe", value:"1H9qvzwkRMhjjEwgrs_CToYkSPKU9JpKz0NzxRMhY", items: [
-                    { id:"T_t", label: txtInit[0],value:"1t4UNzRx7NREpOPfUh-jcfjj4jmZdlCrcV5UTnMBK"},
-                    { id:"T_s", label: txtInit[1],value:"1tk1Ncnn2rK7hh9uNag18vlksj_ZETxBqzxX6edbw"},
-                    {  id:"T_md", label: txtInit[2],value:"1tJJW6s2ELbV-cSIecvLroNt9u1pY_ExyTSxEsyDG"},
-					{ id:"T_v", label: txtInit[3],value:"1p3_0vNQxgdOQMXhkO6PWCzUoBD5XLVThjWcFzDrL"},
-					{ id:"T_a", label: txtInit[5],value:"136pTZ-NKGCp0d1jqeOBXKXJJmK3sdF51h6lhiiF5"}
+				  { id:"SPh", label: "Saint-Phillipe", value:"1H9qvzwkRMhjjEwgrs_CToYkSPKU9JpKz0NzxRMhY", items: [
+                    { id:"SPh_t", label: txtInit[0],value:"1t4UNzRx7NREpOPfUh-jcfjj4jmZdlCrcV5UTnMBK"},
+                    { id:"SPh_s", label: txtInit[1],value:"1tk1Ncnn2rK7hh9uNag18vlksj_ZETxBqzxX6edbw"},
+                    {  id:"SPh_md", label: txtInit[2],value:"1tJJW6s2ELbV-cSIecvLroNt9u1pY_ExyTSxEsyDG"},
+					{ id:"SPh_v", label: txtInit[3],value:"1p3_0vNQxgdOQMXhkO6PWCzUoBD5XLVThjWcFzDrL"},
+					{ id:"SPh_a", label: txtInit[5],value:"136pTZ-NKGCp0d1jqeOBXKXJJmK3sdF51h6lhiiF5"}
 				  ] }
 				  
 				  
@@ -326,12 +326,9 @@ var FuncTree = {
 		
 				var elmt = event.args.element;
 				var item = $('#jqxTree').jqxTree('getItem',elmt );
-					var bsrc = FuncTree.schrrefifd(item.label);
+					
 				if($('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement)!=null)
-					if(bsrc)
-						FuncTree.zoom=11;
-					else	
-						FuncTree.zoom=12;
+					FuncTree.zoom=12;
 				else
 					FuncTree.zoom=10;
                 
