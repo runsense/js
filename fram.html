@@ -22,7 +22,6 @@ and open the template in the editor.
         height: 100%;
         margin: 0px;
         padding: 0px;
-		background-image: url("http://runsense.github.io/js/f.png");
       }
 	  
 	#map_canvas {
@@ -119,6 +118,7 @@ and open the template in the editor.
         $(function() {
 		
           MapsLib.initialize();
+		  $("body").css('background-image', 'url(http://runsense.github.io/js/f.png)');
 		  $("#listv").on("mouseenter",function(){
 		  
 				$(this).animate({

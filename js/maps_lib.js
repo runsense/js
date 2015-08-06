@@ -93,10 +93,14 @@ var MapsLib = {
 					}] 
 					  
 					});
-				if(FuncTree.styles[i+1].charAt(0)!='#')
+					var chcmp=FuncTree.styles[i+1];
+				if(chcmp.charAt(0)!='#'&&chcmp!='NO')
 					{
 						$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
 					}
+				else
+					$("body").css('background-image', 'url(http://runsense.github.io/js/f.png)');
+					
 					FuncTree.styles=new Array();
 					
 				google.maps.event.addListener(layer, 'click', function(e) {
