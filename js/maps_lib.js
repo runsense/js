@@ -56,7 +56,7 @@ var MapsLib = {
                 map.setZoom(FuncTree.zoom);
     });
     MapsLib.doSearch();
-	
+
   },
 
   doSearch: function(location) {
