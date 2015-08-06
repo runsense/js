@@ -93,17 +93,9 @@ var MapsLib = {
 					}] 
 					  
 					});
-				if(FuncTree.styles[i].charAt(0)=='#')
+				if(FuncTree.styles[i+1].charAt(0)!='#')
 					{
-						if(FuncTree.styles[i+1]!="NO")
-						{
-							$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
-						}else
-						{
-							$("body").css('background-color', FuncTree.styles[i]);
-						}
-						
-						
+						$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
 					}
 					FuncTree.styles=new Array();
 					
