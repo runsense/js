@@ -1,4 +1,4 @@
-var txtInit = ["terrain","sentier","manger&dormir","visite","nuit","activité","http://runsense.github.io/js/"];
+var txtInit = ["terrain","sentier","manger&dormir","visite","nuit","activité","http://runsense.github.io/js/img/"];
 var FuncTree = FuncTree || {};
 var FuncTree = {
 	ptbid		:new Array(),
