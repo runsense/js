@@ -2,7 +2,7 @@ var txtInit = ["terrain","sentier","manger&dormir","visite","nuit","activité","h
 var FuncTree = FuncTree || {};
 var FuncTree = {
 	ptbid		:new Array(),
-	styles		:new Array(),
+	styles		:["","http://runsense.github.io/js/f.png"],
 	zoom		:10,
 	srcStyle		:[
 					{label: txtInit[0],value: "play"},
@@ -283,7 +283,12 @@ var FuncTree = {
 						FuncTree.ptbid.push(item.value);
 						
 						FuncTree.styles.push(FuncTree.chStyle(item.label));
-						FuncTree.styles.push(FuncTree.chURL(item.label));
+						var url=FuncTree.chURL(item.label);
+						if(url!=null)
+							FuncTree.styles.push(FuncTree.chURL(item.label));
+						else
+							FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");
+
 					
 			}catch(ex)
 			{
@@ -300,6 +305,7 @@ var FuncTree = {
 	},
 	chStyle :function(lbprt)
 	{
+		
 		for(var i=0; i<FuncTree.srcStyle.length;i++)
 			if(FuncTree.srcStyle[i].label==lbprt)
 				return FuncTree.srcStyle[i].value;

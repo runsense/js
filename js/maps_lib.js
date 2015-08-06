@@ -80,7 +80,7 @@ var MapsLib = {
 					  },
 					  styles: [{
 					  markerOptions: {
-						iconName: FuncTree.styles[i]
+						iconName: FuncTree.styles[i],
 					  },
 					  polygonOptions: {
 						fillColor: FuncTree.styles[i],
@@ -102,8 +102,6 @@ var MapsLib = {
 					}
 				else
 					$("body").css('background-image', 'url(http://runsense.github.io/js/f.png)');
-					$("body").css('background-repeat', 'no-repeat');
-					$("body").css('background-size', '100%');
 					
 					FuncTree.styles=new Array();
 					
