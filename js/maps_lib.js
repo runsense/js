@@ -97,9 +97,13 @@ var MapsLib = {
 				if(chcmp.charAt(0)!='#'&&chcmp!='NO')
 					{
 						$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
+						$("body").css('background-repeat', 'no-repeat');
+						$("body").css('background-size', '100%');
 					}
 				else
 					$("body").css('background-image', 'url(http://runsense.github.io/js/f.png)');
+					$("body").css('background-repeat', 'no-repeat');
+					$("body").css('background-size', '100%');
 					
 					FuncTree.styles=new Array();
 					
