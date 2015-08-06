@@ -29,7 +29,12 @@ var MapsLib = {
 
   initialize: function() {
 	MapsLib.geocoder = new google.maps.Geocoder();
-	FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
+	try{
+		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
+	}catch(e)
+	{
+		;
+	}
     var myOptions = {
       zoom: MapsLib.defaultZoom,
       center: MapsLib.map_centroid,
@@ -50,8 +55,12 @@ var MapsLib = {
 		map.setZoom(FuncTree.zoom);
     });
 
-    FuncRoute.directionsDisplay.setMap(map);
-
+	try{
+		FuncRoute.directionsDisplay.setMap(map);
+	}catch(e)
+	{
+		;
+	}
 	google.maps.event.addListener(map, 'mouseover', function(event) {
                 map.setZoom(FuncTree.zoom);
     });
@@ -93,29 +102,34 @@ var MapsLib = {
 					}] 
 					  
 					});
-					var chcmp=FuncTree.styles[i+1];
-				if(chcmp.charAt(0)!='#'&&chcmp!='NO')
-					{
-						$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
-						$("body").css('background-repeat', 'no-repeat');
-						$("body").css('background-size', '100%');
-					}
-				else
-					$("body").css('background-image', 'url(http://runsense.github.io/js/f.png)');
-					
-					FuncTree.styles=new Array();
-					
-				google.maps.event.addListener(layer, 'click', function(e) {
-				   var tmp=$("#listv").html();
-				   $("#listv").empty();
-				   $("#listv").append(e.infoWindowHtml);
-				   $("#listv").append(tmp);
-				   MapsLib.chad='#arv';
-				   MapsLib.addrFromLatLng(e.latLng);
-				    
-						map.setZoom(13);
-				});
-				
+					try{
+							var chcmp=FuncTree.styles[i+1];
+						if(chcmp.charAt(0)!='#'&&chcmp!='NO')
+							{
+								$("body").css('background-image', 'url(' + FuncTree.styles[i+1] + ')');
+								$("body").css('background-repeat', 'no-repeat');
+								$("body").css('background-size', '100%');
+							}
+						else
+							$("body").css('background-image', 'url(http://runsense.github.io/js/f.png)');
+							
+							$("#panel").css('border-color',FuncTree.styles[i]);
+							FuncTree.styles=new Array();
+							
+						google.maps.event.addListener(layer, 'click', function(e) {
+						   var tmp=$("#listv").html();
+						   $("#listv").empty();
+						   $("#listv").append(e.infoWindowHtml);
+						   $("#listv").append(tmp);
+						   MapsLib.chad='#arv';
+						   MapsLib.addrFromLatLng(e.latLng);
+						
+								map.setZoom(13);
+						});
+					}catch(e)
+						{
+							;
+						}
 				MapsLib.polygon.push(layer);
 				MapsLib.polygon[i].setMap(map);	
 				
@@ -196,9 +210,6 @@ var MapsLib = {
                     {
                         MapsLib.addrFromLatLng(pos.latLng);
                        
-                    }else
-                    {
-                        MapsLib.takeInf(map);
                     }
                    
 
@@ -241,8 +252,8 @@ var MapsLib = {
 	}
 	
 	$('#itin').empty();
-	$('#itin').append("poser la souris sur le texte en BAS pour la description");
-						$('#itin').css("color","blue");
+	
+	FuncTree.append("poser la souris sur le texte en BAS pour la description","blue");
 	
 	
   },
