@@ -257,6 +257,12 @@
 			if(FuncTree.source[i].label==lbprt)
 				return FuncTree.source[i];
 			
+	},
+	append : function(txt,color)
+	{
+		$('#itin').append(txt);
+		$('#itin').css("color",color);
+		$('#itin').css("background-color","#FFFFFF");
 	}
 			
 			};

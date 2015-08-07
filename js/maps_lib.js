@@ -117,10 +117,15 @@ var MapsLib = {
 							FuncTree.styles=new Array();
 							
 						google.maps.event.addListener(layer, 'click', function(e) {
-						   var tmp=$("#listv").html();
+						  /* var tmp=$("#listv").html();
 						   $("#listv").empty();
-						   $("#listv").append(e.infoWindowHtml);
-						   $("#listv").append(tmp);
+							$("#listv").append("<div title='Revenir MAP (A DROITE)' id='finfo' '/>");
+								$("#finfo").append("<div title='Revenir MAP (A DROITE)' id='infoclic' style='background-color: #FFFFFF;'/>");
+									$("#finfo").prepend("<fieldset style='width:100px;'><legend>Information du clic</legend>");
+									   $("#infoclic").append(e.infoWindowHtml);
+									   $("#infoclic").append(tmp);
+									$("#finfo").append("</fieldset>");*/
+									
 						   MapsLib.chad='#arv';
 						   MapsLib.addrFromLatLng(e.latLng);
 						

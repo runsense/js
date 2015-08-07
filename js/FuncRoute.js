@@ -4,6 +4,7 @@ var FuncRoute = {
   directionsService : new google.maps.DirectionsService(),
   calcRoute: function () {
 			$('#itin').empty();
+			$('#itin').show();
               var start = MapsLib.s;
                 var end = MapsLib.e;
 			if(end!==null)
@@ -25,7 +26,7 @@ var FuncRoute = {
 					   $('small').hide();
 					   
 					   $('#btn').unbind();
-					   $('#btn').val("Arbre");
+					   
 					   $('#btn').bind('click',function(){
 							$(this).hide();
 							$('#jqxTree').show();
@@ -45,8 +46,9 @@ var FuncRoute = {
 								$('#itin').empty();
 								FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
 								,"green");
-							})
-							;
+							});
+							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
+							FuncRoute.directionsService = new google.maps.DirectionsService();
 							MapsLib.initialize();
 					});
 					   $('#btn').show();
