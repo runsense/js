@@ -2,6 +2,7 @@ var txtInit = ["terrain","sentier","manger&dormir","visite","nuit","activité","h
 
 var FuncTree = FuncTree || {};
 var FuncTree = {
+	updBackG	:"body",
 	ptbid		:new Array(),
 	styles		:["","http://runsense.github.io/js/f.png"],
 	zoom		:10,

@@ -41,11 +41,9 @@
 		var theme = prepareSimulator("jqxTree");
 	
 
-	
-	   $('#jqxTree').jqxTree({ theme: theme, checkSize: 15, hasThreeStates: true, checkboxes: true, source: FuncTree.source, width: '100%', height: '100%' });
             initSimulator("jqxTree");
 	
-			$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
+			$('#jqxTree').jqxTree({source: FuncTree.source, height: '300px', width: '300px' });
 	$('#jqxTree').on('expand', function (event) {
 		
 		
@@ -110,6 +108,7 @@
 	
 		
     MapsLib.initialize();
+	$("#jqxTree").jqxTree('expandItem', $("#S")[0]);
 	});
     </script>
 </head>
