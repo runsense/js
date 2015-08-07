@@ -2,7 +2,7 @@
 
 var FuncTree = FuncTree || {};
 var FuncTree = {
-	updBackG	:".ui-page",
+	updBackG	:"#recherche",
 	ptbid		:new Array(),
 	styles		:["","http://runsense.github.io/js/f.png"],
 	zoom		:10,
