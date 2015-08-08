@@ -1,4 +1,4 @@
-var txtInit = ["Foot et tennis","sentiers et routes","manger & dormir","Lieu dit et quartier","boite de nuit & pub","activit&#233; touristique","http://runsense.github.io/js/img/","http://maps.google.com/mapfiles/kml/shapes/",".png"];
+var txtInit = ["Foot et tennis","sentiers et routes","manger & dormir","Lieu dit et quartier","boite de nuit & pub","loisirs touristique","http://runsense.github.io/js/img/","http://maps.google.com/mapfiles/kml/shapes/",".png"];
 
 var FuncTree = FuncTree || {};
 var FuncTree = {
