@@ -20,6 +20,7 @@ var FuncRoute = {
 						
 					  FuncRoute.directionsDisplay.setDirections(response);
 					   MapsLib.zoom(map);
+					   $('#itin').empty();
 					   FuncRoute.directionsDisplay.setPanel(document.getElementById('itin'));
 					  
 					   $('#jqxTree').hide();
@@ -58,8 +59,10 @@ var FuncRoute = {
 					   
 					}else
 					{
-						$('#itin').append("impossible de tracer l'itinéraire");
-						$('#itin').css("color","red");
+						$('#itin').empty();
+						$('#itin').append("<h1>adresse non reconnu!!</h1>");
+						$('#itin').css("color","#000");
+						$('#itin').css("background-color","red");
 					}
 				  });
 				  
