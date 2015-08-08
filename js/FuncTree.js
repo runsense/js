@@ -368,7 +368,7 @@ var FuncTree = {
 					
 						$("#listv").empty();
 						
-						FuncTree.applysrch(i);
+						FuncTree.applysrch(null);
 						$('small').hide();
 						FuncTree.zoom=10;
 						MapsLib.doSearch();
