@@ -2,6 +2,9 @@ var txtInit = ["Foot et tennis","sentiers et routes","manger & dormir","Lieu dit
 
 var FuncTree = FuncTree || {};
 var FuncTree = {
+	bchk		:false,
+	bgrow		:false,
+	bslct		:false,
 	updBackG	:"body",
 	ptbid		:new Array(),
 	styles		:["","http://runsense.github.io/js/f.png"],
@@ -275,47 +278,47 @@ var FuncTree = {
 		var rplc='#'+elmt.id;
 				$("#jqxTree").jqxTree('checkItem', $(rplc)[0], true);
 	},
-	applysrch :function(item)
+	applysrch :function(i)
 	{
 		FuncTree.ptbid=new Array();
 		FuncTree.styles=new Array();
 		try{
 		
 						
-						FuncTree.ptbid.push(item.value);
+						FuncTree.ptbid.push(i.value);
 						
-						FuncTree.styles.push(FuncTree.chStyle(item.label));
-						var url=FuncTree.chURL(item.label);
-						if(url!=null)
-							FuncTree.styles.push(FuncTree.chURL(item.label));
+						FuncTree.styles.push(FuncTree.chStyle(i.label));
+						var u=FuncTree.chURL(i.label);
+						if(u!=null)
+							FuncTree.styles.push(FuncTree.chURL(i.label));
 						else
 							FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");
 
 					
-			}catch(ex)
+			}catch(e)
 			{
 				;
 			}
 		
 	},
-	schrrefifd :function(lbprt)
+	schrrefifd :function(l)
 	{
 		for(var i=0; i<FuncTree.source.length;i++)
-			if(FuncTree.source[i].label==lbprt)
+			if(FuncTree.source[i].label==l)
 				return true;
 			
 	},
-	chStyle :function(lbprt)
+	chStyle :function(l)
 	{
 		
 		for(var i=0; i<FuncTree.srcStyle.length;i++)
-			if(FuncTree.srcStyle[i].label==lbprt)
+			if(FuncTree.srcStyle[i].label==l)
 				return FuncTree.srcStyle[i].value;
 	},
-	chURL:function(lbprt)
+	chURL:function(l)
 	{
 		for(var i=0; i<FuncTree.srcStyle.length;i++)
-			if(FuncTree.srcStyle[i].label==lbprt)
+			if(FuncTree.srcStyle[i].label==l)
 				return FuncTree.srcStyle[i].lien;
 	},
 	append : function(txt,color)
@@ -327,50 +330,112 @@ var FuncTree = {
 	
 };
 
-	$('#jqxTree').jqxTree({checkboxes: false, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
+	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
 	$('#jqxTree').on('expand', function (event) {
-		
-		
-				var elmt = event.args.element;
-				var item = $('#jqxTree').jqxTree('getItem',elmt );
-					
-				if($('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement)!=null)
+		var e = event.args.element;
+		var item = $('#jqxTree').jqxTree('getItem',e );
+		if($('#jqxTree').jqxTree('getItem',e.parentElement.parentElement)!=null)
 					FuncTree.zoom=12;
 				else
 					FuncTree.zoom=10;
+		if(!FuncTree.bgrow)
+		{
+				FuncTree.bgrow=true;
+				
+					$('#jqxTree').jqxTree('checkItem', e, true);
+				
+					
+				
                 
 			
 					$('small').show();
 					FuncTree.applysrch(item);
 					MapsLib.doSearch();
+					$('#jqxTree').jqxTree('ensureVisible', e);
+		}
 				
-           });
-    $('#jqxTree').on('collapse', function (event) {
-		FuncTree.ptbid=new Array();
-		//$('#jqxTree').jqxTree('uncheckAll');
-                var args = event.args;
-                var elmt = args.element;
-                
-				/*$('#jqxTree').jqxTree('selectItem', elmt);
-					$('#jqxTree').jqxTree('refresh');*/
-				
-					$("#listv").empty();
-					FuncTree.applysrch(null);
-					$('small').hide();
-					FuncTree.zoom=10;
-					MapsLib.doSearch();
-		$('#jqxTree').jqxTree('collapseAll');
+    });
+    $('#jqxTree').on('collapse', function (ev) {
+		if(!FuncTree.bgrow)
+		{
+			FuncTree.bgrow=true;
+			FuncTree.ptbid=new Array();
+			//$('#jqxTree').jqxTree('uncheckAll');
+					var args = ev.args;
+					var elmt = args.element;
+					
+					var i = $('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement);
+					
+						$("#listv").empty();
+						
+						FuncTree.applysrch(i);
+						$('small').hide();
+						FuncTree.zoom=10;
+						MapsLib.doSearch();
+					/*if($('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement)!=null)
+					{
+						var prtItm = $('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement);
+							
+						$('#jqxTree').jqxTree('collapseItem',prtItm.element);
+					}*/
+			}
+		
 			
     });
-	$('#jqxTree').bind('select', function (event) {
-			
-                var htmlElement = event.args.element;
-                var item = $('#jqxTree').jqxTree('getItem', htmlElement);
-				FuncTree.applysrch(item);
-					MapsLib.doSearch();
+	$('#jqxTree').bind('select', function (ev) {
+				
+				
+					var a = ev.args;
+					var e = a.element;
+					var bunck=false;
+					var items = $('#jqxTree').jqxTree('getCheckedItems');
+					for(var i in items)
+						if(items[i].element==e)
+							bunck=true;
+					var i =null;
+					if(bunck)
+						$('#jqxTree').jqxTree('uncheckItem', e);
+					else
+					{
+						i = $('#jqxTree').jqxTree('getItem', e);
+						for(var cpt in txtInit)
+							if(txtInit[cpt]==i.label)
+								FuncTree.bgrow=true;
+						
+						$('#jqxTree').jqxTree('checkItem', e, true);
+						 
+					}	
+					
+					FuncTree.applysrch(i);
+						MapsLib.doSearch();
+					//$('#jqxTree').jqxTree('ensureVisible', e);	
+				
 				
 				
 					
-            });
+    });
+	$('#jqxTree').on('checkChange', function (ev)	
+	{	
+	
+		if(!FuncTree.bgrow)
+		{
+			var a = ev.args;
+			var e = a.element;
+			var items = $('#jqxTree').jqxTree('getCheckedItems');
+			var pre = e.parentElement.parentElement;
+			
+					for(var i in items)
+						if(items[i].element!=pre&&items[i].element!=e)
+							$('#jqxTree').jqxTree('uncheckItem', items[i].element);
+			FuncTree.bgrow=true;
+			
+			if(a.checked)
+				$('#jqxTree').jqxTree('expandItem', e);
+			else
+				$('#jqxTree').jqxTree('collapseItem', e);
+				
+		
+		}
+	}); 
 
 

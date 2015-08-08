@@ -69,6 +69,7 @@ var MapsLib = {
   },
 
   doSearch: function(location) {
+	FuncTree.bgrow = false;
 	MapsLib.clearSearch();
   
 	MapsLib.polygonTableID=FuncTree.ptbid;
@@ -300,7 +301,8 @@ var MapsLib = {
         <tbody>";
 		var lat=null;
 		var lng=null;
-      for (var row in rows) {
+		var row;
+      for ( row in rows) {
         var nom = rows[row][0];
         var desc = rows[row][1];
 		 lat = rows[row][2];
@@ -329,19 +331,23 @@ var MapsLib = {
 				
 			}
       results.append(list_table);
-      
-
-      /*$("#list_table").dataTable({
-          "aoColumns": [ // tells DataTables how to perform sorting for each column
-              null, //School name with HTML for the link, which we want to ignore
-              null
-          ],
-		  
-          "bFilter": false, // disable search box 
-          "bInfo": false, //results count
-          "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
-          "bAutoWidth": true
-      });*/
+     // alert(row);
+		if(row>=10)
+		  {
+			$("#list_table").dataTable({
+			  "aoColumns": [ // tells DataTables how to perform sorting for each column
+				  null, 
+				  null,
+				  null, 
+				  null
+			  ],
+			  
+			  "bFilter": false, // disable search box 
+			  "bInfo": false, //results count
+			  "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
+			  "bAutoWidth": true
+			});
+		  }
     }
 
    },
