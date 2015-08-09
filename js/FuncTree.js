@@ -25,7 +25,7 @@ var FuncTree = {
 						{label: "La Plaine Des Palmistes",value: "#CD5C5C",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b3/Ppalmistes2.jpg"},
 						{label: "Salazie",value: "#000080",lien:"http://www.transeet.fr/wp-content/uploads/2013/05/Ile-de-la-Reunion-510x350.jpg"},
 					{label:"OUEST", value:"#8B0000",lien:txtInit[6]+"Ouest.png"},
-						{label: "Mafate",value: "#4B0082",lien:txtInit[6]+"Mafate.png"},
+						{label: "Mafate",value: "#4B0082",lien:txtInit[6]+"mafate.png"},
 						{label: "Saint-Gilles",value: "#006400",lien:txtInit[6]+"saintGilles.png"},
 						{label: "Saint-Leu",value: "#008B8B",lien:txtInit[6]+"saintLeu.png"},
 						{label: "TroisBassins",value: "#800000",lien:txtInit[6]+"troisBassins.png"},
