@@ -294,8 +294,6 @@ var MapsLib = {
           <tr>\
             <th>Nom</th>\
 			<th>Description</th>\
-			<th>Lat</th>\
-			<th>Lng</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -312,8 +310,6 @@ var MapsLib = {
           <tr id="+nom+">\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
-			<td >" + lat + "</td>\
-			<td >" + lng+ "</td>\
           </tr>";
       }
 		
@@ -336,8 +332,6 @@ var MapsLib = {
 		  {
 			$("#list_table").dataTable({
 			  "aoColumns": [ // tells DataTables how to perform sorting for each column
-				  null, 
-				  null,
 				  null, 
 				  null
 			  ],
