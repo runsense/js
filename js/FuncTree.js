@@ -9,6 +9,7 @@ var FuncTree = {
 	ptbid		:new Array(),
 	styles		:["","http://runsense.github.io/js/f.png"],
 	zoom		:10,
+	txtInit		:[txtInit[0],txtInit[1],txtInit[2],txtInit[3],txtInit[4],txtInit[5]],     
 	srcStyle		:[
 					{label: txtInit[0],value: "play"},
 					{label: txtInit[1],value: "hiker"},
@@ -87,6 +88,7 @@ var FuncTree = {
                     { id:"SR_s", icon:txtInit[7]+"hiker"+txtInit[8], label: txtInit[1],value:"1fWsTyPLLg_jZbHXLmn921wWRYNpp7Mph64n9PaCA"},
                     {  id:"SR_md", icon:txtInit[7]+"dining"+txtInit[8], label: txtInit[2],value:"1JelP0FaMsEp22nh7DWvjGWA-HHEll4WsusdNze3W"},
 					{ id:"SR_v", icon:txtInit[7]+"realestate"+txtInit[8], label: txtInit[3],value:"1beWOfA6DyHQS6-Kr9eZtG8i2io7Q4J9NquFgQyG-"},
+					{ id:"SB_n", icon:txtInit[7]+"star"+txtInit[8],label: txtInit[4],value:"1a-nJFvtF_lUeKPNpgQbFubQXRXlkubvH6glUBg8v"},
 					{ id:"PP_a", icon:txtInit[7]+"ranger_station"+txtInit[8],label: txtInit[5],value:"1iPRpywzSmOxOlLm5O-uJmrbbnn6YHGzl1rhuaJzA"}						
 				 ] },
 				{ id:"PP", html: "<span title='cliquer sur la fl&#232;che et ouvrer le menu' style='color: #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items: [
@@ -125,7 +127,8 @@ var FuncTree = {
 					{ id:"SS_t", icon:txtInit[7]+"play"+txtInit[8], label: txtInit[0],value:"1uP6kIJhbe2VDpT-bXB9uMosjNNejhQGt_P7Ey2jf"},
                     { id:"SS_s", icon:txtInit[7]+"hiker"+txtInit[8], label: txtInit[1],value:"14tKW-WkeyvLupjFAoWXMbAgEa9--pO18c1Jnr_5j"},
                     {  id:"SS_md", icon:txtInit[7]+"dining"+txtInit[8], label: txtInit[2],value:"1CjnaMnc4aEFf3b9n498eqJaZKf9E3mndyDaF5PjG"},
-					{ id:"SS_v", icon:txtInit[7]+"realestate"+txtInit[8], label: txtInit[3],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"}						
+					{ id:"SS_v", icon:txtInit[7]+"realestate"+txtInit[8], label: txtInit[3],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"},
+					{ id:"Por_n", icon:txtInit[7]+"star"+txtInit[8],label: txtInit[4],value:"1oYTut7YPTzdcOtwYCRlkpQylcjllRvwcrnizBN5Q"},
 				 ] },
 				{ id:"Pos",  html: "<span title='cliquer sur la fl&#232;che et ouvrer le menu' style='color: #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED", items: [
 					{ id:"Pos_t", icon:txtInit[7]+"play"+txtInit[8], label: txtInit[0], value:"1lr8c-nv0zSUMfdnWxpvmIZBf4EOcNSduutH7z-7D"},
@@ -424,20 +427,31 @@ var FuncTree = {
 		{
 			var a = ev.args;
 			var e = a.element;
-			var items = $('#jqxTree').jqxTree('getCheckedItems');
-			var pre = e.parentElement.parentElement;
-			
-					for(var i in items)
-						if(items[i].element!=pre&&items[i].element!=e)
-							$('#jqxTree').jqxTree('uncheckItem', items[i].element);
+			var item = $('#jqxTree').jqxTree('getItem', e);
+			var bIn=false;
+			for(var i in FuncTree.txtInit)
+				if(item.label==txtInit[i])
+					bIn=true;
+			if(!bIn)
+			{			
+				var items = $('#jqxTree').jqxTree('getCheckedItems');
+				var pre = e.parentElement.parentElement;
+				
+						for(var i in items)
+							if(items[i].element!=pre&&items[i].element!=e)
+								{
+									alert(items[i].label);
+									$('#jqxTree').jqxTree('uncheckItem', items[i].element);
+								}
+			}
 			FuncTree.bgrow=true;
 			
 			if(a.checked)
 				$('#jqxTree').jqxTree('expandItem', e);
 			else
-				$('#jqxTree').jqxTree('collapseItem', e);
+				{$('#jqxTree').jqxTree('collapseItem', e);}
 				
-		
+			$("#jqxTree").jqxTree('selectItem', null);
 		}
 	}); 
 
