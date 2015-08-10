@@ -288,24 +288,26 @@ var MapsLib = {
     else {
 
       //set table headers
+	  var l = rows.length;
       var list_table = "\
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
             <th>Nom</th>\
-			<th>Description</th>\
+			<th>Description </th><th style='background-color:blue'>taille: "+l +"</th>\
           </tr>\
         </thead>\
         <tbody>";
 		var lat=null;
 		var lng=null;
 		var row;
+		
       for ( row in rows) {
         var nom = rows[row][0];
         var desc = rows[row][1];
 		 lat = rows[row][2];
 		 lng = rows[row][3];
-		
+			
         list_table += "\
           <tr id="+nom+">\
             <td >" + nom + "</td>\
@@ -339,7 +341,7 @@ var MapsLib = {
 			  "bFilter": false, // disable search box 
 			  "bInfo": false, //results count
 			  "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
-			  "bAutoWidth": true
+			  "bAutoWidth": false
 			});
 		  }
     }
