@@ -440,7 +440,6 @@ var FuncTree = {
 						for(var i in items)
 							if(items[i].element!=pre&&items[i].element!=e)
 								{
-									alert(items[i].label);
 									$('#jqxTree').jqxTree('uncheckItem', items[i].element);
 								}
 			}
