@@ -1,4 +1,4 @@
-var txtInit = ["Foot et tennis","sentiers et routes (<b><a title='liens ext.' href='http://www.trail-kreol.com/' >TRAIL</a></b>)","manger & dormir (<b><a title='liens ext.' href='http://www.reunion.fr/' >IRT</a></b>)","Lieu dit et quartier  (<b><a title='liens ext.' href='http://www.mi-aime-a-ou.com/' >Mi aime a ou</a></b>)","boite de nuit & pub  (<b><a title='liens ext.' href='http://www.azenda.re/' >Azenda</a></b>)","loisirs, info marinne (<b><a title='liens ext.' href='http://www.reunion.fr/' >IRT</a></b>)","http://runsense.github.io/js/img/","http://maps.google.com/mapfiles/kml/shapes/",".png"];
+var txtInit = ["Foot, tennis & billard","sentiers et routes (<b><a title='liens ext.' href='http://www.trail-kreol.com/' >TRAIL</a></b>)","manger & dormir (<b><a title='liens ext.' href='http://www.reunion.fr/' >IRT</a></b>)","Lieu dit et quartier  (<b><a title='liens ext.' href='http://www.mi-aime-a-ou.com/' >Mi aime a ou</a></b>)","boite de nuit & pub  (<b><a title='liens ext.' href='http://www.azenda.re/' >Azenda</a></b>)","loisirs, info marinne (<b><a title='liens ext.' href='http://www.reunion.fr/' >IRT</a></b>)","http://runsense.github.io/js/img/","http://maps.google.com/mapfiles/kml/shapes/",".png"];
 
 var FuncTree = FuncTree || {};
 var FuncTree = {
@@ -256,7 +256,7 @@ var FuncTree = {
 					{ id:"PC_v", icon:txtInit[7]+"realestate"+txtInit[8], label: txtInit[3], value:"1EBGjcCB-FRK6AXy9EJ-lmLaQHfNsnXS_uhSNWz71"},
 					{ id:"PC_a", icon:txtInit[7]+"ranger_station"+txtInit[8],label: txtInit[5], value:"1iTq7746ceYVrcXqcM3Ugu1CYAO_qNR09CoWCUuNP"}						
 				 ] },
-				  { id:"eT",html: "<span title='cliquer sur la fl&#232;che et ouvrer le menu' style='color: #FFD700;'>enclos du Tremblet</span> ", value:"1b17WXT7XV9FbqVEmjlYXe45ZoIUPCK1sG_sn_WuO", items: [
+				  { id:"eT",html: "<span title='cliquer sur la fl&#232;che et ouvrer le menu' style='color: #FFD700;'>enclos du Tremblet</span> ", value:"1NId8irdjYKXfpFKk5NZ-SD7ZGkUhl2w6m1LL5t4F", items: [
                     { id:"eT_s",icon:txtInit[7]+"hiker"+txtInit[8], label: txtInit[1], value:"1HG3aQEg2D1q_4d5n2_Gmk8rMQl6a995HY7dPJCZR"},
 					{ id:"eT_v", icon:txtInit[7]+"realestate"+txtInit[8], label: txtInit[3], value:"1cRObSW2PCNmCjRlONmIKRdj2VYbee9_bpa2oTHiX"}
 				  ] }
