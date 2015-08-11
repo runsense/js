@@ -352,7 +352,7 @@ var MapsLib = {
 		  }
 			$('.table tbody tr').click( function () {
 				var nm ='#'+$(this).children('td:nth-child(1)').text().replace(/ /g,'');
-				alert(nm);
+				
 				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
 				var lat = $(this).children('td:nth-child(3)').text();
 				var lng = $(this).children('td:nth-child(4)').text();
