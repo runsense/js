@@ -99,7 +99,7 @@ var FuncTree = {
 					{ id:"SB_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1a-nJFvtF_lUeKPNpgQbFubQXRXlkubvH6glUBg8v"},
 					{ id:"PP_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1iPRpywzSmOxOlLm5O-uJmrbbnn6YHGzl1rhuaJzA"}						
 				 ] },
-				{ id:"La Plaine Des Palmistes", html: "<span title='La Plaine Des Palmistes' style='background-color: #FFF; #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items: [
+				{ id:"LaPlaineDesPalmistes", html: "<span title='La Plaine Des Palmistes' style='background-color: #FFF; #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items: [
                     { id:"PP_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1oCcByb4vw2JlnNqp49lIysqTTRV6wK1xlqeC9ZGe"},
 					{ id:"PP_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1_ucovZZ5C18rlh_cGO6Uc2YgB23EmR-IQ9epBop4"},
                     {  id:"PP_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"15V8aJ6r5JNfr4xP4ZKnmi4i9mZTt6f0l8WG5hbE3"},
@@ -138,14 +138,14 @@ var FuncTree = {
 					{ id:"SS_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"},
 					{ id:"Por_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1oYTut7YPTzdcOtwYCRlkpQylcjllRvwcrnizBN5Q"},
 				 ] },
-				{ id:"La Possession",  html: "<span title='La Possession' style='background-color: #FFF; #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED", items: [
+				{ id:"LaPossession",  html: "<span title='La Possession' style='background-color: #FFF; #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED", items: [
 					{ id:"Pos_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0], value:"1lr8c-nv0zSUMfdnWxpvmIZBf4EOcNSduutH7z-7D"},
                     { id:"Pos_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
                     {  id:"Pos_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
 					{ id:"Pos_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
 					{ id:"Pos_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
 				 ] },
-				 { id:"Le Port", html: "<span title='Le Port' style='background-color: #FFF; #DAA520;'>Le Port</span> ",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0", items: [
+				 { id:"LePort", html: "<span title='Le Port' style='background-color: #FFF; #DAA520;'>Le Port</span> ",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0", items: [
 					{ id:"Por_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1egvMm3Q0a8ISZ3dbmydPFqMdsLvDuHwUemNkY1mi"},
                     { id:"Por_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"19Zl9W3yXp0IdmcANjF_MlHX1R9hk8X27mFhJnmZH"},
                     {  id:"Por_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"},
@@ -178,7 +178,7 @@ var FuncTree = {
 					{ id:"SL_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1teakmILV4AZcMznt3ihFWUbLAH1W1ILNYxpi6Tz8"},
 					{ id:"SL_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1v6kmzTDGRK_q66oyNuyr0842W4drPkVFJjoMDaRH"}						
 				 ] },
-				 { id:"Trois Bassins", html: "<span title='Trois Bassins' style='background-color: #FFF; #800000;'>Trois Bassins</span>" ,value:"12g6QNhlYlaTgGoEN_K3Tyl6QV31y6TUPuHXjM-g-", items: [
+				 { id:"TroisBassins", html: "<span title='Trois Bassins' style='background-color: #FFF; #800000;'>Trois Bassins</span>" ,value:"12g6QNhlYlaTgGoEN_K3Tyl6QV31y6TUPuHXjM-g-", items: [
                     { id:"TB_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"11YVBN4CqL6oLdASJEJ_lJ13WWNEJc6_yZxQrQeoZ"},
                     {  id:"TB_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1yBld8_oUcv_2Ccnqz7xV2dKo16xbYoqtbhjjQIIC"},
 					{ id:"TB_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1KbxFddq2D4uo3RNMruBz17I266wO9OYjXpwQNxoS"},
@@ -192,7 +192,7 @@ var FuncTree = {
 					{ id:"SPA_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1uAUFKQbO3b4azglINq0byh6IMTt0tcsew-ZDhHVK"},
 					{ id:"SPA_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1yvNIMDlSsqd6REMTpDqNBKabGeFft-kquWsWvPA1"}						
 				 ] },
-				 { id:"Etang Sal&#233;", html: "<span title='Etang Sal&#233;' style='background-color: #FFF; #CD5C5C;'>Etang Sal&#233;</span>",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
+				 { id:"EtangSal&#233;", html: "<span title='Etang Sal&#233;' style='background-color: #FFF; #CD5C5C;'>Etang Sal&#233;</span>",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
 					{ id:"ES_t",icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1YXAJweeNZAKU2-Waa64ZIymHQ0bSI7lISM6bYHd6"},
                     { id:"ES_s",icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1Um2dvNwSoRN_SYsZMLjTwCR-qEhSVcCMZQgjncBF"},
                     {  id:"ES_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1Ya4SFxo6lr8uNoEBRhH_E8Zpq3InMkNmEilUdVfT"},
@@ -229,7 +229,7 @@ var FuncTree = {
 					{ id:"SJ_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1mGP2D37TYcg7aKBRPuDLofmhIziluf9i-rnGf5wx"},
 					{ id:"SJ_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1DnBh8sOLdiSlZlq4oLZkAH84JiLW4BQN0l2xdFxc"}						
 				 ] },
-				{ id:"Petite Ile", html: "<span title='Petite Ile' style='background-color: #FFF; #008B8B;'>Petite Ile</span>", value:"1dcDRLQyzoX7G70X4VjHYe5sgNtyiurA4pk5cvwXH", items: [
+				{ id:"PetiteIle", html: "<span title='Petite Ile' style='background-color: #FFF; #008B8B;'>Petite Ile</span>", value:"1dcDRLQyzoX7G70X4VjHYe5sgNtyiurA4pk5cvwXH", items: [
 					{ id:"PI_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1ZXBQvZmy7a-TdVUxcZZW0dEkl0VigG_nIx6cjnva"},
                     { id:"PI_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1eO6-9Sir2Tl-MHrHyyXY6Ws5hJZBszblOM1b_7fg"},
                     {  id:"PI_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1wTC3c07JmeEexULCOeoCe5i12g95r7sPXZbIxDoQ"},
@@ -258,13 +258,13 @@ var FuncTree = {
 					{ id:"T_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"195dI4uyd_AKasWDtn4eTQz3v6gcKlgE55N9_1zwE"}	,
 					{ id:"T_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1x-iqx3tCYREWFoCBzt8ezhx0uVeiXaqrm8o6_ZKU"}						
 				 ] },
-				 { id:"La Plaine Des Cafres", html: "<span title='La Plaine Des Cafres' style='background-color: #FFF; #000080;'>La Plaine Des Cafres</span>", value:"1r3TOcxghV2VoLauNU6PnoY3kzdcSIbtey0pnhWWz", items: [
+				 { id:"LaPlaineDesCafres", html: "<span title='La Plaine Des Cafres' style='background-color: #FFF; #000080;'>La Plaine Des Cafres</span>", value:"1r3TOcxghV2VoLauNU6PnoY3kzdcSIbtey0pnhWWz", items: [
                     { id:"PC_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1NpjpyxxMv9KIki_DtXtzPRLdNwzJ7uBjxzoxJOoV"},
                     {  id:"PC_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1RPot4Hw0B_ogvWoGAu3sW2Tz-nP6NSLREbaDZsXJ"},
 					{ id:"PC_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1EBGjcCB-FRK6AXy9EJ-lmLaQHfNsnXS_uhSNWz71"},
 					{ id:"PC_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10], value:"1iTq7746ceYVrcXqcM3Ugu1CYAO_qNR09CoWCUuNP"}						
 				 ] },
-				  { id:"enclos du Tremblet",html: "<span title='enclos du Tremblet' style='background-color: #FFF; #FFD700;'>enclos du Tremblet</span> ", value:"1NId8irdjYKXfpFKk5NZ-SD7ZGkUhl2w6m1LL5t4F", items: [
+				  { id:"enclosduTremblet",html: "<span title='enclos du Tremblet' style='background-color: #FFF; #FFD700;'>enclos du Tremblet</span> ", value:"1NId8irdjYKXfpFKk5NZ-SD7ZGkUhl2w6m1LL5t4F", items: [
                     { id:"eT_s",icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1HG3aQEg2D1q_4d5n2_Gmk8rMQl6a995HY7dPJCZR"},
 					{ id:"eT_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1cRObSW2PCNmCjRlONmIKRdj2VYbee9_bpa2oTHiX"}
 				  ] }
@@ -398,7 +398,7 @@ var FuncTree = {
     });
 	$('#jqxTree').bind('select', function (ev) {
 				
-				
+				FuncTree.zoom=13;
 					var a = ev.args;
 					var e = a.element;
 					var bunck=false;

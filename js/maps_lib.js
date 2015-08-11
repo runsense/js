@@ -314,6 +314,8 @@ var MapsLib = {
           <tr id="+nom+">\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
+			<td style='visibility:hidden;' >" + lat + "</td>\
+			<td style='visibility:hidden;' >" + lng + "</td>\
           </tr>";
       }
 		
@@ -337,6 +339,8 @@ var MapsLib = {
 			$("#list_table").dataTable({
 			  "aoColumns": [ // tells DataTables how to perform sorting for each column
 				  null, 
+				  null,
+				  null, 
 				  null
 			  ],
 			  
@@ -346,8 +350,47 @@ var MapsLib = {
 			  "bAutoWidth": false
 			});
 		  }
+			$('.table tbody tr').click( function () {
+				var nm ='#'+$(this).children('td:nth-child(1)').text().replace(/ /g,'');
+				alert(nm);
+				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
+				var lat = $(this).children('td:nth-child(3)').text();
+				var lng = $(this).children('td:nth-child(4)').text();
+				MapsLib.tabToMap(lat,lng);
+				
+			});
+			$(".table tr").not(':first').hover(
+			  function () {
+				$(this).css("background","#B8860B");
+			  }, 
+			  function () {
+				$(this).css("background","");
+			  }
+			);
     }
 
+   },
+   tabToMap: function(lat,lng) {
+		if(lat>-22)
+			{
+				if(lng<55.8)
+				{
+					
+					MapsLib.map_centroid = new google.maps.LatLng(lat,lng);
+						map.setCenter(MapsLib.map_centroid);
+					FuncTree.zoom=16;
+						map.setZoom(FuncTree.zoom);
+					$('#listv').animate({
+						opacity: '0.3',
+						height: '30%',
+						width: '30%'
+					});
+					$('#map_canvas').animate({
+						opacity: '1'
+					});
+				}
+			}
+			
    },
  
   handleError: function(json) {
