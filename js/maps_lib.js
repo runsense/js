@@ -126,7 +126,7 @@ var MapsLib = {
 									   $("#infoclic").append(e.infoWindowHtml);
 									   $("#infoclic").append(tmp);
 									$("#finfo").append("</fieldset>");*/
-									var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
+									var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0].replace(/ /g,'');
 									$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 						   MapsLib.chad='#arv';
 						   MapsLib.addrFromLatLng(e.latLng);
