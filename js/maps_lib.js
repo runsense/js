@@ -148,6 +148,7 @@ var MapsLib = {
 		}
 		
 		MapsLib.getList();
+		$("#jqxTree").jqxTree('selectItem', null);
 		
 	},
 	findMe: function() {
@@ -259,7 +260,7 @@ var MapsLib = {
 	
 	$('#itin').empty();
 	
-	FuncTree.append("poser la souris sur le texte en BAS pour la description","blue");
+	FuncTree.append("poser la souris sur le Panneau TRASPARENT en BAS à gauche pour la description","blue");
 	
 	
   },
