@@ -5,8 +5,6 @@
  *
  */
 
-google.maps.visualRefresh = true;
-
 
 //"AIzaSyDc_KEt2MhrQFwbLEZz-DFzZAIE3Dyr_NA" 
 var MapsLib = MapsLib || {};
@@ -28,48 +26,13 @@ var MapsLib = {
   defaultZoom		: 10,
 
   initialize: function() {
-	MapsLib.geocoder = new google.maps.Geocoder();
-	try{
-		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
-	}catch(e)
-	{
-		;
-	}
-    var myOptions = {
-      zoom: MapsLib.defaultZoom,
-      center: MapsLib.map_centroid,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styleId: 2,
-	  templateId: 1
-    };
-    map = new google.maps.Map($("#map_canvas")[0],myOptions);
 	
-	google.maps.event.addListener(map, "click", function(event) {
-                        MapsLib.clickmap(event);
-    });
-						 
-        
-		
-    google.maps.event.addDomListener(window, 'resize', function() {
-        map.setCenter(MapsLib.map_centroid);
-		map.setZoom(FuncTree.zoom);
-    });
-
-	try{
-		FuncRoute.directionsDisplay.setMap(map);
-	}catch(e)
-	{
-		;
-	}
-	google.maps.event.addListener(map, 'mouseover', function(event) {
-                map.setZoom(FuncTree.zoom);
-    });
+   
     MapsLib.doSearch();
 
   },
 
   doSearch: function(location) {
-	FuncTree.bgrow = false;
 	MapsLib.clearSearch();
   
 	MapsLib.polygonTableID=FuncTree.ptbid;
@@ -105,22 +68,9 @@ var MapsLib = {
 					  ] 
 					  
 					});
-					try{
-							
-						google.maps.event.addListener(layer, 'click', function(e) {
-						  
-						   MapsLib.chad='#arv';
-						   MapsLib.addrFromLatLng(e.latLng);
-							var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0].replace(/ /g,'');
-									$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
-								map.setZoom(13);
-						});
-					}catch(e)
-						{
-							;
-						}
+					
 				MapsLib.polygon.push(layer);
-				MapsLib.polygon[i].setMap(map);	
+					
 				
 				
 			}
@@ -213,8 +163,7 @@ var MapsLib = {
 				MapsLib.polygon[i].setMap(null);
 				MapsLib.polygon[i]=null;
 			}
-    map.setCenter(MapsLib.map_centroid);
-	map.setZoom(FuncTree.zoom);
+   
   },
   tabToMap: function(lat,lng) {
 		if(lat>-22)
