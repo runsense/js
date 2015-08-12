@@ -34,7 +34,7 @@
 	
 	<script type="text/javascript" src="js/FuncRoute.js"></script>
 	<script type="text/javascript" src="js/mob/FuncTree.mob.js"></script>
-	 <script type="text/javascript" src="js/maps_lib.js"></script>	
+	 <script type="text/javascript" src="js/mob/maps_lib.mob.js"></script>	
   <script type="text/javascript">
  
 		$( document ).on( "pageinit", "#map-page", function() {
@@ -113,10 +113,7 @@
 	
 	$( document ).bind( "mobileinit", function()
 	{
-	   $.mobile.textinput.prototype.options.initSelector = ".dev";
-	   $( ".dev" ).bind( "focus", function(event, ui) {
-		  MapsLib.additi('dep'); 
-		});
+	   
 	});
 	
 	
@@ -185,19 +182,6 @@
 			</div>
 
 		</div>
-			<div data-role="fieldcontain">
-				<label for="dep">départ<label>
-				<input type="text" name="dep" class="dep" id="dep" value="Entrer adresse ou sélectionner et pointer sur carte"  />
-			</div>	
-			<div data-role="fieldcontain">
-				<label for="arv">arrivé</label>
-				<input type="text" name="arv" class="arv" id="arv" value="Entrer adresse ou sélectionner et pointer sur carte"  />
-			</div>	
-		<div role="main"  class="ui-content" id="itin">
-			
-			
-		</div>
-		
 	</div>
 	
 </body>
