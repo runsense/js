@@ -100,9 +100,14 @@ var MapsLib = {
 					  polylineOptions: {
 						strokeColor: FuncTree.styles[i],
 						strokeWeight: "int"  }
-					}] 
+					},
+					
+					  ] 
 					  
 					});
+					/*{where: "'categ' = 'CH", markerOptions:{ url: "rec_lodging" }}, 
+					  {where: "'categ' = 'sn", markerOptions:{ url: "snack_bar" }},
+					  {where: "'categ' = 'H", markerOptions:{ url: "lodging" }}*/
 					try{
 							var chcmp=FuncTree.styles[i+1];
 						if(chcmp.charAt(0)!='#'&&chcmp!='NO')
@@ -243,7 +248,7 @@ var MapsLib = {
 		if(MapsLib.polygonTableID[i]!="NO")
 		{
 			MapsLib.cpte=i;
-			$("#listv").append("<div title='Revenir MAP (A DROITE)' id="+i+" style='background-color: #FFFFFF;'/>");
+			$("#listv").append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
 			var queryStr = [];
 			queryStr.push("SELECT " + selectColumns);
 			queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
@@ -261,7 +266,7 @@ var MapsLib = {
 	
 	$('#itin').empty();
 	
-	FuncTree.append("poser la souris sur le Panneau TRASPARENT en BAS à gauche pour la description","blue");
+	FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
 	
 	
   },
@@ -295,8 +300,8 @@ var MapsLib = {
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
-            <th>Nom</th>\
-			<th>Description </th><th style='background-color:blue'>taille: "+l +"</th>\
+            <th>Nom (NAME)</th>\
+			<th>Description (INFO)</th><th style='background-color:blue'>taille: "+l +"</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -349,6 +354,8 @@ var MapsLib = {
 			  "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
 			  "bAutoWidth": false
 			});
+			$(".dataTables_paginate li").css('display','inline');$(".dataTables_paginate li").css('width','60');
+			
 		  }
 			$('.table tbody tr').click( function () {
 				var nm ='#'+$(this).children('td:nth-child(1)').text().replace(/ /g,'');
@@ -383,11 +390,12 @@ var MapsLib = {
 					$('#listv').animate({
 						opacity: '0.3',
 						height: '30%',
-						width: '30%'
+						width: '100%'
 					});
 					$('#map_canvas').animate({
 						opacity: '1'
 					});
+					
 				}
 			}
 			

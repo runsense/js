@@ -14,7 +14,7 @@ var FuncTree = {
 	bgrow		:false,
 	bslct		:false,
 	updBackG	:"body",
-	ptbid		:new Array(),
+	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
 	zoom		:10,
 	txtInit		:[txtInit[0],txtInit[1],txtInit[2],txtInit[3],txtInit[4],txtInit[5]],     

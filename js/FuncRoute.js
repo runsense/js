@@ -45,7 +45,7 @@ var FuncRoute = {
 									opacity: '0.3'
 								});
 								$('#itin').empty();
-								FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
+								FuncTree.append("<small>Revenir MAP (RETURN MAP) </small>(A DROITE)"
 								,"green");
 							});
 							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
@@ -60,7 +60,7 @@ var FuncRoute = {
 					}else
 					{
 						$('#itin').empty();
-						$('#itin').append("<h1>adresse non reconnu!!</h1>");
+						$('#itin').append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");
 						$('#itin').css("color","#000");
 						$('#itin').css("background-color","red");
 					}
