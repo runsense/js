@@ -4,5 +4,6 @@
 4: adpat FuncTree.js with id table FTL to link with tree
 5: adpat FuncTree.js txtInit to appropriate data & styles ["","to modify"]
 6: customize info title in ..
-
+7:***thanks of runsenseS2I"### by link of http://runsense.github.io/js/fram.html  
+Original page
  
