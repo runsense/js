@@ -366,11 +366,14 @@ var MapsLib = {
 			$('.table tbody tr').click( function () {
 				FuncTree.bchk=true;
 				var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
+				
 				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
+				
 				FuncTree.bchk=false;
-				/*var lat = $(this).children('td:nth-child(4)').text();
+				var lat = $(this).children('td:nth-child(4)').text();
 				var lng = $(this).children('td:nth-child(5)').text();
-				MapsLib.tabToMap(lat,lng);*/
+				
+				MapsLib.tabToMap(lat,lng);
 				
 			});
 			$(".table tbody tr").hover(
