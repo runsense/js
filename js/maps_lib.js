@@ -131,12 +131,19 @@ var MapsLib = {
 									   $("#infoclic").append(e.infoWindowHtml);
 									   $("#infoclic").append(tmp);
 									$("#finfo").append("</fieldset>");*/
+							FuncTree.bchk=true;
 									var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0].replace(/ /g,'');
 									$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
-						   MapsLib.chad='#arv';
-						   MapsLib.addrFromLatLng(e.latLng);
-						
-								map.setZoom(13);
+									   MapsLib.chad='#arv';
+									   MapsLib.addrFromLatLng(e.latLng);
+									if(map.getZoom()!=13)
+										map.setZoom(13);
+									else
+										{
+											$("#listv").mouseover();
+										}
+										
+							FuncTree.bchk=false;
 						});
 					}catch(e)
 						{
@@ -367,14 +374,12 @@ var MapsLib = {
 				FuncTree.bchk=true;
 				var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
 				
-				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
-				
-				FuncTree.bchk=false;
 				var lat = $(this).children('td:nth-child(4)').text();
 				var lng = $(this).children('td:nth-child(5)').text();
 				
 				MapsLib.tabToMap(lat,lng);
-				
+				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
+				FuncTree.bchk=false;
 			});
 			$(".table tbody tr").hover(
 			  function () {

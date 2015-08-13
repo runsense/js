@@ -411,6 +411,7 @@ var FuncTree = {
 						if(items[i].element==e)
 							bunck=true;
 					var i =null;
+					
 					if(bunck&&!FuncTree.bchk)
 						$('#jqxTree').jqxTree('uncheckItem', e);
 					else
