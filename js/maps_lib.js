@@ -300,7 +300,7 @@ var MapsLib = {
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
-			<th>Icon</th>\
+			<th></th>\
             <th>Nom (NAME)</th>\
 			<th>Description (INFO)</th><th style='background-color:blue'>taille: "+l +"</th>\
           </tr>\
@@ -358,19 +358,22 @@ var MapsLib = {
 			  "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
 			  "bAutoWidth": false
 			});
-			$(".dataTables_paginate li").css('display','inline');$(".dataTables_paginate li").css('width','60');
+			$(".dataTables_paginate li").css('display','inline');
+			$(".dataTables_paginate li").css('width','60');
 			
 		  }
+		  
 			$('.table tbody tr').click( function () {
-				var nm ='#'+$(this).children('td:nth-child(1)').text().replace(/ /g,'');
-				
+				FuncTree.bchk=true;
+				var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
 				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
-				var lat = $(this).children('td:nth-child(3)').text();
-				var lng = $(this).children('td:nth-child(4)').text();
-				MapsLib.tabToMap(lat,lng);
+				FuncTree.bchk=false;
+				/*var lat = $(this).children('td:nth-child(4)').text();
+				var lng = $(this).children('td:nth-child(5)').text();
+				MapsLib.tabToMap(lat,lng);*/
 				
 			});
-			$(".table tr").not(':first').hover(
+			$(".table tbody tr").hover(
 			  function () {
 				$(this).css("background","#B8860B");
 			  }, 
