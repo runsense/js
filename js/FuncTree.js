@@ -207,7 +207,7 @@ var FuncTree = {
 				{ id:"Entre-Deux",icon:txtInit[11]+"Entre-Deux"+txtInit[12], html: "<span title='Entre-Deux' style='background-color: #FFF; #000080;'>Entre-Deux</span>", value:"1uU-__tmwAmqtTXPsi57LhiD969SwF0xWjbnDEw-7", items: [
 					{ id:"ED_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10], value:"1rZG5fmVIUptJwXk5uiJfjVuIn-ooM9WuII0UkEy3"}						
 				 ] },
-				 { id:"LesAvirons",icon:txtInit[11]+"LesAvirons"+txtInit[12], html: "<span title='Les Avirons' style='background-color: #FFF; #FFD700;'>Les Avirons</span>", value:"1aNZ5BzIgAUCEArEmyIabDPTdpQkGv5p1eyKTbeBN", items: [
+				 { id:"LesAvirons",icon:txtInit[11]+"lesAvirons"+txtInit[12], html: "<span title='Les Avirons' style='background-color: #FFF; #FFD700;'>Les Avirons</span>", value:"1aNZ5BzIgAUCEArEmyIabDPTdpQkGv5p1eyKTbeBN", items: [
 					{ id:"Av_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1mWz8sMkRVFm7820e4XBNqBEFRI0gWQ_0-OxVQ0_B"},
                     { id:"Av_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1mMsbTg4i0b6n8cXi4TYQzK6Ckbe4MMYzTqQ9fniT"},
                     {  id:"Av_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1hv5ee8OPODPryBpl0DqrwwzAzV0yvt3DnJ-AZBDB"},
