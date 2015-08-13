@@ -80,7 +80,9 @@
 			 return true;
           });
 		  $('#map_canvas').mouseleave(function(){
-			FuncRoute.calcRoute();
+			
+				FuncRoute.calcRoute();
+			
 			 return true;
           });
 		  $('#iti').click(function(){

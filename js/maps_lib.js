@@ -132,7 +132,8 @@ var MapsLib = {
 									   $("#infoclic").append(tmp);
 									$("#finfo").append("</fieldset>");*/
 							FuncTree.bchk=true;
-									var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0].replace(/ /g,'');
+									var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
+										.replace(/ /g,'').replace(/'/g,'');
 									$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 									   MapsLib.chad='#arv';
 									   MapsLib.addrFromLatLng(e.latLng);
@@ -140,7 +141,12 @@ var MapsLib = {
 										map.setZoom(13);
 									else
 										{
+											
 											$("#listv").mouseover();
+											
+											
+											$(rplc).mouseover();
+											
 										}
 										
 							FuncTree.bchk=false;
@@ -325,7 +331,7 @@ var MapsLib = {
 		 lng = rows[row][4];
 			
         list_table += "\
-          <tr id="+nom+">\
+          <tr id="+nom.replace(/ /g,'').replace(/'/g,'')+">\
 			<td ><img src=" +ctg + " style='width: 30px;height: 30px'></td>\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\

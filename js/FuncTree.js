@@ -417,6 +417,8 @@ var FuncTree = {
 					else
 					{
 						i = $('#jqxTree').jqxTree('getItem', e);
+						
+					if(i!=null)
 						for(var cpt in txtInit)
 							if(txtInit[cpt]==i.label)
 								FuncTree.bgrow=true;
