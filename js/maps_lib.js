@@ -272,7 +272,7 @@ var MapsLib = {
   },
   
   getList: function() {
-    var selectColumns = "nom,description,lat,lng";
+    var selectColumns = "categ,nom,description,lat,lng";
     MapsLib.query(selectColumns, 10, "MapsLib.displayList");
   },
 
@@ -300,6 +300,7 @@ var MapsLib = {
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
+			<th>Icon</th>\
             <th>Nom (NAME)</th>\
 			<th>Description (INFO)</th><th style='background-color:blue'>taille: "+l +"</th>\
           </tr>\
@@ -310,13 +311,15 @@ var MapsLib = {
 		var row;
 		
       for ( row in rows) {
-        var nom = rows[row][0];
-        var desc = rows[row][1];
-		 lat = rows[row][2];
-		 lng = rows[row][3];
+		var ctg = rows[row][0];
+        var nom = rows[row][1];
+        var desc = rows[row][2];
+		 lat = rows[row][3];
+		 lng = rows[row][4];
 			
         list_table += "\
           <tr id="+nom+">\
+			<td ><img src=" +ctg + " style='width: 30px;height: 30px'></td>\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
 			<td style='visibility:hidden;' >" + lat + "</td>\
@@ -343,6 +346,7 @@ var MapsLib = {
 		  {
 			$("#list_table").dataTable({
 			  "aoColumns": [ // tells DataTables how to perform sorting for each column
+				  null, 
 				  null, 
 				  null,
 				  null, 

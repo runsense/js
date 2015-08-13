@@ -55,7 +55,7 @@ var FuncTree = {
 						{label: "Tampon",value: "#CD5C5C",lien:txtInit[6]+"tampon.png"},
 						{label: "La Plaine Des Cafres",value: "#000080",lien:txtInit[6]+"laPlaineDesCafres.png"},
 						{label: "enclos du Tremblet",value: "#FFD700",lien:"https://upload.wikimedia.org/wikipedia/commons/3/37/Piton_de_la_Fournaise%2C_R%C3%A9union_Island_%28High_Resolution%29.jpg"},
-						{label: "Saint-Phillipe",value: "#66CDAA",lien:txtInit[6]+"saintPhilippe.png"},
+						{label: "Saint-Phillippe",value: "#66CDAA",lien:txtInit[6]+"saintPhillippe.png"},
 					{label: "NORD",value: "#4169E1",lien:txtInit[6]+"rocheEcrite.png"},
 						{label: "Saint-Denis",value: "#4B0082",lien: "https://upload.wikimedia.org/wikipedia/commons/b/b9/SaintDenisReunion003.jpg"},
 						{label: "Sainte-Marie",value: "#006400",lien:txtInit[6]+"sainteMarie.png"},
@@ -207,7 +207,7 @@ var FuncTree = {
 				{ id:"Entre-Deux",icon:txtInit[11]+"Entre-Deux"+txtInit[12], html: "<span title='Entre-Deux' style='background-color: #FFF; #000080;'>Entre-Deux</span>", value:"1uU-__tmwAmqtTXPsi57LhiD969SwF0xWjbnDEw-7", items: [
 					{ id:"ED_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10], value:"1rZG5fmVIUptJwXk5uiJfjVuIn-ooM9WuII0UkEy3"}						
 				 ] },
-				 { id:"Les Avirons",icon:txtInit[11]+"LesAvirons"+txtInit[12], html: "<span title='Les Avirons' style='background-color: #FFF; #FFD700;'>Les Avirons</span>", value:"1aNZ5BzIgAUCEArEmyIabDPTdpQkGv5p1eyKTbeBN", items: [
+				 { id:"LesAvirons",icon:txtInit[11]+"LesAvirons"+txtInit[12], html: "<span title='Les Avirons' style='background-color: #FFF; #FFD700;'>Les Avirons</span>", value:"1aNZ5BzIgAUCEArEmyIabDPTdpQkGv5p1eyKTbeBN", items: [
 					{ id:"Av_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1mWz8sMkRVFm7820e4XBNqBEFRI0gWQ_0-OxVQ0_B"},
                     { id:"Av_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1mMsbTg4i0b6n8cXi4TYQzK6Ckbe4MMYzTqQ9fniT"},
                     {  id:"Av_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1hv5ee8OPODPryBpl0DqrwwzAzV0yvt3DnJ-AZBDB"},
@@ -273,7 +273,7 @@ var FuncTree = {
 					{ id:"eT_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1cRObSW2PCNmCjRlONmIKRdj2VYbee9_bpa2oTHiX"}
 				  ] }
 				  ,
-				  { id:"Saint-Phillipe",icon:txtInit[11]+"Saint-Phillipe"+txtInit[12],html: "<span title='Saint-Phillipe' style='background-color: #FFF; #66CDAA;'>Saint-Phillipe</span> " , value:"1H9qvzwkRMhjjEwgrs_CToYkSPKU9JpKz0NzxRMhY", items: [
+				  { id:"Saint-Phillippe",icon:txtInit[11]+"Saint-Phillippe"+txtInit[12],html: "<span title='Saint-Phillippe' style='background-color: #FFF; #66CDAA;'>Saint-Phillippe</span> " , value:"1H9qvzwkRMhjjEwgrs_CToYkSPKU9JpKz0NzxRMhY", items: [
                     { id:"SPh_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1t4UNzRx7NREpOPfUh-jcfjj4jmZdlCrcV5UTnMBK"},
                     { id:"SPh_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1tk1Ncnn2rK7hh9uNag18vlksj_ZETxBqzxX6edbw"},
                     {  id:"SPh_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1tJJW6s2ELbV-cSIecvLroNt9u1pY_ExyTSxEsyDG"},
