@@ -200,11 +200,12 @@ var MapsLib = {
         if(MapsLib.chad=='#dep')
 			{
 				MapsLib.s=results[0].formatted_address;
-				
+				$('#iti').css('font-size','20px');$('#iti').css('font-weight','bold');
 			}
 		else
 			{
 				MapsLib.e=results[0].formatted_address;
+				$('#iti').css('color','red');
 				
 			}
       } else {

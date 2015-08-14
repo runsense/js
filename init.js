@@ -62,7 +62,6 @@
 					for(var i in items)
 							$('#jqxTree').jqxTree('uncheckItem', items[i].element);
 			$('#clear').css('color','blue');	
-			$('#clear').css('background','none');
 		});
 		  $('#find_me').click(function(){
             MapsLib.findMe(); 

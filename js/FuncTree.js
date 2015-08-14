@@ -1,9 +1,9 @@
-var txtInit = ["Foot, tennis & billard" //0
-				,"sentiers et routes"	//1
-				,"manger & dormir"		//2
-				,"Lieu dit et quartier"	//3
-				,"boite de nuit & pub"	//4
-				,"loisirs, info marinne"//5
+var txtInit = ["Foot, tennis & billard POOL" //0
+				,"sentiers et routes PATH & ROAD"	//1
+				,"manger & dormir EAT & SLEEP"		//2
+				,"Lieu dit et quartier PLACE & QUARTER"	//3
+				,"boite de nuit & pub NIGHT CLUB & FESTIVALS"	//4
+				,"loisirs, info marinne ENTERTAINEMENT & SEA INFO"//5
 				,"http://runsense.github.io/js/img/"//6
 				,"http://maps.google.com/mapfiles/kml/shapes/"//7
 				,".png"					//8
