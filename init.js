@@ -53,7 +53,7 @@
 			$('#itin').hide();
 			$('#dep').val(null);$('#arv').val(null);
 			$('#listv').show();
-			
+			$('#iti').css('color','blue');$('#iti').css('border-color','#FFFF00');$('#iti').css('font-size','15px');$('#iti').css('font-weight','none');
 			MapsLib.s=null;MapsLib.e=null;
           });
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
@@ -61,7 +61,7 @@
 			var items = $('#jqxTree').jqxTree('getCheckedItems');
 					for(var i in items)
 							$('#jqxTree').jqxTree('uncheckItem', items[i].element);
-			$('#clear').css('color','blue');$('#clear').css('border-color','#FFFF00');$('#clear').css('font-size','15px');	
+			
 		});
 		  $('#find_me').click(function(){
             MapsLib.findMe(); 

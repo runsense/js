@@ -373,13 +373,11 @@ var MapsLib = {
 				  null
 			  ],
 			  
-			  "bFilter": false, // disable search box 
-			  "bInfo": false, //results count
+			  "bFilter": true, // disable search box 
+			  "bInfo": true, //results count
 			  "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
 			  "bAutoWidth": false
 			});
-			$(".dataTables_paginate li").css('display','inline');
-			$(".dataTables_paginate li").css('width','60');
 			
 		  }
 		  
