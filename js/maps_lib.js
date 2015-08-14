@@ -131,25 +131,31 @@ var MapsLib = {
 									   $("#infoclic").append(e.infoWindowHtml);
 									   $("#infoclic").append(tmp);
 									$("#finfo").append("</fieldset>");*/
-							FuncTree.bchk=true;
-									var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
-										.replace(/ /g,'').replace(/'/g,'');
-									$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
-									   MapsLib.chad='#arv';
-									   MapsLib.addrFromLatLng(e.latLng);
-									if(map.getZoom()!=13)
-										map.setZoom(13);
-									else
-										{
-											
-											$("#listv").mouseover();
-											
-											
-											$(rplc).mouseover();
-											
-										}
+							if(!FuncTree.bchk)
+							{
+								FuncTree.bchk=true;
+										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
+											.replace(/ /g,'').replace(/'/g,'');
+										if(rplc.split('webCam').length>1)
+											{
+												var d= e.infoWindowHtml.split('<b>description:</b> ')[1].split('<br>')[0];
+												$("#listv").append(d);
+													
+											}
+										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 										
-							FuncTree.bchk=false;
+										   MapsLib.chad='#arv';
+										   MapsLib.addrFromLatLng(e.latLng);
+										   var z= map.getZoom();
+										
+												
+												$("#listv").mouseover();
+												
+												
+												$(rplc).mouseover();
+											
+								FuncTree.bchk=false;
+							}
 						});
 					}catch(e)
 						{
@@ -315,7 +321,7 @@ var MapsLib = {
           <tr>\
 			<th></th>\
             <th>Nom (NAME)</th>\
-			<th>Description (INFO)</th><th style='background-color:blue'>taille: "+l +"</th>\
+			<th>Description (INFO)</th><th style='border-style: ridge;border-color: blue;'>taille: "+l +"</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -377,15 +383,19 @@ var MapsLib = {
 		  }
 		  
 			$('.table tbody tr').click( function () {
-				FuncTree.bchk=true;
-				var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
+			if(!FuncTree.bchk)
+				{
+					FuncTree.bchk=true;
+					var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
+					
+					var lat = $(this).children('td:nth-child(4)').text();
 				
-				var lat = $(this).children('td:nth-child(4)').text();
-				var lng = $(this).children('td:nth-child(5)').text();
-				
-				MapsLib.tabToMap(lat,lng);
-				$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
-				FuncTree.bchk=false;
+					var lng = $(this).children('td:nth-child(5)').text();
+					
+					MapsLib.tabToMap(lat,lng);
+					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
+					FuncTree.bchk=false;
+				}
 			});
 			$(".table tbody tr").hover(
 			  function () {

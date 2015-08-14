@@ -39,10 +39,12 @@
                                 $.mobile.ajaxEnabled  = true;
                         });
                 </script>
+				
                 <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
                 <script type="text/javascript" src="js/jquery/jquery.ui.map.min.js"></script>
 				<script type="text/javascript" src="js/mob/FuncTree.mob.js"></script>
 				<script type="text/javascript" src="js/mob/maps_lib.mob.js"></script>
+				
         </head> 
 
         <body> 
@@ -55,7 +57,9 @@
 
                         <script type="text/javascript">
                                 $('#gmap-3').live("pageshow", function() {
-                                        $('#map_canvas_1').gmap({'center': getLatLng()});
+                                        $('#map_canvas_1').gmap({'center': getLatLng()}).bind('init', function() {	
+											$('#map_canvas_1').gmap('loadFusion', 297050 );
+										});;
                                         function getLatLng() {
                                                 /*if ( google.loader.ClientLocation != null ) {
 												
@@ -64,7 +68,7 @@
                                                 return MapsLib.map_centroid;
                                         }
 										$('#map_canvas_1').gmap('option', 'mapTypeId', google.maps.MapTypeId.SATELLITE);
-										$('#map_canvas_1').gmap('option', 'zoom', 10);
+										$('#map_canvas_1').gmap('option', 'zoom', 9);
                                 });
                                 // To stop the click from looping into nonsense
                                 $('#gmap-3').live("pagecreate", function() {
