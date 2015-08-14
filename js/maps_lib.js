@@ -338,7 +338,7 @@ var MapsLib = {
 			
         list_table += "\
           <tr id="+nom.replace(/ /g,'').replace(/'/g,'')+">\
-			<td ><img src=" +ctg + " style='width: 30px;height: 30px'></td>\
+			<td ><img src=" +ctg + " alt=" +ctg + " style='width: 30px;height: 30px'></td>\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
 			<td style='visibility:hidden;' >" + lat + "</td>\

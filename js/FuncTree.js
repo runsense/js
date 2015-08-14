@@ -350,6 +350,7 @@ var FuncTree = {
 
 	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
 	$('#jqxTree').on('expand', function (event) {
+		
 		var e = event.args.element;
 		var item = $('#jqxTree').jqxTree('getItem',e );
 		if($('#jqxTree').jqxTree('getItem',e.parentElement.parentElement)!=null)
@@ -405,17 +406,9 @@ var FuncTree = {
 				FuncTree.zoom=13;
 					var a = ev.args;
 					var e = a.element;
-					//var bunck=false;
-					var items = $('#jqxTree').jqxTree('getCheckedItems');
-					/*for(var i in items)
-						if(items[i].element==e)
-							bunck=true;*/
+					
 					var i =null;
 					
-					/*if(bunck&&!FuncTree.bchk)
-						$('#jqxTree').jqxTree('uncheckItem', e);
-					else
-					{*/
 						i = $('#jqxTree').jqxTree('getItem', e);
 						
 					if(i!=null)
@@ -426,12 +419,9 @@ var FuncTree = {
 						
 							$('#jqxTree').jqxTree('checkItem', e, true);
 						
-						 
-					//}	
-						
 							FuncTree.applysrch(i);
 								MapsLib.doSearch();
-							//$('#jqxTree').jqxTree('ensureVisible', e);	
+							
 						}
 				
 				
@@ -440,9 +430,10 @@ var FuncTree = {
     });
 	$('#jqxTree').on('checkChange', function (ev)	
 	{	
-	
+		
 		if(!FuncTree.bgrow)
 		{
+			$('#clear').css('color','red');
 			var a = ev.args;
 			var e = a.element;
 			var item = $('#jqxTree').jqxTree('getItem', e);
@@ -469,7 +460,8 @@ var FuncTree = {
 				{$('#jqxTree').jqxTree('collapseItem', e);}
 				
 			
-		}
+		}else
+			{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
 	}); 
 
 
