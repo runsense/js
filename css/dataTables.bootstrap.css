@@ -3,6 +3,7 @@ div.dataTables_length label {
   font-weight: normal;
   float: left;
   text-align: left;
+  color:red;
 }
 
 div.dataTables_length select {
@@ -12,24 +13,36 @@ div.dataTables_length select {
 div.dataTables_filter label {
   font-weight: normal;
   float: right;
+  color:red;
 }
 
 div.dataTables_filter input {
   width: 16em;
+  background-color: green;
+  color:#B8860B;
 }
 
 div.dataTables_info {
   padding-top: 8px;
+  color:blue;
 }
 
 div.dataTables_paginate {	
-  float: right;
+  float: left;
   margin: 0;
-  background-color: #000000;
+  background-color: #B8860B;
+  
 }
 div.dataTables_paginate li{
 	display: inline;
 }
+div.dataTables_paginate a{
+	color:green;
+}
+div.dataTables_paginate a:hover{
+	color:blue;
+}
+
 div.dataTables_paginate ul.pagination {
   margin: 2px;
 }

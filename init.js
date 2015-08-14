@@ -17,7 +17,7 @@
 		  $("#listv").on("mouseenter",function(){
 		  
 				$(this).animate({
-					opacity: '1',
+					opacity: '0.6',
 					height: '100%',
 					width: '70%'
 				});
