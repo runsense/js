@@ -433,7 +433,7 @@ var FuncTree = {
 		
 		if(!FuncTree.bgrow)
 		{
-			$('#clear').css('color','red');
+			$('#clear').css('color','red');$('#clear').css('border-color','green');
 			var a = ev.args;
 			var e = a.element;
 			var item = $('#jqxTree').jqxTree('getItem', e);

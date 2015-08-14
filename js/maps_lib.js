@@ -205,7 +205,7 @@ var MapsLib = {
 		else
 			{
 				MapsLib.e=results[0].formatted_address;
-				$('#iti').css('color','red');
+				$('#iti').css('color','red');$('#iti').css('border-color','green');
 				
 			}
       } else {
