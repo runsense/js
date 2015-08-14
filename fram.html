@@ -2,28 +2,23 @@
 
 <html lang="fr">
 <head>
-    <title id='Description'>fram runsense</title>
+    <title id='Description'>île de la Réunion REUNION ISLAND</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+	
+	<link rel="shortcut icon" href="//esri.github.io/quickstart-map-js/images/favicon.ico">
+	
 	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
     <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
-	 <style>
+	
+<style>
 
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>runsenseV3</title>
-         <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-    <meta charset="utf-8"/>
-    <style>
 
       html, body {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
+        height: 100% !important;
+        margin: 0px !important;
+        padding: 0px !important;
       }
+
 	#map_canvas {
         position: absolute;
         height: 100%;
@@ -34,42 +29,91 @@ and open the template in the editor.
       #panel {
         position: absolute;
         top: 5px;
-        right: 1%;
-       
-
+		left: 70%;
         z-index: 5;
         background-color: #fff;
         
         border: 1px solid #999;
       }
+	  #listv {
+	   position: absolute;
+	   bottom:1px;
+	   height: 15%;
+		width: auto;
+	}
+	#btn {
+		display:none;
+		text-align: center;
+		size:100%;
+		background-color: #00ff00;
+	}
+	
+
     </style>
 
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./jqx/jqxcore.js"></script>
+    <script type="text/javascript" src="./jqx/jqxbuttons.js"></script>
+    <script type="text/javascript" src="./jqx/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="./jqx/jqxpanel.js"></script>
+    <script type="text/javascript" src="./jqx/jqxtree.js"></script>
+	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
+	<script type="text/javascript" src="./jqx/jqxdatatable.js"></script>
+	<script type="text/javascript" src="./jqx/jqxdata.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
+    </script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.address.js"></script>
+    <script type="text/javascript" src="js/jquery.geocomplete.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.sorting.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.bootstrap-pagination.js"></script>
+	
    
 </head>
 <body class='default'> 
-	<div id="map_canvas"></div>
-
-        <div id="panel">
-		<div id='jqxTree'>
-		</div>
+	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
 	
-	 <script type="text/javascript" src="js/maps_lib.js"></script>	
-    <script type='text/javascript'>
-      //<![CDATA[
-        $(window).resize(function () {
-          var h = $(window).height(),
-            offsetTop = 105; // Calculate the top offset
-        
-          $('#map_canvas').css('height', (h - offsetTop));
-        }).resize();
-        
-        $(function() {
+        <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)'>
+			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
+			
+			
+						<div id='jqxTree' >
+						</div>
+					
+				
+			<div id="itin"></div>
+			<table id="itinv">
+				<tr>				
+					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="depart (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
+				</tr>
+				<tr>
+					<td><input id="arv" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="arrive (END):"/></td>
+				</tr>
+			</table>
+			<!--************CODE GEOCOUNTER************-->
+			<script type="text/javascript" src="http://geoloc4.whoaremyfriends.net/private/geocounter.js?compte=121035895687"></script>
+			<noscript>
+			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php?compte=121035895687"  target="_blank"><img src="http://geoloc4.whoaremyfriends.net/private/geocounter.php?compte=121035895687" border="0" alt="plateformes"></a>
+
+			<br>Please do not change this code for a perfect fonctionality of your counter
+			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php">plateformes</a>
+			</noscript>
+			<!--************END CODE GEOCOUNTER************-->
+			
+		</div>
 		
-          MapsLib.initialize();
-   
-        });
-      //]]>
+	<div id="listv"  title="ALLER sur le panneau pour la MAP A DROITE ( GO ON RIGHT PANEL FOR MAP)" >
+						</div>
+	<script type="text/javascript" src="js/FuncRoute.js"></script>
+	<script type="text/javascript" src="js/FuncTree.js"></script>						
+
+	 <script type="text/javascript" src="js/maps_lib.js"></script>	
+    <script type='text/javascript' src="init.js">
+      
     </script>
 </body>
 
