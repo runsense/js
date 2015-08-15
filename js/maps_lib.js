@@ -122,7 +122,7 @@ var MapsLib = {
 							
 						google.maps.event.addListener(layer, 'click', function(e) {
 				
-							if(!FuncTree.bchk)
+							if(!FuncTree.bchk&&!FuncTree.bgrow)
 							{
 								FuncTree.bchk=true;
 										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
