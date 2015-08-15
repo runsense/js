@@ -105,9 +105,7 @@ var MapsLib = {
 					  ] 
 					  
 					});
-					/*{where: "'categ' = 'CH", markerOptions:{ url: "rec_lodging" }}, 
-					  {where: "'categ' = 'sn", markerOptions:{ url: "snack_bar" }},
-					  {where: "'categ' = 'H", markerOptions:{ url: "lodging" }}*/
+				
 					try{
 							var chcmp=FuncTree.styles[i+1];
 						if(chcmp.charAt(0)!='#'&&chcmp!='NO')
@@ -123,14 +121,7 @@ var MapsLib = {
 							FuncTree.styles=new Array();
 							
 						google.maps.event.addListener(layer, 'click', function(e) {
-						  /* var tmp=$("#listv").html();
-						   $("#listv").empty();
-							$("#listv").append("<div title='Revenir MAP (A DROITE)' id='finfo' '/>");
-								$("#finfo").append("<div title='Revenir MAP (A DROITE)' id='infoclic' style='background-color: #FFFFFF;'/>");
-									$("#finfo").prepend("<fieldset style='width:100px;'><legend>Information du clic</legend>");
-									   $("#infoclic").append(e.infoWindowHtml);
-									   $("#infoclic").append(tmp);
-									$("#finfo").append("</fieldset>");*/
+				
 							if(!FuncTree.bchk)
 							{
 								FuncTree.bchk=true;
@@ -143,13 +134,16 @@ var MapsLib = {
 										   MapsLib.chad='#arv';
 										   MapsLib.addrFromLatLng(e.latLng);
 										   var z= map.getZoom();
-										
-											$("#listv").mouseover();
-											$('.dataTables_scrollBody').animate({
-												scrollTop: $('#list_table tbody tr').offset().top
-											}, 800);	
-												$(rplc).mouseover();
 											
+											if(!FuncTree.pre)
+											{
+												$("#listv").mouseover();
+												$('.dataTables_scrollBody').animate({
+													scrollTop: $('#list_table tbody tr').offset().top
+												}, 800);	
+													
+											}
+											$(rplc).mouseover();
 								FuncTree.bchk=false;
 							}
 						});

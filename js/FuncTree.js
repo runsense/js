@@ -17,6 +17,7 @@ var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
 	bslct		:false,
+	pre			:null,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
@@ -445,7 +446,8 @@ var FuncTree = {
 			{			
 				var items = $('#jqxTree').jqxTree('getCheckedItems');
 				var pre = e.parentElement.parentElement;
-				
+				var	prei = $('#jqxTree').jqxTree('getItem', pre);
+				FuncTree.pre= prei.isExpanded;
 						for(var i in items)
 							if(items[i].element!=pre&&items[i].element!=e)
 								{
