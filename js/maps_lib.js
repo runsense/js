@@ -136,22 +136,18 @@ var MapsLib = {
 								FuncTree.bchk=true;
 										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
 											.replace(/ /g,'').replace(/'/g,'');
-										if(rplc.split('webCam').length>1)
-											{
-												var d= e.infoWindowHtml.split('<b>description:</b> ')[1].split('<br>')[0];
-												$("#listv").append(d);
-													
-											}
+										
 										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
+										
 										
 										   MapsLib.chad='#arv';
 										   MapsLib.addrFromLatLng(e.latLng);
 										   var z= map.getZoom();
 										
-												
-												$("#listv").mouseover();
-												
-												
+											$("#listv").mouseover();
+											$('.dataTables_scrollBody').animate({
+												scrollTop: $('#list_table tbody tr').offset().top
+											}, 800);	
 												$(rplc).mouseover();
 											
 								FuncTree.bchk=false;
@@ -322,7 +318,7 @@ var MapsLib = {
           <tr>\
 			<th></th>\
             <th>Nom (NAME)</th>\
-			<th>Description (INFO)</th><th style='border-style: ridge;border-color: blue;'>taille: "+l +"</th>\
+			<th>Description (INFO)</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -375,7 +371,10 @@ var MapsLib = {
 			  
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
-			  "sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
+			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
+			  "scrollY":        "200px",
+			  "scrollCollapse": true,
+			  "paging":         false,
 			  "bAutoWidth": false
 			});
 			
