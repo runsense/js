@@ -17,7 +17,7 @@ var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
 	bslct		:false,
-	pre			:null,
+	pre			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
@@ -38,7 +38,7 @@ var FuncTree = {
 						{label: "Sainte-Rose",value: "#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sainte-Rose_eglise.jpg/800px-Sainte-Rose_eglise.jpg"},
 						{label: "La Plaine Des Palmistes",value: "#CD5C5C",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b3/Ppalmistes2.jpg"},
 						{label: "Salazie",value: "#000080",lien:"http://www.transeet.fr/wp-content/uploads/2013/05/Ile-de-la-Reunion-510x350.jpg"},
-					{label:"OUEST", value:"#8B0000",lien:txtInit[6]+"Ouest.png"},
+					{label:"OUEST", value:" #CD5C5C",lien:txtInit[6]+"Ouest.png"},
 						{label: "Mafate",value: "#4B0082",lien:txtInit[6]+"mafate.png"},
 						{label: "Saint-Gilles",value: "#006400",lien:txtInit[6]+"saintGilles.png"},
 						{label: "Saint-Leu",value: "#008B8B",lien:txtInit[6]+"saintLeu.png"},
@@ -401,9 +401,7 @@ var FuncTree = {
 					var a = ev.args;
 					var e = a.element;
 					
-					var i =null;
-					
-						i = $('#jqxTree').jqxTree('getItem', e);
+					var i = $('#jqxTree').jqxTree('getItem', e);
 						
 					if(i!=null)
 						{
@@ -411,13 +409,6 @@ var FuncTree = {
 							if(txtInit[cpt]==i.label)
 								FuncTree.bgrow=true;
 						
-							if(FuncTree.chStyle(i.label)==null)
-								FuncTree.pre=false;
-							if(i.cheked&&FuncTree.pre)
-								{
-									$('#jqxTree').jqxTree('uncheckItem', e);
-								}
-							else
 								$('#jqxTree').jqxTree('checkItem', e, true);
 						
 							FuncTree.applysrch(i);
@@ -445,11 +436,12 @@ var FuncTree = {
 			if(!bIn)
 			{			
 				var items = $('#jqxTree').jqxTree('getCheckedItems');
-				//////
+				
 				var pre = e.parentElement.parentElement;
 				var	prei = $('#jqxTree').jqxTree('getItem', pre);
-				FuncTree.pre= prei.isExpanded;
-				/////
+				if(prei!=null)
+					FuncTree.pre= prei.isExpanded;
+				
 						for(var i in items)
 							if(items[i].element!=pre&&items[i].element!=e)
 								{

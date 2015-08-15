@@ -138,12 +138,14 @@ var MapsLib = {
 											if(!FuncTree.pre)
 											{
 												$("#listv").mouseover();
-												$('.dataTables_scrollBody').animate({
+													$('.dataTables_scrollBody').animate({
 													scrollTop: $('#list_table tbody tr').offset().top
-												}, 800);	
+												}, 800);
+											
 													
 											}
 											$(rplc).mouseover();
+											
 								FuncTree.bchk=false;
 							}
 						});
