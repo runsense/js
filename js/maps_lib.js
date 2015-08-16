@@ -27,7 +27,7 @@ var MapsLib = {
   recordNamePlural	: "results",  
   defaultZoom		: 10,
 
-  initialize: function() {
+initialize: function() {
 	MapsLib.geocoder = new google.maps.Geocoder();
 	try{
 		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
@@ -68,7 +68,7 @@ var MapsLib = {
 
   },
 
-  doSearch: function(location) {
+doSearch: function(location) {
 	FuncTree.bgrow = false;
 	MapsLib.clearSearch();
   
@@ -121,33 +121,7 @@ var MapsLib = {
 							FuncTree.styles=new Array();
 							
 						google.maps.event.addListener(layer, 'click', function(e) {
-				
-							if(!FuncTree.bchk&&!FuncTree.bgrow)
-							{
-								FuncTree.bchk=true;
-										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
-											.replace(/ /g,'').replace(/'/g,'');
-										
-										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
-										
-										
-										   MapsLib.chad='#arv';
-										   MapsLib.addrFromLatLng(e.latLng);
-										   var z= map.getZoom();
-											
-											if(!FuncTree.pre)
-											{
-												$("#listv").mouseover();
-													$('.dataTables_scrollBody').animate({
-													scrollTop: $('#list_table tbody tr').offset().top
-												}, 800);
-											
-													
-											}
-											$(rplc).mouseover();
-											
-								FuncTree.bchk=false;
-							}
+								MapsLib.anLayer(e);
 						});
 					}catch(e)
 						{
@@ -168,7 +142,28 @@ var MapsLib = {
 		$("#jqxTree").jqxTree('selectItem', null);
 		
 	},
-	findMe: function() {
+anLayer: function(e){
+		if(!FuncTree.bchk&&!FuncTree.bgrow)
+							{
+								FuncTree.bchk=true;
+										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
+											.replace(/ /g,'').replace(/'/g,'');
+										
+										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
+										
+										
+										   MapsLib.chad='#arv';
+										   MapsLib.addrFromLatLng(e.latLng);
+										   var z= map.getZoom();
+										   $('.dataTables_scrollBody').animate({
+													scrollTop: $('#list_table tbody tr').offset().top
+											}, 400);
+											$(rplc).mouseover();
+											
+								FuncTree.bchk=false;
+							}
+	},
+findMe: function() {
     // Try W3C Geolocation (Preferred)
     var foundLocation;
 
@@ -182,7 +177,7 @@ var MapsLib = {
       alert("Sorry, we could not find your location.");
     }
   },
-  addrFromLatLng: function(latLngPoint) {
+addrFromLatLng: function(latLngPoint) {
     MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
 		  if(results.length>1)
@@ -205,7 +200,7 @@ var MapsLib = {
       }
     });
   },
-  zoom: function(map) {
+zoom: function(map) {
               var bounds = new google.maps.LatLngBounds();
 			
               map.data.forEach(function(feature) {
@@ -214,7 +209,7 @@ var MapsLib = {
               });
               map.fitBounds(bounds);
   },
-  processPoints: function(geometry, callback, thisArg) {
+processPoints: function(geometry, callback, thisArg) {
               if (geometry instanceof google.maps.LatLng) {
                 callback.call(thisArg, geometry);
               } else if (geometry instanceof google.maps.Data.Point) {
@@ -225,10 +220,10 @@ var MapsLib = {
                 });
               }
   },
-  additi :function(butiti){
+additi :function(butiti){
               MapsLib.chad ='#'+ butiti;
   },
-  clickmap: function(pos)
+clickmap: function(pos)
                 {
                  
                    if(pos!=null)
@@ -241,8 +236,7 @@ var MapsLib = {
                     map.setMapTypeId(google.maps.MapTypeId.HYBRID)
 
   },
- 
-  clearSearch: function() {
+clearSearch: function() {
    MapsLib.polygonTableID=null;
 	for(var i=0;i<MapsLib.polygon.length;i++)
 		if (MapsLib.polygon[i] != null)
@@ -253,7 +247,7 @@ var MapsLib = {
     map.setCenter(MapsLib.map_centroid);
 	map.setZoom(FuncTree.zoom);
   },
-  query: function(selectColumns, limit, callback) {
+query: function(selectColumns, limit, callback) {
 	
 	for(var i in MapsLib.polygonTableID)
 	{
@@ -276,157 +270,17 @@ var MapsLib = {
 			
 	}
 	
-	$('#itin').empty();
+	$('#info').empty();
 	
 	FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
 	
 	
   },
-  
-  getList: function() {
+getList: function() {
     var selectColumns = "categ,nom,description,lat,lng";
-    MapsLib.query(selectColumns, 10, "MapsLib.displayList");
+    MapsLib.query(selectColumns, 10, "FuncTab.displayList");
   },
-
-  displayList: function(json) {
-	try{
-		MapsLib.handleError(json);
-		}catch( e)
-		{ ;}
-    var columns = json["columns"];
-	
-    var rows = json["rows"];
-	var rplc="#"+MapsLib.cpte;
-   var results = $(rplc);
-    results.empty(); //hide the existing list and empty it out first
-
-    if (rows == null) {
-      //clear results list
-      results.append("<span class='lead'>No results found</span>");
-      }
-    else {
-
-      //set table headers
-	  var l = rows.length;
-      var list_table = "\
-      <table class='table' id ='list_table'>\
-        <thead>\
-          <tr>\
-			<th></th>\
-            <th>Nom (NAME)</th>\
-			<th>Description (INFO)</th>\
-          </tr>\
-        </thead>\
-        <tbody>";
-		var lat=null;
-		var lng=null;
-		var row;
-		
-      for ( row in rows) {
-		var ctg = rows[row][0];
-        var nom = rows[row][1];
-        var desc = rows[row][2];
-		 lat = rows[row][3];
-		 lng = rows[row][4];
-			
-        list_table += "\
-          <tr id="+nom.replace(/ /g,'').replace(/'/g,'')+">\
-			<td ><img src=" +ctg + " alt=" +ctg + " style='width: 30px;height: 30px'></td>\
-            <td >" + nom + "</td>\
-			<td >" + desc + "</td>\
-			<td style='visibility:hidden;' >" + lat + "</td>\
-			<td style='visibility:hidden;' >" + lng + "</td>\
-          </tr>";
-      }
-		
-      list_table += "\
-          </tbody>\
-        </table>";
-		if(lat!=""&&lng!="")
-			{
-				if(lng<55.8)
-				{
-					
-					MapsLib.map_centroid= new google.maps.LatLng(lat,lng);
-					map.setCenter(MapsLib.map_centroid);
-				}
-				
-			}
-      results.append(list_table);
-     // alert(row);
-		if(row>=10)
-		  {
-			$("#list_table").dataTable({
-			  "aoColumns": [ // tells DataTables how to perform sorting for each column
-				  null, 
-				  null, 
-				  null,
-				  null, 
-				  null
-			  ],
-			  
-			  "bFilter": true, // disable search box 
-			  "bInfo": true, //results count
-			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
-			  "scrollY":        "200px",
-			  "scrollCollapse": true,
-			  "paging":         false,
-			  "bAutoWidth": false
-			});
-			
-		  }
-		  
-			$('.table tbody tr').click( function () {
-			if(!FuncTree.bchk)
-				{
-					FuncTree.bchk=true;
-					var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
-					
-					var lat = $(this).children('td:nth-child(4)').text();
-				
-					var lng = $(this).children('td:nth-child(5)').text();
-					
-					MapsLib.tabToMap(lat,lng);
-					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
-					FuncTree.bchk=false;
-				}
-			});
-			$(".table tbody tr").hover(
-			  function () {
-				$(this).css("background","#B8860B");
-			  }, 
-			  function () {
-				$(this).css("background","");
-			  }
-			);
-    }
-
-   },
-   tabToMap: function(lat,lng) {
-		if(lat>-22)
-			{
-				if(lng<55.8)
-				{
-					
-					MapsLib.map_centroid = new google.maps.LatLng(lat,lng);
-						map.setCenter(MapsLib.map_centroid);
-					FuncTree.zoom=16;
-						map.setZoom(FuncTree.zoom);
-					$('#listv').animate({
-						opacity: '0.3',
-						height: '30%',
-						//width: '100%'
-					});
-					$('#map_canvas').animate({
-						opacity: '1'
-					});
-					
-				}
-			}
-			
-   },
- 
-  handleError: function(json) {
+handleError: function(json) {
     if (json["error"] != undefined) {
       var error = json["error"]["errors"]
       console.log("Error in Fusion Table call!");

@@ -5,7 +5,7 @@
     <title id='Description'>île de la Réunion REUNION ISLAND</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
 	
-	<link rel="shortcut icon" href="//esri.github.io/quickstart-map-js/images/favicon.ico">
+	<link rel="shortcut icon" href="//favicon.ico">
 	
 	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
     <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
@@ -79,16 +79,16 @@
 	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
 	
         <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)'>
-			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button><button id='clear' style='background: none;float:right' >Clear check</button>
-			
-			
-						<div id='jqxTree' style='float:left;' >
-							
-						</div>
-						
+			<table >
+				<tr>
+					<td><button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button><button id='clear' style='background: none;float:right' >Clear check</button></td>
+				</tr>
+				<tr rows='2'>				
+					<td><div id='jqxTree'  style='float:left;' ></div></td>
+				</tr>
 				
-			<div id="itin" style='float:left;'></div>
-			<table id="itinv">
+				<tr><td><div id="info" ></div></td></tr>
+			
 				<tr>				
 					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="depart (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
 				</tr>
@@ -110,8 +110,9 @@
 		
 	<div id="listv"  title="ALLER sur le panneau pour la MAP A DROITE ( GO ON RIGHT PANEL FOR MAP)" >
 						</div>
-	<script type="text/javascript" src="js/FuncRoute.js"></script>
-	<script type="text/javascript" src="js/FuncTree.js"></script>						
+	<script type="text/javascript" src="js/func_tab.js"></script>					
+	<script type="text/javascript" src="js/func_route.js"></script>
+	<script type="text/javascript" src="js/func_tree.js"></script>						
 
 	 <script type="text/javascript" src="js/maps_lib.js"></script>	
     <script type='text/javascript' src="init.js">

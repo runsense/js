@@ -29,7 +29,7 @@
 					margin: '0px !important',
 					padding: '0px !important',
 				});
-				$('#itin').empty();
+				$('#info').empty();
 				FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
 								,"green");
 			})
@@ -50,7 +50,7 @@
 		  $('#btn').bind('click',function(){
 			$('small').show();
             $('#jqxTree').show();
-			$('#itin').hide();
+			$('#info').hide();
 			$('#dep').val(null);$('#arv').val(null);
 			$('#listv').show();
 			$('#iti').css('color','blue');$('#iti').css('border-color','#FFFF00');$('#iti').css('font-size','15px');$('#iti').css('font-weight','none');
