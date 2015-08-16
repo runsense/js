@@ -95,7 +95,7 @@ cRows: function(rows)
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
 			  "scrollY":        "200px",
 			  "scrollCollapse": true,
-			  "paging":         false,
+			  "paging":         true,
 			  "bAutoWidth": false
 			});
 			

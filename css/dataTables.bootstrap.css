@@ -19,7 +19,7 @@ div.dataTables_filter label {
 div.dataTables_filter input {
   width: 16em;
   background-color: green;
-  color:#B8860B;
+  font-weight: bold;
 }
 
 div.dataTables_info {
@@ -37,10 +37,11 @@ div.dataTables_paginate li{
 	display: inline;
 }
 div.dataTables_paginate a{
-	color:green;
+	font-weight: bold;
 }
 div.dataTables_paginate a:hover{
-	color:blue;
+	color:red;
+	font-weight: bold;
 }
 
 div.dataTables_paginate ul.pagination {
