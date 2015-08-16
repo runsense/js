@@ -49,7 +49,10 @@ cRows: function(rows)
         var desc = rows[row][2];
 		 lat = rows[row][3];
 		 lng = rows[row][4];
-			
+			if(ctg.split("http:").length==1)
+				{
+					ctg="http://runsense.github.io/js/img/ico/"+ctg+".png";
+				}
         list_table += "\
           <tr id="+nom.replace(/ /g,'').replace(/'/g,'')+">\
 			<td ><img src=" +ctg + " alt=" +ctg + " style='width: 30px;height: 30px'></td>\
