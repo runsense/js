@@ -415,7 +415,7 @@ var MapsLib = {
 					$('#listv').animate({
 						opacity: '0.3',
 						height: '30%',
-						width: '100%'
+						//width: '100%'
 					});
 					$('#map_canvas').animate({
 						opacity: '1'
