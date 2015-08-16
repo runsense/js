@@ -109,6 +109,7 @@ cRows: function(rows)
 					var lng = $(this).children('td:nth-child(5)').text();
 					
 					FuncTab.tabToMap(lat,lng);
+					alert(nm);
 					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
 					FuncTree.bchk=false;
 				}
