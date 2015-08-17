@@ -89,12 +89,12 @@ cRows: function(rows)
 				  null, 
 				  null
 			  ],
-			  "sDom": '<"top"fi>rt<"bottom"lp><"clear">',
+			  "sDom": '<"top"pf>rt<"bottom"li><"clear">',
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
-			  "scrollY":        "200px",
-			  "scrollCollapse": true,
+			  //"scrollY":        "400px",
+			  "scrollCollapse": false,
 			  "paging":         true,
 			  "bAutoWidth": false
 			});
