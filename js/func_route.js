@@ -51,6 +51,7 @@ var FuncRoute = {
 							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
 							FuncRoute.directionsService = new google.maps.DirectionsService();
 							MapsLib.initialize();
+							
 					});
 					   $('#btn').show();
 					   $('#btn').css("color","red");
