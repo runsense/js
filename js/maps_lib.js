@@ -186,7 +186,9 @@ findMe: function() {
     }
   },
 addrFromLatLng: function(latLngPoint) {
+//console.log(latLngPoint);
     MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status) {
+	
       if (status == google.maps.GeocoderStatus.OK) {
 		  if(results.length>1)
 			$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);

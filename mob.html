@@ -57,9 +57,13 @@
 
                         <script type="text/javascript">
                                 $('#gmap-3').live("pageshow", function() {
-                                        $('#map_canvas_1').gmap({'center': getLatLng()}).bind('init', function() {	
-											$('#map_canvas_1').gmap('loadFusion', 297050 );
-										});;
+                                        $('#map_mob').gmap({'center': getLatLng()}).bind('init', function(evt, map) { 
+											$('#map_canvas').gmap('displayDirections', { 'origin': 'saint-denis,reunion', 'destination': 'saint-pierre,reunion', 'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 'panel': document.getElementById('directions') }, function(result, status) {
+													if ( status === 'OK' ) {
+															alert('Results found!');
+													}
+											}); 
+										 });
                                         function getLatLng() {
                                                 /*if ( google.loader.ClientLocation != null ) {
 												
@@ -67,17 +71,17 @@
                                                 }*/
                                                 return MapsLib.map_centroid;
                                         }
-										$('#map_canvas_1').gmap('option', 'mapTypeId', google.maps.MapTypeId.SATELLITE);
-										$('#map_canvas_1').gmap('option', 'zoom', 9);
+										$('#map_mob').gmap('option', 'mapTypeId', google.maps.MapTypeId.SATELLITE);
+										$('#map_mob').gmap('option', 'zoom', 9);
                                 });
                                 // To stop the click from looping into nonsense
                                 $('#gmap-3').live("pagecreate", function() {
                                         $('#submit').click(function() {
-                                                $('#map_canvas_1').gmap('displayDirections', { 'origin': $('#from').val(), 'destination': $('#to').val(), 'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 'panel': document.getElementById('directions')}, function(success, response) {
+                                                $('#map_mob').gmap('displayDirections', { 'origin': $('#from').val(), 'destination': $('#to').val(), 'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 'panel': document.getElementById('directions')}, function(success, response) {
                                                         if ( success ) {
                                                                 $('#results').show();
                                                         } else {
-                                                                $('#map_canvas_1').gmap('clear');
+                                                                $('#map_mob').gmap('clear');
                                                                 $('#results').hide();
                                                                 alert('No results found');
                                                         }
@@ -91,7 +95,7 @@
                                 
                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
                                 
-                                        <div id="map_canvas_1" style="height:300px;"></div>
+                                        <div id="map_mob" style="height:300px;"></div>
                                 
                                         <p>
                                                 <label for="from">From</label>
