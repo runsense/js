@@ -3,8 +3,8 @@ var FuncRoute = {
   directionsDisplay : new google.maps.DirectionsRenderer(),
   directionsService : new google.maps.DirectionsService(),
   calcRoute: function () {
-			$('#itin').empty();
-			$('#itin').show();
+			$('#info').empty();
+			$('#info').show();
               var start = MapsLib.s;
                 var end = MapsLib.e;
 			if(end!==null)
@@ -20,8 +20,8 @@ var FuncRoute = {
 						
 					  FuncRoute.directionsDisplay.setDirections(response);
 					   MapsLib.zoom(map);
-					   $('#itin').empty();
-					   FuncRoute.directionsDisplay.setPanel(document.getElementById('itin'));
+					   $('#info').empty();
+					   FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));
 					  
 					   $('#jqxTree').hide();
 					   $('small').hide();
@@ -31,7 +31,7 @@ var FuncRoute = {
 					   $('#btn').bind('click',function(){
 							$(this).hide();
 							$('#jqxTree').show();
-							$('#itin').hide();
+							$('#info').hide();
 							$('#dep').val(null);$('#arv').val(null);
 							MapsLib.s=null;MapsLib.e=null;
 							$("#listv").on("mouseenter",function(){
@@ -44,13 +44,14 @@ var FuncRoute = {
 								$('#map_canvas').animate({
 									opacity: '0.3'
 								});
-								$('#itin').empty();
+								$('#info').empty();
 								FuncTree.append("<small>Revenir MAP (RETURN MAP) </small>(A DROITE)"
 								,"green");
 							});
 							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
 							FuncRoute.directionsService = new google.maps.DirectionsService();
 							MapsLib.initialize();
+							
 					});
 					   $('#btn').show();
 					   $('#btn').css("color","red");
@@ -59,10 +60,10 @@ var FuncRoute = {
 					   
 					}else
 					{
-						$('#itin').empty();
-						$('#itin').append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");
-						$('#itin').css("color","#000");
-						$('#itin').css("background-color","red");
+						$('#info').empty();
+						$('#info').append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");
+						$('#info').css("color","#000");
+						$('#info').css("background-color","red");
 					}
 				  });
 				  

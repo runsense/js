@@ -1,9 +1,9 @@
-var txtInit = ["Foot, tennis & billard" //0
-				,"sentiers et routes"	//1
-				,"manger & dormir"		//2
-				,"Lieu dit et quartier"	//3
-				,"boite de nuit & pub"	//4
-				,"loisirs, info marinne"//5
+var txtInit = ["Foot, tennis & billard POOL" //0
+				,"sentiers et routes PATH & ROAD"	//1
+				,"manger & dormir EAT & SLEEP"		//2
+				,"Lieu dit et quartier PLACE & QUARTER"	//3
+				,"boite de nuit & pub NIGHT CLUB & FESTIVALS"	//4
+				,"loisirs, info marinne ENTERTAINEMENT & SEA INFO"//5
 				,"http://runsense.github.io/js/img/"//6
 				,"http://maps.google.com/mapfiles/kml/shapes/"//7
 				,".png"					//8
@@ -17,6 +17,7 @@ var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
 	bslct		:false,
+	pre			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
@@ -37,7 +38,7 @@ var FuncTree = {
 						{label: "Sainte-Rose",value: "#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sainte-Rose_eglise.jpg/800px-Sainte-Rose_eglise.jpg"},
 						{label: "La Plaine Des Palmistes",value: "#CD5C5C",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b3/Ppalmistes2.jpg"},
 						{label: "Salazie",value: "#000080",lien:"http://www.transeet.fr/wp-content/uploads/2013/05/Ile-de-la-Reunion-510x350.jpg"},
-					{label:"OUEST", value:"#8B0000",lien:txtInit[6]+"Ouest.png"},
+					{label:"OUEST", value:" #CD5C5C",lien:txtInit[6]+"Ouest.png"},
 						{label: "Mafate",value: "#4B0082",lien:txtInit[6]+"mafate.png"},
 						{label: "Saint-Gilles",value: "#006400",lien:txtInit[6]+"saintGilles.png"},
 						{label: "Saint-Leu",value: "#008B8B",lien:txtInit[6]+"saintLeu.png"},
@@ -64,7 +65,7 @@ var FuncTree = {
 						{label: "Le Port",value: "#DAA520",lien:txtInit[6]+"lePort.png"}
 				],
 	source 		: [   
-			{ id:"E",icon:txtInit[11]+"reunion"+txtInit[12],  html: "<span title='EST' style='background-color: #FFF; #DAA520;'>EST East</span>",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
+			{ id:"EST",icon:txtInit[11]+"reunion"+txtInit[12],  html: "<span title='EAST' style='background-color: #FFF; #DAA520;'>EST</span>",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
 				{ id:"Bras-Panon",icon:txtInit[11]+"Bras-Panon"+txtInit[12], html: "<span title='Bras-Panon' style='background-color: #FFF; #4B0082;'>Bras-Panon</span>", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",  items: [
 					{ id:"BPn_t",icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0]+txtInit[10], value:"1SjOgOCz9LrImoNYW3dlV8AVwekzwgkwkIFrnL9r5"},
                     { id:"BPn_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},
@@ -119,7 +120,7 @@ var FuncTree = {
 				 ] }
 			]
 			},
-			{ id:"NORD",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='NORD' style='background-color: #FFF; #4169E1;'>NORD North</span>", value:"1X7thBX2nmGVIivqpYNzSWN9iC4OCJDvP469Yvr15", items: [
+			{ id:"NORD",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='NORTH' style='background-color: #FFF; #4169E1;'>NORD</span>", value:"1X7thBX2nmGVIivqpYNzSWN9iC4OCJDvP469Yvr15", items: [
 				{ id:"Saint-Denis",icon:txtInit[11]+"Saint-Denis"+txtInit[12],  html: "<span title='Saint-Denis' style='background-color: #FFF; #4B0082;'>Saint-Denis</span>",value:"1B6GQb_eKzR2PmlhSHddq7I8v4KAlYB3HgtLLxWO6", items: [
 					{ id:"SD_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1A3qmh8ulO-hXKe2W57qihqlkXEMajktf6NUbvkH8"},
                     { id:"SD_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1Vw4KON8Ww-OU2gTTg1web3a_kWjXOnc0cGmJ1xnR"},
@@ -160,7 +161,7 @@ var FuncTree = {
 				 
 			]
 			},
-			{ id:"OUEST",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='OUEST' style='background-color: #FFF; #8B0000;'>OUEST West</span> ", value:"1t35ApBEMf9xwiZA9EqZd-glj8GexmPuhpSr_ndlh", items: [
+			{ id:"OUEST",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='WEST' style='background-color: #FFF; #8B0000;'>OUEST</span> ", value:"1t35ApBEMf9xwiZA9EqZd-glj8GexmPuhpSr_ndlh", items: [
 				{ id:"Mafate",icon:txtInit[11]+"Mafate"+txtInit[12], html: "<span title='Mafate' style='background-color: #FFF; #4B0082;'>Mafate</span>",value:"1GveH25DbaQoreX86sPBmcFei9zfvi8UmD2y2qyqu", items: [
                     { id:"Ma_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"18JyKnH11VSG-SUHvvoIIxrkfTKDx4wwQd7Bpbe_p"},
                     {  id:"Ma_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1vfct65S_RoeN5rdKfGeUF7ux6EUrtXL5HzGj1p08"},
@@ -205,6 +206,9 @@ var FuncTree = {
 					{ id:"ES_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10], value:"1PL-tDeZMX1uhb3pgNaVFnX0T3eNs8aK60PKx5xd1"}						
 				 ] },
 				{ id:"Entre-Deux",icon:txtInit[11]+"Entre-Deux"+txtInit[12], html: "<span title='Entre-Deux' style='background-color: #FFF; #000080;'>Entre-Deux</span>", value:"1uU-__tmwAmqtTXPsi57LhiD969SwF0xWjbnDEw-7", items: [
+					{ id:"ED_s",icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1PeYW_q7kAdat2OxpIMFmZ32mDPStAXPgxDCpTfNW"},
+					{  id:"ED_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1ddsy0cXwzchgqNKn7lb_U54aUolJxX15dtLrUHtP"},
+					{ id:"ED_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1tRU-pUXalYcAlsXE5O1o9IO0dQXNLSNJSQqEE-hm"},
 					{ id:"ED_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10], value:"1rZG5fmVIUptJwXk5uiJfjVuIn-ooM9WuII0UkEy3"}						
 				 ] },
 				 { id:"LesAvirons",icon:txtInit[11]+"lesAvirons"+txtInit[12], html: "<span title='Les Avirons' style='background-color: #FFF; #FFD700;'>Les Avirons</span>", value:"1aNZ5BzIgAUCEArEmyIabDPTdpQkGv5p1eyKTbeBN", items: [
@@ -216,7 +220,7 @@ var FuncTree = {
 				 ] }
 			]
 			},
-			{ id:"SUD",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='SUD' style='background-color: #FFF; #66CDAA;'>SUD South</span>", value:"1w2cf4yTeDxS91KGibNuK-K4LGDjgoe8bPPZzulCV",style:"MediumAquaMarine ", items: [
+			{ id:"SUD",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='SOUTH' style='background-color: #FFF; #66CDAA;'>SUD</span>", value:"1XolYmmcAznvjC8X4Gx8vvOWY5a-dJOIyl5ZkWXmM",style:"MediumAquaMarine ", items: [
 				{ id:"Saint-Pierre", icon:txtInit[11]+"Saint-Pierre"+txtInit[12],  html: "<span title='Saint-Pierre' style='background-color: #FFF; #4B0082;'>Saint-Pierre</span>", value:"1MT3G_b9rZRjqusrdShjZ7kqEHe1JOmq-wp7Wt-JY", items: [
 					{ id:"SPI_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1nuksgXG9G7cBpwzV-_442xLhTnxx849HoIXe_6kx"},
                     { id:"SPI_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1hGzzznJSMFAvbAoDUWMJj13Z1u4Vlv7WnAOKrpTC"},
@@ -319,13 +323,6 @@ var FuncTree = {
 			}
 		
 	},
-	schrrefifd :function(l)
-	{
-		for(var i=0; i<FuncTree.source.length;i++)
-			if(FuncTree.source[i].label==l)
-				return true;
-			
-	},
 	chStyle :function(l)
 	{
 		
@@ -341,15 +338,16 @@ var FuncTree = {
 	},
 	append : function(txt,color)
 	{
-		$('#itin').append(txt);
-		$('#itin').css("color",color);
-		$('#itin').css("background-color","#FFFFFF");
+		$('#info').append(txt);
+		$('#info').css("color",color);
+		$('#info').css("background-color","#FFFFFF");
 	}
 	
 };
 
 	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
 	$('#jqxTree').on('expand', function (event) {
+		
 		var e = event.args.element;
 		var item = $('#jqxTree').jqxTree('getItem',e );
 		if($('#jqxTree').jqxTree('getItem',e.parentElement.parentElement)!=null)
@@ -405,18 +403,8 @@ var FuncTree = {
 				FuncTree.zoom=13;
 					var a = ev.args;
 					var e = a.element;
-					//var bunck=false;
-					var items = $('#jqxTree').jqxTree('getCheckedItems');
-					/*for(var i in items)
-						if(items[i].element==e)
-							bunck=true;*/
-					var i =null;
 					
-					/*if(bunck&&!FuncTree.bchk)
-						$('#jqxTree').jqxTree('uncheckItem', e);
-					else
-					{*/
-						i = $('#jqxTree').jqxTree('getItem', e);
+					var i = $('#jqxTree').jqxTree('getItem', e);
 						
 					if(i!=null)
 						{
@@ -424,14 +412,11 @@ var FuncTree = {
 							if(txtInit[cpt]==i.label)
 								FuncTree.bgrow=true;
 						
-							$('#jqxTree').jqxTree('checkItem', e, true);
-						
-						 
-					//}	
+								$('#jqxTree').jqxTree('checkItem', e, true);
 						
 							FuncTree.applysrch(i);
 								MapsLib.doSearch();
-							//$('#jqxTree').jqxTree('ensureVisible', e);	
+							
 						}
 				
 				
@@ -440,9 +425,10 @@ var FuncTree = {
     });
 	$('#jqxTree').on('checkChange', function (ev)	
 	{	
-	
+		
 		if(!FuncTree.bgrow)
 		{
+			$('#clear').css('color','red');$('#clear').css('border-color','green');
 			var a = ev.args;
 			var e = a.element;
 			var item = $('#jqxTree').jqxTree('getItem', e);
@@ -453,7 +439,11 @@ var FuncTree = {
 			if(!bIn)
 			{			
 				var items = $('#jqxTree').jqxTree('getCheckedItems');
+				
 				var pre = e.parentElement.parentElement;
+				var	prei = $('#jqxTree').jqxTree('getItem', pre);
+				if(prei!=null)
+					FuncTree.pre= prei.isExpanded;
 				
 						for(var i in items)
 							if(items[i].element!=pre&&items[i].element!=e)
@@ -469,7 +459,8 @@ var FuncTree = {
 				{$('#jqxTree').jqxTree('collapseItem', e);}
 				
 			
-		}
+		}else
+			{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
 	}); 
 
 

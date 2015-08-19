@@ -6,4 +6,10 @@
 6: customize info title in ..
 7:***thanks of runsenseS2I"### by link of http://runsense.github.io/js/fram.html  
 Original page
+
+help: google icon http://kml4earth.appspot.com/icons.html
+	api: FusionTableLayer (not rest api deprecated)
+		jqx Jquery widget
+		jQueryDatatable
+		
  
