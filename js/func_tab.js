@@ -102,7 +102,7 @@ cRows: function(rows)
 				  null, 
 				  null
 			  ],
-			  "sDom": '<"top"pf>rt<"bottom"li><"clear">',
+			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
