@@ -1,3 +1,5 @@
+**Open Source from Reunion Island***
+
 1:prepare data to bdd by .csv with column kml geometry (polygon)
 2:create fusiontablelayer bdd (enable google ap autor2)
 3:adapt maps_lib.js googleApiKey & map_centroid& locationscope
