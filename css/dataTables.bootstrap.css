@@ -1,4 +1,4 @@
-
+/*gestionaire css*/
 div.dataTables_length label {
   font-weight: normal;
   float: left;
@@ -75,6 +75,10 @@ table.dataTable th:active {
 }
 
 /* Scrolling */
+/*div.datatable-scroll {
+    overflow-x: auto;
+    overflow-y: visible;
+}*/
 div.dataTables_scrollHead table {
   margin-bottom: 0 !important;
   border-bottom-left-radius: 0;

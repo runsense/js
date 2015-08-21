@@ -8,7 +8,7 @@
 google.maps.visualRefresh = true;
 
 
-//"AIzaSyDc_KEt2MhrQFwbLEZz-DFzZAIE3Dyr_NA" 
+//Objet Librairie de Google Map
 var MapsLib = MapsLib || {};
 var MapsLib = {
   s                 :null,
@@ -28,8 +28,9 @@ var MapsLib = {
   defaultZoom		: 10,
 
 initialize: function() {
-	MapsLib.geocoder = new google.maps.Geocoder();
+	
 	try{
+		MapsLib.geocoder = new google.maps.Geocoder();
 		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
 	}catch(e)
 	{
@@ -150,23 +151,22 @@ doSearch: function(location) {
 		$("#jqxTree").jqxTree('selectItem', null);
 		
 	},
-anLayer: function(e){
+anLayer: function(e){//commande click layer
 		if(!FuncTree.bchk&&!FuncTree.bgrow)
 							{
 								FuncTree.bchk=true;
 										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
 											.replace(/ /g,'').replace(/'/g,'');
-										
+										$("listv").click();
+										$(rplc).mouseover();
 										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 										
 										
 										   MapsLib.chad='#arv';
 										   MapsLib.addrFromLatLng(e.latLng);
 										   var z= map.getZoom();
-										   $('.dataTables_scrollBody').animate({
-													scrollTop: $('#list_table tbody tr').offset().top
-											}, 400);
-											$(rplc).mouseover();
+										   
+											
 											
 								FuncTree.bchk=false;
 							}
@@ -243,7 +243,7 @@ clickmap: function(pos)
                     }
                    
 
-                    map.setMapTypeId(google.maps.MapTypeId.HYBRID)
+                    map.setMapTypeId(google.maps.MapTypeId.HYBRID);
 
   },
 clearSearch: function() {

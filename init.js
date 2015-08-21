@@ -38,7 +38,18 @@
 		  $("#panel").hover(function(){
 				$('#listv').animate({
 					opacity: '0.3',
-					height: '30%',
+					height: '15%',
+					width: '100%'
+				});
+				$('#map_canvas').animate({
+					opacity: '1'
+				});
+			
+			});
+		$("#rtrm").click(function(){
+				$('#listv').animate({
+					opacity: '0.3',
+					height: '15%',
 					width: '100%'
 				});
 				$('#map_canvas').animate({

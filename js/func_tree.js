@@ -1,3 +1,4 @@
+//Objet Librairie de l'Arbre dans Right Panel
 var txtInit = ["Foot, tennis & billard POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
 				,"manger & dormir EAT & SLEEP"		//2

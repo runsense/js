@@ -1,3 +1,4 @@
+//Objet Itinéraire Google
 var FuncRoute = FuncRoute || {};
 var FuncRoute = {
   directionsDisplay : new google.maps.DirectionsRenderer(),

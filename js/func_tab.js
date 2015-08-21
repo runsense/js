@@ -1,4 +1,4 @@
-
+//Objet creation tableau de réponse json
 var FuncTab = FuncTab || {};
 var FuncTab = {
  results		: null,
@@ -132,11 +132,11 @@ cRows: function(rows)
 				}
 			}).on( 'mouseover', 'td', function (){
 				$(this).css("background","#B8860B");
-					FuncTab.idx= this.rowIndex-FuncTab.idx;
+					/*FuncTab.idx= this.rowIndex-FuncTab.idx;
 						
 						$('.dataTables_scrollBody').animate({
 								scrollTop: $('#list_table tbody tr').offset().top
-						}, FuncTab.idx*180);
+						}, FuncTab.idx*180);*/
 				
 				
 			  }).on( 'mouseleave', 'td',
@@ -155,6 +155,7 @@ tabToMap: function(lat,lng) {
 					MapsLib.map_centroid = new google.maps.LatLng(lat,lng);
 						map.setCenter(MapsLib.map_centroid);
 					FuncTree.zoom=16;
+						map.setMapTypeId(google.maps.MapTypeId.HYBRID)
 						map.setZoom(FuncTree.zoom);
 					$('#listv').animate({
 						opacity: '0.3',
