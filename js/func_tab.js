@@ -106,8 +106,8 @@ cRows: function(rows)
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
-			  //"scrollY":        "400px",
-			  "scrollCollapse": false,
+			  "scrollY":        "450px",
+			  "scrollCollapse": true,
 			  "paging":         true,
 			  "bAutoWidth": false
 			});
