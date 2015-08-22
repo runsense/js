@@ -33,9 +33,10 @@ cRows: function(rows)
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
-			<th></th>\
+			<th>icon</th>\
             <th>Nom (NAME)</th>\
 			<th>Description (INFO)</th>\
+			<th>icon</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -123,9 +124,9 @@ cRows: function(rows)
 					FuncTree.bchk=true;
 					var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
 					
-					var lat = $(this).children('td:nth-child(4)').text();
+					var lat = $(this).children('td:nth-child(5)').text();
 				
-					var lng = $(this).children('td:nth-child(5)').text();
+					var lng = $(this).children('td:nth-child(6)').text();
 					
 					FuncTab.tabToMap(lat,lng);
 					
