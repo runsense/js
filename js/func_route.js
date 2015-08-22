@@ -58,7 +58,7 @@ var FuncRoute = {
 					   $('#btn').css("color","red");
 					
 					   $("#listv").off();
-					   FuncTree.bme=true;
+					   
 					}else
 					{
 						$('#info').empty();

@@ -17,7 +17,6 @@ var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
-	bme			:true,
 	pre			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
@@ -350,8 +349,7 @@ var FuncTree = {
 	$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 	
     $("#jqxTree .jqx-tree-item").mouseenter(function (event) {
-		if(FuncTree.bme)
-            {
+		try{
 				
                 var text = event.target.textContent;
                 text = '#'+text.replace(/ /g,'').replace(/'/g,'');
@@ -360,6 +358,8 @@ var FuncTree = {
 					MapsLib.doSearch();
                // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
 			}
+		catch(e)
+		{;}
     });
 	$('#jqxTree').on('expand', function (event) {
 		
