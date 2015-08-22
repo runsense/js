@@ -17,7 +17,7 @@ var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
-	bslct		:false,
+	bme			:true,
 	pre			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
@@ -346,7 +346,21 @@ var FuncTree = {
 	
 };
 
-	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
+	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, theme: 'summer' });
+	$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
+	
+    $("#jqxTree .jqx-tree-item").mouseenter(function (event) {
+		if(FuncTree.bme)
+            {
+				
+                var text = event.target.textContent;
+                text = '#'+text.replace(/ /g,'').replace(/'/g,'');
+				var item = $('#jqxTree').jqxTree('getItem',$(text)[0] );
+				FuncTree.applysrch(item);
+					MapsLib.doSearch();
+               // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
+			}
+    });
 	$('#jqxTree').on('expand', function (event) {
 		
 		var e = event.args.element;
@@ -409,6 +423,7 @@ var FuncTree = {
 						
 					if(i!=null)
 						{
+							
 							for(var cpt in txtInit)
 							if(txtInit[cpt]==i.label)
 								FuncTree.bgrow=true;
