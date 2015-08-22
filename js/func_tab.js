@@ -37,6 +37,8 @@ cRows: function(rows)
             <th>Nom (NAME)</th>\
 			<th>Description (INFO)</th>\
 			<th>icon</th>\
+			<th>latitude</th>\
+			<th>longitude</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -73,8 +75,8 @@ cRows: function(rows)
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
 			<td >" +ctg + "</td>\
-			<td style='visibility:hidden;' >" + lat + "</td>\
-			<td style='visibility:hidden;' >" + lng + "</td>\
+			<td style='color:blue;width:20px;' >" + lat + "</td>\
+			<td style='color:blue;width:20px;' >" + lng + "</td>\
           </tr>";
       }
 		
