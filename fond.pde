@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang='fr'>
-  <head>
-
-    <title>redirect</title>
-	<meta http-equiv="refresh" content="2; URL='http://runsense.github.io/js/fram.html'" />
-	</head>
-	<body style="background-color:black;">
-		
-		<script src="processing.js"></script>
-		<script type="text/processing" data-processing-target="mycanvas">
-		float a=0.0;
+float a=0.0;
                                 void setup() 
                                 {
-                                    size(800, 800, P3D);
+                                    size(800, 600, P3D);
                                     background(0);
                                     PFont font = loadFont("Arial");
                                     textFont(font,70); 
@@ -26,25 +15,20 @@
                                     a = 0.0; 
                                 }
 
-                                translate(width/2, height/3,0);
+                                translate(width/3, height/3,0);
                                 rotateY(a);
                                 //rotateY(a * 2.0);
 
                                 //rect(5, 5, 20, 5);
                                 fill(0, 102, 153);
-                                text("redirect", 10, -20, 10);
+                                text("Run$ense", 10, -20, 10);
                                 //text("second");
                                 fill(0, 102, 153);
-                                text("REDIRECT", 10, -20, -10); 
+                                text("$ense", 10, -20, -10); 
 
                                 
                                 fill(0, 102, 153);
                                 text("RunSense", 30, 70, 10); 
                                 fill(0, 102, 153);
-                                text("Run$en$e", 30, 70, -10);
+                                text("Sense", 30, 70, -10);
                                 }
-		</script>
-		<canvas id="mycanvas" style="position:absolute;left:20%;padding-right:20%;" ></canvas>
-
-	</body>
-</html>
