@@ -71,6 +71,7 @@ cRows: function(rows)
 			<td >" +ctg + "</td>\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
+			<td >" +ctg + "</td>\
 			<td style='visibility:hidden;' >" + lat + "</td>\
 			<td style='visibility:hidden;' >" + lng + "</td>\
           </tr>";
@@ -99,6 +100,7 @@ cRows: function(rows)
 				  null, 
 				  null, 
 				  null,
+				  null, 
 				  null, 
 				  null
 			  ],
