@@ -339,8 +339,8 @@ var FuncTree = {
 	append : function(txt,color)
 	{
 		$('#info').append(txt);
-		$('#info').css("color",color);
-		$('#info').css("background-color","#FFFFFF");
+		$('#info').css("color","white");
+		$('#info').css("background-color","black");
 	}
 	
 };

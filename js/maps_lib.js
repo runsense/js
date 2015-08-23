@@ -105,9 +105,7 @@ doSearch: function(location) {
 					  polylineOptions: {
 						strokeColor: stl,
 						strokeWeight: "int"  }
-					},
-					
-					  ] 
+					},] 
 					  
 					});
 				
