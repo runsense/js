@@ -135,7 +135,14 @@ cRows: function(rows)
 					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
 					FuncTree.bchk=false;
 				}
-			}).on( 'mouseover', 'td', function (){
+			}).on( 'mouseover', 'tr',
+			  function () {
+				$(this).css("background","#0404B4");
+			  }).on( 'mouseleave', 'tr',
+			  function () {
+				$(this).css("background","");
+			  }
+			).on( 'mouseover', 'td', function (){
 				$(this).css("background","#B8860B");
 					/*FuncTab.idx= this.rowIndex-FuncTab.idx;
 						

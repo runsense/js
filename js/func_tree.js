@@ -31,7 +31,7 @@ var FuncTree = {
 					{label: txtInit[4],value: "star"},
 					{label: txtInit[5],value: "ranger_station"},
 					{label: "EST",value: "#DAA520",lien:txtInit[6]+"Est.png"},
-						{label: "Bras-Panon",value: "#4B0082",lien:txtInit[6]+"brasPanon.png" },
+						{label: "Bras-Panon",value: "#4B0082",lien:"https://drive.google.com/open?id=0B1YRuzHQ1DHzdVlsOTk4ME9jalU" },
 						{label: "Saint-André",value: "#006400",lien:txtInit[6]+"saintAndre.png"},
 						{label: "Saint-Benoit",value: "#008B8B",lien:txtInit[6]+"saintBenoit.png"},
 						{label: "Sainte-Anne",value: "#800000",lien:txtInit[6]+"sainteAnne.png"},
