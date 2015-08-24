@@ -37,7 +37,7 @@
 		
 		  $("#panel").hover(function(){
 				$('#listv').animate({
-					opacity: '0.3',
+					opacity: '1',
 					height: '15%',
 					width: '100%'
 				});
