@@ -14,7 +14,7 @@ var MapsLib = {
   s                 :null,
   e                 :null,
   cpte				:0,
-  chad:               '',
+  chad				:'',
   datajson          :['',''],
   geocoder          : new google.maps.Geocoder(),
   polygonTableID    :[],
@@ -22,9 +22,7 @@ var MapsLib = {
   googleApiKey		: "AIzaSyD49JCPjbwMZpVekOIPjWM6GQwEr6VCe8A",
   locationColumn	: "lat",
   map_centroid		: new google.maps.LatLng(-21.137472,55.546906),
-  locationScope		: "reunion", 
-  recordName		: "result", 
-  recordNamePlural	: "results",  
+  locationScope		: "reunion",  
   defaultZoom		: 10,
 
 initialize: function() {
