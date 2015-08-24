@@ -146,7 +146,7 @@ cRows: function(rows)
 			  }
 			).on( 'mouseover', 'td', function (){
 				$(this).css("background","#B8860B");
-				$(this).css("fontSize","300%");
+				$(this).css("fontSize","180%");
 					/*FuncTab.idx= this.rowIndex-FuncTab.idx;
 						
 						$('.dataTables_scrollBody').animate({
