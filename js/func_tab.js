@@ -1,4 +1,5 @@
 //Objet creation tableau de réponse json
+var search="";
 var FuncTab = FuncTab || {};
 var FuncTab = {
  results		: null,
@@ -108,6 +109,7 @@ cRows: function(rows)
 				  null
 			  ],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
+			  "oSearch": {"sSearch": search},
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
@@ -144,6 +146,7 @@ cRows: function(rows)
 			  }
 			).on( 'mouseover', 'td', function (){
 				$(this).css("background","#B8860B");
+				$(this).css("fontSize","300%");
 					/*FuncTab.idx= this.rowIndex-FuncTab.idx;
 						
 						$('.dataTables_scrollBody').animate({
@@ -154,6 +157,7 @@ cRows: function(rows)
 			  }).on( 'mouseleave', 'td',
 			  function () {
 				$(this).css("background","");
+				$(this).css("fontSize","100%");
 			  }
 			);
 			//$("#list_table").on( 'page.dt',   function () {console.log('change page');} ).dataTable

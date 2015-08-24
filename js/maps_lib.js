@@ -150,11 +150,16 @@ doSearch: function(location) {
 anLayer: function(e){//commande click layer
 		if(!FuncTree.bchk&&!FuncTree.bgrow)
 							{
+								var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
+								
+								
 								FuncTree.bchk=true;
-										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
-											.replace(/ /g,'').replace(/'/g,'');
-										$("listv").click();
+									
+										var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
+										
 										$(rplc).mouseover();
+										var table= $('#list_table').dataTable();
+										table.search(s).draw();
 										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 										
 										
@@ -165,6 +170,7 @@ anLayer: function(e){//commande click layer
 											
 											
 								FuncTree.bchk=false;
+								return s;
 							}
 	},
 findMe: function() {
