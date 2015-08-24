@@ -32,51 +32,22 @@
 	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
     <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
 	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
-	
-<style>
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css">
 
 	
-      html, body {
-	    display: block; 
-        height: 100% !important;
-        margin: 0px !important;
-        padding: 0px !important;
-      }
+	<style>
+	html, body 		{ display: block; height: 100% !important;margin: 0px !important;padding: 0px !important; }
 
-	#map_canvas {
-        position: absolute;
-        height: 100%;
-        width: 70%;
-        margin: 0px;
-        padding: 0px
-      }
-      #panel {
-        position: absolute;
-        top: 5px;
-		left: 70%;
-        z-index: 5;
-        background-color: #fff;
-        
-        border: 1px solid #999;
-      }
-	  #listv {
-	   position: absolute;
-	   bottom:1px;
-	   height: 15%;
-	}
-	#btn {
-		display:none;
-		text-align: center;
-		size:100%;
-		background-color: #00ff00;
-	}
-	#iti, #clear{
-		background: none;
-	}
-	
-	
-
-    </style>
+		#map_canvas { position: absolute;height: 100%;width: 70%;margin: 0px;padding: 0px }
+		#panel 		{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 1px solid #999; }
+		#listv 		{ position: absolute;bottom:1px;height: 15%;}
+		#btn 		{ display:none;text-align: center;size:100%;background-color: #00ff00;}
+		#iti, #clear{ background: none; }
+		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
+		#info		{ float:left;height:50px; }
+		#itinv		{ float:left; }
+	</style>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -102,8 +73,8 @@
 	
         <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)'>
 			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
-			<div id="info" style='float:left;height:50px;'></div>
-			<table id="itinv" style='float:left;'>
+			<div id="info" ></div>
+			<table id="itinv" >
 				<tr>				
 					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="depart (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
 				</tr>
@@ -115,7 +86,7 @@
 			
 						<!--<div id='jqxExpander'>-->
 							<div> <button id='clear' style='background: none;float:right' >Clear check</button></div>
-							<div id='jqxTree' >
+							<div id='jqxTree' style="background:none;" >
 							</div>
 						<!--</div>-->
 						
@@ -135,8 +106,8 @@
 		</div>
 		
 	<div id="listv"  title="ALLER sur le panneau pour la MAP A DROITE ( GO ON RIGHT PANEL FOR MAP)" >
-		<span id="rtrm" style="position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px;" >Cliquer pour AFFICHER MAP</span>
-						</div>
+		<span id="rtrm"  >Cliquer pour AFFICHER MAP</span>
+	</div>
 	<script type="text/javascript" src="js/func_tab.js"></script>					
 	<script type="text/javascript" src="js/func_route.js"></script>
 	<script type="text/javascript" src="js/func_tree.js"></script>						

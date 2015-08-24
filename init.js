@@ -34,7 +34,7 @@
 								,"green");
 			})
 			;
-		$("#panel").css('background','none');
+		
 		  $("#panel").hover(function(){
 				$('#listv').animate({
 					opacity: '0.3',
