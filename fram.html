@@ -31,12 +31,12 @@
 	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
     <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
 	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
-	<link rel="stylesheet" media="all and (orientation:portrait)" href="./jqx/jqx.mobile.css">
-<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css">
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="./jqx/jqx.mobile.css" />
+<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css" />
 
 	
 	<style>
-	html, body 		{ display: block; height: 100% !important;margin: 0px !important;padding: 0px !important; }
+	html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !important; }
 
 		#map_canvas { position: absolute;height: 100%;width: 70%;margin: 0px;padding: 0px }
 		#panel 		{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 1px solid #999; }
@@ -46,6 +46,9 @@
 		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
 		#info		{ float:left;height:50px; }
 		#itinv		{ float:left; }
+	@media all and (max-width: 768px) { body{ display: block;font-style:large; }  }
+	@media all and (max-width: 1024px) { body{ display: block; font-style:x-large; } }
+	@media all and (max-width: 1200px) { body{ display: block; font-style:xx-large; } }
 	</style>
 
 
