@@ -159,7 +159,7 @@ anLayer: function(e){//commande click layer
 										
 										$(rplc).mouseover();
 										var table= $('#list_table').dataTable();
-										table.search(s).draw();
+										
 										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 										
 										
