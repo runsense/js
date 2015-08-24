@@ -1,0 +1,13 @@
+html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !important; }
+
+		#map_canvas { position: absolute;height: 100%;width: 70%;margin: 0px;padding: 0px }
+		#panel 		{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 1px solid #999; }
+		#listv 		{ position: absolute;bottom:1px;height: 15%;}
+		#btn 		{ display:none;text-align: center;size:100%;background-color: #00ff00;}
+		#iti, #clear{ background: none; }
+		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
+		#info		{ float:left;height:50px; }
+		#itinv		{ float:left; }
+	@media all and (max-width: 768px) { body{ display: block;font-style:large;zoom=200%; }   }
+	@media all and (max-width: 1024px) { body{ display: block; font-style:x-large;zoom=150%; } }
+	@media all and (max-width: 1200px) { body{ display: block; font-style:xx-large; } }
