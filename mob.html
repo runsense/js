@@ -1,158 +1,118 @@
-<!DOCTYPE html> 
-<html> 
-        <head profile="http://dublincore.org/documents/dcq-html/">
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+		<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+		<meta name="msapplication-tap-highlight" content="no" />
+	
+		<meta name="refresh" content="360" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+       
         
-                <title>Mobile runsense</title>
-                <meta name="keywords" content="mobile, runsense" />
-                <meta name="description" content="Geo directions " />
-                <meta http-equiv="content-language" content="fr"/>
-                
-                <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+        <meta name="Author" content="Runsense" />
+        <meta name="Reply-to" content="runsense974@gmail.com" />
+        <meta name="Copyright" content="runsense " />
+        <meta name="robots" content="Index, follow" />
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
                 <meta name="DC.title" content="Mobile runsense" />
                 <meta name="DC.subject" content="reunion island;itineraire;" />
-                <meta name="DC.description" content="Geo directions " />
+                <meta name="DC.description" content="Loisirs des Touristique et des habitants, avec info sentier fermé et marinnes de l'ile de la Réunion" />
                 <meta name="DC.creator" content="runsense" />
                 <meta name="DC.language" content="fr"/>
-                
-                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.css" />
-                <style rel="stylesheet">
-                        body {  background: #ddd; }
-                        .ui-body-c a.ui-link { color: #008000; font-weight: bold; text-decoration: none; }
-                        .hidden { display:none; }
-                        .min-width-480px label.ui-input-text { font-weight:bold; display: block; }
-                        .adp-directions { width:100%; }
-                        .adp-placemark, .adp-summary, .adp-legal { display:none; margin: 0; }
-                        .adp-placemark, .adp-step, .adp-stepicon, .adp-substep{ border-top: none;text-align:center; vertical-align: middle; padding: 0.8em 0; background:#e9eaeb;color:#3e3e3e;text-shadow:0 1px 1px #fff;background-image:-moz-linear-gradient(top,#f0f0f0,#e9eaeb);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f0f0f0),color-stop(1,#e9eaeb));-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#f0f0f0', EndColorStr='#e9eaeb')"}
-                        .adp-directions tr { border:1px solid #b3b3b3; }
-                        h2 { font-size: 16px; overflow: hidden; white-space: nowrap; display: block; }
-                        .more { text-align: center; }
-                </style>
-                <script src="http://www.google.com/jsapi?key=AIzaSyDfBQyFeuY1d9Fm7Hi4ZUE_iSDssITiG9k" type="text/javascript"></script>        
-        <script type="text/javascript">
-                        google.load("maps", "3", {'other_params':'sensor=true'});
-                        google.load("jquery", "1.5");
-						google.load("jqueryui", "1.8.9");
-                </script>
-                <script type="text/javascript">
-                        // Demonstration purpose only...
-                        $(document).bind("mobileinit", function () {
-                                $.mobile.ajaxEnabled  = true;
-                        });
-                </script>
 				
-                <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
-                <script type="text/javascript" src="js/jquery/jquery.ui.map.min.js"></script>
-				<script type="text/javascript" src="js/mob/FuncTree.mob.js"></script>
-				<script type="text/javascript" src="js/mob/maps_lib.mob.js"></script>
-				
-        </head> 
+   
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
+    <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
+	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="./jqx/jqx.mobile.css" />
+	<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css" />
 
-        <body> 
+	
+	<style>
+	html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !important; }
 
-                <div id="gmap-3" data-role="page">
+		#map_canvas { position: absolute;height: 100%;width: 70%;margin: 0px;padding: 0px }
+		#panel 		{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 1px solid #999; }
+		#listv 		{ position: absolute;bottom:1px;height: 15%;}
+		#btn 		{ display:none;text-align: center;size:100%;background-color: #00ff00;}
+		#iti, #clear{ background: none; }
+		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
+		#info		{ float:left;height:50px; }
+		#itinv		{ float:left; }
+	@media all and (max-width: 768px) { body{ display: block;font-style:large; }  }
+	@media all and (max-width: 1024px) { body{ display: block; font-style:x-large; } }
+	@media all and (max-width: 1200px) { body{ display: block; font-style:xx-large; } }
+	</style>
 
-                        <div data-role="header">
-                                <h1><a data-ajax="false" href="">runsense web</a> liens</h1>
-                        </div>
 
-                        <script type="text/javascript">
-                                $('#gmap-3').live("pageshow", function() {
-                                        $('#map_mob').gmap({'center': getLatLng()}).bind('init', function(evt, map) { 
-											$('#map_canvas').gmap('displayDirections', { 'origin': 'saint-denis,reunion', 'destination': 'saint-pierre,reunion', 'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 'panel': document.getElementById('directions') }, function(result, status) {
-													if ( status === 'OK' ) {
-															alert('Results found!');
-													}
-											}); 
-										 });
-                                        function getLatLng() {
-                                                /*if ( google.loader.ClientLocation != null ) {
-												
-                                                        return new google.maps.LatLng(google.loader.ClientLocation.latitude, google.loader.ClientLocation.longitude);   
-                                                }*/
-                                                return MapsLib.map_centroid;
-                                        }
-										$('#map_mob').gmap('option', 'mapTypeId', google.maps.MapTypeId.SATELLITE);
-										$('#map_mob').gmap('option', 'zoom', 9);
-                                });
-                                // To stop the click from looping into nonsense
-                                $('#gmap-3').live("pagecreate", function() {
-                                        $('#submit').click(function() {
-                                                $('#map_mob').gmap('displayDirections', { 'origin': $('#from').val(), 'destination': $('#to').val(), 'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 'panel': document.getElementById('directions')}, function(success, response) {
-                                                        if ( success ) {
-                                                                $('#results').show();
-                                                        } else {
-                                                                $('#map_mob').gmap('clear');
-                                                                $('#results').hide();
-                                                                alert('No results found');
-                                                        }
-                                                });
-                                                return false;
-                                        });
-                                });
-								MapsLib.initialize();
-                        </script>
-                        <div data-role="content">
-                                
-                                <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
-                                
-                                        <div id="map_mob" style="height:300px;"></div>
-                                
-                                        <p>
-                                                <label for="from">From</label>
-                                                <input id="from" class="ui-bar-c" value="saint-denis,reunion" />
-                                        </p>
-                                        <p>
-                                                <label for="to">To</label>
-                                                <input id="to" class="ui-bar-c" value="saint-pierre,reunion" />
-                                        </p>
-                                
-                                        <a id="submit" href="#" data-role="button" data-icon="search">cherche Itineraire</a>
-                                </div>
-                                
-                                <div id="results" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" style="display:none;">
-                                        <div class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top ui-btn-up-undefined">Details</div>
-                                        <div id="directions"></div>
-                                        <div class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-bottom ui-btn-up-undefined"></div>
-                                </div>
-                                
-                                <h2>Recherche</h2>
-                                <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a"> 
-										<li data-role="list-divider">NORD</li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-										<li data-role="list-divider">OUEST</li> 
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-                                        <li data-role="list-divider">EST</li> 
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-										<li data-role="list-divider">NORD</li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-											<li><a data-ajax="false" href="http://runsense.github.io/js/mob.html">Saint ...</a></li>
-										</ul>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./jqx/jqxcore.js"></script>
+    <script type="text/javascript" src="./jqx/jqxbuttons.js"></script>
+    <script type="text/javascript" src="./jqx/jqxscrollbar.js"></script>
+	<script type="text/javascript" src="./jqx/jqxexpander.js"></script>
+    <script type="text/javascript" src="./jqx/jqxpanel.js"></script>
+    <script type="text/javascript" src="./jqx/jqxtree.js"></script>
+	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
+	<script type="text/javascript" src="./js/mob/simulator.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
+    </script>
 
-                        </div>
-                        
-                        <div data-role="footer" data-theme="a">
-                                <h3>Detail</h3>
-                                <p class="more">liens ajax<a data-ajax="false" href="http://runsense.github.io/js/fram.html">web</a></p>
-                        </div>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
+	
+   
+</head>
+<body class='default'> 
+	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
+	
+        <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)'>
+			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
+			<div id="info" ></div>
+			<table id="itinv" >
+				<tr>				
+					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="depart (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
+				</tr>
+				<tr>
+					<td><input id="arv" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="arrive (END):"/></td>
+				</tr>
+			</table>
+			
+			
+						<!--<div id='jqxExpander'>-->
+							<div> <button id='clear' style='background: none;float:right' >Clear check</button></div>
+							<div id='jqxTree' style="background:none;" >
+							</div>
+						<!--</div>-->
+			<a title="Modification ou nouvelle informations" href="mailto:runsense974@gmail" target="_top"> runsense974@gmail </a>
+			
+		</div>
+		<div>
+			<!--************CODE GEOCOUNTER************-->
+			<script type="text/javascript" src="http://geoloc4.whoaremyfriends.net/private/geocounter.js?compte=121035895687"></script>
+			<noscript>
+			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php?compte=121035895687"  target="_blank"><img src="http://geoloc4.whoaremyfriends.net/private/geocounter.php?compte=121035895687" border="0" alt="plateformes"></a>
 
-                        <div id="ft" class="hidden" itemscope itemtype="http://data-vocabulary.org/Person">
-                                Author: 
-                                <span itemprop="name">Runsense</span>  
-                                <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-                                        <span itemprop="locality">Reunion</span>, 
-                                        <span itemprop="country-name">France</span> 
-                                </span>
-                        </div>
-                        
-                </div>
-                
-        </body>
-        
+			<br>Please do not change this code for a perfect fonctionality of your counter
+			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php">plateformes</a>
+			</noscript>
+			<!--************END CODE GEOCOUNTER************-->
+		</div>
+	<div id="listv"  title="ALLER sur le panneau pour la MAP A DROITE ( GO ON RIGHT PANEL FOR MAP)" >
+		<span id="rtrm"  >Cliquer pour AFFICHER MAP</span>
+	</div>
+	<script type="text/javascript" src="js/func_tab.js"></script>					
+	<script type="text/javascript" src="js/func_route.js"></script>
+	<script type="text/javascript" src="js/mob/FuncTree.mob.js"></script>						
+
+	 <script type="text/javascript" src="js/maps_lib.js"></script>	
+    <script type='text/javascript' src="init.js">
+      
+    </script>
+</body>
+
 </html>
+
