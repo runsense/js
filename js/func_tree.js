@@ -340,9 +340,8 @@ var FuncTree = {
 	{
 		$('#info').append(txt);
 		$('#info').css("color","white");
-		$('#info').css("background-color","black");
+		$('#info').css("background-color",color);
 	}
-	
 };
 
 	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, width: '300px', height: 'auto', theme: 'summer' });
