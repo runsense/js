@@ -1,0 +1,12 @@
+{
+  "name": "Ile de la Reunion (runsense)",
+  "description": "Information, carte interactif, tableau generer",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "f.png", "800": "f.png" }
+}
