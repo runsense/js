@@ -1,4 +1,5 @@
-
+//Objet creation tableau de réponse json
+var search="";
 var FuncTab = FuncTab || {};
 var FuncTab = {
  results		: null,
@@ -33,9 +34,12 @@ cRows: function(rows)
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
-			<th></th>\
+			<th>icon</th>\
             <th>Nom (NAME)</th>\
 			<th>Description (INFO)</th>\
+			<th>icon</th>\
+			<th>latitude</th>\
+			<th>longitude</th>\
           </tr>\
         </thead>\
         <tbody>";
@@ -71,8 +75,9 @@ cRows: function(rows)
 			<td >" +ctg + "</td>\
             <td >" + nom + "</td>\
 			<td >" + desc + "</td>\
-			<td style='visibility:hidden;' >" + lat + "</td>\
-			<td style='visibility:hidden;' >" + lng + "</td>\
+			<td >" +ctg + "</td>\
+			<td style='color:blue;width:20px;' >" + lat + "</td>\
+			<td style='color:blue;width:20px;' >" + lng + "</td>\
           </tr>";
       }
 		
@@ -100,14 +105,16 @@ cRows: function(rows)
 				  null, 
 				  null,
 				  null, 
+				  null, 
 				  null
 			  ],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
+			  "oSearch": {"sSearch": search},
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap
-			  //"scrollY":        "400px",
-			  "scrollCollapse": false,
+			  "scrollY":        "450px",
+			  "scrollCollapse": true,
 			  "paging":         true,
 			  "bAutoWidth": false
 			});
@@ -121,27 +128,36 @@ cRows: function(rows)
 					FuncTree.bchk=true;
 					var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
 					
-					var lat = $(this).children('td:nth-child(4)').text();
+					var lat = $(this).children('td:nth-child(5)').text();
 				
-					var lng = $(this).children('td:nth-child(5)').text();
+					var lng = $(this).children('td:nth-child(6)').text();
 					
 					FuncTab.tabToMap(lat,lng);
 					
 					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
 					FuncTree.bchk=false;
 				}
-			}).on( 'mouseover', 'td', function (){
+			}).on( 'mouseover', 'tr',
+			  function () {
+				$(this).css("background","#0404B4");
+			  }).on( 'mouseleave', 'tr',
+			  function () {
+				$(this).css("background","");
+			  }
+			).on( 'mouseover', 'td', function (){
 				$(this).css("background","#B8860B");
-					FuncTab.idx= this.rowIndex-FuncTab.idx;
+				$(this).css("fontSize","180%");
+					/*FuncTab.idx= this.rowIndex-FuncTab.idx;
 						
 						$('.dataTables_scrollBody').animate({
 								scrollTop: $('#list_table tbody tr').offset().top
-						}, FuncTab.idx*180);
+						}, FuncTab.idx*180);*/
 				
 				
 			  }).on( 'mouseleave', 'td',
 			  function () {
 				$(this).css("background","");
+				$(this).css("fontSize","100%");
 			  }
 			);
 			//$("#list_table").on( 'page.dt',   function () {console.log('change page');} ).dataTable
@@ -155,6 +171,7 @@ tabToMap: function(lat,lng) {
 					MapsLib.map_centroid = new google.maps.LatLng(lat,lng);
 						map.setCenter(MapsLib.map_centroid);
 					FuncTree.zoom=16;
+						map.setMapTypeId(google.maps.MapTypeId.HYBRID)
 						map.setZoom(FuncTree.zoom);
 					$('#listv').animate({
 						opacity: '0.3',

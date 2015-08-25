@@ -1,3 +1,4 @@
+//Objet Librairie de l'Arbre dans Right Panel
 var txtInit = ["Foot, tennis & billard POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
 				,"manger & dormir EAT & SLEEP"		//2
@@ -16,7 +17,6 @@ var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
-	bslct		:false,
 	pre			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
@@ -31,7 +31,7 @@ var FuncTree = {
 					{label: txtInit[4],value: "star"},
 					{label: txtInit[5],value: "ranger_station"},
 					{label: "EST",value: "#DAA520",lien:txtInit[6]+"Est.png"},
-						{label: "Bras-Panon",value: "#4B0082",lien:txtInit[6]+"brasPanon.png" },
+						{label: "Bras-Panon",value: "#4B0082",lien:"https://drive.google.com/open?id=0B1YRuzHQ1DHzdVlsOTk4ME9jalU" },
 						{label: "Saint-André",value: "#006400",lien:txtInit[6]+"saintAndre.png"},
 						{label: "Saint-Benoit",value: "#008B8B",lien:txtInit[6]+"saintBenoit.png"},
 						{label: "Sainte-Anne",value: "#800000",lien:txtInit[6]+"sainteAnne.png"},
@@ -65,102 +65,6 @@ var FuncTree = {
 						{label: "Le Port",value: "#DAA520",lien:txtInit[6]+"lePort.png"}
 				],
 	source 		: [   
-			{ id:"EST",icon:txtInit[11]+"reunion"+txtInit[12],  html: "<span title='EAST' style='background-color: #FFF; #DAA520;'>EST</span>",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
-				{ id:"Bras-Panon",icon:txtInit[11]+"Bras-Panon"+txtInit[12], html: "<span title='Bras-Panon' style='background-color: #FFF; #4B0082;'>Bras-Panon</span>", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",  items: [
-					{ id:"BPn_t",icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0]+txtInit[10], value:"1SjOgOCz9LrImoNYW3dlV8AVwekzwgkwkIFrnL9r5"},
-                    { id:"BPn_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},
-                    { id:"BPn_md",icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1Bzgou8rOmmto6PjPp71N_-JkAsIAOZI8ezXu_eFp"},
-					{ id:"BPn_v",icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1JqQPaUTMc-kjl8xVIWHnE6s0z4oW4WXhhSZbmm6p"},
-					{ id:"BPn_a",icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}					
-				 ]
-                },
-				 { id:"Saint-Andr&#233;",icon:txtInit[11]+"Saint-Andre"+txtInit[12], html: "<span title='Saint-Andr&#233;' style='background-color: #FFF; #006400;'>Saint-Andr&#233;</span>", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
-					{ id:"SAd_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1vWcldb-WuU1rtH-ElhKI-f_4pLEeJDzzvMaWJSrC"},
-                    { id:"SAd_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
-                    {  id:"SAd_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
-					{ id:"SAd_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},
-					{ id:"SAd_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1tVMs-082OJrhLvKNVua0QCH-hnrs4dhkePIbn2Sh"},
-					{ id:"SAd_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
-				 ] },
-				 { id:"Saint-Benoit",icon:txtInit[11]+"Saint-Benoit"+txtInit[12], html: "<span title='Saint-Benoit' style='background-color: #FFF; #008B8B;'>Saint-Benoit</span>", value:"1gdjt3qeIeAvBxMRhmLwlnCgzr7CTt71iJrZ8dCTY", items: [
-					 { id:"SB_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1zvWu4e_eyQ1Ho7T4wM63hhl6JtFqOixA7PZDWxPa"},
-                    { id:"SB_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1K5q_Z_O-QIXt74ZKG9de3lF_uEbKKrBX13HJq1AX"},
-                    {  id:"SB_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1VHstJP2RjDAvnmoDCGgJrtOTLWkgNAHltpI97KYx"},
-					{ id:"SB_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1hjSY4vwWwCRB8bQJ3uX7c7TyhvrX5c7p5jMDmhtO"},
-					{ id:"SB_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1z9NOfJnMEtQxerYyCFif9xX3g6YT91tRxZJiNzcb"},
-					{ id:"SB_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1u5cwPRUeVIpuiDkPw1lv_gzrO2DuQ20W0zERTTdc"}						
-				 ] },
-				 { id:"Sainte-Anne",icon:txtInit[11]+"Sainte-Anne"+txtInit[12], html: "<span title='Sainte-Anne' style='background-color: #FFF; #800000;'>Sainte-Anne</span>", value:"1s911vZP-Ftzh8TA3JoQSzwuRNbTwkJoZmYna_SFn", items: [
-					{ id:"SAn_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1nFu8dd5l9fDV2Fn-87mWp_cMrRwjxSjO-vy2Cv7b"},
-                    { id:"SAn_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"120SVl3kmLTTetv0_mrthuHsAUgRr8bG8t8ywKsgi"},
-                    {  id:"SAn_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},
-					{ id:"SAn_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}						
-				 ] },
-				 { id:"Sainte-Rose",icon:txtInit[11]+"Sainte-Rose"+txtInit[12], html: "<span title='Sainte-Rose' style='background-color: #FFF; #DAA520;'>Sainte-Rose</span>", value:"1gIcPI4SAohpVFM0seVxdlBAw2b2zesvpZH4QJ6DC", items: [
-					{ id:"SR_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1GKArjzvczShC_oTmoeSPVyxL_kfMEiyriOq4njIt"},
-                    { id:"SR_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1fWsTyPLLg_jZbHXLmn921wWRYNpp7Mph64n9PaCA"},
-                    {  id:"SR_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1JelP0FaMsEp22nh7DWvjGWA-HHEll4WsusdNze3W"},
-					{ id:"SR_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1beWOfA6DyHQS6-Kr9eZtG8i2io7Q4J9NquFgQyG-"},
-					{ id:"SB_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1a-nJFvtF_lUeKPNpgQbFubQXRXlkubvH6glUBg8v"},
-					{ id:"PP_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1iPRpywzSmOxOlLm5O-uJmrbbnn6YHGzl1rhuaJzA"}						
-				 ] },
-				{ id:"LaPlaineDesPalmistes",icon:txtInit[11]+"LaPlaineDesPalmistes"+txtInit[12], html: "<span title='La Plaine Des Palmistes' style='background-color: #FFF; #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items: [
-                    { id:"PP_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1oCcByb4vw2JlnNqp49lIysqTTRV6wK1xlqeC9ZGe"},
-					{ id:"PP_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1_ucovZZ5C18rlh_cGO6Uc2YgB23EmR-IQ9epBop4"},
-                    {  id:"PP_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"15V8aJ6r5JNfr4xP4ZKnmi4i9mZTt6f0l8WG5hbE3"},
-					{ id:"PP_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1DxmzBkR4z4qdMDV6bIl8P3ysFbbdWr41h83yK7wn"},
-					{ id:"PP_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}						
-				 ] },
-				 { id:"Salazie",icon:txtInit[11]+"Salazie"+txtInit[12],  html: "<span title='Salazie' style='background-color: #FFF; #000080;'>Salazie</span>", value:"1zRn7YirASic3zXNjwr0jPpwlUURx5v1w0wK2JGSZ", items: [
-					{ id:"Saz_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1UzSHUROSXlwSlMlCe4WQBDyucf1m83YsGbX4FYhP"},
-                    { id:"Saz_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"166vivC3Sr59gCaQR98o8-9sXHBfnKiJdX5hH_7tz"},
-                    {  id:"Saz_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1wOqplnMkWf_CHXezRZBC3HvMSf2lcKcnNzgUx8Jp"},
-					{ id:"Saz_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1oWl8XUdryHiQxlg83t_pu6ERxi4PPOjrvx2Vbuhj"},
-					{ id:"Saz_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1TjFpDyS3jwXAsLdAUL92BdcjM__2SLu71VDkkli_"}						
-				 ] }
-			]
-			},
-			{ id:"NORD",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='NORTH' style='background-color: #FFF; #4169E1;'>NORD</span>", value:"1X7thBX2nmGVIivqpYNzSWN9iC4OCJDvP469Yvr15", items: [
-				{ id:"Saint-Denis",icon:txtInit[11]+"Saint-Denis"+txtInit[12],  html: "<span title='Saint-Denis' style='background-color: #FFF; #4B0082;'>Saint-Denis</span>",value:"1B6GQb_eKzR2PmlhSHddq7I8v4KAlYB3HgtLLxWO6", items: [
-					{ id:"SD_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1A3qmh8ulO-hXKe2W57qihqlkXEMajktf6NUbvkH8"},
-                    { id:"SD_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1Vw4KON8Ww-OU2gTTg1web3a_kWjXOnc0cGmJ1xnR"},
-                    {  id:"SD_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1Wx6ZbbFLkEIdbxfS2AHJyUprIINfqtWLLhA_ngNZ"},
-					{ id:"SD_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1OIG0YWzJA6nr_Nr6F-lNVsnYfsKtA8ubbGA_Tx0v"},
-					{ id:"SD_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1PSVZqIwSOlIbOWgXTdUhMXe4Pj-IIhaOEiEz_kaV"},
-					{ id:"SD_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1yJfcFEbn1487U-HHCv9UcihepFv3kVS7U82pMS3A"}						
-				 ] },
-				 { id:"Sainte-Marie",icon:txtInit[11]+"Sainte-Marie"+txtInit[12], html: "<span title='Sainte-Marie' style='background-color: #FFF; #006400;'>Sainte-Marie</span>",value:"192A1s6RA93KPg1cXOC7QYPI6MyGBb-AZtNpFNnyt", items: [
-					{ id:"SM_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1O2m7YXKBxLcAQZkuX1oOrA6dJFiZNv7KEZqkUTuZ"},
-                    { id:"SM_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1vGSpCnOiCfNeAQvIpPscZ26cUq7x31imy_VShUZd"},
-                    {  id:"SM_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1FKB-9QH0VtpFGMtMeZZD_c2Fze2g9hYoxivizqav"},
-					{ id:"SM_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1hYkKYnkxqvjmRc7IKgAz9xdYPiNI2VqZ6oWnLMLd"},
-					{ id:"SM_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1CpsXyW6UwS2Ix6oTHfy64PKixJGYml3lnUjj_Rta"}						
-				 ] },
-				 { id:"Sainte-Suzanne",icon:txtInit[11]+"Sainte-Suzanne"+txtInit[12], html: "<span title='Sainte-Suzanne' style='background-color: #FFF; #008B8B;'>Sainte-Suzanne</span>" ,value: "11hA_F8nvGsVVgrtgSs0i4ehviHgHc1kmGDHv1JgS", items: [
-					{ id:"SS_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1uP6kIJhbe2VDpT-bXB9uMosjNNejhQGt_P7Ey2jf"},
-                    { id:"SS_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"14tKW-WkeyvLupjFAoWXMbAgEa9--pO18c1Jnr_5j"},
-                    {  id:"SS_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1CjnaMnc4aEFf3b9n498eqJaZKf9E3mndyDaF5PjG"},
-					{ id:"SS_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"},
-					{ id:"Por_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1oYTut7YPTzdcOtwYCRlkpQylcjllRvwcrnizBN5Q"},
-				 ] },
-				{ id:"LaPossession",icon:txtInit[11]+"LaPossession"+txtInit[12], html: "<span title='La Possession' style='background-color: #FFF; #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED", items: [
-					{ id:"Pos_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0], value:"1lr8c-nv0zSUMfdnWxpvmIZBf4EOcNSduutH7z-7D"},
-                    { id:"Pos_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
-                    {  id:"Pos_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
-					{ id:"Pos_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
-					{ id:"Pos_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
-				 ] },
-				 { id:"LePort",icon:txtInit[11]+"LePort"+txtInit[12], html: "<span title='Le Port' style='background-color: #FFF; #DAA520;'>Le Port</span> ",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0", items: [
-					{ id:"Por_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1egvMm3Q0a8ISZ3dbmydPFqMdsLvDuHwUemNkY1mi"},
-                    { id:"Por_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"19Zl9W3yXp0IdmcANjF_MlHX1R9hk8X27mFhJnmZH"},
-                    {  id:"Por_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"},
-					{ id:"Por_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1aOiWEpC7YfSJL10AebsxUpSpg-h-A4fcbIvjZxi8"},
-					{ id:"Por_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1YHjpqYf1aJqw-gylQDId1rCF_qDZDMSxUbxjRGG_"},
-					{ id:"Por_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"13B6si8MulZuOUFdcGkzj67HPwrMXklYzZOUuEi7Q"}						
-				 ] }
-				 
-			]
-			},
 			{ id:"OUEST",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='WEST' style='background-color: #FFF; #8B0000;'>OUEST</span> ", value:"1t35ApBEMf9xwiZA9EqZd-glj8GexmPuhpSr_ndlh", items: [
 				{ id:"Mafate",icon:txtInit[11]+"Mafate"+txtInit[12], html: "<span title='Mafate' style='background-color: #FFF; #4B0082;'>Mafate</span>",value:"1GveH25DbaQoreX86sPBmcFei9zfvi8UmD2y2qyqu", items: [
                     { id:"Ma_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"18JyKnH11VSG-SUHvvoIIxrkfTKDx4wwQd7Bpbe_p"},
@@ -287,6 +191,102 @@ var FuncTree = {
 				  
 				  
 			]
+			},
+			{ id:"NORD",icon:txtInit[11]+"reunion"+txtInit[12],html: "<span title='NORTH' style='background-color: #FFF; #4169E1;'>NORD</span>", value:"1X7thBX2nmGVIivqpYNzSWN9iC4OCJDvP469Yvr15", items: [
+				{ id:"Saint-Denis",icon:txtInit[11]+"Saint-Denis"+txtInit[12],  html: "<span title='Saint-Denis' style='background-color: #FFF; #4B0082;'>Saint-Denis</span>",value:"1B6GQb_eKzR2PmlhSHddq7I8v4KAlYB3HgtLLxWO6", items: [
+					{ id:"SD_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1A3qmh8ulO-hXKe2W57qihqlkXEMajktf6NUbvkH8"},
+                    { id:"SD_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1Vw4KON8Ww-OU2gTTg1web3a_kWjXOnc0cGmJ1xnR"},
+                    {  id:"SD_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1Wx6ZbbFLkEIdbxfS2AHJyUprIINfqtWLLhA_ngNZ"},
+					{ id:"SD_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1OIG0YWzJA6nr_Nr6F-lNVsnYfsKtA8ubbGA_Tx0v"},
+					{ id:"SD_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1PSVZqIwSOlIbOWgXTdUhMXe4Pj-IIhaOEiEz_kaV"},
+					{ id:"SD_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1yJfcFEbn1487U-HHCv9UcihepFv3kVS7U82pMS3A"}						
+				 ] },
+				 { id:"Sainte-Marie",icon:txtInit[11]+"Sainte-Marie"+txtInit[12], html: "<span title='Sainte-Marie' style='background-color: #FFF; #006400;'>Sainte-Marie</span>",value:"192A1s6RA93KPg1cXOC7QYPI6MyGBb-AZtNpFNnyt", items: [
+					{ id:"SM_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1O2m7YXKBxLcAQZkuX1oOrA6dJFiZNv7KEZqkUTuZ"},
+                    { id:"SM_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1vGSpCnOiCfNeAQvIpPscZ26cUq7x31imy_VShUZd"},
+                    {  id:"SM_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1FKB-9QH0VtpFGMtMeZZD_c2Fze2g9hYoxivizqav"},
+					{ id:"SM_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1hYkKYnkxqvjmRc7IKgAz9xdYPiNI2VqZ6oWnLMLd"},
+					{ id:"SM_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1CpsXyW6UwS2Ix6oTHfy64PKixJGYml3lnUjj_Rta"}						
+				 ] },
+				 { id:"Sainte-Suzanne",icon:txtInit[11]+"Sainte-Suzanne"+txtInit[12], html: "<span title='Sainte-Suzanne' style='background-color: #FFF; #008B8B;'>Sainte-Suzanne</span>" ,value: "11hA_F8nvGsVVgrtgSs0i4ehviHgHc1kmGDHv1JgS", items: [
+					{ id:"SS_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1uP6kIJhbe2VDpT-bXB9uMosjNNejhQGt_P7Ey2jf"},
+                    { id:"SS_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"14tKW-WkeyvLupjFAoWXMbAgEa9--pO18c1Jnr_5j"},
+                    {  id:"SS_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1CjnaMnc4aEFf3b9n498eqJaZKf9E3mndyDaF5PjG"},
+					{ id:"SS_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"},
+					{ id:"Por_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1oYTut7YPTzdcOtwYCRlkpQylcjllRvwcrnizBN5Q"},
+				 ] },
+				{ id:"LaPossession",icon:txtInit[11]+"LaPossession"+txtInit[12], html: "<span title='La Possession' style='background-color: #FFF; #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED", items: [
+					{ id:"Pos_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0], value:"1lr8c-nv0zSUMfdnWxpvmIZBf4EOcNSduutH7z-7D"},
+                    { id:"Pos_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
+                    {  id:"Pos_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
+					{ id:"Pos_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
+					{ id:"Pos_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
+				 ] },
+				 { id:"LePort",icon:txtInit[11]+"LePort"+txtInit[12], html: "<span title='Le Port' style='background-color: #FFF; #DAA520;'>Le Port</span> ",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0", items: [
+					{ id:"Por_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1egvMm3Q0a8ISZ3dbmydPFqMdsLvDuHwUemNkY1mi"},
+                    { id:"Por_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"19Zl9W3yXp0IdmcANjF_MlHX1R9hk8X27mFhJnmZH"},
+                    {  id:"Por_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"},
+					{ id:"Por_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1aOiWEpC7YfSJL10AebsxUpSpg-h-A4fcbIvjZxi8"},
+					{ id:"Por_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1YHjpqYf1aJqw-gylQDId1rCF_qDZDMSxUbxjRGG_"},
+					{ id:"Por_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"13B6si8MulZuOUFdcGkzj67HPwrMXklYzZOUuEi7Q"}						
+				 ] }
+				 
+			]
+			},
+			{ id:"EST",icon:txtInit[11]+"reunion"+txtInit[12],  html: "<span title='EAST' style='background-color: #FFF; #DAA520;'>EST</span>",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
+				{ id:"Bras-Panon",icon:txtInit[11]+"Bras-Panon"+txtInit[12], html: "<span title='Bras-Panon' style='background-color: #FFF; #4B0082;'>Bras-Panon</span>", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",  items: [
+					{ id:"BPn_t",icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0]+txtInit[10], value:"1SjOgOCz9LrImoNYW3dlV8AVwekzwgkwkIFrnL9r5"},
+                    { id:"BPn_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},
+                    { id:"BPn_md",icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"1Bzgou8rOmmto6PjPp71N_-JkAsIAOZI8ezXu_eFp"},
+					{ id:"BPn_v",icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1JqQPaUTMc-kjl8xVIWHnE6s0z4oW4WXhhSZbmm6p"},
+					{ id:"BPn_a",icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}					
+				 ]
+                },
+				 { id:"Saint-Andr&#233;",icon:txtInit[11]+"Saint-Andre"+txtInit[12], html: "<span title='Saint-Andr&#233;' style='background-color: #FFF; #006400;'>Saint-Andr&#233;</span>", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
+					{ id:"SAd_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1vWcldb-WuU1rtH-ElhKI-f_4pLEeJDzzvMaWJSrC"},
+                    { id:"SAd_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
+                    {  id:"SAd_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
+					{ id:"SAd_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},
+					{ id:"SAd_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1tVMs-082OJrhLvKNVua0QCH-hnrs4dhkePIbn2Sh"},
+					{ id:"SAd_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
+				 ] },
+				 { id:"Saint-Benoit",icon:txtInit[11]+"Saint-Benoit"+txtInit[12], html: "<span title='Saint-Benoit' style='background-color: #FFF; #008B8B;'>Saint-Benoit</span>", value:"1gdjt3qeIeAvBxMRhmLwlnCgzr7CTt71iJrZ8dCTY", items: [
+					 { id:"SB_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1zvWu4e_eyQ1Ho7T4wM63hhl6JtFqOixA7PZDWxPa"},
+                    { id:"SB_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1K5q_Z_O-QIXt74ZKG9de3lF_uEbKKrBX13HJq1AX"},
+                    {  id:"SB_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1VHstJP2RjDAvnmoDCGgJrtOTLWkgNAHltpI97KYx"},
+					{ id:"SB_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1hjSY4vwWwCRB8bQJ3uX7c7TyhvrX5c7p5jMDmhtO"},
+					{ id:"SB_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1z9NOfJnMEtQxerYyCFif9xX3g6YT91tRxZJiNzcb"},
+					{ id:"SB_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1u5cwPRUeVIpuiDkPw1lv_gzrO2DuQ20W0zERTTdc"}						
+				 ] },
+				 { id:"Sainte-Anne",icon:txtInit[11]+"Sainte-Anne"+txtInit[12], html: "<span title='Sainte-Anne' style='background-color: #FFF; #800000;'>Sainte-Anne</span>", value:"1s911vZP-Ftzh8TA3JoQSzwuRNbTwkJoZmYna_SFn", items: [
+					{ id:"SAn_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1nFu8dd5l9fDV2Fn-87mWp_cMrRwjxSjO-vy2Cv7b"},
+                    { id:"SAn_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"120SVl3kmLTTetv0_mrthuHsAUgRr8bG8t8ywKsgi"},
+                    {  id:"SAn_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},
+					{ id:"SAn_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}						
+				 ] },
+				 { id:"Sainte-Rose",icon:txtInit[11]+"Sainte-Rose"+txtInit[12], html: "<span title='Sainte-Rose' style='background-color: #FFF; #DAA520;'>Sainte-Rose</span>", value:"1gIcPI4SAohpVFM0seVxdlBAw2b2zesvpZH4QJ6DC", items: [
+					{ id:"SR_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1GKArjzvczShC_oTmoeSPVyxL_kfMEiyriOq4njIt"},
+                    { id:"SR_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"1fWsTyPLLg_jZbHXLmn921wWRYNpp7Mph64n9PaCA"},
+                    {  id:"SR_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1JelP0FaMsEp22nh7DWvjGWA-HHEll4WsusdNze3W"},
+					{ id:"SR_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1beWOfA6DyHQS6-Kr9eZtG8i2io7Q4J9NquFgQyG-"},
+					{ id:"SB_n", icon:txtInit[7]+"star"+txtInit[8], html: txtInit[9]+txtInit[4]+txtInit[10],value:"1a-nJFvtF_lUeKPNpgQbFubQXRXlkubvH6glUBg8v"},
+					{ id:"PP_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1iPRpywzSmOxOlLm5O-uJmrbbnn6YHGzl1rhuaJzA"}						
+				 ] },
+				{ id:"LaPlaineDesPalmistes",icon:txtInit[11]+"LaPlaineDesPalmistes"+txtInit[12], html: "<span title='La Plaine Des Palmistes' style='background-color: #FFF; #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items: [
+                    { id:"PP_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1oCcByb4vw2JlnNqp49lIysqTTRV6wK1xlqeC9ZGe"},
+					{ id:"PP_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10], value:"1_ucovZZ5C18rlh_cGO6Uc2YgB23EmR-IQ9epBop4"},
+                    {  id:"PP_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10], value:"15V8aJ6r5JNfr4xP4ZKnmi4i9mZTt6f0l8WG5hbE3"},
+					{ id:"PP_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10], value:"1DxmzBkR4z4qdMDV6bIl8P3ysFbbdWr41h83yK7wn"},
+					{ id:"PP_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}						
+				 ] },
+				 { id:"Salazie",icon:txtInit[11]+"Salazie"+txtInit[12],  html: "<span title='Salazie' style='background-color: #FFF; #000080;'>Salazie</span>", value:"1zRn7YirASic3zXNjwr0jPpwlUURx5v1w0wK2JGSZ", items: [
+					{ id:"Saz_t", icon:txtInit[7]+"play"+txtInit[8], html: txtInit[9]+txtInit[0],value:"1UzSHUROSXlwSlMlCe4WQBDyucf1m83YsGbX4FYhP"},
+                    { id:"Saz_s", icon:txtInit[7]+"hiker"+txtInit[8], html: txtInit[9]+txtInit[1]+txtInit[10],value:"166vivC3Sr59gCaQR98o8-9sXHBfnKiJdX5hH_7tz"},
+                    {  id:"Saz_md", icon:txtInit[7]+"dining"+txtInit[8], html: txtInit[9]+txtInit[2]+txtInit[10],value:"1wOqplnMkWf_CHXezRZBC3HvMSf2lcKcnNzgUx8Jp"},
+					{ id:"Saz_v", icon:txtInit[7]+"realestate"+txtInit[8], html: txtInit[9]+txtInit[3]+txtInit[10],value:"1oWl8XUdryHiQxlg83t_pu6ERxi4PPOjrvx2Vbuhj"},
+					{ id:"Saz_a", icon:txtInit[7]+"ranger_station"+txtInit[8], html: txtInit[9]+txtInit[5]+txtInit[10],value:"1TjFpDyS3jwXAsLdAUL92BdcjM__2SLu71VDkkli_"}						
+				 ] }
+			]
 			}
             ],
 	applyChild	:function(items){
@@ -339,13 +339,27 @@ var FuncTree = {
 	append : function(txt,color)
 	{
 		$('#info').append(txt);
-		$('#info').css("color",color);
-		$('#info').css("background-color","#FFFFFF");
+		$('#info').css("color","white");
+		$('#info').css("background-color",color);
 	}
-	
 };
 
-	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, height: '300px', width: '300px',theme: 'summer' });
+	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, width: '300px', height: 'auto', theme: 'summer' });
+	//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
+	
+    $("#jqxTree .jqx-tree-item").mouseenter(function (event) {
+		try{
+				
+                var text = event.target.textContent;
+                text = '#'+text.replace(/ /g,'').replace(/'/g,'');
+				var item = $('#jqxTree').jqxTree('getItem',$(text)[0] );
+				FuncTree.applysrch(item);
+					MapsLib.doSearch();
+               // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
+			}
+		catch(e)
+		{;}
+    });
 	$('#jqxTree').on('expand', function (event) {
 		
 		var e = event.args.element;
@@ -408,6 +422,7 @@ var FuncTree = {
 						
 					if(i!=null)
 						{
+							
 							for(var cpt in txtInit)
 							if(txtInit[cpt]==i.label)
 								FuncTree.bgrow=true;

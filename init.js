@@ -15,7 +15,7 @@
 		  $("body").css('background-size', '100%');
 		
 		  $("#listv").on("mouseenter",function(){
-		  
+				
 				$(this).animate({
 					opacity: '0.75',
 					height: '100%',
@@ -32,13 +32,45 @@
 				$('#info').empty();
 				FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
 								,"green");
-			})
-			;
-		$("#panel").css('background','none');
+				$('#info').bind('click',function(){
+					$('#listv').animate({
+						opacity: '1',
+						height: '15%',
+						width: '100%'
+					});
+					$('#map_canvas').animate({
+						opacity: '1'
+					});
+				
+				});
+				
+			});
+			$('#info').bind('click',function(){
+					$('#listv').animate({
+						opacity: '0.75',
+						height: '100%',
+						width: '70%'
+					});
+					$('#map_canvas').animate({
+						opacity: '0.3'
+					});
+				});
+		
 		  $("#panel").hover(function(){
 				$('#listv').animate({
-					opacity: '0.3',
-					height: '30%',
+					opacity: '1',
+					height: '15%',
+					width: '100%'
+				});
+				$('#map_canvas').animate({
+					opacity: '1'
+				});
+			
+			});
+		$("#rtrm").click(function(){
+				$('#listv').animate({
+					opacity: '1',
+					height: '15%',
 					width: '100%'
 				});
 				$('#map_canvas').animate({
@@ -47,7 +79,7 @@
 			
 			});
 	
-		  $('#btn').bind('click',function(){
+		  $('#btn').bind('click',function(){//init itin
 			$('small').show();
             $('#jqxTree').show();
 			$('#info').hide();
@@ -55,7 +87,19 @@
 			$('#listv').show();
 			$('#iti').css('color','blue');$('#iti').css('border-color','#FFFF00');$('#iti').css('font-size','15px');$('#iti').css('font-weight','none');
 			MapsLib.s=null;MapsLib.e=null;
+			 $('#btn').hide();
           });
+		  $('#info').bind('click',function(){
+				$('#listv').animate({
+					opacity: '1',
+					height: '15%',
+					width: '100%'
+				});
+				$('#map_canvas').animate({
+					opacity: '1'
+				});
+			
+			});
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
 		$('#clear').bind('click',function(){
 			var items = $('#jqxTree').jqxTree('getCheckedItems');

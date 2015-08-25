@@ -1,4 +1,5 @@
 **Open Source from Reunion Island***
+all plateform beta version but Optimisize for web
 
 1:prepare data to bdd by .csv with column kml geometry (polygon)
 2:create fusiontablelayer bdd (enable google ap autor2)
@@ -14,4 +15,12 @@ help: google icon http://kml4earth.appspot.com/icons.html
 		jqx Jquery widget
 		jQueryDatatable
 		
- 
+
+manifest and background for chrome module adaptation!!
+fond.pde work with processing.js for text 3d, redirect fram.html.
+init prepare index page,
+after is object jQuery:
+ MapLibs, FuncTree, FuncTab, FuncRoutes
+ runsense.css
+
+better put all in external link

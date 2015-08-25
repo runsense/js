@@ -1,144 +1,52 @@
 <!DOCTYPE html>
+<html lang='fr'>
+  <head>
 
-<html lang="fr">
-<head>
-	<!--id bing -->
-        <meta name="msvalidate.01" content="D338E487A839830CD45141EF5545AAA8" />
-        <meta name="google-site-verification" content="pxSCEvO2QDnHvV_38l3V6h44Qs3k0eT6MlHC-xS1wz0" />
-        
-        <!--referencement -->
-        
-            <meta name="Description" content=" Loisirs Touristique et des habitants, avec info sentier fermé et marinnes de l'ile de la Réunion" />
-            <meta name="Keywords" content="sentier, itinéraire, route, loisirs, culturels, touristiques, ludique ,sportives,réunion, REUNION, île, Island, 
-												hotel, restaurant, foot, tennis" />
-        
-        <meta name="Author" content="Runsense" />
-        <meta name="Reply-to" content="runsense974@gmail.com" />
-        <meta name="Copyright" content="runsense " />
-        <meta name="robots" content="Index, follow" />
+    <title>redirect</title>
+	<meta http-equiv="refresh" content="2; URL='http://runsense.re'" />
+	</head>
+	<body style="background-image:url('f.png');background-size: 100% 100%;background-repeat: no-repeat;" >
 		
-    <title id='Description'>île de la Réunion REUNION ISLAND</title>
-	<meta name="refresh" content="360" />
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
-	
-	<link rel="shortcut icon" href="favicon.ico">
-	
-	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
-    <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
-	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
-	
-<style>
+		<script src="processing.js"></script>
+		<script type="text/processing" data-processing-target="mycanvas">
+		float a=0.0;
+                                void setup() 
+                                {
+                                    size(800, 800, P3D);
+                                    background(1);
+                                    PFont font = loadFont("Arial");
+                                    textFont(font,70); 
+                                } 
 
+                                void draw(){
 
-      html, body {
-        height: 100% !important;
-        margin: 0px !important;
-        padding: 0px !important;
-      }
+                                background(255);
+                                a += 0.015;
+                                if(a > TWO_PI) { 
+                                    a = 0.0; 
+                                }
 
-	#map_canvas {
-        position: absolute;
-        height: 100%;
-        width: 70%;
-        margin: 0px;
-        padding: 0px
-      }
-      #panel {
-        position: absolute;
-        top: 5px;
-		left: 70%;
-        z-index: 5;
-        background-color: #fff;
-        
-        border: 1px solid #999;
-      }
-	  #listv {
-	   position: absolute;
-	   bottom:1px;
-	   height: 15%;
-	}
-	#btn {
-		display:none;
-		text-align: center;
-		size:100%;
-		background-color: #00ff00;
-	}
-	#iti, #clear{
-		background: none;
-	}
-	#info{
-	
-	}
-	
+                                translate(width/2, height/3,0);
+                                rotateY(a);
+                                //rotateY(a * 2.0);
 
-    </style>
+                                //rect(5, 5, 20, 5);
+                                fill(0, 102, 153);
+                                text("runsense", 10, -20, 10);
+                                //text("second");
+                                fill(0, 102, 153);
+                                text("RUNSENSE", 10, -20, -10); 
 
+                                
+                                fill(0, 102, 153);
+                                text("RUNSENSE", 30, 70, 10); 
+                                fill(0, 102, 153);
+                                text("Run$en$e", 30, 70, -10);
+                                }
+		</script>
+		<canvas id="mycanvas" style="position:absolute;left:20%;padding-right:20%;" >
+			<h1>Run$en$e</h1><b>974</b>
+		</canvas>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="./jqx/jqxcore.js"></script>
-    <script type="text/javascript" src="./jqx/jqxbuttons.js"></script>
-    <script type="text/javascript" src="./jqx/jqxscrollbar.js"></script>
-    <script type="text/javascript" src="./jqx/jqxpanel.js"></script>
-    <script type="text/javascript" src="./jqx/jqxtree.js"></script>
-	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
-	<script type="text/javascript" src="./jqx/jqxdatatable.js"></script>
-	<script type="text/javascript" src="./jqx/jqxdata.js"></script>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
-    </script>
-
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
-	
-   
-</head>
-<body class='default'> 
-	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
-	
-        <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)'>
-			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
-			<div id="info" style='float:left;'></div>
-			<table id="itinv" style='float:left;'>
-				<tr>				
-					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="depart (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
-				</tr>
-				<tr>
-					<td><input id="arv" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="arrive (END):"/></td>
-				</tr>
-			</table>
-			<button id='clear' style='background: none;float:right' >Clear check</button>
-			
-			
-						<div id='jqxTree' >
-							
-						</div>
-						
-				
-			
-			<!--************CODE GEOCOUNTER************-->
-			<script type="text/javascript" src="http://geoloc4.whoaremyfriends.net/private/geocounter.js?compte=121035895687"></script>
-			<noscript>
-			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php?compte=121035895687"  target="_blank"><img src="http://geoloc4.whoaremyfriends.net/private/geocounter.php?compte=121035895687" border="0" alt="plateformes"></a>
-
-			<br>Please do not change this code for a perfect fonctionality of your counter
-			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php">plateformes</a>
-			</noscript>
-			<!--************END CODE GEOCOUNTER************-->
-			
-		</div>
-		
-	<div id="listv"  title="ALLER sur le panneau pour la MAP A DROITE ( GO ON RIGHT PANEL FOR MAP)" >
-						</div>
-	<script type="text/javascript" src="js/func_tab.js"></script>					
-	<script type="text/javascript" src="js/func_route.js"></script>
-	<script type="text/javascript" src="js/func_tree.js"></script>						
-
-	 <script type="text/javascript" src="js/maps_lib.js"></script>	
-    <script type='text/javascript' src="init.js">
-      
-    </script>
-</body>
-
+	</body>
 </html>
-

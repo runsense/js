@@ -8,13 +8,13 @@
 google.maps.visualRefresh = true;
 
 
-//"AIzaSyDc_KEt2MhrQFwbLEZz-DFzZAIE3Dyr_NA" 
+//Objet Librairie de Google Map
 var MapsLib = MapsLib || {};
 var MapsLib = {
   s                 :null,
   e                 :null,
   cpte				:0,
-  chad:               '',
+  chad				:'',
   datajson          :['',''],
   geocoder          : new google.maps.Geocoder(),
   polygonTableID    :[],
@@ -22,14 +22,13 @@ var MapsLib = {
   googleApiKey		: "AIzaSyD49JCPjbwMZpVekOIPjWM6GQwEr6VCe8A",
   locationColumn	: "lat",
   map_centroid		: new google.maps.LatLng(-21.137472,55.546906),
-  locationScope		: "reunion", 
-  recordName		: "result", 
-  recordNamePlural	: "results",  
+  locationScope		: "reunion",  
   defaultZoom		: 10,
 
 initialize: function() {
-	MapsLib.geocoder = new google.maps.Geocoder();
+	
 	try{
+		MapsLib.geocoder = new google.maps.Geocoder();
 		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
 	}catch(e)
 	{
@@ -104,9 +103,7 @@ doSearch: function(location) {
 					  polylineOptions: {
 						strokeColor: stl,
 						strokeWeight: "int"  }
-					},
-					
-					  ] 
+					},] 
 					  
 					});
 				
@@ -150,12 +147,18 @@ doSearch: function(location) {
 		$("#jqxTree").jqxTree('selectItem', null);
 		
 	},
-anLayer: function(e){
+anLayer: function(e){//commande click layer
 		if(!FuncTree.bchk&&!FuncTree.bgrow)
 							{
+								var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
+								
+								
 								FuncTree.bchk=true;
-										var rplc ='#'+e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0]
-											.replace(/ /g,'').replace(/'/g,'');
+									
+										var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
+										
+										$(rplc).mouseover();
+										var table= $('#list_table').dataTable();
 										
 										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
 										
@@ -163,12 +166,11 @@ anLayer: function(e){
 										   MapsLib.chad='#arv';
 										   MapsLib.addrFromLatLng(e.latLng);
 										   var z= map.getZoom();
-										   $('.dataTables_scrollBody').animate({
-													scrollTop: $('#list_table tbody tr').offset().top
-											}, 400);
-											$(rplc).mouseover();
+										   
+											
 											
 								FuncTree.bchk=false;
+								return s;
 							}
 	},
 findMe: function() {
@@ -243,7 +245,7 @@ clickmap: function(pos)
                     }
                    
 
-                    map.setMapTypeId(google.maps.MapTypeId.HYBRID)
+                    map.setMapTypeId(google.maps.MapTypeId.HYBRID);
 
   },
 clearSearch: function() {
