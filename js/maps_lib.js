@@ -144,7 +144,7 @@ doSearch: function(location) {
 		}
 		
 		MapsLib.getList();
-		$("#jqxTree").jqxTree('selectItem', null);
+		$("#jqxTree").focus();
 		
 	},
 anLayer: function(e){//commande click layer
