@@ -6,7 +6,9 @@ html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !impo
 		#btn 		{ display:none;text-align: center;size:100%;background-color: #00ff00;}
 		#iti, #clear{ background: none; }
 		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
-		#info		{ float:left;height:50px; }
+		#info		{ float:left;height:50px; border-top-left-radius: 2em ;border-bottom-right-radius: 1em ;  }
 		#itinv		{ float:left; }
 		.jqx-widget-content{ background:rgba(255,255,0,0.3) !important;}
 		.jqx-fill-state-hover { font-size: 180% !important;}
+		.jqx-tree, .jqx-tree-item, #iti{ border-top-left-radius: 2em !important;border-bottom-right-radius: 1em !important; }
+		#dep, #arv, .form-control,.input-sm { border-bottom-left-radius: 1em !important;border-top-right-radius: 2em !important; }
