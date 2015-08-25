@@ -8,6 +8,7 @@ html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !impo
 		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
 		#info		{ float:left;height:50px; }
 		#itinv		{ float:left; }
-	@media all and (max-width: 768px) { body{ display: block;font-style:large;zoom=200%; } #jqxTree{ width: 200%; }   }
-	@media all and (max-width: 1024px) { body{ display: block; font-style:x-large;zoom=150%; } #jqxTree{ width: 200%; } }
-	@media all and (max-width: 1200px) { body{ display: block; font-style:xx-large; } #jqxTree{ width: 200%; } }
+		.jqx-widget-content{ background:rgba(255,255,0,0.3) !important;}
+	@media all and (max-width: 768px) { body{ display: block;font-style:large;zoom=200%; } .jqx-widget{ width: 200%; }   }
+	@media all and (max-width: 1024px) { body{ display: block; font-style:x-large;zoom=150%; } .jqx-widget{ width: 200%; } }
+	@media all and (max-width: 1200px) { body{ display: block; font-style:xx-large; } .jqx-widget{ width: 200%; } }
