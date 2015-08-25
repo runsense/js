@@ -9,6 +9,7 @@ html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !impo
 		#info		{ float:left;height:50px; }
 		#itinv		{ float:left; }
 		.jqx-widget-content{ background:rgba(255,255,0,0.3) !important;}
+		.jqx-fill-state-hover { font-size: 180% !important;}
 	@media all and (max-width: 768px) { body{ display: block;font-style:large;zoom=200%; } .jqx-widget{ width: 200%; }   }
 	@media all and (max-width: 1024px) { body{ display: block; font-style:x-large;zoom=150%; } .jqx-widget{ width: 200%; } }
 	@media all and (max-width: 1200px) { body{ display: block; font-style:xx-large; } .jqx-widget{ width: 200%; } }
