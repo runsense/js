@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 **Open Source from Reunion Island***
 all plateform beta version but Optimisize for web
 
+=======
+>>>>>>> d260242af3d1167cdf14988d760da67ee078f53c
 1:prepare data to bdd by .csv with column kml geometry (polygon)
 2:create fusiontablelayer bdd (enable google ap autor2)
 3:adapt maps_lib.js googleApiKey & map_centroid& locationscope
@@ -15,6 +18,7 @@ help: google icon http://kml4earth.appspot.com/icons.html
 		jqx Jquery widget
 		jQueryDatatable
 		
+<<<<<<< HEAD
 
 manifest and background for chrome module adaptation!!
 fond.pde work with processing.js for text 3d, redirect fram.html.
@@ -24,3 +28,6 @@ after is object jQuery:
  runsense.css
 
 better put all in external link
+=======
+ 
+>>>>>>> d260242af3d1167cdf14988d760da67ee078f53c

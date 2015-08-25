@@ -344,7 +344,7 @@ var FuncTree = {
 	}
 };
 
-	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, width: '300px', height: 'auto', theme: 'summer' });
+	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
 	//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 	
     $("#jqxTree .jqx-tree-item").mouseenter(function (event) {
