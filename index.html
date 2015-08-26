@@ -30,6 +30,9 @@
 	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
     <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
 	<link rel="stylesheet" href="./css/runsense.css" type="text/css" />
+	
+	<link rel="stylesheet" href="./js/jquery/jquery-ui.css" type="text/css" >
+	
 	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
 	<link rel="stylesheet" media="all and (orientation:portrait)" href="./jqx/jqx.mobile.css" />
 	<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css" />
@@ -38,6 +41,7 @@
 	<link rel="stylesheet" media="all and (max-width: 1200px)" href="./css/largeSize.css" />
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./jqx/jqxcore.js"></script>
     <script type="text/javascript" src="./jqx/jqxbuttons.js"></script>
     <script type="text/javascript" src="./jqx/jqxscrollbar.js"></script>
@@ -62,6 +66,9 @@
 			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
 			<div id="info" ></div>
 			<table id="itinv" >
+				<tr>				
+					<td><input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX" onclick="this.value=''" type="text" /></td><td ><input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" /></td>
+				</tr>
 				<tr>				
 					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="d&eacute;part (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
 				</tr>

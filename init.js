@@ -105,6 +105,7 @@
 			var items = $('#jqxTree').jqxTree('getCheckedItems');
 					for(var i in items)
 							$('#jqxTree').jqxTree('uncheckItem', items[i].element);
+			$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
 			
 		});
 		  $('#find_me').click(function(){
@@ -131,6 +132,5 @@
             return true;
           });
 	
-
         });
       //]]>
