@@ -24,6 +24,9 @@
 				$('#map_canvas').animate({
 					opacity: '0.3'
 				});
+				$("#panel").animate({
+						opacity: '0.3'
+					});
 				$('body').animate({
 					height: '100% !important',
 					margin: '0px !important',
@@ -41,6 +44,9 @@
 					$('#map_canvas').animate({
 						opacity: '1'
 					});
+					$("#panel").animate({
+						opacity: '1'
+					});
 				
 				});
 				
@@ -54,6 +60,9 @@
 					$('#map_canvas').animate({
 						opacity: '0.3'
 					});
+					$("#panel").animate({
+						opacity: '0.3'
+					});
 				});
 		
 		  $("#panel").hover(function(){
@@ -65,6 +74,9 @@
 				$('#map_canvas').animate({
 					opacity: '1'
 				});
+				$("#panel").animate({
+						opacity: '1'
+					});
 			
 			});
 		$("#rtrm").click(function(){
@@ -76,7 +88,9 @@
 				$('#map_canvas').animate({
 					opacity: '1'
 				});
-			
+				$("#panel").animate({
+					opacity: '1'
+				});
 			});
 	
 		  $('#btn').bind('click',function(){//init itin
@@ -98,7 +112,9 @@
 				$('#map_canvas').animate({
 					opacity: '1'
 				});
-			
+				$("#panel").animate({
+					opacity: '1'
+				});
 			});
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
 		$('#clear').bind('click',function(){

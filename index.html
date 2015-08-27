@@ -64,6 +64,12 @@
         <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)' >
 			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
 			<div id="info" ></div>
+			
+						<!--<div id='jqxExpander'>-->
+							<div id="search"> <button id='clear' style='background: none;float:right' >Clear check</button></div>
+							<div id='jqxTree'>
+							</div>
+						<!--</div>-->
 			<table id="itinv" >
 				<tr>				
 					<td><input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX" onclick="this.value=''" type="text" /></td><td ><input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" /></td>
@@ -75,13 +81,6 @@
 					<td><input id="arv" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="arriv&eacute; (END):"/></td>
 				</tr>
 			</table>
-			
-			
-						<!--<div id='jqxExpander'>-->
-							<div id="search"> <button id='clear' style='background: none;float:right' >Clear check</button></div>
-							<div id='jqxTree'>
-							</div>
-						<!--</div>-->
 			<!--************CODE GEOCOUNTER************-->
 			<script type="text/javascript" src="http://geoloc4.whoaremyfriends.net/private/geocounter.js?compte=121035895687"></script>
 			<noscript>
