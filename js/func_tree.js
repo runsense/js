@@ -469,6 +469,7 @@ var FuncTree = {
 								
 							if(i!=null)
 								{
+									$("#r_lieu").val(i.label);
 									
 									for(var cpt in FuncInit.txtInit)
 									if(FuncInit.txtInit[cpt]==i.label)
@@ -536,7 +537,10 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 			this.value=value;
 			var rplc ='#'+value;
 			$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
+			$("#r_theme").css('display','inline');
 			}); 
+ 
+			
 		$("#r_theme").on("autocompleteselect",function (event,ui)  {
 			var value = ui.item.value;
 			if(FuncInit.tmp=='')
@@ -550,5 +554,6 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 			}
 			
 			});
+			
 		$( "#r_theme" ).on( "autocompletefocus",function(event, ui){ $("#r_theme").autocomplete( "search", " " ); } );
 		
