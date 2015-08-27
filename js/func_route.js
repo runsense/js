@@ -24,14 +24,14 @@ var FuncRoute = {
 					   $('#info').empty();
 					   FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));
 					  
-					   $('#jqxTree').hide();
+					   $(FuncInit.idbox[0]).hide();
 					   $('small').hide();
 					   
 					   $('#btn').unbind();
 					   
 					   $('#btn').bind('click',function(){
 							$(this).hide();
-							$('#jqxTree').show();
+							$(FuncInit.idbox[0]).show();
 							$('#info').hide();
 							$('#dep').val(null);$('#arv').val(null);
 							MapsLib.s=null;MapsLib.e=null;

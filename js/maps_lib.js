@@ -144,7 +144,7 @@ doSearch: function(location) {
 		}
 		
 		MapsLib.getList();
-		$("#jqxTree").focus();
+		$(FuncInit.idbox[0]).focus();
 		
 	},
 anLayer: function(e){//commande click layer
@@ -160,7 +160,7 @@ anLayer: function(e){//commande click layer
 										$(rplc).mouseover();
 										var table= $('#list_table').dataTable();
 										
-										$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
+										$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
 										
 										
 										   MapsLib.chad='#arv';

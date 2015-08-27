@@ -1,6 +1,16 @@
 //Objet Librairie de l'Arbre dans Right Panel
+var bnm=true;
+var idp=['#jqxTree','#jqxTree .jqx-tree-item'];
+if($('#panel').css('display') == 'none')
+	{
+		['#jqxLM','#jqxLM .jqx-listitem-element'];
+		
+		bnm=false;
+	}
+
 var FuncInit= FuncInit || {};
 var FuncInit={
+	idbox	: idp,
 	txtInit : ["terain et jeux POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
 				,"manger & dormir EAT & SLEEP"		//2
@@ -27,7 +37,7 @@ var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
-	pre			:true,
+	bnm			:bnm,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
@@ -307,11 +317,65 @@ var FuncTree = {
 	},
 	chkItm :function(elmt){
 		var rplc='#'+elmt.id;
-				$("#jqxTree").jqxTree('checkItem', $(rplc)[0], true);
+				$(FuncInit.idbox[0]).jqxTree('checkItem', $(rplc)[0], true);
 	},
 	slcItm :function(txt){
 		var rplc='#'+txt;
-		return $("#jqxTree").jqxTree('selectItem', $(rplc)[0], true);
+		return $(FuncInit.idbox[0]).jqxTree('selectItem', $(rplc)[0], true);
+	},
+	srchSrc :function(val){
+		var item=null;
+		var bpfe=true;
+		for(var i in FuncTree.source)
+			{
+				if(bpfe)
+					if(item.label==val)
+						{
+							item=FuncTree.source[i];
+							bpfe=false;
+						}
+					else{
+							var items= FuncTree.source[i].items;
+							for(var j in items)
+								if(bpfe)
+								if(item.label==val)
+									{
+										item=items[i];
+										bpfe=false;
+									}
+								else{
+										var ssimts= items[i].items;
+										
+									}
+						}
+					
+			}
+			return item;
+	},
+	applymob :function(val)
+	{
+		FuncTree.ptbid=new Array();
+		FuncTree.styles=new Array();
+		try{
+			var item=null;
+			var bpfe=true;
+			var i=FuncTree.srchSrc(val);
+						
+						FuncTree.ptbid.push(i.value);
+							
+						FuncTree.styles.push(FuncTree.chStyle(i.label));
+						var u=FuncTree.chURL(i.label);
+						if(u!=null)
+							FuncTree.styles.push(FuncTree.chURL(i.label));
+						else
+							FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");
+
+					
+			}catch(e)
+			{
+				;
+			}
+		
 	},
 	applysrch :function(i)
 	{
@@ -357,141 +421,144 @@ var FuncTree = {
 	}
 };
 
-	$('#jqxTree').jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
-	//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 	
-    $("#jqxTree .jqx-tree-item").mouseenter(function (event) {
-		try{
-				
-                var text = event.target.textContent;
-                text = '#'+text.replace(/ /g,'').replace(/'/g,'');
-				var item = $('#jqxTree').jqxTree('getItem',$(text)[0] );
-				FuncTree.applysrch(item);
-					MapsLib.doSearch();
-               // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
-			}
-		catch(e)
-		{;}
-    });
-	$('#jqxTree').on('expand', function (event) {
-		
-		var e = event.args.element;
-		var item = $('#jqxTree').jqxTree('getItem',e );
-		if($('#jqxTree').jqxTree('getItem',e.parentElement.parentElement)!=null)
-					FuncTree.zoom=12;
-				else
-					FuncTree.zoom=10;
-		if(!FuncTree.bgrow)
-		{
-				FuncTree.bgrow=true;
-				
-					$('#jqxTree').jqxTree('checkItem', e, true);
-				
-					
-				
-                
+
+			$(FuncInit.idbox[0]).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
+			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 			
-					$('small').show();
-					FuncTree.applysrch(item);
-					MapsLib.doSearch();
-					$('#jqxTree').jqxTree('ensureVisible', e);
-		}
-				
-    });
-    $('#jqxTree').on('collapse', function (ev) {
-		if(!FuncTree.bgrow)
-		{
-			FuncTree.bgrow=true;
-			FuncTree.ptbid=new Array();
-			//$('#jqxTree').jqxTree('uncheckAll');
-					var args = ev.args;
-					var elmt = args.element;
-					
-					var i = $('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement);
-					
-						$("#listv").empty();
+			$(FuncInit.idbox[1]).mouseenter(function (event) {
+				if(FuncTree.bnm)
+				try{
 						
-						FuncTree.applysrch(null);
-						$('small').hide();
-						FuncTree.zoom=10;
-						MapsLib.doSearch();
-					/*if($('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement)!=null)
-					{
-						var prtItm = $('#jqxTree').jqxTree('getItem',elmt.parentElement.parentElement);
+						var text = event.target.textContent;
+						text = '#'+text.replace(/ /g,'').replace(/'/g,'');
+						var item = $(FuncInit.idbox[0]).jqxTree('getItem',$(text)[0] );
+						FuncTree.applysrch(item);
+							MapsLib.doSearch();
+					   // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
+					}
+				catch(e)
+				{;}
+			});
+			$(FuncInit.idbox[0]).on('expand', function (event) {
+			if(FuncTree.bnm)
+			{
+				var e = event.args.element;
+				var item = $(FuncInit.idbox[0]).jqxTree('getItem',e );
+				if($(FuncInit.idbox[0]).jqxTree('getItem',e.parentElement.parentElement)!=null)
+							FuncTree.zoom=12;
+						else
+							FuncTree.zoom=10;
+				if(!FuncTree.bgrow)
+				{
+						FuncTree.bgrow=true;
+						
+							$(FuncInit.idbox[0]).jqxTree('checkItem', e, true);
+						
 							
-						$('#jqxTree').jqxTree('collapseItem',prtItm.element);
-					}*/
-			}
-		
-			
-    });
-	$('#jqxTree').bind('select', function (ev) {
+						
+						
+					
+							$('small').show();
+							FuncTree.applysrch(item);
+							MapsLib.doSearch();
+							$(FuncInit.idbox[0]).jqxTree('ensureVisible', e);
+				}
+			}			
+			});
+			$(FuncInit.idbox[0]).on('collapse', function (ev) {
+				if(!FuncTree.bgrow)
+				{
+					FuncTree.bgrow=true;
+					FuncTree.ptbid=new Array();
+					//$(FuncInit.idbox[0]).jqxTree('uncheckAll');
+							var args = ev.args;
+							var elmt = args.element;
+							
+							var i = $(FuncInit.idbox[0]).jqxTree('getItem',elmt.parentElement.parentElement);
+							
+								$("#listv").empty();
+								
+								FuncTree.applysrch(null);
+								$('small').hide();
+								FuncTree.zoom=10;
+								MapsLib.doSearch();
+							/*if($(FuncInit.idbox[0]).jqxTree('getItem',elmt.parentElement.parentElement)!=null)
+							{
+								var prtItm = $(FuncInit.idbox[0]).jqxTree('getItem',elmt.parentElement.parentElement);
+									
+								$(FuncInit.idbox[0]).jqxTree('collapseItem',prtItm.element);
+							}*/
+					}
 				
-				FuncTree.zoom=13;
+					
+			});
+			
+			$(FuncInit.idbox[0]).bind('select', function (ev) {
+						
+						FuncTree.zoom=13;
+							var a = ev.args;
+							var e = a.element;
+							
+							var i = $(FuncInit.idbox[0]).jqxTree('getItem', e);
+								
+							if(i!=null)
+								{
+									
+									for(var cpt in FuncInit.txtInit)
+									if(FuncInit.txtInit[cpt]==i.label)
+										FuncTree.bgrow=true;
+								
+										$(FuncInit.idbox[0]).jqxTree('checkItem', e, true);
+								
+									FuncTree.applysrch(i);
+										MapsLib.doSearch();
+									
+								}
+						
+						
+						
+							
+			});
+			$(FuncInit.idbox[0]).on('checkChange', function (ev)	
+			{	
+				
+				if(!FuncTree.bgrow)
+				{
+					$('#clear').css('color','red');$('#clear').css('border-color','green');
 					var a = ev.args;
 					var e = a.element;
+					var item = $(FuncInit.idbox[0]).jqxTree('getItem', e);
+					var bIn=false;
+					for(var i in FuncInit.txtInit)
+						if(item.label==FuncInit.txtInit[i])
+							bIn=true;
+					if(!bIn)
+					{			
+						var items = $(FuncInit.idbox[0]).jqxTree('getCheckedItems');
+						
+						var pre = e.parentElement.parentElement;
+						var	prei = $(FuncInit.idbox[0]).jqxTree('getItem', pre);
+						if(prei!=null)
+						
+								for(var i in items)
+									if(items[i].element!=pre&&items[i].element!=e)
+										{
+											$(FuncInit.idbox[0]).jqxTree('uncheckItem', items[i].element);
+										}
+					}
+					FuncTree.bgrow=true;
 					
-					var i = $('#jqxTree').jqxTree('getItem', e);
+					if(a.checked)
+						$(FuncInit.idbox[0]).jqxTree('expandItem', e);
+					else
+						{$(FuncInit.idbox[0]).jqxTree('collapseItem', e);}
 						
-					if(i!=null)
-						{
-							
-							for(var cpt in FuncInit.txtInit)
-							if(FuncInit.txtInit[cpt]==i.label)
-								FuncTree.bgrow=true;
-						
-								$('#jqxTree').jqxTree('checkItem', e, true);
-						
-							FuncTree.applysrch(i);
-								MapsLib.doSearch();
-							
-						}
-				
-				
-				
 					
-    });
-	$('#jqxTree').on('checkChange', function (ev)	
-	{	
-		
-		if(!FuncTree.bgrow)
-		{
-			$('#clear').css('color','red');$('#clear').css('border-color','green');
-			var a = ev.args;
-			var e = a.element;
-			var item = $('#jqxTree').jqxTree('getItem', e);
-			var bIn=false;
-			for(var i in FuncInit.txtInit)
-				if(item.label==FuncInit.txtInit[i])
-					bIn=true;
-			if(!bIn)
-			{			
-				var items = $('#jqxTree').jqxTree('getCheckedItems');
-				
-				var pre = e.parentElement.parentElement;
-				var	prei = $('#jqxTree').jqxTree('getItem', pre);
-				if(prei!=null)
-					FuncTree.pre= prei.isExpanded;
-				
-						for(var i in items)
-							if(items[i].element!=pre&&items[i].element!=e)
-								{
-									$('#jqxTree').jqxTree('uncheckItem', items[i].element);
-								}
-			}
-			FuncTree.bgrow=true;
-			
-			if(a.checked)
-				$('#jqxTree').jqxTree('expandItem', e);
-			else
-				{$('#jqxTree').jqxTree('collapseItem', e);}
-				
-			
-		}else
-			{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
-	}); 
-
-
+				}else
+					{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
+			}); 
+	
 var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},
 {label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'}];
 
@@ -503,7 +570,7 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 				FuncInit.tmp= ui.item.id;
 			this.value=value;
 			var rplc ='#'+value;
-			$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
+			$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
 			}); 
 		$("#r_theme").on("autocompleteselect",function (event,ui)  {
 			var value = ui.item.value;
@@ -513,10 +580,10 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 			{
 				this.value=ui.item.label;
 				var rplc ='#'+FuncInit.tmp+'_'+value;
-				$('#jqxTree').jqxTree('selectItem',$(rplc)[0]);
+				$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
 				this.value=ui.item.label;
 			}
 			
 			});
 		$( "#r_theme" ).on( "autocompletefocus",function(event, ui){ $("#r_theme").autocomplete( "search", " " ); } );
-            
+		

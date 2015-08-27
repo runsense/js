@@ -31,18 +31,7 @@ cRows: function(rows)
 		//set table headers
 	  var l = rows.length;
       var list_table = "\
-      <table class='table' id ='list_table'>\
-        <thead>\
-          <tr>\
-			<th>icon</th>\
-            <th>Nom (NAME)</th>\
-			<th>Description (INFO)</th>\
-			<th>icon</th>\
-			<th>latitude</th>\
-			<th>longitude</th>\
-          </tr>\
-        </thead>\
-        <tbody>";
+      <table class='table' id ='list_table'><tbody>";
 		var lat=null;
 		var lng=null;
 		var row;
@@ -147,11 +136,7 @@ cRows: function(rows)
 			).on( 'mouseover', 'td', function (){
 				$(this).css("background","#B8860B");
 				$(this).css("fontSize","180%");
-					/*FuncTab.idx= this.rowIndex-FuncTab.idx;
-						
-						$('.dataTables_scrollBody').animate({
-								scrollTop: $('#list_table tbody tr').offset().top
-						}, FuncTab.idx*180);*/
+				
 				
 				
 			  }).on( 'mouseleave', 'td',
