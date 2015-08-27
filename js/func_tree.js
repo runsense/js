@@ -1,16 +1,13 @@
 //Objet Librairie de l'Arbre dans Right Panel
 var bnm=true;
-var idp=['#jqxTree','#jqxTree .jqx-tree-item'];
 if($('#panel').css('display') == 'none')
 	{
-		['#jqxLM','#jqxLM .jqx-listitem-element'];
-		
 		bnm=false;
 	}
 
 var FuncInit= FuncInit || {};
 var FuncInit={
-	idbox	: idp,
+	idbox	: "#jqxTree",
 	txtInit : ["terain et jeux POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
 				,"manger & dormir EAT & SLEEP"		//2
@@ -26,10 +23,10 @@ var FuncInit={
 				,".gif"]//12
 				,
 	srcId 	: [{label:'Mafate',value:'Mafate',id:'Ma'},{label:'Saint-Gilles',value:'Saint-Gilles',id:'SG'},{label:'Saint-Leu',value:'Saint-Leu',id:'SL'},
-				{label:'Trois-Bassins',value:'TroisBassins',id:'TB'},{label:'Saint-Paul',value:'Saint-Paul',id:'SPA'},{label:'l Etang Sale',value:'EtangSale',id:'ES'},{label:'Entre-Deux',value:'Entre-Deux',id:'ED'},{label:'Les Avirons',value:'LesAvirons',id:'AV'},
+				{label:'Trois-Bassins',value:'TroisBassins',id:'TB'},{label:'Saint-Paul',value:'Saint-Paul',id:'SPA'},{label:'l Etang Salé',value:'EtangSalé',id:'ES'},{label:'Entre-Deux',value:'Entre-Deux',id:'ED'},{label:'Les Avirons',value:'LesAvirons',id:'AV'},
 				{label:'Saint-Pierre',value:'Saint-Pierre',id:'SPI'},{label:'Saint-Joseph',value:'Saint-Joseph',id:'SJ'},{label:'Petite Ile',value:'PetiteIle',id:'PI'},{label:'Saint-Louis',value:'Saint-Louis',id:'SLO'},{label:'Cilaos',value:'Cilaos',id:'CI'},{label:'Tampon',value:'Tampon',id:'T'},{label:'La Plaine des Cafres',value:'LaPlaineDesCafres',id:'PC'},{label:'Volcan' ,value:'enclosduTremblet',id:'ET'},
 				{label:'Saint-Phillippe',value:'Saint-Phillippe',id:'SPH'},{label:'Saint-Denis',value:'Saint-Denis',id:'SD'},{label:'Sainte-Marie',value:'Sainte-Marie',id:'SM'},{label:'Sainte-Suzanne',value:'Sainte-Suzanne',id:'SS'},{label:'La Possession',value:'LaPossession',id:'Pos'},{label:'Le Port',value:'LePort',id:'Por'},
-				{label:'Bras-Panon',value:'Bras-Panon',id:'BPn'},{label:'Saint-Andre',value:'Saint-Andre',id:'SAd'},{label:'Saint-Benoit',value:'Saint-Benoit',id:'SB'},{label:'Sainte-Anne',value:'Sainte-Anne',id:'SAn'},{label:'Sainte-Rose',value:'Sainte-Rose',id:'SR'},{label:'La Plaine des Palmistes',value:'LaPlaineDesPalmistes',id:'PP'},{label:'Salazie',value:'Salazie',id:'SAz'}]
+				{label:'Bras-Panon',value:'Bras-Panon',id:'BPn'},{label:'Saint-André',value:'Saint-André',id:'SAd'},{label:'Saint-Benoit',value:'Saint-Benoit',id:'SB'},{label:'Sainte-Anne',value:'Sainte-Anne',id:'SAn'},{label:'Sainte-Rose',value:'Sainte-Rose',id:'SR'},{label:'La Plaine des Palmistes',value:'LaPlaineDesPalmistes',id:'PP'},{label:'Salazie',value:'Salazie',id:'SAz'}]
 			,
 	tmp		:	''
 };
@@ -317,11 +314,11 @@ var FuncTree = {
 	},
 	chkItm :function(elmt){
 		var rplc='#'+elmt.id;
-				$(FuncInit.idbox[0]).jqxTree('checkItem', $(rplc)[0], true);
+				$(FuncInit.idbox).jqxTree('checkItem', $(rplc)[0], true);
 	},
 	slcItm :function(txt){
 		var rplc='#'+txt;
-		return $(FuncInit.idbox[0]).jqxTree('selectItem', $(rplc)[0], true);
+		return $(FuncInit.idbox).jqxTree('selectItem', $(rplc)[0], true);
 	},
 	srchSrc :function(val){
 		var item=null;
@@ -379,6 +376,8 @@ var FuncTree = {
 	},
 	applysrch :function(i)
 	{
+		var tmp=FuncTree.ptbid;
+		var stmp=FuncTree.styles;
 		FuncTree.ptbid=new Array();
 		FuncTree.styles=new Array();
 		try{
@@ -395,9 +394,7 @@ var FuncTree = {
 
 					
 			}catch(e)
-			{
-				;
-			}
+			{ FuncTree.ptbid=tmp;FuncTree.styles=stmp; }
 		
 	},
 	chStyle :function(l)
@@ -423,16 +420,16 @@ var FuncTree = {
 
 	
 
-			$(FuncInit.idbox[0]).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
+			$(FuncInit.idbox).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
 			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 			
-			$(FuncInit.idbox[1]).mouseenter(function (event) {
+			$('#jqxTree .jqx-tree-item').mouseenter(function (event) {
 				if(FuncTree.bnm)
 				try{
 						
 						var text = event.target.textContent;
 						text = '#'+text.replace(/ /g,'').replace(/'/g,'');
-						var item = $(FuncInit.idbox[0]).jqxTree('getItem',$(text)[0] );
+						var item = $(FuncInit.idbox).jqxTree('getItem',$(text)[0] );
 						FuncTree.applysrch(item);
 							MapsLib.doSearch();
 					   // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
@@ -440,12 +437,12 @@ var FuncTree = {
 				catch(e)
 				{;}
 			});
-			$(FuncInit.idbox[0]).on('expand', function (event) {
+			$(FuncInit.idbox).on('expand', function (event) {
 			if(FuncTree.bnm)
 			{
 				var e = event.args.element;
-				var item = $(FuncInit.idbox[0]).jqxTree('getItem',e );
-				if($(FuncInit.idbox[0]).jqxTree('getItem',e.parentElement.parentElement)!=null)
+				var item = $(FuncInit.idbox).jqxTree('getItem',e );
+				if($(FuncInit.idbox).jqxTree('getItem',e.parentElement.parentElement)!=null)
 							FuncTree.zoom=12;
 						else
 							FuncTree.zoom=10;
@@ -453,7 +450,7 @@ var FuncTree = {
 				{
 						FuncTree.bgrow=true;
 						
-							$(FuncInit.idbox[0]).jqxTree('checkItem', e, true);
+							$(FuncInit.idbox).jqxTree('checkItem', e, true);
 						
 							
 						
@@ -462,20 +459,20 @@ var FuncTree = {
 							$('small').show();
 							FuncTree.applysrch(item);
 							MapsLib.doSearch();
-							$(FuncInit.idbox[0]).jqxTree('ensureVisible', e);
+							$(FuncInit.idbox).jqxTree('ensureVisible', e);
 				}
 			}			
 			});
-			$(FuncInit.idbox[0]).on('collapse', function (ev) {
+			$(FuncInit.idbox).on('collapse', function (ev) {
 				if(!FuncTree.bgrow)
 				{
 					FuncTree.bgrow=true;
 					FuncTree.ptbid=new Array();
-					//$(FuncInit.idbox[0]).jqxTree('uncheckAll');
+					//$(FuncInit.idbox).jqxTree('uncheckAll');
 							var args = ev.args;
 							var elmt = args.element;
 							
-							var i = $(FuncInit.idbox[0]).jqxTree('getItem',elmt.parentElement.parentElement);
+							var i = $(FuncInit.idbox).jqxTree('getItem',elmt.parentElement.parentElement);
 							
 								$("#listv").empty();
 								
@@ -483,24 +480,24 @@ var FuncTree = {
 								$('small').hide();
 								FuncTree.zoom=10;
 								MapsLib.doSearch();
-							/*if($(FuncInit.idbox[0]).jqxTree('getItem',elmt.parentElement.parentElement)!=null)
+							/*if($(FuncInit.idbox).jqxTree('getItem',elmt.parentElement.parentElement)!=null)
 							{
-								var prtItm = $(FuncInit.idbox[0]).jqxTree('getItem',elmt.parentElement.parentElement);
+								var prtItm = $(FuncInit.idbox).jqxTree('getItem',elmt.parentElement.parentElement);
 									
-								$(FuncInit.idbox[0]).jqxTree('collapseItem',prtItm.element);
+								$(FuncInit.idbox).jqxTree('collapseItem',prtItm.element);
 							}*/
 					}
 				
 					
 			});
 			
-			$(FuncInit.idbox[0]).bind('select', function (ev) {
+			$(FuncInit.idbox).bind('select', function (ev) {
 						
 						FuncTree.zoom=13;
 							var a = ev.args;
 							var e = a.element;
 							
-							var i = $(FuncInit.idbox[0]).jqxTree('getItem', e);
+							var i = $(FuncInit.idbox).jqxTree('getItem', e);
 								
 							if(i!=null)
 								{
@@ -509,7 +506,7 @@ var FuncTree = {
 									if(FuncInit.txtInit[cpt]==i.label)
 										FuncTree.bgrow=true;
 								
-										$(FuncInit.idbox[0]).jqxTree('checkItem', e, true);
+										$(FuncInit.idbox).jqxTree('checkItem', e, true);
 								
 									FuncTree.applysrch(i);
 										MapsLib.doSearch();
@@ -520,7 +517,7 @@ var FuncTree = {
 						
 							
 			});
-			$(FuncInit.idbox[0]).on('checkChange', function (ev)	
+			$(FuncInit.idbox).on('checkChange', function (ev)	
 			{	
 				
 				if(!FuncTree.bgrow)
@@ -528,31 +525,31 @@ var FuncTree = {
 					$('#clear').css('color','red');$('#clear').css('border-color','green');
 					var a = ev.args;
 					var e = a.element;
-					var item = $(FuncInit.idbox[0]).jqxTree('getItem', e);
+					var item = $(FuncInit.idbox).jqxTree('getItem', e);
 					var bIn=false;
 					for(var i in FuncInit.txtInit)
 						if(item.label==FuncInit.txtInit[i])
 							bIn=true;
 					if(!bIn)
 					{			
-						var items = $(FuncInit.idbox[0]).jqxTree('getCheckedItems');
+						var items = $(FuncInit.idbox).jqxTree('getCheckedItems');
 						
 						var pre = e.parentElement.parentElement;
-						var	prei = $(FuncInit.idbox[0]).jqxTree('getItem', pre);
+						var	prei = $(FuncInit.idbox).jqxTree('getItem', pre);
 						if(prei!=null)
 						
 								for(var i in items)
 									if(items[i].element!=pre&&items[i].element!=e)
 										{
-											$(FuncInit.idbox[0]).jqxTree('uncheckItem', items[i].element);
+											$(FuncInit.idbox).jqxTree('uncheckItem', items[i].element);
 										}
 					}
 					FuncTree.bgrow=true;
 					
 					if(a.checked)
-						$(FuncInit.idbox[0]).jqxTree('expandItem', e);
+						$(FuncInit.idbox).jqxTree('expandItem', e);
 					else
-						{$(FuncInit.idbox[0]).jqxTree('collapseItem', e);}
+						{$(FuncInit.idbox).jqxTree('collapseItem', e);}
 						
 					
 				}else
@@ -570,7 +567,7 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 				FuncInit.tmp= ui.item.id;
 			this.value=value;
 			var rplc ='#'+value;
-			$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
+			$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
 			}); 
 		$("#r_theme").on("autocompleteselect",function (event,ui)  {
 			var value = ui.item.value;
@@ -580,7 +577,7 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 			{
 				this.value=ui.item.label;
 				var rplc ='#'+FuncInit.tmp+'_'+value;
-				$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
+				$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
 				this.value=ui.item.label;
 			}
 			

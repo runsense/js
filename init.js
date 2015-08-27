@@ -95,7 +95,7 @@
 	
 		  $('#btn').bind('click',function(){//init itin
 			$('small').show();
-            $(FuncInit.idbox[0]).show();
+            $(FuncInit.idbox).show();
 			$('#info').hide();
 			$('#dep').val(null);$('#arv').val(null);
 			$('#listv').show();
@@ -118,11 +118,11 @@
 			});
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
 		$('#clear').bind('click',function(){
-			var items = $(FuncInit.idbox[0]).jqxTree('getCheckedItems');
+			var items = $(FuncInit.idbox).jqxTree('getCheckedItems');
 					for(var i in items)
-							$(FuncInit.idbox[0]).jqxTree('uncheckItem', items[i].element);
-			$(FuncInit.idbox[0]).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
-			$(FuncInit.idbox[0]).jqxTree('refresh');
+							$(FuncInit.idbox).jqxTree('uncheckItem', items[i].element);
+			$(FuncInit.idbox).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
+			$(FuncInit.idbox).jqxTree('refresh');
 			
 		});
 		  $('#find_me').click(function(){

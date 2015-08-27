@@ -146,7 +146,7 @@ doSearch: function(location) {
 		}
 		
 		MapsLib.getList();
-		$(FuncInit.idbox[0]).focus();
+		$(FuncInit.idbox).focus();
 		
 	},
 anLayer: function(e){//commande click layer
@@ -163,7 +163,7 @@ anLayer: function(e){//commande click layer
 										$(rplc).mouseover();
 									}
 									
-										$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
+										$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
 										
 										
 										   MapsLib.chad='#arv';
@@ -177,17 +177,15 @@ anLayer: function(e){//commande click layer
 	},
 findMe: function() {
     // Try W3C Geolocation (Preferred)
-    var foundLocation;
+    var fl;
 
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        foundLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-        MapsLib.addrFromLatLng(foundLocation);
+        fl = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        MapsLib.addrFromLatLng(fl);
       }, null);
     }
-    else {
-      alert("Sorry, we could not find your location.");
-    }
+    else {;}
   },
 addrFromLatLng: function(latLngPoint) {
 console.log(latLngPoint);
