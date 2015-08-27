@@ -1,3 +1,2 @@
- body{ display: block;font-style:large; background: none !important;} .jqx-widget{ width: 200%; }
- #panel{ display:none !important;}
- #mobPanel{ display:block; }
+ body{ display: block;font-style:large; background: none !important;} .jqx-widget{ width: 120%; }
+ #panel{ display:block !important;}
