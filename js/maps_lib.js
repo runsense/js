@@ -182,7 +182,9 @@ findMe: function() {
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
         fl = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-        MapsLib.addrFromLatLng(fl);
+        MapsLib.chad= '#dep';
+		MapsLib.addrFromLatLng(fl);
+						map.setCenter(fl);
       }, null);
     }
     else {;}

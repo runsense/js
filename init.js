@@ -13,7 +13,9 @@
 		  $("body").css('background-image', FuncTree.styles[1]);
 		  $("body").css('background-repeat', 'no-repeat');
 		  $("body").css('background-size', '100%');
-		
+		  $("#fl").bind('click',function(){
+			MapsLib.findMe();
+		  });
 		  $(FuncInit.idtab).on("mouseenter",function(){
 				
 				$(this).animate({

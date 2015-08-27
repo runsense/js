@@ -62,7 +62,12 @@
 	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
 	
         <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)' >
-			<div id='fl'><b><I> Ou suis-je</I></b></div><button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
+			<button id='fl'><b><I> Ou suis-je</I></b></button><button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
+			<table id="accs" >
+				<tr>				
+					<td><input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX" onclick="this.value=''" type="text" /></td><td ><input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" /></td>
+				</tr>
+			</table>
 			<div id="info" ></div>
 			
 						<!--<div id='jqxExpander'>-->
@@ -71,9 +76,6 @@
 							</div>
 						<!--</div>-->
 			<table id="itinv" >
-				<tr>				
-					<td><input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX" onclick="this.value=''" type="text" /></td><td ><input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" /></td>
-				</tr>
 				<tr>				
 					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="d&eacute;part (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
 				</tr>
