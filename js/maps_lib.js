@@ -80,12 +80,12 @@ doSearch: function(location) {
 		
 		for(var i=0; i<tl; i++)
 			{
-				var stl= FuncTree.styles[i];
+				if(FuncTree.bnm)
+					{
+					var stl= FuncTree.styles[i];
 							if(stl=="play"||stl=="dining"||stl=="star"||stl=="ranger_station")
 								map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-							
-								
-					
+					}
 				var layer = new google.maps.FusionTablesLayer({
 					  query: {
 						from:   MapsLib.polygonTableID[i],
@@ -108,23 +108,25 @@ doSearch: function(location) {
 					});
 				
 					try{
+						if(FuncTree.bnm)
+						{
 							var chcmp=FuncTree.styles[i+1];
-						if(chcmp.charAt(0)!='#'&&chcmp!='NO')
-							{
-								$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');
-								$(FuncTree.updBackG).css('background-repeat', 'no-repeat');
-								$(FuncTree.updBackG).css('background-size', '100%');
-							}
-						else
-							$(FuncTree.updBackG).css('background-image', 'url(http://runsense.github.io/js/f.png)');
-							
-							if(stl.charAt(0)!='#')
-								$("#panel").css('border-color',stl);
-							
+							if(chcmp.charAt(0)!='#'&&chcmp!='NO')
+								{
+									$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');
+									$(FuncTree.updBackG).css('background-repeat', 'no-repeat');
+									$(FuncTree.updBackG).css('background-size', '100%');
+								}
+							else
+								$(FuncTree.updBackG).css('background-image', 'url(http://runsense.github.io/js/f.png)');
 								
+								if(stl.charAt(0)!='#')
+									$("#panel").css('border-color',stl);
 								
-							FuncTree.styles=new Array();
-							
+									
+									
+								FuncTree.styles=new Array();
+						}		
 						google.maps.event.addListener(layer, 'click', function(e) {
 								MapsLib.anLayer(e);
 						});
@@ -154,18 +156,18 @@ anLayer: function(e){//commande click layer
 								
 								
 								FuncTree.bchk=true;
-									
+									if(FuncTree.bnm)
+									{
 										var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
 										
 										$(rplc).mouseover();
-										var table= $('#list_table').dataTable();
-										
+									}
+									
 										$(FuncInit.idbox[0]).jqxTree('selectItem',$(rplc)[0]);
 										
 										
 										   MapsLib.chad='#arv';
 										   MapsLib.addrFromLatLng(e.latLng);
-										   var z= map.getZoom();
 										   
 											
 											
