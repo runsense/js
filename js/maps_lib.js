@@ -238,7 +238,7 @@ additi :function(butiti){
               MapsLib.chad ='#'+ butiti;
   },
 clickmap: function(pos)
-                {
+   {
                  
                    if(pos!=null)
                     {
