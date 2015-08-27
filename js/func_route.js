@@ -4,8 +4,8 @@ var FuncRoute = {
   directionsDisplay : new google.maps.DirectionsRenderer(),
   directionsService : new google.maps.DirectionsService(),
   calcRoute: function () {
-			$('#info').empty();
-			$('#info').show();
+			$(FuncInit.idinf).empty();
+			$(FuncInit.idinf).show();
               var start = MapsLib.s;
                 var end = MapsLib.e;
 			if(end!==null)
@@ -21,31 +21,31 @@ var FuncRoute = {
 						
 					  FuncRoute.directionsDisplay.setDirections(response);
 					   MapsLib.zoom(map);
-					   $('#info').empty();
+					   $(FuncInit.idinf).empty();
 					   FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));
 					  
 					   $(FuncInit.idbox).hide();
 					   $('small').hide();
 					   
-					   $('#btn').unbind();
+					   $(FuncInit.idbtn).unbind();
 					   
-					   $('#btn').bind('click',function(){
+					   $(FuncInit.idbtn).bind('click',function(){
 							$(this).hide();
 							$(FuncInit.idbox).show();
-							$('#info').hide();
+							$(FuncInit.idinf).hide();
 							$('#dep').val(null);$('#arv').val(null);
 							MapsLib.s=null;MapsLib.e=null;
-							$("#listv").on("mouseenter",function(){
+							$(FuncInit.idtab).on("mouseenter",function(){
 		  
 								$(this).animate({
 									opacity: '1',
 									height: '100%',
 									width: '70%'
 								});
-								$('#map_canvas').animate({
+								$(FuncInit.idmap).animate({
 									opacity: '0.3'
 								});
-								$('#info').empty();
+								$(FuncInit.idinf).empty();
 								FuncTree.append("<small>Revenir MAP (RETURN MAP) </small>(A DROITE)"
 								,"green");
 							});
@@ -54,17 +54,17 @@ var FuncRoute = {
 							MapsLib.initialize();
 							
 					});
-					   $('#btn').show();
-					   $('#btn').css("color","red");
+					   $(FuncInit.idbtn).show();
+					   $(FuncInit.idbtn).css("color","red");
 					
-					   $("#listv").off();
+					   $(FuncInit.idtab).off();
 					   
 					}else
 					{
-						$('#info').empty();
-						$('#info').append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");
-						$('#info').css("color","#000");
-						$('#info').css("background-color","red");
+						$(FuncInit.idinf).empty();
+						$(FuncInit.idinf).append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");
+						$(FuncInit.idinf).css("color","#000");
+						$(FuncInit.idinf).css("background-color","red");
 					}
 				  });
 				  

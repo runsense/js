@@ -158,12 +158,12 @@ tabToMap: function(lat,lng) {
 					FuncTree.zoom=16;
 						map.setMapTypeId(google.maps.MapTypeId.HYBRID)
 						map.setZoom(FuncTree.zoom);
-					$('#listv').animate({
+					$(FuncInit.idtab).animate({
 						opacity: '0.3',
 						height: '30%',
 						//width: '100%'
 					});
-					$('#map_canvas').animate({
+					$(FuncInit.idmap).animate({
 						opacity: '1'
 					});
 					

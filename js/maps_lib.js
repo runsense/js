@@ -121,7 +121,7 @@ doSearch: function(location) {
 								$(FuncTree.updBackG).css('background-image', 'url(http://runsense.github.io/js/f.png)');
 								
 								if(stl.charAt(0)!='#')
-									$("#panel").css('border-color',stl);
+									$(FuncInit.idp).css('border-color',stl);
 								
 									
 									
@@ -199,12 +199,12 @@ console.log(latLngPoint);
         if(MapsLib.chad=='#dep')
 			{
 				MapsLib.s=results[0].formatted_address;
-				$('#iti').css('font-size','20px');$('#iti').css('font-weight','bold');
+				$(FuncInit.iditi).css('font-size','20px');$(FuncInit.iditi).css('font-weight','bold');
 			}
 		else
 			{
 				MapsLib.e=results[0].formatted_address;
-				$('#iti').css('color','red');$('#iti').css('border-color','green');
+				$(FuncInit.iditi).css('color','red');$(FuncInit.iditi).css('border-color','green');
 				
 			}
       } else {
@@ -266,7 +266,7 @@ query: function(selectColumns, limit, callback) {
 		if(MapsLib.polygonTableID[i]!="NO")
 		{
 			MapsLib.cpte=i;
-			$("#listv").append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
+			$(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
 			var queryStr = [];
 			queryStr.push("SELECT " + selectColumns);
 			queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
@@ -276,13 +276,13 @@ query: function(selectColumns, limit, callback) {
 			$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
 		}else
 		{
-			$("#listv").empty();
-			$("#listv").append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");
+			$(FuncInit.idtab).empty();
+			$(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");
 		}
 			
 	}
 	
-	$('#info').empty();
+	$(FuncInit.idinf).empty();
 	
 	FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
 	
