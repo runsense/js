@@ -54,6 +54,7 @@ list_table += "</tbody></table>";
 					FuncTab.tabToMap(lat,lng);
 					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
 					FuncTree.bchk=false;
+					$(FuncInit.idmap).focus();
 				}
 			}).on( 'mouseover', 'tr',
 			  function () {
