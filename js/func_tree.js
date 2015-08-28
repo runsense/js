@@ -395,6 +395,7 @@ var FuncTree = {
 			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 			
 			$('#jqxTree .jqx-tree-item').mouseenter(function (event) {
+				event.stopPropagation();
 				if(FuncTree.bnm)
 				try{
 						
@@ -463,7 +464,7 @@ var FuncTree = {
 			});
 			
 			$(FuncInit.idbox).bind('select', function (ev) {
-						
+					ev.stopPropagation();
 						FuncTree.zoom=13;
 							var a = ev.args;
 							var e = a.element;
