@@ -86,8 +86,7 @@ cRows: function(rows)
 			}
       FuncTab.results.append(list_table);
      // alert(row);
-		if(row>=10)
-		  {
+		
 			$("#list_table").dataTable({
 			 
 			  "aoColumns": [ // tells DataTables how to perform sorting for each column
@@ -109,7 +108,7 @@ cRows: function(rows)
 			  "bAutoWidth": false
 			});
 			
-		  }
+		  
 		  
 			
 			$(".table tbody").on( 'click', 'tr', function (){
