@@ -403,8 +403,8 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 							var i = $(FuncInit.idtree).jqxTree('getItem', e);
 							if(i!=null)
 								{
-									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;$("#r_tab").css('display','none');$("#r_lieu").css('display','inline');}
-										else {$("#r_lieu").val("Recherche Dans Tableau");FuncTree.bms=false;$("#r_lieu").css('display','none');$("#r_tab").css('display','inline');}
+									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;$("#r_lieu").css('display','inline');}
+										else {$("#r_lieu").val("Recherche Dans Tableau");FuncTree.bms=false;$("#r_lieu").css('display','none')}
 									for(var cpt in FuncInit.txtInit)
 									if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
 								
