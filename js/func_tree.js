@@ -404,7 +404,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 							if(i!=null)
 								{
 									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;$("#r_lieu").css('display','inline');}
-										else {$("#r_lieu").val("Recherche Dans Tableau");FuncTree.bms=false;$("#r_lieu").css('display','none')}
+										else {$("#r_lieu").val("Recherche sur ville");FuncTree.bms=false;}
 									for(var cpt in FuncInit.txtInit)
 									if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
 								
