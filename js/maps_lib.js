@@ -27,44 +27,19 @@ var MapsLib = {
 
 initialize: function() {
 	
-	try{
-		MapsLib.geocoder = new google.maps.Geocoder();
-		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
-	}catch(e){;}
-    var myOptions = {
-      zoom: MapsLib.defaultZoom,
-      center: MapsLib.map_centroid,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styleId: 2,
-	  templateId: 1
-    };
+	try{ MapsLib.geocoder = new google.maps.Geocoder(); FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer(); }catch(e){;}
+    var myOptions = { zoom: MapsLib.defaultZoom, center: MapsLib.map_centroid, mapTypeId: google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1 };
     map = new google.maps.Map($("#map_canvas")[0],myOptions);
-	
-	google.maps.event.addListener(map, "click", function(event) {
-                        MapsLib.clickmap(event);
-    });
-						 
-        
-		
-    google.maps.event.addDomListener(window, 'resize', function() {
-        map.setCenter(MapsLib.map_centroid);
-		map.setZoom(FuncTree.zoom);
-    });
-
-	try{
-		FuncRoute.directionsDisplay.setMap(map);
-	}catch(e){;}
-	google.maps.event.addListener(map, 'mouseover', function(event) {
-                map.setZoom(FuncTree.zoom);
-    });
+	google.maps.event.addListener(map, "click", function(event) { MapsLib.clickmap(event); });
+	google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom); });
+	try{ FuncRoute.directionsDisplay.setMap(map); }catch(e){;}
+	google.maps.event.addListener(map, 'mouseover', function(event){ map.setZoom(FuncTree.zoom);});
     MapsLib.doSearch();
 
   },
-
 doSearch: function(location) {
 	FuncTree.bgrow = false;
 	MapsLib.clearSearch();
-  
 	MapsLib.polygonTableID=FuncTree.ptbid;
     MapsLib.polygon=new Array();
 	try{
@@ -74,87 +49,43 @@ doSearch: function(location) {
 		
 		for(var i=0; i<tl; i++)
 			{
-				if(FuncTree.bnm)
-					{
-					var stl= FuncTree.styles[i];
-							if(stl=="play"||stl=="dining"||stl=="star"||stl=="ranger_station")
-								map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-					}
+				if(FuncInit.bnm)
+					{ var stl= FuncTree.styles[i]; if(stl=="play"||stl=="dining"||stl=="star"||stl=="ranger_station") map.setMapTypeId(google.maps.MapTypeId.ROADMAP); }
 				var layer = new google.maps.FusionTablesLayer({
-					  query: {
-						from:   MapsLib.polygonTableID[i],
-						select: "geometry"
-					  },
-					  styles: [{
-					  markerOptions: {
-						iconName: stl,
-					  },
-					  polygonOptions: {
-						fillColor: stl,
-						strokeColor: "#FFFFF0",
-						strokeWeight: "int"
-					  },
-					  polylineOptions: {
-						strokeColor: stl,
-						strokeWeight: "int"  }
-					},] 
-					  
+					  query: {from:   MapsLib.polygonTableID[i],select: "geometry"},
+					  styles: [{markerOptions: {iconName: stl,},polygonOptions: {fillColor: stl,strokeColor: "#FFFFF0",strokeWeight: "int"},polylineOptions: {strokeColor: stl,strokeWeight: "int"  }},] 
 					});
-				
-					try{
-						if(FuncTree.bnm)
+				try{
+						if(FuncInit.bnm)
 						{
 							var chcmp=FuncTree.styles[i+1];
-							if(chcmp.charAt(0)!='#'&&chcmp!='NO')
-								{
-									$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');
-									$(FuncTree.updBackG).css('background-repeat', 'no-repeat');
-									$(FuncTree.updBackG).css('background-size', '100%');
-								}
-							else
-								$(FuncTree.updBackG).css('background-image', 'url(http://runsense.github.io/js/f.png)');
-								
-								if(stl.charAt(0)!='#')
-									$(FuncInit.idp).css('border-color',stl);
-								
-									
-									
-								FuncTree.styles=new Array();
+							if(chcmp.charAt(0)!='#'&&chcmp!='NO') {$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}
+							else $(FuncTree.updBackG).css('background-image', 'url(http://runsense.github.io/js/f.png)');
+							if(stl.charAt(0)!='#') $(FuncInit.idp).css('border-color',stl);
+							FuncTree.styles=new Array();
 						}		
-						google.maps.event.addListener(layer, 'click', function(e) {
-								MapsLib.anLayer(e);
-						});
+						google.maps.event.addListener(layer, 'click', function(e){ MapsLib.anLayer(e);});
 					}catch(e){;}
 				MapsLib.polygon.push(layer);
 				MapsLib.polygon[i].setMap(map);	
-				
-				
 			}
 		}catch(e){;}
 		MapsLib.getList();
 		$(FuncInit.idtree).focus();
-		
 	},
 anLayer: function(e){//commande click layer
 		if(!FuncTree.bchk&&!FuncTree.bgrow)
 							{
 								var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
-								
 								FuncTree.bchk=true;
-								var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
-									if(FuncTree.bnm) { FuncTab.fsearch(s); }
-									
-										$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
-										   MapsLib.chad='#arv';
-										   MapsLib.addrFromLatLng(e.latLng);
+									var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
+									 FuncTab.fsearch(s); $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
+									MapsLib.chad='#arv'; MapsLib.addrFromLatLng(e.latLng);
 								FuncTree.bchk=false;
 								return s;
 							}
 	},
 findMe: function() {
-    // Try W3C Geolocation (Preferred)
-    var fl;
-
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
         fl = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
@@ -163,7 +94,7 @@ findMe: function() {
 						map.setCenter(fl);
       }, null);
     }
-    else {;}
+    else {FuncTree.append('Parametrer Geolocation sur configuration','red');}
   },
 addrFromLatLng: function(latLngPoint) {
 console.log(latLngPoint);
@@ -190,94 +121,24 @@ console.log(latLngPoint);
       }
     });
   },
-zoom: function(map) {
-              var bounds = new google.maps.LatLngBounds();
-			
-              map.data.forEach(function(feature) {
-			  
-                MapsLib.processPoints(feature.getGeometry(), bounds.extend, bounds);
-              });
-              map.fitBounds(bounds);
-  },
-processPoints: function(geometry, callback, thisArg) {
-              if (geometry instanceof google.maps.LatLng) {
-                callback.call(thisArg, geometry);
-              } else if (geometry instanceof google.maps.Data.Point) {
-                callback.call(thisArg, geometry.get());
-              } else {
-                geometry.getArray().forEach(function(g) {
-                  MapsLib.processPoints(g, callback, thisArg);
-                });
-              }
-  },
-additi :function(butiti){
-              MapsLib.chad ='#'+ butiti;
-  },
-clickmap: function(pos)
-   {
-                 
-                   if(pos!=null)
-                    {
-                        MapsLib.addrFromLatLng(pos.latLng);
-                       
-                    }
-                   
-
-                    map.setMapTypeId(google.maps.MapTypeId.HYBRID);
-
-  },
-clearSearch: function() {
-   MapsLib.polygonTableID=null;
-	for(var i=0;i<MapsLib.polygon.length;i++)
-		if (MapsLib.polygon[i] != null)
-			{
-				MapsLib.polygon[i].setMap(null);
-				MapsLib.polygon[i]=null;
-			}
-    map.setCenter(MapsLib.map_centroid);
-	map.setZoom(FuncTree.zoom);
-  },
+zoom: function(map) { var bounds = new google.maps.LatLngBounds(); map.data.forEach(function(feature) { MapsLib.processPoints(feature.getGeometry(), bounds.extend, bounds); }); map.fitBounds(bounds);},
+processPoints: function(geometry, callback, thisArg) { if (geometry instanceof google.maps.LatLng) { callback.call(thisArg, geometry); } else if (geometry instanceof google.maps.Data.Point) { callback.call(thisArg, geometry.get()); } else {geometry.getArray().forEach(function(g) {MapsLib.processPoints(g, callback, thisArg);});}},
+additi :function(butiti){ MapsLib.chad ='#'+ butiti;},
+clickmap: function(pos){if(pos!=null) MapsLib.addrFromLatLng(pos.latLng); map.setMapTypeId(google.maps.MapTypeId.HYBRID);},
+clearSearch: function() { MapsLib.polygonTableID=null; for(var i=0;i<MapsLib.polygon.length;i++) if (MapsLib.polygon[i] != null) { MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null; } map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom);},
 query: function(selectColumns, limit, callback) {
-	
 	for(var i in MapsLib.polygonTableID)
 	{
 		if(MapsLib.polygonTableID[i]!="NO")
 		{
-			MapsLib.cpte=i;
-			$(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
-			var queryStr = [];
-			queryStr.push("SELECT " + selectColumns);
-			queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
-			
-
-			var sql = encodeURIComponent(queryStr.join(" "));
-			$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
-		}else
-		{
-			$(FuncInit.idtab).empty();
-			$(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");
-		}
-			
+			MapsLib.cpte=i; $(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
+			var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
+			var sql = encodeURIComponent(queryStr.join(" ")); $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
+		}else { $(FuncInit.idtab).empty(); $(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>"); }
 	}
-	
-	$(FuncInit.idinf).empty();
-	
-	FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
+	$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
   },
-getList: function() {
-    var selectColumns = "categ,nom,description,lat,lng";
-    MapsLib.query(selectColumns, 10, "FuncTab.displayList");
-  },
-handleError: function(json) {
-    if (json["error"] != undefined) {
-      var error = json["error"]["errors"]
-      console.log("Error in Fusion Table call!");
-      for (var row in error) {
-        console.log(" Domain: " + error[row]["domain"]);
-        console.log(" Reason: " + error[row]["reason"]);
-        console.log(" Message: " + error[row]["message"]);
-      }
-    }
-  }
+getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
+handleError: function(json) { if (json["error"] != undefined){var error = json["error"]["errors"];console.log("Error in Fusion Table call!");for (var row in error) { console.log(" Domain: " + error[row]["domain"]);console.log(" Reason: " + error[row]["reason"]);console.log(" Message: " + error[row]["message"]);}}}
 }
 

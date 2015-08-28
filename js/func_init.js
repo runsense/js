@@ -1,6 +1,12 @@
 //Objet Librairie Variable
+var bnm=true;
+if($('#panel').css('display') == 'none')
+	{
+		bnm=false;
+	}
 var FuncInit= FuncInit || {};
 var FuncInit={
+	bnm			:bnm,
 	idtree	: "#jqxTree",
 	idtab	: "#listv",
 	idmap	: "#map_canvas",

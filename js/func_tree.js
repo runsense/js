@@ -1,13 +1,9 @@
-var bnm=true;
-if($('#panel').css('display') == 'none')
-	{
-		bnm=false;
-	}
+
 var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
 	bgrow		:false,
-	bnm			:bnm,
+	bms			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
@@ -365,20 +361,18 @@ $(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '1
 			
 $('#jqxTree .jqx-tree-item').mouseenter(function (event) {
 				event.stopPropagation();
-				if(FuncTree.bnm)
+				if(FuncInit.bnm&&FuncTree.bms)
 				try{
-						
 						var text = event.target.textContent;
 						text = '#'+text.replace(/ /g,'').replace(/'/g,'');
 						var i = $(FuncInit.idtree).jqxTree('getItem',$(text)[0] );
-						if(i!=null)
-						{FuncTree.applysrch(i);MapsLib.doSearch();}
+						if(i!=null) {FuncTree.applysrch(i);MapsLib.doSearch();}
 					}
 				catch(e)
 				{;}
 });
 $(FuncInit.idtree).on('expand', function (event) {
-			if(FuncTree.bnm)
+			if(FuncInit.bnm)
 			{
 				var e = event.args.element;
 				var item = $(FuncInit.idtree).jqxTree('getItem',e );
@@ -398,12 +392,11 @@ $(FuncInit.idtree).on('expand', function (event) {
 			}			
 });
 $(FuncInit.idtree).on('collapse', function (ev) {
-if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Array();
-$(FuncInit.idtab).empty();FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch();
-				}
+FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Array();$(FuncInit.idtab).empty();FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch(); }
 });
 			$(FuncInit.idtree).bind('select', function (ev) {
 					ev.stopPropagation();
+						FuncTree.bms=false;
 						FuncTree.zoom=13;
 							var a = ev.args;
 							var e = a.element;
