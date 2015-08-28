@@ -1,9 +1,10 @@
 //Objet creation tableau de réponse json
-var search="";
+
 var FuncTab = FuncTab || {};
 var FuncTab = {
  results		: null,
  idx			: 0,
+ search			: "",
 displayList: function(json) {
 	try{
 		MapsLib.handleError(json);
@@ -98,7 +99,7 @@ cRows: function(rows)
 				  null
 			  ],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
-			  "oSearch": {"sSearch": search},
+			  "oSearch": {"sSearch": FuncTab.search},
 			  "bFilter": true, // disable search box 
 			  "bInfo": true, //results count
 			  //"sPaginationType": "bootstrap", // custom CSS for pagination in Bootstrap

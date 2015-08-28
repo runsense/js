@@ -6,7 +6,10 @@ var FuncTree = {
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
-	zoom		:10,     
+	zoom		:10,
+	theme 		:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},
+					{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'} 
+				],
 	srcStyle		:[
 					{label: FuncInit.txtInit[0],value: "play"},
 					{label: FuncInit.txtInit[1],value: "hiker"},
@@ -530,7 +533,7 @@ var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{l
 
 
 	$("#r_lieu").autocomplete({ source: FuncInit.srcId, close: function(event, ui){ this.value='probleme, USE ARBRE'; } });
-	$("#r_theme").autocomplete({ source: theme,close: function(event, ui){ this.value='Aucune donner'; } });
+	$("#r_theme").autocomplete({ source: FuncTree.theme,close: function(event, ui){ this.value='Aucune donner'; } });
 		$("#r_lieu").on("autocompleteselect",function (event,ui)  {
 			var value = ui.item.value;
 				FuncInit.tmp= ui.item.id;
