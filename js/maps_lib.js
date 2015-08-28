@@ -50,7 +50,7 @@ doSearch: function(location) {
 		for(var i=0; i<tl; i++)
 			{
 				if(FuncInit.bnm)
-					{ var stl= FuncTree.styles[i]; if(stl=="play"||stl=="dining"||stl=="star"||stl=="ranger_station") map.setMapTypeId(google.maps.MapTypeId.ROADMAP); }
+					{ var stl= FuncTree.styles[i]; if(stl=="dining"||stl=="star") map.setMapTypeId(google.maps.MapTypeId.ROADMAP); else if(stl=="play"||stl=="ranger_station"||stl=="realestate") map.setMapTypeId(google.maps.MapTypeId.HYBRID); }
 				var layer = new google.maps.FusionTablesLayer({
 					  query: {from:   MapsLib.polygonTableID[i],select: "geometry"},
 					  styles: [{markerOptions: {iconName: stl,},polygonOptions: {fillColor: stl,strokeColor: "#FFFFF0",strokeWeight: "int"},polylineOptions: {strokeColor: stl,strokeWeight: "int"  }},] 
