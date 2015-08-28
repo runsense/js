@@ -473,7 +473,11 @@ var FuncTree = {
 								
 							if(i!=null)
 								{
-									$("#r_lieu").val(i.label);
+									if(i.id.match('_')==null)
+										{$("#r_lieu").val(i.label);}
+									else
+										{$("#r_lieu").val("Recherche Dans Tableau"); }
+									
 									
 									for(var cpt in FuncInit.txtInit)
 									if(FuncInit.txtInit[cpt]==i.label)
