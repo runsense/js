@@ -8,7 +8,8 @@ html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !impo
 		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
 		#info		{ float:left;height:50px; border-top-left-radius: 2em ;border-bottom-right-radius: 1em ;  }
 		#itinv		{ float:left; }
-		#fl, #r_theme, #r_tab	{ display:none; }
+		#fl, #r_theme	{ display:none; }
+		#r_tab		{display:none; background: rgba(0,255,0,0.7);color:red;}
 		.jqx-widget-content{ background:rgba(255,255,0,0.3) !important;}
 		.jqx-fill-state-hover { font-size: 180% !important;}
 		.jqx-tree, .jqx-tree-item, .pagination, #iti, #btn, #clear{ border-top-left-radius: 2em !important;border-bottom-right-radius: 1em !important; }
