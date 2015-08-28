@@ -7,7 +7,7 @@ if($('#panel').css('display') == 'none')
 
 var FuncInit= FuncInit || {};
 var FuncInit={
-	idbox	: "#jqxTree",
+	idtree	: "#jqxTree",
 	idtab	: "#listv",
 	idmap	: "#map_canvas",
 	idp		: "#panel",

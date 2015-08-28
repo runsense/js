@@ -30,10 +30,7 @@ initialize: function() {
 	try{
 		MapsLib.geocoder = new google.maps.Geocoder();
 		FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
-	}catch(e)
-	{
-		;
-	}
+	}catch(e){;}
     var myOptions = {
       zoom: MapsLib.defaultZoom,
       center: MapsLib.map_centroid,
@@ -56,10 +53,7 @@ initialize: function() {
 
 	try{
 		FuncRoute.directionsDisplay.setMap(map);
-	}catch(e)
-	{
-		;
-	}
+	}catch(e){;}
 	google.maps.event.addListener(map, 'mouseover', function(event) {
                 map.setZoom(FuncTree.zoom);
     });
@@ -130,23 +124,15 @@ doSearch: function(location) {
 						google.maps.event.addListener(layer, 'click', function(e) {
 								MapsLib.anLayer(e);
 						});
-					}catch(e)
-						{
-							;
-						}
+					}catch(e){;}
 				MapsLib.polygon.push(layer);
 				MapsLib.polygon[i].setMap(map);	
 				
 				
 			}
-			
-		}catch( ex)
-		{
-			;
-		}
-		
+		}catch(e){;}
 		MapsLib.getList();
-		$(FuncInit.idbox).focus();
+		$(FuncInit.idtree).focus();
 		
 	},
 anLayer: function(e){//commande click layer
@@ -154,28 +140,13 @@ anLayer: function(e){//commande click layer
 							{
 								var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
 								
-								
 								FuncTree.bchk=true;
-									if(FuncTree.bnm)
-									{
-										var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
-										
-										var table= $("#list_table").dataTable();
-										table.fnFilter( s);
-										$(rplc).mouseover();
-										
-										
-										
-									}
+								var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
+									if(FuncTree.bnm) { FuncTab.fsearch(s); }
 									
-										$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
-										
-										
+										$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
 										   MapsLib.chad='#arv';
 										   MapsLib.addrFromLatLng(e.latLng);
-										   
-											
-											
 								FuncTree.bchk=false;
 								return s;
 							}
@@ -292,8 +263,6 @@ query: function(selectColumns, limit, callback) {
 	$(FuncInit.idinf).empty();
 	
 	FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
-	
-	
   },
 getList: function() {
     var selectColumns = "categ,nom,description,lat,lng";

@@ -5,6 +5,12 @@ var FuncTab = {
  results		: null,
  idx			: 0,
  search			: "",
+ fsearch		: function(s){
+	var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
+		var table= $("#list_table").dataTable();
+			table.fnFilter(s);
+			$(rplc).mouseover();
+	},
 displayList: function(json) {
 	try{
 		MapsLib.handleError(json);

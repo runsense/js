@@ -285,11 +285,11 @@ var FuncTree = {
 	},
 	chkItm :function(elmt){
 		var rplc='#'+elmt.id;
-				$(FuncInit.idbox).jqxTree('checkItem', $(rplc)[0], true);
+				$(FuncInit.idtree).jqxTree('checkItem', $(rplc)[0], true);
 	},
 	slcItm :function(txt){
 		var rplc='#'+txt;
-		return $(FuncInit.idbox).jqxTree('selectItem', $(rplc)[0], true);
+		return $(FuncInit.idtree).jqxTree('selectItem', $(rplc)[0], true);
 	},
 	srchSrc :function(val){
 		var item=null;
@@ -391,7 +391,7 @@ var FuncTree = {
 
 	
 
-			$(FuncInit.idbox).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
+			$(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
 			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 			
 			$('#jqxTree .jqx-tree-item').mouseenter(function (event) {
@@ -401,7 +401,7 @@ var FuncTree = {
 						
 						var text = event.target.textContent;
 						text = '#'+text.replace(/ /g,'').replace(/'/g,'');
-						var item = $(FuncInit.idbox).jqxTree('getItem',$(text)[0] );
+						var item = $(FuncInit.idtree).jqxTree('getItem',$(text)[0] );
 						FuncTree.applysrch(item);
 							MapsLib.doSearch();
 					   // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
@@ -409,12 +409,12 @@ var FuncTree = {
 				catch(e)
 				{;}
 			});
-			$(FuncInit.idbox).on('expand', function (event) {
+			$(FuncInit.idtree).on('expand', function (event) {
 			if(FuncTree.bnm)
 			{
 				var e = event.args.element;
-				var item = $(FuncInit.idbox).jqxTree('getItem',e );
-				if($(FuncInit.idbox).jqxTree('getItem',e.parentElement.parentElement)!=null)
+				var item = $(FuncInit.idtree).jqxTree('getItem',e );
+				if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null)
 							FuncTree.zoom=12;
 						else
 							FuncTree.zoom=10;
@@ -422,7 +422,7 @@ var FuncTree = {
 				{
 						FuncTree.bgrow=true;
 						
-							$(FuncInit.idbox).jqxTree('checkItem', e, true);
+							$(FuncInit.idtree).jqxTree('checkItem', e, true);
 						
 							
 						
@@ -431,20 +431,20 @@ var FuncTree = {
 							$('small').show();
 							FuncTree.applysrch(item);
 							MapsLib.doSearch();
-							$(FuncInit.idbox).jqxTree('ensureVisible', e);
+							$(FuncInit.idtree).jqxTree('ensureVisible', e);
 				}
 			}			
 			});
-			$(FuncInit.idbox).on('collapse', function (ev) {
+			$(FuncInit.idtree).on('collapse', function (ev) {
 				if(!FuncTree.bgrow)
 				{
 					FuncTree.bgrow=true;
 					FuncTree.ptbid=new Array();
-					//$(FuncInit.idbox).jqxTree('uncheckAll');
+					//$(FuncInit.idtree).jqxTree('uncheckAll');
 							var args = ev.args;
 							var elmt = args.element;
 							
-							var i = $(FuncInit.idbox).jqxTree('getItem',elmt.parentElement.parentElement);
+							var i = $(FuncInit.idtree).jqxTree('getItem',elmt.parentElement.parentElement);
 							
 								$(FuncInit.idtab).empty();
 								
@@ -452,24 +452,24 @@ var FuncTree = {
 								$('small').hide();
 								FuncTree.zoom=10;
 								MapsLib.doSearch();
-							/*if($(FuncInit.idbox).jqxTree('getItem',elmt.parentElement.parentElement)!=null)
+							/*if($(FuncInit.idtree).jqxTree('getItem',elmt.parentElement.parentElement)!=null)
 							{
-								var prtItm = $(FuncInit.idbox).jqxTree('getItem',elmt.parentElement.parentElement);
+								var prtItm = $(FuncInit.idtree).jqxTree('getItem',elmt.parentElement.parentElement);
 									
-								$(FuncInit.idbox).jqxTree('collapseItem',prtItm.element);
+								$(FuncInit.idtree).jqxTree('collapseItem',prtItm.element);
 							}*/
 					}
 				
 					
 			});
 			
-			$(FuncInit.idbox).bind('select', function (ev) {
+			$(FuncInit.idtree).bind('select', function (ev) {
 					ev.stopPropagation();
 						FuncTree.zoom=13;
 							var a = ev.args;
 							var e = a.element;
 							
-							var i = $(FuncInit.idbox).jqxTree('getItem', e);
+							var i = $(FuncInit.idtree).jqxTree('getItem', e);
 								
 							if(i!=null)
 								{
@@ -479,7 +479,7 @@ var FuncTree = {
 									if(FuncInit.txtInit[cpt]==i.label)
 										FuncTree.bgrow=true;
 								
-										$(FuncInit.idbox).jqxTree('checkItem', e, true);
+										$(FuncInit.idtree).jqxTree('checkItem', e, true);
 								
 									FuncTree.applysrch(i);
 										MapsLib.doSearch();
@@ -490,7 +490,7 @@ var FuncTree = {
 						
 							
 			});
-			$(FuncInit.idbox).on('checkChange', function (ev)	
+			$(FuncInit.idtree).on('checkChange', function (ev)	
 			{	
 				
 				if(!FuncTree.bgrow)
@@ -498,66 +498,56 @@ var FuncTree = {
 					$('#clear').css('color','red');$('#clear').css('border-color','green');
 					var a = ev.args;
 					var e = a.element;
-					var item = $(FuncInit.idbox).jqxTree('getItem', e);
+					var item = $(FuncInit.idtree).jqxTree('getItem', e);
 					var bIn=false;
 					for(var i in FuncInit.txtInit)
 						if(item.label==FuncInit.txtInit[i])
 							bIn=true;
 					if(!bIn)
 					{			
-						var items = $(FuncInit.idbox).jqxTree('getCheckedItems');
+						var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
 						
 						var pre = e.parentElement.parentElement;
-						var	prei = $(FuncInit.idbox).jqxTree('getItem', pre);
+						var	prei = $(FuncInit.idtree).jqxTree('getItem', pre);
 						if(prei!=null)
 						
 								for(var i in items)
 									if(items[i].element!=pre&&items[i].element!=e)
 										{
-											$(FuncInit.idbox).jqxTree('uncheckItem', items[i].element);
+											$(FuncInit.idtree).jqxTree('uncheckItem', items[i].element);
 										}
 					}
 					FuncTree.bgrow=true;
 					
 					if(a.checked)
-						$(FuncInit.idbox).jqxTree('expandItem', e);
+						$(FuncInit.idtree).jqxTree('expandItem', e);
 					else
-						{$(FuncInit.idbox).jqxTree('collapseItem', e);}
+						{$(FuncInit.idtree).jqxTree('collapseItem', e);}
 						
 					
 				}else
 					{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
 			}); 
-	
-var theme = [{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},
-{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'}];
-
 
 	$("#r_lieu").autocomplete({ source: FuncInit.srcId, close: function(event, ui){ this.value='probleme, USE ARBRE'; } });
 	$("#r_theme").autocomplete({ source: FuncTree.theme,close: function(event, ui){ this.value='Aucune donner'; } });
 		$("#r_lieu").on("autocompleteselect",function (event,ui)  {
-			var value = ui.item.value;
+			var v = ui.item.value;
 				FuncInit.tmp= ui.item.id;
-			this.value=value;
-			var rplc ='#'+value;
-			$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
-			$("#r_theme").css('display','inline');
-			}); 
+			this.value=v;
+			var rplc ='';
+			var ids = FuncInit.srcId;
+			for(var i in ids) { if(v==ids){ rplc ='#'+v;} }
+			if(rplc=='') { FuncTab.fsearch(v); }
+			else { $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline'); }
+		}); 
  
 			
 		$("#r_theme").on("autocompleteselect",function (event,ui)  {
-			var value = ui.item.value;
-			if(FuncInit.tmp=='')
-				this.value="select ville";
-			else
-			{
-				this.value=ui.item.label;
-				var rplc ='#'+FuncInit.tmp+'_'+value;
-				$(FuncInit.idbox).jqxTree('selectItem',$(rplc)[0]);
-				this.value=ui.item.label;
-			}
-			
-			});
+			var v = ui.item.value;
+			if(FuncInit.tmp=='') {this.value="select ville";}
+			else { this.value=ui.item.label; var rplc ='#'+FuncInit.tmp+'_'+v; $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); this.value=ui.item.label; }
+		});
 			
 		$( "#r_theme" ).on( "autocompletefocus",function(event, ui){ $("#r_theme").autocomplete( "search", " " ); } );
 		

@@ -97,7 +97,7 @@
 	
 		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();
-            $(FuncInit.idbox).show();
+            $(FuncInit.idtree).show();
 			$(FuncInit.idinf).hide();
 			$('#dep').val(null);$('#arv').val(null);
 			$(FuncInit.idtab).show();
@@ -120,11 +120,11 @@
 			});
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
 		$('#clear').bind('click',function(){
-			var items = $(FuncInit.idbox).jqxTree('getCheckedItems');
+			var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
 					for(var i in items)
-							$(FuncInit.idbox).jqxTree('uncheckItem', items[i].element);
-			$(FuncInit.idbox).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
-			$(FuncInit.idbox).jqxTree('refresh');
+							$(FuncInit.idtree).jqxTree('uncheckItem', items[i].element);
+			$(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
+			$(FuncInit.idtree).jqxTree('refresh');
 			
 		});
 		  $('#find_me').click(function(){

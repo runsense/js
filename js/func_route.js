@@ -24,14 +24,14 @@ var FuncRoute = {
 					   $(FuncInit.idinf).empty();
 					   FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));
 					  
-					   $(FuncInit.idbox).hide();
+					   $(FuncInit.idtree).hide();
 					   $('small').hide();
 					   
 					   $(FuncInit.idbtn).unbind();
 					   
 					   $(FuncInit.idbtn).bind('click',function(){
 							$(this).hide();
-							$(FuncInit.idbox).show();
+							$(FuncInit.idtree).show();
 							$(FuncInit.idinf).hide();
 							$('#dep').val(null);$('#arv').val(null);
 							MapsLib.s=null;MapsLib.e=null;
