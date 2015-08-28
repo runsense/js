@@ -19,8 +19,8 @@ var FuncTree = {
 					{label: FuncInit.txtInit[4],value: "star"},
 					{label: FuncInit.txtInit[5],value: "ranger_station"},
 					{label: "EST",value: "#DAA520",lien:FuncInit.txtInit[6]+"Est.png"},
-						{label: "Bras-Panon",value: "#4B0082",lien:"https://drive.google.com/open?id=0B1YRuzHQ1DHzdVlsOTk4ME9jalU" },
-						{label: "Saint-André",value: "#006400",lien:FuncInit.txtInit[6]+"saintAndre.png"},
+						{label: "Bras-Panon",value: "#4B0082",lien:FuncInit.txtInit[6]+"brasPanon.png" },
+						{label: "Saint-Andre",value: "#006400",lien:FuncInit.txtInit[6]+"saintAndre.png"},
 						{label: "Saint-Benoit",value: "#008B8B",lien:FuncInit.txtInit[6]+"saintBenoit.png"},
 						{label: "Sainte-Anne",value: "#800000",lien:FuncInit.txtInit[6]+"sainteAnne.png"},
 						{label: "Sainte-Rose",value: "#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sainte-Rose_eglise.jpg/800px-Sainte-Rose_eglise.jpg"},
@@ -30,9 +30,9 @@ var FuncTree = {
 						{label: "Mafate",value: "#4B0082",lien:FuncInit.txtInit[6]+"mafate.png"},
 						{label: "Saint-Gilles",value: "#006400",lien:FuncInit.txtInit[6]+"saintGilles.png"},
 						{label: "Saint-Leu",value: "#008B8B",lien:FuncInit.txtInit[6]+"saintLeu.png"},
-						{label: "TroisBassins",value: "#800000",lien:FuncInit.txtInit[6]+"troisBassins.png"},
+						{label: "Trois Bassins",value: "#800000",lien:FuncInit.txtInit[6]+"troisBassins.png"},
 						{label: "Saint-Paul",value: "#DAA520",lien:FuncInit.txtInit[6]+"saintPaul.png"},
-						{label: "Etang Salé",value: "#CD5C5C",lien:FuncInit.txtInit[6]+"etangSale.png"},
+						{label: "Etang Sale",value: "#CD5C5C",lien:FuncInit.txtInit[6]+"etangSale.png"},
 						{label: "Entre-Deux",value: "#000080",lien:FuncInit.txtInit[6]+"entreDeux.png"},
 						{label: "Les Avirons",value: "#FFD700",lien:FuncInit.txtInit[6]+"lesAvirons.png"},
 					{label: "SUD",value:"#66CDAA",lien:FuncInit.txtInit[6]+"sud.png"},
@@ -89,7 +89,7 @@ var FuncTree = {
 					{ id:"SPA_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1uAUFKQbO3b4azglINq0byh6IMTt0tcsew-ZDhHVK"},
 					{ id:"SPA_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1yvNIMDlSsqd6REMTpDqNBKabGeFft-kquWsWvPA1"}						
 				 ] },
-				{ id:"EtangSal&#233;",icon:FuncInit.txtInit[11]+"EtangSale"+FuncInit.txtInit[12], html: "<span title='Etang Sal&#233;' style='background-color: #FFF; #CD5C5C;'>Etang Sal&#233;</span>",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
+				{ id:"EtangSale",icon:FuncInit.txtInit[11]+"EtangSale"+FuncInit.txtInit[12], html: "<span title='Etang Sal&#233;' style='background-color: #FFF; #CD5C5C;'>Etang Sale</span>",value:"1XgstlSHKGm72zgrRO6lFUdVSM6867jPyfLT-Mtcj", items: [
 					{ id:"ES_t",icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1YXAJweeNZAKU2-Waa64ZIymHQ0bSI7lISM6bYHd6"},
                     { id:"ES_s",icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1Um2dvNwSoRN_SYsZMLjTwCR-qEhSVcCMZQgjncBF"},
                     {  id:"ES_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"1Ya4SFxo6lr8uNoEBRhH_E8Zpq3InMkNmEilUdVfT"},
@@ -228,7 +228,7 @@ var FuncTree = {
 					{ id:"BPn_a",icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}					
 				 ]
                 },
-				 { id:"Saint-Andr&#233;",icon:FuncInit.txtInit[11]+"Saint-Andre"+FuncInit.txtInit[12], html: "<span title='Saint-Andr&#233;' style='background-color: #FFF; #006400;'>Saint-Andr&#233;</span>", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
+				 { id:"Saint-Andre",icon:FuncInit.txtInit[11]+"Saint-Andre"+FuncInit.txtInit[12], html: "<span title='Saint-Andr&#233;' style='background-color: #FFF; #006400;'>Saint-Andre</span>", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
 					{ id:"SAd_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1vWcldb-WuU1rtH-ElhKI-f_4pLEeJDzzvMaWJSrC"},
                     { id:"SAd_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
                     {  id:"SAd_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
@@ -327,6 +327,7 @@ var FuncTree = {
 		FuncTree.styles=new Array();
 		try{
 			FuncTree.ptbid.push(i.value);
+			console.log(i.label);
 			FuncTree.styles.push(FuncTree.chStyle(i.label));
 						var u=FuncTree.chURL(i.label);
 						if(u!=null){FuncTree.styles.push(FuncTree.chURL(i.label));}
