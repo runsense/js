@@ -1,3 +1,8 @@
+var bnm=true;
+if($('#panel').css('display') == 'none')
+	{
+		bnm=false;
+	}
 var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
@@ -175,8 +180,6 @@ var FuncTree = {
 					{ id:"SPh_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1p3_0vNQxgdOQMXhkO6PWCzUoBD5XLVThjWcFzDrL"},
 					{ id:"SPh_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"136pTZ-NKGCp0d1jqeOBXKXJJmK3sdF51h6lhiiF5"}
 				  ] }
-				  
-				  
 			]
 			},
 			{ id:"NORD",icon:FuncInit.txtInit[11]+"reunion"+FuncInit.txtInit[12],html: "<span title='NORTH' style='background-color: #FFF; #4169E1;'>NORD</span>", value:"1X7thBX2nmGVIivqpYNzSWN9iC4OCJDvP469Yvr15", items: [
@@ -320,31 +323,6 @@ var FuncTree = {
 			}
 			return item;
 	},
-	applymob :function(val)
-	{
-		FuncTree.ptbid=new Array();
-		FuncTree.styles=new Array();
-		try{
-			var item=null;
-			var bpfe=true;
-			var i=FuncTree.srchSrc(val);
-						
-						FuncTree.ptbid.push(i.value);
-							
-						FuncTree.styles.push(FuncTree.chStyle(i.label));
-						var u=FuncTree.chURL(i.label);
-						if(u!=null)
-							FuncTree.styles.push(FuncTree.chURL(i.label));
-						else
-							FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");
-
-					
-			}catch(e)
-			{
-				;
-			}
-		
-	},
 	applysrch :function(i)
 	{
 		var tmp=FuncTree.ptbid;
@@ -352,25 +330,16 @@ var FuncTree = {
 		FuncTree.ptbid=new Array();
 		FuncTree.styles=new Array();
 		try{
-		
-						
-						FuncTree.ptbid.push(i.value);
-							
-						FuncTree.styles.push(FuncTree.chStyle(i.label));
+			FuncTree.ptbid.push(i.value);
+			FuncTree.styles.push(FuncTree.chStyle(i.label));
 						var u=FuncTree.chURL(i.label);
-						if(u!=null)
-							FuncTree.styles.push(FuncTree.chURL(i.label));
-						else
-							FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");
-
-					
+						if(u!=null){FuncTree.styles.push(FuncTree.chURL(i.label));}
+						else {FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");}
 			}catch(e)
 			{ FuncTree.ptbid=tmp;FuncTree.styles=stmp; }
-		
 	},
 	chStyle :function(l)
 	{
-		
 		for(var i=0; i<FuncTree.srcStyle.length;i++)
 			if(FuncTree.srcStyle[i].label==l)
 				return FuncTree.srcStyle[i].value;
@@ -391,25 +360,24 @@ var FuncTree = {
 
 	
 
-			$(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
+$(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
 			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
 			
-			$('#jqxTree .jqx-tree-item').mouseenter(function (event) {
+$('#jqxTree .jqx-tree-item').mouseenter(function (event) {
 				event.stopPropagation();
 				if(FuncTree.bnm)
 				try{
 						
 						var text = event.target.textContent;
 						text = '#'+text.replace(/ /g,'').replace(/'/g,'');
-						var item = $(FuncInit.idtree).jqxTree('getItem',$(text)[0] );
-						FuncTree.applysrch(item);
-							MapsLib.doSearch();
-					   // $("#jqxTree").jqxTree('selectItem', $(text)[0]);
+						var i = $(FuncInit.idtree).jqxTree('getItem',$(text)[0] );
+						if(i!=null)
+						{FuncTree.applysrch(i);MapsLib.doSearch();}
 					}
 				catch(e)
 				{;}
-			});
-			$(FuncInit.idtree).on('expand', function (event) {
+});
+$(FuncInit.idtree).on('expand', function (event) {
 			if(FuncTree.bnm)
 			{
 				var e = event.args.element;
@@ -420,83 +388,41 @@ var FuncTree = {
 							FuncTree.zoom=10;
 				if(!FuncTree.bgrow)
 				{
-						FuncTree.bgrow=true;
-						
-							$(FuncInit.idtree).jqxTree('checkItem', e, true);
-						
-							
-						
-						
-					
-							$('small').show();
-							FuncTree.applysrch(item);
-							MapsLib.doSearch();
-							$(FuncInit.idtree).jqxTree('ensureVisible', e);
+					FuncTree.bgrow=true;
+					$(FuncInit.idtree).jqxTree('checkItem', e, true);
+					$('small').show();
+					FuncTree.applysrch(item);
+					MapsLib.doSearch();
+					$(FuncInit.idtree).jqxTree('ensureVisible', e);
 				}
 			}			
-			});
-			$(FuncInit.idtree).on('collapse', function (ev) {
-				if(!FuncTree.bgrow)
-				{
-					FuncTree.bgrow=true;
-					FuncTree.ptbid=new Array();
-					//$(FuncInit.idtree).jqxTree('uncheckAll');
-							var args = ev.args;
-							var elmt = args.element;
-							
-							var i = $(FuncInit.idtree).jqxTree('getItem',elmt.parentElement.parentElement);
-							
-								$(FuncInit.idtab).empty();
-								
-								FuncTree.applysrch(null);
-								$('small').hide();
-								FuncTree.zoom=10;
-								MapsLib.doSearch();
-							/*if($(FuncInit.idtree).jqxTree('getItem',elmt.parentElement.parentElement)!=null)
-							{
-								var prtItm = $(FuncInit.idtree).jqxTree('getItem',elmt.parentElement.parentElement);
-									
-								$(FuncInit.idtree).jqxTree('collapseItem',prtItm.element);
-							}*/
-					}
-				
-					
-			});
-			
+});
+$(FuncInit.idtree).on('collapse', function (ev) {
+if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Array();
+$(FuncInit.idtab).empty();FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch();
+				}
+});
 			$(FuncInit.idtree).bind('select', function (ev) {
 					ev.stopPropagation();
 						FuncTree.zoom=13;
 							var a = ev.args;
 							var e = a.element;
-							
 							var i = $(FuncInit.idtree).jqxTree('getItem', e);
-								
 							if(i!=null)
 								{
-									if(i.id.match('_')==null)
-										{$("#r_lieu").val(i.label);}
-									else
-										{$("#r_lieu").val("Recherche Dans Tableau"); }
-									
-									
+									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);}
+									else {$("#r_lieu").val("Recherche Dans Tableau"); }
 									for(var cpt in FuncInit.txtInit)
-									if(FuncInit.txtInit[cpt]==i.label)
-										FuncTree.bgrow=true;
+									if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
 								
-										$(FuncInit.idtree).jqxTree('checkItem', e, true);
-								
-									FuncTree.applysrch(i);
+									$(FuncInit.idtree).jqxTree('checkItem', e, true);
+										FuncTree.applysrch(i);
 										MapsLib.doSearch();
-									
 								}
-						
-						
-						
 							
 			});
 			$(FuncInit.idtree).on('checkChange', function (ev)	
 			{	
-				
 				if(!FuncTree.bgrow)
 				{
 					$('#clear').css('color','red');$('#clear').css('border-color','green');
@@ -504,36 +430,26 @@ var FuncTree = {
 					var e = a.element;
 					var item = $(FuncInit.idtree).jqxTree('getItem', e);
 					var bIn=false;
-					for(var i in FuncInit.txtInit)
-						if(item.label==FuncInit.txtInit[i])
-							bIn=true;
+					for(var i in FuncInit.txtInit) {if(item.label==FuncInit.txtInit[i]) bIn=true;}
 					if(!bIn)
 					{			
 						var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
-						
 						var pre = e.parentElement.parentElement;
 						var	prei = $(FuncInit.idtree).jqxTree('getItem', pre);
-						if(prei!=null)
-						
-								for(var i in items)
-									if(items[i].element!=pre&&items[i].element!=e)
-										{
-											$(FuncInit.idtree).jqxTree('uncheckItem', items[i].element);
-										}
+						if(prei!=null) 
+						  for(var i in items) 
+							{if(items[i].element!=pre&&items[i].element!=e) { $(FuncInit.idtree).jqxTree('uncheckItem', items[i].element); }}
 					}
 					FuncTree.bgrow=true;
 					
-					if(a.checked)
-						$(FuncInit.idtree).jqxTree('expandItem', e);
-					else
-						{$(FuncInit.idtree).jqxTree('collapseItem', e);}
-						
+					if(a.checked){ $(FuncInit.idtree).jqxTree('expandItem', e);}
+					else {$(FuncInit.idtree).jqxTree('collapseItem', e);}
 					
 				}else
 					{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
 			}); 
 
-	$("#r_lieu").autocomplete({ source: FuncInit.srcId, close: function(event, ui){ this.value='probleme, USE ARBRE'; } });
+	$("#r_lieu").autocomplete({ source: FuncInit.srcId, close: function(event, ui){ this.value=''; } });
 	$("#r_theme").autocomplete({ source: FuncTree.theme,close: function(event, ui){ this.value='Aucune donner'; } });
 		$("#r_lieu").on("autocompleteselect",function (event,ui)  {
 			var v = ui.item.value;

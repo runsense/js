@@ -1,10 +1,4 @@
-//Objet Librairie de l'Arbre dans Right Panel
-var bnm=true;
-if($('#panel').css('display') == 'none')
-	{
-		bnm=false;
-	}
-
+//Objet Librairie Variable
 var FuncInit= FuncInit || {};
 var FuncInit={
 	idtree	: "#jqxTree",
