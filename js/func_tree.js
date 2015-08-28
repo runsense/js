@@ -396,15 +396,15 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 });
 			$(FuncInit.idtree).bind('select', function (ev) {
 					ev.stopPropagation();
-						FuncTree.bms=false;
+						
 						FuncTree.zoom=13;
 							var a = ev.args;
 							var e = a.element;
 							var i = $(FuncInit.idtree).jqxTree('getItem', e);
 							if(i!=null)
 								{
-									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);}
-									else {$("#r_lieu").val("Recherche Dans Tableau"); }
+									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;}
+										else {$("#r_lieu").val("Recherche Dans Tableau");FuncTree.bms=false; }
 									for(var cpt in FuncInit.txtInit)
 									if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
 								
