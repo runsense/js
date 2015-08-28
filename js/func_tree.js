@@ -327,7 +327,6 @@ var FuncTree = {
 		FuncTree.styles=new Array();
 		try{
 			FuncTree.ptbid.push(i.value);
-			console.log(i.label);
 			FuncTree.styles.push(FuncTree.chStyle(i.label));
 						var u=FuncTree.chURL(i.label);
 						if(u!=null){FuncTree.styles.push(FuncTree.chURL(i.label));}
@@ -404,8 +403,8 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 							var i = $(FuncInit.idtree).jqxTree('getItem', e);
 							if(i!=null)
 								{
-									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;}
-										else {$("#r_lieu").val("Recherche Dans Tableau");FuncTree.bms=false; }
+									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;$("#r_tab").css('display','none');$("#r_lieu").css('display','inline');}
+										else {$("#r_lieu").val("Recherche Dans Tableau");FuncTree.bms=false;;$("#r_lieu").css('display','none');$("#r_tab").css('display','inline');}
 									for(var cpt in FuncInit.txtInit)
 									if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
 								
@@ -449,14 +448,17 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 			var v = ui.item.value;
 				FuncInit.tmp= ui.item.id;
 			this.value=v;
-			var rplc ='';
-			var ids = FuncInit.srcId;
-			for(var i in ids) { if(v==ids){ rplc ='#'+v;} }
-			if(rplc=='') { FuncTab.fsearch(v); }
-			else { $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline'); }
+				var rplc ='';
+				var ids = FuncInit.srcId;
+				 rplc ='#'+v;
+				 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline'); 
 		}); 
- 
-			
+	
+	$("#r_tab").change(function ()  {
+			var v = this.value;
+			FuncTab.fsearch(v);
+			$(FuncInit.idtab).mouseover();
+		}); 	
 		$("#r_theme").on("autocompleteselect",function (event,ui)  {
 			var v = ui.item.value;
 			if(FuncInit.tmp=='') {this.value="select ville";}
