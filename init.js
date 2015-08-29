@@ -95,10 +95,10 @@
 				});
 			});
 
-		/*$("#r_bdd").change(function(){
+		$("#r_bdd").change(function(){
 				FuncTree.bms=false;
 				MapsLib.srchOnAll(this.value);
-			});*/
+			});
 		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();
             $(FuncInit.idtree).show();
