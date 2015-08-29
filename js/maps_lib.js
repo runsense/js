@@ -24,7 +24,7 @@ var MapsLib = {
   map_centroid		: new google.maps.LatLng(-21.137472,55.546906),
   locationScope		: "reunion",  
   defaultZoom		: 10,
-
+  row				:[],
 initialize: function() {
 	
 	try{ MapsLib.geocoder = new google.maps.Geocoder(); FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer(); }catch(e){;}
@@ -139,6 +139,75 @@ query: function(selectColumns, limit, callback) {
 	$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
   },
 getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
+srchOnAll: function(txt) {
+if(txt!='')
+	{
+	MapsLib.cpte= 0;
+	FuncTab.search=txt;
+	
+	FuncTab.crTb();
+	var ssrcMap
+			for(var i in FuncTree.source)
+			{
+				//srcMap=FuncTree.source[i];
+				var items= FuncTree.source[i].items;
+				for(var j in items)
+				try{
+					var srcMap=items[j];
+					//MapsLib.getSearch(srcMap.value);
+					var ssimts= items[j].items;
+					for(var k in ssimts)
+					try{
+						
+						var ssrcMap=ssimts[k];
+						//console.log(ssrcMap.id);
+						MapsLib.getSearch(ssrcMap.value);
+					}catch(e){;}
+				}catch(e){;}	
+			}
+		MapsLib.displayList();
+		//FuncTab.search="";
+	FuncTab.fshBDD();
+	MapsLib.cpte= 0;
+	MapsLib.row= [];
+	
+	}				
+},
+getSearch: function(value) {
+MapsLib.polygonTableID[0]=value;
+	var callback= "MapsLib.addrow";
+			
+				var selectColumns = "nom,description";
+				var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);
+				queryStr.push(" WHERE nom CONTAINS '"+FuncTab.search+"' AND description LIKE '%"+FuncTab.search+"%' ");
+				var sql = encodeURIComponent(queryStr.join(" "));
+				//console.log(sql);
+				$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp", async : false});
+},
+addrow : function(json) {
+	try{MapsLib.handleError(json);}catch( e){ ;}
+	var rows = json["rows"];
+	for(var r in rows)
+		if(rows[r]!=undefined)
+		try{
+			var rg=[rows[r][0],rows[r][1],MapsLib.polygonTableID[0]];
+			MapsLib.row.push(rg);
+		}catch(e){;}
+	$(FuncInit.idtab).fadeIn('fast');
+},
+displayList: function() {
+
+	for (var row in MapsLib.row)
+		try{
+			var nom = MapsLib.row[row][0];
+			var desc = MapsLib.row[row][1];
+			var id = MapsLib.row[row][2];
+			FuncTab.list_table += "\
+			  <tr >\
+				<td >" + nom + "</td><td >" + desc + "</td><td  style='visibility:hidden;' >" + id + "</td>\
+			  </tr>";
+		}catch(e){;}
+},
 handleError: function(json) { if (json["error"] != undefined){var error = json["error"]["errors"];console.log("Error in Fusion Table call!");for (var row in error) { console.log(" Domain: " + error[row]["domain"]);console.log(" Reason: " + error[row]["reason"]);console.log(" Message: " + error[row]["message"]);}}}
 }
 
