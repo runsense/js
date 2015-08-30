@@ -104,7 +104,8 @@
 			FuncTab.crTb();
 			MapsLib.displayList();
 			FuncTab.fshBDD();
-			$("#r_bdd").val('');
+			FuncTab.search='';
+			//$("#r_bdd").val('');
 		});
 		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();

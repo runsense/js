@@ -91,7 +91,7 @@ fnsTb: function()
 					var lat = $(this).children('td:nth-child(5)').text();
 					var lng = $(this).children('td:nth-child(6)').text();
 					FuncTab.tabToMap(lat,lng);
-					$("#jqxTree").jqxTree('selectItem', $(nm)[0]);
+					$(FuncInit.idtree).jqxTree('selectItem', $(nm)[0]);
 					FuncTree.bchk=false;
 					$(FuncInit.idmap).focus();
 				}

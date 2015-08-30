@@ -145,6 +145,7 @@ srchOnAll: function(txt) {
 	var li= $("#r_lieu").val();
 if(txt!='')
 	{
+	FuncTab.search=txt;
 	MapsLib.row= [];
 	MapsLib.cpte= 0;
 	var fsrc= FuncTree.source;
