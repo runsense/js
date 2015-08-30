@@ -98,11 +98,13 @@
 		$("#r_bdd").change(function(){
 				FuncTree.bms=false;
 				MapsLib.srchOnAll(this.value);
+				
 			});
 		$("#r_bdd").mouseleave(function(){
 			FuncTab.crTb();
 			MapsLib.displayList();
 			FuncTab.fshBDD();
+			$("#r_bdd").val('');
 		});
 		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();
@@ -148,7 +150,7 @@
 			 return true;
           });
 		  $(FuncInit.idmap).mouseleave(function(){
-			
+				map.setZoom(FuncTree.rvzoom);
 				FuncRoute.calcRoute();
 			
 			 return true;

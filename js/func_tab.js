@@ -18,7 +18,7 @@ var FuncTab = {
 },
 crTb: function()
 {
-	var rplc="#"+MapsLib.cpte;
+	var rplc="#"+0;
     FuncTab.results = $(rplc);FuncTab.results .empty(); 
 	FuncTab.list_table = "<table class='table' id ='list_table'><tbody>";
 
@@ -27,28 +27,33 @@ fshBDD:  function()
 {
 	
 	FuncTab.list_table += "</tbody></table>";
-	//console.log(FuncTab.list_table);
 		if(FuncTab.lat!=""&&FuncTab.lng!="") {if(FuncTab.lng<55.8){MapsLib.map_centroid= new google.maps.LatLng(FuncTab.lat,FuncTab.lng);map.setCenter(MapsLib.map_centroid);}}
       FuncTab.results.append(FuncTab.list_table);
 	  $("#list_table").dataTable({
-			"aoColumns": [null,null,null],
+			"aoColumns": [null,null,null,null],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
 			  "bFilter": true,"bInfo": true,"scrollY":"450px","scrollCollapse": true,"paging":true,"bAutoWidth": false
 			});
 	$(".table tbody").on( 'click', 'tr', function (){
 				if(!FuncTree.bchk)
 				{
-					var i =$(this).children('td:nth-child(3)').text().replace(/ /g,'');
-					var nm =$(this).children('td:nth-child(1)').text();
-					$(FuncInit.idtab).empty(); 
-					/*FuncTree.ptbid=new Array();
-						FuncTree.ptbid.push(i);
-						MapsLib.doSearch();*/
-					var rplc= '#'+i;
-					$(FuncInit.idtree).jqxTree('expandItem',$(rplc)[0]);
-					$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
-					$(FuncInit.idtab).mouseover();
-				$('#r_tab').val(nm);
+					
+					var lat = $(this).children('td:nth-child(3)').text();
+					var lng = $(this).children('td:nth-child(4)').text();
+					FuncTab.tabToMap(lat,lng);
+					var ad=$('#arv').val();
+					FuncTree.ptbid=new Array();
+					MapsLib.doSearch();
+					MapsLib.addrMarker = new google.maps.Marker({
+						position: MapsLib.map_centroid,
+						map: map,
+						animation: google.maps.Animation.DROP,
+						title:ad
+				  });
+					$(FuncInit.idmap).focus();
+					FuncTree.zoom=13;
+				
+				FuncInit.bnm=true;
 				}
 			}).on( 'mouseover', 'tr',
 			  function () {
@@ -137,7 +142,8 @@ tabToMap: function(lat,lng) {
 						map.setZoom(FuncTree.zoom);
 					$(FuncInit.idtab).animate({ opacity: '0.3', height: '30%'});
 					$(FuncInit.idmap).animate({ opacity: '1' });
-					
+					MapsLib.chad='#arv';
+					MapsLib.addrFromLatLng(MapsLib.map_centroid);
 				}
 			}
 	}

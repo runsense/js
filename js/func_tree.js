@@ -31,6 +31,7 @@ var FuncInit={
 				,"http://runsense.github.io/js/img/blason/"//11
 				,".gif"]//12
 				,
+	srcZn	:['NORD','OUEST','EST','SUD'],
 	srcId 	: [{label:'Mafate',value:'Mafate',id:'Ma'},{label:'Saint-Gilles',value:'Saint-Gilles',id:'SG'},{label:'Saint-Leu',value:'Saint-Leu',id:'SL'},
 				{label:'Trois-Bassins',value:'TroisBassins',id:'TB'},{label:'Saint-Paul',value:'Saint-Paul',id:'SPA'},{label:'l Etang Salé',value:'EtangSalé',id:'ES'},{label:'Entre-Deux',value:'Entre-Deux',id:'ED'},{label:'Les Avirons',value:'LesAvirons',id:'AV'},
 				{label:'Saint-Pierre',value:'Saint-Pierre',id:'SPI'},{label:'Saint-Joseph',value:'Saint-Joseph',id:'SJ'},{label:'Petite Ile',value:'PetiteIle',id:'PI'},{label:'Saint-Louis',value:'Saint-Louis',id:'SLO'},{label:'Cilaos',value:'Cilaos',id:'CI'},{label:'Tampon',value:'Tampon',id:'T'},{label:'La Plaine des Cafres',value:'LaPlaineDesCafres',id:'PC'},{label:'Volcan' ,value:'enclosduTremblet',id:'ET'},
@@ -48,6 +49,7 @@ var FuncTree = {
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
 	styles		:["","http://runsense.github.io/js/f.png"],
 	zoom		:10,
+	rvzoom		:10,
 	theme 		:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},
 					{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'} 
 				],
@@ -445,6 +447,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 					for(var i in FuncInit.txtInit) {if(item.label==FuncInit.txtInit[i]) bIn=true;}
 					if(!bIn)
 					{			
+						FuncInit.tmp= item.label;
 						var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
 						var pre = e.parentElement.parentElement;
 						var	prei = $(FuncInit.idtree).jqxTree('getItem', pre);
@@ -475,7 +478,6 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
                         mobile: true
                     })
                     .change(function () {
-                        console.log('Change on ' + $(this).attr('name') + ': ' + $(this).val() + '<br />');
 						FuncInit.tmp= $(this).val();
 						var ids = FuncInit.srcId;
 						 var rplc ='#'+FuncInit.tmp;
@@ -498,16 +500,28 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
                         mobile: true
                     })
                     .change(function () {
-                        console.log('Change on ' + $(this).attr('id') + ': ' + $(this).val() + '<br />');
-						var ids = FuncInit.srcId;
-						var rplc= '#';
-						for(var id in ids)
+						var bzn= false;
+						var zns = FuncInit.srcZn
+						for(var z in zns)
 						{
-							if(ids[id].label==FuncInit.tmp)
-								 rplc = rplc+ ids[id].id +'_';;
+							if(zns[z]==FuncInit.tmp)
+								 bzn= true;
 						}
-						 
-						  rplc = rplc+ $(this).val();
-						 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); 
+						if(bzn)
+						{
+							FuncTree.bms=false;
+							MapsLib.srchOnAll(this.value);
+						}else
+						{
+							var ids = FuncInit.srcId;
+							var rplc= '#';
+							for(var id in ids)
+							{
+								if(ids[id].label==FuncInit.tmp)
+									 rplc = rplc+ ids[id].id +'_';;
+							}
+							 rplc = rplc+ $(this).val();
+							 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); 
+						}
                     });
 		
