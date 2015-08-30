@@ -9,7 +9,6 @@ html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !impo
 		#info		{ float:left;height:50px; border-top-left-radius: 2em ;border-bottom-right-radius: 1em ;  }
 		#itinv		{ float:left; }
 		#fl, #r_theme	{ display:none; }
-		 #cpte	{ visibility:hidden; }
 		#r_tab		{background: rgba(0,255,0,0.7);color:black;font-weight: bloder;}
 		#r_bdd		{background: rgba(255,0,0,0.7);color:black;font-weight: bloder;}
 		#r_bdd::-webkit-input-placeholder { /* WebKit, Blink, Edge */
