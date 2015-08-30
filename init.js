@@ -98,6 +98,9 @@
 		$("#r_bdd").change(function(){
 				FuncTree.bms=false;
 				MapsLib.srchOnAll(this.value);
+				$(FuncInit.idinf).empty();
+				FuncTab.msg= 'Pour Afficher les donners, cliquer ailleurs!!';
+				 FuncTree.append(FuncTab.msg,'red');
 				
 			});
 		$("#r_bdd").mouseleave(function(){
@@ -106,6 +109,11 @@
 			FuncTab.fshBDD();
 			FuncTab.search='';
 			//$("#r_bdd").val('');
+		});
+		$("#r_bdd").click(function(){
+			$(FuncInit.idinf).empty();
+			FuncTab.msg= 'Pour Afficher les donners, visoinner les donner en bas de l Ecran!!';
+				 FuncTree.append(FuncTab.msg,'blue');
 		});
 		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();
@@ -161,6 +169,6 @@
 				
             return true;
           });
-	
+		FuncInit.tmp="OUEST";
         });
       //]]>

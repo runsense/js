@@ -63,6 +63,7 @@ var FuncTab = {
  list_table		:"",
  lat			:null,
  lng			:null,
+ msg			:"Pour Afficher les donners, cliquer ailleurs!!",
  displayList: function(json) {
 	try{MapsLib.handleError(json);}catch( e){ ;}
     var columns = json["columns"];var rows = json["rows"];var rplc="#"+MapsLib.cpte;
@@ -86,6 +87,10 @@ fshBDD:  function()
 	  $("#list_table").dataTable({
 			"aoColumns": [null,null,null,null],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
+			  "language": {
+				"infoEmpty": "Probleme de donners",
+				"zeroRecords": FuncTab.msg,
+			},
 			  "bFilter": true,"bInfo": true,"scrollY":"450px","scrollCollapse": true,"paging":true,"bAutoWidth": false
 			});
 	$(".table tbody").on( 'click', 'tr', function (){
@@ -670,8 +675,27 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 							if(i!=null)
 								{
 									if(i.id.match('_')==null) {
-										$("#r_lieu").selectBox('value',i.label);
+										var lab= i.label.replace(/ /g,'');
+										$("#r_lieu").selectBox('value',lab);
+										FuncInit.tmp='';
+											var zns = FuncInit.srcZn
+											for(var z in zns)
+											{
+												if(zns[z]==lab)
+													 FuncInit.tmp=lab;
+											}
+											var itmid=i.id;
+											if(FuncInit.tmp=='')
+												{
+													var ids = FuncInit.srcId;
+													for(var id in ids)
+														if(ids[id].label==itmid)
+															 FuncInit.tmp=ids[id].id;
+												}
+											if(FuncInit.tmp=='')
+													FuncInit.tmp=itmid.split('_')[0];
 										FuncTree.bms=true;
+										console.log(FuncInit.tmp);
 									}
 									else {
 									var slc=i.id.split('_')[1];
@@ -721,7 +745,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
                     })
                     .change(function () {
 						FuncInit.tmp= $(this).val();
-						var ids = FuncInit.srcId;
+						
 						 var rplc ='#'+FuncInit.tmp;
 						 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline');
                     });
@@ -745,6 +769,9 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 						{
 							FuncTree.bms=false;
 							MapsLib.srchOnAll(this.value);
+							$(FuncInit.idinf).empty();
+							FuncTab.msg= 'Pour Afficher les donners, cliquer SUR le champs Recherche Bdd!!';
+							FuncTree.append(FuncTab.msg,'red');
 						}else
 						{
 							var ids = FuncInit.srcId;
@@ -897,7 +924,7 @@ query: function(selectColumns, limit, callback) {
 			var sql = encodeURIComponent(queryStr.join(" ")); $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
 		}else { $(FuncInit.idtab).empty(); $(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>"); }
 	}
-	$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)>","blue");
+	$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)","blue");
   },
 getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
 srchOnAll: function(txt) {
