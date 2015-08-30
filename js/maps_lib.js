@@ -78,8 +78,9 @@ anLayer: function(e){//commande click layer
 							{
 								var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
 								FuncTree.bchk=true;
+								FuncTab.fsearch(s);	
 									var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
-									 FuncTab.fsearch(s); $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
+									  $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
 									MapsLib.chad='#arv'; MapsLib.addrFromLatLng(e.latLng);
 								FuncTree.bchk=false;
 								return s;
@@ -140,41 +141,51 @@ query: function(selectColumns, limit, callback) {
   },
 getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
 srchOnAll: function(txt) {
+	var th= $( "#r_theme" ).val();
+	var li= $("#r_lieu").val();
 if(txt!='')
 	{
+	MapsLib.row= [];
 	MapsLib.cpte= 0;
-	FuncTab.search=txt;
-	
+	var fsrc= FuncTree.source;
+	var bsrc=true;
 	FuncTab.crTb();
-	var ssrcMap
-			for(var i in FuncTree.source)
+	var ssrcMap;
+		for(var i in fsrc)
+			if(bsrc)
 			{
-				//srcMap=FuncTree.source[i];
-				var items= FuncTree.source[i].items;
+				var src= fsrc[i];
+				var items= src.items;
+				
 				for(var j in items)
-				try{
-					var srcMap=items[j];
-					//MapsLib.getSearch(srcMap.value);
-					var ssimts= items[j].items;
-					for(var k in ssimts)
+				{
+				if(bsrc)
 					try{
-						
-						var ssrcMap=ssimts[k];
-						//console.log(ssrcMap.id);
-						MapsLib.getSearch(ssrcMap.value);
+						var srcMap=items[j];
+						if(srcMap.id==li) bsrc=false;
+						//MapsLib.getSearch(srcMap.value);
+						var ssimts= items[j].items;
+						for(var k in ssimts)
+						try{
+							var ssrcMap=ssimts[k];
+							FuncInit.tmp= ssrcMap.id;
+						/*if(th!='')
+							{
+								if(FuncInit.tmp==th) MapsLib.getSearch(ssrcMap.value);
+							}else*/
+								MapsLib.getSearch(ssrcMap.value);
+						}catch(e){;}
 					}catch(e){;}
-				}catch(e){;}	
+				}
+				if(src.id==li) bsrc=false;
 			}
 		MapsLib.displayList();
-		//FuncTab.search="";
 	FuncTab.fshBDD();
 	MapsLib.cpte= 0;
-	MapsLib.row= [];
-	
 	}				
 },
 getSearch: function(value) {
-MapsLib.polygonTableID[0]=value;
+//MapsLib.polygonTableID[0]=value;
 	var callback= "MapsLib.addrow";
 			
 				var selectColumns = "nom,description";
@@ -190,7 +201,7 @@ addrow : function(json) {
 	for(var r in rows)
 		if(rows[r]!=undefined)
 		try{
-			var rg=[rows[r][0],rows[r][1],MapsLib.polygonTableID[0]];
+			var rg=[rows[r][0],rows[r][1],FuncInit.tmp];
 			MapsLib.row.push(rg);
 		}catch(e){;}
 	$(FuncInit.idtab).fadeIn('fast');

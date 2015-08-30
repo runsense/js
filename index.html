@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="./css/runsense.css" type="text/css" />
 	
 	<link rel="stylesheet" href="./js/jquery/jquery-ui.css" type="text/css" >
-	
+	<link rel="stylesheet" href="./js/jquery/jquery.selectBox.css" type="text/css" >
 	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
 	<link rel="stylesheet" media="all and (orientation:portrait)" href="./jqx/jqx.mobile.css" />
 	<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css" />
@@ -52,6 +52,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
     </script>
 
+	<script type="text/javascript" src="./js/jquery/jquery.selectBox.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
@@ -70,8 +71,74 @@
 					<td><input id="r_bdd" title="En Construction!!" placeholder="recherche BDD " onclick="this.value=''" type="text" /></td>
 				</tr>
 					<tr>				
-						<td><input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX et tableau" onclick="this.value=''" type="text" /></td>
-						<td ><input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" /></td>
+						<td>
+						<!--<input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX et tableau" onclick="this.value=''" type="text" />-->
+						<label for="r_lieu">Select Lieux </label><br/>
+						<select id="r_lieu" style="width: 200px;"  >
+							<optgroup label="ZONE">
+								<option value="OUEST">OUEST</option>
+							</optgroup>
+							<optgroup label="OUEST">
+								<option value="Mafate">Mafate</option>
+								<option value="Saint-Gilles">Saint-Gilles</option>
+								<option value="Saint-Leu">Saint-Leu</option>
+								<option value="TroisBassins">Trois Bassins</option>
+								<option value="Saint-Paul">Saint-Paul</option>
+								<option value="EtangSale">Etang Sale</option>
+								<option value="Entre-Deux">Entre-Deux</option>
+								<option value="LesAvirons">LesAvirons</option>
+							</optgroup>
+							<optgroup label="ZONE">
+								<option value="SUD">SUD</option>
+							</optgroup>
+							<optgroup label="SUD">
+								<option value="Saint-Pierre">Saint-Pierre</option>
+								<option value="Saint-Joseph">Saint-Joseph</option>
+								<option value="PetiteIle">PetiteIle</option>
+								<option value="Saint-Louis">Saint-Louis</option>
+								<option value="Cilaos">Cilaos</option>
+								<option value="Tampon">Tampon</option>
+								<option value="LaPlaineDesCafres">LaPlaineDesCafres</option>
+								<option value="enclosduTremblet">enclosduTremblet</option>
+								<option value="Saint-Phillippe">Saint-Phillippe</option>
+							</optgroup>
+							<optgroup label="ZONE">
+								<option value="NORD">NORD</option>
+							</optgroup>
+							<optgroup label="NORD">
+								<option value="Saint-Denis">Saint-Denis</option>
+								<option value="Sainte-Marie">Sainte-Marie</option>
+								<option value="Sainte-Suzanne">Sainte-Suzanne</option>
+								<option value="LaPossession">LaPossession</option>
+								<option value="LePort">LePort</option>
+							</optgroup>
+							<optgroup label="ZONE">
+								<option value="EST">EST</option>
+							</optgroup>
+							<optgroup label="EST">
+								<option value="Bras-Panon">Bras-Panon</option>
+								<option value="Saint-Andre">Saint-Andre</option>
+								<option value="Saint-Benoit">Saint-Benoit</option>
+								<option value="Sainte-Anne">Sainte-Anne</option>
+								<option value="LePort">Sainte-Rose</option>
+								<option value="LePort">LaPlaineDesPalmistes</option>
+								<option value="LePort">Salazie</option>
+							</optgroup>
+						</select>
+						</td>
+					
+						<td ><!--<input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" />-->
+						<label for="r_theme">Select Thème </label><br/>
+						<select id="r_theme" style="width: 200px;" >
+								<option value="">general</option>
+								<option value="t">terrain et jeux POOL</option>
+								<option value="s">sentiers et routes PATH & ROAD</option>
+								<option value="md">manger & dormir EAT & SLEEP</option>
+								<option value="v">Lieu dit et quartier PLACE & QUARTER</option>
+								<option value="n">boite de nuit & pub NIGHT CLUB & FESTIVALS</option>
+								<option value="a">loisirs, info marinne ENTERTAINEMENT & SEA INFO</option>
+						</select>
+						</td>
 					</tr>
 				</table>
 			</form>

@@ -33,15 +33,22 @@ fshBDD:  function()
 	  $("#list_table").dataTable({
 			"aoColumns": [null,null,null],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
-			  "oSearch": {"sSearch": FuncTab.search},
 			  "bFilter": true,"bInfo": true,"scrollY":"450px","scrollCollapse": true,"paging":true,"bAutoWidth": false
 			});
 	$(".table tbody").on( 'click', 'tr', function (){
 				if(!FuncTree.bchk)
 				{
-					var i =$(this).children('td:nth-child(4)').text().replace(/ /g,'');
-					FuncTree.ptbid.push(i);
-					MapsLib.doSearch();
+					var i =$(this).children('td:nth-child(3)').text().replace(/ /g,'');
+					var nm =$(this).children('td:nth-child(1)').text();
+					$(FuncInit.idtab).empty(); 
+					/*FuncTree.ptbid=new Array();
+						FuncTree.ptbid.push(i);
+						MapsLib.doSearch();*/
+					var rplc= '#'+i;
+					$(FuncInit.idtree).jqxTree('expandItem',$(rplc)[0]);
+					$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
+					$(FuncInit.idtab).mouseover();
+				$('#r_tab').val(nm);
 				}
 			}).on( 'mouseover', 'tr',
 			  function () {

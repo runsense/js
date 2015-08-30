@@ -17,7 +17,7 @@ var FuncInit={
 	idinf	: "#info",
 	iditi	: "#iti",
 	idbtn	: "#btn",
-	txtInit : ["terain et jeux POOL" //0
+	txtInit : ["terrain et jeux POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
 				,"manger & dormir EAT & SLEEP"		//2
 				,"Lieu dit et quartier PLACE & QUARTER"	//3
@@ -375,7 +375,8 @@ $('#jqxTree .jqx-tree-item').mouseenter(function (event) {
 				if(FuncInit.bnm&&FuncTree.bms)
 				try{
 						var text = event.target.textContent;
-						text = '#'+text.replace(/ /g,'').replace(/'/g,'');
+							text = text.replace(/ /g,'').replace(/'/g,'');
+							text = '#'+text;
 						var i = $(FuncInit.idtree).jqxTree('getItem',$(text)[0] );
 						if(i!=null) {FuncTree.applysrch(i);MapsLib.doSearch();}
 					}
@@ -414,10 +415,17 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 							var i = $(FuncInit.idtree).jqxTree('getItem', e);
 							if(i!=null)
 								{
-									if(i.id.match('_')==null) {$("#r_lieu").val(i.label);FuncTree.bms=true;$("#r_lieu").css('display','inline');}
-										else {$("#r_lieu").val("Recherche sur ville");FuncTree.bms=false;}
-									for(var cpt in FuncInit.txtInit)
-									if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
+									if(i.id.match('_')==null) {
+										$("#r_lieu").selectBox('value',i.label);
+										FuncTree.bms=true;
+									}
+									else {
+									var slc=i.id.split('_')[1];
+										$("#r_theme").selectBox('value',slc);FuncTree.bms=false;
+
+									}
+									
+									for(var cpt in FuncInit.txtInit) if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
 								
 									$(FuncInit.idtree).jqxTree('checkItem', e, true);
 										FuncTree.applysrch(i);
@@ -453,8 +461,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 					{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
 			}); 
 
-	$("#r_lieu").autocomplete({ source: FuncInit.srcId, close: function(event, ui){ this.value=''; } });
-	$("#r_theme").autocomplete({ source: FuncTree.theme,close: function(event, ui){ this.value='Aucune donner'; } });
+	/*$("#r_lieu").autocomplete({ source: FuncInit.srcId, close: function(event, ui){ this.value=''; } });
 		$("#r_lieu").on("autocompleteselect",function (event,ui)  {
 			var v = ui.item.value;
 				FuncInit.tmp= ui.item.id;
@@ -463,18 +470,44 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 				var ids = FuncInit.srcId;
 				 rplc ='#'+v;
 				 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline'); 
-		}); 
-	
+		}); */
+	$("#r_lieu").selectBox({
+                        mobile: true
+                    })
+                    .change(function () {
+                        console.log('Change on ' + $(this).attr('name') + ': ' + $(this).val() + '<br />');
+						FuncInit.tmp= $(this).val();
+						var ids = FuncInit.srcId;
+						 var rplc ='#'+FuncInit.tmp;
+						 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline');
+                    });
 	$("#r_tab").change(function ()  {
-			var v = this.value;
-			FuncTab.fsearch(v);
+			FuncTab.fsearch(this.value);
 			$(FuncInit.idtab).mouseover();
-		}); 	
+		}); 
+		
+	/*$("#r_theme").autocomplete({ source: FuncTree.theme,close: function(event, ui){ this.value='Aucune donner'; } });
 		$("#r_theme").on("autocompleteselect",function (event,ui)  {
 			var v = ui.item.value;
 			if(FuncInit.tmp=='') {this.value="select ville";}
 			else { this.value=ui.item.label; var rplc ='#'+FuncInit.tmp+'_'+v; $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); this.value=ui.item.label; }
 		});
 			
-		$( "#r_theme" ).on( "autocompletefocus",function(event, ui){ $("#r_theme").autocomplete( "search", " " ); } );
+		$( "#r_theme" ).on( "autocompletefocus",function(event, ui){ $("#r_theme").autocomplete( "search", " " ); } );*/
+		$( "#r_theme" ).selectBox({
+                        mobile: true
+                    })
+                    .change(function () {
+                        console.log('Change on ' + $(this).attr('id') + ': ' + $(this).val() + '<br />');
+						var ids = FuncInit.srcId;
+						var rplc= '#';
+						for(var id in ids)
+						{
+							if(ids[id].label==FuncInit.tmp)
+								 rplc = rplc+ ids[id].id +'_';;
+						}
+						 
+						  rplc = rplc+ $(this).val();
+						 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); 
+                    });
 		

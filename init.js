@@ -99,6 +99,11 @@
 				FuncTree.bms=false;
 				MapsLib.srchOnAll(this.value);
 			});
+		$("#r_bdd").mouseleave(function(){
+			FuncTab.crTb();
+			MapsLib.displayList();
+			FuncTab.fshBDD();
+		});
 		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();
             $(FuncInit.idtree).show();
@@ -127,7 +132,6 @@
 			var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
 					for(var i in items)
 							$(FuncInit.idtree).jqxTree('uncheckItem', items[i].element);
-			$(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: 'auto', theme: 'summer' });
 			$(FuncInit.idtree).jqxTree('refresh');
 			
 		});
