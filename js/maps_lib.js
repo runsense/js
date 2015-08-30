@@ -85,7 +85,7 @@ fshBDD:  function()
 		if(FuncTab.lat!=""&&FuncTab.lng!="") {if(FuncTab.lng<55.8){MapsLib.map_centroid= new google.maps.LatLng(FuncTab.lat,FuncTab.lng);map.setCenter(MapsLib.map_centroid);}}
       FuncTab.results.append(FuncTab.list_table);
 	  $("#list_table").dataTable({
-			"aoColumns": [null,null,null,null],
+			"aoColumns": [null,null,null,null,null],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
 			  "language": {
 				"infoEmpty": "Probleme de donners",
@@ -745,9 +745,12 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
                     })
                     .change(function () {
 						FuncInit.tmp= $(this).val();
-						
+						$( "#r_theme" ).selectBox('value',"general");
+					
 						 var rplc ='#'+FuncInit.tmp;
 						 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline');
+						 
+						 
                     });
 	$("#r_tab").change(function ()  {
 			FuncTab.fsearch(this.value);
@@ -981,7 +984,7 @@ getSearch: function(value) {
 
 	var callback= "MapsLib.addrow";
 			
-				var selectColumns = "nom,description,lat,lng";
+				var selectColumns = "nom,description,lat,lng,categ";
 				var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);
 				queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");
 				var sql = encodeURIComponent(queryStr.join(" "));
@@ -994,7 +997,7 @@ addrow : function(json) {
 	for(var r in rows)
 		if(rows[r]!=undefined)
 		try{
-			var rg=[rows[r][0],rows[r][1],rows[r][2],rows[r][3]];
+			var rg=[rows[r][4],rows[r][0],rows[r][1],rows[r][2],rows[r][3]];
 			MapsLib.row.push(rg);
 		}catch(e){;}
 	$(FuncInit.idtab).fadeIn('fast');
@@ -1003,11 +1006,16 @@ displayList: function() {
 	MapsLib.cpte=0;
 	for (var row in MapsLib.row)
 		try{
+			var ctg= MapsLib.row[row][0];
+			if(ctg.split("http:").length==1)
+				{ var spl= ctg.split("*"); var lg= spl.length; if(lg==1) { ctg="<img src='http://runsense.github.io/js/img/ico/"+ctg+".png' style='width: 30px;height: 30px'></img>"; }else { ctg=''; for(var i in spl) ctg=ctg+"<img src='http://runsense.github.io/js/img/ico/"+spl[i]+".png' style='width: 15px;height: 30px'></img>";}}
+			else ctg="<img src='"+ctg+"' style='width: 30px;height: 30px'></img>";
 			FuncTab.list_table += "\
 			  <tr >\
-				<td >" + MapsLib.row[row][0] + "</td><td >" + MapsLib.row[row][1] + "</td>\
-				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][2] + "</td>\
+				<td> "+ctg+"</td>\
+				<td >" + MapsLib.row[row][1] + "</td><td >" + MapsLib.row[row][2] + "</td>\
 				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][3] + "</td>\
+				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][4] + "</td>\
 			  </tr>";
 		}catch(e){;}
 },
