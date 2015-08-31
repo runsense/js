@@ -997,7 +997,10 @@ getSearch: function(value) {
 				$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp", async : false});
 },
 addrow : function(json) {
+<<<<<<< HEAD
 console.log(json);
+=======
+>>>>>>> 7bb6b9a291c880b070f59eca2437346e36a02b3e
 	try{MapsLib.handleError(json);}catch( e){ ;}
 	var rows = json["rows"];
 	for(var r in rows)

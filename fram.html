@@ -5,7 +5,7 @@
     <title>redirect</title>
 	<meta http-equiv="refresh" content="2; URL='http://runsense.re'" />
 	</head>
-	<body style="background-image:url('f.png');background-size: 100% 1024px;background-repeat: no-repeat;" >
+	<body style="background-color: black;background-image:url('f.png');background-size: 100% 1024px;background-repeat: no-repeat;" >
 		
 		<script src="processing.js"></script>
 		<script type="text/processing" data-processing-target="mycanvas">
@@ -13,14 +13,12 @@
                                 void setup() 
                                 {
                                     size(800, 800, P3D);
-                                    background(1);
+                                    background(32,117,41,36);
                                     PFont font = loadFont("Arial");
                                     textFont(font,70); 
                                 } 
 
                                 void draw(){
-
-                                background(255);
                                 a += 0.015;
                                 if(a > TWO_PI) { 
                                     a = 0.0; 
