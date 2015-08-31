@@ -140,9 +140,12 @@
 			});
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
 		$('#clear').bind('click',function(){
+			MapsLib.map_centroid = new google.maps.LatLng(-21.137472,55.546906);
+			FuncTree.zoom=10;
+			MapsLib.doSearch();
 			var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
 					for(var i in items)
-							$(FuncInit.idtree).jqxTree('uncheckItem', items[i].element);
+							{var e=items[i].element;$(FuncInit.idtree).jqxTree('uncheckItem', e);$(FuncInit.idtree).jqxTree('collapseItem', e);}
 			$(FuncInit.idtree).jqxTree('refresh');
 			
 		});

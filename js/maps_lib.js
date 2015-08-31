@@ -88,7 +88,7 @@ fshBDD:  function()
 			"aoColumns": [null,null,null,null,null],
 			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
 			  "language": {
-				"infoEmpty": "Probleme de donners",
+				"infoEmpty": "Patienter ou affiner la recherche",
 				"zeroRecords": FuncTab.msg,
 			},
 			  "bFilter": true,"bInfo": true,"scrollY":"450px","scrollCollapse": true,"paging":true,"bAutoWidth": false
@@ -96,19 +96,14 @@ fshBDD:  function()
 	$(".table tbody").on( 'click', 'tr', function (){
 				if(!FuncTree.bchk)
 				{
-					
+					MapsLib.addSrchMarker.setMap(null);
 					var lat = $(this).children('td:nth-child(3)').text();
 					var lng = $(this).children('td:nth-child(4)').text();
 					FuncTab.tabToMap(lat,lng);
-					var ad=$('#arv').val();
+					
 					FuncTree.ptbid=new Array();
 					MapsLib.doSearch();
-					MapsLib.addrMarker = new google.maps.Marker({
-						position: MapsLib.map_centroid,
-						map: map,
-						animation: google.maps.Animation.DROP,
-						title:ad
-				  });
+					
 					$(FuncInit.idmap).focus();
 					FuncTree.zoom=13;
 				
@@ -145,6 +140,7 @@ fnsTb: function()
 	$(".table tbody").on( 'click', 'tr', function (){
 				if(!FuncTree.bchk)
 				{
+					MapsLib.addSrchMarker.setMap(null);
 					FuncTree.bchk=true;
 					var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
 					var lat = $(this).children('td:nth-child(5)').text();
@@ -203,6 +199,14 @@ tabToMap: function(lat,lng) {
 					$(FuncInit.idmap).animate({ opacity: '1' });
 					MapsLib.chad='#arv';
 					MapsLib.addrFromLatLng(MapsLib.map_centroid);
+					
+					var ad=$(MapsLib.chad).val();
+					MapsLib.addSrchMarker = new google.maps.Marker({
+						position: MapsLib.map_centroid,
+						map: map,
+						animation: google.maps.Animation.DROP,
+						title:ad
+				  });
 				}
 			}
 	}
@@ -773,7 +777,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 							FuncTree.bms=false;
 							MapsLib.srchOnAll(this.value);
 							$(FuncInit.idinf).empty();
-							FuncTab.msg= 'Pour Afficher les donners, cliquer SUR le champs Recherche Bdd!!';
+							FuncTab.msg= 'Entrer valeurs DANS le champs Recherche Bdd, ou sélectionner une ville!!';
 							FuncTree.append(FuncTab.msg,'red');
 						}else
 						{
@@ -815,6 +819,7 @@ var MapsLib = {
   locationScope		: "reunion",  
   defaultZoom		: 10,
   row				:[],
+  addSrchMarker		: new google.maps.Marker(),
 initialize: function() {
 	
 	try{ MapsLib.geocoder = new google.maps.Geocoder(); FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer(); }catch(e){;}
@@ -981,12 +986,12 @@ if(txt!='')
 	}				
 },
 getSearch: function(value) {
-
+	
 	var callback= "MapsLib.addrow";
 			
 				var selectColumns = "nom,description,lat,lng,categ";
 				var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);
-				queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");
+				queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");//queryStr.push(" LIMIT 10");
 				var sql = encodeURIComponent(queryStr.join(" "));
 				//console.log(sql);
 				$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp", async : false});
@@ -999,7 +1004,13 @@ addrow : function(json) {
 		try{
 			var rg=[rows[r][4],rows[r][0],rows[r][1],rows[r][2],rows[r][3]];
 			MapsLib.row.push(rg);
+			console.log(rows[r][4]);
+		console.log(rows[r][0]);
+		console.log(rows[r][1]);
+		console.log(rows[r][2]);
+		console.log(rows[r][3]);
 		}catch(e){;}
+		
 	$(FuncInit.idtab).fadeIn('fast');
 },
 displayList: function() {
