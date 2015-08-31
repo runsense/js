@@ -1,0 +1,16 @@
+id,nom,categ,description,geometry,lat,lng
+Sainte-Rose,Sainte-Rose,http://runsense.github.io/js/img/blason/Sainte-Rose.gif,"<a href="" "" style=""color:red;""> site web Official de la ville</a>
+entre la rivière de l'Est et le tremblet( enclos du volcan),
+un petit villages étendu le long de la route nationale,
+avec un port et une église miraculeuse","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.7685167987146,-21.10410407652454 55.75342730282573,-21.1172953565782 55.74271948069323,-21.1296145724043 55.74190402062394,-21.14953855427867 55.73862100992702,-21.15834641892219 55.73299371700588,-21.16889066053822 55.74412781978332,-21.181779055709 55.7575277432628,-21.19496763281274 55.77780844792259,-21.20485942419985 55.8014969562601,-21.21648382139306 55.81420000057049,-21.21690207503053 55.82381732493835,-21.20575184026064 55.8265067072295,-21.18617845396763 55.83257951620652,-21.18762319534078 55.83766275296311,-21.18325861612069 55.83608064663957,-21.16117193290727 55.82578618482132,-21.14200543079945 55.79775515920979,-21.12583303791075 55.78383121383644,-21.12439780908492 55.7685167987146,-21.10410407652454</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-21.1272,55.7922
+Sainte-Rose,méteo marinne,info_circle,"<a href=""http://www.meteolamer.re/spots.php?spot=sterose"" > météo Marinne </a>
+id map_overlay_img","<Point>
+            <coordinates>55.7872358679896,-21.12101779228315</coordinates>
+        </Point>","-21,1210177923","55,787235868"

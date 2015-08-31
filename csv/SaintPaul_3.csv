@@ -1,0 +1,234 @@
+id,nom,categ,description,geometry,lat,lng
+SPA_v,piton bernica,mountains,mont,"<Point>
+            <coordinates>55.38756825927806,-21.06928405310833</coordinates>
+        </Point>","-21,0692840531","55,3875682593"
+SPA_v,savanah,capital_big,quartier,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.29431059881043,-20.98067062285457 55.28949181421671,-20.9888243217519 55.29547547681889,-20.99162178638701 55.29560911182074,-20.99162235062952 55.30212195404057,-20.98835979372644 55.29991622513826,-20.98331243784849 55.29431059881043,-20.98067062285457</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SPA_v,Maison Grande Cour,cbh,"en 1780,
+elle fut construit par le savoir faire indien","<Point>
+            <coordinates>55.28100399971687,-21.0035749999323</coordinates>
+        </Point>","-21,0035749999","55,2810039997"
+SPA_v,Magasins Compagnies des Indes,cbh,pointInteret_,"<Point>
+            <coordinates>55.26936999988968,-21.00860997079181</coordinates>
+        </Point>","-21,0086099708","55,2693699999"
+SPA_v,Grande maison de Savannah,cbh,"Bâtiment classé monument historique par arrêté du 22 octobre 1998, avec son terrain,","<Point>
+            <coordinates>55.29779234261865,-20.9878530680822</coordinates>
+        </Point>","-20,9878530681","55,2977923426"
+SPA_v,Tunnel du Cap La Houssaye,cbh,pointInteret_Les Viaducs de Fleurimont,"<Point>
+            <coordinates>55.25476027691623,-21.01687736123667</coordinates>
+        </Point>","-21,0168773612","55,2547602769"
+SPA_v,l'Etang Saint-Paul,water*terain,"Réserve naturelle regroupant le plus vaste point d'eau de l'île,
+on y pratique le sky nautique","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.29078374631489,-20.98964409970202 55.29031902327666,-20.98973181421249 55.28992374350113,-20.99009434922888 55.28961893289909,-20.98995078357984 55.28861287975466,-20.9890682322789 55.28794454396565,-20.98782284544242 55.28680291520422,-20.98712042437109 55.28458756638883,-20.98585647763699 55.28300172347926,-20.98487232667429 55.28305595088139,-20.98412098077581 55.28420173158862,-20.97873968671468 55.28425220472679,-20.97796530195176 55.28315113325699,-20.97563365374759 55.28293762893657,-20.97581022862741 55.282564982051,-20.9801266295907 55.2815249575475,-20.98448500649432 55.28075383146505,-20.98946667910503 55.280342663729,-20.99217378825838 55.27995224625416,-20.99427519033559 55.27873740712847,-20.99739343963697 55.27924252065299,-20.99774154285563 55.28021972979642,-20.99612572576986 55.28118180904228,-20.9940699590233 55.28219746664673,-20.99240262617133 55.28253552249169,-20.99181879379392 55.28266555530025,-20.9910857110421 55.28262059031817,-20.99071250757355 55.28237726684232,-20.98979903163004 55.28253693753675,-20.98961883283122 55.28267050105835,-20.98929053016603 55.28312570513786,-20.98947230997185 55.28356192725469,-20.98828021908613 55.28520679763138,-20.98929343964971 55.28690602491807,-20.99030676062587 55.28743970188116,-20.99062471814835 55.28760766992807,-20.99115385303333 55.28742760742072,-20.99141802039886 55.28732751125618,-20.99148235557038 55.28736637902043,-20.99157189864273 55.28749673465657,-20.99163654134921 55.28768312617476,-20.99153119225039 55.28857260899651,-20.98993825411813 55.28917763829929,-20.99021539734026 55.28965481455854,-20.9904737742973 55.28933222530067,-20.99091819285324 55.28891045182984,-20.9918923145253 55.28820346400458,-20.99327720911735 55.28746730783448,-20.99481037385443 55.28673260410086,-20.99612999614485 55.28601400751159,-20.99731632799733 55.28529165172751,-20.99876500548311 55.28429920083689,-21.00042207208161 55.28328351186608,-21.0018201430483 55.28236688269602,-21.00299516079128 55.28110667672722,-21.0047194238376 55.27963029731728,-21.00676024235121 55.28110304546259,-21.00780123967651 55.28051311740017,-21.00839118136662 55.27877284362722,-21.0098826095741 55.27719387097911,-21.01065584218011 55.27605134748865,-21.01140214728452 55.27410539499036,-21.01269723345302 55.27380472116788,-21.01311467796651 55.27547939147904,-21.01204379688812 55.27693282856986,-21.0114621657624 55.27701825150893,-21.01180170247891 55.27840909169994,-21.01208823829719 55.27883018423312,-21.01209039819709 55.28024011253042,-21.01143844495369 55.28250907659511,-21.01085992708688 55.28230231160045,-21.00970620354953 55.28202022461056,-21.00933431553702 55.28091226053085,-21.00846776664827 55.28137930040187,-21.00804896438403 55.28298290387436,-21.00922892789876 55.28374939750857,-21.01024238551335 55.28532812644581,-21.00942909954188 55.28806333099646,-21.00780574571722 55.28915186208636,-21.00771978467685 55.28957943768501,-21.0075363766668 55.29124520554862,-21.00709495099656 55.29206145462709,-21.00669553697816 55.29325450129249,-21.00760555564468 55.29438931395824,-21.0070210016449 55.29502962518382,-21.00747184816297 55.29796774341331,-21.00652598914742 55.29945336799084,-21.00614143073801 55.30033799209001,-21.00432195950678 55.29939135481925,-21.00367168070526 55.30029138581868,-21.00218337267337 55.30093038393011,-21.00120662297593 55.30083818787268,-21.00037420845109 55.30251136040978,-20.99885326425147 55.30115494887835,-20.99730169588498 55.30007750055223,-20.99617172667318 55.3011739030519,-20.99486317361162 55.30207589959801,-20.99403838194334 55.30329053469911,-20.99293078534968 55.30394262624995,-20.99196329471049 55.30395494395806,-20.99194550837783 55.30342999181617,-20.99140598416717 55.30246912340433,-20.99137069070947 55.30180242855079,-20.99115192014134 55.30036254177777,-20.99224894808074 55.29997373920665,-20.9916687299263 55.29811940711799,-20.99296811716904 55.29078374631489,-20.98964409970202</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-20.9890682322789 ,55.28861287975466
+SPA_v,grotte des premiers francais,cbh,"pointInteret_En novembre 1663, Le Saint-Charles, navire de la Compagnie Frannullaise de l'Orient, dépose dans la baie de Saint-Paul deux Français volontaires pour vivre à Bourbon","<Point>
+            <coordinates>55.25931387993245,-21.01608757861706</coordinates>
+        </Point>","-21,0160875786","55,2593138799"
+SPA_v,Mairie,road_shield1,pointInteret_,"<Point>
+            <coordinates>55.26964019573685,-21.009732776711</coordinates>
+        </Point>","-21,0097327767","55,2696401957"
+SPA_v,maison Lauret,cbh,maison créole,"<Point>
+            <coordinates>55.27042303151495,-21.00939101153617</coordinates>
+        </Point>","-21,0093910115","55,2704230315"
+SPA_v,Viaduc de Saint-Paul,cbh,pointInteret_,"<Point>
+            <coordinates>55.26708993675364,-21.01572083710149</coordinates>
+        </Point>","-21,0157208371","55,2670899368"
+SPA_v,Cheminée Bellemène,cbh,"historique
+_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 2 mai 2002,
+avec son terrain","<Point><coordinates>55.301944,-21.016889</coordinates></Point>","-21,016889","55,301944"
+SPA_v,Cheminée Le Piton,cbh,"historique
+_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 2 mai 2002,
+avec son terrain","<Point>
+            <coordinates>55.300694,-20.96755555555555</coordinates>
+        </Point>","-20,9675555556","55,300694"
+SPA_v,Cheminée de Savanna,cbh,"historique
+_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,
+avec son terrain","<Point>
+            <coordinates>55.298167,-20.98847222222222</coordinates>
+        </Point>","-20,9884722222","55,298167"
+SPA_v,Poudrière de Saint-Paul,cbh,"pointInteret_La poudrière de Saint-Paul a été construite au XVIIIe siècle par la compagnie des Indes orientales,
+inscrite au titre des monuments historiques depuis le 31 octobre 1994","<Point>
+            <coordinates>55.275639,-21.01266666666667</coordinates>
+        </Point>","-21,0126666667","55,275639"
+SPA_v,Domaine de Clermont,cbh,"historique
+_inscrit en totalité à l'inventaire supplémentaire des Monuments historiques1 depuis le 30 septembre 1993","<Point>
+            <coordinates>55.318361,-21.00816666666667</coordinates>
+        </Point>","-21,0081666667","55,318361"
+SPA_v,Villa Rivière,cbh,"historique
+_anciennement villa Desvignes
+ inscrite null l'inventaire supplémentaire des Monuments historiques depuis le 13 mars 1990","<Point>
+            <coordinates>55.272083,-21.01061111111111</coordinates>
+        </Point>","-21,0106111111","55,272083"
+SPA_v,Villa Verguin,cbh,"historique
+_inscrite à l'inventaire supplémentaire des Monuments historiques depuis le 8 décembre 1988","<Point>
+            <coordinates>55.27136111111111,-21.009417</coordinates>
+        </Point>","-21,009417","55,2713611111"
+SPA_v,Domaine de La Poncetière,cbh,"historique
+_inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 9 janvier 2008","<Point>
+            <coordinates>55.29924999999999,-20.97672222222222</coordinates>
+        </Point>","-20,9767222222","55,29925"
+SPA_v,Fontaine de la Vierge,cbh,"historique
+_inscrite en totalité au titre des Monuments historiques depuis le 13 décembre 2010","<Point>
+            <coordinates>55.27038900000001,-21.0135</coordinates>
+        </Point>","-21,0135","55,270389"
+SPA_v,Hnulltel Lanullay,cbh,inscrit au titre des Monuments historiques depuis le 13 décembre 2010,"<Point>
+            <coordinates>55.269639,-21.00855555555556</coordinates>
+        </Point>","-21,0085555556","55,269639"
+SPA_v,Long?re communale de Saint-Paul,cbh,"historique
+_inscrite au titre des Monuments historiques depuis le 13 décembre 2010
+heabitation étroite étendu en longueur","<Point>
+            <coordinates>55.27013900000001,-21.00916666666667</coordinates>
+        </Point>","-21,0091666667","55,270139"
+SPA_v,Cimetière marin de Saint-Paul,church,"religion
+_Demeure dite des derniers pirates,
+surplombant la baie de sable noires de saint-paul","<Point>
+            <coordinates>55.260278,-21.01472222222222</coordinates>
+        </Point>","-21,0147222222","55,260278"
+SPA_v,marché couvert,grocery*cbh,"pointInteret_inscrit monument historique en 2012
+marché forain
+période: lundi au samedi de 8h à 16h","<Point>
+            <coordinates>55.27249950709324,-21.00780571184939</coordinates>
+        </Point>","-21,0078057118","55,2724995071"
+SPA_v,cambaie,capital_big,quartier,"<Point>
+            <coordinates>55.28915935851832,-20.96465003458424</coordinates>
+        </Point>","-20,9646500346","55,2891593585"
+SPA_v,l'affouche,capital_big,quartier,"<Point>
+            <coordinates>55.29974421514993,-20.97720919576033</coordinates>
+        </Point>","-20,9772091958","55,2997442152"
+SPA_v,le grand pourpier,capital_big,quartier,"<Point>
+            <coordinates>55.30860026110097,-20.97236550838223</coordinates>
+        </Point>","-20,9723655084","55,3086002611"
+SPA_v,les chocas,capital_big,quartier,"<Point>
+            <coordinates>55.32329266473471,-20.97744374570269</coordinates>
+        </Point>","-20,9774437457","55,3232926647"
+SPA_v,la plaine,capital_big,quartier,"<Point>
+            <coordinates>55.32722214587115,-20.98283896937993</coordinates>
+        </Point>","-20,9828389694","55,3272221459"
+SPA_v,sans soucis,capital_big,quartier,"<Point>
+            <coordinates>55.33769063301625,-20.97878653772251</coordinates>
+        </Point>","-20,9787865377","55,337690633"
+SPA_v,le déboulé,capital_big,quartier,"<Point>
+            <coordinates>55.31128077304382,-20.98438341368361</coordinates>
+        </Point>","-20,9843834137","55,311280773"
+SPA_v,mon repos,capital_big,quartier,"<Point>
+            <coordinates>55.3301498355137,-20.99004695029127</coordinates>
+        </Point>","-20,9900469503","55,3301498355"
+SPA_v,le hangar,capital_big,quartier,"<Point>
+            <coordinates>55.31989756838741,-20.99474312504587</coordinates>
+        </Point>","-20,994743125","55,3198975684"
+SPA_v,le bois de nèfle,capital_big,quartier,"<Point>
+            <coordinates>55.33006571877958,-20.99688523333455</coordinates>
+        </Point>","-20,9968852333","55,3300657188"
+SPA_v,la perrière,capital_big,quartier,"<Point>
+            <coordinates>55.30980578757002,-20.99494681580577</coordinates>
+        </Point>","-20,9949468158","55,3098057876"
+SPA_v,le moulin à eau,capital_big,quartier,"<Point>
+            <coordinates>55.30629091929831,-20.99792894560188</coordinates>
+        </Point>","-20,9979289456","55,3062909193"
+SPA_v,ravinne renaud,capital_big,quartier,"<Point>
+            <coordinates>55.30082562748599,-21.00344222578557</coordinates>
+        </Point>","-21,0034422258","55,3008256275"
+SPA_v,la roche marianne,capital_big,quartier,"<Point>
+            <coordinates>55.31945564107659,-21.00891085301378</coordinates>
+        </Point>","-21,008910853","55,3194556411"
+SPA_v,le ruisseau,capital_big,quartier,"<Point>
+            <coordinates>55.32016562117865,-21.00760510175486</coordinates>
+        </Point>","-21,0076051018","55,3201656212"
+SPA_v,bel air,capital_big,quartier,"<Point>
+            <coordinates>55.33279916510743,-21.00942965388134</coordinates>
+        </Point>","-21,0094296539","55,3327991651"
+SPA_v,le martyr,capital_big,quartier,"<Point>
+            <coordinates>55.33618164652527,-21.01428205830972</coordinates>
+        </Point>","-21,0142820583","55,3361816465"
+SPA_v,piton fougère,capital_big,quartier,"<Point>
+            <coordinates>55.36470454899333,-20.99471801348353</coordinates>
+        </Point>","-20,9947180135","55,364704549"
+SPA_v,îlet cambourg,capital_big,quartier,"<Point>
+            <coordinates>55.37680786051115,-21.00632357529629</coordinates>
+        </Point>","-21,0063235753","55,3768078605"
+SPA_v,bouillon dit le bellemène,capital_big,quartier,"<Point>
+            <coordinates>55.28864720943414,-21.00980579567706</coordinates>
+        </Point>","-21,0098057957","55,2886472094"
+SPA_v,grande fontaine,capital_big,quartier,"<Point>
+            <coordinates>55.28109798211237,-21.01361977645276</coordinates>
+        </Point>","-21,0136197765","55,2810979821"
+SPA_v,crève-coeur,capital_big,quartier,"<Point>
+            <coordinates>55.28685599726191,-21.01708527079447</coordinates>
+        </Point>","-21,0170852708","55,2868559973"
+SPA_v,bois rouge,capital_big,quartier,"<Point>
+            <coordinates>55.28873930627147,-21.02153895013283</coordinates>
+        </Point>","-21,0215389501","55,2887393063"
+SPA_v,bellemène,capital_big,quartier,"<Point>
+            <coordinates>55.29869108184183,-21.02022549753566</coordinates>
+        </Point>","-21,0202254975","55,2986910818"
+SPA_v,les canots,capital_big,quartier,"<Point>
+            <coordinates>55.30709100604024,-21.02811780993681</coordinates>
+        </Point>","-21,0281178099","55,307091006"
+SPA_v,le petit bernica,capital_big,quartier,"<Point>
+            <coordinates>55.28675422006046,-21.02566478978137</coordinates>
+        </Point>","-21,0256647898","55,2867542201"
+SPA_v,maison blanche,capital_big,quartier,"<Point>
+            <coordinates>55.28744568602436,-21.03873349129757</coordinates>
+        </Point>","-21,0387334913","55,287445686"
+SPA_v,le guillaume,capital_big,quartier,"<Point>
+            <coordinates>55.29914338841402,-21.03793437965244</coordinates>
+        </Point>","-21,0379343797","55,2991433884"
+SPA_v,bac rouge,capital_big,quartier,"<Point>
+            <coordinates>55.31222530975103,-21.03870416018249</coordinates>
+        </Point>","-21,0387041602","55,3122253098"
+SPA_v,la petite france,capital_big,quartier,"<Point>
+            <coordinates>55.31849835148718,-21.04039101288501</coordinates>
+        </Point>","-21,0403910129","55,3184983515"
+SPA_v,citerne partage,capital_big,quartier,"<Point>
+            <coordinates>55.30769200226041,-21.0440423685238</coordinates>
+        </Point>","-21,0440423685","55,3076920023"
+SPA_v,ligne bambous,capital_big,quartier,"<Point>
+            <coordinates>55.30293749918139,-21.04541778746121</coordinates>
+        </Point>","-21,0454177875","55,3029374992"
+SPA_v,le guillaume du jardin,capital_big,quartier,"<Point>
+            <coordinates>55.31052060109055,-21.05057600485933</coordinates>
+        </Point>","-21,0505760049","55,3105206011"
+SPA_v,la cour,capital_big,quartier,"<Point>
+            <coordinates>55.32040078603992,-21.06155474067639</coordinates>
+        </Point>","-21,0615547407","55,320400786"
+SPA_v,les palmistes,capital_big,quartier,"<Point>
+            <coordinates>55.33294892670088,-21.05302540165821</coordinates>
+        </Point>","-21,0530254017","55,3329489267"
+SPA_v,fleurimont,capital_big,quartier,"<Point>
+            <coordinates>55.26976623312642,-21.03571148364413</coordinates>
+        </Point>","-21,0357114836","55,2697662331"
+SPA_v,plateau caillou,capital_big,quartier,"<Point>
+            <coordinates>55.26784631610076,-21.02737639913875</coordinates>
+        </Point>","-21,0273763991","55,2678463161"
+SPA_v,les coteaux du bernica,capital_big,quartier,"<Point>
+            <coordinates>55.26873109079504,-21.02173750349657</coordinates>
+        </Point>","-21,0217375035","55,2687310908"
+SPA_v,baie de saint-paul,water,rivière,"<Point>
+            <coordinates>55.27029791612884,-20.99829129448901</coordinates>
+        </Point>","-20,9982912945","55,2702979161"
+SPA_v,le bout de l'étang,capital_big,quartier,"<Point>
+            <coordinates>55.28245132234093,-20.99105748329148</coordinates>
+        </Point>","-20,9910574833","55,2824513223"
+SPA_v,rue jacquot,capital_big,quartier,"<Point>
+            <coordinates>55.28668607090879,-20.9833508601149</coordinates>
+        </Point>","-20,9833508601","55,2866860709"
+SPA_v,savanah,capital_big,quartier,"<Point>
+            <coordinates>55.29467634388603,-20.98577841055258</coordinates>
+        </Point>","-20,9857784106","55,2946763439"
+SPA_v,piton bernica,mountains,mont,"<Point>
+            <coordinates>55.38118773565916,-21.07772265288113</coordinates>
+        </Point>","-21,0777226529","55,3811877357"
+SPA_v,le rempart,terain,pointInteret_,"<Point>
+            <coordinates>55.39460385061889,-21.08719743071244</coordinates>
+        </Point>","-21,0871974307","55,3946038506"

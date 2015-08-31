@@ -1,0 +1,227 @@
+id,nom,categ,description,geometry,lat,lng
+ED_v,bras des plaines,capital_big,rivière,"<Point>
+            <coordinates>55.46955844587572,-21.26211223610627</coordinates>
+        </Point>","-21,2621122361","55,4695584459"
+ED_v,la pointe,capital_big,quartier,"<Point>
+            <coordinates>55.4625136934869,-21.27692903635558</coordinates>
+        </Point>","-21,2769290364","55,4625136935"
+ED_v,l'équerre,capital_big,quartier,"<Point>
+            <coordinates>55.46071124113771,-21.27248287072667</coordinates>
+        </Point>","-21,2724828707","55,4607112411"
+ED_v,le serré,capital_big,quartier,"<Point>
+            <coordinates>55.464705550036,-21.25819886513155</coordinates>
+        </Point>","-21,2581988651","55,46470555"
+ED_v,la pente d'orange,capital_big,quartier,"<Point>
+            <coordinates>55.4654627086297,-21.25511729267034</coordinates>
+        </Point>","-21,2551172927","55,4654627086"
+ED_v,le bras du ruisseau,capital_big,quartier,"<Point>
+            <coordinates>55.46536137980246,-21.25097772898315</coordinates>
+        </Point>","-21,250977729","55,4653613798"
+ED_v,le bord,capital_big,quartier,"<Point>
+            <coordinates>55.47286961524997,-21.24437492535821</coordinates>
+        </Point>","-21,2443749254","55,4728696153"
+ED_v,grand fond intérieur,capital_big,quartier,"<Point>
+            <coordinates>55.46692632619169,-21.24109489275288</coordinates>
+        </Point>","-21,2410948928","55,4669263262"
+ED_v,grand fond extérieur,capital_big,quartier,"<Point>
+            <coordinates>55.46298315275952,-21.23533656859933</coordinates>
+        </Point>","-21,2353365686","55,4629831528"
+ED_v,laurent lauret,capital_big,quartier,"<Point>
+            <coordinates>55.47043360731118,-21.2361172919493</coordinates>
+        </Point>","-21,2361172919","55,4704336073"
+ED_v,la ravine des citrons,capital_big,quartier,"<Point>
+            <coordinates>55.47754148049477,-21.24241920240596</coordinates>
+        </Point>","-21,2424192024","55,4775414805"
+ED_v,le trou de terre,capital_big,quartier,"<Point>
+            <coordinates>55.48300605532851,-21.23314863317774</coordinates>
+        </Point>","-21,2331486332","55,4830060553"
+ED_v,le trou de cochon,capital_big,quartier,"<Point>
+            <coordinates>55.4670283487779,-21.22899541980113</coordinates>
+        </Point>","-21,2289954198","55,4670283488"
+ED_v,le trou de magasin,capital_big,quartier,"<Point>
+            <coordinates>55.46882847164135,-21.2231719783793</coordinates>
+        </Point>","-21,2231719784","55,4688284716"
+ED_v,bellevue,capital_big,quartier,"<Point>
+            <coordinates>55.49264639110452,-21.22432277623097</coordinates>
+        </Point>","-21,2243227762","55,4926463911"
+ED_v,l'argamasse,capital_big,quartier,"<Point>
+            <coordinates>55.49934253839351,-21.21576390075854</coordinates>
+        </Point>","-21,2157639008","55,4993425384"
+ED_v,la crète du bloc,mountains,mont,"<Point>
+            <coordinates>55.46718694383626,-21.21193251768158</coordinates>
+        </Point>","-21,2119325177","55,4671869438"
+ED_v,la cape,capital_big,quartier,"<Point>
+            <coordinates>55.49839710746992,-21.18417734060596</coordinates>
+        </Point>","-21,1841773406","55,4983971075"
+ED_v,îlet du bras sec,capital_big,quartier,"<Point>
+            <coordinates>55.50269490951371,-21.22535784505129</coordinates>
+        </Point>","-21,2253578451","55,5026949095"
+ED_v,le grand coin,capital_big,quartier,"<Point>
+            <coordinates>55.5046408191082,-21.22081127034992</coordinates>
+        </Point>","-21,2208112704","55,5046408191"
+ED_v,îlet aurélien dijoux,capital_big,quartier,"<Point>
+            <coordinates>55.51213452315028,-21.20936859820847</coordinates>
+        </Point>","-21,2093685982","55,5121345232"
+ED_v,îlet gabriel técher,capital_big,quartier,"<Point>
+            <coordinates>55.51258038052908,-21.20494144553259</coordinates>
+        </Point>","-21,2049414455","55,5125803805"
+ED_v,gite le Chapelets,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49326347949936,-21.19225044488488 55.49149766137977,-21.19264224435632 55.49114451445962,-21.19379793340346 55.49276179725978,-21.19326934569182 55.49354559860441,-21.19270848375449 55.49326347949936,-21.19225044488488</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,citron Galets,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49698473711203,-21.21219302953744 55.49600993746151,-21.21265299547464 55.49648161144598,-21.21442489709421 55.49758161677369,-21.21519661734846 55.49818308175901,-21.21445762210079 55.49742990315468,-21.21354193987783 55.49741683966249,-21.21273821770184 55.49698473711203,-21.21219302953744</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,Argapasse,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49846178167523,-21.21934016581138 55.49792455083404,-21.21929848679829 55.4977951176512,-21.22016347070569 55.49813035839419,-21.22059008441222 55.4986551346427,-21.221127415317 55.49911602687217,-21.22050467897094 55.49883823163046,-21.21994368034428 55.49846178167523,-21.21934016581138</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,ilet à Cape,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.50090441142799,-21.2103922028519 55.50042448670677,-21.21126327571904 55.50063258354655,-21.21220516520813 55.50058550999811,-21.21224253230208 55.50128086685285,-21.21182437714561 55.501415667363,-21.21128160669998 55.50110604801116,-21.21071144577845 55.50090441142799,-21.2103922028519</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,camp Maron,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.48017820789785,-21.1888529727215 55.48070555332652,-21.18943384265515 55.48143296665069,-21.18970937634724 55.48179948949867,-21.189657593 55.48272102168486,-21.18900323324601 55.48216626215349,-21.18808326738487 55.48042024066028,-21.18859579779439 55.48017820789785,-21.1888529727215</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,citron Galets,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.4911871441484,-21.20535732590224 55.49031088024493,-21.20951658189276 55.49198120170343,-21.21116725150167 55.49228427943644,-21.2091035700516 55.49136262835357,-21.20747182783038 55.4915934600926,-21.20596256830484 55.4911871441484,-21.20535732590224</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,belle vue,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49363268043825,-21.22156586875852 55.49315761264483,-21.22170673816541 55.49245407949052,-21.22390939714213 55.49238874486177,-21.22545096811644 55.49365232833097,-21.2260880066972 55.49447753537063,-21.22509834227753 55.49390519395419,-21.22372745607316 55.49452730730614,-21.22182540908121 55.49425900206736,-21.22124170174476 55.49363268043825,-21.22156586875852</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,jean-Lauret,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.48561926893692,-21.22797840671885 55.48458292528628,-21.23027426457007 55.48491140215862,-21.23347958783495 55.48515196593352,-21.23443775800011 55.48653852118337,-21.2344823482552 55.48787407484758,-21.23415752036327 55.48897797280247,-21.23325494218207 55.48865524177896,-21.2316747571718 55.48797552260653,-21.22935633405751 55.4864813877948,-21.22840571239881 55.48561926893692,-21.22797840671885</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,Bassin Sassa,hiker*water,Une petite balade en famille facile même pour les enfants d'une durée d'environ heure pour découvrir le Bassin Sassa à l'Entre-Deux.,"<Point>
+            <coordinates>55.46764587143686,-21.25071342772754</coordinates>
+        </Point>","-21,2507134277","55,4676458714"
+ED_v,Circuit des Case créoles de l'Entre-Deux,cbh,"A l'Entre-Deux, la concentration de vieilles cases et de jardins créoles laisse admiratif.
+ Ces anciennes demeures totalement entretenues, se nichent dans des jardins ou des vergers qui n'en finissent plus de séduire .","<Point>
+            <coordinates>55.47002613300449,-21.24860236479198</coordinates>
+        </Point>","-21,2486023648","55,470026133"
+ED_v,église Saint-Vincent de Paul l' Entre-Deux,church,"Selon le journal paroissial, elle possède dès le début la relique de Saint-Vincent-de-Paul, dûment authentifiée par lettre canonique et placée sous le reliquaire conservé dans la sacristie.","<Point>
+            <coordinates>55.47160278241218,-21.25001824446061</coordinates>
+        </Point>","-21,2500182445","55,4716027824"
+ED_v,Maison Valy,cbh,"La Maison Valy qui se trouve dans le centre du village de l'Entre-Deux, 
+1 Rue du Commerce, est inscrite aux monuments historiques le 21 mars 1996","<Point>
+            <coordinates>55.47090043560776,-21.24741259228486</coordinates>
+        </Point>","-21,2474125923","55,4709004356"
+ED_v,Pont du Bras de La Plaine,cbh,"Le pont, qui utilise la technique de l'arc surbaissé, est unique en son genre. 
+Aucun support ne maintient l'ouvrage sur toute sa longueur, avec 280 mètres sans pile,
+ le pont détient le record du monde .","<Point>
+            <coordinates>55.46540254066525,-21.27658007607432</coordinates>
+        </Point>","-21,2765800761","55,4654025407"
+ED_v,le dimitile,capital_big,lieuDit,"<Point>
+            <coordinates>55.48856153681993,-21.18743164224044</coordinates>
+        </Point>","-21,1874316422","55,4885615368"
+ED_v,cap assiette,capital_big,lieuDit,"<Point>
+            <coordinates>55.44652497139135,-21.29011361280885</coordinates>
+        </Point>","-21,2901136128","55,4465249714"
+ED_v,gite le Chapelets,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49326347949936,-21.19225044488488 55.49149766137977,-21.19264224435632 55.49114451445962,-21.19379793340346 55.49276179725978,-21.19326934569182 55.49354559860441,-21.19270848375449 55.49326347949936,-21.19225044488488</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,citron Galets,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49698473711203,-21.21219302953744 55.49600993746151,-21.21265299547464 55.49648161144598,-21.21442489709421 55.49758161677369,-21.21519661734846 55.49818308175901,-21.21445762210079 55.49742990315468,-21.21354193987783 55.49741683966249,-21.21273821770184 55.49698473711203,-21.21219302953744</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,Argapasse,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49846178167523,-21.21934016581138 55.49792455083404,-21.21929848679829 55.4977951176512,-21.22016347070569 55.49813035839419,-21.22059008441222 55.4986551346427,-21.221127415317 55.49911602687217,-21.22050467897094 55.49883823163046,-21.21994368034428 55.49846178167523,-21.21934016581138</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,ilet à  Cape,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.50090441142799,-21.2103922028519 55.50042448670677,-21.21126327571904 55.50063258354655,-21.21220516520813 55.50058550999811,-21.21224253230208 55.50128086685285,-21.21182437714561 55.501415667363,-21.21128160669998 55.50110604801116,-21.21071144577845 55.50090441142799,-21.2103922028519</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,camp Maron,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.48017820789785,-21.1888529727215 55.48070555332652,-21.18943384265515 55.48143296665069,-21.18970937634724 55.48179948949867,-21.189657593 55.48272102168486,-21.18900323324601 55.48216626215349,-21.18808326738487 55.48042024066028,-21.18859579779439 55.48017820789785,-21.1888529727215</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,citron Galets,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.4911871441484,-21.20535732590224 55.49031088024493,-21.20951658189276 55.49198120170343,-21.21116725150167 55.49228427943644,-21.2091035700516 55.49136262835357,-21.20747182783038 55.4915934600926,-21.20596256830484 55.4911871441484,-21.20535732590224</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,belle vue,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.49363268043825,-21.22156586875852 55.49315761264483,-21.22170673816541 55.49245407949052,-21.22390939714213 55.49238874486177,-21.22545096811644 55.49365232833097,-21.2260880066972 55.49447753537063,-21.22509834227753 55.49390519395419,-21.22372745607316 55.49452730730614,-21.22182540908121 55.49425900206736,-21.22124170174476 55.49363268043825,-21.22156586875852</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,jean-Lauret,capital_big,lieuDit,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.48561926893692,-21.22797840671885 55.48458292528628,-21.23027426457007 55.48491140215862,-21.23347958783495 55.48515196593352,-21.23443775800011 55.48653852118337,-21.2344823482552 55.48787407484758,-21.23415752036327 55.48897797280247,-21.23325494218207 55.48865524177896,-21.2316747571718 55.48797552260653,-21.22935633405751 55.4864813877948,-21.22840571239881 55.48561926893692,-21.22797840671885</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ED_v,Maison Valy,cbh,"La Maison Valy qui se trouve dans le centre du village de l'Entre-Deux, 
+1 Rue du Commerce, est inscrite aux monuments historiques le 21 mars 1996","<Point>
+            <coordinates>55.47090043560776,-21.24741259228486</coordinates>
+        </Point>","-21,2474125923","55,4709004356"
+ED_v,cap assiette,capital_big,lieuDit,"<Point>
+            <coordinates>55.44652497139135,-21.29011361280885</coordinates>
+        </Point>","-21,2901136128","55,4465249714"

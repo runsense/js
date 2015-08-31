@@ -1,0 +1,22 @@
+id,nom,categ,description,geometry,lat,lng
+SG_t,Hermitage académie tennis,donut,tennis club,"<Point>
+            <coordinates>55.22519911489863,-21.07262749253485</coordinates>
+        </Point>","-21,0726274925","55,2251991149"
+SG_t,Tennis-club de Saint-Gilles-les-Bains,donut,tennis club,"<Point>
+            <coordinates>55.22732229765559,-21.04491414531614</coordinates>
+        </Point>","-21,0449141453","55,2273222977"
+SG_t,Tropic tennis-club,donut,tennis club,"<Point>
+            <coordinates>55.22211335652175,-21.06565937844613</coordinates>
+        </Point>","-21,0656593784","55,2221133565"
+SG_t,Bassin Bleu Country Club,golf*dining,"restaurant, golf, salles - salons de réception_
+tél:+262 262 70 03 30","<Point>
+            <coordinates>55.25457306000001,-21.05299166666667</coordinates>
+        </Point>","-21,0529916667","55,25457306"
+SG_t,Golf Club du Bassin Bleu,golf," golf_
+tél: +262 262.70.03.00","<Point>
+            <coordinates>55.2578049999283,-21.0551760000137</coordinates>
+        </Point>","-21,055176","55,2578049999"
+SG_t,MINI GOLF DU LAGON,golf,"golf_
+gsm: +262 692 86 49 47","<Point>
+            <coordinates>55.22195155976354,-21.07063025764208</coordinates>
+        </Point>","-21,0706302576","55,2219515598"

@@ -1,0 +1,211 @@
+id,nom,categ,description,geometry,lat,lng
+SAz_v,les salazes,mountains,mont,"<Point>
+            <coordinates>55.46793488119169,-21.08966761271909</coordinates>
+        </Point>","-21,0896676127","55,4679348812"
+SAz_v,piton des Neiges,mountains,"mont
+_Mont le plus haut de l'île","<Point>
+            <coordinates>55.48065865187911,-21.09962341083349</coordinates>
+        </Point>","-21,0996234108","55,4806586519"
+SAz_v,le trou de fer,water*mountains,pointInteret_,"<Point>
+            <coordinates>55.56158698171554,-21.04094557516722</coordinates>
+        </Point>","-21,0409455752","55,5615869817"
+SAz_v,cap picard,mountains,pointInteret_,"<Point>
+            <coordinates>55.5536434336138,-21.00615617671677</coordinates>
+        </Point>","-21,0061561767","55,5536434336"
+SAz_v,cap anglais,mountains,mont,"<Point>
+            <coordinates>55.51718812436155,-21.09233470695788</coordinates>
+        </Point>","-21,092334707","55,5171881244"
+SAz_v,le cimendef,mountains,mont,"<Point>
+            <coordinates>55.45418467612663,-21.02967277402062</coordinates>
+        </Point>","-21,029672774","55,4541846761"
+SAz_v,col de fourche,mountains,mont,"<Point>
+            <coordinates>55.44976198857621,-21.07197711346309</coordinates>
+        </Point>","-21,0719771135","55,4497619886"
+SAz_v,morne de fourche,mountains,mont,"<Point>
+            <coordinates>55.44155252750057,-21.06352029249527</coordinates>
+        </Point>","-21,0635202925","55,4415525275"
+SAz_v,piton bé massoune,mountains,mont,"<Point>
+            <coordinates>55.51759762663663,-21.00818645698755</coordinates>
+        </Point>","-21,008186457","55,5175976266"
+SAz_v,piton plaine des fougères,mountains,mont,"<Point>
+            <coordinates>55.49157571597708,-21.00371086529065</coordinates>
+        </Point>","-21,0037108653","55,491575716"
+SAz_v,petit trou,capital_big,quartier,"<Point>
+            <coordinates>55.58734920276308,-21.00071967357914</coordinates>
+        </Point>","-21,0007196736","55,5873492028"
+SAz_v,rivière du mât,water,"rivière
+_
+34,7 km","<Point>
+            <coordinates>55.70004022303348,-20.98039723103021</coordinates>
+        </Point>","-20,980397231","55,700040223"
+SAz_v,plateau fleur jaune,capital_big,quartier,"<Point>
+            <coordinates>55.53408320006862,-21.01884172537045</coordinates>
+        </Point>","-21,0188417254","55,5340832001"
+SAz_v,pic des chèvres,mountains,mont,"<Point>
+            <coordinates>55.52686778946082,-21.07926470168077</coordinates>
+        </Point>","-21,0792647017","55,5268677895"
+SAz_v,salazie le gros morne,webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wsalazie.php?n=50"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.52875170256966,-21.02644040279417</coordinates>
+        </Point>","-21,0264404028","55,5287517026"
+SAz_v,Cascade voile de la marié,terain,"Selon la légende,
+ la jeune Amanda tomba amoureuse d’Henrio.
+ Mais son père, veuf, l’enferma pour l’empêcher de partir.
+ Elle parvint à s’échapper mais fut rattrapée par celui-ci devant l’autel de l’église.
+ La jeune mariée tenta de s’enfuir mais aveuglée par son voile,
+ elle chuta dans un précipice, sur le bord duquel son voile resta accroché. 
+Son père pleura alors sur ce voile.","<Point>
+            <coordinates>55.53785060760708,-21.03982694448149</coordinates>
+        </Point>","-21,0398269445","55,5378506076"
+SAz_v,Eglise Notre dame de l'Assomption,church,"La Paroisse est érigée en 1838 et la première église fut construite en 1840.
+ Sa première pierre fut posée solennellement le 11 octobre 1840
+ sous louis Philippe par le Contre Amiral De Hell.","<Point>
+            <coordinates>55.53926141037663,-21.02814113597497</coordinates>
+        </Point>","-21,028141136","55,5392614104"
+SAz_v,Villa lucy,cbh,"historique
+_La villa Lucilly et son Guétali probablement construite entre 1880 et 1890
+ est un des fleurons de l'ensemble patrimonial d'Hell-Bourg.
+ inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 29 mars 1996","<Point>
+            <coordinates>55.518222,-21.06633333333333</coordinates>
+        </Point>","-21,0663333333","55,518222"
+SAz_v,La villa des Charmettes,cbh,"historique
+_
+La villa des Charmettes fait partie des grandes maisons créoles, 
+cette villa est à l'origine de plan rectangulaire avec un toit à quatre pentes. 
+La varangue et les deux petites pièces avec un toit en pavillon sont construites plus tard .","<Point>
+            <coordinates>55.52085300020944,-21.06463200008872</coordinates>
+        </Point>","-21,0646320001","55,5208530002"
+SAz_v,Monument de la victoire,cbh,"historique
+_Monument de La Victoire L'âme de la France. Situation.
+ Cette statue l'âme de la France,
+ c'est le nom donné par le sculpteur Français Carlos Sarrabezolles,
+ est offerte en 1931 par le député Lucien Gasparin","<Point>
+            <coordinates>55.52084670515372,-21.06464952166126</coordinates>
+        </Point>","-21,0646495217","55,5208467052"
+SAz_v,Maison Folio,cbh,"historique
+_
+La Maison Folio et son jardin sont inscrits
+ null l'inventaire des monuments historiques.","<Point><coordinates>55.518222,-21.065111</coordinates></Point>","-21,065111","55,518222"
+SAz_v,Hôtel des Salazes. Hôpital,cbh,"historique
+_Hôtel des Salazes, ancien hôpital militaire d'Hell-Bourg et annexe de l'hôpital.","<Point>
+            <coordinates>55.52019973711015,-21.06505053536177</coordinates>
+        </Point>","-21,0650505354","55,5201997371"
+SAz_v,Ecomusée,arts,"Musée de l'artisanat Réunionnais,
+on y voit l'artisanat des hauts de l île","<Point>
+            <coordinates>55.51822939641551,-21.06628244825589</coordinates>
+        </Point>","-21,0662824483","55,5182293964"
+SAz_v,L'âme de la France,arts*cbh,"Sculture apartenant au trio de l'entre-deux guerre, 1921, 22, 23;
+ inscrite à l'inventaire général des monuments historiques et enfin classée en tant que tel en 2004","<Point>
+            <coordinates>55.52119400000001,-21.06461111111111</coordinates>
+        </Point>","-21,0646111111","55,521194"
+SAz_v,Domaine de Mare à Citrons,cbh,inscrit à l'inventaire des Monuments historiques depuis 1996,"<Point>
+            <coordinates>55.52722,-21.03111111111111</coordinates>
+        </Point>","-21,0311111111","55,52722"
+SAz_v,église Saint-Martin,cbh,l'église est classée aux titres de Monuments historiques depuis le 19 décembre 1982,"<Point>
+            <coordinates>55.476889,-21.03022222222222</coordinates>
+        </Point>","-21,0302222222","55,476889"
+SAz_v,Mairie de Salazie,road_shield1,administratif,"<Point>
+            <coordinates>55.53905403800533,-21.02787653765652</coordinates>
+        </Point>","-21,0278765377","55,539054038"
+SAz_v,plaine des merles,terain,pointInteret_,"<Point>
+            <coordinates>55.45310986189891,-21.07137178527021</coordinates>
+        </Point>","-21,0713717853","55,4531098619"
+SAz_v,piton lélesse,mountains,mont,"<Point>
+            <coordinates>55.48290799564022,-21.05672358379288</coordinates>
+        </Point>","-21,0567235838","55,4829079956"
+SAz_v,piton carré,mountains,mont,"<Point>
+            <coordinates>55.48929768056041,-21.06891711132096</coordinates>
+        </Point>","-21,0689171113","55,4892976806"
+SAz_v,piton d'enchaing,mountains,mont,"<Point>
+            <coordinates>55.50202944630455,-21.03609669103775</coordinates>
+        </Point>","-21,036096691","55,5020294463"
+SAz_v,mare à martin,water,lac,"<Point>
+            <coordinates>55.49911907528369,-21.01801465286924</coordinates>
+        </Point>","-21,0180146529","55,4991190753"
+SAz_v,bémahot,capital_big,quartier,"<Point>
+            <coordinates>55.52320841123754,-21.07363868284679</coordinates>
+        </Point>","-21,0736386828","55,5232084112"
+SAz_v,îlet à vidot,capital_big,quartier,"<Point>
+            <coordinates>55.51029168197105,-21.06620747946378</coordinates>
+        </Point>","-21,0662074795","55,510291682"
+SAz_v,camp ozoux,capital_big,quartier,"<Point>
+            <coordinates>55.52144339131431,-21.06162103045293</coordinates>
+        </Point>","-21,0616210305","55,5214433913"
+SAz_v,fond de rond point,capital_big,quartier,"<Point>
+            <coordinates>55.51480918978118,-21.05563968147121</coordinates>
+        </Point>","-21,0556396815","55,5148091898"
+SAz_v,mare à poule d'eau,capital_big,quartier,"<Point>
+            <coordinates>55.53005299129593,-21.04869871775173</coordinates>
+        </Point>","-21,0486987178","55,5300529913"
+SAz_v,mare à poule d'eau,water,"lac
+_Elle était jadis alimentée par des cascades qui y coulaient en permanence.
+Tous les récits anciens décrivent la Mare à Poule d'Eau
+ comme un site enchanteur, rempli d'oiseaux de toutes couleurs. 
+C'est la plus importante de toutes les mares du Cirque de Salazie","<Point>
+            <coordinates>55.52523431327345,-21.05153965130053</coordinates>
+        </Point>","-21,0515396513","55,5252343133"
+SAz_v,pont de la savane,capital_big,quartier,"<Point>
+            <coordinates>55.5345127566371,-21.04011338096271</coordinates>
+        </Point>","-21,040113381","55,5345127566"
+SAz_v,le petit sable,capital_big,quartier,"<Point>
+            <coordinates>55.5349992139111,-21.03639518631129</coordinates>
+        </Point>","-21,0363951863","55,5349992139"
+SAz_v,mare à citrons,capital_big,quartier,"<Point>
+            <coordinates>55.52867591962428,-21.0351632099647</coordinates>
+        </Point>","-21,03516321","55,5286759196"
+SAz_v,les ramiers,capital_big,quartier,"<Point>
+            <coordinates>55.53381386159931,-21.02329652520676</coordinates>
+        </Point>","-21,0232965252","55,5338138616"
+SAz_v,mare à goyaves,capital_big,quartier,"<Point>
+            <coordinates>55.5385763191406,-21.01948837201882</coordinates>
+        </Point>","-21,019488372","55,5385763191"
+SAz_v,fleur jaune les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.5303678509254,-21.01565160680572</coordinates>
+        </Point>","-21,0156516068","55,5303678509"
+SAz_v,le radier,capital_big,quartier,"<Point>
+            <coordinates>55.51389587825945,-21.03208141292532</coordinates>
+        </Point>","-21,0320814129","55,5138958783"
+SAz_v,le plateau,capital_big,quartier,"<Point>
+            <coordinates>55.50572186986662,-21.03030642825166</coordinates>
+        </Point>","-21,0303064283","55,5057218699"
+SAz_v,mare à veille place,capital_big,quartier,"<Point>
+            <coordinates>55.50838153358876,-21.02765032419255</coordinates>
+        </Point>","-21,0276503242","55,5083815336"
+SAz_v,le butor,capital_big,quartier,"<Point>
+            <coordinates>55.51390396724558,-21.02584526812504</coordinates>
+        </Point>","-21,0258452681","55,5139039672"
+SAz_v,bécabots,capital_big,quartier,"<Point>
+            <coordinates>55.50673980356878,-21.0132457240554</coordinates>
+        </Point>","-21,0132457241","55,5067398036"
+SAz_v,la mare,capital_big,quartier,"<Point>
+            <coordinates>55.48470937134528,-21.01519305931119</coordinates>
+        </Point>","-21,0151930593","55,4847093713"
+SAz_v,mathurin,capital_big,quartier,"<Point>
+            <coordinates>55.48785653870616,-21.02057114966694</coordinates>
+        </Point>","-21,0205711497","55,4878565387"
+SAz_v,île roche à jacquot,capital_big,quartier,"<Point>
+            <coordinates>55.47679382850581,-21.01932180040719</coordinates>
+        </Point>","-21,0193218004","55,4767938285"
+SAz_v,roche plate,capital_big,quartier,"<Point>
+            <coordinates>55.48953806642454,-21.0331296770786</coordinates>
+        </Point>","-21,0331296771","55,4895380664"
+SAz_v,casabois,capital_big,quartier,"<Point>
+            <coordinates>55.46474378816787,-21.0377394022873</coordinates>
+        </Point>","-21,0377394023","55,4647437882"
+SAz_v,le bélier,capital_big,quartier,"<Point>
+            <coordinates>55.46226345784901,-21.0444523290067</coordinates>
+        </Point>","-21,044452329","55,4622634578"
+SAz_v,îlet morin,capital_big,quartier,"<Point>
+            <coordinates>55.55946996435908,-21.01149234041191</coordinates>
+        </Point>","-21,0114923404","55,5594699644"
+SAz_v,l'escalier,capital_big,quartier,"<Point>
+            <coordinates>55.57930719696159,-20.99981488614954</coordinates>
+        </Point>","-20,9998148861","55,579307197"
+SAz_v,bois pomme,capital_big,quartier,"<Point>
+            <coordinates>55.54570441059503,-21.01789105331226</coordinates>
+        </Point>","-21,0178910533","55,5457044106"
+SAz_v,Case Barrau,cbh,"historique
+_La case Barrau ou villa Barrau et son guetali est située à l'entrée de la rue principale d'Hell-Bourg,
+ à l'angle d'un chemin de liaison.
+ C'est une demeure créole construite en pans de bois","<Point>
+            <coordinates>55.52063900000001,-21.06483333333333</coordinates>
+        </Point>","-21,0648333333","55,520639"

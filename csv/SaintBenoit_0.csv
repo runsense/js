@@ -1,0 +1,16 @@
+id,nom,categ,description,geometry,lat,lng
+SB_t,STADE ROLAND ARNOUX,play,"stade de foot _
+STADE ROLAND ARNOUX St Benoit 97470 ST BENOIT","<Point>
+            <coordinates>55.71595990066702,-21.03483603734256</coordinates>
+        </Point>","-21,0348360373","55,7159599007"
+SB_t,Tennis-club de Saint-Benoît,donut,tennis club,"<Point>
+            <coordinates>55.71638777343972,-21.04538006248687</coordinates>
+        </Point>","-21,0453800625","55,7163877734"
+SB_t,Association sportive de la Sécurité sociale,donut," tennis club _
+tél: +262 262 40 30 40","<Point>
+            <coordinates>55.46012497226641,-20.89060514943357</coordinates>
+        </Point>","-20,8906051494","55,4601249723"
+SB_t,Stade Jean-Allane,play," stade de foot  _
+ club: US Bénédictine","<Point>
+            <coordinates>55.717222,-21.04611111111111</coordinates>
+        </Point>","-21,0461111111","55,717222"

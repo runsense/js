@@ -1,0 +1,116 @@
+id,nom,categ,description,geometry,lat,lng
+SL_a,Dalleau Didier,hiker*diving," randonné pédestre, plongé_
+gsm: +262 692 08 90 93","<Point><coordinates>55.285926,-21.168175</coordinates></Point>","-21,168175","55,285926"
+SL_a,Abyss Plongée,diving," plongé_
+tél: +262 262.34.79.79","<Point>
+            <coordinates>55.28690499748603,-21.17111299492199</coordinates>
+        </Point>","-21,1711129949","55,2869049975"
+SL_a,Bleu Océan,diving," plongé_
+tél: +262 262.34.97.49","<Point>
+            <coordinates>55.28768399988753,-21.16225399992457</coordinates>
+        </Point>","-21,1622539999","55,2876839999"
+SL_a,Atlantis,diving," plongé_
+tél: +262 262.34.77.47","<Point>
+            <coordinates>55.2795627483199,-21.14313835168486</coordinates>
+        </Point>","-21,1431383517","55,2795627483"
+SL_a,Sub Excelsus,diving,"plongé_
+tél: +262 262.34.73.65","<Point>
+            <coordinates>55.27946740520907,-21.14313639573646</coordinates>
+        </Point>","-21,1431363957","55,2794674052"
+SL_a,Aquabulle Plongée,diving," plongé_
+tél: +262 262.34.88.58","<Point>
+            <coordinates>55.27645699998853,-21.14866499992769</coordinates>
+        </Point>","-21,1486649999","55,276457"
+SL_a,Plongée Attitude,diving,"plongé_
+tél: +262 262.34.45.96","<Point>
+            <coordinates>55.30134799998849,-21.17947599995833</coordinates>
+        </Point>","-21,179476","55,301348"
+SL_a,rando réunion,cycling,"vtt vtc_
+tél: +262 262 26 23 82","<Point>
+            <coordinates>55.28653700018284,-21.16871899997672</coordinates>
+        </Point>","-21,168719","55,2865370002"
+SL_a,Haras du Cap,horsebackriding," équitation_
+tél: +262 262.54.76.17","<Point>
+            <coordinates>55.3282050000848,-21.17551399991373</coordinates>
+        </Point>","-21,1755139999","55,3282050001"
+SL_a,Poa Dive,diving," plongé pmt, plongé_
+tél: +262 692 04 30 80","<Point>
+            <coordinates>55.307104,-21.21526666666667</coordinates>
+        </Point>","-21,2152666667","55,307104"
+SL_a,B'Leu Océan,diving," plongé_
+label: qualité tourisme_
+tél: +262 262 34 97 49","<Point>
+            <coordinates>55.28773956,-21.16214444444444</coordinates>
+        </Point>","-21,1621444444","55,28773956"
+SL_a,Réunion Plongée,diving,"plongé pmt_
+tél: +262 262 34 77 77","<Point>
+            <coordinates>55.276355,-21.14426111111111</coordinates>
+        </Point>","-21,1442611111","55,276355"
+SL_a,L' Excelsus,diving,"plongé pmt_
+label: qualité tourisme_
+tél: +262 262 34 73 65","<Point>
+            <coordinates>55.27536523,-21.14392777777778</coordinates>
+        </Point>","-21,1439277778","55,27536523"
+SL_a,Hans Ecole de Surf Saint-Leu,surf,"surf morais_
+tél: +262 262 49 66 01_
+gsm: +262 692 65 44 92","<Point>
+            <coordinates>55.3094419,-21.17333888888889</coordinates>
+        </Point>","-21,1733388889","55,3094419"
+SL_a,Ecole de Surf de La Réunion,surf,"surf morais_
+gsm: +262 692 31 53 16","<Point>
+            <coordinates>55.28072896161905,-21.16405222324051</coordinates>
+        </Point>","-21,1640522232","55,2807289616"
+SL_a,Nauticlub Laleu,swimming,"loisir nautique_
+tél: +262 262 34 45 85","<Point>
+            <coordinates>55.28686100000001,-21.16535555555555</coordinates>
+        </Point>","-21,1653555556","55,286861"
+SL_a,Bulle d'Air,diving,"plongé: plongé pmt_
+gsm: +262 692 27 44 54","<Point>
+            <coordinates>55.296464,-21.17159722222223</coordinates>
+        </Point>","-21,1715972222","55,296464"
+SL_a,Funky Jet,swimming,"loisir nautique_
+gsm: 0693 91 81 29","<Point>
+            <coordinates>55.28792786,-21.16502777777778</coordinates>
+        </Point>","-21,1650277778","55,28792786"
+SL_a,Aquabulle Plongée,diving,"plongé pmt_
+tél: +262 262 34 88 58_
+gsm: +262 692 18 04 22","<Point>
+            <coordinates>55.27605526,-21.14669722222222</coordinates>
+        </Point>","-21,1466972222","55,27605526"
+SL_a,Abyss Plongée,diving,"plongé, plongé pmt_
+tél: +262 262 34 79 79","<Point>
+            <coordinates>55.28687251,-21.17054444444445</coordinates>
+        </Point>","-21,1705444444","55,28687251"
+SL_a,Plongée Attitude,diving,"plongé_
+gsm: +262 692 72 58 59","<Point>
+            <coordinates>55.30133333333333,-21.17941111111111</coordinates>
+        </Point>","-21,1794111111","55,3013333333"
+SL_a,marché,grocery,"marché_
+période: samedi de 6h à 13h","<Point>
+            <coordinates>55.28722710031456,-21.16621126721604</coordinates>
+        </Point>","-21,1662112672","55,2872271003"
+SL_a,Ricaric,canoeing*speleologie," Canyoning, Randonnée aquatique, Location de matériel divers, Spéléologie , tunnels de lave
+_
+gsm: +262 692 86 54 85
+_
+label: qualité tourisme","<Point><coordinates>55.29266,-21.136849</coordinates></Point>","-21,136849","55,29266"
+SL_a,Cheville Vincent,hiker*speleologie,"Randonnée pédestre, Spéléologie, tunnels de lave_
+gsm: +262 692 30 11 73","<Point>
+            <coordinates>55.32963599999999,-21.20392777777778</coordinates>
+        </Point>","-21,2039277778","55,329636"
+SL_a,Lefur Pascal,hiker,"Randonnée pédestre
+_
+gsm: +262 692 64 45 26_
+mail : <a href=""lefur.pascal@orange.fr"" >mail<a>_
+Web : <a href=""http://www.reunion-randonnees.com"" >http://www.reunion-randonnees.com</a>","<Point>
+            <coordinates>55.29794426398038,-21.19660181507422</coordinates>
+        </Point>","-21,1966018151","55,297944264"
+SL_a,Ile Loue,cycling*cabs*mc,"Location de vélos, Location de voiture de tourisme, Location de motos
+_
+gsm: 0693 13 40 88
+_
+mail : <a href=""reunionloc@gmail.com"" >mail</a>
+_
+Web :<a href=""http://www.reunionloc.com"" >http://www.reunionloc.com</a>","<Point>
+            <coordinates>55.29584511940286,-21.20022216121864</coordinates>
+        </Point>","-21,2002221612","55,2958451194"

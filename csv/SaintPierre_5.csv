@@ -1,0 +1,54 @@
+id,nom,categ,description,geometry,lat,lng
+SPI_a,Plongée Océan Indien,diving,"plongé
+tél: +262 262.69.4157","<Point>
+            <coordinates>55.47679614249203,-21.33604723530087</coordinates>
+        </Point>","-21,3360472353","55,4767961425"
+SPI_a,Centre Equestre de Saint-Pierre,hiker,"équitation
+tél: +262 262.25.42.10","<Point>
+            <coordinates>55.50419654276124,-21.31811983553697</coordinates>
+        </Point>","-21,3181198355","55,5041965428"
+SPI_a,domaine des milles cocos,terain*hiker,"jardin
+tél: +262 262 23 47 96
+gsm: +262 692 61 99 71","<Point>
+            <coordinates>55.530073,-21.34998333333333</coordinates>
+        </Point>","-21,3499833333","55,530073"
+SPI_a,Pêche Passion Sud,fishing," pêche au gros
+gsm: +262 692 44 44 77","<Point>
+            <coordinates>55.475278,-21.34389166666666</coordinates>
+        </Point>","-21,3438916667","55,475278"
+SPI_a,Canoé Kayak Sud,canoeing*surf,"surf, morais, kayak, kayak de mer
+tél: +262 262 25 57 00
+gsm: +262 692 61 72 01","<Point>
+            <coordinates>55.46712701978394,-21.34490870583413</coordinates>
+        </Point>","-21,3449087058","55,4671270198"
+SPI_a,Pêche Sud Evasion,fishing,"pêche au gros
+gsm: +262 692 70 05 18","<Point><coordinates>55.47541,-21.343875</coordinates></Point>","-21,343875","55,47541"
+SPI_a,Ecole de Surf Bourbon Réunion,surf,"surf morey
+gsm: +262 692 66 16 73","<Point>
+            <coordinates>55.479755,-21.34431388888889</coordinates>
+        </Point>","-21,3443138889","55,479755"
+SPI_a,Plongée Australe,diving," plongé
+gsm: +262 692 14 01 76","<Point>
+            <coordinates>55.47519000000001,-21.34373888888889</coordinates>
+        </Point>","-21,3437388889","55,47519"
+SPI_a,Jet Surf Club,surf,"surf morey
+tél: +262 262 96 02 87
+gsm: +262 692 87 85 19","<Point>
+            <coordinates>55.476713,-21.34356111111111</coordinates>
+        </Point>","-21,3435611111","55,476713"
+SPI_a,marché couvert,grocery,"marché couvert
+période: lundi au samedi de 8h à 18h","<Point>
+            <coordinates>55.47364824181523,-21.34084293550054</coordinates>
+        </Point>","-21,3408429355","55,4736482418"
+SPI_a,marché front de mer,grocery,"marché
+période: samedi de 5h à 12h","<Point>
+            <coordinates>55.47472331032169,-21.3436668068473</coordinates>
+        </Point>","-21,3436668068","55,4747233103"
+SPI_a,marché nocturne,grocery,"marché nocturne, artisanal
+période: 2èmes samedi/ 2mois de 19h à 23h","<Point>
+            <coordinates>55.4736893562267,-21.3437457465682</coordinates>
+        </Point>","-21,3437457466","55,4736893562"
+SPI_a,marché aux fleurs,grocery,"marché aux fleurs
+période: mercredi de 7h à 17h","<Point>
+            <coordinates>55.47301975811267,-21.34104294226246</coordinates>
+        </Point>","-21,3410429423","55,4730197581"

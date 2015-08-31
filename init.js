@@ -3,7 +3,7 @@
           var h = $(window).height(),
             offsetTop = 105; 
         
-          $('#map_canvas').css('height', (h - offsetTop));
+          $(FuncInit.idmap).css('height', (h - offsetTop));
         }).resize();
         
         $(function() {
@@ -13,98 +13,140 @@
 		  $("body").css('background-image', FuncTree.styles[1]);
 		  $("body").css('background-repeat', 'no-repeat');
 		  $("body").css('background-size', '100%');
-		
-		  $("#listv").on("mouseenter",function(){
+		  $("#fl").bind('click',function(){
+			MapsLib.findMe();
+		  });
+		  $(FuncInit.idtab).on("mouseenter",function(){
 				
 				$(this).animate({
 					opacity: '0.75',
 					height: '100%',
 					width: '70%'
 				});
-				$('#map_canvas').animate({
+				$(FuncInit.idmap).animate({
 					opacity: '0.3'
 				});
+				$(FuncInit.idp).animate({
+						opacity: '0.3'
+					});
 				$('body').animate({
 					height: '100% !important',
 					margin: '0px !important',
 					padding: '0px !important',
 				});
-				$('#info').empty();
+				$(FuncInit.idinf).empty();
 				FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
 								,"green");
-				$('#info').bind('click',function(){
-					$('#listv').animate({
+				$(FuncInit.idinf).bind('click',function(){
+					$(FuncInit.idtab).animate({
 						opacity: '1',
 						height: '15%',
 						width: '100%'
 					});
-					$('#map_canvas').animate({
+					$(FuncInit.idmap).animate({
+						opacity: '1'
+					});
+					$(FuncInit.idp).animate({
 						opacity: '1'
 					});
 				
 				});
 				
 			});
-			$('#info').bind('click',function(){
-					$('#listv').animate({
+			$(FuncInit.idinf).bind('click',function(){
+					$(FuncInit.idtab).animate({
 						opacity: '0.75',
 						height: '100%',
 						width: '70%'
 					});
-					$('#map_canvas').animate({
+					$(FuncInit.idmap).animate({
+						opacity: '0.3'
+					});
+					$(FuncInit.idp).animate({
 						opacity: '0.3'
 					});
 				});
 		
-		  $("#panel").hover(function(){
-				$('#listv').animate({
+		  $(FuncInit.idp).hover(function(){
+				$(FuncInit.idtab).animate({
 					opacity: '1',
 					height: '15%',
 					width: '100%'
 				});
-				$('#map_canvas').animate({
+				$(FuncInit.idmap).animate({
 					opacity: '1'
 				});
+				$(FuncInit.idp).animate({
+						opacity: '1'
+					});
 			
 			});
 		$("#rtrm").click(function(){
-				$('#listv').animate({
+				$(FuncInit.idtab).animate({
 					opacity: '1',
 					height: '15%',
 					width: '100%'
 				});
-				$('#map_canvas').animate({
+				$(FuncInit.idmap).animate({
 					opacity: '1'
 				});
-			
+				$(FuncInit.idp).animate({
+					opacity: '1'
+				});
 			});
-	
-		  $('#btn').bind('click',function(){//init itin
+
+		$("#r_bdd").change(function(){
+				FuncTree.bms=false;
+				MapsLib.srchOnAll(this.value);
+				$(FuncInit.idinf).empty();
+				FuncTab.msg= 'Pour Afficher les donners, cliquer ailleurs!!';
+				 FuncTree.append(FuncTab.msg,'red');
+				
+			});
+		$("#r_bdd").mouseleave(function(){
+			FuncTab.crTb();
+			MapsLib.displayList();
+			FuncTab.fshBDD();
+			FuncTab.search='';
+			//$("#r_bdd").val('');
+		});
+		$("#r_bdd").click(function(){
+			$(FuncInit.idinf).empty();
+			FuncTab.msg= 'Pour Afficher les donners, visoinner les donner en bas de l Ecran!!';
+				 FuncTree.append(FuncTab.msg,'blue');
+		});
+		  $(FuncInit.idbtn).bind('click',function(){//init itin
 			$('small').show();
-            $('#jqxTree').show();
-			$('#info').hide();
+            $(FuncInit.idtree).show();
+			$(FuncInit.idinf).hide();
 			$('#dep').val(null);$('#arv').val(null);
-			$('#listv').show();
-			$('#iti').css('color','blue');$('#iti').css('border-color','#FFFF00');$('#iti').css('font-size','15px');$('#iti').css('font-weight','none');
+			$(FuncInit.idtab).show();
+			$(FuncInit.iditi).css('color','blue');$(FuncInit.iditi).css('border-color','#FFFF00');$(FuncInit.iditi).css('font-size','15px');$(FuncInit.iditi).css('font-weight','none');
 			MapsLib.s=null;MapsLib.e=null;
-			 $('#btn').hide();
+			 $(FuncInit.idbtn).hide();
           });
-		  $('#info').bind('click',function(){
-				$('#listv').animate({
+		  $(FuncInit.idinf).bind('click',function(){
+				$(FuncInit.idtab).animate({
 					opacity: '1',
 					height: '15%',
 					width: '100%'
 				});
-				$('#map_canvas').animate({
+				$(FuncInit.idmap).animate({
 					opacity: '1'
 				});
-			
+				$(FuncInit.idp).animate({
+					opacity: '1'
+				});
 			});
 		$('#clear').css('color','blue');$('#clear').css('border-color','blue');		
 		$('#clear').bind('click',function(){
-			var items = $('#jqxTree').jqxTree('getCheckedItems');
+			MapsLib.map_centroid = new google.maps.LatLng(-21.137472,55.546906);
+			FuncTree.zoom=10;
+			MapsLib.doSearch();
+			var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
 					for(var i in items)
-							$('#jqxTree').jqxTree('uncheckItem', items[i].element);
+							{var e=items[i].element;$(FuncInit.idtree).jqxTree('uncheckItem', e);$(FuncInit.idtree).jqxTree('collapseItem', e);}
+			$(FuncInit.idtree).jqxTree('refresh');
 			
 		});
 		  $('#find_me').click(function(){
@@ -119,18 +161,17 @@
             MapsLib.additi('arv'); 
 			 return true;
           });
-		  $('#map_canvas').mouseleave(function(){
-			
+		  $(FuncInit.idmap).mouseleave(function(){
+				map.setZoom(FuncTree.rvzoom);
 				FuncRoute.calcRoute();
 			
 			 return true;
           });
-		  $('#iti').click(function(){
+		  $(FuncInit.iditi).click(function(){
              FuncRoute.calcRoute();
 				
             return true;
           });
-	
-
+		FuncInit.tmp="OUEST";
         });
       //]]>

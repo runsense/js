@@ -1,0 +1,168 @@
+id,nom,categ,description,geometry,lat,lng
+SM_v,piton plaine des fougères,mountains,mont,"<Point>
+            <coordinates>55.49157571597708,-21.00371086529065</coordinates>
+        </Point>","-21,0037108653","55,491575716"
+SM_v,îlet à pluie,capital_big,quartier,"<Point>
+            <coordinates>55.49487928334272,-20.95210743773922</coordinates>
+        </Point>","-20,9521074377","55,4948792833"
+SM_v,piton tanan,mountains,mont,"<Point>
+            <coordinates>55.49418611978805,-20.95963267261597</coordinates>
+        </Point>","-20,9596326726","55,4941861198"
+SM_v,"Caméra Direction Régionale des Routes
+RN2 - Echangeur de Gillot",webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wdde.php?n=2071"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.50445381134965,-20.89661472200405</coordinates>
+        </Point>","-20,896614722","55,5044538113"
+SM_v,grand éboulis,terain,pointInteret,"<Point>
+            <coordinates>55.48779087178614,-20.98367182754092</coordinates>
+        </Point>","-20,9836718275","55,4877908718"
+SM_v,la ressource barau,capital_big,quartier,"<Point>
+            <coordinates>55.570192332908,-20.91840124505394</coordinates>
+        </Point>","-20,9184012451","55,5701923329"
+SM_v,les orchidées,capital_big,quartier,"<Point>
+            <coordinates>55.50819371185535,-20.90834809081176</coordinates>
+        </Point>","-20,9083480908","55,5081937119"
+SM_v,"Caméra Direction Régionale des Routes
+RN2 - Sainte Marie",webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wdde.php?n=2079"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.53842834408818,-20.90328453353333</coordinates>
+        </Point>","-20,9032845335","55,5384283441"
+SM_v,Ancienne gare ferroviaire et tunnel à Sainte Suzanne,cbh,"Durant les campagnes sucrières, les planteurs viennent en charrettes livrer leur production à la balance, près de la gare. Des wagons chargés de cannes à sucre rejoignent alors les usines sucrières qui possèdent, jusqu'au milieu du 20 ème siècle, leurs embranchements privés","<Point>
+            <coordinates>55.54678799999999,-20.895972</coordinates>
+        </Point>","-20,895972","55,546788"
+SM_v,Aéroport Rolang Garros,airports,"Aéroport Rolland Garros. Anciennement appelé l'aéroport Gillot, l'ensemble est rebaptisé aéroport Rolland Garros, en l'honneur de l'aviateur réunionnais lors de l'inauguration des nouvelles structures.","<Point>
+            <coordinates>55.51758992931379,-20.89082546481244</coordinates>
+        </Point>","-20,8908254648","55,5175899293"
+SM_v,Chapelle Notre dame de la Salette,3,"La chapelle Notre Dame de La Salette à Sainte-Marie est construite par le frère scubillion, ainsi que le calvaire de Sainte-Marie. En 1950, la chapelle est restaurée après avoir été transférée sur la hauteur à la sortie de la ville.","<Point>
+            <coordinates>55.55250484602909,-20.89577130218684</coordinates>
+        </Point>","-20,8957713022","55,552504846"
+SM_v,eglise de l'Immaculée Conception,church,église de l'Immaculée Conception à Sainte-Marie. L'église de l'immaculée Conception est communément appelée église blanche à cause de sa couleur. Une première petite chapelle dédiée à la Vierge est construite par les rescapés corsaires qui échoués à la réunion.,"<Point>
+            <coordinates>55.5544930540491,-20.89641498190957</coordinates>
+        </Point>","-20,8964149819","55,554493054"
+SM_v,Hotel de ville,road_shield1,"La construction de la mairie de Sainte-Marie commence en 1860, l'abbé Carrier curé de la paroisse procède à la bénédiction des fondations. Son style est influencé par celui de la Compagnie des Indes","<Point>
+            <coordinates>55.54933216145511,-20.8969868248971</coordinates>
+        </Point>","-20,8969868249","55,5493321615"
+SM_v,La vierge noires,church,"lieu de culte en l'hommage  à la vierge noires, sainte sarah de corse, ou marie de la cathédrale de Chartres.","<Point>
+            <coordinates>55.51093386607122,-20.91339565404112</coordinates>
+        </Point>","-20,913395654","55,5109338661"
+SM_v,Mausolé du frère scubilion,church,"Le frère Scubilion, prête à l'époque de l'abolition, il œuvra jusqu'à sa mort à réconcilier anciens esclaves et anciens maîtres, et fait aujourd'hui l'objet d'une adoration de la part des Réunionnais. Son enveloppe charnelle, enterrée dans le cimetière de Sainte-Marie, est alors transférée dans un sanctuaire commémoratif.","<Point>
+            <coordinates>55.5541602217254,-20.89662928626188</coordinates>
+        </Point>","-20,8966292863","55,5541602217"
+SM_v,Cheminée La Mare,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 2 mai 2002,
+avec son terrain","<Point>
+            <coordinates>55.53305600000001,-20.89441666666667</coordinates>
+        </Point>","-20,8944166667","55,533056"
+SM_v,Cheminée La Réserve,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,
+avec son terrain","<Point><coordinates>55.562139,-20.9</coordinates></Point>","-20,9","55,562139"
+SM_v,église Notre-Dame de l'Assomption,church*cbh,inscrite monument historique en 2012,"<Point>
+            <coordinates>55.52213373393413,-20.9484615134654</coordinates>
+        </Point>","-20,9484615135","55,5221337339"
+SM_v,piton tanan,mountains,pointInteret_,"<Point>
+            <coordinates>55.49898888324436,-20.97487944577436</coordinates>
+        </Point>","-20,9748794458","55,4989888832"
+SM_v,terrain duparc,capital_big,quartier,"<Point>
+            <coordinates>55.5217585043094,-20.90440916627136</coordinates>
+        </Point>","-20,9044091663","55,5217585043"
+SM_v,la mare,capital_big,quartier,"<Point>
+            <coordinates>55.53319082408423,-20.89590114253545</coordinates>
+        </Point>","-20,8959011425","55,5331908241"
+SM_v,la réunion ou les coco,capital_big,quartier,"<Point>
+            <coordinates>55.53539100481292,-20.90115633479884</coordinates>
+        </Point>","-20,9011563348","55,5353910048"
+SM_v,duparc,capital_big,quartier,"<Point>
+            <coordinates>55.52250061335014,-20.90051732321541</coordinates>
+        </Point>","-20,9005173232","55,5225006134"
+SM_v,rivière Sainte-Marie,water,rivière,"<Point>
+            <coordinates>55.55082210232031,-20.89564138022069</coordinates>
+        </Point>","-20,8956413802","55,5508221023"
+SM_v,ravinne des chèvres,water,rivière,"<Point>
+            <coordinates>55.57529107788886,-20.89557057518503</coordinates>
+        </Point>","-20,8955705752","55,5752910779"
+SM_v,carreau coton,capital_big,quartier,"<Point>
+            <coordinates>55.5185485629225,-20.91248779569997</coordinates>
+        </Point>","-20,9124877957","55,5185485629"
+SM_v,desbassyns,capital_big,quartier,"<Point>
+            <coordinates>55.51751225453994,-20.91464041042727</coordinates>
+        </Point>","-20,9146404104","55,5175122545"
+SM_v,la source de la mare,capital_big,quartier,"<Point>
+            <coordinates>55.52086529588238,-20.91965152308202</coordinates>
+        </Point>","-20,9196515231","55,5208652959"
+SM_v,la grande monté,capital_big,quartier,"<Point>
+            <coordinates>55.51604981196522,-20.92237249592933</coordinates>
+        </Point>","-20,9223724959","55,516049812"
+SM_v,moka fontaine,capital_big,quartier,"<Point>
+            <coordinates>55.51264449894551,-20.92857636124272</coordinates>
+        </Point>","-20,9285763612","55,5126444989"
+SM_v,moka de palmas,capital_big,quartier,"<Point>
+            <coordinates>55.51636969388587,-20.93273711627664</coordinates>
+        </Point>","-20,9327371163","55,5163696939"
+SM_v,l'allée coco,capital_big,quartier,"<Point>
+            <coordinates>55.53111612314877,-20.93139327771185</coordinates>
+        </Point>","-20,9313932777","55,5311161231"
+SM_v,la ressource,capital_big,quartier,"<Point>
+            <coordinates>55.53289118144991,-20.93452368058446</coordinates>
+        </Point>","-20,9345236806","55,5328911814"
+SM_v,parny,capital_big,quartier,"<Point>
+            <coordinates>55.52557629663306,-20.9381037611449</coordinates>
+        </Point>","-20,9381037611","55,5255762966"
+SM_v,beaumont,capital_big,quartier,"<Point>
+            <coordinates>55.52917779567919,-20.94020829339195</coordinates>
+        </Point>","-20,9402082934","55,5291777957"
+SM_v,appollon,capital_big,quartier,"<Point>
+            <coordinates>55.52156925867916,-20.9433161762798</coordinates>
+        </Point>","-20,9433161763","55,5215692587"
+SM_v,l'espérance les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.51710472194671,-20.94668825966378</coordinates>
+        </Point>","-20,9466882597","55,5171047219"
+SM_v,beaumont les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.53026294257441,-20.94888848665676</coordinates>
+        </Point>","-20,9488884867","55,5302629426"
+SM_v,chiendent,capital_big,quartier,"<Point>
+            <coordinates>55.54352670161856,-20.93594566747614</coordinates>
+        </Point>","-20,9359456675","55,5435267016"
+SM_v,ravinne des figues,capital_big,quartier,"<Point>
+            <coordinates>55.53640193043587,-20.92231441446136</coordinates>
+        </Point>","-20,9223144145","55,5364019304"
+SM_v,bois rouge,capital_big,quartier,"<Point>
+            <coordinates>55.53108638300198,-20.9197593339348</coordinates>
+        </Point>","-20,9197593339","55,531086383"
+SM_v,bois court,capital_big,quartier,"<Point>
+            <coordinates>55.54247165918075,-20.91968903600475</coordinates>
+        </Point>","-20,919689036","55,5424716592"
+SM_v,la paix,capital_big,quartier,"<Point>
+            <coordinates>55.55836030170452,-20.9280027779008</coordinates>
+        </Point>","-20,9280027779","55,5583603017"
+SM_v,bruguier,capital_big,quartier,"<Point>
+            <coordinates>55.55109894739995,-20.91790714209347</coordinates>
+        </Point>","-20,9179071421","55,5510989474"
+SM_v,la révolution,capital_big,quartier,"<Point>
+            <coordinates>55.55785006064685,-20.91432969660299</coordinates>
+        </Point>","-20,9143296966","55,5578500606"
+SM_v,la ravinne des chèvres les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.56920711899507,-20.90980319400471</coordinates>
+        </Point>","-20,909803194","55,569207119"
+SM_v,les jacques,capital_big,quartier,"<Point>
+            <coordinates>55.55954168617213,-20.90329337129997</coordinates>
+        </Point>","-20,9032933713","55,5595416862"
+SM_v,les gaspards,capital_big,quartier,"<Point>
+            <coordinates>55.55732720783974,-20.9013919574826</coordinates>
+        </Point>","-20,9013919575","55,5573272078"
+SM_v,la rèserve,capital_big,quartier,"<Point>
+            <coordinates>55.56259780789028,-20.90012567354664</coordinates>
+        </Point>","-20,9001256735","55,5625978079"
+SM_v,nos loisirs,capital_big,quartier,"<Point>
+            <coordinates>55.56890290380068,-20.90026292118665</coordinates>
+        </Point>","-20,9002629212","55,5689029038"
+SM_v,ravinnes des chèvres les bas,capital_big,quartier,"<Point>
+            <coordinates>55.56787288534992,-20.89594710550653</coordinates>
+        </Point>","-20,8959471055","55,5678728854"
+SM_v,indigo,capital_big,quartier,"<Point>
+            <coordinates>55.55695867261149,-20.8960273050947</coordinates>
+        </Point>","-20,8960273051","55,5569586726"
+SM_v,Sainte-Marie,capital_big,quartier,"<Point>
+            <coordinates>55.54987233272912,-20.89701133229402</coordinates>
+        </Point>","-20,8970113323","55,5498723327"
+SM_v,parc de Sainte-Marie,parc,"parc d'animation proposant un espace bi-cross, une aire de repos et de terain de pétanque","<Point>
+            <coordinates>55.53997191078355,-20.89522914226693</coordinates>
+        </Point>","-20,8952291423","55,5399719108"
+SM_v,parc du front de mer,parc,parc du centre ville de Sainte-Marie,"<Point>
+            <coordinates>55.54860220238963,-20.89579151253226</coordinates>
+        </Point>","-20,8957915125","55,5486022024"

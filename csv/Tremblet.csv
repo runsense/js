@@ -1,0 +1,12 @@
+id,nom,categ,description,geometry,lat,lng
+enclosduTremblet,Tremblet,http://runsense.github.io/js/img/blason/Tremblet.gif,"<a href=""http://www.fournaise.info/"" >http://www.fournaise.info/</a>
+enclos de la fournaise,
+parsemé de coulé de laves et de tunnel de lave","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.81420974299707,-21.21693830397778 55.80153892041057,-21.21651090025416 55.75776954971973,-21.19530629741099 55.72457460025405,-21.20549211439617 55.70219918412766,-21.21954659208536 55.68735307674155,-21.22240569439861 55.67895527821666,-21.23983922163353 55.68655886760471,-21.27145477974375 55.70039366902029,-21.27589565766013 55.70631052498888,-21.28295314182365 55.71846761161696,-21.2866940992173 55.73753650119415,-21.28163494039398 55.7520501355053,-21.28475886052581 55.77081818195953,-21.28513795546374 55.78891911132028,-21.28844548635933 55.80559709313416,-21.2926141174166 55.80913108443214,-21.28802119693512 55.81420974299707,-21.21693830397778</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-21.2917,55.80528
+enclosduTremblet,sentier fermé,liens carte,"<a href=""http://www.onf.fr/la-reunion/sommaire/loisirs_en_foret/randonner/organiser/20071128-162349-190807/++files++/177"" >carte onf</a>",,,

@@ -1,0 +1,85 @@
+id,nom,categ,description,geometry,lat,lng
+ES_md,Chez Gisèle,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél: +262 262 26 31 09
+tél: +262 262 26 50 35
+gsm: +262 692 00 91 46","<Point>
+            <coordinates>55.36895788,-21.253825</coordinates>
+        </Point>","-21,253825","55,36895788"
+ES_md,Les Mille Fleurs,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél:  +262 262 26 41 07
+gsm: +262 692 02 27 55","<Point>
+            <coordinates>55.38847093,-21.24928888888889</coordinates>
+        </Point>","-21,2492888889","55,38847093"
+ES_md,L' Oasis des Saveurs,rec_lodging*dining,"hotel, restaurant
+<b>label: qualité tourisme</b>
+tél: +262 262 91 79 79
+gsm: +262 692 02 41 00","<Point>
+            <coordinates>55.33421248,-21.264975</coordinates>
+        </Point>","-21,264975","55,33421248"
+ES_md,La Vie des Hauts,dining,"restaurant
+tél:  +262 262 26 51 87","<Point>
+            <coordinates>55.36347000000001,-21.26375</coordinates>
+        </Point>","-21,26375","55,36347"
+ES_md,L' Eté Indien,dining,"restaurant
+<b>label: maître restaurateur</b>
+tél:  +262 262 26 67 33","<Point>
+            <coordinates>55.334621,-21.26608611111111</coordinates>
+        </Point>","-21,2660861111","55,334621"
+ES_md,La Chope,dining,"restaurant
+gsm: +262 692 04 05 39","<Point>
+            <coordinates>55.32979624377572,-21.27107781144868</coordinates>
+        </Point>","-21,2710778114","55,3297962438"
+ES_md,La Table Zen,dining,"restaurant
+tél: +262 262 44 79 73","<Point>
+            <coordinates>55.370981,-21.27382222222222</coordinates>
+        </Point>","-21,2738222222","55,370981"
+ES_md,La Caza Mama,dining,"restaurant
+tél:  0262 26 39 94
+gsm: 0693 94 34 99","<Point>
+            <coordinates>55.36633500000001,-21.268625</coordinates>
+        </Point>","-21,268625","55,366335"
+ES_md,La Carangue,dining,"restaurant
+tél:  +262 262 91 70 87
+gsm: +262 692 70 12 12","<Point>
+            <coordinates>55.333799,-21.26516388888889</coordinates>
+        </Point>","-21,2651638889","55,333799"
+ES_md,La Plantation,dining,"restaurant
+tél: +262 262 26 52 24
+gsm: +262 692 44 13 22","<Point><coordinates>55.334626,-21.2653</coordinates></Point>","-21,2653","55,334626"
+ES_md,Le Macao,dining,"restaurant
+tél: +262 262 26 62 70","<Point>
+            <coordinates>55.334593,-21.26730833333333</coordinates>
+        </Point>","-21,2673083333","55,334593"
+ES_md,Le Bambou,dining,"restaurant
+tél: +262 262 91 70 28","<Point>
+            <coordinates>55.33410769,-21.265725</coordinates>
+        </Point>","-21,265725","55,33410769"
+ES_md,Le Play Off,dining,"restaurant
+tél:  +262 262 26 43 49","<Point>
+            <coordinates>55.36059969,-21.27596388888889</coordinates>
+        </Point>","-21,2759638889","55,36059969"
+ES_md,Hôtel Floralys ***,rec_lodging*hdcp,"hotel
+<b>label: qualité tourisme</b>
+tél: +262 262 91 79 79
+gsm: 0692 02 41 00
+acces hdcp","<Point>
+            <coordinates>55.33421248,-21.264975</coordinates>
+        </Point>","-21,264975","55,33421248"
+ES_md,Chez Jozi,realestate*hdcp,"chambre d'hote
+tél: +262 262 88 23 97
+acces hdcp","<Point>
+            <coordinates>55.335138,-21.26767222222222</coordinates>
+        </Point>","-21,2676722222","55,335138"
+ES_md,Villa Blue,realestate,"chambre d'hote
+<b>label: gayfriendly</b>
+gsm: +262 692 90 22 30","<Point>
+            <coordinates>55.363611,-21.25166666666667</coordinates>
+        </Point>","-21,2516666667","55,363611"
+ES_md,Ti Fleurs Aimées,realestate*hdcp,"chambre d'hote
+tél: +262 262 38 32 61
+gsm: +262 692 21 36 04
+acces hdcp","<Point>
+            <coordinates>55.35834480999999,-21.24205277777778</coordinates>
+        </Point>","-21,2420527778","55,35834481"

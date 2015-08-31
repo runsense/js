@@ -1,0 +1,38 @@
+id,nom,categ,description,geometry,lat,lng
+SPA_t,STADE LA PALMERAIE,play,"stade de foot _
+STADE LA PALMERAIE LE BOURG 97460 ST PAUL","<Point>
+            <coordinates>55.28793736360784,-20.98089532880649</coordinates>
+        </Point>","-20,9808953288","55,2879373636"
+SPA_t,STADE DU CORBEIL,play,"stade de foot _
+STADE DU CORBEIL st paul 97460 ST PAUL","<Point>
+            <coordinates>55.27886899999999,-21.068535</coordinates>
+        </Point>","-21,068535","55,278869"
+SPA_t,STADE DE TAN ROUGE,play,"stade de foot _
+STADE DE TAN ROUGE st paul 97460 ST PAUL","<Point>
+            <coordinates>55.33192222222223,-21.241535</coordinates>
+        </Point>","-21,241535","55,3319222222"
+SPA_t,STADE DE PLATEAU CAILLOUX,play," stade de foot _
+STADE DE PLATEAU CAILLOUX st paul 97460 ST PAUL","<Point><coordinates>55.26864,-21.028735</coordinates></Point>","-21,028735","55,26864"
+SPA_t,Tennis-club de la baie de Saint-Paul,donut,tennis club,"<Point>
+            <coordinates>55.2795134553924,-20.99955861243037</coordinates>
+        </Point>","-20,9995586124","55,2795134554"
+SPA_t,Tennis-club de l’Oasis,donut,tennis club,"<Point>
+            <coordinates>55.29872671417038,-20.9751067968853</coordinates>
+        </Point>","-20,9751067969","55,2987267142"
+SPA_t,parc de la luge,cbh,luge,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.35748701612346,-21.05322580383192 55.35721192591281,-21.05417623535118 55.35766149982322,-21.05496837096395 55.3585250098362,-21.0547503969442 55.35918047798705,-21.05506999741811 55.35924023527897,-21.05401706131396 55.35850358481516,-21.05373889289109 55.35817434217169,-21.05347970885988 55.35748701612346,-21.05322580383192</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SPA_t,stade Olympique,cbh,Stade de foot et d'Athlétisme,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.29153401325578,-20.98161288827026 55.29134590216051,-20.98145985083234 55.29105191446622,-20.98164836784913 55.28981048834158,-20.98108004937806 55.29002637397371,-20.98072635824613 55.28886062258261,-20.98054787371073 55.28782460766592,-20.98035967766888 55.28692179548948,-20.98136270484993 55.2876442931676,-20.98167023277825 55.28728906888266,-20.98191838139082 55.28756963397783,-20.98222585411251 55.28746845667845,-20.98240310834367 55.28944080862301,-20.98342004476751 55.28927480042242,-20.98399921131898 55.28964427282894,-20.98437713408624 55.29073155777596,-20.9848275441516 55.29118685529645,-20.98461511619384 55.29178476297872,-20.98349023605861 55.29221615488579,-20.98282961996106 55.29253350620589,-20.98190817129765 55.29153401325578,-20.98161288827026</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SPA_t,Stade Olympique Paul-Julius Bénard,play,stade club: Saint-Pauloise FC,"<Point><coordinates>55.290139,-20.9825</coordinates></Point>","-20,9825","55,290139"

@@ -1,0 +1,5 @@
+id,nom,categ,description,geometry,lat,lng
+SR_a,méteo marinne,info_circle,"<a href=""http://www.meteolamer.re/spots.php?spot=sterose"" > météo Marinne </a>
+id map_overlay_img","<Point>
+            <coordinates>55.7872358679896,-21.12101779228315</coordinates>
+        </Point>","-21,1210177923","55,787235868"

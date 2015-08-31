@@ -1,0 +1,25 @@
+id,nom,categ,description,geometry,lat,lng
+SJ_a,centre nautique de saint-joseph,swimming," piscine tobbogan_
+tél: +262 262.56.64.06","<Point>
+            <coordinates>55.6247191311556,-21.37710679492301</coordinates>
+        </Point>","-21,3771067949","55,6247191312"
+SJ_a,Aquasens,diving*canoeing,"randonné aquatique, kayak de mer_
+gsm: +262 692 20 09 03","<Point><coordinates>55.641414,-21.3212</coordinates></Point>","-21,3212","55,641414"
+SJ_a,Rando Trek Réunion,hiker*speleologie,"Randonnée pédestre, Spéléologie, tunnels de lave _
+gsm: +262 692 01 59 56","<Point><coordinates>55.588894,-21.373375</coordinates></Point>","-21,373375","55,588894"
+SJ_a,Avril Teddy,hiker,"Randonnée pédestre
+_
+tel: +262 692 37 53 14
+_
+mail :<a href="" teddy.avril@live.fr"" >mail </a>","<Point>
+            <coordinates>55.6111325998624,-21.33324330015906</coordinates>
+        </Point>","-21,3332433002","55,6111325999"
+SJ_a,Dalleau Didier,diving*hiker," Plongée, Randonnée pédestre
+_
+gsm: +262 692 08 90 93
+_
+mail : <a href=""meretmontagne974@orange.fr"" >mail</a>
+_
+Web : <a href=""http://www.gadiamb.re"" >http://www.gadiamb.re</a>","<Point>
+            <coordinates>55.63295612447146,-21.39583153975437</coordinates>
+        </Point>","-21,3958315398","55,6329561245"

@@ -1,0 +1,93 @@
+id,nom,categ,description,geometry,lat,lng
+Ma_v,piton maido,mountains,"mont
+_
+2204m,
+le maido offre un point de vue magnifique sur Mafate,
+et saint-paul","<Point>
+            <coordinates>55.37956002356705,-21.04863246856245</coordinates>
+        </Point>","-21,0486324686","55,3795600236"
+Ma_v,piton bernica,mountains,mont,"<Point>
+            <coordinates>55.38756825927806,-21.06928405310833</coordinates>
+        </Point>","-21,0692840531","55,3875682593"
+Ma_v,gros morne,mountains,mont,"<Point>
+            <coordinates>55.46508113893174,-21.08635396395817</coordinates>
+        </Point>","-21,086353964","55,4650811389"
+Ma_v,les salazes,mountains,mont,"<Point>
+            <coordinates>55.46793488119169,-21.08966761271909</coordinates>
+        </Point>","-21,0896676127","55,4679348812"
+Ma_v,piton des Neiges,mountains,"mont
+_Mont le plus haut de l'île","<Point>
+            <coordinates>55.48065865187911,-21.09962341083349</coordinates>
+        </Point>","-21,0996234108","55,4806586519"
+Ma_v,le cimendef,mountains,mont,"<Point>
+            <coordinates>55.45418467612663,-21.02967277402062</coordinates>
+        </Point>","-21,029672774","55,4541846761"
+Ma_v,col de fourche,mountains,mont,"<Point>
+            <coordinates>55.44976198857621,-21.07197711346309</coordinates>
+        </Point>","-21,0719771135","55,4497619886"
+Ma_v,morne de fourche,mountains,mont,"<Point>
+            <coordinates>55.44155252750057,-21.06352029249527</coordinates>
+        </Point>","-21,0635202925","55,4415525275"
+Ma_v,piton cabris,mountains,mont,"<Point>
+            <coordinates>55.41330731040162,-21.01872724898661</coordinates>
+        </Point>","-21,018727249","55,4133073104"
+Ma_v,piton kichenin,mountains,mont,"<Point>
+            <coordinates>55.41070035741096,-21.04952265568595</coordinates>
+        </Point>","-21,0495226557","55,4107003574"
+Ma_v,piton des calumets,mountains,mont,"<Point>
+            <coordinates>55.41577482434827,-21.05533087451093</coordinates>
+        </Point>","-21,0553308745","55,4157748243"
+Ma_v,le grand rein,mountains,mont,"<Point>
+            <coordinates>55.44222986553937,-21.04150031299202</coordinates>
+        </Point>","-21,041500313","55,4422298655"
+Ma_v,piton kichenin,mountains,mont,"<Point>
+            <coordinates>55.42000977327515,-21.04738698486114</coordinates>
+        </Point>","-21,0473869849","55,4200097733"
+Ma_v,piton cabris,mountains,mont,"<Point>
+            <coordinates>55.41396274425639,-21.01930598608005</coordinates>
+        </Point>","-21,0193059861","55,4139627443"
+Ma_v,le berronne,mountains,mont,"<Point>
+            <coordinates>55.39383160739673,-21.05031799098449</coordinates>
+        </Point>","-21,050317991","55,3938316074"
+Ma_v,le bronchard,mountains,mont,"<Point>
+            <coordinates>55.41366402266996,-21.06620929529076</coordinates>
+        </Point>","-21,0662092953","55,4136640227"
+Ma_v,roche Plate,capital_big,quartier,"<Point>
+            <coordinates>55.40187960705289,-21.06825528214849</coordinates>
+        </Point>","-21,0682552821","55,4018796071"
+Ma_v,la nouvelle,capital_big,quartier,"<Point>
+            <coordinates>55.42356932362188,-21.07403173794319</coordinates>
+        </Point>","-21,0740317379","55,4235693236"
+Ma_v,ilet à bourse,capital_big,quartier,"<Point>
+            <coordinates>55.42829446462388,-21.04199548344458</coordinates>
+        </Point>","-21,0419954834","55,4282944646"
+Ma_v,grande place,capital_big,quartier,"<Point>
+            <coordinates>55.4116429511774,-21.04291792162356</coordinates>
+        </Point>","-21,0429179216","55,4116429512"
+Ma_v,îlet des lataniers,capital_big,quartier,"<Point>
+            <coordinates>55.40013915220179,-21.03756499710016</coordinates>
+        </Point>","-21,0375649971","55,4001391522"
+Ma_v,cayenne,capital_big,quartier,"<Point>
+            <coordinates>55.40499441608872,-21.03957754084555</coordinates>
+        </Point>","-21,0395775408","55,4049944161"
+Ma_v,îlet des orangers,capital_big,quartier,"<Point>
+            <coordinates>55.39171565584553,-21.04385187881896</coordinates>
+        </Point>","-21,0438518788","55,3917156558"
+Ma_v,îlet à malheur les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.42753550876396,-21.03270251122235</coordinates>
+        </Point>","-21,0327025112","55,4275355088"
+Ma_v,îlet à  malheur,capital_big,quartier,"<Point>
+            <coordinates>55.42844622886211,-21.02721622137208</coordinates>
+        </Point>","-21,0272162214","55,4284462289"
+Ma_v,îlet sud,capital_big,quartier,"<Point>
+            <coordinates>55.42398675102957,-21.02508614480326</coordinates>
+        </Point>","-21,0250861448","55,423986751"
+Ma_v,aurère,capital_big,quartier,"<Point>
+            <coordinates>55.42289980480368,-21.0213748062161</coordinates>
+        </Point>","-21,0213748062","55,4228998048"
+Ma_v,marla,capital_big,quartier,"<Point>
+            <coordinates>55.43296621864913,-21.10454634080536</coordinates>
+        </Point>","-21,1045463408","55,4329662186"
+Ma_v,îlet jardin,terain,lieuDit,"<Point>
+            <coordinates>55.42861572780835,-21.02247254538983</coordinates>
+        </Point>","-21,0224725454","55,4286157278"

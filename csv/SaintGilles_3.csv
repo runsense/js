@@ -1,0 +1,179 @@
+id,nom,categ,description,geometry,lat,lng
+SG_v,saint-gilles les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.26868097263031,-21.04899638984416</coordinates>
+        </Point>","-21,0489963898","55,2686809726"
+SG_v,Cheminée L'éperon,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,
+avec son terrain","<Point><coordinates>55.255389,-21.046</coordinates></Point>","-21,046","55,255389"
+SG_v,Cheminées de L'Ermitage,cbh,"inscrites en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,
+avec son terrain","<Point>
+            <coordinates>55.236556,-21.08305555555556</coordinates>
+        </Point>","-21,0830555556","55,236556"
+SG_v,Cheminée Grand-Fond,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,
+avec son terrain","<Point>
+            <coordinates>55.22136100000001,-21.03883333333334</coordinates>
+        </Point>","-21,0388333333","55,221361"
+SG_v,Cheminée Vue Belle,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 2 mai 2002,
+avec son terrain","<Point>
+            <coordinates>55.27480600000001,-21.07822222222222</coordinates>
+        </Point>","-21,0782222222","55,274806"
+SG_v,Boutique chez loulou,cbh*snack_bar,"Boutique à l'architecture créole,
+on y retrouve beaucoup de mets typique reunionnais","<Point>
+            <coordinates>55.22539736090869,-21.05144032084911</coordinates>
+        </Point>","-21,0514403208","55,2253973609"
+SG_v,jardin d'eden,hiker,balade,"<Point>
+            <coordinates>55.22511672347823,-21.06700738915822</coordinates>
+        </Point>","-21,0670073892","55,2251167235"
+SG_v,musée de Villèle,cbh,"Musée sur les maison créoles
+Ancienne demeure des familles Desbassayns et Villèle","<Point>
+            <coordinates>55.26379795843491,-21.05583596080086</coordinates>
+        </Point>","-21,0558359608","55,2637979584"
+SG_v,la chapelle pointue,cbh,"construite en 1841,
+reprèsente Sainte Ombeline,
+et possède la tombe de madame Desbassyns","<Point>
+            <coordinates>55.26533753973223,-21.05559835357611</coordinates>
+        </Point>","-21,0555983536","55,2653375397"
+SG_v,Ravine saint-gille,water,"rivière
+_
+Bassin des Cormorans, bassin des trois roches ou des Aigrettes, bassin malheur, bassin bleu","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.24955707382534,-21.04397837161112 55.24609500319991,-21.04382288327769 55.24601378285723,-21.0438219551034 55.24150540177645,-21.04411092244548 55.24196593178604,-21.0457687468105 55.2455501342864,-21.04609901386295 55.24902175998381,-21.04502319167375 55.24955707382534,-21.04397837161112</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SG_v,Domaine de Villèle,cbh,"inscrit en totalité au titre des Monuments historiques depuis le 16 juin 1997,
+comrend le musqé villèle,
+la chapelle pointue
+appartenait à la famille  Panon Desbassayns de Richemont","<Point>
+            <coordinates>55.26361,-21.05693888888889</coordinates>
+        </Point>","-21,0569388889","55,26361"
+SG_v,Téat Plein Air,cbh,inscrit monument historique en 2012,"<Point>
+            <coordinates>55.232472,-21.04852777777778</coordinates>
+        </Point>","-21,0485277778","55,232472"
+SG_v,cap boucan,water,rivière,"<Point>
+            <coordinates>55.22844649048287,-21.02614883700797</coordinates>
+        </Point>","-21,026148837","55,2284464905"
+SG_v,plage roches noires,swimming,rivière,"<Point>
+            <coordinates>55.22249751404011,-21.05154880275122</coordinates>
+        </Point>","-21,0515488028","55,222497514"
+SG_v,le lagon,swimming,rivière,"<Point>
+            <coordinates>55.21993992958669,-21.08180089251212</coordinates>
+        </Point>","-21,0818008925","55,2199399296"
+SG_v,la barrière,capital_big,quartier,"<Point>
+            <coordinates>55.25020217937111,-21.02024953390434</coordinates>
+        </Point>","-21,0202495339","55,2502021794"
+SG_v,cap la houssaye,water*mountains,pointInteret,"<Point>
+            <coordinates>55.23517206825791,-21.01869869733373</coordinates>
+        </Point>","-21,0186986973","55,2351720683"
+SG_v,boucan canot,capital_big*swimming,quartier,"<Point>
+            <coordinates>55.22654286611043,-21.02792316760938</coordinates>
+        </Point>","-21,0279231676","55,2265428661"
+SG_v,les coquillages,capital_big,quartier,"<Point>
+            <coordinates>55.22856252054311,-21.03117045314678</coordinates>
+        </Point>","-21,0311704531","55,2285625205"
+SG_v,armagnac,capital_big,quartier,"<Point>
+            <coordinates>55.22117893455468,-21.0362427036571</coordinates>
+        </Point>","-21,0362427037","55,2211789346"
+SG_v,domaine d'anjou,capital_big,quartier,"<Point>
+            <coordinates>55.22003396903374,-21.04372883549146</coordinates>
+        </Point>","-21,0437288355","55,220033969"
+SG_v,les rampiers,capital_big,quartier,"<Point>
+            <coordinates>55.2252806625172,-21.04871689103212</coordinates>
+        </Point>","-21,048716891","55,2252806625"
+SG_v,Saint-gilles les bains,capital_big,quartier,"<Point>
+            <coordinates>55.22448355384548,-21.05213823184926</coordinates>
+        </Point>","-21,0521382318","55,2244835538"
+SG_v,moulin kader,capital_big,quartier,"<Point>
+            <coordinates>55.23131439317699,-21.05531896239793</coordinates>
+        </Point>","-21,0553189624","55,2313143932"
+SG_v,villa bourbon,capital_big,quartier,"<Point>
+            <coordinates>55.22224304112325,-21.06296075554404</coordinates>
+        </Point>","-21,0629607555","55,2222430411"
+SG_v,les filaos,capital_big,quartier,"<Point>
+            <coordinates>55.22525789458047,-21.07902398338512</coordinates>
+        </Point>","-21,0790239834","55,2252578946"
+SG_v,l'hermitage les bains,capital_big*swimming,quartier,"<Point>
+            <coordinates>55.22906796605069,-21.08613539548605</coordinates>
+        </Point>","-21,0861353955","55,2290679661"
+SG_v,la saline les bains,capital_big*swimming,quartier,"<Point>
+            <coordinates>55.2375124252942,-21.09523703544251</coordinates>
+        </Point>","-21,0952370354","55,2375124253"
+SG_v,le trou d'eau,capital_big*swimming,quartier,"<Point>
+            <coordinates>55.24201596340833,-21.0990375056725</coordinates>
+        </Point>","-21,0990375057","55,2420159634"
+SG_v,lotissement bellevue,capital_big,quartier,"<Point>
+            <coordinates>55.25162511678435,-21.10642446230896</coordinates>
+        </Point>","-21,1064244623","55,2516251168"
+SG_v,l'éperon,capital_big,quartier,"<Point>
+            <coordinates>55.25635586632739,-21.04376290454667</coordinates>
+        </Point>","-21,0437629045","55,2563558663"
+SG_v,le bernica,capital_big,quartier,"<Point>
+            <coordinates>55.2833438939266,-21.04568916035128</coordinates>
+        </Point>","-21,0456891604","55,2833438939"
+SG_v,plateau caillou,capital_big,quartier,"<Point>
+            <coordinates>55.26697695907531,-21.02595831670732</coordinates>
+        </Point>","-21,0259583167","55,2669769591"
+SG_v,citerne laborde,capital_big,quartier,"<Point>
+            <coordinates>55.28490188166668,-21.05482773013736</coordinates>
+        </Point>","-21,0548277301","55,2849018817"
+SG_v,tan rouge,capital_big,quartier,"<Point>
+            <coordinates>55.29350986888482,-21.0619958147279</coordinates>
+        </Point>","-21,0619958147","55,2935098689"
+SG_v,la croix,capital_big,quartier,"<Point>
+            <coordinates>55.29755884695268,-21.06039231421333</coordinates>
+        </Point>","-21,0603923142","55,297558847"
+SG_v,pausé,capital_big,quartier,"<Point>
+            <coordinates>55.31142968687944,-21.07010911326665</coordinates>
+        </Point>","-21,0701091133","55,3114296869"
+SG_v,bras canot,capital_big,quartier,"<Point>
+            <coordinates>55.29209764897718,-21.07129123594022</coordinates>
+        </Point>","-21,0712912359","55,292097649"
+SG_v,la bassins souris,capital_big,quartier,"<Point>
+            <coordinates>55.29257653970955,-21.07757113145729</coordinates>
+        </Point>","-21,0775711315","55,2925765397"
+SG_v,corbeil,capital_big,quartier,"<Point>
+            <coordinates>55.28128070410774,-21.07471183891571</coordinates>
+        </Point>","-21,0747118389","55,2812807041"
+SG_v,vue belle,capital_big,quartier,"<Point>
+            <coordinates>55.27496697833455,-21.07865086859743</coordinates>
+        </Point>","-21,0786508686","55,2749669783"
+SG_v,longuet,capital_big,quartier,"<Point>
+            <coordinates>55.27028376153151,-21.0814544332336</coordinates>
+        </Point>","-21,0814544332","55,2702837615"
+SG_v,l'ermitage,capital_big,quartier,"<Point>
+            <coordinates>55.26496485739476,-21.0738978055484</coordinates>
+        </Point>","-21,0738978055","55,2649648574"
+SG_v,pointe des trois bassins,water*mountains,pointInteret,"<Point>
+            <coordinates>55.25294221355384,-21.11275101157735</coordinates>
+        </Point>","-21,1127510116","55,2529422136"
+SG_v,madame paule,capital_big,quartier,"<Point>
+            <coordinates>55.26250523722348,-21.06769089657672</coordinates>
+        </Point>","-21,0676908966","55,2625052372"
+SG_v,villèle,capital_big,quartier,"<Point>
+            <coordinates>55.26005023066954,-21.05715495069882</coordinates>
+        </Point>","-21,0571549507","55,2600502307"
+SG_v,la montée panon,capital_big,quartier,"<Point>
+            <coordinates>55.26466886012916,-21.08997183466159</coordinates>
+        </Point>","-21,0899718347","55,2646688601"
+SG_v,pavillon,capital_big,quartier,"<Point>
+            <coordinates>55.26823488744791,-21.0931249306686</coordinates>
+        </Point>","-21,0931249307","55,2682348874"
+SG_v,la saline,capital_big,quartier,"<Point>
+            <coordinates>55.26814680555837,-21.08461630086008</coordinates>
+        </Point>","-21,0846163009","55,2681468056"
+SG_v,chemin acadine,capital_big,quartier,"<Point>
+            <coordinates>55.27595866225505,-21.0954961607287</coordinates>
+        </Point>","-21,0954961607","55,2759586623"
+SG_v,perron,capital_big,quartier,"<Point>
+            <coordinates>55.27499624369864,-21.10025919118536</coordinates>
+        </Point>","-21,1002591912","55,2749962437"
+SG_v,chemin commune,capital_big,quartier,"<Point>
+            <coordinates>55.26826477044311,-21.09942522681198</coordinates>
+        </Point>","-21,0994252268","55,2682647704"
+SG_v,saint-coeur,capital_big,quartier,"<Point>
+            <coordinates>55.28855846878863,-21.09717376762749</coordinates>
+        </Point>","-21,0971737676","55,2885584688"
+SG_v,ravine daniel,capital_big,quartier,"<Point>
+            <coordinates>55.30710313554748,-21.08952195707337</coordinates>
+        </Point>","-21,0895219571","55,3071031355"

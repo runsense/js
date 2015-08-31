@@ -1,0 +1,7 @@
+id,nom,categ,description,geometry,lat,lng
+SAz_t,stade de hell bourg,play,stade de foot,"<Point>
+            <coordinates>55.52140716434128,-21.07017094416736</coordinates>
+        </Point>","-21,0701709442","55,5214071643"
+SAz_t,stade salazie,play, stade de foot,"<Point>
+            <coordinates>55.54340689064239,-21.02448152022322</coordinates>
+        </Point>","-21,0244815202","55,5434068906"

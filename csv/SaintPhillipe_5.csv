@@ -1,0 +1,13 @@
+id,nom,categ,description,geometry,lat,lng
+SPh_a,Le Palmier,realestate,"chambre d'hote
+gsm: +262 692 02 85 71","<Point>
+            <coordinates>55.770538,-21.35905833333333</coordinates>
+        </Point>","-21,3590583333","55,770538"
+SPh_a,Le Jardin des Parfums et des Epices,terain*hiker*hdcp," jardins
+label: villages créoles
++262 262 37 06 36
+tél: 0262 37 10 43
+gsm: 0692 66 09 01
+acces hdcp","<Point>
+            <coordinates>55.64064046905845,-21.27028055063421</coordinates>
+        </Point>","-21,2702805506","55,6406404691"

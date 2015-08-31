@@ -1,0 +1,22 @@
+id,nom,categ,description,geometry,lat,lng
+Saint-Gilles,Saint-Gilles,http://runsense.github.io/js/img/blason/Saint-Gilles.gif,"<a href=""http://stgilles.com/"" >http://stgilles.com/</a>
+'Zoreil land'
+ c'est le coin touristique de l'île. 
+de Roche noires à boucant canot, pour ses plages à vagues,
+et l'hermitage pour son lagon
+aux théatre plaines aires de saint-gilles les hauts pour ses concerts.","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.25258626051629,-21.11302539677942 55.25510124207446,-21.11126849554717 55.30646228064406,-21.09432517555838 55.36929451872821,-21.09972465686856 55.37970318996644,-21.10412071305589 55.40987769643556,-21.10872917560458 55.39813062022859,-21.09925533494407 55.39272459298729,-21.09019013599307 55.39179144968765,-21.0840983979111 55.33840924753982,-21.07406163963259 55.30365245297336,-21.05550097959507 55.2865001235752,-21.04560082485613 55.26729569255064,-21.03214113569844 55.25473007552497,-21.01689386570518 55.2469068227138,-21.02056150432695 55.23529772849331,-21.01886363122312 55.21692464193729,-21.03818526113741 55.22324019585747,-21.05441089111016 55.21801843609404,-21.07979650391627 55.23113795663016,-21.10007974529518 55.25258626051629,-21.11302539677942</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-21.048889,55.269167
+Saint-Gilles,plage roche noires,webcam,"<iframe
+  width=""auto""
+  height=""auto""
+  frameborder=""0"" style=""border:0""
+  src=""http://lesrochesnoires.dyndns.tv:8075/cgi-bin/viewer/video.jpg"" allowfullscreen>
+</iframe>","<Point>
+            <coordinates>55.22430779293525,-21.05378522338111</coordinates>
+        </Point>","-21,0537852234","55,2243077929"

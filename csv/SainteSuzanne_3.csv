@@ -1,0 +1,114 @@
+id,nom,categ,description,geometry,lat,lng
+SS_v,cap picard,mountains,pointInteret_,"<Point>
+            <coordinates>55.5536434336138,-21.00615617671677</coordinates>
+        </Point>","-21,0061561767","55,5536434336"
+SS_v,commune bègue les bas,capital_big,quartier,"<Point>
+            <coordinates>55.64239126685351,-20.94249373424017</coordinates>
+        </Point>","-20,9424937342","55,6423912669"
+SS_v,plage du Phare,water,"Sous le phare, se trouve une petite plage ensablé du sable gris de l'est","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.60230089114727,-20.90172574518316 55.6025954882735,-20.90162050249903 55.60262218047405,-20.90142665829899 55.60272629177172,-20.90145804415976 55.60265469790114,-20.90130141212856 55.60234924577467,-20.90108408857072 55.6021363953859,-20.90117359398653 55.60221472409535,-20.90139096929597 55.60222783165805,-20.90166176170702 55.60230089114727,-20.90172574518316</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SS_v,cascade du Niagara,swimming*parc,"parc de la cascade offrant
+ une plage de sable gris,
+mais aussi un magnifique mur d'escalade
+et le bassins de la cascade
+debouchant sur la rivière Sainte-Suzanne","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.60338239248789,-20.92037999505486 55.60398740739153,-20.92070532419589 55.60476308397158,-20.9203335352649 55.60449522088514,-20.92001115281104 55.60407196579826,-20.91977528405079 55.60342845339272,-20.91984559786218 55.60334369576734,-20.92013989168034 55.60338239248789,-20.92037999505486</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SS_v,Cheminée Quartier-Frannullais,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 2 mai 2002,"<Point>
+            <coordinates>55.63963900000001,-20.931889</coordinates>
+        </Point>","-20,931889","55,639639"
+SS_v,jupiter,capital_big,quartier,"<Point>
+            <coordinates>55.57863255896876,-20.91482894291499</coordinates>
+        </Point>","-20,9148289429","55,578632559"
+SS_v,la grande montée,capital_big,quartier,"<Point>
+            <coordinates>55.58310310678832,-20.92917398341235</coordinates>
+        </Point>","-20,9291739834","55,5831031068"
+SS_v,monaco,capital_big,quartier,"<Point>
+            <coordinates>55.58982870756989,-20.93013135621178</coordinates>
+        </Point>","-20,9301313562","55,5898287076"
+SS_v,niagara,capital_big,quartier,"<Point>
+            <coordinates>55.58879347729957,-20.93327682053159</coordinates>
+        </Point>","-20,9332768205","55,5887934773"
+SS_v,la grande ravinne,capital_big,quartier,"<Point>
+            <coordinates>55.59868626233912,-20.92186042810394</coordinates>
+        </Point>","-20,9218604281","55,5986862623"
+SS_v,les jacques cargo,capital_big,quartier,"<Point>
+            <coordinates>55.59581558038251,-20.91681643536168</coordinates>
+        </Point>","-20,9168164354","55,5958155804"
+SS_v,les jacques bel-air,capital_big,quartier,"<Point>
+            <coordinates>55.59578205616238,-20.90994667263869</coordinates>
+        </Point>","-20,9099466726","55,5957820562"
+SS_v,bel-air,capital_big,quartier,"<Point>
+            <coordinates>55.5964643847046,-20.90614504086591</coordinates>
+        </Point>","-20,9061450409","55,5964643847"
+SS_v,franche terre,capital_big,quartier,"<Point>
+            <coordinates>55.58004253620535,-20.90246012066364</coordinates>
+        </Point>","-20,9024601207","55,5800425362"
+SS_v,pointe du bel-air,mountains,mont,"<Point>
+            <coordinates>55.60232350559412,-20.90136130553315</coordinates>
+        </Point>","-20,9013613055","55,6023235056"
+SS_v,village desprez,capital_big,quartier,"<Point>
+            <coordinates>55.61317477158479,-20.90886932811734</coordinates>
+        </Point>","-20,9088693281","55,6131747716"
+SS_v,la marinne,capital_big,quartier,"<Point>
+            <coordinates>55.62264640773438,-20.91206652296464</coordinates>
+        </Point>","-20,912066523","55,6226464077"
+SS_v,les cascades,capital_big,quartier,"<Point>
+            <coordinates>55.61284908724295,-20.91746634787645</coordinates>
+        </Point>","-20,9174663479","55,6128490872"
+SS_v,la vigne,capital_big,quartier,"<Point>
+            <coordinates>55.61537324968168,-20.92079233666725</coordinates>
+        </Point>","-20,9207923367","55,6153732497"
+SS_v,la butte,capital_big,quartier,"<Point>
+            <coordinates>55.61997138379045,-20.92322050015496</coordinates>
+        </Point>","-20,9232205002","55,6199713838"
+SS_v,marancourt,capital_big,quartier,"<Point>
+            <coordinates>55.60469640086562,-20.91792102597307</coordinates>
+        </Point>","-20,917921026","55,6046964009"
+SS_v,la renaissance,capital_big,quartier,"<Point>
+            <coordinates>55.60441125325809,-20.92583103261427</coordinates>
+        </Point>","-20,9258310326","55,6044112533"
+SS_v,la liberté,capital_big,quartier,"<Point>
+            <coordinates>55.60262259934,-20.9378215412202</coordinates>
+        </Point>","-20,9378215412","55,6026225993"
+SS_v,commune carron,capital_big,quartier,"<Point>
+            <coordinates>55.61971275144715,-20.9330898466168</coordinates>
+        </Point>","-20,9330898466","55,6197127514"
+SS_v,commune ango,capital_big,quartier,"<Point>
+            <coordinates>55.61984369913606,-20.94315570324837</coordinates>
+        </Point>","-20,9431557032","55,6198436991"
+SS_v,délice,capital_big,quartier,"<Point>
+            <coordinates>55.63356874400856,-20.93479478690934</coordinates>
+        </Point>","-20,9347947869","55,633568744"
+SS_v,sainte-vivienne,capital_big,quartier,"<Point>
+            <coordinates>55.63756725652675,-20.93715803792926</coordinates>
+        </Point>","-20,9371580379","55,6375672565"
+SS_v,la rue marchande,capital_big,quartier,"<Point>
+            <coordinates>55.6234881233096,-20.94973574887554</coordinates>
+        </Point>","-20,9497357489","55,6234881233"
+SS_v,l'espérance,capital_big,quartier,"<Point>
+            <coordinates>55.60735140892075,-20.95080334056517</coordinates>
+        </Point>","-20,9508033406","55,6073514089"
+SS_v,bras pistolet,capital_big,quartier,"<Point>
+            <coordinates>55.60613052096941,-20.96071929100755</coordinates>
+        </Point>","-20,960719291","55,606130521"
+SS_v,bras de fer,capital_big,quartier,"<Point>
+            <coordinates>55.60350680259063,-20.96542552289644</coordinates>
+        </Point>","-20,9654255229","55,6035068026"
+SS_v,lotissement bras pistolet,capital_big,quartier,"<Point>
+            <coordinates>55.58721518767533,-20.96781173037822</coordinates>
+        </Point>","-20,9678117304","55,5872151877"
+SS_v,la forêt dugain,capital_big,quartier,"<Point>
+            <coordinates>55.5855560186093,-20.97617164079485</coordinates>
+        </Point>","-20,9761716408","55,5855560186"

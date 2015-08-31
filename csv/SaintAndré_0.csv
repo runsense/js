@@ -1,0 +1,16 @@
+id,nom,categ,description,geometry,lat,lng
+SAd_t,Tennis-club Croix de Saint-André,donut,tennis club,"<Point>
+            <coordinates>55.65085799464256,-20.96765534020289</coordinates>
+        </Point>","-20,9676553402","55,6508579946"
+SAd_t,stade d'athlétisme,play,stade d'athlétisme,"<Point>
+            <coordinates>55.65645243346432,-20.96571690627737</coordinates>
+        </Point>","-20,9657169063","55,6564524335"
+SAd_t,stade ti'bazard,play,stade de foot,"<Point>
+            <coordinates>55.64855133148739,-20.94384054521937</coordinates>
+        </Point>","-20,9438405452","55,6485513315"
+SAd_t,stade de cambuston,play, stade de foot,"<Point>
+            <coordinates>55.64559946434292,-20.9309211873821</coordinates>
+        </Point>","-20,9309211874","55,6455994643"
+SAd_t,stade de champ-borne,play,stade de foot,"<Point>
+            <coordinates>55.67663255642761,-20.94012028354526</coordinates>
+        </Point>","-20,9401202835","55,6766325564"

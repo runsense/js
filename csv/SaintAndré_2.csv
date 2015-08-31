@@ -1,0 +1,110 @@
+id,nom,categ,description,geometry,lat,lng
+SAd_md,Le Champ Borne,dining*hdcp,"restaurant, banquets _
+<b>spe:cuisine créole, chinoise et métropolitaine</b>_
+tél: +262 262 46 16 67 _
+gsm: +262 692 86 93 43 _
+acces hdcp","<Point>
+            <coordinates>55.67739955,-20.94033888888889</coordinates>
+        </Point>","-20,9403388889","55,67739955"
+SAd_md,Dragon Palace,dining,"restaurant _
+<b>spé:cuisine asiatique</b>_
+tél: +262 262 58 00 98","<Point>
+            <coordinates>55.64875,-20.96412222222222</coordinates>
+        </Point>","-20,9641222222","55,64875"
+SAd_md,Resto Sheng,dining*hdcp,"restaurant _
+<b>spé:spécialités chinoises</b>_
+tél: +262 262 46 33 66 _
+acces hdcp","<Point>
+            <coordinates>55.64356525000001,-20.93230277777778</coordinates>
+        </Point>","-20,9323027778","55,64356525"
+SAd_md,Le Savan'Café,snack_bar,"snack _
+<b>spé:spécialités créoles</b>_
+tél: +262 262 58 70 73 _
+gsm: +262 692 77 70 13","<Point>
+            <coordinates>55.661678,-20.92810833333333</coordinates>
+        </Point>","-20,9281083333","55,661678"
+SAd_md,Savriama Véronique,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 46 69 84 _
+gsm: +262 692 87 52 03","<Point>
+            <coordinates>55.69189562,-20.9697</coordinates>
+        </Point>","-20,9697","55,69189562"
+SAd_md,Auberge le Désert,realestate*gite_de_france*hdcp,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 46 64 43 _
+gsm: +262 692 85 68 01 _
+acces hdcp","<Point>
+            <coordinates>55.6305682,-20.96471111111111</coordinates>
+        </Point>","-20,9647111111","55,6305682"
+SAd_md,Le Franciscéas,dining*hdcp,"restaurant _
+<b>spe:  cuisine créole traditionnelle, chinoise et métro</b>_
+tél: +262 262 46 26 55 _
+acces hdcp","<Point>
+            <coordinates>55.64881700000001,-20.96216944444445</coordinates>
+        </Point>","-20,9621694444","55,648817"
+SAd_md,Le BCL,dining," restaurant, bar _
+<b>spe: cuisine créole traditionnelle, chinoise et métropolitaine</b>_
+tél: +262 262 30 95 33 _
+gsm: +262 692 66 43 86","<Point>
+            <coordinates>55.64540000000001,-20.93033611111111</coordinates>
+        </Point>","-20,9303361111","55,6454"
+SAd_md,Kom' La Kaz,dining*hdcp," restaurant _
+<b>spe:Cuisine asiatique, Cuisine créole</b>_
+tél: +262 262 58 30 48 _
+acces hdcp","<Point>
+            <coordinates>55.64753485999999,-20.96245277777778</coordinates>
+        </Point>","-20,9624527778","55,64753486"
+SAd_md,Le Gril du Colosse,dining,"restaurant _
+<b>spe:cuisine créole, des grillades, des kebabs et des salades</b>_
+tél: +262 262 58 19 70 _
+gsm: +262 692 28 02 78","<Point>
+            <coordinates>55.66092220000001,-20.92789722222222</coordinates>
+        </Point>","-20,9278972222","55,6609222"
+SAd_md,La Mer de Chine,dining,"restaurant _
+<b>spe:cuisine chinoise</b>_
+tél: +262 262 58 77 80","<Point>
+            <coordinates>55.64955716999999,-20.95680555555556</coordinates>
+        </Point>","-20,9568055556","55,64955717"
+SAd_md,L' Igloo,ice*snack_bar,"glacier, snack _
+tél: +262 262 58 48 00","<Point>
+            <coordinates>55.653825,-20.96504166666666</coordinates>
+        </Point>","-20,9650416667","55,653825"
+SAd_md,Gaufrette Dorée,snack_bar,"snack _
+<b>spe:crêpes, gaufres et des glaces</b>_
+gsm: +262 692 13 26 98","<Point>
+            <coordinates>55.66139195,-20.92805277777778</coordinates>
+        </Point>","-20,9280527778","55,66139195"
+SAd_md,Restaurant Law-Shun,dining*hdcp,"restaurant, traiteur _
+<b>spe: cuisine créole et chinoise</b>_
+tél: +262 262 46 04 08 _
+acces hdcp","<Point>
+            <coordinates>55.64800243999999,-20.96821111111111</coordinates>
+        </Point>","-20,9682111111","55,64800244"
+SAd_md,Restaurant Velli,dining,"restaurant _
+<b>spe:Spécialités Réunionnaises</b>_
+tél: +262 262 46 03 38","<Point>
+            <coordinates>55.67246007,-20.93669444444445</coordinates>
+        </Point>","-20,9366944444","55,67246007"
+SAd_md,Le Beau Rivage,dining*hdcp," restaurant, traiteur, banquets _
+<b>spe:Cuisine européenne, Cuisine créole</b>_
+tél: +262 262 46 08 66 _
+gsm: +262 692 61 09 30 _
+acces hdcp","<Point>
+            <coordinates>55.68180699999999,-20.94360277777778</coordinates>
+        </Point>","-20,9436027778","55,681807"
+SAd_md,Siam Food Court,dining,"restaurant _
+<b>spe:Cuisine Japonaise</b>_
+tél: +262 262 92 92 12","<Point>
+            <coordinates>55.65131400000001,-20.96316388888889</coordinates>
+        </Point>","-20,9631638889","55,651314"
+SAd_md,La Case de Fantaisie,dining,"restaurant _
+<b>spe: Cuisine créole et chinoise</b>_
+tél: +262 692 46 96 04","<Point>
+            <coordinates>55.67432777777778,-20.94440277777778</coordinates>
+        </Point>","-20,9444027778","55,6743277778"
+SAd_md,Le Cantonnais,dining,"restaurant, buffet _
+<b>spe: gastronomiques</b>_
+tél: +262 262 58 39 13 _
+gsm: +262 692 67 91 01","<Point>
+            <coordinates>55.69490515520406,-20.94939092136214</coordinates>
+        </Point>","-20,9493909214","55,6949051552"

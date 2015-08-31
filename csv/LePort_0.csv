@@ -1,0 +1,12 @@
+id,nom,categ,description,geometry,lat,lng
+Por_t,COMPLEXE SPORTIF,play,"stade de foot_
+COMPLEXE SPORTIF 1 TERRAIN A Le Port 97420 LE PORT","<Point>
+            <coordinates>55.2899611111111,-20.948384</coordinates>
+        </Point>","-20,948384","55,2899611111"
+Por_t,Union sportive de la pointe des Galets,donut, tennis club,"<Point>
+            <coordinates>55.29984107802356,-20.93287614468713</coordinates>
+        </Point>","-20,9328761447","55,299841078"
+Por_t,Stade Lambrakis,play," stade de foot_
+club: SS Jeanne d'Arc","<Point>
+            <coordinates>55.300833,-20.93277777777778</coordinates>
+        </Point>","-20,9327777778","55,300833"

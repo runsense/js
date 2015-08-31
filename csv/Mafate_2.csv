@@ -1,0 +1,177 @@
+id,nom,categ,description,geometry,lat,lng
+Ma_md,Gîte d'Ilet à Malheur,realestate,"gite de randonnée_
+tél: +262 262 43 56 96_
+gsm: +262 692 23 23 44","<Point>
+            <coordinates>55.42811045,-21.026575</coordinates>
+        </Point>","-21,026575","55,42811045"
+Ma_md,Le Bambou,snack_bar," snack_
+gsm:  +262 692 27 48 60","<Point>
+            <coordinates>55.42621905999999,-21.04085833333334</coordinates>
+        </Point>","-21,0408583333","55,42621906"
+Ma_md,Louise Jean-Patrick,snack_bar,"snack_
+gsm: +262 692 10 28 41","<Point>
+            <coordinates>55.39240919,-21.04253888888889</coordinates>
+        </Point>","-21,0425388889","55,39240919"
+Ma_md,Gîte de Roche Plate,realestate,"gite de randonnée_
+tél: +262 262 90 78 78","<Point>
+            <coordinates>55.39833,-21.06861111111111</coordinates>
+        </Point>","-21,0686111111","55,39833"
+Ma_md,Le Relais de Mafate,realestate,"gite de randonnée_
+tél: +262 262 43 61 77_
+gsm: +262 692 26 08 53","<Point>
+            <coordinates>55.42404359,-21.07749444444444</coordinates>
+        </Point>","-21,0774944444","55,42404359"
+Ma_md,Chez Gravina Yvon,realestate,"gite de randonnée_
+tél: +262 262 43 38 72","<Point>
+            <coordinates>55.42328055555554,-21.07854444444444</coordinates>
+        </Point>","-21,0785444444","55,4232805556"
+Ma_md,Le Tamaréo,realestate,"gite de randonnée_
+gsm: +262 692 32 08 28","<Point>
+            <coordinates>55.421875,-21.07608333333333</coordinates>
+        </Point>","-21,0760833333","55,421875"
+Ma_md,Libelle Charlemagne,realestate,"gite de randonnée_
+tél: +262 262 43 36 83","<Point>
+            <coordinates>55.42280259,-21.01898333333333</coordinates>
+        </Point>","-21,0189833333","55,42280259"
+Ma_md,Gîte Coeur de Mafate,realestate,"gite de randonnée_
+tél: +262 262 55 01 68","<Point>
+            <coordinates>55.41152499999999,-21.04555277777778</coordinates>
+        </Point>","-21,0455527778","55,411525"
+Ma_md,Gîte Oreo,realestate," gite de randonnée_
+tél: +262 262 43 58 57_
+gsm: +262 692 04 32 28","<Point>
+            <coordinates>55.42169444444444,-21.0775261</coordinates>
+        </Point>","-21,0775261","55,4216944444"
+Ma_md,Chez Juliette,realestate,"gite de randonnée_
+gsm: +262 692 34 01 49","<Point>
+            <coordinates>55.40413865000001,-21.069575</coordinates>
+        </Point>","-21,069575","55,40413865"
+Ma_md,Gîte de l'Ilet à Bourse,realestate,"gite de randonnée_
+tél: +262 262 43 43 93_
+gsm: +262 692 19 76 05","<Point>
+            <coordinates>55.42608611111111,-21.03973611111112</coordinates>
+        </Point>","-21,0397361111","55,4260861111"
+Ma_md,Gîte Hoareau Yolande,realestate,"gite de randonnée_
+tél:  +262 262 43 78 31_
+gsm: +262 692 35 44 00","<Point>
+            <coordinates>55.43446944444444,-21.10288274</coordinates>
+        </Point>","-21,10288274","55,4344694444"
+Ma_md,Gîte Le Pavillon,realestate,"gite de randonnée_
+tél: +262 262 43 66 76_
+gsm: +262 692 66 60 83","<Point>
+            <coordinates>55.41225204,-21.04139722222222</coordinates>
+        </Point>","-21,0413972222","55,41225204"
+Ma_md,Gîte de Grand Place Cayenne,realestate,"gite de randonnée_
+tél: +262 262 43 85 42","<Point>
+            <coordinates>55.40442939,-21.03869444444445</coordinates>
+        </Point>","-21,0386944444","55,40442939"
+Ma_md,Chez Merlin,realestate,"gite de randonnée_
+tél: +262 262 33 48 30_
+gsm: +262 692 19 24 38","<Point>
+            <coordinates>55.40396944444444,-21.068436</coordinates>
+        </Point>","-21,068436","55,4039694444"
+Ma_md,Le Poinsétia,realestate,"gite de randonnée_
+tél: +262 262 55 02 33_
+gsm: +262 692 08 92 20","<Point>
+            <coordinates>55.42455894,-21.01846666666667</coordinates>
+        </Point>","-21,0184666667","55,42455894"
+Ma_md,Gîte des Trois Roches,realestate,"gite de randonnée_
+tél: +262 262 32 50 90_
+gsm: +262 692 23 38 37","<Point>
+            <coordinates>55.43145653999999,-21.10294444444445</coordinates>
+        </Point>","-21,1029444444","55,43145654"
+Ma_md,Gîte Vivette Thiburce,realestate,"gite de randonnée_
+tél: +262 262 71 24 01","<Point>
+            <coordinates>55.39892222222223,-21.06872222222222</coordinates>
+        </Point>","-21,0687222222","55,3989222222"
+Ma_md,Gîte Fanélie César,realestate," gite de randonnée_
+gsm: +262 692 03 26 15","<Point>
+            <coordinates>55.43144443,-21.10501388888889</coordinates>
+        </Point>","-21,1050138889","55,43144443"
+Ma_md,Gîte Libelle Franéois,realestate,"gite de randonnée_
+tél:  +262 262 42 31 36_
+gsm: +262 692 21 12 14","<Point>
+            <coordinates>55.42324444444444,-21.01896111111111</coordinates>
+        </Point>","-21,0189611111","55,4232444444"
+Ma_md,A l'Arbre du Voyageur,realestate,"gite de randonnée_
+tél: +262 262 43 50 60_
+gsm: +262 692 09 10 10","<Point>
+            <coordinates>55.42724200000001,-21.03122777777778</coordinates>
+        </Point>","-21,0312277778","55,427242"
+Ma_md,Gîte Eloise,realestate,"gite de randonnée_
+tél: +262 262 43 31 05_
+gsm: +262 692 29 13 70","<Point>
+            <coordinates>55.41539378,-21.04456111111111</coordinates>
+        </Point>","-21,0445611111","55,41539378"
+Ma_md,Le Gîte Bougainvillier,realestate,"gite de randonnée_
+tél:  +262 262 43 40 08_
+gsm: +262 692 27 25 02","<Point>
+            <coordinates>55.40965737,-21.03837222222223</coordinates>
+        </Point>","-21,0383722222","55,40965737"
+Ma_md,Gîte Hoareau Expedit,realestate,"gite de randonnée_
+tél:  +262 262 43 78 31_
+gsm: +262 692 35 44 00","<Point>
+            <coordinates>55.43360631,-21.10263888888889</coordinates>
+        </Point>","-21,1026388889","55,43360631"
+Ma_md,Gîte du Gros Piton,realestate," gite de randonnée_
+tél: +262 262 34 81 27_
+gsm: +262 692 20 56 71","<Point>
+            <coordinates>55.40413865000001,-21.069575</coordinates>
+        </Point>","-21,069575","55,40413865"
+Ma_md,Gîte des Bambous,realestate,"gite de randonnée_
+tél: +262 692 21 73 43_
+gsm: +262 692 30 39 98","<Point>
+            <coordinates>55.39944152,-21.03635277777778</coordinates>
+        </Point>","-21,0363527778","55,39944152"
+Ma_md,Gîte Giroday,realestate,"gite de randonnée_
+tél: +262 262 43 83 13_
+gsm: +262 692 09 16 80","<Point>
+            <coordinates>55.43371388888889,-21.10428611111111</coordinates>
+        </Point>","-21,1042861111","55,4337138889"
+Ma_md,Ti Kaz' Bleu,realestate,"gite de randonnée_
+gsm: +262 692 29 37 58","<Point>
+            <coordinates>55.403409,-21.06899444444445</coordinates>
+        </Point>","-21,0689944444","55,403409"
+Ma_md,Louise Yoland,realestate,"gite de randonnée_
+tél: +262 262 43 50 90_
+gsm: +262 692 25 31 78","<Point>
+            <coordinates>55.39105344,-21.04334722222222</coordinates>
+        </Point>","-21,0433472222","55,39105344"
+Ma_md,Gîte de la Maison Laclos,realestate,"gite de randonnée_
+gsm: +262 692 07 86 54","<Point>
+            <coordinates>55.43760484999999,-21.09491666666667</coordinates>
+        </Point>","-21,0949166667","55,43760485"
+Ma_md,Refuge Cernot Jean-Paul,realestate,"gite de randonnée_
+tél: +262 262 43 82 41_
+gsm: +262 692 29 41 24","<Point>
+            <coordinates>55.3996754,-21.036075</coordinates>
+        </Point>","-21,036075","55,3996754"
+Ma_md,Miellerie de Marla,realestate,"gite de randonnée_
+gsm:  +262 692 03 20 99","<Point>
+            <coordinates>55.430278,-21.10111111111111</coordinates>
+        </Point>","-21,1011111111","55,430278"
+Ma_md,Gîte le Jacquier,realestate,"gite de randonnée_
+tél: +262 262 43 17 56_
+gsm: +262 692 05 02 13","<Point>
+            <coordinates>55.4000175,-21.036475</coordinates>
+        </Point>","-21,036475","55,4000175"
+Ma_md,Gravina Martial,realestate,"gite de randonnée_
+tél:  +262 262 43 01 73_
+tél: +262 692 61 72 22_
+gsm: 0692 53 06 42","<Point>
+            <coordinates>55.42752988,-21.08733611111111</coordinates>
+        </Point>","-21,0873361111","55,42752988"
+Ma_md,bégue alain,realestate,"gite de randonnée_
+tél: +262 262 43 43 10_
+gsm: +262 692 31 18 70","<Point>
+            <coordinates>55.42440013,-21.07745277777778</coordinates>
+        </Point>","-21,0774527778","55,42440013"
+Ma_md,Le Créole,realestate,"gite de randonnée_
+tél: +262 262 43 51 74","<Point>
+            <coordinates>55.42263898,-21.07470833333333</coordinates>
+        </Point>","-21,0747083333","55,42263898"
+Ma_md,le fanjan,lodging*realestate,"table d'hote,  gite de randonnée_
+tél: +262 262 43 86 38_
+gsm: +262 692 09 19 86","<Point>
+            <coordinates>55.42483355,-21.02163055555555</coordinates>
+        </Point>","-21,0216305556","55,42483355"

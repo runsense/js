@@ -1,0 +1,68 @@
+id,nom,categ,description,geometry,lat,lng
+SB_md,Le Regal'Est,dining*hdcp,"restaurant _
+tél: +262 262 97 04 31 _
+acces hdcp","<Point>
+            <coordinates>55.71423099999999,-21.03389166666667</coordinates>
+        </Point>","-21,0338916667","55,714231"
+SB_md,La 3ème Mi-Temps,dining,"restaurant _
+<b>spe: cuisine chinoise et créole </b>
+tél: +262 262 50 01 76","<Point>
+            <coordinates>55.687786,-21.03058333333333</coordinates>
+        </Point>","-21,0305833333","55,687786"
+SB_md,Le Beauvallon,dining,"restaurant _
+<b>spe: cuisine métropolitaine et indienne </b>_
+tél: +262 262 50 42 92 _
+gsm: 0692 66 35 62","<Point>
+            <coordinates>55.699604,-21.00586388888889</coordinates>
+        </Point>","-21,0058638889","55,699604"
+SB_md,Les Marsouins,dining,"restaurant _
+<b>spe:Cuisine asiatique, Cuisine créole</b>_
+tél: +262 262 50 15 64","<Point><coordinates>55.716972,-21.035675</coordinates></Point>","-21,035675","55,716972"
+SB_md,Canton Express,dining,"restaurant _
+<b>spe: chinoise</b>_ 
+tél: +262 262 47 83 29","<Point>
+            <coordinates>55.714577,-21.03640277777778</coordinates>
+        </Point>","-21,0364027778","55,714577"
+SB_md,Le Brasier,dining,"restaurant _
+<b>spe: Cuisine créole</b>_
+tél:  +262 262 21 40 30","<Point>
+            <coordinates>55.69826673391907,-21.04481517581374</coordinates>
+        </Point>","-21,0448151758","55,6982667339"
+SB_md,Kiosque des Mandarines,dining,"restaurant _
+<b>spe: Cuisine Créole</b>_
+tél: +262 692 84 91 92 _
+gsm: 0692 64 75 08","<Point>
+            <coordinates>55.64696179000001,-21.06014722222222</coordinates>
+        </Point>","-21,0601472222","55,64696179"
+SB_md,Le Vivaneau,dining,"restaurant _
+<b>spe: Cuisine créole, Cuisine européenne</b>_
+tél: +262 262 50 57 34","<Point>
+            <coordinates>55.71329621340998,-21.034851674163</coordinates>
+        </Point>","-21,0348516742","55,7132962134"
+SB_md,Le Vieux Domaine,dining,"restaurant, salles _
+<b>spe: gastronomique</b>_
+tél: +262 262 50 90 50 _
+gsm: +262 693 93 76 28","<Point>
+            <coordinates>55.70296271000001,-21.06466111111111</coordinates>
+        </Point>","-21,0646611111","55,70296271"
+SB_md,Saveurs de Takamaka,dining,"restaurant, gite, villa _
+<b>spe: Cuisine créole</b>_
+tél: +262 262 50 15 77 _
+gsm: +262 692 68 49 61","<Point>
+            <coordinates>55.66241911,-21.04168055555556</coordinates>
+        </Point>","-21,0416805556","55,66241911"
+SB_md,Resto Flash,dining," restaurant _
+<b>spe: cuisine créole et chinoise</b>_
+tél: +262 262 50 00 64","<Point>
+            <coordinates>55.71532500000001,-21.03617222222222</coordinates>
+        </Point>","-21,0361722222","55,715325"
+SB_md,Samoussas Taïlou,snack_bar," snack, traiteur _
+<b>spe: créole</b>_
+tél:  +262 262 50 73 34","<Point>
+            <coordinates>55.705,-21.03410277777778</coordinates>
+        </Point>","-21,0341027778","55,705"
+SB_md,Les Bambous,dining,"restaurant _
+<b>spe: Cuisine Asiatique et Créole</b>_
+tel:  +262 262 50 00 09","<Point>
+            <coordinates>55.71723837169197,-21.04020389938852</coordinates>
+        </Point>","-21,0402038994","55,7172383717"

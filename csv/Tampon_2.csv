@@ -1,0 +1,165 @@
+id,nom,categ,description,geometry,lat,lng
+T_md,M&G Traiteur Ile de La Réunion,dining*hdcp,"restaurant, traiteur
+tél: +262 262 59 94 56
+tél : 0693 30 74 86
+gsm: 0692 93 10 03
+acces hdcp","<Point>
+            <coordinates>55.503305,-21.29298888888889</coordinates>
+        </Point>","-21,2929888889","55,503305"
+T_md,Star Hnulltel,rec_lodging,"hotel
+tél: +262 262 27 20 69","<Point>
+            <coordinates>55.5085216,-21.295875</coordinates>
+        </Point>","-21,295875","55,5085216"
+T_md,Fleur de Palmes,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél: +262 262 49 84 14
+gsm: +262 692 21 66 24","<Point>
+            <coordinates>55.53537569,-21.29289444444445</coordinates>
+        </Point>","-21,2928944444","55,53537569"
+T_md,Case,dining,"restaurant
+tél: +262 262 49 55 31","<Point>
+            <coordinates>55.51962918919185,-21.28635783202909</coordinates>
+        </Point>","-21,286357832","55,5196291892"
+T_md,L' Estagnon,realestate*gite_de_france*hdcp,"chambre d'hote
+<b>label: gites de france</b>
+tél: +262 262 59 96 89
+gsm: 0692 82 45 85
+acces hdcp","<Point>
+            <coordinates>55.512017,-21.22759444444444</coordinates>
+        </Point>","-21,2275944444","55,512017"
+T_md,Fleur de Vanille,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél: +262 262 59 17 43
+gsm: +262 692 11 61 18","<Point>
+            <coordinates>55.52009722222222,-21.25154444444445</coordinates>
+        </Point>","-21,2515444444","55,5200972222"
+T_md,Le Rosier,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél: +262 262 57 19 64
+gsm: +262 692 69 24 26","<Point>
+            <coordinates>55.50029444444444,-21.23836944444444</coordinates>
+        </Point>","-21,2383694444","55,5002944444"
+T_md,Aux Deux Orangers,dining*gite_de_france,"chambre d'hote
+<b>label: gite de france</b>
+tél: +262 262 38 41 80
+gsm: +262 692 00 35 56","<Point>
+            <coordinates>55.498131,-21.24025277777778</coordinates>
+        </Point>","-21,2402527778","55,498131"
+T_md,Rosaces,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél:  +262 262 27 83 15","<Point>
+            <coordinates>55.53563,-21.28044166666667</coordinates>
+        </Point>","-21,2804416667","55,53563"
+T_md,Assiette Fleurie,dining," restaurant
+tél: +262 262 34 96 32
+gsm: +262 692 07 76 95","<Point>
+            <coordinates>55.51512000000001,-21.271125</coordinates>
+        </Point>","-21,271125","55,51512"
+T_md,Les Délices du Sud,dining,"restaurant
+tél:  +262 262 88 75 89
+gsm: +262 692 38 27 99","<Point>
+            <coordinates>55.52043843902382,-21.28113277541559</coordinates>
+        </Point>","-21,2811327754","55,520438439"
+T_md,Le Palais Indien,dining,"restaurant
+tél: +262 262 57 73 11
+gsm: +262 692 08 13 24","<Point>
+            <coordinates>55.520643,-21.28348888888889</coordinates>
+        </Point>","-21,2834888889","55,520643"
+T_md,Claire et Babette,dining*hdcp,"restaurant
+tél: +262 262 33 57 99
+gsm: +262 692 88 13 37
+acces hdcp","<Point>
+            <coordinates>55.515238,-21.27911111111111</coordinates>
+        </Point>","-21,2791111111","55,515238"
+T_md,Le Guang Dong,dining,"restaurant
+tél:  +262 262 57 67 96","<Point>
+            <coordinates>55.51339522999999,-21.27993055555556</coordinates>
+        </Point>","-21,2799305556","55,51339523"
+T_md,La Fiesta,dining*hdcp,"restaurant
+tél: +262 262 57 43 59
+acces hdcp","<Point>
+            <coordinates>55.51794,-21.28111666666667</coordinates>
+        </Point>","-21,2811166667","55,51794"
+T_md,Le Long Board,dining,"restaurant
+tél: +262 262 27 10 27
+gsm: +262 692 88 36 47","<Point>
+            <coordinates>55.51506974000001,-21.27921388888889</coordinates>
+        </Point>","-21,2792138889","55,51506974"
+T_md,Pavillon Créole,dining*hdcp,"restaurant
+tél: +262 262 57 54 65
+acces hdcp","<Point>
+            <coordinates>55.51375700000001,-21.26792777777778</coordinates>
+        </Point>","-21,2679277778","55,513757"
+T_md,Aux Délices des Iles,dining,"restaurant
+tél:  +262 262 57 34 31","<Point>
+            <coordinates>55.516764,-21.27328333333333</coordinates>
+        </Point>","-21,2732833333","55,516764"
+T_md,Bar A 4,snack_bar,"snack
+tél:  +262 262 27 96 57","<Point>
+            <coordinates>55.516668,-21.28026944444444</coordinates>
+        </Point>","-21,2802694444","55,516668"
+T_md,Pause Cafet,dining,"restaurant
+tél:  +262 262 24 10 79
+gsm: +262 692 87 51 97","<Point>
+            <coordinates>55.507244,-21.27243333333333</coordinates>
+        </Point>","-21,2724333333","55,507244"
+T_md,Eclats d'Arômes,dining,"restaurant
+tél: +262 262 88 77 60
+gsm: 0693 00 13 75","<Point>
+            <coordinates>55.52397985999999,-21.28354722222223</coordinates>
+        </Point>","-21,2835472222","55,52397986"
+T_md,Sud Hôtel,rec_lodging*dining,"hotel, restaurant
+tél: +262 262 27 07 90","<Point>
+            <coordinates>55.52136490000001,-21.28289166666666</coordinates>
+        </Point>","-21,2828916667","55,5213649"
+T_md,La Case à Sylvie,dining,"restaurant
+gsm: +262 692 34 34 94","<Point>
+            <coordinates>55.523008,-21.28138333333333</coordinates>
+        </Point>","-21,2813833333","55,523008"
+T_md,Bongo,dining,"restaurant
+tél: +262 262 57 69 69
+gsm: +262 692 76 28 89","<Point>
+            <coordinates>55.517508,-21.28094444444444</coordinates>
+        </Point>","-21,2809444444","55,517508"
+T_md,La Bonne Cuisine,dining," restaurant
+tél:  +262 262 27 70 63
+gsm: +262 692 65 03 15","<Point>
+            <coordinates>55.5194932,-21.27923333333333</coordinates>
+        </Point>","-21,2792333333","55,5194932"
+T_md,El latino,dining*club,"restaurant, pub
+tél: +262 262 59 68 58
+gsm: +262 692 02 03 42","<Point>
+            <coordinates>55.511494,-21.27206666666667</coordinates>
+        </Point>","-21,2720666667","55,511494"
+T_md,Paillote,dining,"restaurant
+tél:  +262 262 59 72 78","<Point>
+            <coordinates>55.520554,-21.27631111111111</coordinates>
+        </Point>","-21,2763111111","55,520554"
+T_md,Les Bons Enfants,dining,"restaurant
+tél: +262 262 27 20 95","<Point>
+            <coordinates>55.524568,-21.27871388888889</coordinates>
+        </Point>","-21,2787138889","55,524568"
+T_md,L' Ambéric,dining*hdcp,"restaurant
+<b>label: maître restaurateur</b>
+tél: +262 262 57 77 68
+acces hdcp","<Point>
+            <coordinates>55.51272363,-21.26140555555556</coordinates>
+        </Point>","-21,2614055556","55,51272363"
+T_md,L' Impériale Pirun Pizzeria,dining*pizza,"restaurant, pizza
+tél: +262 262 57 55 27","<Point>
+            <coordinates>55.51321095000001,-21.28004444444444</coordinates>
+        </Point>","-21,2800444444","55,51321095"
+T_md,Bar le 3615 El Pesciofi,dining,"restaurant, bar
+tél: +262 262 27 00 98","<Point>
+            <coordinates>55.51481958049246,-21.28164271622397</coordinates>
+        </Point>","-21,2816427162","55,5148195805"
+T_md,Hôtel Outre Mer,rec_lodging*hdcp," hotel
+tél: +262 262 57 30 30
+gsm: +262 692 83 01 33
+acces hdcp","<Point>
+            <coordinates>55.51532,-21.27783611111111</coordinates>
+        </Point>","-21,2778361111","55,51532"
+T_md,Le Tulipier,realestate," chambre d'hote
+tél: +262 262 57 09 41","<Point>
+            <coordinates>55.51664527,-21.26433055555556</coordinates>
+        </Point>","-21,2643305556","55,51664527"

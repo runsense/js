@@ -1,0 +1,21 @@
+id,nom,categ,description,geometry,lat,lng
+SB_a,Le Comptoir Mélissa,hiker,"visite du patrimoine _
+tél: +262 262 21 12 12 _
+gsm: +262 692 00 66 99","<Point>
+            <coordinates>55.69027935,-21.0469</coordinates>
+        </Point>","-21,0469","55,69027935"
+SB_a,Oasis Eaux Vives,canoeing*sailing,"randonnée aquatique, rafting, hydrospeed, loisir nautique _
+<b>label: qualité tourisme </b>
+gsm: +262 692 00 16 23","<Point>
+            <coordinates>55.69295911999999,-21.044175</coordinates>
+        </Point>","-21,044175","55,69295912"
+SB_a,marché,grocery,"marché _
+période: samedi de 5h à 12h","<Point>
+            <coordinates>55.7153957949654,-21.03549860032073</coordinates>
+        </Point>","-21,0354986003","55,715395795"
+SB_a,Plantation Mélissa,terain*grocery,"Découvrez ici les productions de la Plantation Mélissa :
+ Fleurs tropicales qui règnent en maître sur l'exploitation depuis plus de 25 ans,
+ mais aussi de nombreuses variétés de Fruits 
+dont l'histoire se confond bien souvent avec celle de notre terrain","<Point>
+            <coordinates>55.69121199996588,-21.04807516462232</coordinates>
+        </Point>","-21,0480751646","55,691212"

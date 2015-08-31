@@ -1,0 +1,72 @@
+id,nom,categ,description,geometry,lat,lng
+SD_t,STADE DE L EST JEAN IVOULA,play," stade de foot_
+STADE DE L EST JEAN IVOULA 10 RUE DU STADE DE L EST COMMUNE PRIMA 97490 ST DENIS","<Point>
+            <coordinates>55.50146091657843,-20.89510963737571</coordinates>
+        </Point>","-20,8951096374","55,5014609166"
+SD_t,STADE DEUX CANONS,play," stade de foot_
+STADE DEUX CANONS St Denis 97400 ST DENIS","<Point>
+            <coordinates>55.47503833264367,-20.89068821042726</coordinates>
+        </Point>","-20,8906882104","55,4750383326"
+SD_t,STADE CHAUDRON,play," stade de foot_
+STADE CHAUDRON B St Denis 97400 ST DENIS","<Point>
+            <coordinates>55.4888706131531,-20.88898222422334</coordinates>
+        </Point>","-20,8889822242","55,4888706132"
+SD_t,STADE DU MOUFIA,play," stade de foot_
+STADE DU MOUFIA St Denis 97400 ST DENIS","<Point>
+            <coordinates>55.48230826933606,-20.90798882823142</coordinates>
+        </Point>","-20,9079888282","55,4823082693"
+SD_t,Club sportif et artistique Lambert,donut, tennis club,"<Point>
+            <coordinates>55.44313965954022,-20.88296065890009</coordinates>
+        </Point>","-20,8829606589","55,4431396595"
+SD_t,ASPTT-Réunion,donut,tennis club,"<Point>
+            <coordinates>55.4945581726106,-20.89233153322912</coordinates>
+        </Point>","-20,8923315332","55,4945581726"
+SD_t,Bourbon olympique tennis-club,donut, tennis club,"<Point>
+            <coordinates>55.4439575288961,-20.88639038992188</coordinates>
+        </Point>","-20,8863903899","55,4439575289"
+SD_t,Tennis-club Dionysien,donut,tennis club,"<Point><coordinates>55.495295,-20.887873</coordinates></Point>","-20,887873","55,495295"
+SD_t,Ligue réunionnaise de tennis,donut, tennis ligue,"<Point>
+            <coordinates>55.48661120912657,-20.89690156598455</coordinates>
+        </Point>","-20,896901566","55,4866112091"
+SD_t,Association sportive des électriciens de la Réunion - Électricité de France,donut,tennis club,"<Point>
+            <coordinates>55.44411513559455,-20.88640967559533</coordinates>
+        </Point>","-20,8864096756","55,4441151356"
+SD_t,Tennis-club municipal de Champ-Fleuri,donut, tennis club,"<Point>
+            <coordinates>55.46795301911952,-20.89115350808433</coordinates>
+        </Point>","-20,8911535081","55,4679530191"
+SD_t,Tennis-club de La Montagne,donut,"tennis club
+tél: +262 262 23 43 72
+<a href=""http://www.tcm974.com"" >http://www.tcm974.com</a>","<Point>
+            <coordinates>55.4254033636113,-20.90219194005034</coordinates>
+        </Point>","-20,9021919401","55,4254033636"
+SD_t,Association tennis-club du Nord,donut, tennis club,"<Point>
+            <coordinates>55.50160240511946,-20.89735616955791</coordinates>
+        </Point>","-20,8973561696","55,5016024051"
+SD_t,stade prima,play,stade de foot,"<Point>
+            <coordinates>55.50242554891283,-20.8969027197038</coordinates>
+        </Point>","-20,8969027197","55,5024255489"
+SD_t,stade de champ fleuri,cbh,stade d'athlétisme,"<Point>
+            <coordinates>55.46991078689297,-20.89020591286058</coordinates>
+        </Point>","-20,8902059129","55,4699107869"
+SD_t,stade synthétique,play, stade de foot,"<Point>
+            <coordinates>55.46709747253223,-20.88974000893935</coordinates>
+        </Point>","-20,8897400089","55,4670974725"
+SD_t,stade de montgaillard,play, stade de foot,"<Point>
+            <coordinates>55.46883588788828,-20.90125266630533</coordinates>
+        </Point>","-20,9012526663","55,4688358879"
+SD_t,vélodrome,cycling, piste cyclisme,"<Point>
+            <coordinates>55.47216076118064,-20.89245368624389</coordinates>
+        </Point>","-20,8924536862","55,4721607612"
+SD_t,skatePark béton,skate,skate,"<Point>
+            <coordinates>55.47123698473397,-20.89347400486836</coordinates>
+        </Point>","-20,8934740049","55,4712369847"
+SD_t,Le Green Billard Academy,pool,"billard _
+tél: +262 692 65 58 21","<Point>
+            <coordinates>55.44831582313289,-20.87454856113572</coordinates>
+        </Point>","-20,8745485611","55,4483158231"
+SD_t,Stade Jean-Ivoula,play,stade de foot club: SDFC,"<Point>
+            <coordinates>55.5015065144344,-20.89515192056736</coordinates>
+        </Point>","-20,8951519206","55,5015065144"
+SD_t,Stade de La Redoute,play,stade de foot _club: SDEFA et AS Redoute,"<Point>
+            <coordinates>55.44222200000001,-20.88416666666667</coordinates>
+        </Point>","-20,8841666667","55,442222"

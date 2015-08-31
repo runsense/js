@@ -1,0 +1,21 @@
+id,nom,categ,description,geometry,lat,lng
+TB_md,La Confidence,dining,"restaurant_
+tél:  +262 262 24 84 98_
+gsm: +262 692 65 25 18","<Point>
+            <coordinates>55.29567956,-21.10693611111111</coordinates>
+        </Point>","-21,1069361111","55,29567956"
+TB_md,Le Montagnard,dining,"restaurant_
+tél: +262 262 25 28 83_
+gsm: +262 692 65 25 18","<Point>
+            <coordinates>55.295168,-21.10624166666667</coordinates>
+        </Point>","-21,1062416667","55,295168"
+TB_md,Le Dalon Plage,realestate,"chambre d'hote_
+<b>label: gayfriendly</b>
+tél: +262 262 34 29 77","<Point>
+            <coordinates>55.315944,-21.14260555555556</coordinates>
+        </Point>","-21,1426055556","55,315944"
+TB_md,Villa Elixène,realestate,"chambre d'hote_
+<b>label: clévacances</b>
+tél:  +262 692 00 40 91","<Point>
+            <coordinates>55.25733,-21.11568611111111</coordinates>
+        </Point>","-21,1156861111","55,25733"

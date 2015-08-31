@@ -1,0 +1,5 @@
+id,nom,categ,description,geometry,lat,lng
+TB_a,meteo marinne,info_circle,"<a href=""http://www.meteolamer.re/spots.php?spot=troisbas"" >météo marinne</a>
+id map_overlay_img","<Point>
+            <coordinates>55.25576398612828,-21.11882418928507</coordinates>
+        </Point>","-21,1188241893","55,2557639861"

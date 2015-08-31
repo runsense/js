@@ -1,0 +1,191 @@
+id,nom,categ,description,geometry,lat,lng
+Ci_v,les trois salazes,mountains,mont,"<Point>
+            <coordinates>55.44110753875988,-21.10645208060488</coordinates>
+        </Point>","-21,1064520806","55,4411075388"
+Ci_v,sommet de l'entre-deux,mountains,mont,"<Point>
+            <coordinates>55.50708756491377,-21.14027087812984</coordinates>
+        </Point>","-21,1402708781","55,5070875649"
+Ci_v,piton rouge,mountains,mont,"<Point>
+            <coordinates>55.40980460704364,-21.13384333693696</coordinates>
+        </Point>","-21,1338433369","55,409804607"
+Ci_v,gros morne,mountains,mont,"<Point>
+            <coordinates>55.46508113893174,-21.08635396395817</coordinates>
+        </Point>","-21,086353964","55,4650811389"
+Ci_v,les salazes,mountains,mont,"<Point>
+            <coordinates>55.46793488119169,-21.08966761271909</coordinates>
+        </Point>","-21,0896676127","55,4679348812"
+Ci_v,piton des Neiges,mountains,"mont
+_Mont le plus haut de l'île","<Point>
+            <coordinates>55.48065865187911,-21.09962341083349</coordinates>
+        </Point>","-21,0996234108","55,4806586519"
+Ci_v,coteau kervéguen,mountains,mont,"<Point>
+            <coordinates>55.50413259575574,-21.12523230134627</coordinates>
+        </Point>","-21,1252323013","55,5041325958"
+Ci_v,îlet geule rouge,mountains,mont,"<Point>
+            <coordinates>55.48126339788215,-21.15638500703804</coordinates>
+        </Point>","-21,156385007","55,4812633979"
+Ci_v,caverne Dufour,terain,pointInteret,"<Point>
+            <coordinates>55.49513643273518,-21.11141969841053</coordinates>
+        </Point>","-21,1114196984","55,4951364327"
+Ci_v,Mare à jonc,water,"rivière
+_Lieu de détente pour ciloaciens,
+et touriste","<Point>
+            <coordinates>55.47649038545185,-21.1339688990694</coordinates>
+        </Point>","-21,1339688991","55,4764903855"
+Ci_v,maison Soledad,cbh,"historique
+_case créole de cilaos","<Point>
+            <coordinates>55.47053781449749,-21.13515441206728</coordinates>
+        </Point>","-21,1351544121","55,4705378145"
+Ci_v,Notre Dame des Neiges,cbh,"historique
+_typique des années 1930","<Point>
+            <coordinates>55.47256145523694,-21.13109117919992</coordinates>
+        </Point>","-21,1310911792","55,4725614552"
+Ci_v,cascade de bras rouge,water,rivière,"<Point>
+            <coordinates>55.46980342396048,-21.12409907862349</coordinates>
+        </Point>","-21,1240990786","55,469803424"
+Ci_v,mairie,road_shield1,pointInteret,"<Point>
+            <coordinates>55.47099055538284,-21.13528384907101</coordinates>
+        </Point>","-21,1352838491","55,4709905554"
+Ci_v,Maison de La Broderie à Cilaos,cbh,"historique
+_
+représentante de l'artisanat reunionais,
+elleoffre le savoir faire de la broderie cilaocienne","<Point>
+            <coordinates>55.47301152900447,-21.13380127992794</coordinates>
+        </Point>","-21,1338012799","55,473011529"
+Ci_v,le Chai de cilaos,cbh,"depuis 1970, le chai de ""Tsilaosa"" devient 
+l'unique producteur de vins de l'île","<Point>
+            <coordinates>55.47251096710039,-21.13469338113743</coordinates>
+        </Point>","-21,1346933811","55,4725109671"
+Ci_v,Source thermales,cbh,"2 source aux propriété curative:
+la Véronique et la source Irénée","<Point>
+            <coordinates>55.47049864507152,-21.13005364490708</coordinates>
+        </Point>","-21,1300536449","55,4704986451"
+Ci_v,anciens thermes,cbh,"historique
+","<Point>
+            <coordinates>55.47038167593421,-21.13073789851799</coordinates>
+        </Point>","-21,1307378985","55,4703816759"
+Ci_v,Tombe du Père Boiteau,church,"religion
+_
+père ayant marqué l'histoire de la commune,
+il était adoré comme un saint","<Point>
+            <coordinates>55.47214020263085,-21.13136680399505</coordinates>
+        </Point>","-21,131366804","55,4721402026"
+Ci_v,tête de lion,mountains,mont,"<Point>
+            <coordinates>55.46396649074907,-21.11802858586659</coordinates>
+        </Point>","-21,1180285859","55,4639664907"
+Ci_v,plateau du petit matarum,terain,pointInteret,"<Point>
+            <coordinates>55.48401896314661,-21.11017663578124</coordinates>
+        </Point>","-21,1101766358","55,4840189631"
+Ci_v,cap bouteille,mountains,mont,"<Point>
+            <coordinates>55.45894257356805,-21.09897116911153</coordinates>
+        </Point>","-21,0989711691","55,4589425736"
+Ci_v,bras de cilaos,water,rivière,"<Point>
+            <coordinates>55.46052031869939,-21.25621006966889</coordinates>
+        </Point>","-21,2562100697","55,4605203187"
+Ci_v,le petit serré,capital_big,quartier,"<Point>
+            <coordinates>55.45510151130961,-21.21393786719203</coordinates>
+        </Point>","-21,2139378672","55,4551015113"
+Ci_v,îlet palmiste,capital_big,quartier,"<Point>
+            <coordinates>55.45009906355061,-21.19374722370473</coordinates>
+        </Point>","-21,1937472237","55,4500990636"
+Ci_v,îlet haut,capital_big,quartier,"<Point>
+            <coordinates>55.45817845001233,-21.18889254060016</coordinates>
+        </Point>","-21,1888925406","55,45817845"
+Ci_v,îlet grand,capital_big,quartier,"<Point>
+            <coordinates>55.45238871108914,-21.17887118753746</coordinates>
+        </Point>","-21,1788711875","55,4523887111"
+Ci_v,peter both,capital_big,"quartier
+_
+du nom d'un mont de l'île maurice 
+qui est similaire à celui qui le surplomb,
+en l'hommage au premier gouverneur des Indes Néerlandaises,
+berceau de la production de vin","<Point>
+            <coordinates>55.46179622413084,-21.17331523366171</coordinates>
+        </Point>","-21,1733152337","55,4617962241"
+Ci_v,îlet calebasse,capital_big,quartier,"<Point>
+            <coordinates>55.47851161486197,-21.18030913811041</coordinates>
+        </Point>","-21,1803091381","55,4785116149"
+Ci_v,le palmiste rouge,capital_big,quartier,"<Point>
+            <coordinates>55.47800248182485,-21.16818497849411</coordinates>
+        </Point>","-21,1681849785","55,4780024818"
+Ci_v,îlet alcide ti charles,capital_big,quartier,"<Point>
+            <coordinates>55.45544955216694,-21.22008697936144</coordinates>
+        </Point>","-21,2200869794","55,4554495522"
+Ci_v,îlet augustin,capital_big,quartier,"<Point>
+            <coordinates>55.45087065454088,-21.20841847520502</coordinates>
+        </Point>","-21,2084184752","55,4508706545"
+Ci_v,îlet ti sel,capital_big,quartier,"<Point>
+            <coordinates>55.44869627132336,-21.20428233247106</coordinates>
+        </Point>","-21,2042823325","55,4486962713"
+Ci_v,le pavillon,capital_big,quartier,"<Point>
+            <coordinates>55.45078663107857,-21.18971507586087</coordinates>
+        </Point>","-21,1897150759","55,4507866311"
+Ci_v,le parc à dennemont,capital_big,quartier,"<Point>
+            <coordinates>55.44189518875976,-21.17931884441823</coordinates>
+        </Point>","-21,1793188444","55,4418951888"
+Ci_v,piton fougères,mountains,mont,"<Point>
+            <coordinates>55.46595262729452,-21.17622943336067</coordinates>
+        </Point>","-21,1762294334","55,4659526273"
+Ci_v,le cap,capital_big,quartier,"<Point>
+            <coordinates>55.48176893723358,-21.16548787058273</coordinates>
+        </Point>","-21,1654878706","55,4817689372"
+Ci_v,grand piton,mountains,mont,"<Point>
+            <coordinates>55.48437285465631,-21.15850993002633</coordinates>
+        </Point>","-21,15850993","55,4843728547"
+Ci_v,gros morne de geule rouge,mountains,mont,"<Point>
+            <coordinates>55.46618404419264,-21.16564439661892</coordinates>
+        </Point>","-21,1656443966","55,4661840442"
+Ci_v,îlet du bonnet carré,capital_big,quartier,"<Point>
+            <coordinates>55.48628236602645,-21.15358537992296</coordinates>
+        </Point>","-21,1535853799","55,486282366"
+Ci_v,mare à sèche,capital_big,quartier,"<Point>
+            <coordinates>55.46544797444251,-21.15309618055006</coordinates>
+        </Point>","-21,1530961806","55,4654479744"
+Ci_v,la plateforme,capital_big,quartier,"<Point>
+            <coordinates>55.46648444938618,-21.15311510117963</coordinates>
+        </Point>","-21,1531151012","55,4664844494"
+Ci_v,mare à sèche,capital_big,quartier,"<Point>
+            <coordinates>55.46755043089515,-21.14573250326262</coordinates>
+        </Point>","-21,1457325033","55,4675504309"
+Ci_v,le brulé marron,capital_big,quartier,"<Point>
+            <coordinates>55.46850615201311,-21.1403160963829</coordinates>
+        </Point>","-21,1403160964","55,468506152"
+Ci_v,les trois mares,capital_big,quartier,"<Point>
+            <coordinates>55.4754295360335,-21.13835127885993</coordinates>
+        </Point>","-21,1383512789","55,475429536"
+Ci_v,le petit matarun,capital_big,quartier,"<Point>
+            <coordinates>55.47963316274596,-21.13097752186639</coordinates>
+        </Point>","-21,1309775219","55,4796331627"
+Ci_v,bras sec,capital_big,quartier,"<Point>
+            <coordinates>55.48986421857654,-21.14034608122071</coordinates>
+        </Point>","-21,1403460812","55,4898642186"
+Ci_v,îlet du bois rouge,capital_big,quartier,"<Point>
+            <coordinates>55.4576494750008,-21.12558394175833</coordinates>
+        </Point>","-21,1255839418","55,457649475"
+Ci_v,îlet chicots,capital_big,quartier,"<Point>
+            <coordinates>55.44770116255787,-21.12323646979763</coordinates>
+        </Point>","-21,1232364698","55,4477011626"
+Ci_v,piton de sucre,mountains,mont,"<Point>
+            <coordinates>55.44618386505959,-21.13067189677224</coordinates>
+        </Point>","-21,1306718968","55,4461838651"
+Ci_v,piton fleur jaune,mountains,mont,"<Point>
+            <coordinates>55.43268706165672,-21.12640929355959</coordinates>
+        </Point>","-21,1264092936","55,4326870617"
+Ci_v,îlet des salazes,capital_big,quartier,"<Point>
+            <coordinates>55.44965715596113,-21.11309054942925</coordinates>
+        </Point>","-21,1130905494","55,449657156"
+Ci_v,îlet à cordes,capital_big,quartier,"<Point>
+            <coordinates>55.4367001136542,-21.15006550205537</coordinates>
+        </Point>","-21,1500655021","55,4367001137"
+Ci_v,le parc à tortues,capital_big,lieuDit,"<Point>
+            <coordinates>55.44678788247239,-21.18496302417752</coordinates>
+        </Point>","-21,1849630242","55,4467878825"
+Ci_v,îlet gros galets,capital_big,lieuDit,"<Point>
+            <coordinates>55.48773509514787,-21.17396489739205</coordinates>
+        </Point>","-21,1739648974","55,4877350951"
+Ci_v,cilaos,road_shield1,ville,"<Point>
+            <coordinates>55.47132909100362,-21.13516935959607</coordinates>
+        </Point>","-21,1351693596","55,471329091"
+Ci_v,îlet source,capital_big,lieuDit,"<Point>
+            <coordinates>55.42520559882248,-21.15934368700528</coordinates>
+        </Point>","-21,159343687","55,4252055988"

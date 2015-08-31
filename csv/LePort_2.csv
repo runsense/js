@@ -1,0 +1,84 @@
+id,nom,categ,description,geometry,lat,lng
+Por_md,Le Poncho,dining," restaurant_
+tél: +262 262 59 58 40","<Point>
+            <coordinates>55.305835,-20.93926666666667</coordinates>
+        </Point>","-20,9392666667","55,305835"
+Por_md,La Caz',dining,"restaurant_
+tél: +262 262 43 45 75_
+gsm: +262 692 27 24 67","<Point>
+            <coordinates>55.28897433,-20.93971111111111</coordinates>
+        </Point>","-20,9397111111","55,28897433"
+Por_md,Tropic Asie,dining," restaurant_
+tél: +262 262 43 94 64","<Point>
+            <coordinates>55.28971027000001,-20.93756111111111</coordinates>
+        </Point>","-20,9375611111","55,28971027"
+Por_md,La Glacière,dining,"restaurant_
+tél: +262 262 43 19 12","<Point>
+            <coordinates>55.292193,-20.93385555555556</coordinates>
+        </Point>","-20,9338555556","55,292193"
+Por_md,La Petite Barquette,dining," restaurant_
+tél: +262 262 43 28 71_
+gsm: +262 692 66 46 62","<Point>
+            <coordinates>55.30868670000001,-20.93955555555556</coordinates>
+        </Point>","-20,9395555556","55,3086867"
+Por_md,Topolino,snack_bar*pizza,"snack, pizza_
+tél: +262 262 55 91 92","<Point>
+            <coordinates>55.29052669,-20.93848055555556</coordinates>
+        </Point>","-20,9384805556","55,29052669"
+Por_md,L' Auberge Gourmande,dining," restaurant_
+tél: +262 262 42 18 55_
+gsm: +262 692 56 19 11","<Point><coordinates>55.288661,-20.940975</coordinates></Point>","-20,940975","55,288661"
+Por_md,Rosie And John,dining," restaurant_
+tél: +262 262 43 07 29","<Point>
+            <coordinates>55.309239,-20.93643055555556</coordinates>
+        </Point>","-20,9364305556","55,309239"
+Por_md,Le Bataille Coq,dining," restaurant_
+gsm: +262 692 71 26 56","<Point><coordinates>55.296391,-20.9331</coordinates></Point>","-20,9331","55,296391"
+Por_md,Le Grand Bleu,coffee*dining," self, cafet_
+tél: +262 262 42 31 31","<Point>
+            <coordinates>55.31787378,-20.94687222222222</coordinates>
+        </Point>","-20,9468722222","55,31787378"
+Por_md,Cuisine de Marie,dining,"restaurant_
+tél:  +262 262 43 14 73_
+gsm: +262 692 70 58 98","<Point>
+            <coordinates>55.29206732,-20.93404166666667</coordinates>
+        </Point>","-20,9340416667","55,29206732"
+Por_md,La Boucherie,dining," restaurant_
+tél:  +262 262 38 95 53","<Point>
+            <coordinates>55.30983,-20.93864166666667</coordinates>
+        </Point>","-20,9386416667","55,30983"
+Por_md,Samoussas Taïlou,snack_bar,"snack, traiteur_
+tél: +262 262 71 01 53","<Point><coordinates>55.307949,-20.9555</coordinates></Point>","-20,9555","55,307949"
+Por_md,Live Restaurant,dining," restaurant_
+tél: +262 262 42 12 40","<Point>
+            <coordinates>55.29033623,-20.93577777777778</coordinates>
+        </Point>","-20,9357777778","55,29033623"
+Por_md,Portois,dining,"restaurant_
+tél: +262 262 42 04 49","<Point>
+            <coordinates>55.289042,-20.94442777777778</coordinates>
+        </Point>","-20,9444277778","55,289042"
+Por_md,Ile Noire,dining,"restaurant_
+tél: +262 262 42 00 50_
+gsm: +262 692 38 64 86","<Point>
+            <coordinates>55.28968224999999,-20.93748888888889</coordinates>
+        </Point>","-20,9374888889","55,28968225"
+Por_md,Le Galion,dining,"restaurant, traiteur_
+tél:  +262 262 42 02 23","<Point>
+            <coordinates>55.29193087,-20.93505277777778</coordinates>
+        </Point>","-20,9350527778","55,29193087"
+Por_md,Midi-Self,dining,"restaurant_
+tél: +262 262 42 12 40","<Point>
+            <coordinates>55.29063000000001,-20.93564444444445</coordinates>
+        </Point>","-20,9356444444","55,29063"
+Por_md,A l'Ouest,dining,"restaurant_
+tél: +262 262 25 69 29_
+gsm: +262 692 69 70 33","<Point><coordinates>55.289027,-20.944375</coordinates></Point>","-20,944375","55,289027"
+Por_md,Le D.C.P.,dining," restaurant, traiteur_
+tél: +262 262 38 95 53_
+gsm: +262 692 70 30 67","<Point>
+            <coordinates>55.30204700000001,-20.95069444444444</coordinates>
+        </Point>","-20,9506944444","55,302047"
+Por_md,Tung Fong,coffee*dining," self, cafet_
+tél: +262 262 43 49 28","<Point>
+            <coordinates>55.30902562,-20.93934166666667</coordinates>
+        </Point>","-20,9393416667","55,30902562"

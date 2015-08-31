@@ -1,0 +1,13 @@
+id,nom,categ,description,geometry,lat,lng
+Av_t,stade de foot,play,stade de foot,"<Point>
+            <coordinates>55.34069355953416,-21.23452282627559</coordinates>
+        </Point>","-21,2345228263","55,3406935595"
+Av_t,stade,play,"stade de foot, stade d'athlétisme","<Point>
+            <coordinates>55.33902903617535,-21.23500851158345</coordinates>
+        </Point>","-21,2350085116","55,3390290362"
+Av_t,stade,play,stade de foot,"<Point>
+            <coordinates>55.35769937551323,-21.20841780368654</coordinates>
+        </Point>","-21,2084178037","55,3576993755"
+Av_t,Stade Paulo-Brabant,play,stade de foot club: FC Avirons,"<Point>
+            <coordinates>55.34055600000001,-21.23444444444445</coordinates>
+        </Point>","-21,2344444444","55,340556"

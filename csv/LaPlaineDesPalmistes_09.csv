@@ -1,0 +1,4 @@
+id,nom,categ,description,geometry,lat,lng
+PP_t,Stade,play,"stade de foot, stade d'athlétisme","<Point>
+            <coordinates>55.62076311394097,-21.13411551724407</coordinates>
+        </Point>","-21,1341155172","55,6207631139"

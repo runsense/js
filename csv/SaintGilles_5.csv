@@ -1,0 +1,356 @@
+id,nom,categ,description,geometry,lat,lng
+SG_a,le petit marché de saint-gille,grocery,"marché_
+période:  mercredi de 5h à 12h","<Point>
+            <coordinates>55.22598410257743,-21.05267477354672</coordinates>
+        </Point>","-21,0526747735","55,2259841026"
+SG_a,Tropic Rando,cycling," vtt canoe randonné_
+tél: +262 262.71.92.42","<Point>
+            <coordinates>55.2605737679452,-21.05501927877652</coordinates>
+        </Point>","-21,0550192788","55,2605737679"
+SG_a,Aquarium de saint-gille,fishing,"aquarium_
+label: qualité tourisme_
+tél: +262 262 33 44 00","<Point>
+            <coordinates>55.22502945192944,-21.05454682384244</coordinates>
+        </Point>","-21,0545468238","55,2250294519"
+SG_a,MAEVASION,fishing," pêche au gros_
+label: qualité tourisme_
+tél: +262 262.33.38.04","<Point>
+            <coordinates>55.22638740107858,-21.0540656332076</coordinates>
+        </Point>","-21,0540656332","55,2263874011"
+SG_a,Alopia,fishing,"pêche au gros_
+tél: +262 262.65.22.35","<Point>
+            <coordinates>55.22617546629148,-21.05365578333964</coordinates>
+        </Point>","-21,0536557833","55,2261754663"
+SG_a,Blue Marlin,fishing,"pêche au gros_
+tél: +262 262.65.22.35","<Point>
+            <coordinates>55.224521,-21.05490833333333</coordinates>
+        </Point>","-21,0549083333","55,224521"
+SG_a,Octupus II,fishing,"pêche au gros_
+tél: +262 262.34.39.17","<Point>
+            <coordinates>55.22358446354563,-21.05529618766389</coordinates>
+        </Point>","-21,0552961877","55,2235844635"
+SG_a,Réunion Pêche au Gros,fishing," pêche au gros_
+tél: +262 262.33.33.99","<Point>
+            <coordinates>55.22575965185744,-21.05404915096924</coordinates>
+        </Point>","-21,054049151","55,2257596519"
+SG_a,Albacore Fisching Club,fishing,"pêche au gros_
+tél: +262 692.61.91.61","<Point>
+            <coordinates>55.22349385714179,-21.05519230833195</coordinates>
+        </Point>","-21,0551923083","55,2234938571"
+SG_a,Bleu Marine Réunion,diving,"plongé_
+tél: +262 262.24.22.00","<Point>
+            <coordinates>55.2232375876169,-21.05543862997629</coordinates>
+        </Point>","-21,05543863","55,2232375876"
+SG_a,Aress,diving,"plongé_
+tél: +262 262.24.32.79","<Point>
+            <coordinates>55.22709899977513,-21.0544539999072</coordinates>
+        </Point>","-21,0544539999","55,2270989998"
+SG_a,Sea Bleu,diving,"plongé_
+tél: +262 262.33.16.15","<Point>
+            <coordinates>55.22592634807485,-21.05422753521172</coordinates>
+        </Point>","-21,0542275352","55,2259263481"
+SG_a,Comité Régional de Sports Sous-Marins,diving," plongé_
+tél: +262 262.33.00.96","<Point>
+            <coordinates>55.22311799994077,-21.05761399984866</coordinates>
+        </Point>","-21,0576139998","55,2231179999"
+SG_a,Mascareignes Plongée,diving,"plongé_
+tél: +262 262.44.27.74","<Point>
+            <coordinates>55.22638144841324,-21.05380354086661</coordinates>
+        </Point>","-21,0538035409","55,2263814484"
+SG_a,Nauti-Ouest,diving*dollar," location vente mat plongé_
+tél: +262 262.24.43.79","<Point>
+            <coordinates>55.22610672046609,-21.05397971509422</coordinates>
+        </Point>","-21,0539797151","55,2261067205"
+SG_a,Escapade Plongée,diving,"plongé_
+tél: +262 692.76.17.47","<Point>
+            <coordinates>55.22753600003887,-21.05183000022497</coordinates>
+        </Point>","-21,0518300002","55,227536"
+SG_a,PONEY VERT,horsebackriding,"équitation_
+tél:+262 2 62 22 80 67_
+web: http://cheval-ocean-indien.com/fr/equitation-a-la-reunion/item/poney-vert","<Point>
+            <coordinates>55.26290302717009,-21.06837201174947</coordinates>
+        </Point>","-21,0683720117","55,2629030272"
+SG_a,rando réunion,cycling,"vtt vtc_
+tél: +262 262 24 26 19","<Point>
+            <coordinates>55.2217333705778,-21.04778807126528</coordinates>
+        </Point>","-21,0477880713","55,2217333706"
+SG_a,Centre Equestre de l'Hermitage,horsebackriding,"équitation_
+tél: +262 2 62 24 47 73","<Point>
+            <coordinates>55.22448034894653,-21.07007943734511</coordinates>
+        </Point>","-21,0700794373","55,2244803489"
+SG_a,Aqua Parc,swimming,"parc aquatique_
+tél: +262 262.24.49.61","<Point>
+            <coordinates>55.22151794883184,-21.07039139217894</coordinates>
+        </Point>","-21,0703913922","55,2215179488"
+SG_a,"Grand Bleu, Croisières&Découvertes",sailing,"croisière visio sous-marine_
+tél: +262 262.66.67.58","<Point>
+            <coordinates>55.22472374695156,-21.05467489063659</coordinates>
+        </Point>","-21,0546748906","55,224723747"
+SG_a,Compagnie des Alizés,sailing*pav,"catamaran_
+tél: +262 262.33.18.13","<Point>
+            <coordinates>55.22728834629861,-21.05248611837777</coordinates>
+        </Point>","-21,0524861184","55,2272883463"
+SG_a,Blue Cat,sailing*pav,"catamaran (Hobie 16)_
+tél: +262 262.24.32.04","<Point>
+            <coordinates>55.22311799994077,-21.05761399984866</coordinates>
+        </Point>","-21,0576139998","55,2231179999"
+SG_a,Micr Offshore,ski*sailing,"Micro'offshore_
+tél: +262 262.63.12.98","<Point>
+            <coordinates>55.22439599987824,-21.05353500008454</coordinates>
+        </Point>","-21,0535350001","55,2243959999"
+SG_a,Ecole de Jet Ski,ski*water,"jet ski_
+tél: +262 692.88.00.88","<Point>
+            <coordinates>55.22333201044634,-21.05525601583833</coordinates>
+        </Point>","-21,0552560158","55,2233320104"
+SG_a,Jet Evasion Réunion,ski*mc," jet ski_
+tél: +262 262.24.88.84","<Point>
+            <coordinates>55.22606921293473,-21.05382438533465</coordinates>
+        </Point>","-21,0538243853","55,2260692129"
+SG_a,O Jet Sensation,ski*mc," jet ski_
+tél: +262 692.28.08.04","<Point>
+            <coordinates>55.2260200999637,-21.05377241000807</coordinates>
+        </Point>","-21,05377241","55,2260201"
+SG_a,Ligue Réunionnaise de Surf,surf,"surf_
+tél: +262 262.24.33.10","<Point>
+            <coordinates>55.22372172001304,-21.05526197090447</coordinates>
+        </Point>","-21,0552619709","55,22372172"
+SG_a,Ecole de Surf des Roches Noires,surf," surf_
+tél: +262 262.24.63.28","<Point>
+            <coordinates>55.24943999990541,-21.1044550000909</coordinates>
+        </Point>","-21,1044550001","55,2494399999"
+SG_a,Glissy,surf,"surf_
+tél: +262 262.33.13.13","<Point>
+            <coordinates>55.2232640001387,-21.05197600006947</coordinates>
+        </Point>","-21,0519760001","55,2232640001"
+SG_a,Descente VTT Télénavette,cycling,"vtt_
+tél: +262 262 24 50 26_
+gsm: +262 692 21 11 11","<Point>
+            <coordinates>55.22172500021324,-21.04774899995239</coordinates>
+        </Point>","-21,047749","55,2217250002"
+SG_a,Rando Réunion Passion,cycling,"vtt_
+tél: +262 262.24.26.19","<Point>
+            <coordinates>55.22172432772634,-21.04778647715258</coordinates>
+        </Point>","-21,0477864772","55,2217243277"
+SG_a,Run Paint-ball,gun,"paint-ball_
+tél: +262 262.24.19.06","<Point>
+            <coordinates>55.24290599992004,-21.09932400001956</coordinates>
+        </Point>","-21,099324","55,2429059999"
+SG_a,Cat' Ananas,sailing,"catamaran de croisière_
+tél: +262 262.33.28.32","<Point>
+            <coordinates>55.22312901804975,-21.05544808835818</coordinates>
+        </Point>","-21,0554480884","55,223129018"
+SG_a,Open Voile Réunion,sailing,"voilier enf open 5.70_
+tél: +262 692.28.88.09","<Point>
+            <coordinates>55.22336440301807,-21.05547570170375</coordinates>
+        </Point>","-21,0554757017","55,223364403"
+SG_a,Cheminements,arts,"nuit d'art de pleine lune_
+tél: +262 262 22 96 57_
+gsm: +262 692 05 61 30","<Point>
+            <coordinates>55.255919,-21.04536388888889</coordinates>
+        </Point>","-21,0453638889","55,255919"
+SG_a,Oasis lagon,swimming,"parc aquatique_
+tél: +262 2 62 22 77 60","<Point>
+            <coordinates>55.22731051426805,-21.05370840398996</coordinates>
+        </Point>","-21,053708404","55,2273105143"
+SG_a,jet ski,ski*water,jet ski,"<Point>
+            <coordinates>55.22645522495848,-21.05359308098625</coordinates>
+        </Point>","-21,053593081","55,226455225"
+SG_a,Corail plongé,diving,"plongé_
+label: qualité tourisme_
+tél: +262 2 62 24 37 25.","<Point>
+            <coordinates>55.22636358813871,-21.05387316843772</coordinates>
+        </Point>","-21,0538731684","55,2263635881"
+SG_a,gloria maris,diving,club plongé,"<Point>
+            <coordinates>55.22619339730386,-21.05418729436496</coordinates>
+        </Point>","-21,0541872944","55,2261933973"
+SG_a,DCP pêche,sailing*dollar, outils pêche au gros,"<Point>
+            <coordinates>55.22451931202002,-21.05540030945222</coordinates>
+        </Point>","-21,0554003095","55,224519312"
+SG_a,Thalatropic,spa,"thalassothérapie_
+tél: +262 262 24 05 05","<Point>
+            <coordinates>55.22497565414419,-21.05472705198238</coordinates>
+        </Point>","-21,054727052","55,2249756541"
+SG_a,Jet ski attitude,ski*mc,"Jet Quad Evasion_
+jet ski_
+gsm: +262 6 92 082 200_
+tél: 02 62 701 572","<Point>
+            <coordinates>55.22363527892377,-21.0556333147</coordinates>
+        </Point>","-21,0556333147","55,2236352789"
+SG_a,bleu marine,diving,"plongé_
+label: qualité tourisme, gayfriendly_
+tél: +262 262 24 22 00 _
+gsm:0692 85 80 83","<Point>
+            <coordinates>55.22364815701665,-21.0557970335968</coordinates>
+        </Point>","-21,0557970336","55,223648157"
+SG_a,centre de pêche alpha,fishing,"pêche au gros_
+tél: +262 262 24 02 02","<Point>
+            <coordinates>55.22340231797023,-21.0558828761847</coordinates>
+        </Point>","-21,0558828762","55,223402318"
+SG_a,Escapade marine,diving,"plongé itinérante_
+tél: +262 6 92 76 17 47","<Point>
+            <coordinates>55.22288748960769,-21.05574749458138</coordinates>
+        </Point>","-21,0557474946","55,2228874896"
+SG_a,Run'Aventures Boutik,swimming*diving,"randonné aquatique_
+label: qualité tourisme_
+tél: +262 262 91 71 05_
+gsm: 0692 64 08 22","<Point>
+            <coordinates>55.22597040000001,-21.05432222222222</coordinates>
+        </Point>","-21,0543222222","55,2259704"
+SG_a,réunion fishing club,fishing,"pêche au gros_
+label: qualité tourisme_
+tél: +262 262 24 36 10_
+gsm: 0692 76 17 28","<Point>
+            <coordinates>55.22378109,-21.05556388888889</coordinates>
+        </Point>","-21,0555638889","55,22378109"
+SG_a,Ecole de Stand Up Paddle du lagon et de Surf des Roches Noires,surf,"école de surf_
+label: qualité tourisme_
+tél: +262 262 24 63 28_
+gsm: 0692 86 00 59","<Point>
+            <coordinates>55.22389266662491,-21.05563643955427</coordinates>
+        </Point>","-21,0556364396","55,2238926666"
+SG_a,Corail Safari,sailing," visio bulle_
+label: qualité tourisme, gayfriendly_
+tél: +262 262 33 28 32","<Point>
+            <coordinates>55.22471958416907,-21.05454017709043</coordinates>
+        </Point>","-21,0545401771","55,2247195842"
+SG_a,Cat'Ananas,sailing,"catamaran croisière_
+label: qualité tourisme, gayfriendly_
+tél: +262 262 33 28 32","<Point>
+            <coordinates>55.2247520731321,-21.0545951180348</coordinates>
+        </Point>","-21,054595118","55,2247520731"
+SG_a,O sea bleu,diving,"plongé_
+label: qualité tourisme_
+tél: +262 262 24 23 30
+gsm: +262 692 68 68 53","<Point>
+            <coordinates>55.22362080380259,-21.05515344437913</coordinates>
+        </Point>","-21,0551534444","55,2236208038"
+SG_a,Atlantide Evasion,diving,"plongé_
+gsm: +262 692 82 51 66","<Point>
+            <coordinates>55.225159,-21.05435833333333</coordinates>
+        </Point>","-21,0543583333","55,225159"
+SG_a,Réserve Naturelle Marine de La Réunion - Sentier sous-marin de l'Ermitage,diving,"plongé pmt_
+tél: +262 262 34 64 44_
+gsm: +262 692 89 18 68","<Point>
+            <coordinates>55.22318,-21.08043888888889</coordinates>
+        </Point>","-21,0804388889","55,22318"
+SG_a,Clou Surf Academy,surf,"surf, morais_
+tél: +262 262 33 92 37_
+gsm: +262 692 68 00 83","<Point>
+            <coordinates>55.25314000000001,-21.04424722222223</coordinates>
+        </Point>","-21,0442472222","55,25314"
+SG_a,Cereps Plongée,diving," plongé_
+tél: +262 262 24 40 12","<Point>
+            <coordinates>55.22754166666666,-21.05161944444444</coordinates>
+        </Point>","-21,0516194444","55,2275416667"
+SG_a,Ecole de Surf - Cyril Thevenau,surf,"surf morais_
+gsm: +262 692 04 40 40","<Point>
+            <coordinates>55.223255,-21.05209444444445</coordinates>
+        </Point>","-21,0520944444","55,223255"
+SG_a,Lavague,surf,"surf morais_
+tél: +262 692 61 60 01","<Point>
+            <coordinates>55.22417080372379,-21.05393845753843</coordinates>
+        </Point>","-21,0539384575","55,2241708037"
+SG_a,Mascareignes Plongée,diving," plongé_
+tél: +262 262 44 27 74_
+gsm: +262 692 85 57 55","<Point>
+            <coordinates>55.226254,-21.05382777777778</coordinates>
+        </Point>","-21,0538277778","55,226254"
+SG_a,Escapade Plongée,diving,"plongé mpt_
+gsm: +262 692 76 17 47","<Point>
+            <coordinates>55.250061,-21.10504722222223</coordinates>
+        </Point>","-21,1050472222","55,250061"
+SG_a,Réunion Formation Plongée,diving," plongé_
+tél:  +262 262 34 14 68_
+gsm: +262 692 70 71 06","<Point>
+            <coordinates>55.28231700000001,-20.94176111111111</coordinates>
+        </Point>","-20,9417611111","55,282317"
+SG_a,Le Cinquiéme Elément,hiker*diving,"randonnée pédestre, plongé_
+gsm: +262 692 86 29 48","<Point>
+            <coordinates>55.243232,-21.09958333333333</coordinates>
+        </Point>","-21,0995833333","55,243232"
+SG_a,Aileron - Windsurf,sailing*pav,"voile_
+tél: 0693 03 36 12","<Point>
+            <coordinates>55.24590400000001,-21.10265277777778</coordinates>
+        </Point>","-21,1026527778","55,245904"
+SG_a,Clear Lagoon,canoeing," kayak de mer_
+gsm: +262 692 30 74 74","<Point>
+            <coordinates>55.243056,-21.10075555555556</coordinates>
+        </Point>","-21,1007555556","55,243056"
+SG_a,marché arisanales noctures,grocery,"marché artisanale_
+période: 3èmes samedi /mois de 17h à 23h","<Point>
+            <coordinates>55.22608724048414,-21.0527053642663</coordinates>
+        </Point>","-21,0527053643","55,2260872405"
+SG_a,Marconnot Ludovic,cycling," V.T.T, Randonnée pédestre, Spéléologie, tunnels de lave, kayak de mer _
+gsm: +262 692833868_
+mail : ludo.concept@orange.fr_
+<a href=""http://www.reunionmeretmontagne.com"" >http://www.reunionmeretmontagne.com</a>","<Point>
+            <coordinates>55.232136,-21.05038888888889</coordinates>
+        </Point>","-21,0503888889","55,232136"
+SG_a,Le grand bleu,sailing,"bateau, visio bulle_
+label: gayfriendly, qualité tourisme_
+tél: +262 262 33 28 32","<Point>
+            <coordinates>55.22488464252001,-21.05468882623017</coordinates>
+        </Point>","-21,0546888262","55,2248846425"
+SG_a,Batoloc,sailing*dollar,"location bateau_
+tél: +262 262.33.48.67","<Point>
+            <coordinates>55.2234646223265,-21.05537224689581</coordinates>
+        </Point>","-21,0553722469","55,2234646223"
+SG_a,Captain Marmaille,sailing," bateau enf_
+tél: +262 692.60.37.70","<Point>
+            <coordinates>55.22610298752965,-21.05269595000069</coordinates>
+        </Point>","-21,05269595","55,2261029875"
+SG_a,Le grand bleu,grocery,"bateau, visio bulle_
+tél: +262 262 33 28 32","<Point>
+            <coordinates>55.2245931247295,-21.05475461720386</coordinates>
+        </Point>","-21,0547546172","55,2245931247"
+SG_a,Dauphin safari,sailing," bateau_
+label: gayfriendly, qualité tourisme_
+tél: +262 262 33 28 32","<Point>
+            <coordinates>55.22460476707503,-21.05475690988782</coordinates>
+        </Point>","-21,0547569099","55,2246047671"
+SG_a,Dauphin safari,sailing,"bateau_
+label: gayfriendly, qualité tourisme_
+tél: +262 262 33 28 32","<Point>
+            <coordinates>55.22537304379748,-21.05429209912909</coordinates>
+        </Point>","-21,0542920991","55,2253730438"
+SG_a,Bourbon Marine,diving*sailing*dollar," location plongé bateau_
+tél: +262 262.24.45.05","<Point>
+            <coordinates>55.22565000003637,-21.05487800002706</coordinates>
+        </Point>","-21,054878","55,22565"
+SG_a,sub marine plongé,diving,"club plongé, permis bateau_
+tél: +262 262 33 82 60_
+gsm: +262 692 20 25 49","<Point>
+            <coordinates>55.22304214464422,-21.05584410759571</coordinates>
+        </Point>","-21,0558441076","55,2230421446"
+SG_a,Ralphnautic,sailing,"Beneteau_
+vente bateau plaisance_
+tél: +262 2 62 22 77 60","<Point>
+            <coordinates>55.22698422338372,-21.05351130331158</coordinates>
+        </Point>","-21,0535113033","55,2269842234"
+SG_a,Compagnie des Pirates,sailing,"bateau voile_
+tél: +262 692 70 02 77_
+gsm: +262 692 66 20 84","<Point>
+            <coordinates>55.22165833333334,-21.04754166666667</coordinates>
+        </Point>","-21,0475416667","55,2216583333"
+SG_a,sub marine plongé,diving*sailing,"plongé bateau_
+tél: +262 262.33.17.15","<Point>
+            <coordinates>55.22746900029308,-21.05204799990194</coordinates>
+        </Point>","-21,0520479999","55,2274690003"
+SG_a,Bato ekol,sailing,"bateau école_
+activité: balade bateau_
+tél: +262 692.27.50.71","<Point>
+            <coordinates>55.22613804895251,-21.05467203127467</coordinates>
+        </Point>","-21,0546720313","55,226138049"
+SG_a,Bleu Indien,sailing*dollar,"location bateau_
+tél: +262 692.85.37.53","<Point>
+            <coordinates>55.22787100008293,-21.06065600004315</coordinates>
+        </Point>","-21,060656","55,2278710001"
+SG_a,visio bulle,sailing,"bateau,  visio bulle_
+label: qualité tourisme_
+tél: 262 262.85.23.46","<Point>
+            <coordinates>55.22462818780991,-21.05460672500256</coordinates>
+        </Point>","-21,054606725","55,2246281878"
+SG_a,THIM Nautique,ski*sailing*dollar,"location bateau ski nautique_
+tél: +262 262.24.23.24","<Point>
+            <coordinates>55.22341599987763,-21.05706699991239</coordinates>
+        </Point>","-21,0570669999","55,2234159999"

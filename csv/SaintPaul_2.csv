@@ -1,0 +1,277 @@
+id,nom,categ,description,geometry,lat,lng
+SPA_md,"Lé-bas, Ter la",dining,"restaurant
+_
+festival: 
+tél: +262 2 62 57 10 51","<Point>
+            <coordinates>55.27280928867608,-21.00739241300754</coordinates>
+        </Point>","-21,007392413","55,2728092887"
+SPA_md,Les Géraniums,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 44 28 11_
+gsm: +262 692 52 31 91","<Point>
+            <coordinates>55.33429,-21.01605277777778</coordinates>
+        </Point>","-21,0160527778","55,33429"
+SPA_md,Le Ruisseau,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 44 21 09_
+gsm: 0693 90 20 29","<Point>
+            <coordinates>55.311751,-21.03769166666667</coordinates>
+        </Point>","-21,0376916667","55,311751"
+SPA_md,Magdeleine Dominique et Rose,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 32 53 50_
+gsm: +262 692 75 15 39","<Point>
+            <coordinates>55.325275,-21.04253888888889</coordinates>
+        </Point>","-21,0425388889","55,325275"
+SPA_md,Chez Gaya et Suzie,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 32 45 14_
+gsm: 0693 04 92 84","<Point>
+            <coordinates>55.312133,-21.02851388888889</coordinates>
+        </Point>","-21,0285138889","55,312133"
+SPA_md,Ti Kaz Natur,dining,"restaurant_
+tél:  +262 262 54 08 46","<Point>
+            <coordinates>55.34039066255012,-21.04877038961073</coordinates>
+        </Point>","-21,0487703896","55,3403906626"
+SPA_md,Relais du Manulldo,dining*snack_bar,"restaurant, snack_
+<b>label: villages créoles</b>
+tél: +262 262 32 40 32_
+gsm: +262 692 86 51 65","<Point>
+            <coordinates>55.333363,-21.04823333333334</coordinates>
+        </Point>","-21,0482333333","55,333363"
+SPA_md,Bak Rouz,dining,"restaurant_
+tél: +262 262 32 56 71","<Point>
+            <coordinates>55.313233,-21.03895555555556</coordinates>
+        </Point>","-21,0389555556","55,313233"
+SPA_md,Chez Doudou,dining,"restaurant_
+<b>label: villages créoles</b>
+tél: +262 262 32 55 87_
+gsm: +262 692 70 00 39","<Point>
+            <coordinates>55.31014,-21.03713333333333</coordinates>
+        </Point>","-21,0371333333","55,31014"
+SPA_md,Chez Ary et Lucette,dining,"restaurant_
+tél:  +262 262 32 40 69","<Point>
+            <coordinates>55.334518,-21.04915833333334</coordinates>
+        </Point>","-21,0491583333","55,334518"
+SPA_md,Bar d'O,snack_bar," snack_
+tél:  +262 262 32 42 09","<Point>
+            <coordinates>55.327218,-21.00219722222222</coordinates>
+        </Point>","-21,0021972222","55,327218"
+SPA_md,Le Miel-Riz,dining,"restaurant_
+gsm: +262 692 71 72 25","<Point>
+            <coordinates>55.339985,-21.04814166666667</coordinates>
+        </Point>","-21,0481416667","55,339985"
+SPA_md,Chez Bazou,dining,"restaurant_
+<b>label: villages créoles</b>
+tél: +262 692 41 08 92_
+gsm: 0692 81 32 83","<Point>
+            <coordinates>55.329722,-21.04492777777778</coordinates>
+        </Point>","-21,0449277778","55,329722"
+SPA_md,La Table de Marie,dining,"restaurant_
+tél: +262 262 45 00 59","<Point>
+            <coordinates>55.27157781,-21.01023333333333</coordinates>
+        </Point>","-21,0102333333","55,27157781"
+SPA_md,Délices Chez Dong,dining,"restaurant_
+tél: +262 262 45 60 15","<Point>
+            <coordinates>55.271608,-21.00836944444444</coordinates>
+        </Point>","-21,0083694444","55,271608"
+SPA_md,Les Délices de Savannah,dining,"restaurant_
+tél: +262 262 45 61 35","<Point>
+            <coordinates>55.295409,-20.98648333333334</coordinates>
+        </Point>","-20,9864833333","55,295409"
+SPA_md,Point Chaud de l'Olympique,snack_bar*hdcp,"snack, traiteur_
+gsm: +262 692 36 27 88_
+acces hdcp","<Point>
+            <coordinates>55.28834177180589,-20.98450161542739</coordinates>
+        </Point>","-20,9845016154","55,2883417718"
+SPA_md,Les Trois Dragons,dining,"restaurant_
+tél:  +262 262 45 13 21","<Point>
+            <coordinates>55.28334444444446,-20.99758333333334</coordinates>
+        </Point>","-20,9975833333","55,2833444444"
+SPA_md,Le Jardin,dining," restaurant_
+tél: +262 262 45 05 82","<Point>
+            <coordinates>55.28507534,-20.99326388888889</coordinates>
+        </Point>","-20,9932638889","55,28507534"
+SPA_md,La Terranga,dining," restaurant_
+tél: +262 262 45 03 24","<Point>
+            <coordinates>55.28647599999999,-20.99351388888889</coordinates>
+        </Point>","-20,9935138889","55,286476"
+SPA_md,Auberge du Pavé,dining,"restaurant_
+tél:  +262 262 71 92 98_
+gsm: +262 692 00 62 72","<Point>
+            <coordinates>55.29874699999999,-21.02345</coordinates>
+        </Point>","-21,02345","55,298747"
+SPA_md,Le Petit Creux,dining,"restaurant_
+tél: +262 262 22 97 10","<Point>
+            <coordinates>55.265779,-21.02122222222222</coordinates>
+        </Point>","-21,0212222222","55,265779"
+SPA_md,Samoussas Tanulllou,snack_bar,"snack, traiteur_
+tél: +262 262 45 16 37","<Point>
+            <coordinates>55.293608,-20.98807222222222</coordinates>
+        </Point>","-20,9880722222","55,293608"
+SPA_md,"Lé-Bas, Ter La",dining,"restaurant_
+tél: +262 262 57 10 51","<Point>
+            <coordinates>55.27284699999999,-21.00745</coordinates>
+        </Point>","-21,00745","55,272847"
+SPA_md,Quai d'Orient,dining,"restaurant_
+tél: +262 262 96 08 39","<Point>
+            <coordinates>55.27418000000001,-21.00459444444444</coordinates>
+        </Point>","-21,0045944444","55,27418"
+SPA_md,Au Feu de Bois,dining,"restaurant_
+tél: +262 262 59 90 41","<Point>
+            <coordinates>55.27764,-21.00228055555555</coordinates>
+        </Point>","-21,0022805556","55,27764"
+SPA_md,Brasserie Phoenix,dining*bars,"restaurant, brasserie_
+gsm: +262 692 85 98 79","<Point>
+            <coordinates>55.29137001,-20.98105</coordinates>
+        </Point>","-20,98105","55,29137001"
+SPA_md,L' Ardoise des Délices,dining,"restaurant_
+gsm: +262 692 08 89 60","<Point><coordinates>55.276925,-21.005775</coordinates></Point>","-21,005775","55,276925"
+SPA_md,Chez Momon,dining,"restaurant_
+tél:  +262 262 22 13 31_
+gsm: +262 692 79 68 46","<Point>
+            <coordinates>55.26797538,-21.01065</coordinates>
+        </Point>","-21,01065","55,26797538"
+SPA_md,Au Petit Carreau,dining,"restaurant_
+tél: +262 262 45 67 46","<Point>
+            <coordinates>55.27116,-21.01361666666667</coordinates>
+        </Point>","-21,0136166667","55,27116"
+SPA_md,La Cabane,dining,"restaurant_
+tél: +262 262 44 79 31_
+gsm: +262 692 88 45 64","<Point>
+            <coordinates>55.27828044,-21.00370833333333</coordinates>
+        </Point>","-21,0037083333","55,27828044"
+SPA_md,Le Côte d'Azur,dining,"restaurant_
+tél:  +262 262 22 64 33","<Point>
+            <coordinates>55.27077076,-21.01348611111111</coordinates>
+        </Point>","-21,0134861111","55,27077076"
+SPA_md,Tonton Paul,dining,"restaurant_
+tél:  +262 262 22 56 05","<Point>
+            <coordinates>55.28515103277814,-21.00743193778577</coordinates>
+        </Point>","-21,0074319378","55,2851510328"
+SPA_md,Le Jardin,dining,"restaurant_
+tél:  +262 262 45 05 82","<Point>
+            <coordinates>55.28507534,-20.99326388888889</coordinates>
+        </Point>","-20,9932638889","55,28507534"
+SPA_md,Coco Bleu,dining,"restaurant_
+gsm: +262 692 47 24 02","<Point>
+            <coordinates>55.268354,-21.02035833333333</coordinates>
+        </Point>","-21,0203583333","55,268354"
+SPA_md,L' Assiette de Cambaie,dining," restaurant_
+tél:  +262 262 45 28 11","<Point>
+            <coordinates>55.2978118703655,-20.96171682912033</coordinates>
+        </Point>","-20,9617168291","55,2978118704"
+SPA_md,Quai Gilbert,dining*coffee,"restaurant, self, cafet_
+tél: +262 262 22 52 74","<Point>
+            <coordinates>55.27065615,-21.00840833333333</coordinates>
+        </Point>","-21,0084083333","55,27065615"
+SPA_md,Le Débarcadère,dining,"restaurant_
+tél:  +262 262 45 19 41","<Point>
+            <coordinates>55.269132,-21.00872222222222</coordinates>
+        </Point>","-21,0087222222","55,269132"
+SPA_md,Bananna's Café,snack_bar,"snack_
+tél: +262 262 44 80 50","<Point>
+            <coordinates>55.270618,-21.00861111111111</coordinates>
+        </Point>","-21,0086111111","55,270618"
+SPA_md,La Case Rouge,dining," restaurant_
+tél: +262 262 57 79 24","<Point>
+            <coordinates>55.276822,-21.00625555555556</coordinates>
+        </Point>","-21,0062555556","55,276822"
+SPA_md,La Cocoteraie,dining," restaurant_
+tél: +262 262 49 52 11_
+gsm: +262 692 37 84 73","<Point>
+            <coordinates>55.300674,-20.99094166666667</coordinates>
+        </Point>","-20,9909416667","55,300674"
+SPA_md,Le Moulin null Eau,snack_bar,"snack_
+gsm: +262 692 54 82 15","<Point>
+            <coordinates>55.305666,-20.99772777777778</coordinates>
+        </Point>","-20,9977277778","55,305666"
+SPA_md,Au Feu de Bois,dining," restaurant_
+tél: +262 262 59 90 41","<Point>
+            <coordinates>55.27764,-21.00228055555555</coordinates>
+        </Point>","-21,0022805556","55,27764"
+SPA_md,La Boucherie Cambaie,dining,"restaurant_
+tél: +262 262 49 43 77","<Point>
+            <coordinates>55.29137001,-20.98105</coordinates>
+        </Point>","-20,98105","55,29137001"
+SPA_md,Chez Zouzou,snack_bar,"snack_
+gsm:  +262 692 34 63 75","<Point>
+            <coordinates>55.271508,-21.01011388888889</coordinates>
+        </Point>","-21,0101138889","55,271508"
+SPA_md,Chez Paul,dining*coffee,"restaurant, self, cafet_
+tél:  +262 262 45 32 53","<Point>
+            <coordinates>55.29521923,-20.98678888888889</coordinates>
+        </Point>","-20,9867888889","55,29521923"
+SPA_md,Le Verre et L'Assiette,dining,"restaurant_
+tél:  + 262 262 33 04 48","<Point>
+            <coordinates>55.27258400000001,-21.00725</coordinates>
+        </Point>","-21,00725","55,272584"
+SPA_md,Le Bout' Chandelle,dining,"restaurant_
+tél:  + 262  262 27 47 18_
+gsm: + 262  692 76 19 83","<Point>
+            <coordinates>55.277623,-21.00235277777778</coordinates>
+        </Point>","-21,0023527778","55,277623"
+SPA_md,Caféteria du Vieux Moulin,dining,"restaurant, traiteur_
+tél: + 262 262 42 20 20","<Point>
+            <coordinates>55.298395,-20.98778611111111</coordinates>
+        </Point>","-20,9877861111","55,298395"
+SPA_md,Restaurant de l'Etang,dining," restaurant_
+tél: + 262  262 45 29 68_
+gsm: + 262 692 61 36 97","<Point>
+            <coordinates>55.28543462999999,-20.99128055555556</coordinates>
+        </Point>","-20,9912805556","55,28543463"
+SPA_md,Le Resto,dining,"restaurant_
+tél: + 262 262 32 46 87","<Point><coordinates>55.280172,-21.00465</coordinates></Point>","-21,00465","55,280172"
+SPA_md,Le Ti'Bo,dining,"restaurant_
+tél: +262 262 22 56 07","<Point>
+            <coordinates>55.297826,-20.96162222222222</coordinates>
+        </Point>","-20,9616222222","55,297826"
+SPA_md,Quai Ouest,dining,"restaurant_
+tél: +262 262 45 57 17","<Point>
+            <coordinates>55.27339521,-21.005275</coordinates>
+        </Point>","-21,005275","55,27339521"
+SPA_md,Les Délices de Savannah,dining," restaurant_
+tél: +262 262 45 61 35","<Point>
+            <coordinates>55.295409,-20.98648333333334</coordinates>
+        </Point>","-20,9864833333","55,295409"
+SPA_md,Le Garrot d'Or Les Tamarins,dining," restaurant_
+tél: +262 262 71 01 26","<Point>
+            <coordinates>55.265184,-21.02362222222222</coordinates>
+        </Point>","-21,0236222222","55,265184"
+SPA_md,Délices Chez Dong,dining,"restaurant_
+tél:  +262 262 45 60 15","<Point>
+            <coordinates>55.271608,-21.00836944444444</coordinates>
+        </Point>","-21,0083694444","55,271608"
+SPA_md,La Table de Marie,dining,"restaurant_
+tél: +262 262 45 00 59","<Point>
+            <coordinates>55.27157781,-21.01023333333333</coordinates>
+        </Point>","-21,0102333333","55,27157781"
+SPA_md,La Terranga,dining,"restaurant_
+tél: +262 262 45 03 24","<Point>
+            <coordinates>55.28647599999999,-20.99351388888889</coordinates>
+        </Point>","-20,9935138889","55,286476"
+SPA_md,Le Petit Creux,dining,"restaurant_
+tél: +262 262 22 97 10","<Point>
+            <coordinates>55.265779,-21.02122222222222</coordinates>
+        </Point>","-21,0212222222","55,265779"
+SPA_md,L' Atelier des Pâtes,dining,"restaurant_
+tél: +262 262 45 00 59","<Point>
+            <coordinates>55.271693,-21.01024444444445</coordinates>
+        </Point>","-21,0102444444","55,271693"
+SPA_md,Croq O Pain,snack_bar,"snack_
+tél: +262 262 45 09 14","<Point>
+            <coordinates>55.292384,-20.98603888888889</coordinates>
+        </Point>","-20,9860388889","55,292384"
+SPA_md,Le Planteur,dining," restaurant_
+tél:  +262 262 45 12 84","<Point>
+            <coordinates>55.278471,-21.00444166666667</coordinates>
+        </Point>","-21,0044416667","55,278471"
+SPA_md,La Christophine,dining*realestate,"restaurant, gite, villa_
+tél: +262 262 32 87 60","<Point>
+            <coordinates>55.30830632,-21.05951666666667</coordinates>
+        </Point>","-21,0595166667","55,30830632"
+SPA_md,Chez Sully,dining*coffee,"restaurant, self, cafet, traiteur_
+tél: +262 262 45 26 09_
+gsm: +262 692 77 86 82","<Point>
+            <coordinates>55.270557,-21.00854722222222</coordinates>
+        </Point>","-21,0085472222","55,270557"

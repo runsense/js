@@ -1,0 +1,20 @@
+id,nom,categ,description,geometry,lat,lng
+Saint-Leu,Saint-Leu,http://runsense.github.io/js/img/blason/Saint-Leu.gif,"<b>festivals_
+Les circuits culturels de Clovis : 1 SAMEDI sur 2 du 15 août au 19 décembre dès 9h00</b>
+<a href=""http://www.saintleu.re/"" >http://www.saintleu.re/</a>
+Spot de Surf International accueillant une magnifique scène de Concert.
+Joyeau de part ses hauts accueillant encore une Reunion profonde,
+l'on peut y pratiquer du parapente,
+de la voile, et de la plongé.","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.40564739440053,-21.14509283402885 55.40474346121816,-21.13694065796381 55.41742660061515,-21.12156009280394 55.40111976391111,-21.11688086181423 55.36071827689966,-21.11514061216147 55.35040093167076,-21.11460042263223 55.30065458583421,-21.12743165391228 55.2717049314238,-21.13687255376276 55.27148509267141,-21.15017520321239 55.28277326545764,-21.15673376552158 55.28570229662399,-21.16692370298767 55.28588940719341,-21.18488076025293 55.2807691059262,-21.20356211630005 55.29425006230569,-21.23192878749336 55.31224428299832,-21.24308500897794 55.32041886384145,-21.25140037569329 55.33773486754467,-21.21245693764487 55.37818374713659,-21.16643457861145 55.40564739440053,-21.14509283402885</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-21.156878730141454,55.330753326416016
+Saint-Leu,meteo marinne,info_circle,"<a href=""http://www.meteolamer.re/spots.php?spot=stleu
+id map_overlay_img"" >http://www.meteolamer.re/spots.php?spot=stleu
+id map_overlay_img</a>","<Point>
+            <coordinates>55.28488951513707,-21.16966657294401</coordinates>
+        </Point>","-21,1696665729","55,2848895151"

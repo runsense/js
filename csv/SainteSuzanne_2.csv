@@ -1,0 +1,36 @@
+id,nom,categ,description,geometry,lat,lng
+SS_md,Jean-Marie Clémencia,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 47 52 78_
+gsm: +262 692 80 01 47","<Point>
+            <coordinates>55.5929039,-20.96079166666667</coordinates>
+        </Point>","-20,9607916667","55,5929039"
+SS_md,Berges du Bocage,dining," restaurant_
+tél: +262 262 94 43 17_
+gsm: +262 692 46 95 45","<Point>
+            <coordinates>55.61343,-20.91125833333333</coordinates>
+        </Point>","-20,9112583333","55,61343"
+SS_md,Le Niagara,dining,"restaurant_
+tél: +262 262 52 25 80","<Point>
+            <coordinates>55.60843678,-20.90761111111111</coordinates>
+        </Point>","-20,9076111111","55,60843678"
+SS_md,Le Relais du Phare,dining,"restaurant_
+tél: +262 262 52 78 41_
+gsm: +262 692 88 44 22","<Point>
+            <coordinates>55.60087787000001,-20.90371944444445</coordinates>
+        </Point>","-20,9037194444","55,60087787"
+SS_md,Le Disco Grill,dining," restaurant_
+tél: +262 262 58 21 09_
+tél: +262 262 46 70 95","<Point>
+            <coordinates>55.63764752,-20.93169444444445</coordinates>
+        </Point>","-20,9316944444","55,63764752"
+SS_md,Pharest *,rec_lodging*dining*hdcp,"hotel, restaurant_
+tél: +262 262 98 91 10_
+gsm: +262 692 25 74 08_
+acces hdcp","<Point>
+            <coordinates>55.60074727,-20.90121666666667</coordinates>
+        </Point>","-20,9012166667","55,60074727"
+SS_md,Le Florentino,dining,"restaurant_
+tél: +262 262 24 14 87","<Point>
+            <coordinates>55.601875,-20.91428611111111</coordinates>
+        </Point>","-20,9142861111","55,601875"

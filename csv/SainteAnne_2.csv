@@ -1,0 +1,36 @@
+id,nom,categ,description,geometry,lat,lng
+SAn_md,La Topaze,realestate,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 51 06 31 _
+gsm: +262 692 66 78 18 _
+acces hdcp","<Point>
+            <coordinates>55.71619576,-21.10280277777778</coordinates>
+        </Point>","-21,1028027778","55,71619576"
+SAn_md,L' Auberge Créole,dining,"restaurant _<b>spe:cuisine créole, chinoise, métropolitaine et des pizzas</b>_
+tél: +262 262 51 10 10 _
+gsm: +262 692 60 78 39","<Point>
+            <coordinates>55.74411352,-21.07875555555556</coordinates>
+        </Point>","-21,0787555556","55,74411352"
+SAn_md,Domaine de Bellerive,dining,"restaurant _
+<b>spe:cuisine créole</b>_
+tél: +262 262 51 46 21 _
+gsm: +262 692 60 63 88","<Point>
+            <coordinates>55.748882,-21.10810555555556</coordinates>
+        </Point>","-21,1081055556","55,748882"
+SAn_md,Le Stéphanois,snack_bar,"snack, terrasse_
+<b>spe:créole et chinoise</b>_
+gsm: +262 692 68 02 72","<Point>
+            <coordinates>55.76337945930828,-21.05399210629927</coordinates>
+        </Point>","-21,0539921063","55,7633794593"
+SAn_md,Il Etait Une Fois dans l’Est,dining*coffee," self, cafet _
+<b>spe:cuisine créole</b>_
+tél: +262 262 51 18 12 _
+gsm : +262 692 64 60 11","<Point>
+            <coordinates>55.74328959,-21.07829722222222</coordinates>
+        </Point>","-21,0782972222","55,74328959"
+SAn_md,Diana Déa Lodge ****,rec_lodging*spa*hdcp,"hotel, spa _
+<b>spe:traditionnelle et gastronomique</b>_
+tél: +262 262 20 02 02 _
+acces hdcp","<Point>
+            <coordinates>55.70582,-21.12383888888889</coordinates>
+        </Point>","-21,1238388889","55,70582"

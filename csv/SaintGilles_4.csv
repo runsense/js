@@ -1,0 +1,197 @@
+id,nom,categ,description,geometry,lat,lng
+SG_n,"<p style=""color:red;"" >Boucan Canot</p>",club,"festival: 
+_
+tél: +262 262 33 44 44","<Point>
+            <coordinates>55.22662665629122,-21.02726261782086</coordinates>
+        </Point>","-21,0272626178","55,2266266563"
+SG_n,"<p style=""color:red"" >Le Domaine des Mascareignes</p>",club,"festival: Soirée Karaoké??
+_
+tél: +262 262 49 49 90","<Point>
+            <coordinates>55.22737899490126,-21.03119317379061</coordinates>
+        </Point>","-21,0311931738","55,2273789949"
+SG_n,"<p style=""color:red"" >Hôtel Novotel</p>",rec_lodging,"festival: 
+_
+tél: +262 262 24 44 44","<Point>
+            <coordinates>55.22265617652895,-21.0771458716554</coordinates>
+        </Point>","-21,0771458717","55,2226561765"
+SG_n,"<p style=""color:red"" >Le Mex</p>",club,"festival:
+_
+tél: +262 262 33 04 05","<Point>
+            <coordinates>55.2267068716253,-21.05176428540806</coordinates>
+        </Point>","-21,0517642854","55,2267068716"
+SG_n,"<p style=""color:red"" >centre ville saint-gille</p>",capital_big,festival: ,"<Point>
+            <coordinates>55.2267233925631,-21.05226629135348</coordinates>
+        </Point>","-21,0522662914","55,2267233926"
+SG_n,Ti Boucan,bars,"bar
+_
+tél: +262 262 24 85 08
+_
+festival: ","<Point>
+            <coordinates>55.22601000006466,-21.02897599959601</coordinates>
+        </Point>","-21,0289759996","55,2260100001"
+SG_n,"<p style=""color:red"" >Plage de Cap Homard</p>",club,festival:,"<Point>
+            <coordinates>55.22206914554649,-21.03334208104812</coordinates>
+        </Point>","-21,033342081","55,2220691455"
+SG_n,"<p style=""color:red"" >Lo Zargonot</p>",club,festival: ,"<Point>
+            <coordinates>55.24081500019918,-21.0934960004271</coordinates>
+        </Point>","-21,0934960004","55,2408150002"
+SG_n,Métis Café,bars,"bar
+_
+tél: +262 692 67 67 00
+_
+festival: ","<Point>
+            <coordinates>55.22135111393596,-21.07359986854518</coordinates>
+        </Point>","-21,0735998685","55,2213511139"
+SG_n,le Loft,bars,"bar  
+_
+période: de 22h à 5h
+festival: soirée(clubbing)
+_
+période: vendredi et samedi  de 21h30h à 6h
+_
+gsm: +262 692 67 44 54","<Point>
+            <coordinates>55.22252210244901,-21.07026673031787</coordinates>
+        </Point>","-21,0702667303","55,2225221024"
+SG_n,la boite,club,"boite de nuits ( clubbing)
+_
+période: samedi
+_
+festival: 
+_
+tél: +338 99 18 65 79","<Point>
+            <coordinates>55.22161032194823,-21.0477221931999</coordinates>
+        </Point>","-21,0477221932","55,2216103219"
+SG_n,la Villa,club," boite de nuits (clubbing)
+_
+période:mercredi, vendredi, samedi, dimanche
+_
+festival:
+_
+gsm :+262 692 601 900","<Point>
+            <coordinates>55.22287763535989,-21.07012968876839</coordinates>
+        </Point>","-21,0701296888","55,2228776354"
+SG_n,"casino , cooun bar lounge",bars*club*dollard,"jeux, bar, soirée ( clubbing)
+_
+tél: +262 262 24 47 00
+_
+festival: before (clubbing)
+_
+période: du lundi au dimanche","<Point>
+            <coordinates>55.22343258394199,-21.07080942956875</coordinates>
+        </Point>","-21,0708094296","55,2234325839"
+SG_n,Cubana club,club*bars," bar, boite de nuits
+_
+période: de 18h à 21h, 21h à 4h
+_
+festival: soirée de la femme, Salsa & mojito party
+_
+période: mardi, jeudi
+_
+tél: +262 262 33 24 91","<Point>
+            <coordinates>55.22738010987549,-21.05200328210265</coordinates>
+        </Point>","-21,0520032821","55,2273801099"
+SG_n,le Klub,club,"boite de nuits
+_
+période: vendredi, samedi, veille de jour férié","<Point>
+            <coordinates>55.22133464921713,-21.07358352842028</coordinates>
+        </Point>","-21,0735835284","55,2213346492"
+SG_n,le Moulin du tango,club,"boite de nuits
+_
+période: vendredi, samedi et veille de jour férié","<Point>
+            <coordinates>55.22292795289139,-21.07009268385072</coordinates>
+        </Point>","-21,0700926839","55,2229279529"
+SG_n,les Roches noires,club," boite de nuits
+_
+festival: gratuit pour les dames (22h à 22h30)
+_
+période: samedi et veille de jour férié de 19h à 5h
+_
+tél: +262 262 244415
+gsm: +262 692 505099","<Point>
+            <coordinates>55.22818926321163,-21.05301118461028</coordinates>
+        </Point>","-21,0530111846","55,2281892632"
+SG_n,Bar de la Marine,bars,"bar
+festival: Soirée Karaoké
+Vendredi & Samedi dès 21:00
+_
+tél: +262 262 24 03 03
+","<Point>
+            <coordinates>55.22407254129994,-21.0556169570969</coordinates>
+        </Point>","-21,0556169571","55,2240725413"
+SG_n,Hotel le récif,"50, avenue de Bourbon Saint-gilles les bains","hotel
+festival: So Ouate
+Mercredi 12, 19, 26 août  2015 à 19:30
+_
+tél: +262 262 70 01 00",,,
+SG_n,La Voile Blanche,"Port de plaisance 
+97434 St Gilles les Bains","bar
+festival: Stéphane Richez
+VEN 14 AOÛ 2015 - 19:00
+_
+tél: +262 262 49 06 28",,,
+SG_n,Les Aigrettes,"30, rue Bottard 
+97434 St Gilles les Bains","hôtel 
+festival: Chαrlλ
+VEN 14 AOÛ 2015 - 20:00
+_
+tél: +262 262 33 05 05
+_
+web <a href=""http://www.hotel-les-aigrettes.com/"" >http://www.hotel-les-aigrettes.com/</a>",,,
+SG_n,le privé,club*dining,"boite de nuits, restaurant de nuits
+_
+période: du mardi au dimanche de 23h à 5h
+_
+festival: femmes libérées ( gratuit pour femme entrer et boissons), soiré homme (gratuit pour tous  strip), électro
+_
+ période: mardi, jeudi, dimanche","<Point>
+            <coordinates>55.22183964126485,-21.04791593552743</coordinates>
+        </Point>","-21,0479159355","55,2218396413"
+SG_n,Kazbar,"29, rue de la plage - Plage des Roches Noires 
+97434 St Gilles les Bains","bar
+festival: Free Jam
+SAM 22 AOÛ 2015 - 19:00
+_
+Jean-Claude T’ group
+SAM 29 AOÛ 2015 - 18:00
+_
+tél: +262 262 39 25 04",,,
+SG_n,Téat Plein Air,"Route du Théatre 
+97434 St Gilles les Bains","festival: Fé flamb do fé
+SAM 29 AOÛ 2015 - 20:00
+_
+Tricodposcopie
+MER 21 OCT 2015 - 20:00
+_
+Le Maïs Club
+SAM 5 SEP 2015 - 20:00
+_
+Alain Peters : ômaz ô parabolèr
+SAM 19 SEP 2015 - 20:00
+_
+Le bal réunionnais de l’Afrique enchantée
+VEN 9 OCT 2015 - 20:00
+_
+Le bal réunionnais de l’Afrique enchantée
+SAM 10 OCT 2015 - 20:00
+_
+Dominique Barret
+Vendredi et samedi 30-31 OCT 2015 - 20:00
+_
+Kaloubadya
+SAM 14 NOV 2015 - 20:00
+_
+Davy Sicard
+SAM 5 DÉC 2015 - 20:00
+_
+Firmin Viry fête ses 80 ans
+SAM 12 DÉC 2015 - 20:00
+_
+tél: +262 262 419 325
+web <a href=""http://www.theatreunion.re"" >http://www.theatreunion.re</a>",,,
+SG_n,Ô Ti Marché,"19, place du March? 
+97434 St Gilles les Bains","restaurant
+festival: Stéphane Richez
+JEU 3 SEP 2015 - 18:00
+_
+tél: +262 262 24 54 94
+",,,

@@ -1,0 +1,4 @@
+id,nom,categ,description,geometry,lat,lng
+Ci_t,Club de tennis de Cilaos,donut,tennis club,"<Point>
+            <coordinates>55.47498894807916,-21.13596990615841</coordinates>
+        </Point>","-21,1359699062","55,4749889481"

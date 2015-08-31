@@ -1,0 +1,55 @@
+id,nom,categ,description,geometry,lat,lng
+PI_md,Ché Maoul,realestate*gite_de_france,"chambre d'hote
+<b>label: villages créoles, gites de france</b>
+tél: +262 262 56 82 26","<Point>
+            <coordinates>55.56278205,-21.35488333333333</coordinates>
+        </Point>","-21,3548833333","55,56278205"
+PI_md,Vérémer,realestate*gite_de_france,"chambre d'hote
+<b>label: gayfriendly, villages créoles, gites de france</b>
+tél: +262 262 31 65 10
+gsm: +262 692 72 91 95","<Point><coordinates>55.564907,-21.3692</coordinates></Point>","-21,3692","55,564907"
+PI_md,Le Deck,rec_lodging*dining," hotel, restaurant
+<b>label: villages créoles, qualité tourisme, restaurateur de france, maitre restaurateur</b>
+tél: +262 262 56 30 30","<Point><coordinates>55.550683,-21.366668</coordinates></Point>","-21,366668","55,550683"
+PI_md,Le Makassar,rec_lodging,"hotel, restaurant
+<b>label: qualité tourisme</b>
+tél: +262 262 56 30 30","<Point>
+            <coordinates>55.550683,-21.36666666666667</coordinates>
+        </Point>","-21,3666666667","55,550683"
+PI_md,La Caze Alambic,dining," restaurant
+tél:  +262 262 38 90 81","<Point>
+            <coordinates>55.55664272,-21.32304166666667</coordinates>
+        </Point>","-21,3230416667","55,55664272"
+PI_md,Kom null la Kaz,dining,"restaurant
+tél:  +262 262 56 51 97","<Point>
+            <coordinates>55.56606347,-21.35061944444445</coordinates>
+        </Point>","-21,3506194444","55,56606347"
+PI_md,La Salamandre,dining*pizza,"restaurant, pizza
+tél: +262 262 32 56 92","<Point>
+            <coordinates>55.566374,-21.35884444444445</coordinates>
+        </Point>","-21,3588444444","55,566374"
+PI_md,Anse des Cocos,dining,"restaurant
+tél: +262 262 28 53 75
+gsm: +262 692 16 67 42","<Point>
+            <coordinates>55.55186499999999,-21.36781388888889</coordinates>
+        </Point>","-21,3678138889","55,551865"
+PI_md,Saveurs Créoles Chez Ti Fred,dining,"restaurant
+gsm: +262 692 85 50 77","<Point>
+            <coordinates>55.56538400000001,-21.35378333333334</coordinates>
+        </Point>","-21,3537833333","55,565384"
+PI_md,Le Vacoa,dining,"restaurant
+tél: +262 262 56 95 17
+gsm: +262 692 60 87 76","<Point>
+            <coordinates>55.55197346,-21.36852777777778</coordinates>
+        </Point>","-21,3685277778","55,55197346"
+PI_md,Palm Hôtel & Spa,rec_lodging*dining," hotel
+<b>label: villages créoles, gayfriendly</b>
+tél: +262 262 56 30 30
+acces hdcp","<Point>
+            <coordinates>55.550683,-21.36666666666667</coordinates>
+        </Point>","-21,3666666667","55,550683"
+PI_md,La Bohème,realestate,"chambre d'hote
+tél:  +262 262 30 98 12
+gsm: 0693 40 89 82","<Point>
+            <coordinates>55.565283,-21.36931944444445</coordinates>
+        </Point>","-21,3693194444","55,565283"

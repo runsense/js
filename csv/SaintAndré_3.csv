@@ -1,0 +1,185 @@
+id,nom,categ,description,geometry,lat,lng
+SAd_v,petit trou,capital_big,quartier,"<Point>
+            <coordinates>55.58734920276308,-21.00071967357914</coordinates>
+        </Point>","-21,0007196736","55,5873492028"
+SAd_v,rivière du mât,water,"rivière
+_
+34,7 km","<Point>
+            <coordinates>55.70004022303348,-20.98039723103021</coordinates>
+        </Point>","-20,980397231","55,700040223"
+SAd_v,commune bègue les bas,capital_big,quartier,"<Point>
+            <coordinates>55.64239126685351,-20.94249373424017</coordinates>
+        </Point>","-20,9424937342","55,6423912669"
+SAd_v,étang de bois rouge,water,rivière,"<Point>
+            <coordinates>55.64934659954702,-20.91713136333377</coordinates>
+        </Point>","-20,9171313633","55,6493465995"
+SAd_v,Eglise de Saint-André,church,"religion
+_
+Les premiers habitants de Saint-André construisent une chapelle en bois, en février 1750, elle prend feu, ce qui active la construction d'une nouvelle église en pierre terminée en 1752.","<Point>
+            <coordinates>55.64879270737248,-20.96156052190614</coordinates>
+        </Point>","-20,9615605219","55,6487927074"
+SAd_v,Eglise Saint-Nicolas de Champ-Borne,church,"religion
+_
+28 février 1962, le cyclone Jenny passe en à peine deux heures sur le nord de la Réunion. L'église Saint-Nicolas de champ borne ce jour là est détruite, le cyclone Jenny a emporté une partie de l'église. Celle-ci est depuis en ruine.","<Point>
+            <coordinates>55.6820765142344,-20.94401480617421</coordinates>
+        </Point>","-20,9440148062","55,6820765142"
+SAd_v,Temple du colosse,church,"religion
+_
+Le temple original du 19 siècle attenant à l'usine sucrière du Colosse, a disparu. Aujourd'hui un autre temple plus grand, dédié à Pandialé, a été construit sur le même emplacement par des artisans venus de Madras.
+Carème de trois jour necessaire 
+pour toute personne désirant entrer dans un temple","<Point>
+            <coordinates>55.67170996402594,-20.9366310295625</coordinates>
+        </Point>","-20,9366310296","55,671709964"
+SAd_v,Cheminée Le Désert,cbh,historique,"<Point>
+            <coordinates>55.62883333333333,-20.96616666666667</coordinates>
+        </Point>","-20,9661666667","55,6288333333"
+SAd_v,Cheminée de Ravine Creuse,cbh,"historique
+_
+inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002","<Point>
+            <coordinates>55.66499999999999,-20.96816666666667</coordinates>
+        </Point>","-20,9681666667","55,665"
+SAd_v,Maison High-Hall,cbh,"historique
+_
+inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 15 octobre 1991","<Point>
+            <coordinates>55.64793004240316,-20.96380533398034</coordinates>
+        </Point>","-20,963805334","55,6479300424"
+SAd_v,Domaine Appavoupoullé,cbh,"historique
+_
+inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 25 mars 1994,
+ la maison principale
+ les dépendance
+ les écuries
+ la minoterie
+ la vanillerie
+ la cour et le jardin","<Point>
+            <coordinates>55.64716801485488,-20.97185384430319</coordinates>
+        </Point>","-20,9718538443","55,6471680149"
+SAd_v,Propriété Camalon,cbh,"inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 21 mars 1996
+le portail d'accès
+ l'allée
+ l'ancienne cuisine
+ les vestiges de l'ancienne usine pour le traitement de l'aloès 
+ l'assiette foncière renfermant des vestiges archéologiques","<Point>
+            <coordinates>55.674556,-20.94011111111111</coordinates>
+        </Point>","-20,9401111111","55,674556"
+SAd_v,cheminé le colosse,cbh,elle est inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,"<Point><coordinates>55.672056,-20.9355</coordinates></Point>","-20,9355","55,672056"
+SAd_v,Temple Mardévirin (madurai viran),cbh,Il est inscrit en totalité au titre des monuments historiques depuis le 17 septembre 2010,"<Point>
+            <coordinates>55.648139,-20.94316666666667</coordinates>
+        </Point>","-20,9431666667","55,648139"
+SAd_v,forêt dioré,terain,forêt,"<Point>
+            <coordinates>55.59012838345592,-20.98905774581668</coordinates>
+        </Point>","-20,9890577458","55,5901283835"
+SAd_v,lotissement dioré,capital_big,quartier,"<Point>
+            <coordinates>55.61660135121253,-20.9842385051916</coordinates>
+        </Point>","-20,9842385052","55,6166013512"
+SAd_v,rivière du mât les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.64879080130194,-20.9767558866605</coordinates>
+        </Point>","-20,9767558867","55,6487908013"
+SAd_v,les manguiers,capital_big,quartier,"<Point>
+            <coordinates>55.65882036951852,-20.97616385999056</coordinates>
+        </Point>","-20,97616386","55,6588203695"
+SAd_v,la cressonière,capital_big,quartier,"<Point>
+            <coordinates>55.65810618694518,-20.97277988788225</coordinates>
+        </Point>","-20,9727798879","55,6581061869"
+SAd_v,les flamboyants,capital_big,quartier,"<Point>
+            <coordinates>55.6586462521176,-20.96986251310944</coordinates>
+        </Point>","-20,9698625131","55,6586462521"
+SAd_v,mille roches,capital_big,quartier,"<Point>
+            <coordinates>55.65092254216958,-20.9690514318321</coordinates>
+        </Point>","-20,9690514318","55,6509225422"
+SAd_v,la ravinne creuse,capital_big,quartier,"<Point>
+            <coordinates>55.66486517509613,-20.96904113980226</coordinates>
+        </Point>","-20,9690411398","55,6648651751"
+SAd_v,patelin,capital_big,quartier,"<Point>
+            <coordinates>55.67455867994343,-20.97165549169498</coordinates>
+        </Point>","-20,9716554917","55,6745586799"
+SAd_v,rivière du mât les bas,capital_big,quartier,"<Point>
+            <coordinates>55.69033388358533,-20.97072316134029</coordinates>
+        </Point>","-20,9707231613","55,6903338836"
+SAd_v,lotissement pelvoisin,capital_big,quartier,"<Point>
+            <coordinates>55.69195859092004,-20.97333187759059</coordinates>
+        </Point>","-20,9733318776","55,6919585909"
+SAd_v,Chapelle Sainte-Jeanne d'Arc,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 26 janvier 2012,"<Point>
+            <coordinates>55.648889,-20.96027777777778</coordinates>
+        </Point>","-20,9602777778","55,648889"
+SAd_v,Maison Martin Valliamé,cbh,"historique
+_
+La Maison Martin Valliamé a été construite en 1925,
+totalement en bois avec 2 varangues
+récemment restauré, elle est devenue 
+l'office du tourisme de Saint-André","<Point>
+            <coordinates>55.65796685483681,-20.94978473127065</coordinates>
+        </Point>","-20,9497847313","55,6579668548"
+SAd_v,Monument funéraire de Nicole Robinet de La Serve,cbh,"historique
+_
+inscrit en totalité au titre des Monuments historiques depuis le 3 avril 2007, l'inscription comprenant la grille d'enceinte et les tombes,
+fondateur du mouvement Francs-Créoles","<Point><coordinates>55.649833,-20.959889</coordinates></Point>","-20,959889","55,649833"
+SAd_v,petit étang,water,étang,"<Point>
+            <coordinates>55.66592729833568,-20.92973908495105</coordinates>
+        </Point>","-20,929739085","55,6659272983"
+SAd_v,bois rouge,capital_big,quartier,"<Point>
+            <coordinates>55.6364070117973,-20.91448025804367</coordinates>
+        </Point>","-20,914480258","55,6364070118"
+SAd_v,cambuston,capital_big,quartier,"<Point>
+            <coordinates>55.64969876875268,-20.93416966989883</coordinates>
+        </Point>","-20,9341696699","55,6496987688"
+SAd_v,l'étang,capital_big,quartier,"<Point>
+            <coordinates>55.65445392756864,-20.92861032405913</coordinates>
+        </Point>","-20,9286103241","55,6544539276"
+SAd_v,pti bazard,capital_big,quartier,"<Point>
+            <coordinates>55.64757292496116,-20.94295266325292</coordinates>
+        </Point>","-20,9429526633","55,647572925"
+SAd_v,le bocage,capital_big,quartier,"<Point>
+            <coordinates>55.64063971765901,-20.94942275521613</coordinates>
+        </Point>","-20,9494227552","55,6406397177"
+SAd_v,le désert,capital_big,quartier,"<Point>
+            <coordinates>55.63907087487141,-20.96466002166464</coordinates>
+        </Point>","-20,9646600217","55,6390708749"
+SAd_v,bras des chevrettes,capital_big,quartier,"<Point>
+            <coordinates>55.62483787657386,-20.96738715702199</coordinates>
+        </Point>","-20,967387157","55,6248378766"
+SAd_v,menciol,capital_big,quartier,"<Point>
+            <coordinates>55.62709270229536,-20.96188767128867</coordinates>
+        </Point>","-20,9618876713","55,6270927023"
+SAd_v,mon repos,capital_big,quartier,"<Point>
+            <coordinates>55.62358705109433,-20.95606473831181</coordinates>
+        </Point>","-20,9560647383","55,6235870511"
+SAd_v,le chateau,capital_big,quartier,"<Point>
+            <coordinates>55.61268226459946,-20.9641835770257</coordinates>
+        </Point>","-20,964183577","55,6126822646"
+SAd_v,bras mousseline,capital_big,quartier,"<Point>
+            <coordinates>55.60699690169529,-20.9706072999735</coordinates>
+        </Point>","-20,9706073","55,6069969017"
+SAd_v,l'hermitage,capital_big,quartier,"<Point>
+            <coordinates>55.60158357275395,-20.97072362560127</coordinates>
+        </Point>","-20,9707236256","55,6015835728"
+SAd_v,grand canal,capital_big,quartier,"<Point>
+            <coordinates>55.68783143554704,-20.95525739098733</coordinates>
+        </Point>","-20,955257391","55,6878314355"
+SAd_v,pointe du champ borne,water*mountains,pointInteret,"<Point>
+            <coordinates>55.68276112132942,-20.94431011747535</coordinates>
+        </Point>","-20,9443101175","55,6827611213"
+SAd_v,les yuccas,capital_big,quartier,"<Point>
+            <coordinates>55.67995166038156,-20.94445657378792</coordinates>
+        </Point>","-20,9444565738","55,6799516604"
+SAd_v,le champ borne,capital_big,quartier,"<Point>
+            <coordinates>55.68011655640459,-20.94252379500927</coordinates>
+        </Point>","-20,942523795","55,6801165564"
+SAd_v,le colosse,capital_big,quartier,"<Point>
+            <coordinates>55.67206322239595,-20.93646991793635</coordinates>
+        </Point>","-20,9364699179","55,6720632224"
+SAd_v,mairie,road_shield1,administratif,"<Point>
+            <coordinates>55.65052797774868,-20.96042976198309</coordinates>
+        </Point>","-20,960429762","55,6505279777"
+SAd_v,sarabe,capital_big,quartier,"<Point>
+            <coordinates>55.61321812724229,-20.97765632026218</coordinates>
+        </Point>","-20,9776563203","55,6132181272"
+SAd_v,parc du colosse,parc,"Le parc du Colosse, du nom du temple le Colosse
+est le lieu de grand événement 
+abritant des petits commerces artisanaux
+et un ensemble d'aires de jeu","<Point>
+            <coordinates>55.6626000313851,-20.92710068388513</coordinates>
+        </Point>","-20,9271006839","55,6626000314"
+SAd_v,Saint-André,road_shield1,ville,"<Point>
+            <coordinates>55.65089029917701,-20.96111651232902</coordinates>
+        </Point>","-20,9611165123","55,6508902992"

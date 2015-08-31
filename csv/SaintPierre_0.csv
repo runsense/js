@@ -1,0 +1,28 @@
+id,nom,categ,description,geometry,lat,lng
+SPI_t,Association méridionale de tennis de Saint-Pierre,donut,tennis club,"<Point>
+            <coordinates>55.47082388001268,-21.33331424087276</coordinates>
+        </Point>","-21,3333142409","55,47082388"
+SPI_t,Tennis-club de Saint-Pierre,donut, tennis club,"<Point>
+            <coordinates>55.46883725753669,-21.31686328217093</coordinates>
+        </Point>","-21,3168632822","55,4688372575"
+SPI_t,stade de terre sainte,play, stade de foot,"<Point>
+            <coordinates>55.48045514879041,-21.32886608228652</coordinates>
+        </Point>","-21,3288660823","55,4804551488"
+SPI_t,Tennis-club de Terre-Sainte,donut,tennis club,"<Point>
+            <coordinates>55.47917550858479,-21.3315113037333</coordinates>
+        </Point>","-21,3315113037","55,4791755086"
+SPI_t,Sud Beach tennis-club,donut,tennis club,"<Point>
+            <coordinates>55.46329390431976,-21.34142507132616</coordinates>
+        </Point>","-21,3414250713","55,4632939043"
+SPI_t,stade de la ravine blanche,play,stade de foot,"<Point>
+            <coordinates>55.46129226389078,-21.33720216410667</coordinates>
+        </Point>","-21,3372021641","55,4612922639"
+SPI_t,BILLARD CLUB,cbh,billard,"<Point>
+            <coordinates>55.49245582386576,-21.30491292638761</coordinates>
+        </Point>","-21,3049129264","55,4924558239"
+SPI_t,Stade Michel-Volnay,play,stade de foot,"<Point>
+            <coordinates>55.46814,-21.33866944444444</coordinates>
+        </Point>","-21,3386694444","55,46814"
+SPI_t,Stade Joffre-Labenne,play, stade de foot club: SS Capricorne,"<Point>
+            <coordinates>55.46583333333333,-21.286111</coordinates>
+        </Point>","-21,286111","55,4658333333"

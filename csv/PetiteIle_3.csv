@@ -1,0 +1,93 @@
+id,nom,categ,description,geometry,lat,lng
+PI_v,piton du rond,mountains,mont,"<Point>
+            <coordinates>55.60317162472279,-21.29803621575032</coordinates>
+        </Point>","-21,2980362158","55,6031716247"
+PI_v,piton la mare,mountains,mont,"<Point>
+            <coordinates>55.60339955549183,-21.29054092641263</coordinates>
+        </Point>","-21,2905409264","55,6033995555"
+PI_v,Ancienne et nouvelle mairie de Petite île,cbh,"historique
+_Ancienne et nouvelle mairie de Petite-île. 
+Ce bâtiment construit en basalte enduit et bois, date de l'année 1893, de type colonial, il servait à l'origine de mairie annexe de Saint-Pierre.","<Point>
+            <coordinates>55.56602584981705,-21.35571263927528</coordinates>
+        </Point>","-21,3557126393","55,5660258498"
+PI_v,Chapelle des trois cent hommes,church,"religieu
+_
+L'édifice, consacré à Sainte Marguerite,
+ est construit par trois sœurs, Valentine, dite, La grande Mademoiselle, Lucie et Adèle Payet.
+ Dans les années 1970, à la mort de la dernière sœur, la chapelle est offerte au diocèse .","<Point>
+            <coordinates>55.57707133263115,-21.36975540167283</coordinates>
+        </Point>","-21,3697554017","55,5770713326"
+PI_v,élglise Saint-Jean d'élvangéliste,church,"religion
+_
+Cette église est bénite en 1859 par le chanoine Hervé. 
+Petite-île, qui dépendait de Saint-Joseph, est érigée en paroisse le 11 juin 1857.","<Point>
+            <coordinates>55.56653905452072,-21.35564869113135</coordinates>
+        </Point>","-21,3556486911","55,5665390545"
+PI_v,Musée Varlop’ Galer,arts,"Baptisé Varlop’galer en hommage aux anciens charpentiers de marines qui utilisaient ces outils, 
+L'écomusée a été créer en homage à la Réunion d'avant","<Point><coordinates>55.562646,-21.360114</coordinates></Point>","-21,360114","55,562646"
+PI_v,Piton du Calvaire,mountains,"mont
+_Le 14 sepetembre,
+depuis le 19 ème Siècle,
+le Piton du Calvaire est un hauts lieu du pérélinage","<Point>
+            <coordinates>55.5666667,-21.35</coordinates>
+        </Point>","-21,35","55,5666667"
+PI_v,cap la nage,mountains*water,cap,"<Point>
+            <coordinates>55.50722451659362,-21.35512336216282</coordinates>
+        </Point>","-21,3551233622","55,5072245166"
+PI_v,cap sel,mountains*water,cap,"<Point>
+            <coordinates>55.55660311385633,-21.37351130573578</coordinates>
+        </Point>","-21,3735113057","55,5566031139"
+PI_v,piton mont vert,mountains,mont,"<Point>
+            <coordinates>55.53968280103995,-21.3262021254836</coordinates>
+        </Point>","-21,3262021255","55,539682801"
+PI_v,la cafrine,capital_big,quartier,"<Point>
+            <coordinates>55.51361982955962,-21.35303531591635</coordinates>
+        </Point>","-21,3530353159","55,5136198296"
+PI_v,la montée de villeneuve,capital_big,quartier,"<Point>
+            <coordinates>55.51420490792359,-21.35623553432581</coordinates>
+        </Point>","-21,3562355343","55,5142049079"
+PI_v,grands bois,capital_big,quartier,"<Point>
+            <coordinates>55.52245636122284,-21.35874473176006</coordinates>
+        </Point>","-21,3587447318","55,5224563612"
+PI_v,grands bois les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.53087058051204,-21.35459273507083</coordinates>
+        </Point>","-21,3545927351","55,5308705805"
+PI_v,anse les bas,capital_big,quartier,"<Point>
+            <coordinates>55.53829448190721,-21.36312495492285</coordinates>
+        </Point>","-21,3631249549","55,5382944819"
+PI_v,cap de l'abri,mountains*water,cap,"<Point>
+            <coordinates>55.5433785070325,-21.36810546218244</coordinates>
+        </Point>","-21,3681054622","55,543378507"
+PI_v,grand anse,capital_big,quartier,"<Point>
+            <coordinates>55.55399666215853,-21.3689049257803</coordinates>
+        </Point>","-21,3689049258","55,5539966622"
+PI_v,le chemin neuf,capital_big,quartier,"<Point>
+            <coordinates>55.55862607719158,-21.37098184539626</coordinates>
+        </Point>","-21,3709818454","55,5586260772"
+PI_v,petite île,road_shield1,ville,"<Point>
+            <coordinates>55.56812693302342,-21.37714170981959</coordinates>
+        </Point>","-21,3771417098","55,568126933"
+PI_v,manapany les bas,capital_big,quartier,"<Point>
+            <coordinates>55.57549965486304,-21.36907587238638</coordinates>
+        </Point>","-21,3690758724","55,5754996549"
+PI_v,l'ermitage,capital_big,quartier,"<Point>
+            <coordinates>55.58112967293683,-21.36095624866738</coordinates>
+        </Point>","-21,3609562487","55,5811296729"
+PI_v,le chemin jessy,capital_big,quartier,"<Point>
+            <coordinates>55.57951966556254,-21.34792414862204</coordinates>
+        </Point>","-21,3479241486","55,5795196656"
+PI_v,la ravine du pont,capital_big,quartier,"<Point>
+            <coordinates>55.56030488515814,-21.34071272996622</coordinates>
+        </Point>","-21,34071273","55,5603048852"
+PI_v,charrié,capital_big,quartier,"<Point>
+            <coordinates>55.56743450989195,-21.33233745966075</coordinates>
+        </Point>","-21,3323374597","55,5674345099"
+PI_v,bel-air,capital_big,quartier,"<Point>
+            <coordinates>55.58895660006698,-21.32138987224284</coordinates>
+        </Point>","-21,3213898722","55,5889566001"
+PI_v,piton goyave,capital_big,quartier,"<Point>
+            <coordinates>55.55747148795723,-21.32513268387854</coordinates>
+        </Point>","-21,3251326839","55,557471488"
+PI_v,piton bloc,mountains,mont,"<Point>
+            <coordinates>55.58423517024543,-21.30487946419861</coordinates>
+        </Point>","-21,3048794642","55,5842351702"

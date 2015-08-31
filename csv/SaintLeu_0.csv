@@ -1,0 +1,13 @@
+id,nom,categ,description,geometry,lat,lng
+SL_t,stade piton saint-leu,play,stade de foot,"<Point>
+            <coordinates>55.29500726469812,-21.2071643742436</coordinates>
+        </Point>","-21,2071643742","55,2950072647"
+SL_t,Stade de Saint-Leu,play,stade de foot club: Marsouin,"<Point>
+            <coordinates>55.28911851408677,-21.16767351046598</coordinates>
+        </Point>","-21,1676735105","55,2891185141"
+SL_t,Club de pelote basque et de tennis de Saint-Leu,donut,"tennis club, pelote basque","<Point>
+            <coordinates>55.28955061252024,-21.16807688770645</coordinates>
+        </Point>","-21,1680768877","55,2895506125"
+SL_t,stade des hauts saint-leu,play,stade de foot,"<Point>
+            <coordinates>55.31792042345762,-21.15061186481906</coordinates>
+        </Point>","-21,1506118648","55,3179204235"

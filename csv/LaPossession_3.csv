@@ -1,0 +1,87 @@
+id,nom,categ,description,geometry,lat,lng
+Pos_v,piton fougère,mountains,pointInteret,"<Point>
+            <coordinates>55.4052498031584,-20.98258243204439</coordinates>
+        </Point>","-20,982582432","55,4052498032"
+Pos_v,Eglise Notre dame de l'Assemption,church,"église Notre Dame de L'Assomption à La Possession.
+ Dès 1835, une chapelle existe à l'emplacement actuel de l'église.","<Point>
+            <coordinates>55.33700874177274,-20.92683368482664</coordinates>
+        </Point>","-20,9268336848","55,3370087418"
+Pos_v,Mairie de la possession,road_shield1,pointInteret,"<Point>
+            <coordinates>55.33590285878204,-20.92651523082429</coordinates>
+        </Point>","-20,9265152308","55,3359028588"
+Pos_v,Tamarin de Sarda Garriga,cbh,"Sarda Garriga,
+Agissant avec beaucoup de doigté et de fermeté, ce dernier réussit à se soustraire aux pressions des maîtres et des esclaves et proclame officiellement dans l'île le 19 octobre 1848 le décret d'abolition de l'esclavage et fixe , au 20 décembre 1848, la date effective de l'émancipation.
+Il rend obligatoire la possession, avant le 20 décembre, pour tout futur affranchi, d'un contrat de travail, définissant à la fois les obligations de l'employeur et de l'employé.
+Tout nouvel affranchi adulte et valide ne pouvant au 20 décembre justifier d'un travail et de moyens d'existence sera considéré comme vagabond.
+Il entreprend de la mi-novembre au début décembre 1848, une tournée à travers l'île au cours de laquelle il rassure maitres et esclaves et les exhorte au calme et au travail.
+Cette période transitoire se passe dans le calme. La première journée du 20 décembre elle-même, n'est marquée que par quelque messes, quelques cortèges ponctués de cris et de danses. Tous (noirs et blancs) font preuve de sagesse.
+Cet évènement tant souhaité par la majorité de la population (62000 noirs esclaves) et tant redouté par la minorité blanche (42000 individus) ne s'est pas transformé en cyclone.
+SARDA GARRIGA réussit le 20 décembre 1848 sa délicate mission.","<Point>
+            <coordinates>55.35656465977728,-20.9302964760638</coordinates>
+        </Point>","-20,9302964761","55,3565646598"
+Pos_v,îlet albert,capital_big,quartier,"<Point>
+            <coordinates>55.38882472883531,-20.99939765147268</coordinates>
+        </Point>","-20,9993976515","55,3888247288"
+Pos_v,le grand coin,capital_big,quartier,"<Point>
+            <coordinates>55.39462735300457,-20.97986691282367</coordinates>
+        </Point>","-20,9798669128","55,394627353"
+Pos_v,piton grand bazard,mountains,mont,"<Point>
+            <coordinates>55.38920919147964,-20.97443542948786</coordinates>
+        </Point>","-20,9744354295","55,3892091915"
+Pos_v,îlet rosier blanc,capital_big,quartier,"<Point>
+            <coordinates>55.36490193609634,-20.97285990875</coordinates>
+        </Point>","-20,9728599088","55,3649019361"
+Pos_v,îlet solitude,capital_big,quartier,"<Point>
+            <coordinates>55.36219516056619,-20.96510812568024</coordinates>
+        </Point>","-20,9651081257","55,3621951606"
+Pos_v,la mare,capital_big,quartier,"<Point>
+            <coordinates>55.35141605413567,-20.95439706400471</coordinates>
+        </Point>","-20,954397064","55,3514160541"
+Pos_v,sainte-thérèse,capital_big,quartier,"<Point>
+            <coordinates>55.3417515828468,-20.95273524847512</coordinates>
+        </Point>","-20,9527352485","55,3417515828"
+Pos_v,lotissement du cap noir,capital_big,quartier,"<Point>
+            <coordinates>55.33758139394808,-20.95631470393304</coordinates>
+        </Point>","-20,9563147039","55,3375813939"
+Pos_v,fond de bac,capital_big,quartier,"<Point>
+            <coordinates>55.32810197444684,-20.96508893574783</coordinates>
+        </Point>","-20,9650889357","55,3281019744"
+Pos_v,la rivière des galets,capital_big,quartier,"<Point>
+            <coordinates>55.32040651555858,-20.96331193411519</coordinates>
+        </Point>","-20,9633119341","55,3204065156"
+Pos_v,la grande ravinne des latanniers,capital_big,quartier,"<Point>
+            <coordinates>55.35318554385042,-20.94074884754528</coordinates>
+        </Point>","-20,9407488475","55,3531855439"
+Pos_v,la grande montagne,capital_big,quartier,"<Point>
+            <coordinates>55.33976861788203,-20.93813949383349</coordinates>
+        </Point>","-20,9381394938","55,3397686179"
+Pos_v,lotissement dodin,capital_big,quartier,"<Point>
+            <coordinates>55.33349755449137,-20.94272742074732</coordinates>
+        </Point>","-20,9427274207","55,3334975545"
+Pos_v,cité jacques duclos,capital_big,quartier,"<Point>
+            <coordinates>55.33106318027856,-20.93577849079308</coordinates>
+        </Point>","-20,9357784908","55,3310631803"
+Pos_v,la corniche,capital_big,quartier,"<Point>
+            <coordinates>55.3411990275039,-20.92891180653471</coordinates>
+        </Point>","-20,9289118065","55,3411990275"
+Pos_v,le vingt-huitième,capital_big,quartier,"<Point>
+            <coordinates>55.3481177125679,-20.9290261052436</coordinates>
+        </Point>","-20,9290261052","55,3481177126"
+Pos_v,le vingt-sixième,capital_big,quartier,"<Point>
+            <coordinates>55.36214834789971,-20.9269867650227</coordinates>
+        </Point>","-20,926986765","55,3621483479"
+Pos_v,piton orange,mountains,mont,"<Point>
+            <coordinates>55.38134216275413,-20.93589168518926</coordinates>
+        </Point>","-20,9358916852","55,3813421628"
+Pos_v,pointe de la ravinne à malheur,mountains,mont,"<Point>
+            <coordinates>55.35227496018199,-20.91267987453301</coordinates>
+        </Point>","-20,9126798745","55,3522749602"
+Pos_v,dos d'âne,road_shield1,ville,"<Point>
+            <coordinates>55.38224531608181,-20.98454480241858</coordinates>
+        </Point>","-20,9845448024","55,3822453161"
+Pos_v,plateau sainte-thérèse,terain,lieuDit,"<Point>
+            <coordinates>55.34902961136849,-20.96392896221821</coordinates>
+        </Point>","-20,9639289622","55,3490296114"
+Pos_v,la possession,road_shield1,ville,"<Point>
+            <coordinates>55.33645298013467,-20.92653823800123</coordinates>
+        </Point>","-20,926538238","55,3364529801"

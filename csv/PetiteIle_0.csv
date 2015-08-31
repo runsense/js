@@ -1,0 +1,7 @@
+id,nom,categ,description,geometry,lat,lng
+PI_t,Tennis-club de Petite-île,donut, tennis club,"<Point>
+            <coordinates>55.56416907429233,-21.35315708949236</coordinates>
+        </Point>","-21,3531570895","55,5641690743"
+PI_t,Stade régional d'athlétisme de Petite-Île,play,"stade d""athlétisme club: AJ Petite-Île","<Point>
+            <coordinates>55.558333,-21.34666666666666</coordinates>
+        </Point>","-21,3466666667","55,558333"

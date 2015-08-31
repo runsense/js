@@ -1,0 +1,70 @@
+id,nom,categ,description,geometry,lat,lng
+Av_v,église de l'Immaculée Conception et Mausolée,church,"église de l'Immaculée Conception,
+ des Avirons a été construite au début du XXe siècle, 
+basalte et maçonnerie,
+ elle est dotée d'un nouveau campanile,
+ lors de sa restauration en 1976.
+Juste derrière l'église se trouve le mausolée réservé aux anciens curés de la paroisse.","<Point>
+            <coordinates>55.33642000002956,-21.24149832582978</coordinates>
+        </Point>","-21,2414983258","55,33642"
+Av_v,Monument aux morts des Avirons,cbh,"Depuis 1924 et jusqu'à la déclaration d'indépendance de l'Algérie, en 1962,
+ ce monument est placé sur la place Marengo, commune de la Mitidja. 
+Le ministre André Malraux l'offre en 1965, au maire des Avirons, Henri Fort.","<Point>
+            <coordinates>55.33642918460984,-21.24145891750039</coordinates>
+        </Point>","-21,2414589175","55,3364291846"
+Av_v,le bois de nèfle entre-deux,capital_big,quartier,"<Point>
+            <coordinates>55.32975489023082,-21.23499493022134</coordinates>
+        </Point>","-21,2349949302","55,3297548902"
+Av_v,le ruisseau,capital_big,quartier,"<Point>
+            <coordinates>55.33257279881444,-21.23689769652354</coordinates>
+        </Point>","-21,2368976965","55,3325727988"
+Av_v,le bois de nèfle cadets,capital_big,quartier,"<Point>
+            <coordinates>55.32953777352109,-21.23822724490405</coordinates>
+        </Point>","-21,2382272449","55,3295377735"
+Av_v,les bananes,capital_big,quartier,"<Point>
+            <coordinates>55.34055040879182,-21.23324078224986</coordinates>
+        </Point>","-21,2332407822","55,3405504088"
+Av_v,bellecombe,capital_big,quartier,"<Point>
+            <coordinates>55.33588148117691,-21.22593733556157</coordinates>
+        </Point>","-21,2259373356","55,3358814812"
+Av_v,la chapelle,capital_big,quartier,"<Point>
+            <coordinates>55.34448394761474,-21.22228583174032</coordinates>
+        </Point>","-21,2222858317","55,3444839476"
+Av_v,le bois de nèfle,capital_big,quartier,"<Point>
+            <coordinates>55.33132025066926,-21.24404282982243</coordinates>
+        </Point>","-21,2440428298","55,3313202507"
+Av_v,la route delisle,capital_big,quartier,"<Point>
+            <coordinates>55.33966306200627,-21.21643027923068</coordinates>
+        </Point>","-21,2164302792","55,339663062"
+Av_v,bras sec les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.36470851995718,-21.21294484098127</coordinates>
+        </Point>","-21,212944841","55,36470852"
+Av_v,bois blanc,capital_big,quartier,"<Point>
+            <coordinates>55.35769423695895,-21.22942324924768</coordinates>
+        </Point>","-21,2294232492","55,357694237"
+Av_v,ravine sèche,capital_big,quartier,"<Point>
+            <coordinates>55.35150299673337,-21.24338745098464</coordinates>
+        </Point>","-21,243387451","55,3515029967"
+Av_v,fond maurice,capital_big,quartier,"<Point>
+            <coordinates>55.34979532718648,-21.24983446332922</coordinates>
+        </Point>","-21,2498344633","55,3497953272"
+Av_v,ravine sèche les bas,capital_big,quartier,"<Point>
+            <coordinates>55.35535178530645,-21.25183472670614</coordinates>
+        </Point>","-21,2518347267","55,3553517853"
+Av_v,piton des merles,mountains,mont,"<Point>
+            <coordinates>55.37867601727644,-21.18792318298049</coordinates>
+        </Point>","-21,187923183","55,3786760173"
+Av_v,piton monty,mountains,mont,"<Point>
+            <coordinates>55.36212066640879,-21.20030112966637</coordinates>
+        </Point>","-21,2003011297","55,3621206664"
+Av_v,les Avirons,road_shield1,ville,"<Point>
+            <coordinates>55.3340268499044,-21.24187740317775</coordinates>
+        </Point>","-21,2418774032","55,3340268499"
+Av_v,mussard,terain,lieuDit_,"<Point>
+            <coordinates>55.36645110105014,-21.21959870489486</coordinates>
+        </Point>","-21,2195987049","55,3664511011"
+Av_v,Cheminée Monjol Mondon,cbh,"La cheminée Monjol Mondon est le seul vestige de l'usine sucrière des Avirons,
+ cette cheminée est inscrite aux monuments historiques le 11 juillet 2002 en totalité,
+ y compris son terrain d’assiette.","<Point>
+            <coordinates>55.33257121108989,-21.24407269982862</coordinates>
+        </Point>","-21,2440726998","55,3325712111"

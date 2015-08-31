@@ -1,0 +1,82 @@
+id,nom,categ,description,geometry,lat,lng
+PP_md,Gîte du Pic des Sables,realestate*gite_de_france,": gite d'étape _
+<b>label: gites de france, villages créoles </b>
+tél: +262 262 51 37 33 _
+gsm: +262 692 64 54 97 _
+acces hdcp","<Point>
+            <coordinates>55.60141999999999,-21.14639722222222</coordinates>
+        </Point>","-21,1463972222","55,60142"
+PP_md,L’ Escale des Calumets,dining," restaurant _
+<b>spé: Créole et Chinoise</b>_
+tél:  +262 262 51 44 21 _
+gsm: +262 692 64 77 46","<Point>
+            <coordinates>55.609337,-21.15498611111111</coordinates>
+        </Point>","-21,1549861111","55,609337"
+PP_md,La Ferme du Pommeau **,rec_logding*dining," hotel, restaurant _
+<b>spé: terroirs, créoles</b>_
+label: qualité tourisme, villages créoles _
+tél: +262 262 51 40 70 _
+acces hdcp","<Point>
+            <coordinates>55.63544039999999,-21.13723888888889</coordinates>
+        </Point>","-21,1372388889","55,6354404"
+PP_md,Le Café de la Place,snack_bar,"activité: snack _
+<b>spé: rapide</b> _
+tél: +262 692 68 13 78 _
+gsm: +262 692 57 62 06","<Point>
+            <coordinates>55.62295,-21.13933333333333</coordinates>
+        </Point>","-21,1393333333","55,62295"
+PP_md,Les Platanes,dining," restaurant _
+<b>spé: créole et chinoise</b>_
+tél: +262 262 51 31 69","<Point>
+            <coordinates>55.629824,-21.13395277777778</coordinates>
+        </Point>","-21,1339527778","55,629824"
+PP_md,Le Boulodrome,dining," restaurant _
+gsm: +262 692 88 87 10","<Point>
+            <coordinates>55.63102599999999,-21.13274722222222</coordinates>
+        </Point>","-21,1327472222","55,631026"
+PP_md,Lunch Kfé,dining," restaurant _
+tél: +262 262 47 30 61 _
+gsm: +262 692 29 63 63","<Point><coordinates>55.624978,-21.136125</coordinates></Point>","-21,136125","55,624978"
+PP_md,Le Petit Four,snack_bar,"snack _
+tél: +262 262 53 38 79","<Point>
+            <coordinates>55.616086,-21.14761111111111</coordinates>
+        </Point>","-21,1476111111","55,616086"
+PP_md,Le Petit Four,dining,"restaurant _
+tél: +262 262 53 38 79","<Point>
+            <coordinates>55.616086,-21.14761111111111</coordinates>
+        </Point>","-21,1476111111","55,616086"
+PP_md,Le Délice des Plaines,snack_bar,"snack _
+tél: +262 262 41 45 63 _
+gsm: +262 692 87 01 75","<Point>
+            <coordinates>55.623309,-21.13871388888889</coordinates>
+        </Point>","-21,1387138889","55,623309"
+PP_md,Au Coeur de Palmier,dining," restaurant _
+<b>spé:  asiatique,  créole</b>_
+tél: +262 262 51 40 51","<Point>
+            <coordinates>55.625458,-21.13550833333333</coordinates>
+        </Point>","-21,1355083333","55,625458"
+PP_md,Le Café des Arts,snack_bar,"snack _
+gsm: +262 692 65 57 41","<Point>
+            <coordinates>55.62662,-21.13517222222222</coordinates>
+        </Point>","-21,1351722222","55,62662"
+PP_md,Le Conflor du Piton,lodging," chambre d'hote _
+tél: +262 262 51 41 04 _
+gsm: +262 692 67 62 33","<Point>
+            <coordinates>55.64167797982917,-21.12550448358923</coordinates>
+        </Point>","-21,1255044836","55,6416779798"
+PP_md,Le Clos des Mimosas,lodging,"table d'hote ,chambre d'hote _
+tél:  +262 262 88 82 69 _
+gsm: +262 692 41 67 29","<Point>
+            <coordinates>55.61683333333333,-21.13793888888889</coordinates>
+        </Point>","-21,1379388889","55,6168333333"
+PP_md,Le Jardin de Sérénité,spa*realestate*hdcp,"spa-massage chambre d'hote _
+tél:  +262 262 51 34 13 _
+gsm: +262 692 99 62 43 _
+acces hdcp","<Point>
+            <coordinates>55.63635299999999,-21.145732</coordinates>
+        </Point>","-21,145732","55,636353"
+PP_md,L' Echelle,realestate," chambre d'hote _
+tél: +262 262 51 48 55 _
+gsm: +262 692 08 99 38","<Point>
+            <coordinates>55.62753333333333,-21.13957777777778</coordinates>
+        </Point>","-21,1395777778","55,6275333333"

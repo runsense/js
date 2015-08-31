@@ -1,0 +1,20 @@
+id,nom,categ,description,geometry,lat,lng
+Pos_a,Les Acacias,realestate*gite_de_france,"chambre d'hôte, gîte d'étape_
+<b>label: gîtes de France</b>
+tél: +262 262 32 01 47_
+tél: +262 262 32 02 34_
+gsm: +262 692 86 54 68_
+accès hdcp","<Point>
+            <coordinates>55.38025609,-20.98023888888889</coordinates>
+        </Point>","-20,9802388889","55,38025609"
+Pos_a,Le Pilon d'Or,realestate," chambre d'hote_
+tél:  +262 262 32 01 56_
+tél: +262 262 44 50 48_
+gsm: +262 692 25 91 16","<Point>
+            <coordinates>55.38255810999999,-20.98082222222222</coordinates>
+        </Point>","-20,9808222222","55,38255811"
+Pos_a,Auberge du Cap Noir - Chez Raymonde Pignolet,realestate," auberge chambre d'hote_
+tél: +262 262 32 00 82_
+tél: +262 262 32 07 66","<Point>
+            <coordinates>55.3845083,-20.98639444444445</coordinates>
+        </Point>","-20,9863944444","55,3845083"

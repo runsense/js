@@ -1,0 +1,13 @@
+id,nom,categ,description,geometry,lat,lng
+Por_v,lotissement cotur,capital_big,quartier,"<Point>
+            <coordinates>55.29774058506499,-20.94828091183323</coordinates>
+        </Point>","-20,9482809118","55,2977405851"
+Por_v,pointe des galets,terain,pointInteret,"<Point>
+            <coordinates>55.28839332574786,-20.92358421637199</coordinates>
+        </Point>","-20,9235842164","55,2883933257"
+Por_v,pointe de la rivière des galets,terain,pointInteret,"<Point>
+            <coordinates>55.27754079443843,-20.95468034297408</coordinates>
+        </Point>","-20,954680343","55,2775407944"
+Por_v,le port,road_shield1,ville,"<Point>
+            <coordinates>55.29079557570896,-20.93769738751378</coordinates>
+        </Point>","-20,9376973875","55,2907955757"

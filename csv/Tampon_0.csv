@@ -1,0 +1,12 @@
+id,nom,categ,description,geometry,lat,lng
+T_t,STADE BRAS CREUX,play,"stade de foot _
+STADE BRAS CREUX Le Tampon 97430 LE TAMPON","<Point><coordinates>55.515319,-21.274849</coordinates></Point>","-21,274849","55,515319"
+T_t,Tennis-club municipal du Tampon,donut,tennis club,"<Point>
+            <coordinates>55.52563423697934,-21.28490571128356</coordinates>
+        </Point>","-21,2849057113","55,525634237"
+T_t,Tennis-club du Tampon,donut,tennis club,"<Point>
+            <coordinates>55.52098890905855,-21.27194228290565</coordinates>
+        </Point>","-21,2719422829","55,5209889091"
+T_t,Stade Klébert-Picard,play,"stade de foot club: US Stade Tamponnaise,","<Point>
+            <coordinates>55.521667,-21.27222222222222</coordinates>
+        </Point>","-21,2722222222","55,521667"

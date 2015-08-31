@@ -1,0 +1,31 @@
+id,nom,categ,description,geometry,lat,lng
+TB_v,Viaduc de la ravine,cbh,pointInteret,"<Point>
+            <coordinates>55.36243606983974,-21.10803407568247</coordinates>
+        </Point>","-21,1080340757","55,3624360698"
+TB_v,église Notre Dame des Sept Douleurs,church,religion,"<Point>
+            <coordinates>55.29492059991985,-21.10425540018785</coordinates>
+        </Point>","-21,1042554002","55,2949205999"
+TB_v,la souris chaude,capital_big,quartier,"<Point>
+            <coordinates>55.25868660008612,-21.11884260923118</coordinates>
+        </Point>","-21,1188426092","55,2586866001"
+TB_v,la souris blanche,capital_big,quartier,"<Point>
+            <coordinates>55.26104016541887,-21.12268956046681</coordinates>
+        </Point>","-21,1226895605","55,2610401654"
+TB_v,la grande ravinne,capital_big,quartier,"<Point>
+            <coordinates>55.26775197336237,-21.12634173775608</coordinates>
+        </Point>","-21,1263417378","55,2677519734"
+TB_v,bois de nèfles,capital_big,quartier,"<Point>
+            <coordinates>55.28325616428516,-21.11064117803661</coordinates>
+        </Point>","-21,110641178","55,2832561643"
+TB_v,montvert,capital_big,quartier,"<Point>
+            <coordinates>55.30488760281227,-21.09988773053691</coordinates>
+        </Point>","-21,0998877305","55,3048876028"
+TB_v,cocâtre,capital_big,quartier,"<Point>
+            <coordinates>55.30216650766578,-21.11727555903398</coordinates>
+        </Point>","-21,117275559","55,3021665077"
+TB_v,la petite ravinne,capital_big,quartier,"<Point>
+            <coordinates>55.30149890701658,-21.12515801500092</coordinates>
+        </Point>","-21,125158015","55,301498907"
+TB_v,les trois bassins,capital_big,quartier,"<Point>
+            <coordinates>55.2953359263223,-21.10560699379192</coordinates>
+        </Point>","-21,1056069938","55,2953359263"

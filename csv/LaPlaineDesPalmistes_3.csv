@@ -1,0 +1,125 @@
+id,nom,categ,description,geometry,lat,lng
+PP_v,col de bellevue,mountains,pointInteret,"<Point>
+            <coordinates>55.58675933075114,-21.16692088340139</coordinates>
+        </Point>","-21,1669208834","55,5867593308"
+PP_v,piton des moutsabismen,mountains,mont,"<Point>
+            <coordinates>55.66018534921123,-21.1753506352026</coordinates>
+        </Point>","-21,1753506352","55,6601853492"
+PP_v,Piton de l'Eau,mountains,"mont
+Le Piton de l'Eau est partagé entre la commune de La Plaine des Palmistes
+ auquel il appartient, et les éleveurs de La Plaine des Cafres.
+ Le Piton de l'eau représente l'unique lac volcanique de La Réunion,
+ il témoigne de l'ancienne activité éruptive.","<Point>
+            <coordinates>55.68527934438642,-21.17534311475306</coordinates>
+        </Point>","-21,1753431148","55,6852793444"
+PP_v,coteau kervéguen,mountains,mont,"<Point>
+            <coordinates>55.50413259575574,-21.12523230134627</coordinates>
+        </Point>","-21,1252323013","55,5041325958"
+PP_v,cap anglais,mountains,mont,"<Point>
+            <coordinates>55.51718812436155,-21.09233470695788</coordinates>
+        </Point>","-21,092334707","55,5171881244"
+PP_v,mazerin,mountains,mont,"<Point>
+            <coordinates>55.55964133499212,-21.07319509357699</coordinates>
+        </Point>","-21,0731950936","55,559641335"
+PP_v,piton des 3 communes,mountains,mont,"<Point>
+            <coordinates>55.724537412718,-21.16926214110299</coordinates>
+        </Point>","-21,1692621411","55,7245374127"
+PP_v,sommet de l'entre-deux,mountains,mont,"<Point>
+            <coordinates>55.50708756491377,-21.14027087812984</coordinates>
+        </Point>","-21,1402708781","55,5070875649"
+PP_v,piton louis,mountains,mont,"<Point>
+            <coordinates>55.61099154526188,-21.17176878512841</coordinates>
+        </Point>","-21,1717687851","55,6109915453"
+PP_v,église Sainte Agathe,church,"religion
+Sainte Agathe, qui signifie Sainte de Dieu,
+ est la patronne de La Plaine des Palmistes depuis l'érection de la paroisse,
+ le 21 novembre 1857, par René Maupoint, évêque de Saint-Denis de La Réunion.","<Point>
+            <coordinates>55.63563212330369,-21.14543487719147</coordinates>
+        </Point>","-21,1454348772","55,6356321233"
+PP_v,Mairie de la plaine des Palmiste,cbh,"historique
+Mairie de La Plaine des Palmistes et ancienne mairie.
+Batisse en bois sous tôle.","<Point>
+            <coordinates>55.62577305177887,-21.13501558899937</coordinates>
+        </Point>","-21,135015589","55,6257730518"
+PP_v,Piton des songes,mountains,"mont
+Piton des Songes et Notre Dame du Sacré Cœur.
+ Ce site accessible en voiture, se situe au Bras des Calumets. 
+En haut se trouve le Calvaire inaugurée en 1984, 
+et le château d'eau qui dessert les habitants de La Plaine des Palmistes.","<Point>
+            <coordinates>55.60002837874224,-21.13331544987026</coordinates>
+        </Point>","-21,1333154499","55,6000283787"
+PP_v,Domaine des tourelles,cbh*terain,"Le Domaine des Tourelles, 
+Située sur un vaste domaine de cinq hectares,
+ cette villa est construite en 1927 à l'initiative de Jean de Villeneuve, 
+grand propriétaire terrien de Saint-Benoît","<Point>
+            <coordinates>55.62414422211953,-21.13758994819753</coordinates>
+        </Point>","-21,1375899482","55,6241442221"
+PP_v,piton de chat,mountains,mont,"<Point>
+            <coordinates>55.66758819434702,-21.16470472106925</coordinates>
+        </Point>","-21,1647047211","55,6675881943"
+PP_v,piton des cabris,mountains,mont,"<Point>
+            <coordinates>55.65325135035358,-21.15822467951554</coordinates>
+        </Point>","-21,1582246795","55,6532513504"
+PP_v,morne de saint-frannullois,mountains,mont,"<Point>
+            <coordinates>55.6494749339569,-21.1378502137443</coordinates>
+        </Point>","-21,1378502137","55,649474934"
+PP_v,piton carron ou piton de saint-frannullois,mountains,mont,"<Point>
+            <coordinates>55.6549241662987,-21.12818174217359</coordinates>
+        </Point>","-21,1281817422","55,6549241663"
+PP_v,piton camps de tête,mountains,mont,"<Point>
+            <coordinates>55.64682336901009,-21.10982994174025</coordinates>
+        </Point>","-21,1098299417","55,646823369"
+PP_v,Mornes de l'étang,mountains,mont,"<Point>
+            <coordinates>55.63951065719365,-21.10134382103533</coordinates>
+        </Point>","-21,101343821","55,6395106572"
+PP_v,puits de l'étang,water,pointInteret,"<Point>
+            <coordinates>55.64543155514411,-21.09501667905254</coordinates>
+        </Point>","-21,0950166791","55,6454315551"
+PP_v,piton des roches,mountains,mont,"<Point>
+            <coordinates>55.62569522134859,-21.15274967627643</coordinates>
+        </Point>","-21,1527496763","55,6256952213"
+PP_v,piton des songes,mountains,mont,"<Point>
+            <coordinates>55.60770918271234,-21.15213734413472</coordinates>
+        </Point>","-21,1521373441","55,6077091827"
+PP_v,ilet patience,terain,pointInteret,"<Point>
+            <coordinates>55.60100446979013,-21.12150723418376</coordinates>
+        </Point>","-21,1215072342","55,6010044698"
+PP_v,plateau duvernay,terain,pointInteret,"<Point>
+            <coordinates>55.57910876433462,-21.11732710412239</coordinates>
+        </Point>","-21,1173271041","55,5791087643"
+PP_v,piton de bébourg ou piton rond,mountains,mont,"<Point>
+            <coordinates>55.57661277056813,-21.12772190011518</coordinates>
+        </Point>","-21,1277219001","55,5766127706"
+PP_v,pic des sables,mountains,mont,"<Point>
+            <coordinates>55.59512455996513,-21.13877165747882</coordinates>
+        </Point>","-21,1387716575","55,59512456"
+PP_v,piton tortue,mountains,mont,"<Point>
+            <coordinates>55.58113854567408,-21.14225417274576</coordinates>
+        </Point>","-21,1422541727","55,5811385457"
+PP_v,cassé takamaka,terain,pointInteret,"<Point>
+            <coordinates>55.57335093414191,-21.10964592016745</coordinates>
+        </Point>","-21,1096459202","55,5733509341"
+PP_v,plaines des marsouins,terain,pointInteret,"<Point>
+            <coordinates>55.55997561856771,-21.09248619834166</coordinates>
+        </Point>","-21,0924861983","55,5599756186"
+PP_v,bras piton,capital_big,quartier,"<Point>
+            <coordinates>55.62278922518661,-21.16697714919649</coordinates>
+        </Point>","-21,1669771492","55,6227892252"
+PP_v,bras calumets,capital_big,quartier,"<Point>
+            <coordinates>55.60318063733485,-21.14857570565421</coordinates>
+        </Point>","-21,1485757057","55,6031806373"
+PP_v,le bras creux,capital_big,quartier,"<Point>
+            <coordinates>55.6160496904513,-21.15045192726069</coordinates>
+        </Point>","-21,1504519273","55,6160496905"
+PP_v,La Plaine des palmistes,capital_big,quartier,"<Point>
+            <coordinates>55.61787734090473,-21.14104536549062</coordinates>
+        </Point>","-21,1410453655","55,6178773409"
+PP_v,le chemin dureau,capital_big,quartier,"<Point>
+            <coordinates>55.63026037251624,-21.13060571070194</coordinates>
+        </Point>","-21,1306057107","55,6302603725"
+PP_v,première village les bas,capital_big,quartier,"<Point>
+            <coordinates>55.63928746508035,-21.12835902111357</coordinates>
+        </Point>","-21,1283590211","55,6392874651"
+PP_v,les remparts,capital_big,quartier,"<Point>
+            <coordinates>55.60489699072419,-21.13521450697745</coordinates>
+        </Point>","-21,135214507","55,6048969907"

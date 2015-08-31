@@ -10,8 +10,8 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
         <!--referencement -->
         
-            <meta name="Description" content="Mobile et Tote plateforme, Loisirs et plaisirs, avec info sentier fermé et marinnes de l'ile de la Réunion" />
-            <meta name="Keywords" content="sentier,itinéraire,route,loisirs,culturels,touristiques,ludique,sportives,réunion,REUNION,île,Island,hotel,restaurant,foot,tennis,billard,pizza,club,festivals" />
+            <meta name="Description" content="Mobile MOBILE et Toute plateforme ALL PLATFORM, Loisirs et plaisirs ENTERTAINMENT AND PLEASURE, PATH NIGHT CLUB DINNING avec info sentier fermé et marinnes de l'ile de la Réunion" />
+            <meta name="Keywords" content="sentier,path,itinéraire,route,loisirs, entertainment, culturels,touristiques,ludique,sportives,sports,réunion,REUNION,île,Island,hotel,restaurant,foot,tennis,billard,pool,pizza,club,festivals" />
         
 		<meta name="viewport" content="width=device-width" />
         <meta name="Author" content="Runsense" />
@@ -30,6 +30,9 @@
 	<link rel="stylesheet" href="./jqx/jqx.summer.css" type="text/css" />
     <link rel="stylesheet" href="./jqx/jqx.base.css" type="text/css" />
 	<link rel="stylesheet" href="./css/runsense.css" type="text/css" />
+	
+	<link rel="stylesheet" href="./js/jquery/jquery-ui.css" type="text/css" >
+	<link rel="stylesheet" href="./js/jquery/jquery.selectBox.css" type="text/css" >
 	<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
 	<link rel="stylesheet" media="all and (orientation:portrait)" href="./jqx/jqx.mobile.css" />
 	<link rel="stylesheet" media="all and (orientation:landscape)" href="./jqx/jqx.mobile.css" />
@@ -38,6 +41,7 @@
 	<link rel="stylesheet" media="all and (max-width: 1200px)" href="./css/largeSize.css" />
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./jqx/jqxcore.js"></script>
     <script type="text/javascript" src="./jqx/jqxbuttons.js"></script>
     <script type="text/javascript" src="./jqx/jqxscrollbar.js"></script>
@@ -45,10 +49,10 @@
     <script type="text/javascript" src="./jqx/jqxpanel.js"></script>
     <script type="text/javascript" src="./jqx/jqxtree.js"></script>
 	<script type="text/javascript" src="./jqx/jqxcheckbox.js"></script>
-	
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
     </script>
 
+	<script type="text/javascript" src="./js/jquery/jquery.selectBox.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
@@ -58,9 +62,93 @@
 <body class='default'> 
 	<div id="map_canvas" title="DOUBLE cliquer pour ZOOMer"></div>
 	
-        <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)'>
-			<button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
+        <div id="panel" title='ALLER sur le PANNEAU pour la MAP A DROITE(GO ON RIGHT PANEL FOR MAP)' >
+			<button id='fl'> Ou suis-je</button><button id='btn'  >revenir aux choix de l'Arbre (RETURN TREE SEARCH)</button>
+			<form>
+				<table id="accs" >
+				<tr>
+					<td><input id="r_tab" title="Rac. Rch. tab." placeholder="recherche Tableau" onclick="this.value=''" type="text" /></td>
+					<td><input id="r_bdd" title="En Construction!!" placeholder="recherche BDD " onclick="this.value=''" type="text" /></td>
+				</tr>
+					<tr>				
+						<td>
+						<!--<input id="r_lieu" title="Acessiblilite" placeholder="Autocomplete lIEUX et tableau" onclick="this.value=''" type="text" />-->
+						<label for="r_lieu">Select Lieux </label><br/>
+						<select id="r_lieu" style="width: 200px;"  >
+							<optgroup label="ZONE">
+								<option value="OUEST">OUEST</option>
+							</optgroup>
+							<optgroup label="OUEST">
+								<option value="Mafate">Mafate</option>
+								<option value="Saint-Gilles">Saint-Gilles</option>
+								<option value="Saint-Leu">Saint-Leu</option>
+								<option value="TroisBassins">Trois Bassins</option>
+								<option value="Saint-Paul">Saint-Paul</option>
+								<option value="EtangSale">Etang Sale</option>
+								<option value="Entre-Deux">Entre-Deux</option>
+								<option value="LesAvirons">LesAvirons</option>
+							</optgroup>
+							<optgroup label="ZONE">
+								<option value="SUD">SUD</option>
+							</optgroup>
+							<optgroup label="SUD">
+								<option value="Saint-Pierre">Saint-Pierre</option>
+								<option value="Saint-Joseph">Saint-Joseph</option>
+								<option value="PetiteIle">PetiteIle</option>
+								<option value="Saint-Louis">Saint-Louis</option>
+								<option value="Cilaos">Cilaos</option>
+								<option value="Tampon">Tampon</option>
+								<option value="LaPlaineDesCafres">LaPlaineDesCafres</option>
+								<option value="enclosduTremblet">enclosduTremblet</option>
+								<option value="Saint-Phillippe">Saint-Phillippe</option>
+							</optgroup>
+							<optgroup label="ZONE">
+								<option value="NORD">NORD</option>
+							</optgroup>
+							<optgroup label="NORD">
+								<option value="Saint-Denis">Saint-Denis</option>
+								<option value="Sainte-Marie">Sainte-Marie</option>
+								<option value="Sainte-Suzanne">Sainte-Suzanne</option>
+								<option value="LaPossession">LaPossession</option>
+								<option value="LePort">LePort</option>
+							</optgroup>
+							<optgroup label="ZONE">
+								<option value="EST">EST</option>
+							</optgroup>
+							<optgroup label="EST">
+								<option value="Bras-Panon">Bras-Panon</option>
+								<option value="Saint-Andre">Saint-Andre</option>
+								<option value="Saint-Benoit">Saint-Benoit</option>
+								<option value="Sainte-Anne">Sainte-Anne</option>
+								<option value="LePort">Sainte-Rose</option>
+								<option value="LePort">LaPlaineDesPalmistes</option>
+								<option value="LePort">Salazie</option>
+							</optgroup>
+						</select>
+						</td>
+					
+						<td ><!--<input id="r_theme" title="Acessiblilite" placeholder="Autocomplete THEME" onclick="this.value=''" type="text" />-->
+						<label for="r_theme">Select Thème </label><br/>
+						<select id="r_theme" style="width: 200px;" >
+								<option value="">general</option>
+								<option value="t">terrain et jeux POOL</option>
+								<option value="s">sentiers et routes PATH & ROAD</option>
+								<option value="md">manger & dormir EAT & SLEEP</option>
+								<option value="v">Lieu dit et quartier PLACE & QUARTER</option>
+								<option value="n">boite de nuit & pub NIGHT CLUB & FESTIVALS</option>
+								<option value="a">loisirs, info marinne ENTERTAINEMENT & SEA INFO</option>
+						</select>
+						</td>
+					</tr>
+				</table>
+			</form>
 			<div id="info" ></div>
+			
+						<!--<div id='jqxExpander'>-->
+							<div id="search"> <button id='clear' style='background: none;float:right' >Clear check</button></div>
+							<div id='jqxTree'>
+							</div>
+						<!--</div>-->
 			<table id="itinv" >
 				<tr>				
 					<td><input id="dep" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="d&eacute;part (START) :"/></td><td rowspan="2"><button id='iti' >ITINERAIRE (route)</button></td>
@@ -69,22 +157,6 @@
 					<td><input id="arv" title="Entrer Adresse ou Pointer sur Carte (ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="arriv&eacute; (END):"/></td>
 				</tr>
 			</table>
-			
-			
-						<!--<div id='jqxExpander'>-->
-							<div id="search"> <button id='clear' style='background: none;float:right' >Clear check</button></div>
-							<div id='jqxTree'>
-							</div>
-						<!--</div>-->
-			<!--************CODE GEOCOUNTER************-->
-			<script type="text/javascript" src="http://geoloc4.whoaremyfriends.net/private/geocounter.js?compte=121035895687"></script>
-			<noscript>
-			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php?compte=121035895687"  target="_blank"><img src="http://geoloc4.whoaremyfriends.net/private/geocounter.php?compte=121035895687" border="0" alt="plateformes"></a>
-
-			<br>Please do not change this code for a perfect fonctionality of your counter
-			<a href="http://www.geovisites.com/fr/directory/informatique_plateformes.php">plateformes</a>
-			</noscript>
-			<!--************END CODE GEOCOUNTER************-->
 			<a title="Modification ou nouvelle informations" href="mailto:runsense974@gmail" target="_top"> runsense974@gmail </a>
 			
 		</div>

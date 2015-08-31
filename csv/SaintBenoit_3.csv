@@ -1,0 +1,128 @@
+id,nom,categ,description,geometry,lat,lng
+SB_v,Saint-Benoit,road_shield1,"ville
+","<Point>
+            <coordinates>55.71294826451624,-21.03343815014321</coordinates>
+        </Point>","-21,0334381501","55,7129482645"
+SB_v,bassin la mer,water,rivière,"<Point>
+            <coordinates>55.66324549421676,-21.03401096243375</coordinates>
+        </Point>","-21,0340109624","55,6632454942"
+SB_v,chaine du piton papangue,mountains,mont,"<Point>
+            <coordinates>55.64843702732946,-21.04171634287306</coordinates>
+        </Point>","-21,0417163429","55,6484370273"
+SB_v,forêt départementale du piton papangue,terain,forêt,"<Point>
+            <coordinates>55.63715474309062,-21.05520212267489</coordinates>
+        </Point>","-21,0552021227","55,6371547431"
+SB_v,rivière des roches,3,"rivière
+_19,6","<Point>
+            <coordinates>55.70075230950387,-21.00583120119644</coordinates>
+        </Point>","-21,0058312012","55,7007523095"
+SB_v,beauvallon dit rivière des roches saint-benoit,capital_big,quartier,"<Point>
+            <coordinates>55.69419510652399,-21.01064443909262</coordinates>
+        </Point>","-21,0106444391","55,6941951065"
+SB_v,"Caméra Direction Régionale des Routes
+RN2 - Beaulieu Saint Benoit",webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wdde.php?n=2075"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.70503225661589,-21.03146870424025</coordinates>
+        </Point>","-21,0314687042","55,7050322566"
+SB_v,distillerie de la rivière du mât,cbh,"historique
+_
+Monument historique encore en activité, 
+elle traite les mélasse produites 
+par les usines du Gol
+et de bois rouge","<Point>
+            <coordinates>55.72128583953106,-21.04945033256855</coordinates>
+        </Point>","-21,0494503326","55,7212858395"
+SB_v,Fontaine place de l'église,cbh,"Construite par J. J. Duce, maître de forges à Paris, 
+ la Fontaine place de l'église à Saint-Benoît est inscrite à l'inventaire des monuments historiques depuis 1997.","<Point>
+            <coordinates>55.71254144098728,-21.03336260525</coordinates>
+        </Point>","-21,0333626053","55,712541441"
+SB_v,Eglise de Saint-Benoit,church,pointInteret,"<Point>
+            <coordinates>55.71226404121033,-21.03385554740372</coordinates>
+        </Point>","-21,0338555474","55,7122640412"
+SB_v,"le Bourbier, la Marinne",cbh,"Amménagé en 1880,
+il servi d'embarcadère jusqu'en 1904, emporté par le cyclone","<Point>
+            <coordinates>55.70497349269186,-21.01959977103074</coordinates>
+        </Point>","-21,019599771","55,7049734927"
+SB_v,Mairie de Saint-Benoit,road_shield1,pointInteret,"<Point>
+            <coordinates>55.712736,-21.03307777777778</coordinates>
+        </Point>","-21,0330777778","55,712736"
+SB_v,La rivière des roches,cbh*water,Au lieu de la pêche au bichique,"<Point>
+            <coordinates>55.69998591450902,-21.00420554607596</coordinates>
+        </Point>","-21,0042055461","55,6999859145"
+SB_v,Cheminée Beaufonds,cbh,inscrite à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002,"<Point>
+            <coordinates>55.72144444444444,-21.05063888888889</coordinates>
+        </Point>","-21,0506388889","55,7214444444"
+SB_v,Gendarmerie de Saint-Benoît,cbh,"œuvre de l'architecte Jean Bossu
+inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 26 août 2011","<Point>
+            <coordinates>55.7065,-21.03166666666667</coordinates>
+        </Point>","-21,0316666667","55,7065"
+SB_v,ancienne cité du P.K.12,capital_big,quartier,"<Point>
+            <coordinates>55.63200100857459,-21.07598537303375</coordinates>
+        </Point>","-21,075985373","55,6320010086"
+SB_v,forêt de villeneuve,terain,forêt,"<Point>
+            <coordinates>55.63828641765664,-21.07004418580011</coordinates>
+        </Point>","-21,0700441858","55,6382864177"
+SB_v,bourbier les bas,capital_big,"quartier
+","<Point>
+            <coordinates>55.70206679963307,-21.01981494012253</coordinates>
+        </Point>","-21,0198149401","55,7020667996"
+SB_v,pointe du bourbier,mountains,mont,"<Point>
+            <coordinates>55.70496659246531,-21.01966450789172</coordinates>
+        </Point>","-21,0196645079","55,7049665925"
+SB_v,bourbier les hauts,capital_big,"quartier
+","<Point>
+            <coordinates>55.69223101997559,-21.02847014547138</coordinates>
+        </Point>","-21,0284701455","55,69223102"
+SB_v,abondance,capital_big,"quartier
+","<Point>
+            <coordinates>55.67363715529319,-21.03471658196353</coordinates>
+        </Point>","-21,034716582","55,6736371553"
+SB_v,abondance les hauts,capital_big,"quartier
+","<Point>
+            <coordinates>55.6618642963693,-21.04386379686963</coordinates>
+        </Point>","-21,0438637969","55,6618642964"
+SB_v,massif du cratère,mountains,mont,"<Point>
+            <coordinates>55.66717049246151,-21.0685495339127</coordinates>
+        </Point>","-21,0685495339","55,6671704925"
+SB_v,forêt départementale du cratère,terain,forêt,"<Point>
+            <coordinates>55.6667345722956,-21.08715771640183</coordinates>
+        </Point>","-21,0871577164","55,6667345723"
+SB_v,pont payet,capital_big,"quartier
+","<Point>
+            <coordinates>55.67487417452203,-21.09929570740675</coordinates>
+        </Point>","-21,0992957074","55,6748741745"
+SB_v,chemin de ceinture,capital_big,"quartier
+","<Point>
+            <coordinates>55.69205663556302,-21.08209748003607</coordinates>
+        </Point>","-21,08209748","55,6920566356"
+SB_v,les jacques,capital_big,"quartier
+","<Point>
+            <coordinates>55.70280871097669,-21.07180524662645</coordinates>
+        </Point>","-21,0718052466","55,702808711"
+SB_v,la confiance,capital_big,"quartier
+","<Point>
+            <coordinates>55.70257797390163,-21.06667106906486</coordinates>
+        </Point>","-21,0666710691","55,7025779739"
+SB_v,bras madeleine,capital_big,"quartier
+","<Point>
+            <coordinates>55.69575757501264,-21.05610858295618</coordinates>
+        </Point>","-21,056108583","55,695757575"
+SB_v,le cratère,capital_big,"quartier
+","<Point>
+            <coordinates>55.68346652443736,-21.05060818403045</coordinates>
+        </Point>","-21,050608184","55,6834665244"
+SB_v,bras canot,capital_big,"quartier
+","<Point>
+            <coordinates>55.70219069667876,-21.0512606831592</coordinates>
+        </Point>","-21,0512606832","55,7021906967"
+SB_v,bras fusil,capital_big,"quartier
+","<Point>
+            <coordinates>55.71202298445711,-21.05072628558767</coordinates>
+        </Point>","-21,0507262856","55,7120229845"
+SB_v,bourbier-beaulieu,capital_big,"quartier
+","<Point>
+            <coordinates>55.70134787283688,-21.03317124916707</coordinates>
+        </Point>","-21,0331712492","55,7013478728"
+SB_v,chemin de bras canot,capital_big,"quartier
+","<Point>
+            <coordinates>55.71494075301349,-21.04137723601618</coordinates>
+        </Point>","-21,041377236","55,714940753"
