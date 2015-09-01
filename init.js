@@ -17,7 +17,7 @@
 			MapsLib.findMe();
 		  });
 		  $(FuncInit.idtab).on("mouseenter",function(){
-				
+				if(FuncInit.bnm){
 				$(this).animate({
 					opacity: '0.75',
 					height: '100%',
@@ -34,10 +34,12 @@
 					margin: '0px !important',
 					padding: '0px !important',
 				});
+				}
 				$(FuncInit.idinf).empty();
 				FuncTree.append("<small>Revenir MAP </small>(A DROITE)"
 								,"green");
 				$(FuncInit.idinf).bind('click',function(){
+					if(FuncInit.bnm){
 					$(FuncInit.idtab).animate({
 						opacity: '1',
 						height: '15%',
@@ -49,11 +51,12 @@
 					$(FuncInit.idp).animate({
 						opacity: '1'
 					});
-				
+					}
 				});
 				
 			});
 			$(FuncInit.idinf).bind('click',function(){
+					if(FuncInit.bnm){
 					$(FuncInit.idtab).animate({
 						opacity: '0.75',
 						height: '100%',
@@ -65,9 +68,11 @@
 					$(FuncInit.idp).animate({
 						opacity: '0.3'
 					});
+					}
 				});
 		
 		  $(FuncInit.idp).hover(function(){
+			if(FuncInit.bnm){
 				$(FuncInit.idtab).animate({
 					opacity: '1',
 					height: '15%',
@@ -79,7 +84,7 @@
 				$(FuncInit.idp).animate({
 						opacity: '1'
 					});
-			
+				}
 			});
 		$("#rtrm").click(function(){
 				$(FuncInit.idtab).animate({

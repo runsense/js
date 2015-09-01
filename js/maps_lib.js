@@ -23,6 +23,7 @@ var FuncInit={
 	idinf	: "#info",
 	iditi	: "#iti",
 	idbtn	: "#btn",
+	bstyle	: "http://runsense.github.io/js/f.png",
 	txtInit : ["terrain et jeux POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
 				,"manger & dormir EAT & SLEEP"		//2
@@ -48,12 +49,7 @@ var FuncInit={
 };
 
 //Objet creation tableau de réponse json
-/*!
- * Runsense 97Kafr
- *
- * Copyright 2018, Dalleau Pascal
- *
- */
+
 var FuncTab = FuncTab || {};
 var FuncTab = {
  results		: null,
@@ -85,29 +81,18 @@ fshBDD:  function()
 		if(FuncTab.lat!=""&&FuncTab.lng!="") {if(FuncTab.lng<55.8){MapsLib.map_centroid= new google.maps.LatLng(FuncTab.lat,FuncTab.lng);map.setCenter(MapsLib.map_centroid);}}
       FuncTab.results.append(FuncTab.list_table);
 	  $("#list_table").dataTable({
-			"aoColumns": [null,null,null,null,null],
-			  "sDom": '<"top"pf>rt<"bottom"lip><"clear">',
-			  "language": {
-				"infoEmpty": "Patienter ou affiner la recherche",
-				"zeroRecords": FuncTab.msg,
-			},
-			  "bFilter": true,"bInfo": true,"scrollY":"450px","scrollCollapse": true,"paging":true,"bAutoWidth": false
+			 "aoColumns": [null,null,null,null,null,null],"sDom": '<"top"pf>rt<"bottom"lip><"clear">',
+			 "language": {"infoEmpty": "Patienter ou affiner la recherche","zeroRecords": FuncTab.msg,},
+			 "bFilter": true,"bInfo": true,"scrollY":"450px","scrollCollapse": true,"paging":true,"bAutoWidth": false
 			});
 	$(".table tbody").on( 'click', 'tr', function (){
 				if(!FuncTree.bchk)
 				{
 					MapsLib.addSrchMarker.setMap(null);
-					var lat = $(this).children('td:nth-child(3)').text();
-					var lng = $(this).children('td:nth-child(4)').text();
+					var lat = $(this).children('td:nth-child(4)').text();var lng = $(this).children('td:nth-child(5)').text();var nm = '#'+$(this).children('td:nth-child(6)').text();
 					FuncTab.tabToMap(lat,lng);
-					
-					FuncTree.ptbid=new Array();
-					MapsLib.doSearch();
-					
-					$(FuncInit.idmap).focus();
-					FuncTree.zoom=13;
-				
-				FuncInit.bnm=true;
+					$(FuncInit.idtree).jqxTree('selectItem', $(nm)[0]);$(FuncInit.idtree).jqxTree('expandItem', $(nm)[0]);$(FuncInit.idmap).focus();FuncTree.zoom=13;
+					FuncInit.bnm=true;
 				}
 			}).on( 'mouseover', 'tr',
 			  function () {
@@ -192,11 +177,10 @@ tabToMap: function(lat,lng) {
 				{
 					MapsLib.map_centroid = new google.maps.LatLng(lat,lng);
 						map.setCenter(MapsLib.map_centroid);
-					FuncTree.zoom=16;
+						if(FuncTree.zoom!=10) FuncTree.zoom=16;
 						map.setMapTypeId(google.maps.MapTypeId.HYBRID)
 						map.setZoom(FuncTree.zoom);
-					$(FuncInit.idtab).animate({ opacity: '0.3', height: '30%'});
-					$(FuncInit.idmap).animate({ opacity: '1' });
+					if(FuncInit.bnm){$(FuncInit.idtab).animate({ opacity: '0.3', height: '30%'});$(FuncInit.idmap).animate({ opacity: '1' });}
 					MapsLib.chad='#arv';
 					MapsLib.addrFromLatLng(MapsLib.map_centroid);
 					
@@ -213,94 +197,31 @@ tabToMap: function(lat,lng) {
 }
 
 //Objet Itinéraire Google
-/*!
- * Runsense 97Kafr
- *
- * Copyright 2018, Dalleau Pascal
- *
- */
+
 var FuncRoute = FuncRoute || {};
 var FuncRoute = {
   directionsDisplay : new google.maps.DirectionsRenderer(),
   directionsService : new google.maps.DirectionsService(),
-  calcRoute: function () {
-			$(FuncInit.idinf).empty();
-			$(FuncInit.idinf).show();
-              var start = MapsLib.s;
-                var end = MapsLib.e;
-			if(end!==null)
+  calcRoute: function () {$(FuncInit.idinf).empty();$(FuncInit.idinf).show();
+            if(MapsLib.e!==null)
 			{
-				  var request = {
-					  origin:start,
-					  destination:end,
-					  travelMode: google.maps.TravelMode.DRIVING
-				  };
-				  FuncRoute.directionsService.route(request, function(response, status) {
-						
+				  var request = {origin:MapsLib.s,destination:MapsLib.e,travelMode: google.maps.TravelMode.DRIVING};FuncRoute.directionsService.route(request, function(response, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
-						
-					  FuncRoute.directionsDisplay.setDirections(response);
-					   MapsLib.zoom(map);
-					   $(FuncInit.idinf).empty();
-					   FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));
-					  
-					   $(FuncInit.idtree).hide();
-					   $('small').hide();
-					   
-					   $(FuncInit.idbtn).unbind();
-					   
+					FuncRoute.directionsDisplay.setDirections(response);MapsLib.zoom(map);$(FuncInit.idinf).empty();FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));$(FuncInit.idtree).hide();$('small').hide();$(FuncInit.idbtn).unbind();
 					   $(FuncInit.idbtn).bind('click',function(){
-							$(this).hide();
-							$(FuncInit.idtree).show();
-							$(FuncInit.idinf).hide();
-							$('#dep').val(null);$('#arv').val(null);
-							MapsLib.s=null;MapsLib.e=null;
-							$(FuncInit.idtab).on("mouseenter",function(){
-		  
-								$(this).animate({
-									opacity: '1',
-									height: '100%',
-									width: '70%'
-								});
-								$(FuncInit.idmap).animate({
-									opacity: '0.3'
-								});
-								$(FuncInit.idinf).empty();
-								FuncTree.append("<small>Revenir MAP (RETURN MAP) </small>(A DROITE)"
-								,"green");
-							});
-							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
-							FuncRoute.directionsService = new google.maps.DirectionsService();
+							$(this).hide();$(FuncInit.idtree).show();$(FuncInit.idinf).hide();$('#dep').val(null);$('#arv').val(null);MapsLib.s=null;MapsLib.e=null;
+							$(FuncInit.idtab).on("mouseenter",function(){ if(FuncInit.bnm){$(this).animate({opacity: '1',height: '100%',width: '70%'});$(FuncInit.idmap).animate({opacity: '0.3'});} $(FuncInit.idinf).empty();FuncTree.append("<small>Revenir MAP (RETURN MAP) </small>(A DROITE)","green");});
+							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();FuncRoute.directionsService = new google.maps.DirectionsService();
 							MapsLib.initialize();
-							
-					});
-					   $(FuncInit.idbtn).show();
-					   $(FuncInit.idbtn).css("color","red");
-					
-					   $(FuncInit.idtab).off();
-					   
+					});$(FuncInit.idbtn).show();$(FuncInit.idbtn).css("color","red");$(FuncInit.idtab).off();
 					}else
-					{
-						$(FuncInit.idinf).empty();
-						$(FuncInit.idinf).append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");
-						$(FuncInit.idinf).css("color","#000");
-						$(FuncInit.idinf).css("background-color","red");
-					}
-				  });
-				  
-				  
-				  MapsLib.doSearch();
-			  }
-    }
+					{$(FuncInit.idinf).empty();$(FuncInit.idinf).append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");$(FuncInit.idinf).css("color","#000");$(FuncInit.idinf).css("background-color","red");}
+				  });MapsLib.doSearch();
+	}}
 };
 
 //objet Arbre  
-/*!
- * Runsense 97Kafr
- *
- * Copyright 2018, Dalleau Pascal
- *
- */
+
 var FuncTree = FuncTree || {};
 var FuncTree = {
 	bchk		:false,
@@ -308,12 +229,10 @@ var FuncTree = {
 	bms			:true,
 	updBackG	:"body",
 	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
-	styles		:["","http://runsense.github.io/js/f.png"],
+	styles		:["",FuncInit.bstyle],
 	zoom		:10,
 	rvzoom		:10,
-	theme 		:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},
-					{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'} 
-				],
+	theme 		:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'}],
 	srcStyle		:[
 					{label: FuncInit.txtInit[0],value: "play"},
 					{label: FuncInit.txtInit[1],value: "hiker"},
@@ -578,21 +497,9 @@ var FuncTree = {
 			]
 			}
             ],
-	applyChild	:function(items){
-		for(var i in items)
-					{
-						FuncTree.chkItm(items[i]);
-						
-					}
-	},
-	chkItm :function(elmt){
-		var rplc='#'+elmt.id;
-				$(FuncInit.idtree).jqxTree('checkItem', $(rplc)[0], true);
-	},
-	slcItm :function(txt){
-		var rplc='#'+txt;
-		return $(FuncInit.idtree).jqxTree('selectItem', $(rplc)[0], true);
-	},
+	applyChild	:function(items){ for(var i in items) FuncTree.chkItm(items[i]); },
+	chkItm :function(elmt){ var rplc='#'+elmt.id; $(FuncInit.idtree).jqxTree('checkItem', $(rplc)[0], true);},
+	slcItm :function(txt){ var rplc='#'+txt; return $(FuncInit.idtree).jqxTree('selectItem', $(rplc)[0], true);},
 	applysrch :function(i)
 	{
 		var tmp=FuncTree.ptbid;
@@ -603,119 +510,54 @@ var FuncTree = {
 			FuncTree.ptbid.push(i.value);
 			FuncTree.styles.push(FuncTree.chStyle(i.label));
 						var u=FuncTree.chURL(i.label);
-						if(u!=null){FuncTree.styles.push(FuncTree.chURL(i.label));}
-						else {FuncTree.styles.push("url(http://runsense.github.io/js/f.png)");}
+						if(u!=null) FuncTree.styles.push(FuncTree.chURL(i.label));
+						else FuncTree.styles.push(FuncInit.bstyle);
 			}catch(e)
 			{ FuncTree.ptbid=tmp;FuncTree.styles=stmp; }
 	},
-	chStyle :function(l)
+	chStyle :function(l) { for(var i=0; i<FuncTree.srcStyle.length;i++) if(FuncTree.srcStyle[i].label==l) return FuncTree.srcStyle[i].value;},
+	chURL:function(l){for(var i=0; i<FuncTree.srcStyle.length;i++) if(FuncTree.srcStyle[i].label==l) return FuncTree.srcStyle[i].lien;},
+	append : function(txt,color){$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);},
+	selectBox : function(i)
 	{
-		for(var i=0; i<FuncTree.srcStyle.length;i++)
-			if(FuncTree.srcStyle[i].label==l)
-				return FuncTree.srcStyle[i].value;
-	},
-	chURL:function(l)
-	{
-		for(var i=0; i<FuncTree.srcStyle.length;i++)
-			if(FuncTree.srcStyle[i].label==l)
-				return FuncTree.srcStyle[i].lien;
-	},
-	append : function(txt,color)
-	{
-		$(FuncInit.idinf).append(txt);
-		$(FuncInit.idinf).css("color","white");
-		$(FuncInit.idinf).css("background-color",color);
+		if(i.id.match('_')==null)
+		{
+			var itmid=i.id;FuncInit.tmp='';
+			$("#r_lieu").selectBox('value',itmid);
+			var zns = FuncInit.srcZn
+				for(var z in zns){ if(zns[z]==itmid) FuncInit.tmp=itmid; }
+											
+				if(FuncInit.tmp=='') {var ids = FuncInit.srcId; for(var id in ids) if(ids[id].label==itmid) FuncInit.tmp=ids[id].id; }
+				if(FuncInit.tmp=='') FuncInit.tmp=itmid.split('_')[0]; FuncTree.bms=true;
+		}else { var slc=i.id.split('_')[1]; $("#r_theme").selectBox('value',slc);FuncTree.bms=false; }
 	}
 };
-
-	
-
 $(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: FuncTree.initl, theme: 'summer' });
 			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
-			
 $('#jqxTree .jqx-tree-item').mouseenter(function (event) {
-				event.stopPropagation();
-				if(FuncInit.bnm&&FuncTree.bms)
-				try{
-						var text = event.target.textContent;
-							text = text.replace(/ /g,'').replace(/'/g,'');
-							text = '#'+text;
-						var i = $(FuncInit.idtree).jqxTree('getItem',$(text)[0] );
-						if(i!=null) {FuncTree.applysrch(i);MapsLib.doSearch();}
-					}
+				event.stopPropagation();var text = event.target.textContent;var i;
+				if(FuncInit.bnm&&FuncTree.bms)try{text = text.replace(/ /g,'').replace(/'/g,'');rplc = '#'+text;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}
 				catch(e)
-				{;}
+				{
+				for(var j in FuncTree.theme){var rplc=FuncTree.theme[j].label.replace(/ /g,'').replace(/'/g,'');if(rplc==text) {rplc='#'+FuncInit.tmp+'_'+FuncTree.theme[j].value;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}}
+				}finally{FuncTree.applysrch(i);MapsLib.doSearch();}
 });
-$(FuncInit.idtree).on('expand', function (event) {
+$(FuncInit.idtree).on('expand', function (ev) {
 			if(FuncInit.bnm)
 			{
-				var e = event.args.element;
-				var item = $(FuncInit.idtree).jqxTree('getItem',e );
-				if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null)
-							FuncTree.zoom=12;
-						else
-							FuncTree.zoom=10;
+				var e = ev.args.element;var i = $(FuncInit.idtree).jqxTree('getItem',e );
+				if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null) FuncTree.zoom=12; else FuncTree.zoom=10;
 				if(!FuncTree.bgrow)
-				{
-					FuncTree.bgrow=true;
-					$(FuncInit.idtree).jqxTree('checkItem', e, true);
-					$('small').show();
-					FuncTree.applysrch(item);
-					MapsLib.doSearch();
-					$(FuncInit.idtree).jqxTree('ensureVisible', e);
-				}
+				{FuncTree.selectBox(i);FuncTree.bgrow=true;$(FuncInit.idtree).jqxTree('checkItem', e, true);$('small').show();FuncTree.applysrch(i);MapsLib.doSearch();$(FuncInit.idtree).jqxTree('ensureVisible', e);}
 			}			
 });
 $(FuncInit.idtree).on('collapse', function (ev) {
 FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Array();$(FuncInit.idtab).empty();FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch(); }
 });
-			$(FuncInit.idtree).bind('select', function (ev) {
-					ev.stopPropagation();
-						
-						FuncTree.zoom=13;
-							var a = ev.args;
-							var e = a.element;
-							var i = $(FuncInit.idtree).jqxTree('getItem', e);
-							if(i!=null)
-								{
-									if(i.id.match('_')==null) {
-										var lab= i.label.replace(/ /g,'');
-										$("#r_lieu").selectBox('value',lab);
-										FuncInit.tmp='';
-											var zns = FuncInit.srcZn
-											for(var z in zns)
-											{
-												if(zns[z]==lab)
-													 FuncInit.tmp=lab;
-											}
-											var itmid=i.id;
-											if(FuncInit.tmp=='')
-												{
-													var ids = FuncInit.srcId;
-													for(var id in ids)
-														if(ids[id].label==itmid)
-															 FuncInit.tmp=ids[id].id;
-												}
-											if(FuncInit.tmp=='')
-													FuncInit.tmp=itmid.split('_')[0];
-										FuncTree.bms=true;
-										console.log(FuncInit.tmp);
-									}
-									else {
-									var slc=i.id.split('_')[1];
-										$("#r_theme").selectBox('value',slc);FuncTree.bms=false;
-
-									}
-									
-									for(var cpt in FuncInit.txtInit) if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;}
-								
-									$(FuncInit.idtree).jqxTree('checkItem', e, true);
-										FuncTree.applysrch(i);
-										MapsLib.doSearch();
-								}
-							
-			});
-			$(FuncInit.idtree).on('checkChange', function (ev)	
+$(FuncInit.idtree).bind('select', function (ev) {
+	ev.stopPropagation();FuncTree.zoom=13;var a = ev.args;var e = a.element;var i = $(FuncInit.idtree).jqxTree('getItem', e);if(i!=null) { FuncTree.selectBox(i);for(var cpt in FuncInit.txtInit) if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;} $(FuncInit.idtree).jqxTree('checkItem', e, true); FuncTree.applysrch(i); MapsLib.doSearch();}
+});
+$(FuncInit.idtree).on('checkChange', function (ev)	
 			{	
 				if(!FuncTree.bgrow)
 				{
@@ -748,6 +590,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
                         mobile: true
                     })
                     .change(function () {
+					FuncTree.bms=false;
 						FuncInit.tmp= $(this).val();
 						$( "#r_theme" ).selectBox('value',"general");
 					
@@ -757,6 +600,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 						 
                     });
 	$("#r_tab").change(function ()  {
+			FuncTree.bms=false;
 			FuncTab.fsearch(this.value);
 			$(FuncInit.idtab).mouseover();
 		}); 
@@ -765,7 +609,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
                         mobile: true
                     })
                     .change(function () {
-						var bzn= false;
+						FuncTree.bms=false;var bzn= false;
 						var zns = FuncInit.srcZn
 						for(var z in zns)
 						{
@@ -774,7 +618,7 @@ FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Ar
 						}
 						if(bzn)
 						{
-							FuncTree.bms=false;
+							
 							MapsLib.srchOnAll(this.value);
 							$(FuncInit.idinf).empty();
 							FuncTab.msg= 'Entrer valeurs DANS le champs Recherche Bdd, ou sélectionner une ville!!';
@@ -855,18 +699,15 @@ doSearch: function(location) {
 						{
 							var chcmp=FuncTree.styles[i+1];
 							if(chcmp.charAt(0)!='#'&&chcmp!='NO') {$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}
-							else $(FuncTree.updBackG).css('background-image', 'url(http://runsense.github.io/js/f.png)');
+							else $(FuncTree.updBackG).css('background-image', 'url("+FuncInit.bstyle+")');
 							if(stl.charAt(0)!='#') $(FuncInit.idp).css('border-color',stl);
 							FuncTree.styles=new Array();
 						}		
 						google.maps.event.addListener(layer, 'click', function(e){ MapsLib.anLayer(e);});
-					}catch(e){;}
-				MapsLib.polygon.push(layer);
-				MapsLib.polygon[i].setMap(map);	
+					}finally{MapsLib.polygon.push(layer);MapsLib.polygon[i].setMap(map);	}
+				
 			}
-		}catch(e){;}
-		MapsLib.getList();
-		$(FuncInit.idtree).focus();
+		}catch(e){;}finally{MapsLib.getList();$(FuncInit.idtree).focus();}
 	},
 anLayer: function(e){//commande click layer
 		if(!FuncTree.bchk&&!FuncTree.bgrow)
@@ -936,86 +777,28 @@ query: function(selectColumns, limit, callback) {
   },
 getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
 srchOnAll: function(txt) {
-	var th= $( "#r_theme" ).val();
-	var li= $("#r_lieu").val();
+var th= $( "#r_theme" ).val();var li= $("#r_lieu").val();
 if(txt!='')
-	{
-	FuncTab.search=txt;
-	MapsLib.row= [];
-	MapsLib.cpte= 0;
-	var fsrc= FuncTree.source;
-	var bsrc=true;
-	FuncTab.crTb();
-	var ssrcMap;
-
-		for(var i in fsrc)
-			if(bsrc)
-			{
-				var src= fsrc[i];
-				var items= src.items;
-				
-				for(var j in items)
-				{
-				if(bsrc)
-					try{
-						var srcMap=items[j];
-						if(srcMap.id==li) bsrc=false;
-						//MapsLib.getSearch(srcMap.value);
-						var ssimts= items[j].items;
-						for(var k in ssimts)
-						try{
-							var ssrcMap=ssimts[k];
-							
-							var spl= ssrcMap.id.split('_')[1];
-							
-							
-						if(th!='')
-							{
-								if(spl==th) {MapsLib.getSearch(ssrcMap.value);}
-							}else
-								MapsLib.getSearch(ssrcMap.value);
-						}catch(e){;}
-					}catch(e){;}
-				}
-				if(src.id==li) bsrc=false;
+	try{
+	MapsLib.row= [];MapsLib.cpte= 0;var fsrc= FuncTree.source;var bsrc=true;FuncTab.crTb();var ssrcMap;
+	for(var i in fsrc) if(bsrc)
+			{var src= fsrc[i];var items= src.items;for(var j in items)
+				{if(bsrc){var srcMap=items[j];if(srcMap.id==li) bsrc=false;var ssimts= items[j].items;
+						for(var k in ssimts) {var ssrcMap=ssimts[k];var spl= ssrcMap.id.split('_')[1];if(th!=''){if(spl==th) {MapsLib.getSearch(ssrcMap.value);}}else MapsLib.getSearch(ssrcMap.value);}
+					}
+				} if(src.id==li) bsrc=false;
 			}
-			
-		MapsLib.displayList();
-	FuncTab.fshBDD();
-	MapsLib.cpte= 0;
-	}				
+	}finally{MapsLib.displayList();FuncTab.fshBDD();MapsLib.cpte= 0;}			
 },
 getSearch: function(value) {
-	
-	var callback= "MapsLib.addrow";
-			
-				var selectColumns = "nom,description,lat,lng,categ";
-				var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);
-				queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");//queryStr.push(" LIMIT 10");
-				var sql = encodeURIComponent(queryStr.join(" "));
-				//console.log(sql);
-				$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp", async : false});
+	var callback= "MapsLib.addrow";var selectColumns = "nom,description,lat,lng,categ,id";
+	var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");//queryStr.push(" LIMIT 10");
+	var sql = encodeURIComponent(queryStr.join(" "));
+	$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
 },
-addrow : function(json) {
-	try{MapsLib.handleError(json);}catch( e){ ;}
-	var rows = json["rows"];
-	for(var r in rows)
-		if(rows[r]!=undefined)
-		try{
-			var rg=[rows[r][4],rows[r][0],rows[r][1],rows[r][2],rows[r][3]];
-			MapsLib.row.push(rg);
-			console.log(rows[r][4]);
-		console.log(rows[r][0]);
-		console.log(rows[r][1]);
-		console.log(rows[r][2]);
-		console.log(rows[r][3]);
-		}catch(e){;}
-		
-	$(FuncInit.idtab).fadeIn('fast');
-},
+addrow : function(json){try{MapsLib.handleError(json);}catch( e){ ;} try{var rows = json["rows"];for(var r in rows)if(rows[r]!=undefined){var rg=[rows[r][4],rows[r][0],rows[r][1],rows[r][2],rows[r][3],rows[r][5]];MapsLib.row.push(rg);}}finally{$(FuncInit.idtab).fadeIn('fast');}},
 displayList: function() {
-	MapsLib.cpte=0;
-	for (var row in MapsLib.row)
+	MapsLib.cpte=0;for (var row in MapsLib.row)
 		try{
 			var ctg= MapsLib.row[row][0];
 			if(ctg.split("http:").length==1)
@@ -1027,6 +810,7 @@ displayList: function() {
 				<td >" + MapsLib.row[row][1] + "</td><td >" + MapsLib.row[row][2] + "</td>\
 				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][3] + "</td>\
 				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][4] + "</td>\
+				<td   style='visibility:hidden;' >" + MapsLib.row[row][5] + "</td>\
 			  </tr>";
 		}catch(e){;}
 },
