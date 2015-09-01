@@ -23,6 +23,8 @@ var FuncInit={
 	idinf	: "#info",
 	iditi	: "#iti",
 	idbtn	: "#btn",
+	idsup	: "#pano",
+	idrbb	: "#r_bdd",
 	bstyle	: "http://runsense.github.io/js/f.png",
 	txtInit : ["terrain et jeux POOL" //0
 				,"sentiers et routes PATH & ROAD"	//1
@@ -191,8 +193,8 @@ var FuncRoute = {directionsDisplay : new google.maps.DirectionsRenderer(),direct
 			{
 				  var request = {origin:MapsLib.s,destination:MapsLib.e,travelMode: google.maps.TravelMode.DRIVING};FuncRoute.directionsService.route(request, function(response, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
-					FuncRoute.directionsDisplay.setDirections(response);MapsLib.zoom(map);$(FuncInit.idinf).empty();FuncRoute.directionsDisplay.setPanel(document.getElementById('pano'));$('small').hide();//$(FuncInit.idbtn).unbind();
-						$("#pano").animate({ width: '35%'});$(FuncInit.idp).animate({ left: '100%' });$(FuncInit.idtab).hide();$(FuncInit.idbtn).show();
+					FuncRoute.directionsDisplay.setDirections(response);MapsLib.zoom(map);$(FuncInit.idinf).empty();FuncRoute.directionsDisplay.setPanel(document.getElementById('pano'));$('small').hide();
+						$(FuncInit.idsup).animate({ width: '35%'});$(FuncInit.idp).animate({ left: '100%' });$(FuncInit.idtab).hide();$(FuncInit.idbtn).show();
 					}else{$(FuncInit.idinf).empty();$(FuncInit.idinf).append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");$(FuncInit.idinf).css("color","#000");$(FuncInit.idinf).css("background-color","red");}
 				  });MapsLib.doSearch();
 	}}
@@ -383,125 +385,25 @@ var FuncTree = {
 				 { id:"Sainte-Marie",icon:FuncInit.txtInit[11]+"Sainte-Marie"+FuncInit.txtInit[12], html: "<span title='Sainte-Marie' style='background-color: #FFF; #006400;'>Sainte-Marie</span>",value:"192A1s6RA93KPg1cXOC7QYPI6MyGBb-AZtNpFNnyt", items: [
 					{ id:"SM_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1O2m7YXKBxLcAQZkuX1oOrA6dJFiZNv7KEZqkUTuZ"},
                     { id:"SM_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1vGSpCnOiCfNeAQvIpPscZ26cUq7x31imy_VShUZd"},
-                    {  id:"SM_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1FKB-9QH0VtpFGMtMeZZD_c2Fze2g9hYoxivizqav"},
-					{ id:"SM_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1hYkKYnkxqvjmRc7IKgAz9xdYPiNI2VqZ6oWnLMLd"},
-					{ id:"SM_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1CpsXyW6UwS2Ix6oTHfy64PKixJGYml3lnUjj_Rta"}						
-				 ] },
-				 { id:"Sainte-Suzanne",icon:FuncInit.txtInit[11]+"Sainte-Suzanne"+FuncInit.txtInit[12], html: "<span title='Sainte-Suzanne' style='background-color: #FFF; #008B8B;'>Sainte-Suzanne</span>" ,value: "11hA_F8nvGsVVgrtgSs0i4ehviHgHc1kmGDHv1JgS", items: [
-					{ id:"SS_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1uP6kIJhbe2VDpT-bXB9uMosjNNejhQGt_P7Ey2jf"},
-                    { id:"SS_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"14tKW-WkeyvLupjFAoWXMbAgEa9--pO18c1Jnr_5j"},
-                    {  id:"SS_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1CjnaMnc4aEFf3b9n498eqJaZKf9E3mndyDaF5PjG"},
-					{ id:"SS_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"},
-					{ id:"SS_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1oYTut7YPTzdcOtwYCRlkpQylcjllRvwcrnizBN5Q"},
-				 ] },
-				{ id:"LaPossession",icon:FuncInit.txtInit[11]+"LaPossession"+FuncInit.txtInit[12], html: "<span title='La Possession' style='background-color: #FFF; #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED", items: [
-					{ id:"Pos_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0], value:"1lr8c-nv0zSUMfdnWxpvmIZBf4EOcNSduutH7z-7D"},
-                    { id:"Pos_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10], value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},
-                    {  id:"Pos_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},
-					{ id:"Pos_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},
-					{ id:"Pos_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}						
-				 ] },
-				 { id:"LePort",icon:FuncInit.txtInit[11]+"LePort"+FuncInit.txtInit[12], html: "<span title='Le Port' style='background-color: #FFF; #DAA520;'>Le Port</span> ",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0", items: [
-					{ id:"Por_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1egvMm3Q0a8ISZ3dbmydPFqMdsLvDuHwUemNkY1mi"},
-                    { id:"Por_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"19Zl9W3yXp0IdmcANjF_MlHX1R9hk8X27mFhJnmZH"},
-                    {  id:"Por_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"},
-					{ id:"Por_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1aOiWEpC7YfSJL10AebsxUpSpg-h-A4fcbIvjZxi8"},
-					{ id:"Por_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1YHjpqYf1aJqw-gylQDId1rCF_qDZDMSxUbxjRGG_"},
-					{ id:"Por_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"13B6si8MulZuOUFdcGkzj67HPwrMXklYzZOUuEi7Q"}						
-				 ] }
-				 
-			]
-			},
+                    {  id:"SM_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1FKB-9QH0VtpFGMtMeZZD_c2Fze2g9hYoxivizqav"},{id:"SM_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1hYkKYnkxqvjmRc7IKgAz9xdYPiNI2VqZ6oWnLMLd"},{id:"SM_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1CpsXyW6UwS2Ix6oTHfy64PKixJGYml3lnUjj_Rta"}]},
+				 { id:"Sainte-Suzanne",icon:FuncInit.txtInit[11]+"Sainte-Suzanne"+FuncInit.txtInit[12], html: "<span title='Sainte-Suzanne' style='background-color: #FFF; #008B8B;'>Sainte-Suzanne</span>" ,value: "11hA_F8nvGsVVgrtgSs0i4ehviHgHc1kmGDHv1JgS",items:[{ id:"SS_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1uP6kIJhbe2VDpT-bXB9uMosjNNejhQGt_P7Ey2jf"},{id:"SS_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"14tKW-WkeyvLupjFAoWXMbAgEa9--pO18c1Jnr_5j"},{id:"SS_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1CjnaMnc4aEFf3b9n498eqJaZKf9E3mndyDaF5PjG"},{ id:"SS_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1mw9EHc9TOcgbbTNijGTzw5zrCxXjisZuiqwMLnlw"},{ id:"SS_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1oYTut7YPTzdcOtwYCRlkpQylcjllRvwcrnizBN5Q"},]},
+				{ id:"LaPossession",icon:FuncInit.txtInit[11]+"LaPossession"+FuncInit.txtInit[12], html: "<span title='La Possession' style='background-color: #FFF; #800000;'>La Possession</span>",value:"1NjCzAjGKweKavFoZsexcszpxCpx3NEx7pKsNYqED",items:[{ id:"Pos_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0], value:"1lr8c-nv0zSUMfdnWxpvmIZBf4EOcNSduutH7z-7D"},{id:"Pos_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10], value:"1H0BtHjh6l-SmQNh8ty4RXmhv-rGP36i6pHKiw1VL"},{id:"Pos_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"1W14GqyphT5To9rr7laAjrAcJd9JLEd_5vj7b1RmE"},{id:"Pos_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1elAEWqFcSey78i0T167f6OYuUKo3aSJ9DKcAH4JE"},{id:"Pos_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1yfoGSvq6a0uGLL8GJPdsDZ1lGRWysaBfhoiR6hz8"}]},
+				 { id:"LePort",icon:FuncInit.txtInit[11]+"LePort"+FuncInit.txtInit[12], html: "<span title='Le Port' style='background-color: #FFF; #DAA520;'>Le Port</span> ",value:"1muRbrt4rHjP_PJWRoIwlywN33ckv-pq3ADitGvI0",items:[{ id:"Por_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1egvMm3Q0a8ISZ3dbmydPFqMdsLvDuHwUemNkY1mi"},{ id:"Por_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"19Zl9W3yXp0IdmcANjF_MlHX1R9hk8X27mFhJnmZH"},{id:"Por_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1LHKdsKbwR4CIR0L6Irt9m8jqScVnfxPMEm4JBA-3"},{id:"Por_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1aOiWEpC7YfSJL10AebsxUpSpg-h-A4fcbIvjZxi8"},{id:"Por_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1YHjpqYf1aJqw-gylQDId1rCF_qDZDMSxUbxjRGG_"},{id:"Por_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"13B6si8MulZuOUFdcGkzj67HPwrMXklYzZOUuEi7Q"}]}]},
 			{ id:"EST",icon:FuncInit.txtInit[11]+"reunion"+FuncInit.txtInit[12],  html: "<span title='EAST' style='background-color: #FFF; #DAA520;'>EST</span>",  value:"1kdUa3ca31BGjEODS180K8B1zsF9ArFmIZLPiiaRp", items: [
-				{ id:"Bras-Panon",icon:FuncInit.txtInit[11]+"Bras-Panon"+FuncInit.txtInit[12], html: "<span title='Bras-Panon' style='background-color: #FFF; #4B0082;'>Bras-Panon</span>", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",  items: [
-					{ id:"BPn_t",icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0]+FuncInit.txtInit[10], value:"1SjOgOCz9LrImoNYW3dlV8AVwekzwgkwkIFrnL9r5"},
-                    { id:"BPn_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10], value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},
-                    { id:"BPn_md",icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"1Bzgou8rOmmto6PjPp71N_-JkAsIAOZI8ezXu_eFp"},
-					{ id:"BPn_v",icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10], value:"1JqQPaUTMc-kjl8xVIWHnE6s0z4oW4WXhhSZbmm6p"},
-					{ id:"BPn_a",icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}					
-				 ]
-                },
-				 { id:"Saint-Andre",icon:FuncInit.txtInit[11]+"Saint-Andre"+FuncInit.txtInit[12], html: "<span title='Saint-Andr&#233;' style='background-color: #FFF; #006400;'>Saint-Andre</span>", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items: [
-					{ id:"SAd_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1vWcldb-WuU1rtH-ElhKI-f_4pLEeJDzzvMaWJSrC"},
-                    { id:"SAd_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},
-                    {  id:"SAd_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},
-					{ id:"SAd_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},
-					{ id:"SAd_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1tVMs-082OJrhLvKNVua0QCH-hnrs4dhkePIbn2Sh"},
-					{ id:"SAd_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}						
-				 ] },
-				 { id:"Saint-Benoit",icon:FuncInit.txtInit[11]+"Saint-Benoit"+FuncInit.txtInit[12], html: "<span title='Saint-Benoit' style='background-color: #FFF; #008B8B;'>Saint-Benoit</span>", value:"1gdjt3qeIeAvBxMRhmLwlnCgzr7CTt71iJrZ8dCTY", items: [
-					 { id:"SB_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1zvWu4e_eyQ1Ho7T4wM63hhl6JtFqOixA7PZDWxPa"},
-                    { id:"SB_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1K5q_Z_O-QIXt74ZKG9de3lF_uEbKKrBX13HJq1AX"},
-                    {  id:"SB_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1VHstJP2RjDAvnmoDCGgJrtOTLWkgNAHltpI97KYx"},
-					{ id:"SB_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1hjSY4vwWwCRB8bQJ3uX7c7TyhvrX5c7p5jMDmhtO"},
-					{ id:"SB_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1z9NOfJnMEtQxerYyCFif9xX3g6YT91tRxZJiNzcb"},
-					{ id:"SB_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1u5cwPRUeVIpuiDkPw1lv_gzrO2DuQ20W0zERTTdc"}						
-				 ] },
-				 { id:"Sainte-Anne",icon:FuncInit.txtInit[11]+"Sainte-Anne"+FuncInit.txtInit[12], html: "<span title='Sainte-Anne' style='background-color: #FFF; #800000;'>Sainte-Anne</span>", value:"1s911vZP-Ftzh8TA3JoQSzwuRNbTwkJoZmYna_SFn", items: [
-					{ id:"SAn_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1nFu8dd5l9fDV2Fn-87mWp_cMrRwjxSjO-vy2Cv7b"},
-                    { id:"SAn_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"120SVl3kmLTTetv0_mrthuHsAUgRr8bG8t8ywKsgi"},
-                    {  id:"SAn_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},
-					{ id:"SAn_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}						
-				] },
-				 { id:"Sainte-Rose",icon:FuncInit.txtInit[11]+"Sainte-Rose"+FuncInit.txtInit[12], html: "<span title='Sainte-Rose' style='background-color: #FFF; #DAA520;'>Sainte-Rose</span>", value:"1gIcPI4SAohpVFM0seVxdlBAw2b2zesvpZH4QJ6DC", items: [
-					{ id:"SR_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1GKArjzvczShC_oTmoeSPVyxL_kfMEiyriOq4njIt"},
-                    { id:"SR_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1fWsTyPLLg_jZbHXLmn921wWRYNpp7Mph64n9PaCA"},
-                    {  id:"SR_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1JelP0FaMsEp22nh7DWvjGWA-HHEll4WsusdNze3W"},
-					{ id:"SR_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1beWOfA6DyHQS6-Kr9eZtG8i2io7Q4J9NquFgQyG-"},
-					{ id:"SR_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1a-nJFvtF_lUeKPNpgQbFubQXRXlkubvH6glUBg8v"},
-					{ id:"SR_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1iPRpywzSmOxOlLm5O-uJmrbbnn6YHGzl1rhuaJzA"}						
-				 ] },
-				{ id:"LaPlaineDesPalmistes",icon:FuncInit.txtInit[11]+"LaPlaineDesPalmistes"+FuncInit.txtInit[12], html: "<span title='La Plaine Des Palmistes' style='background-color: #FFF; #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items: [
-                    { id:"PP_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1oCcByb4vw2JlnNqp49lIysqTTRV6wK1xlqeC9ZGe"},
-					{ id:"PP_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10], value:"1_ucovZZ5C18rlh_cGO6Uc2YgB23EmR-IQ9epBop4"},
-                    {  id:"PP_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"15V8aJ6r5JNfr4xP4ZKnmi4i9mZTt6f0l8WG5hbE3"},
-					{ id:"PP_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10], value:"1DxmzBkR4z4qdMDV6bIl8P3ysFbbdWr41h83yK7wn"},
-					{ id:"PP_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}						
-				 ] },
-				 { id:"Salazie",icon:FuncInit.txtInit[11]+"Salazie"+FuncInit.txtInit[12],  html: "<span title='Salazie' style='background-color: #FFF; #000080;'>Salazie</span>", value:"1zRn7YirASic3zXNjwr0jPpwlUURx5v1w0wK2JGSZ", items: [
-					{ id:"SAz_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1UzSHUROSXlwSlMlCe4WQBDyucf1m83YsGbX4FYhP"},
-                    { id:"SAz_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"166vivC3Sr59gCaQR98o8-9sXHBfnKiJdX5hH_7tz"},
-                    {  id:"SAz_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1wOqplnMkWf_CHXezRZBC3HvMSf2lcKcnNzgUx8Jp"},
-					{ id:"SAz_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1oWl8XUdryHiQxlg83t_pu6ERxi4PPOjrvx2Vbuhj"},
-					{ id:"SAz_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1TjFpDyS3jwXAsLdAUL92BdcjM__2SLu71VDkkli_"}						
-				 ] }
-			]
-			}
-            ],
+				{ id:"Bras-Panon",icon:FuncInit.txtInit[11]+"Bras-Panon"+FuncInit.txtInit[12], html: "<span title='Bras-Panon' style='background-color: #FFF; #4B0082;'>Bras-Panon</span>", value:"1Eu99fE8gzP8aRvHmC0aoAgGvWLA7sicIJZQzNEHo",items:[{ id:"BPn_t",icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0]+FuncInit.txtInit[10], value:"1SjOgOCz9LrImoNYW3dlV8AVwekzwgkwkIFrnL9r5"},{id:"BPn_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10], value:"1ccHNKyGhBgTzVkJ6QaeDmsLfWWb8APIPf5PPo6iV"},{id:"BPn_md",icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"1Bzgou8rOmmto6PjPp71N_-JkAsIAOZI8ezXu_eFp"},{id:"BPn_v",icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10], value:"1JqQPaUTMc-kjl8xVIWHnE6s0z4oW4WXhhSZbmm6p"},{id:"BPn_a",icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1F6J56n5iAOxSXwnJCczlEqtM0exQzaQ6lW89xqOq"}]},
+				 { id:"Saint-Andre",icon:FuncInit.txtInit[11]+"Saint-Andre"+FuncInit.txtInit[12], html: "<span title='Saint-Andr&#233;' style='background-color: #FFF; #006400;'>Saint-Andre</span>", value:"1nwNhdQtG4G82HAm7m3GnPNLYFYxf7NkLazRvyow9", items:[{id:"SAd_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1vWcldb-WuU1rtH-ElhKI-f_4pLEeJDzzvMaWJSrC"},{id:"SAd_s",icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1QxdvqoXSnGh2RaPPYVqkXGMYzs5KyLKNtH6Rjq1Y"},{id:"SAd_md",icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1LoBKzzZG09THxPP4G9WQAvH_TQHHejDAkm6Bd7sn"},{id:"SAd_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1_JSO07ViQqKGnrbD8l_IjO_T_ipipBS_oH_qs_1c"},{id:"SAd_n",icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1tVMs-082OJrhLvKNVua0QCH-hnrs4dhkePIbn2Sh"},{ id:"SAd_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1tVigoTd-SoRI0O-CtE7hMZp-ygWhd3jX25z0GPOD"}]},
+				 { id:"Saint-Benoit",icon:FuncInit.txtInit[11]+"Saint-Benoit"+FuncInit.txtInit[12], html: "<span title='Saint-Benoit' style='background-color: #FFF; #008B8B;'>Saint-Benoit</span>", value:"1gdjt3qeIeAvBxMRhmLwlnCgzr7CTt71iJrZ8dCTY",items:[{ id:"SB_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1zvWu4e_eyQ1Ho7T4wM63hhl6JtFqOixA7PZDWxPa"},{id:"SB_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1K5q_Z_O-QIXt74ZKG9de3lF_uEbKKrBX13HJq1AX"},{id:"SB_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1VHstJP2RjDAvnmoDCGgJrtOTLWkgNAHltpI97KYx"},{ id:"SB_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1hjSY4vwWwCRB8bQJ3uX7c7TyhvrX5c7p5jMDmhtO"},{ id:"SB_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1z9NOfJnMEtQxerYyCFif9xX3g6YT91tRxZJiNzcb"},{ id:"SB_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1u5cwPRUeVIpuiDkPw1lv_gzrO2DuQ20W0zERTTdc"}]},
+				 { id:"Sainte-Anne",icon:FuncInit.txtInit[11]+"Sainte-Anne"+FuncInit.txtInit[12], html: "<span title='Sainte-Anne' style='background-color: #FFF; #800000;'>Sainte-Anne</span>", value:"1s911vZP-Ftzh8TA3JoQSzwuRNbTwkJoZmYna_SFn",items:[{ id:"SAn_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1nFu8dd5l9fDV2Fn-87mWp_cMrRwjxSjO-vy2Cv7b"},{id:"SAn_s",icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"120SVl3kmLTTetv0_mrthuHsAUgRr8bG8t8ywKsgi"},{id:"SAn_md",icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1sJdzuo-LRbdDpgIQrXqbnxzEQPIPaJJ0txncB87r"},{id:"SAn_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1iAH1oV5dyYxuUCOKa7W0xo3D4TUIoXCvzd9yTRJ_"}]},
+				 { id:"Sainte-Rose",icon:FuncInit.txtInit[11]+"Sainte-Rose"+FuncInit.txtInit[12], html: "<span title='Sainte-Rose' style='background-color: #FFF; #DAA520;'>Sainte-Rose</span>", value:"1gIcPI4SAohpVFM0seVxdlBAw2b2zesvpZH4QJ6DC",items:[{id:"SR_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1GKArjzvczShC_oTmoeSPVyxL_kfMEiyriOq4njIt"},{ id:"SR_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"1fWsTyPLLg_jZbHXLmn921wWRYNpp7Mph64n9PaCA"},{id:"SR_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1JelP0FaMsEp22nh7DWvjGWA-HHEll4WsusdNze3W"},{ id:"SR_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1beWOfA6DyHQS6-Kr9eZtG8i2io7Q4J9NquFgQyG-"},{ id:"SR_n", icon:FuncInit.txtInit[7]+"star"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[4]+FuncInit.txtInit[10],value:"1a-nJFvtF_lUeKPNpgQbFubQXRXlkubvH6glUBg8v"},{ id:"SR_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1iPRpywzSmOxOlLm5O-uJmrbbnn6YHGzl1rhuaJzA"}]},{ id:"LaPlaineDesPalmistes",icon:FuncInit.txtInit[11]+"LaPlaineDesPalmistes"+FuncInit.txtInit[12], html: "<span title='La Plaine Des Palmistes' style='background-color: #FFF; #CD5C5C;'>La Plaine Des Palmistes</span>", value:"1jLXnDeXAjIbdZrgZFiovGef8BTUvyk5PkzoKsfCb", items:[{ id:"PP_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1oCcByb4vw2JlnNqp49lIysqTTRV6wK1xlqeC9ZGe"},{ id:"PP_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10], value:"1_ucovZZ5C18rlh_cGO6Uc2YgB23EmR-IQ9epBop4"},{  id:"PP_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10], value:"15V8aJ6r5JNfr4xP4ZKnmi4i9mZTt6f0l8WG5hbE3"},{ id:"PP_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10], value:"1DxmzBkR4z4qdMDV6bIl8P3ysFbbdWr41h83yK7wn"},{ id:"PP_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1PebD0cnAun_RkcbEXdDgw4DowklvtSFOD08NlDOj"}]},
+				 { id:"Salazie",icon:FuncInit.txtInit[11]+"Salazie"+FuncInit.txtInit[12],  html: "<span title='Salazie' style='background-color: #FFF; #000080;'>Salazie</span>", value:"1zRn7YirASic3zXNjwr0jPpwlUURx5v1w0wK2JGSZ", items:[{ id:"SAz_t", icon:FuncInit.txtInit[7]+"play"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[0],value:"1UzSHUROSXlwSlMlCe4WQBDyucf1m83YsGbX4FYhP"},{ id:"SAz_s", icon:FuncInit.txtInit[7]+"hiker"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[1]+FuncInit.txtInit[10],value:"166vivC3Sr59gCaQR98o8-9sXHBfnKiJdX5hH_7tz"},{id:"SAz_md", icon:FuncInit.txtInit[7]+"dining"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[2]+FuncInit.txtInit[10],value:"1wOqplnMkWf_CHXezRZBC3HvMSf2lcKcnNzgUx8Jp"},{ id:"SAz_v", icon:FuncInit.txtInit[7]+"realestate"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[3]+FuncInit.txtInit[10],value:"1oWl8XUdryHiQxlg83t_pu6ERxi4PPOjrvx2Vbuhj"},{ id:"SAz_a", icon:FuncInit.txtInit[7]+"ranger_station"+FuncInit.txtInit[8], html: FuncInit.txtInit[9]+FuncInit.txtInit[5]+FuncInit.txtInit[10],value:"1TjFpDyS3jwXAsLdAUL92BdcjM__2SLu71VDkkli_"}]}]}],
 	applyChild	:function(items){ for(var i in items) FuncTree.chkItm(items[i]); },
 	chkItm :function(elmt){ var rplc='#'+elmt.id; $(FuncInit.idtree).jqxTree('checkItem', $(rplc)[0], true);},
 	slcItm :function(txt){ var rplc='#'+txt; return $(FuncInit.idtree).jqxTree('selectItem', $(rplc)[0], true);},
-	applysrch :function(i)
-	{
-		var tmp=FuncTree.ptbid;
-		var stmp=FuncTree.styles;
-		FuncTree.ptbid=new Array();
-		FuncTree.styles=new Array();
-		try{
-			FuncTree.ptbid.push(i.value);
-			FuncTree.styles.push(FuncTree.chStyle(i.label));
-						var u=FuncTree.chURL(i.label);
-						if(u!=null) FuncTree.styles.push(FuncTree.chURL(i.label));
-						else FuncTree.styles.push(FuncInit.bstyle);
-			}catch(e)
-			{ FuncTree.ptbid=tmp;FuncTree.styles=stmp; }
-	},
-	chStyle :function(l) { for(var i=0; i<FuncTree.srcStyle.length;i++) if(FuncTree.srcStyle[i].label==l) return FuncTree.srcStyle[i].value;},
+	applysrch :function(i){var tmp=FuncTree.ptbid;var stmp=FuncTree.styles;FuncTree.ptbid=new Array();FuncTree.styles=new Array();try{FuncTree.ptbid.push(i.value);FuncTree.styles.push(FuncTree.chStyle(i.label));var u=FuncTree.chURL(i.label);if(u!=null) FuncTree.styles.push(FuncTree.chURL(i.label));else FuncTree.styles.push(FuncInit.bstyle);}catch(e){ FuncTree.ptbid=tmp;FuncTree.styles=stmp;}},
+	chStyle:function(l) { for(var i=0; i<FuncTree.srcStyle.length;i++) if(FuncTree.srcStyle[i].label==l) return FuncTree.srcStyle[i].value;},
 	chURL:function(l){for(var i=0; i<FuncTree.srcStyle.length;i++) if(FuncTree.srcStyle[i].label==l) return FuncTree.srcStyle[i].lien;},
-	append : function(txt,color){$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);},
-	selectBox : function(i)
-	{
-		if(i.id.match('_')==null)
-		{
-			var itmid=i.id;FuncInit.tmp='';
-			$("#r_lieu").selectBox('value',itmid);
-			var zns = FuncInit.srcZn
-				for(var z in zns){ if(zns[z]==itmid) FuncInit.tmp=itmid; }
-											
-				if(FuncInit.tmp=='') {var ids = FuncInit.srcId; for(var id in ids) if(ids[id].label==itmid) FuncInit.tmp=ids[id].id; }
-				if(FuncInit.tmp=='') FuncInit.tmp=itmid.split('_')[0]; FuncTree.bms=true;
-		}else { var slc=i.id.split('_')[1]; $("#r_theme").selectBox('value',slc);FuncTree.bms=false; }
-	}
+	append:function(txt,color){$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);},
+	selectBox:function(i){if(i.id.match('_')==null){var itmid=i.id;FuncInit.tmp='';$("#r_lieu").selectBox('value',itmid);var zns = FuncInit.srcZn;for(var z in zns){ if(zns[z]==itmid) FuncInit.tmp=itmid;}if(FuncInit.tmp=='') {var ids = FuncInit.srcId; for(var id in ids) if(ids[id].label==itmid) FuncInit.tmp=ids[id].id;}if(FuncInit.tmp=='') FuncInit.tmp=itmid.split('_')[0]; FuncTree.bms=true;}else { var slc=i.id.split('_')[1]; $("#r_theme").selectBox('value',slc);FuncTree.bms=false;}}
 };
 $(FuncInit.idtree).jqxTree({checkboxes:true,source:FuncTree.source,width:'100%',height:FuncTree.initl,theme:'summer'});
 $('#jqxTree .jqx-tree-item').mouseenter(function (event){event.stopPropagation();var text = event.target.textContent;var i;if(FuncInit.bnm&&FuncTree.bms)try{text = text.replace(/ /g,'').replace(/'/g,'');rplc = '#'+text;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}catch(e){for(var j in FuncTree.theme){var rplc=FuncTree.theme[j].label.replace(/ /g,'').replace(/'/g,'');if(rplc==text) {rplc='#'+FuncInit.tmp+'_'+FuncTree.theme[j].value;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}}}finally{FuncTree.applysrch(i);MapsLib.doSearch();}});
@@ -531,80 +433,30 @@ var MapsLib = {
           pitch: 10
         }
       }),
-initialize: function() {
-	try{ MapsLib.geocoder = new google.maps.Geocoder(); FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer(); }catch(e){;}
-    var myOptions = { zoom: MapsLib.defaultZoom, center: MapsLib.map_centroid, mapTypeId: google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1 };
-    map = new google.maps.Map($("#map_canvas")[0],myOptions);
-	var panorama = new google.maps.StreetViewPanorama(
-      document.getElementById("pano"), {
-        position: MapsLib.map_centroid,
-        pov: {
-          heading: 34,
-          pitch: 10
-        }
-      });
-	map.setStreetView(panorama);	
-	google.maps.event.addListener(map, "click", function(event) { MapsLib.clickmap(event); });
-	google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom); });
-	try{ FuncRoute.directionsDisplay.setMap(map); }catch(e){;}
-	google.maps.event.addListener(map, 'mouseover', function(event){ FuncTree.rvzoom=map.getZoom();map.setZoom(FuncTree.zoom);});
-    MapsLib.doSearch();
-
-  },
+initialize: function(){
+try{ 
+MapsLib.geocoder = new google.maps.Geocoder(); FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer(); }catch(e){;}
+var myOptions = { zoom: MapsLib.defaultZoom, center: MapsLib.map_centroid, mapTypeId: google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1 };
+map = new google.maps.Map($("#map_canvas")[0],myOptions);
+strVw=new google.maps.StreetViewPanorama(document.getElementById("pano"),{position: MapsLib.map_centroid,pov:{heading: 34,pitch: 10 }});
+map.setStreetView(strVw);google.maps.event.addListener(map, "click", function(event) { MapsLib.clickmap(event); });
+google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom); });
+try{ FuncRoute.directionsDisplay.setMap(map); }catch(e){;} 
+google.maps.event.addListener(map, 'mouseover', function(event){ FuncTree.rvzoom=map.getZoom();map.setZoom(FuncTree.zoom);});MapsLib.doSearch();},
 doSearch:function(location){FuncTree.bgrow = false;MapsLib.clearSearch();MapsLib.polygonTableID=FuncTree.ptbid;MapsLib.polygon=new Array();try{var tl=MapsLib.polygonTableID.length;map.setMapTypeId(google.maps.MapTypeId.SATELLITE);for(var i=0; i<tl; i++){if(FuncInit.bnm){ var stl= FuncTree.styles[i];if(stl=="dining"||stl=="star")map.setMapTypeId(google.maps.MapTypeId.ROADMAP);else if(stl=="play"||stl=="ranger_station"||stl=="realestate")map.setMapTypeId(google.maps.MapTypeId.HYBRID);}var layer = new google.maps.FusionTablesLayer({query: {from:   MapsLib.polygonTableID[i],select: "geometry"},styles: [{markerOptions: {iconName: stl,},polygonOptions: {fillColor: stl,strokeColor: "#FFFFF0",strokeWeight: "int"},polylineOptions: {strokeColor: stl,strokeWeight:"int"}},]});try{if(FuncInit.bnm){var chcmp=FuncTree.styles[i+1];if(chcmp.charAt(0)!='#'&&chcmp!='NO') {$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}else $(FuncTree.updBackG).css('background-image', 'url("+FuncInit.bstyle+")');if(stl.charAt(0)!='#') $(FuncInit.idp).css('border-color',stl);FuncTree.styles=new Array();}}finally{google.maps.event.addListener(layer, 'click', function(e){ MapsLib.anLayer(e);});MapsLib.polygon.push(layer);MapsLib.polygon[i].setMap(map);}}}catch(e){;}finally{MapsLib.getList();$(FuncInit.idtree).focus();}},
 anLayer:function(e){if(!FuncTree.bchk&&!FuncTree.bgrow){var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];FuncTree.bchk=true;FuncTab.fsearch(s);var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);MapsLib.chad='#arv'; MapsLib.addrFromLatLng(e.latLng);FuncTree.bchk=false;return s;}},
 findMe: function(){if(navigator.geolocation){navigator.geolocation.getCurrentPosition(function(position){fl=new google.maps.LatLng(position.coords.latitude,position.coords.longitude);MapsLib.chad= '#dep';MapsLib.addrFromLatLng(fl);map.setCenter(fl);}, null);}else FuncTree.append('Parametrer Geolocation sur configuration','red');},
-addrFromLatLng: function(latLngPoint) {
-console.log(latLngPoint);
-    MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status) {
-	
-      if (status == google.maps.GeocoderStatus.OK) {
-		  if(results.length>1)$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address); else $(MapsLib.chad).val(results[0].formatted_address);if(MapsLib.chad=='#dep'){MapsLib.s=results[0].formatted_address;$(FuncInit.iditi).css('font-size','20px');$(FuncInit.iditi).css('font-weight','bold');}else{MapsLib.e=results[0].formatted_address;$(FuncInit.iditi).css('color','red');$(FuncInit.iditi).css('border-color','green');}}});},
+addrFromLatLng: function(latLngPoint){/*Sortie lat long console*/console.log(latLngPoint);MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status){if (status == google.maps.GeocoderStatus.OK){if(results.length>1)$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address); else $(MapsLib.chad).val(results[0].formatted_address);if(MapsLib.chad=='#dep'){MapsLib.s=results[0].formatted_address;$(FuncInit.iditi).css('font-size','20px');$(FuncInit.iditi).css('font-weight','bold');}else{MapsLib.e=results[0].formatted_address;$(FuncInit.iditi).css('color','red');$(FuncInit.iditi).css('border-color','green');}}});},
 zoom: function(map) { var bounds = new google.maps.LatLngBounds(); map.data.forEach(function(feature) { MapsLib.processPoints(feature.getGeometry(), bounds.extend, bounds); }); map.fitBounds(bounds);},
 processPoints: function(geometry, callback, thisArg){if(geometry instanceof google.maps.LatLng)callback.call(thisArg, geometry); else if(geometry instanceof google.maps.Data.Point) callback.call(thisArg, geometry.get()); else {geometry.getArray().forEach(function(g) {MapsLib.processPoints(g, callback, thisArg);});}},
-additi :function(butiti){ MapsLib.chad ='#'+ butiti;},
 clickmap: function(pos){if(pos!=null) MapsLib.addrFromLatLng(pos.latLng); map.setMapTypeId(google.maps.MapTypeId.HYBRID);},
 clearSearch: function() { MapsLib.polygonTableID=null; for(var i=0;i<MapsLib.polygon.length;i++) if (MapsLib.polygon[i] != null) { MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null; } map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom);},
 query: function(selectColumns, limit, callback){for(var i in MapsLib.polygonTableID){if(MapsLib.polygonTableID[i]!="NO"){MapsLib.cpte=i; $(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " + MapsLib.polygonTableID[i]);var sql = encodeURIComponent(queryStr.join(" ")); $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});}else { $(FuncInit.idtab).empty(); $(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)","blue");},
 getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
-srchOnAll: function(txt) {
-var th= $( "#r_theme" ).val();var li= $("#r_lieu").val();
-if(txt!='')
-	try{
-	MapsLib.row= [];MapsLib.cpte= 0;var fsrc= FuncTree.source;var bsrc=true;FuncTab.crTb();var ssrcMap;
-	for(var i in fsrc) if(bsrc)
-			{var src= fsrc[i];var items= src.items;for(var j in items)
-				{if(bsrc){var srcMap=items[j];if(srcMap.id==li) bsrc=false;var ssimts= items[j].items;
-						for(var k in ssimts) {var ssrcMap=ssimts[k];var spl= ssrcMap.id.split('_')[1];if(th!=''){if(spl==th) {MapsLib.getSearch(ssrcMap.value);}}else MapsLib.getSearch(ssrcMap.value);}
-					}
-				} if(src.id==li) bsrc=false;
-			}
-	}finally{MapsLib.displayList();FuncTab.fshBDD();MapsLib.cpte= 0;}			
-},
-getSearch: function(value) {
-	var callback= "MapsLib.addrow";var selectColumns = "nom,description,lat,lng,categ,id";
-	var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");//queryStr.push(" LIMIT 10");
-	var sql = encodeURIComponent(queryStr.join(" "));
-	$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
-},
+srchOnAll: function(txt){var th= $( "#r_theme" ).val();var li= $("#r_lieu").val();if(txt!='')try{MapsLib.row= [];MapsLib.cpte= 0;var fsrc= FuncTree.source;var bsrc=true;FuncTab.crTb();var ssrcMap;for(var i in fsrc) if(bsrc){var src= fsrc[i];var items= src.items;for(var j in items){if(bsrc){var srcMap=items[j];if(srcMap.id==li) bsrc=false;var ssimts= items[j].items;for(var k in ssimts) {var ssrcMap=ssimts[k];var spl= ssrcMap.id.split('_')[1];if(th!=''){if(spl==th) {MapsLib.getSearch(ssrcMap.value);}}else MapsLib.getSearch(ssrcMap.value);}}} if(src.id==li) bsrc=false;}}finally{MapsLib.displayList();FuncTab.fshBDD();MapsLib.cpte= 0;}},
+getSearch: function(value){var callback= "MapsLib.addrow";var selectColumns = "nom,description,lat,lng,categ,id";var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " +value);queryStr.push(" WHERE description CONTAINS '"+FuncTab.search+"' ");var sql = encodeURIComponent(queryStr.join(" "));$.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});},
 addrow : function(json){try{MapsLib.handleError(json);}catch( e){ ;} try{var rows = json["rows"];for(var r in rows)if(rows[r]!=undefined){var rg=[rows[r][4],rows[r][0],rows[r][1],rows[r][2],rows[r][3],rows[r][5]];MapsLib.row.push(rg);}}finally{$(FuncInit.idtab).fadeIn('fast');}},
-displayList: function() {
-	MapsLib.cpte=0;for (var row in MapsLib.row)
-		try{
-			var ctg= MapsLib.row[row][0];
-			if(ctg.split("http:").length==1)
-				{ var spl= ctg.split("*"); var lg= spl.length; if(lg==1) { ctg="<img src='http://runsense.github.io/js/img/ico/"+ctg+".png' style='width: 30px;height: 30px'></img>"; }else { ctg=''; for(var i in spl) ctg=ctg+"<img src='http://runsense.github.io/js/img/ico/"+spl[i]+".png' style='width: 15px;height: 30px'></img>";}}
-			else ctg="<img src='"+ctg+"' style='width: 30px;height: 30px'></img>";
-			FuncTab.list_table += "\
-			  <tr >\
-				<td> "+ctg+"</td>\
-				<td >" + MapsLib.row[row][1] + "</td><td >" + MapsLib.row[row][2] + "</td>\
-				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][3] + "</td>\
-				<td   style='color:blue;width:20px;' >" + MapsLib.row[row][4] + "</td>\
-				<td   style='visibility:hidden;' >" + MapsLib.row[row][5] + "</td>\
-			  </tr>";
-		}catch(e){;}
-},
+displayList: function(){MapsLib.cpte=0;for (var row in MapsLib.row)try{var ctg= MapsLib.row[row][0];if(ctg.split("http:").length==1){ var spl= ctg.split("*"); var lg= spl.length; if(lg==1) { ctg="<img src='http://runsense.github.io/js/img/ico/"+ctg+".png' style='width: 30px;height: 30px'></img>"; }else { ctg=''; for(var i in spl) ctg=ctg+"<img src='http://runsense.github.io/js/img/ico/"+spl[i]+".png' style='width: 15px;height: 30px'></img>";}}else ctg="<img src='"+ctg+"' style='width: 30px;height: 30px'></img>";FuncTab.list_table += "<tr ><td> "+ctg+"</td><td >" + MapsLib.row[row][1] + "</td><td >" + MapsLib.row[row][2] + "</td><td   style='color:blue;width:20px;' >" + MapsLib.row[row][3] + "</td><td   style='color:blue;width:20px;' >" + MapsLib.row[row][4] + "</td><td   style='visibility:hidden;' >" + MapsLib.row[row][5] + "</td></tr>";}catch(e){;}},
 handleError: function(json) { if (json["error"] != undefined){var error = json["error"]["errors"];console.log("Error in Fusion Table call!");for (var row in error) { console.log(" Domain: " + error[row]["domain"]);console.log(" Reason: " + error[row]["reason"]);console.log(" Message: " + error[row]["message"]);}}}
 }
 
