@@ -2,7 +2,7 @@
         $(window).resize(function () { var h = $(window).height();var offsetTop = 105; $(FuncInit.idmap).css('height', (h - offsetTop));}).resize();
         $(function() {
 		
-		$(FuncInit.idsup).bind('click',function(){ $(this).animate({ width: '35%' });$(FuncInit.idmap).animate({ width: '35%' });});
+		//$(FuncInit.idsup).bind('click',function(){ $(this).animate({ width: '35%' });$(FuncInit.idmap).animate({ width: '35%' });});
 		if(FuncInit.bnm){$(FuncTree.updBackG).css('background-image', FuncTree.styles[1]);$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}
 		$("#fl").bind('click',function(){MapsLib.findMe();});
 		$(FuncInit.idtab).on("mouseenter",function(){if(FuncInit.bnm){ $(this).animate({opacity: '0.75',height: '100%',width: '70%'});$(FuncInit.idmap).animate({opacity: '0.3'});$(FuncInit.idp).animate({opacity: '0.3'});$('body').animate({height: '100% !important',margin: '0px !important',padding: '0px !important'});}$(FuncInit.idinf).empty();FuncTree.append("<small>&Agrave; r\'tourn Return MAP </small>(A DROITE)","green");$(FuncInit.idinf).bind('click',function(){ if(FuncInit.bnm){$(FuncInit.idtab).animate({opacity: '1',height: '15%',width: '100%'});$(FuncInit.idmap).animate({opacity: '1'});$(FuncInit.idp).animate({opacity: '1'});}});});
