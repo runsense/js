@@ -1,9 +1,9 @@
 html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !important;background-color: black; }
 
-		#map_canvas { position: absolute;width: 70%;margin: 0px;padding: 0px;border-top-left-radius: 3em ;border-top-right-radius: 2em ; border-bottom-left-radius: 1em ;border-bottom-right-radius: 18em ;  }
+		#map_canvas { position: absolute;float:left;width: 70%;margin: 0px;padding: 0px;border-top-left-radius: 3em ;border-top-right-radius: 2em ; border-bottom-left-radius: 1em ;border-bottom-right-radius: 18em ;  }
 		#panel, #mobPanel 		{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 2px solid #999; }
 		#listv 		{ position: absolute;bottom:1px;height: 15%;}
-		#btn 		{ display:none;text-align: center;size:100%;background-color: #00ff00;}
+		#btn 		{ display:none;text-align: center;size:100%;background-color: red;}
 		#iti, #clear{ background: none; }
 		#rtrm		{ position:absolute; top:95%;width:100%;color:red;font-weight:bold;font-size:20px; }
 		#info		{ float:left;height:50px; border-top-left-radius: 2em ;border-bottom-right-radius: 1em ;  }
@@ -11,6 +11,8 @@ html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !impo
 		#fl, #r_theme	{ display:none; }
 		#r_tab		{background: rgba(0,255,0,0.7);color:black;font-weight: bloder;}
 		#r_bdd		{background: rgba(255,0,0,0.7);color:black;font-weight: bloder;}
+		#pano		{position: absolute;left:68%;width:0%;height: 800px;background-color: rgba(255, 255, 255, 0.63);}
+		#pano .adp-substep:hover { color:red;border-color:green;background-color: rgba(184, 134, 11, 0.63);}  }
 		#r_bdd::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 			color:    black;
 			font-weight: 900;

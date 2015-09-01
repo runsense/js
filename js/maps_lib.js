@@ -51,22 +51,9 @@ var FuncInit={
 //Objet creation tableau de réponse json
 
 var FuncTab = FuncTab || {};
-var FuncTab = {
- results		: null,
- idx			: 0,
- search			: "",
+var FuncTab = {bmrk:false,results:null,idx:0,search:"",list_table:"",lat:null,lng:null,msg:"Pour Afficher les donners, cliquer ailleurs!!",
  fsearch		: function(s){var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');var table= $("#list_table").dataTable();table.fnFilter(s);$(rplc).mouseover();},
- list_table		:"",
- lat			:null,
- lng			:null,
- msg			:"Pour Afficher les donners, cliquer ailleurs!!",
- displayList: function(json) {
-	try{MapsLib.handleError(json);}catch( e){ ;}
-    var columns = json["columns"];var rows = json["rows"];var rplc="#"+MapsLib.cpte;
-    FuncTab.results = $(rplc);FuncTab.results .empty(); 
-	if (rows == null) { FuncTab.results.append("<span class='lead'>No results found</span>"); }
-    else { FuncTab.crTb(); FuncTab.cRows(rows); FuncTab.fnsTb(); }
-},
+ displayList: function(json) {try{MapsLib.handleError(json);}catch( e){ ;}var columns = json["columns"];var rows = json["rows"];var rplc="#"+MapsLib.cpte;FuncTab.results = $(rplc);FuncTab.results .empty();if (rows == null) FuncTab.results.append("<span class='lead'>No results found</span>"); else { FuncTab.crTb(); FuncTab.cRows(rows); FuncTab.fnsTb(); }},
 crTb: function()
 {
 	var rplc="#"+0;
@@ -127,10 +114,18 @@ fnsTb: function()
 				{
 					MapsLib.addSrchMarker.setMap(null);
 					FuncTree.bchk=true;
-					var nm ='#'+$(this).children('td:nth-child(2)').text().replace(/ /g,'');
+					var nm =$(this).children('td:nth-child(2)').text().replace(/ /g,'');
 					var lat = $(this).children('td:nth-child(5)').text();
 					var lng = $(this).children('td:nth-child(6)').text();
+					
+					var ids = FuncInit.srcId; for(var id in ids) if(ids[id].label==nm) 
+						FuncTab.bmrk=true;
+					if(!FuncTab.bmrk){ids = FuncInit.srcZn; for(var id in ids) if(ids[id]==nm) 
+						FuncTab.bmrk=true;};		
+					
+					nm ='#'+nm;
 					FuncTab.tabToMap(lat,lng);
+					FuncTab.bmrk=false;
 					$(FuncInit.idtree).jqxTree('selectItem', $(nm)[0]);
 					FuncTree.bchk=false;
 					$(FuncInit.idmap).focus();
@@ -178,19 +173,10 @@ tabToMap: function(lat,lng) {
 					MapsLib.map_centroid = new google.maps.LatLng(lat,lng);
 						map.setCenter(MapsLib.map_centroid);
 						if(FuncTree.zoom!=10) FuncTree.zoom=16;
-						map.setMapTypeId(google.maps.MapTypeId.HYBRID)
-						map.setZoom(FuncTree.zoom);
+						map.setMapTypeId(google.maps.MapTypeId.HYBRID);map.setZoom(FuncTree.zoom);
 					if(FuncInit.bnm){$(FuncInit.idtab).animate({ opacity: '0.3', height: '30%'});$(FuncInit.idmap).animate({ opacity: '1' });}
-					MapsLib.chad='#arv';
-					MapsLib.addrFromLatLng(MapsLib.map_centroid);
-					
-					var ad=$(MapsLib.chad).val();
-					MapsLib.addSrchMarker = new google.maps.Marker({
-						position: MapsLib.map_centroid,
-						map: map,
-						animation: google.maps.Animation.DROP,
-						title:ad
-				  });
+					MapsLib.chad='#arv';MapsLib.addrFromLatLng(MapsLib.map_centroid);
+					if(!FuncTab.bmrk){var ad=$(MapsLib.chad).val();MapsLib.addSrchMarker = new google.maps.Marker({position: MapsLib.map_centroid,map: map,animation: google.maps.Animation.DROP,title:ad});}
 				}
 			}
 	}
@@ -199,23 +185,15 @@ tabToMap: function(lat,lng) {
 //Objet Itinéraire Google
 
 var FuncRoute = FuncRoute || {};
-var FuncRoute = {
-  directionsDisplay : new google.maps.DirectionsRenderer(),
-  directionsService : new google.maps.DirectionsService(),
+var FuncRoute = {directionsDisplay : new google.maps.DirectionsRenderer(),directionsService : new google.maps.DirectionsService(),
   calcRoute: function () {$(FuncInit.idinf).empty();$(FuncInit.idinf).show();
             if(MapsLib.e!==null)
 			{
 				  var request = {origin:MapsLib.s,destination:MapsLib.e,travelMode: google.maps.TravelMode.DRIVING};FuncRoute.directionsService.route(request, function(response, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
-					FuncRoute.directionsDisplay.setDirections(response);MapsLib.zoom(map);$(FuncInit.idinf).empty();FuncRoute.directionsDisplay.setPanel(document.getElementById('info'));$(FuncInit.idtree).hide();$('small').hide();$(FuncInit.idbtn).unbind();
-					   $(FuncInit.idbtn).bind('click',function(){
-							$(this).hide();$(FuncInit.idtree).show();$(FuncInit.idinf).hide();$('#dep').val(null);$('#arv').val(null);MapsLib.s=null;MapsLib.e=null;
-							$(FuncInit.idtab).on("mouseenter",function(){ if(FuncInit.bnm){$(this).animate({opacity: '1',height: '100%',width: '70%'});$(FuncInit.idmap).animate({opacity: '0.3'});} $(FuncInit.idinf).empty();FuncTree.append("<small>Revenir MAP (RETURN MAP) </small>(A DROITE)","green");});
-							FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();FuncRoute.directionsService = new google.maps.DirectionsService();
-							MapsLib.initialize();
-					});$(FuncInit.idbtn).show();$(FuncInit.idbtn).css("color","red");$(FuncInit.idtab).off();
-					}else
-					{$(FuncInit.idinf).empty();$(FuncInit.idinf).append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");$(FuncInit.idinf).css("color","#000");$(FuncInit.idinf).css("background-color","red");}
+					FuncRoute.directionsDisplay.setDirections(response);MapsLib.zoom(map);$(FuncInit.idinf).empty();FuncRoute.directionsDisplay.setPanel(document.getElementById('pano'));$('small').hide();//$(FuncInit.idbtn).unbind();
+						$("#pano").animate({ width: '35%'});$(FuncInit.idp).animate({ left: '100%' });$(FuncInit.idtab).hide();$(FuncInit.idbtn).show();
+					}else{$(FuncInit.idinf).empty();$(FuncInit.idinf).append("<h1>adresse non reconnu!!(UNKNOW ADRESSE)</h1>");$(FuncInit.idinf).css("color","#000");$(FuncInit.idinf).css("background-color","red");}
 				  });MapsLib.doSearch();
 	}}
 };
@@ -224,14 +202,7 @@ var FuncRoute = {
 
 var FuncTree = FuncTree || {};
 var FuncTree = {
-	bchk		:false,
-	bgrow		:false,
-	bms			:true,
-	updBackG	:"body",
-	ptbid		:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
-	styles		:["",FuncInit.bstyle],
-	zoom		:10,
-	rvzoom		:10,
+	bchk:false,bgrow:false,bms:true,updBackG:"body",ptbid:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],styles:["",FuncInit.bstyle],zoom:10,rvzoom:10,
 	theme 		:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'}],
 	srcStyle		:[
 					{label: FuncInit.txtInit[0],value: "play"},
@@ -532,114 +503,16 @@ var FuncTree = {
 		}else { var slc=i.id.split('_')[1]; $("#r_theme").selectBox('value',slc);FuncTree.bms=false; }
 	}
 };
-$(FuncInit.idtree).jqxTree({checkboxes: true, source: FuncTree.source, width: '100%', height: FuncTree.initl, theme: 'summer' });
-			//$('#jqxExpander').jqxExpander({  width: '300px', height: '450px', theme: 'summer' });
-$('#jqxTree .jqx-tree-item').mouseenter(function (event) {
-				event.stopPropagation();var text = event.target.textContent;var i;
-				if(FuncInit.bnm&&FuncTree.bms)try{text = text.replace(/ /g,'').replace(/'/g,'');rplc = '#'+text;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}
-				catch(e)
-				{
-				for(var j in FuncTree.theme){var rplc=FuncTree.theme[j].label.replace(/ /g,'').replace(/'/g,'');if(rplc==text) {rplc='#'+FuncInit.tmp+'_'+FuncTree.theme[j].value;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}}
-				}finally{FuncTree.applysrch(i);MapsLib.doSearch();}
-});
-$(FuncInit.idtree).on('expand', function (ev) {
-			if(FuncInit.bnm)
-			{
-				var e = ev.args.element;var i = $(FuncInit.idtree).jqxTree('getItem',e );
-				if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null) FuncTree.zoom=12; else FuncTree.zoom=10;
-				if(!FuncTree.bgrow)
-				{FuncTree.selectBox(i);FuncTree.bgrow=true;$(FuncInit.idtree).jqxTree('checkItem', e, true);$('small').show();FuncTree.applysrch(i);MapsLib.doSearch();$(FuncInit.idtree).jqxTree('ensureVisible', e);}
-			}			
-});
-$(FuncInit.idtree).on('collapse', function (ev) {
-FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Array();$(FuncInit.idtab).empty();FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch(); }
-});
-$(FuncInit.idtree).bind('select', function (ev) {
-	ev.stopPropagation();FuncTree.zoom=13;var a = ev.args;var e = a.element;var i = $(FuncInit.idtree).jqxTree('getItem', e);if(i!=null) { FuncTree.selectBox(i);for(var cpt in FuncInit.txtInit) if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;} $(FuncInit.idtree).jqxTree('checkItem', e, true); FuncTree.applysrch(i); MapsLib.doSearch();}
-});
-$(FuncInit.idtree).on('checkChange', function (ev)	
-			{	
-				if(!FuncTree.bgrow)
-				{
-					$('#clear').css('color','red');$('#clear').css('border-color','green');
-					var a = ev.args;
-					var e = a.element;
-					var item = $(FuncInit.idtree).jqxTree('getItem', e);
-					var bIn=false;
-					for(var i in FuncInit.txtInit) {if(item.label==FuncInit.txtInit[i]) bIn=true;}
-					if(!bIn)
-					{			
-						FuncInit.tmp= item.label;
-						var items = $(FuncInit.idtree).jqxTree('getCheckedItems');
-						var pre = e.parentElement.parentElement;
-						var	prei = $(FuncInit.idtree).jqxTree('getItem', pre);
-						if(prei!=null) 
-						  for(var i in items) 
-							{if(items[i].element!=pre&&items[i].element!=e) { $(FuncInit.idtree).jqxTree('uncheckItem', items[i].element); }}
-					}
-					FuncTree.bgrow=true;
-					
-					if(a.checked){ $(FuncInit.idtree).jqxTree('expandItem', e);}
-					else {$(FuncInit.idtree).jqxTree('collapseItem', e);}
-					
-				}else
-					{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}
-			}); 
-
-	$("#r_lieu").selectBox({
-                        mobile: true
-                    })
-                    .change(function () {
-					FuncTree.bms=false;
-						FuncInit.tmp= $(this).val();
-						$( "#r_theme" ).selectBox('value',"general");
-					
-						 var rplc ='#'+FuncInit.tmp;
-						 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline');
-						 
-						 
-                    });
-	$("#r_tab").change(function ()  {
-			FuncTree.bms=false;
-			FuncTab.fsearch(this.value);
-			$(FuncInit.idtab).mouseover();
-		}); 
-
-		$( "#r_theme" ).selectBox({
-                        mobile: true
-                    })
-                    .change(function () {
-						FuncTree.bms=false;var bzn= false;
-						var zns = FuncInit.srcZn
-						for(var z in zns)
-						{
-							if(zns[z]==FuncInit.tmp)
-								 bzn= true;
-						}
-						if(bzn)
-						{
-							
-							MapsLib.srchOnAll(this.value);
-							$(FuncInit.idinf).empty();
-							FuncTab.msg= 'Entrer valeurs DANS le champs Recherche Bdd, ou sélectionner une ville!!';
-							FuncTree.append(FuncTab.msg,'red');
-						}else
-						{
-							var ids = FuncInit.srcId;
-							var rplc= '#';
-							for(var id in ids)
-							{
-								if(ids[id].label==FuncInit.tmp)
-									 rplc = rplc+ ids[id].id +'_';;
-							}
-							 rplc = rplc+ $(this).val();
-							 $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); 
-						}
-                    });
-		
-
+$(FuncInit.idtree).jqxTree({checkboxes:true,source:FuncTree.source,width:'100%',height:FuncTree.initl,theme:'summer'});
+$('#jqxTree .jqx-tree-item').mouseenter(function (event){event.stopPropagation();var text = event.target.textContent;var i;if(FuncInit.bnm&&FuncTree.bms)try{text = text.replace(/ /g,'').replace(/'/g,'');rplc = '#'+text;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}catch(e){for(var j in FuncTree.theme){var rplc=FuncTree.theme[j].label.replace(/ /g,'').replace(/'/g,'');if(rplc==text) {rplc='#'+FuncInit.tmp+'_'+FuncTree.theme[j].value;i = $(FuncInit.idtree).jqxTree('getItem',$(rplc)[0] );}}}finally{FuncTree.applysrch(i);MapsLib.doSearch();}});
+$(FuncInit.idtree).on('expand', function(ev) {if(FuncInit.bnm){var e = ev.args.element;var i = $(FuncInit.idtree).jqxTree('getItem',e );if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null) FuncTree.zoom=12; else FuncTree.zoom=10;if(!FuncTree.bgrow){FuncTree.selectBox(i);FuncTree.bgrow=true;$(FuncInit.idtree).jqxTree('checkItem', e, true);$('small').show();FuncTree.applysrch(i);MapsLib.doSearch();$(FuncInit.idtree).jqxTree('ensureVisible', e);}}});
+$(FuncInit.idtree).on('collapse', function(ev){FuncTree.bms=true; if(!FuncTree.bgrow){FuncTree.bgrow=true;FuncTree.ptbid=new Array();$(FuncInit.idtab).empty();FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch();}});
+$(FuncInit.idtree).bind('select', function(ev){ev.stopPropagation();FuncTree.zoom=13;var a = ev.args;var e = a.element;var i = $(FuncInit.idtree).jqxTree('getItem', e);if(i!=null) { FuncTree.selectBox(i);for(var cpt in FuncInit.txtInit) if(FuncInit.txtInit[cpt]==i.label) {FuncTree.bgrow=true;} $(FuncInit.idtree).jqxTree('checkItem', e, true); FuncTree.applysrch(i); MapsLib.doSearch();}});
+$(FuncInit.idtree).on('checkChange', function (ev){if(!FuncTree.bgrow){$('#clear').css('color','red');$('#clear').css('border-color','green');var a = ev.args;var e = a.element;var item = $(FuncInit.idtree).jqxTree('getItem', e);var bIn=false;for(var i in FuncInit.txtInit) {if(item.label==FuncInit.txtInit[i]) bIn=true;}if(!bIn){FuncInit.tmp= item.label;var items = $(FuncInit.idtree).jqxTree('getCheckedItems');var pre = e.parentElement.parentElement;var	prei = $(FuncInit.idtree).jqxTree('getItem', pre);if(prei!=null)for(var i in items){if(items[i].element!=pre&&items[i].element!=e) { $(FuncInit.idtree).jqxTree('uncheckItem', items[i].element); }}}FuncTree.bgrow=true;if(a.checked){ $(FuncInit.idtree).jqxTree('expandItem', e);}else {$(FuncInit.idtree).jqxTree('collapseItem', e);}}else{$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}}); 
+$("#r_lieu").selectBox({mobile: true}).change(function () {FuncTree.bms=false;FuncInit.tmp= $(this).val();$( "#r_theme" ).selectBox('value',"general");var rplc ='#'+FuncInit.tmp;$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]); $("#r_theme").css('display','inline');});
+$("#r_tab").change(function ()  {FuncTree.bms=false;FuncTab.fsearch(this.value);$(FuncInit.idtab).mouseover();}); 
+$( "#r_theme" ).selectBox({mobile: true}).change(function () {FuncTree.bms=false;var bzn= false;var zns = FuncInit.srcZn;for(var z in zns){if(zns[z]==FuncInit.tmp) bzn= true;}if(bzn){MapsLib.srchOnAll(this.value);$(FuncInit.idinf).empty();FuncTab.msg= 'Entrer valeurs DANS le champs Recherche Bdd, ou sélectionner une ville!!';FuncTree.append(FuncTab.msg,'red');}else{var ids = FuncInit.srcId;var rplc= '#';for(var id in ids){if(ids[id].label==FuncInit.tmp) rplc = rplc+ ids[id].id +'_';}rplc = rplc+ $(this).val(); $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);}});
 google.maps.visualRefresh = true;
-
 /*!
  * Runsense 97Kafr
  *
@@ -649,26 +522,28 @@ google.maps.visualRefresh = true;
 //Objet Librairie de Google Map
 var MapsLib = MapsLib || {};
 var MapsLib = {
-  s                 :null,
-  e                 :null,
-  cpte				:0,
-  chad				:'',
-  datajson          :['',''],
-  geocoder          : new google.maps.Geocoder(),
-  polygonTableID    :[],
-  polygon           : new Array(),
-  googleApiKey		: "AIzaSyD49JCPjbwMZpVekOIPjWM6GQwEr6VCe8A",
-  locationColumn	: "lat",
-  map_centroid		: new google.maps.LatLng(-21.137472,55.546906),
-  locationScope		: "reunion",  
-  defaultZoom		: 10,
-  row				:[],
-  addSrchMarker		: new google.maps.Marker(),
+  s:null,e:null,cpte:0,chad:'',datajson:['',''],geocoder:new google.maps.Geocoder(),polygonTableID:[],polygon:new Array(),googleApiKey:"AIzaSyD49JCPjbwMZpVekOIPjWM6GQwEr6VCe8A",locationColumn	:"lat",map_centroid:new google.maps.LatLng(-21.137472,55.546906),locationScope:"reunion",defaultZoom:10,row:[],addSrchMarker:new google.maps.Marker(),h:34,p:10,
+  strVw				: new google.maps.StreetViewPanorama(
+      document.getElementById("strvw"), {
+        position: MapsLib.map_centroid,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      }),
 initialize: function() {
-	
 	try{ MapsLib.geocoder = new google.maps.Geocoder(); FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer(); }catch(e){;}
     var myOptions = { zoom: MapsLib.defaultZoom, center: MapsLib.map_centroid, mapTypeId: google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1 };
     map = new google.maps.Map($("#map_canvas")[0],myOptions);
+	var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById("pano"), {
+        position: MapsLib.map_centroid,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+	map.setStreetView(panorama);	
 	google.maps.event.addListener(map, "click", function(event) { MapsLib.clickmap(event); });
 	google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom); });
 	try{ FuncRoute.directionsDisplay.setMap(map); }catch(e){;}
@@ -676,105 +551,21 @@ initialize: function() {
     MapsLib.doSearch();
 
   },
-doSearch: function(location) {
-	FuncTree.bgrow = false;
-	MapsLib.clearSearch();
-	MapsLib.polygonTableID=FuncTree.ptbid;
-    MapsLib.polygon=new Array();
-	try{
-		var tl=MapsLib.polygonTableID.length;
-		
-		map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
-		
-		for(var i=0; i<tl; i++)
-			{
-				if(FuncInit.bnm)
-					{ var stl= FuncTree.styles[i]; if(stl=="dining"||stl=="star") map.setMapTypeId(google.maps.MapTypeId.ROADMAP); else if(stl=="play"||stl=="ranger_station"||stl=="realestate") map.setMapTypeId(google.maps.MapTypeId.HYBRID); }
-				var layer = new google.maps.FusionTablesLayer({
-					  query: {from:   MapsLib.polygonTableID[i],select: "geometry"},
-					  styles: [{markerOptions: {iconName: stl,},polygonOptions: {fillColor: stl,strokeColor: "#FFFFF0",strokeWeight: "int"},polylineOptions: {strokeColor: stl,strokeWeight: "int"  }},] 
-					});
-				try{
-						if(FuncInit.bnm)
-						{
-							var chcmp=FuncTree.styles[i+1];
-							if(chcmp.charAt(0)!='#'&&chcmp!='NO') {$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}
-							else $(FuncTree.updBackG).css('background-image', 'url("+FuncInit.bstyle+")');
-							if(stl.charAt(0)!='#') $(FuncInit.idp).css('border-color',stl);
-							FuncTree.styles=new Array();
-						}		
-						google.maps.event.addListener(layer, 'click', function(e){ MapsLib.anLayer(e);});
-					}finally{MapsLib.polygon.push(layer);MapsLib.polygon[i].setMap(map);	}
-				
-			}
-		}catch(e){;}finally{MapsLib.getList();$(FuncInit.idtree).focus();}
-	},
-anLayer: function(e){//commande click layer
-		if(!FuncTree.bchk&&!FuncTree.bgrow)
-							{
-								var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
-								FuncTree.bchk=true;
-								FuncTab.fsearch(s);	
-									var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');
-									  $(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
-									MapsLib.chad='#arv'; MapsLib.addrFromLatLng(e.latLng);
-								FuncTree.bchk=false;
-								return s;
-							}
-	},
-findMe: function() {
-    if(navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        fl = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-        MapsLib.chad= '#dep';
-		MapsLib.addrFromLatLng(fl);
-						map.setCenter(fl);
-      }, null);
-    }
-    else {FuncTree.append('Parametrer Geolocation sur configuration','red');}
-  },
+doSearch:function(location){FuncTree.bgrow = false;MapsLib.clearSearch();MapsLib.polygonTableID=FuncTree.ptbid;MapsLib.polygon=new Array();try{var tl=MapsLib.polygonTableID.length;map.setMapTypeId(google.maps.MapTypeId.SATELLITE);for(var i=0; i<tl; i++){if(FuncInit.bnm){ var stl= FuncTree.styles[i];if(stl=="dining"||stl=="star")map.setMapTypeId(google.maps.MapTypeId.ROADMAP);else if(stl=="play"||stl=="ranger_station"||stl=="realestate")map.setMapTypeId(google.maps.MapTypeId.HYBRID);}var layer = new google.maps.FusionTablesLayer({query: {from:   MapsLib.polygonTableID[i],select: "geometry"},styles: [{markerOptions: {iconName: stl,},polygonOptions: {fillColor: stl,strokeColor: "#FFFFF0",strokeWeight: "int"},polylineOptions: {strokeColor: stl,strokeWeight:"int"}},]});try{if(FuncInit.bnm){var chcmp=FuncTree.styles[i+1];if(chcmp.charAt(0)!='#'&&chcmp!='NO') {$(FuncTree.updBackG).css('background-image', 'url(' + chcmp+ ')');$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}else $(FuncTree.updBackG).css('background-image', 'url("+FuncInit.bstyle+")');if(stl.charAt(0)!='#') $(FuncInit.idp).css('border-color',stl);FuncTree.styles=new Array();}}finally{google.maps.event.addListener(layer, 'click', function(e){ MapsLib.anLayer(e);});MapsLib.polygon.push(layer);MapsLib.polygon[i].setMap(map);}}}catch(e){;}finally{MapsLib.getList();$(FuncInit.idtree).focus();}},
+anLayer:function(e){if(!FuncTree.bchk&&!FuncTree.bgrow){var s= e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];FuncTree.bchk=true;FuncTab.fsearch(s);var rplc ='#'+s.replace(/ /g,'').replace(/'/g,'');$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);MapsLib.chad='#arv'; MapsLib.addrFromLatLng(e.latLng);FuncTree.bchk=false;return s;}},
+findMe: function(){if(navigator.geolocation){navigator.geolocation.getCurrentPosition(function(position){fl=new google.maps.LatLng(position.coords.latitude,position.coords.longitude);MapsLib.chad= '#dep';MapsLib.addrFromLatLng(fl);map.setCenter(fl);}, null);}else FuncTree.append('Parametrer Geolocation sur configuration','red');},
 addrFromLatLng: function(latLngPoint) {
 console.log(latLngPoint);
     MapsLib.geocoder.geocode({'latLng': latLngPoint}, function(results, status) {
 	
       if (status == google.maps.GeocoderStatus.OK) {
-		  if(results.length>1)
-			$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);
-		  else
-			$(MapsLib.chad).val(results[0].formatted_address);
-        if(MapsLib.chad=='#dep')
-			{
-				MapsLib.s=results[0].formatted_address;
-				$(FuncInit.iditi).css('font-size','20px');$(FuncInit.iditi).css('font-weight','bold');
-			}
-		else
-			{
-				MapsLib.e=results[0].formatted_address;
-				$(FuncInit.iditi).css('color','red');$(FuncInit.iditi).css('border-color','green');
-				
-			}
-      } else {
-        //alert("Geocoder failed due to: " + status);
-      }
-    });
-  },
+		  if(results.length>1)$(MapsLib.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address); else $(MapsLib.chad).val(results[0].formatted_address);if(MapsLib.chad=='#dep'){MapsLib.s=results[0].formatted_address;$(FuncInit.iditi).css('font-size','20px');$(FuncInit.iditi).css('font-weight','bold');}else{MapsLib.e=results[0].formatted_address;$(FuncInit.iditi).css('color','red');$(FuncInit.iditi).css('border-color','green');}}});},
 zoom: function(map) { var bounds = new google.maps.LatLngBounds(); map.data.forEach(function(feature) { MapsLib.processPoints(feature.getGeometry(), bounds.extend, bounds); }); map.fitBounds(bounds);},
-processPoints: function(geometry, callback, thisArg) { if (geometry instanceof google.maps.LatLng) { callback.call(thisArg, geometry); } else if (geometry instanceof google.maps.Data.Point) { callback.call(thisArg, geometry.get()); } else {geometry.getArray().forEach(function(g) {MapsLib.processPoints(g, callback, thisArg);});}},
+processPoints: function(geometry, callback, thisArg){if(geometry instanceof google.maps.LatLng)callback.call(thisArg, geometry); else if(geometry instanceof google.maps.Data.Point) callback.call(thisArg, geometry.get()); else {geometry.getArray().forEach(function(g) {MapsLib.processPoints(g, callback, thisArg);});}},
 additi :function(butiti){ MapsLib.chad ='#'+ butiti;},
 clickmap: function(pos){if(pos!=null) MapsLib.addrFromLatLng(pos.latLng); map.setMapTypeId(google.maps.MapTypeId.HYBRID);},
 clearSearch: function() { MapsLib.polygonTableID=null; for(var i=0;i<MapsLib.polygon.length;i++) if (MapsLib.polygon[i] != null) { MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null; } map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom);},
-query: function(selectColumns, limit, callback) {
-	for(var i in MapsLib.polygonTableID)
-	{
-		if(MapsLib.polygonTableID[i]!="NO")
-		{
-			MapsLib.cpte=i; $(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
-			var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " + MapsLib.polygonTableID[i]);
-			var sql = encodeURIComponent(queryStr.join(" ")); $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
-		}else { $(FuncInit.idtab).empty(); $(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>"); }
-	}
-	$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)","blue");
-  },
+query: function(selectColumns, limit, callback){for(var i in MapsLib.polygonTableID){if(MapsLib.polygonTableID[i]!="NO"){MapsLib.cpte=i; $(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");var queryStr = []; queryStr.push("SELECT " + selectColumns); queryStr.push(" FROM " + MapsLib.polygonTableID[i]);var sql = encodeURIComponent(queryStr.join(" ")); $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});}else { $(FuncInit.idtab).empty(); $(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}$(FuncInit.idinf).empty(); FuncTree.append("ALLER sur le Panneau TRANSPARENT en BAS à gauche pour la description </br> (GO ON TRANSPARENT  left down panel)","blue");},
 getList: function() { var selectColumns = "categ,nom,description,lat,lng"; MapsLib.query(selectColumns, 10, "FuncTab.displayList");},
 srchOnAll: function(txt) {
 var th= $( "#r_theme" ).val();var li= $("#r_lieu").val();
@@ -816,4 +607,6 @@ displayList: function() {
 },
 handleError: function(json) { if (json["error"] != undefined){var error = json["error"]["errors"];console.log("Error in Fusion Table call!");for (var row in error) { console.log(" Domain: " + error[row]["domain"]);console.log(" Reason: " + error[row]["reason"]);console.log(" Message: " + error[row]["message"]);}}}
 }
+
+
 
