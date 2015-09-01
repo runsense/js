@@ -1,7 +1,7 @@
 //<![CDATA[
         $(window).resize(function () { var h = $(window).height();var offsetTop = 105; $(FuncInit.idmap).css('height', (h - offsetTop));}).resize();
         $(function() {
-		MapsLib.initialize();
+		
 		$(FuncInit.idsup).bind('click',function(){ $(this).animate({ width: '35%' });$(FuncInit.idmap).animate({ width: '35%' });});
 		if(FuncInit.bnm){$(FuncTree.updBackG).css('background-image', FuncTree.styles[1]);$(FuncTree.updBackG).css('background-repeat', 'no-repeat');$(FuncTree.updBackG).css('background-size', '100%');}
 		$("#fl").bind('click',function(){MapsLib.findMe();});
@@ -22,5 +22,6 @@
 		$(FuncInit.idmap).mouseleave(function(){map.setZoom(FuncTree.rvzoom);FuncRoute.calcRoute();return true;});
 		$(FuncInit.iditi).click(function(){FuncRoute.calcRoute();return true;});
 		FuncInit.tmp="OUEST";
+		MapsLib.initialize();
         });
       //]]>
