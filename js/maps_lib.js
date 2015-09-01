@@ -284,7 +284,7 @@ FuncRoute.directionsDisplay = new google.maps.DirectionsRenderer();
 var myOptions = { zoom: MapsLib.defaultZoom, center: MapsLib.map_centroid, mapTypeId: google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1 };
 map = new google.maps.Map($("#map_canvas")[0],myOptions);
 strVw=new google.maps.StreetViewPanorama(document.getElementById("pano"),{position: MapsLib.map_centroid,pov:{heading: 34,pitch: 10 }});
-map.setStreetView(strVw);
+//map.setStreetView(strVw);
 google.maps.event.addListener(map, "click",
  function(event) { MapsLib.clickmap(event); });
 google.maps.event.addDomListener(window, 'resize', function()
