@@ -1,4 +1,4 @@
  body{ display: block; } .jqx-widget{ width: 150%; }
  #panel{ display:block !important;}
  #fl{ display:block !important;}
- #jqxTree{ visibility:none!important;}
+ .jqx-tree-item {font-size: 180% !important;}
