@@ -1,7 +1,7 @@
 html, body 		{ height: 100% !important;margin: 0px !important;padding: 0px !important;background-color: black; }
 
 		#map_canvas { position: absolute;float:left;width: 70%;margin: 0px;padding: 0px;border-top-left-radius: 3em ;border-top-right-radius: 2em ; border-bottom-left-radius: 1em ;border-bottom-right-radius: 18em ;  }
-		#panel, #mobPanel 		{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 2px solid #999; }
+		#panel{ position: absolute;top: 5px;left: 70%;z-index: 5;background: none;border: 2px solid #999; }
 		#listv 		{ position: absolute;bottom:1px;height: 15%;}
 		#btn 		{ display:none;text-align: center;size:100%;background-color: red;}
 		#iti, #clear{ background: none; }
