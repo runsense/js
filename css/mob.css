@@ -1,4 +1,4 @@
- body{ display: block; background: none !important;} .jqx-widget{ width: 150%; }
+ body{ display: block; } .jqx-widget{ width: 150%; }
  #panel{ display:block !important;}
  #fl{ display:block !important;}
- #jqxTree{ visibility:hidden!important;}
+ #jqxTree{ visibility:none!important;}
