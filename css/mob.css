@@ -1,4 +1,1 @@
- body{ display: block; } .jqx-widget{ width: 150%; }
- #panel{ display:block !important;}
- #fl{ display:block !important;}
- .jqx-tree-item {font-size: 180% !important;}
+body{display: block;} #panel{display:block!important;} #fl{display:block!important;} #map_canvas{width:800px !important;height:800px !important;} .jqx-tree-item {font-size:180%!important;} .jqx-widget{width:150%;} 
