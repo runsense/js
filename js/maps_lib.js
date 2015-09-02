@@ -7,7 +7,7 @@
 //Objet Librairie Variable
 var bnm=true;
 var initl='auto';
-if($('#panel').css('display') == 'none')
+if($('.jqx-tree-item').css('fontSize')=='180%')
 	{
 		bnm=false;
 		initl='250px';
