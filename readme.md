@@ -2,6 +2,12 @@
 	exemple of bdd in FUSIONTABLELAYER
 	MAKE your googleApiKey in MapLib.googleApiKey override don't work
 	and soon begin just by idFusonTableLayer call!!
+	possible direct link access with new version in 
+	runsense.re?&apikey=....&fusiontableid=....
+	Optional parameter:
+		&name=....&zm=...&rvzm=...
+Soon version of Map_lib min for 
+	goglemap, fusiontablelayer, route
 	
 Create a link for http://runsense.re, Original view
 
