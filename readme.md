@@ -1,11 +1,15 @@
 /csv
 	exemple of bdd in FUSIONTABLELAYER
+	
 	MAKE your googleApiKey in MapLib.googleApiKey override don't work
+	
 	and soon begin just by idFusonTableLayer call!!
-	possible direct link access with new version in 
+	
+possible direct link access with new version in 
 	runsense.re?&apikey=....&fusiontableid=....
 	Optional parameter:
 		&name=....&zm=...&rvzm=...
+		
 Soon version of Map_lib min for 
 	goglemap, fusiontablelayer, route
 	
@@ -15,17 +19,27 @@ Create a link for http://runsense.re, Original view
 all plateform beta version but Optimisize for web
 
 1:prepare data to bdd by .csv with column kml geometry (polygon)(i have an jsfjava8 with primeface ..in futur link with evolution)
+
 2:create fusiontablelayer bdd (enable google ap autor2)
+
 3:adapt maps_lib.js googleApiKey & map_centroid& locationscope
+
 4: adpat FuncTree.js with id table FTL to link with tree
+
 5: adpat FuncTree.js txtInit to appropriate data & styles ["","to modify"]
+
 6: customize info title in ..
+
 7:***thanks of runsenseS2I"### by link of http://runsense.github.io/js/fram.html  
+
 Original page
 
 help: google icon http://kml4earth.appspot.com/icons.html
+
 	api: FusionTableLayer (not rest api deprecated)
+	
 		jqx Jquery widget
+		
 		jQueryDatatable
 		
 
