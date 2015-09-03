@@ -15,3 +15,23 @@ Override, .csv can use in tableur for create data,
 the first icon by table is been use in map for icon, 
 
 and for polyline, color is been random by table.
+
+pour lien sur map erterne:
+
+	http:runsense.re?&apikey=.....&fusiontableid=....&name=....&zm=...&rvzm=...
+
+apikey 
+	
+	pour la clé google
+
+fusiontableid 
+	
+	pour l'identifiant de la table (a propos de)
+
+optionnel
+
+	name 
+		
+		pour son référencement dans l'arbre
+
+	zm et rvzm pour les zoom
