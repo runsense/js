@@ -156,7 +156,7 @@ google.maps.event.addListener(map, 'mouseover', function(event){
  });
  MapsLib.doSearch();
  
-		if(FuncInit.initSrch!=''){MapsLib.colSrch="nom";var srch=FuncInit.initSrch;
+		if(FuncInit.initSrch!=''){MapsLib.colSrch="nom";var srch=FuncInit.initSrch;FuncTree.bms=false;
 		$("#r_lieu").val(FuncInit.initl);$("#r_theme").val(FuncInit.initt);
 		$(FuncInit.idrbb).val(srch);MapsLib.srchOnAll(srch);$(FuncInit.idrbb).focus();$(FuncInit.idrbb).mouseenter();
 		$(FuncInit.idinf).empty();FuncTree.append('PLAY WITH MOUSE for search go top right and left down!!Y GAGN ZOUER POU FE LE RECHERCHE EN HAUT A DROITE EN BAS A GAUCHE','#660066');
