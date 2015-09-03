@@ -48,11 +48,13 @@ fond.pde work with processing.js
 
 	for text 3d, redirect fram.html.
 
-init prepare index page,
+init prepare index page
+	
+	github
 
 after is object jQuery:
  
- MapLibs, FuncTree, FuncTab, FuncRoutes
+	MapLibs, FuncTree, FuncTab, FuncRoutes
  
 	all min in one leaf is better
 	
