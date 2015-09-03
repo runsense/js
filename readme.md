@@ -43,10 +43,17 @@ help: google icon http://kml4earth.appspot.com/icons.html
 
 
 manifest and background for chrome module adaptation!!
-fond.pde work with processing.js for text 3d, redirect fram.html.
-init prepare index page,
-after is object jQuery:
- MapLibs, FuncTree, FuncTab, FuncRoutes
- runsense.css
 
-better put all in external link
+fond.pde work with processing.js 
+
+	for text 3d, redirect fram.html.
+
+init prepare index page,
+
+after is object jQuery:
+ 
+ MapLibs, FuncTree, FuncTab, FuncRoutes
+ 
+	all min in one leaf is better
+	
+runsense.css
