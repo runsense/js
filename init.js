@@ -25,6 +25,6 @@ $.urlParam=function(name){var results=new RegExp('[\?&amp;]' + name + '=([^&amp;
 		$(FuncInit.idmap).mouseleave(function(){map.setZoom(FuncTree.rvzoom);FuncRoute.calcRoute();return true;});
 		$(FuncInit.iditi).click(function(){FuncRoute.calcRoute();return true;});
 		if(FuncInit.bxt) FuncInit.tmp="OUEST";
-		MapsLib.initialize();
+		initialize();
         });
       //]]>
