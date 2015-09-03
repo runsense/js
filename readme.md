@@ -1,12 +1,10 @@
 /csv
 	exemple of bdd in FUSIONTABLELAYER
 	
-	MAKE your googleApiKey in MapLib.googleApiKey override don't work
 	
-	and soon begin just by idFusonTableLayer call!!
+	possible direct link access with new version in 
 	
-possible direct link access with new version in 
-	runsense.re?&apikey=....&fusiontableid=....
+	http://runsense.re?&apikey=....&fusiontableid=....
 	Optional parameter:
 		&name=....&zm=...&rvzm=...
 		
