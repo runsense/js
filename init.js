@@ -1,4 +1,6 @@
 //<![CDATA[
+$.urlParam=function(name){var results=new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}}
+
         $(window).resize(function () { var h = $(window).height();var offsetTop = 105; $(FuncInit.idmap).css('height', (h - offsetTop));}).resize();
         $(function() {
 		
@@ -21,7 +23,7 @@
 		$('#arv').click(function(){MapsLib.chad='#arv'; return true;});
 		$(FuncInit.idmap).mouseleave(function(){map.setZoom(FuncTree.rvzoom);FuncRoute.calcRoute();return true;});
 		$(FuncInit.iditi).click(function(){FuncRoute.calcRoute();return true;});
-		FuncInit.tmp="OUEST";
+		if(FuncInit.bxt) FuncInit.tmp="OUEST";
 		MapsLib.initialize();
         });
       //]]>
