@@ -15,7 +15,7 @@ label{color:white;}
 		#pano .adp-substep:hover { color:red;border-color:green;background-color: rgba(184, 134, 11, 0.63);}  }
 		#r_bdd::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 			color:    black;
-			font-weight: 900;
+			font-weight: 750;
 		}
 		#r_bdd:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
 		   color:    black;
