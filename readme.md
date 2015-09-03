@@ -9,14 +9,14 @@
 		&name=....&zm=...&rvzm=...
 		
 Soon version of Map_lib min for 
-	goglemap, fusiontablelayer, route
+	googlemap, fusiontablelayer, route
 	
 Create a link for http://runsense.re, Original view
 
 **Open Source from Reunion Island***
 all plateform beta version but Optimisize for web
 
-1:prepare data to bdd by .csv with column kml geometry (polygon)(i have an jsfjava8 with primeface ..in futur link with evolution)
+1:prepare data to bdd by .csv with template in /csv
 
 2:create fusiontablelayer bdd (enable google ap autor2)
 
