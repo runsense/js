@@ -157,8 +157,7 @@ google.maps.event.addDomListener(window, 'resize', function()
  { 
 	map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom); 
  });
-try{ 
-FuncRoute.directionsDisplay.setMap(map); }catch(e){;} 
+try{FuncRoute.directionsDisplay.setMap(map); }catch(e){;} 
 google.maps.event.addListener(map, 'mouseover', function(event){
  FuncTree.rvzoom=map.getZoom();
  map.setZoom(FuncTree.zoom);
