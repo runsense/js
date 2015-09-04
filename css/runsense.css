@@ -11,8 +11,8 @@ label{color:white;}
 		#fl, #r_theme	{ display:none; }
 		#r_tab		{background: rgba(0,255,0,0.7);color:black;font-weight: bloder;}
 		#r_bdd		{background: rgba(255,0,0,0.7);color:black;font-weight: bloder;}
-		#pano		{position: absolute;left:68%;width:0%;height: 800px;background-color: rgba(255, 255, 255, 0.63);}
-		#pano .adp-substep:hover { color:red;border-color:green;background-color: rgba(184, 134, 11, 0.63);}  }
+		#pano		{position: absolute;left:68%;width:0%;height: 800px;background-color:rgba(173,216,230,0.63);}
+		#pano .adp-substep:hover { color:red;border-color:green;background-color:rgba(184, 134, 11, 0.63);}  }
 		#r_bdd::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 			color:    black;
 			font-weight: 750;
