@@ -44,18 +44,7 @@ help: google icon http://kml4earth.appspot.com/icons.html
 		jQueryDatatable
 		
 
-
-manifest and background for chrome module adaptation!!
-
-fond.pde work with processing.js 
-
-	for text 3d, redirect fram.html.
-
-init prepare index page
-	
-	github
-
-after is object jQuery:
+after it's runsense lib:
  
 	MapLibs, FuncTree, FuncTab, FuncRoutes
  
