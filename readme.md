@@ -1,5 +1,9 @@
-<<<<<<< HEAD
-/csv
+runsense_lib
+	
+	dossier lib .. not test
+	
+csv
+
 	exemple of bdd in FUSIONTABLELAYER
 	
 	
@@ -64,9 +68,8 @@ runsense.css, mob.css, tablet.css, largeSize.css
 and datables.bootstrap for 
 	
 	generate datatable
-=======
+
 Version online
 
 HTTP://runsense.re
 or www
->>>>>>> 4a33f70171e9f195c3b21c8bf3036fa4e8db5315
