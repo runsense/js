@@ -1,7 +1,8 @@
-<<<<<<< HEAD
 /csv
+
 	exemple of bdd in FUSIONTABLELAYER
 	
+runsense.re/runsense_lib.rar
 	
 	possible direct link access with new version in 
 	
@@ -15,7 +16,7 @@ Soon version of Map_lib min for
 Create a link for http://runsense.re, Original view
 
 **Open Source from Reunion Island***
-all plateform beta version but Optimisize for web
+all plateform  but Optimisize for web
 
 1:prepare data to bdd by .csv with template in /csv
 
@@ -29,7 +30,7 @@ all plateform beta version but Optimisize for web
 
 6: customize info title in ..
 
-7:***thanks of runsenseS2I"### by link of http://runsense.github.io/js/fram.html  
+7:***thanks of runsenseS2I"### by link of runsense.re
 
 Original page
 
@@ -64,9 +65,8 @@ runsense.css, mob.css, tablet.css, largeSize.css
 and datables.bootstrap for 
 	
 	generate datatable
-=======
+
 Version online
 
 HTTP://runsense.re
 or www
->>>>>>> 4a33f70171e9f195c3b21c8bf3036fa4e8db5315
