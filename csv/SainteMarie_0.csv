@@ -1,0 +1,39 @@
+id,nom,categ,description,geometry,lat,lng
+SM_t,Association sportive et culturelle de l’Aviation civile,donut,tennis club,"<Point>
+            <coordinates>55.50953142762496,-20.89299624642469</coordinates>
+        </Point>","-20,8929962464","55,5095314276"
+SM_t,Sainte-Marie tennis-club,donut,tennis club,"<Point>
+            <coordinates>55.5145401411802,-20.91418417564771</coordinates>
+        </Point>","-20,9141841756","55,5145401412"
+SM_t,stade,play,stade de foot,"<Point>
+            <coordinates>55.5144486800784,-20.91467849095505</coordinates>
+        </Point>","-20,914678491","55,5144486801"
+SM_t,piscine,water,piscine,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.55337561505663,-20.89738745552175 55.55283711058945,-20.89765845211409 55.55301328864306,-20.89824146923139 55.55314154935329,-20.89848672756913 55.55325190961138,-20.89849680019167 55.553344346284,-20.89836620906111 55.55367737202682,-20.89832734748229 55.55353013300363,-20.89751972886084 55.55337561505663,-20.89738745552175</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SM_t,STADE DUPARC,play," stade de foot_
+STADE DUPARC Rue Marcel Goulette 97438 STE MARIE","<Point>
+            <coordinates>55.52101029929088,-20.90310562247694</coordinates>
+        </Point>","-20,9031056225","55,5210102993"
+SM_t,Association sportive et culturelle de l’Aviation civile,donut,tennis club,"<Point>
+            <coordinates>55.50953142762496,-20.89299624642469</coordinates>
+        </Point>","-20,8929962464","55,5095314276"
+SM_t,Sainte-Marie tennis-club,donut,tennis club,"<Point>
+            <coordinates>55.5145401411802,-20.91418417564771</coordinates>
+        </Point>","-20,9141841756","55,5145401412"
+SM_t,stade,play, stade de foot,"<Point>
+            <coordinates>55.5144486800784,-20.91467849095505</coordinates>
+        </Point>","-20,914678491","55,5144486801"
+SM_t,piscine,water,piscine,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.55337561505663,-20.89738745552175 55.55283711058945,-20.89765845211409 55.55301328864306,-20.89824146923139 55.55314154935329,-20.89848672756913 55.55325190961138,-20.89849680019167 55.553344346284,-20.89836620906111 55.55367737202682,-20.89832734748229 55.55353013300363,-20.89751972886084 55.55337561505663,-20.89738745552175</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,

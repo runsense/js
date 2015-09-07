@@ -1,0 +1,163 @@
+id,nom,categ,description,geometry,lat,lng
+SLO_v,Aqueduc Ravine du Gol,cbh,"Construit en bois en 1816 pour dériver l’eau de la rivière Saint-Etienne, le Canal du Gol, créé par Hyacinthe MURAT, prend sa source au lieu-dit « le Gouvernail » dans le lit de la rivière, puis traverse toute la ville de Saint-Louis jusqu’à la ravine du Gol, franchie à l’aide de l’aqueduc.
+
+L’ouvrage d’art de 1816 est remplacé vers 1835 par une nouvelle réalisation établie plus en amont. De hautes piles en maçonnerie permettent de franchir le lit de la rivière. Elles supportent le canal, à l'origine en bois, remplacé à une date inconnue par des feuilles de métal. La canalisation termine sa course à  la sucrerie du Gol et alimente en eau les machines à vapeur. L’aqueduc métallique desservit la ville jusqu’en 1970.","<Point>
+            <coordinates>55.40535,-21.28212777777778</coordinates>
+        </Point>","-21,2821277778","55,40535"
+SLO_v,Chapelle Notre Dame du Rosaire,church,"La Chapelle Notre Dame du Rosaire est le plus vieil édifices chrétien conservé à La Réunion,
+ elle est classée en totalité au titre des monuments historiques le 14 août 2000.","<Point>
+            <coordinates>55.41857900012499,-21.29077399988647</coordinates>
+        </Point>","-21,2907739999","55,4185790001"
+SLO_v,Cimetière du Père Lafosse,cbh,"Vestige du passé colonial,
+on y retrouve les premiers esclaves 
+enterré avec les premiers colons","<Point><coordinates>55.39667,-21.28306</coordinates></Point>","-21,28306","55,39667"
+SLO_v,Domaine de Maison Rouge,cbh,"Le Domaine de Maison Rouge est classé en totalité au titre des monuments  historiques le 5 mai 2004.
+Le domaine est le seule de l'Outre-Mer français lié à la culture du café.","<Point>
+            <coordinates>55.41140300048131,-21.26400300072488</coordinates>
+        </Point>","-21,2640030007","55,4114030005"
+SLO_v,église de Saint-Louis,church,"L'église de Saint-Louis est classée en totalité au titre des monuments 
+historiques le 13 décembre 1982.
+Elle se situe sur l'ancienne place d'arme de l'île.","<Point><coordinates>55.4092,-21.2867</coordinates></Point>","-21,2867","55,4092"
+SLO_v,église des Saints Anges Gardiens,church,,"<Point>
+            <coordinates>55.40357126397951,-21.20718806016595</coordinates>
+        </Point>","-21,2071880602","55,403571264"
+SLO_v,le grand fond,terain,pointInteret_,"<Point>
+            <coordinates>55.40400602243976,-21.30393148141034</coordinates>
+        </Point>","-21,3039314814","55,4040060224"
+SLO_v,plateau goyave,capital_big,quartier,"<Point>
+            <coordinates>55.4203138942968,-21.27820874854684</coordinates>
+        </Point>","-21,2782087485","55,4203138943"
+SLO_v,le pont neuf,capital_big,quartier,"<Point>
+            <coordinates>55.41262510831554,-21.28049387273298</coordinates>
+        </Point>","-21,2804938727","55,4126251083"
+SLO_v,la chapelle,capital_big,quartier,"<Point>
+            <coordinates>55.41849532611201,-21.29019748254334</coordinates>
+        </Point>","-21,2901974825","55,4184953261"
+SLO_v,la palissade,capital_big,quartier,"<Point>
+            <coordinates>55.4180802530135,-21.28466816846174</coordinates>
+        </Point>","-21,2846681685","55,418080253"
+SLO_v,Maison du Docteur Edwards,cbh,"ou Maison Aubry
+ inscrite au titre des monuments historiques le 28 novembre 1990.","<Point>
+            <coordinates>55.40975,-21.28819444444445</coordinates>
+        </Point>","-21,2881944444","55,40975"
+SLO_v,MADOI,arts,"Musée des arts décoratifs de l'océan Indien
+<a href=""https://www.facebook.com/madoireunion"">https://www.facebook.com/madoireunion</a>","<Point>
+            <coordinates>55.41136111111111,-21.26691666666667</coordinates>
+        </Point>","-21,2669166667","55,4113611111"
+SLO_v,Observatoire Astronomique des Makes,cbh*star,"L’Observatoire Astronomique des Makes vous fera découvrir dans un cadre agréable, ce qu’est l’astronomie. Le premier objectif de l'Observatoire est le développement de la culture scientifique à la Réunion.","<Point>
+            <coordinates>55.40805600000001,-21.19916666666667</coordinates>
+        </Point>","-21,1991666667","55,408056"
+SLO_v,Usine sucrière du Gol,dollar,Usine d'extraction de canne à sucre,"<Point>
+            <coordinates>55.39721944444445,-21.27916944444445</coordinates>
+        </Point>","-21,2791694444","55,3972194444"
+SLO_v,La Masdjid Mubarack  mosquée bénite,islam,"La nouvelle mosquée Masdjid Mubarak de Saint-Louis a été inaugurée en octobre 2002.
+ Dessinée par l'atelier Espinasse, 
+elle s'inspire d'une architecture islamique mêlant les styles indo-pakistanais et maghrébins,
+ alliant modernité et tradition.","<Point>
+            <coordinates>55.40692060031877,-21.28548390169981</coordinates>
+        </Point>","-21,2854839017","55,4069206003"
+SLO_v,temple du Gol,cbh,inscrit en totalité à l'inventaire des Monuments historiques depuis le 29 mars 1996,"<Point>
+            <coordinates>55.401,-21.27572222222222</coordinates>
+        </Point>","-21,2757222222","55,401"
+SLO_v,église Notre-Dame-du-Rosaire,cbh,inscription aux Monuments historiques depuis le 14 aout 2000,"<Point>
+            <coordinates>55.43791700000001,-21.26286111111111</coordinates>
+        </Point>","-21,2628611111","55,437917"
+SLO_v,roche maigre,capital_big,quartier,"<Point>
+            <coordinates>55.4162103992857,-21.27045074221295</coordinates>
+        </Point>","-21,2704507422","55,4162103993"
+SLO_v,larrey,capital_big,quartier,"<Point>
+            <coordinates>55.42172791677281,-21.27355234747018</coordinates>
+        </Point>","-21,2735523475","55,4217279168"
+SLO_v,maison rouge,capital_big,quartier,"<Point>
+            <coordinates>55.41178346100296,-21.26511178888778</coordinates>
+        </Point>","-21,2651117889","55,411783461"
+SLO_v,les cocos,capital_big,quartier,"<Point>
+            <coordinates>55.42984036973148,-21.2846778908932</coordinates>
+        </Point>","-21,2846778909","55,4298403697"
+SLO_v,le ouaki,capital_big,quartier,"<Point>
+            <coordinates>55.45096836255878,-21.27869177967384</coordinates>
+        </Point>","-21,2786917797","55,4509683626"
+SLO_v,le bois nèfles,capital_big,quartier,"<Point>
+            <coordinates>55.44130540460578,-21.2764241268174</coordinates>
+        </Point>","-21,2764241268","55,4413054046"
+SLO_v,la pente des vacoas,capital_big,quartier,"<Point>
+            <coordinates>55.43944326017671,-21.27105897355557</coordinates>
+        </Point>","-21,2710589736","55,4394432602"
+SLO_v,la rivière,capital_big,quartier,"<Point>
+            <coordinates>55.44089089672266,-21.26703045617494</coordinates>
+        </Point>","-21,2670304562","55,4408908967"
+SLO_v,la ferme,capital_big,quartier,"<Point>
+            <coordinates>55.4504714584772,-21.26807961015056</coordinates>
+        </Point>","-21,2680796102","55,4504714585"
+SLO_v,terres rouges,capital_big,quartier,"<Point>
+            <coordinates>55.43349220566511,-21.2635994958262</coordinates>
+        </Point>","-21,2635994958","55,4334922057"
+SLO_v,le ruisseau,capital_big,quartier,"<Point>
+            <coordinates>55.42738552857543,-21.26368033337242</coordinates>
+        </Point>","-21,2636803334","55,4273855286"
+SLO_v,la pente nicole,capital_big,quartier,"<Point>
+            <coordinates>55.43855388274719,-21.26021113494118</coordinates>
+        </Point>","-21,2602111349","55,4385538827"
+SLO_v,le ruisseau les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.43401610555758,-21.25513711347965</coordinates>
+        </Point>","-21,2551371135","55,4340161056"
+SLO_v,le gol hauts,capital_big,quartier,"<Point>
+            <coordinates>55.4289408167175,-21.24851127849445</coordinates>
+        </Point>","-21,2485112785","55,4289408167"
+SLO_v,le tapage,capital_big,quartier,"<Point>
+            <coordinates>55.44426542603918,-21.24272497346559</coordinates>
+        </Point>","-21,2427249735","55,444265426"
+SLO_v,terres rouges,capital_big,quartier,"<Point>
+            <coordinates>55.44049015220549,-21.23780967811613</coordinates>
+        </Point>","-21,2378096781","55,4404901522"
+SLO_v,le tapage,capital_big,quartier,"<Point>
+            <coordinates>55.43609697878937,-21.23737490664651</coordinates>
+        </Point>","-21,2373749066","55,4360969788"
+SLO_v,le chemin richard,capital_big,quartier,"<Point>
+            <coordinates>55.42570078438064,-21.24410860208995</coordinates>
+        </Point>","-21,2441086021","55,4257007844"
+SLO_v,les canots,capital_big,quartier,"<Point>
+            <coordinates>55.4178350778168,-21.23732248397165</coordinates>
+        </Point>","-21,237322484","55,4178350778"
+SLO_v,l'éperon,capital_big,quartier,"<Point>
+            <coordinates>55.41556820171754,-21.24756115323818</coordinates>
+        </Point>","-21,2475611532","55,4155682017"
+SLO_v,la ligne chevalier,capital_big,quartier,"<Point>
+            <coordinates>55.44474547082185,-21.23032049718723</coordinates>
+        </Point>","-21,2303204972","55,4447454708"
+SLO_v,le grand serré,capital_big,quartier,"<Point>
+            <coordinates>55.40980396034712,-21.22349083524871</coordinates>
+        </Point>","-21,2234908352","55,4098039603"
+SLO_v,bon accueil,capital_big,quartier,"<Point>
+            <coordinates>55.39886804512911,-21.2091356167346</coordinates>
+        </Point>","-21,2091356167","55,3988680451"
+SLO_v,bras sylvert,capital_big,quartier,"<Point>
+            <coordinates>55.40832751299103,-21.20541023626056</coordinates>
+        </Point>","-21,2054102363","55,408327513"
+SLO_v,chaine du bois de nèfles,mountains,mont,"<Point>
+            <coordinates>55.42595431152503,-21.21178685747042</coordinates>
+        </Point>","-21,2117868575","55,4259543115"
+SLO_v,piton cabris,mountains,mont,"<Point>
+            <coordinates>55.43749378080733,-21.19032688340212</coordinates>
+        </Point>","-21,1903268834","55,4374937808"
+SLO_v,forét domeniale des makes,terain,foret,"<Point>
+            <coordinates>55.41933650905483,-21.18559251629057</coordinates>
+        </Point>","-21,1855925163","55,4193365091"
+SLO_v,îlet furcy,capital_big,quartier,"<Point>
+            <coordinates>55.4558008793058,-21.2429707508017</coordinates>
+        </Point>","-21,2429707508","55,4558008793"
+SLO_v,îlet rond,capital_big,quartier,"<Point>
+            <coordinates>55.45858919256789,-21.24748537735962</coordinates>
+        </Point>","-21,2474853774","55,4585891926"
+SLO_v,le trou,capital_big,lieuDit,"<Point>
+            <coordinates>55.41751741270306,-21.21512307777648</coordinates>
+        </Point>","-21,2151230778","55,4175174127"
+SLO_v,la plaine du bois de nèfles,capital_big,lieuDit,"<Point>
+            <coordinates>55.42683010470951,-21.20434402119797</coordinates>
+        </Point>","-21,2043440212","55,4268301047"
+SLO_v,les makes,road_shield1,ville,"<Point>
+            <coordinates>55.403817676344,-21.20803854216331</coordinates>
+        </Point>","-21,2080385422","55,4038176763"
+SLO_v,camp de la scierie,capital_big,lieuDit,"<Point>
+            <coordinates>55.42274753966042,-21.19314468158681</coordinates>
+        </Point>","-21,1931446816","55,4227475397"

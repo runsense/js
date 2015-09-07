@@ -1,0 +1,38 @@
+id,nom,categ,description,geometry,lat,lng
+Por_a,HNOSS,sailing,"voilier traditionnel + skipper_
+gsm: +262 692 08 10 81","<Point><coordinates>55.283746,-20.9419</coordinates></Point>","-20,9419","55,283746"
+Por_a,Voiles Aventures,sailing,"promenade en mer_
+gsm: +262 692 69 12 99","<Point>
+            <coordinates>55.282547,-20.94107777777778</coordinates>
+        </Point>","-20,9410777778","55,282547"
+Por_a,Océan Dream Croisiéres - Blue Cat,sailing,"promenade en mer_
+gsm: +262 692 04 19 19","<Point>
+            <coordinates>55.28377900000001,-20.94252222222222</coordinates>
+        </Point>","-20,9425222222","55,283779"
+Por_a,sea bleu,sailing,"promenade en mer_
+gsm: +262 692 62 12 88","<Point>
+            <coordinates>55.283843,-20.94376388888889</coordinates>
+        </Point>","-20,9437638889","55,283843"
+Por_a,Ecole de Croisière de Tiloune,sailing,"promenade en mer, voile_
+tél: 0262 35 01 43_
+gsm: 0693 33 53 42","<Point>
+            <coordinates>55.28203888888889,-20.94340833333333</coordinates>
+        </Point>","-20,9434083333","55,2820388889"
+Por_a,Océan dream Croisières - Cat'Alizé,sailing,"promenade en mer_
+tél: +262 692 04 19 19","<Point>
+            <coordinates>55.28377900000001,-20.94252222222222</coordinates>
+        </Point>","-20,9425222222","55,283779"
+Por_a,marché couvert,grocery,marché couvert,"<Point>
+            <coordinates>55.2928019997614,-20.9380300003344</coordinates>
+        </Point>","-20,9380300003","55,2928019998"
+Por_a,marché,grocery," marché_
+période: mercredi de 4h à 12h30","<Point>
+            <coordinates>55.2985936891521,-20.94136110934704</coordinates>
+        </Point>","-20,9413611093","55,2985936892"
+Por_a,marché à l l'oasis,grocery," marché_
+période: vendredi de 4h à 12h30","<Point>
+            <coordinates>55.29174305415823,-20.93445571483167</coordinates>
+        </Point>","-20,9344557148","55,2917430542"
+Por_a,meteo marinne,info_circle,"<a href=""http://www.meteolamer.re/spots.php?spot=leport"" > http://www.meteolamer.re/spots.php?spot=leport</a>","<Point>
+            <coordinates>55.28364359604176,-20.92794249859776</coordinates>
+        </Point>","-20,9279424986","55,283643596"

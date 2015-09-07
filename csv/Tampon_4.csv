@@ -1,0 +1,17 @@
+id,nom,categ,description,geometry,lat,lng
+T_n,"<p style=""color:red;"" >Le Vintage Café</p>",bars,"festival: 
+tél :+262 262 26 51 67","<Point>
+            <coordinates>55.51139437696962,-21.27192447075336</coordinates>
+        </Point>","-21,2719244708","55,511394377"
+T_n,Ravine Blanche,capital_big,"festival: <b>Espace public</b>
+festivals:
+Circ Raluy
+MER  17:00 - JEU 14:30, 17h00 - VEN 14:30 17:00 - SAM 14:30, 17:00, 19:30, DIM 14:30, 17:00 - MAR 14:30, 17:00 du 
+11 Aout au 30 Aout 2015","<Point>
+            <coordinates>55.45998083082272,-21.33843038481016</coordinates>
+        </Point>","-21,3384303848","55,4599808308"
+T_n,O’Zambrocal,bars,"<b> bar</b>
+_
+festival:","<Point>
+            <coordinates>55.44873383053875,-21.32216287976459</coordinates>
+        </Point>","-21,3221628798","55,4487338305"

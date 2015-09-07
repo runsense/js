@@ -1,0 +1,11 @@
+id,nom,categ,description,geometry,lat,lng
+Sainte-Anne,Sainte-Anne,http://runsense.github.io/js/img/blason/Sainte-Anne.gif,"<a href=""http://www.saint-benoit.re/"" >http://www.saint-benoit.re/</a>
+possède une magnifique église et un splendide bassins bleu
+très apprécier des réunionnais","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.73228804518137,-21.05064883159689 55.72670546841114,-21.05412735168438 55.68364799274711,-21.09848281728284 55.67697656216703,-21.10509917814983 55.66639936409069,-21.11616164252891 55.67211638412623,-21.12232957799421 55.71736849005821,-21.17125045026434 55.73278902817524,-21.16889116933229 55.73751141402353,-21.16104854163407 55.7416344500946,-21.14956708264882 55.74262882653348,-21.12950984793418 55.75332276839983,-21.11722873117167 55.76849187689338,-21.10404906333287 55.73228804518137,-21.05064883159689</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-21.0865,55.7459

@@ -1,0 +1,7 @@
+id,nom,categ,description,geometry,lat,lng
+SR_t,stade de la ravinne glissante,play,stade de foot,"<Point>
+            <coordinates>55.80833932907572,-21.13714280471895</coordinates>
+        </Point>","-21,1371428047","55,8083393291"
+SR_t,stade de sainte-rose,play, stade de foot,"<Point>
+            <coordinates>55.79364645491403,-21.12716425407847</coordinates>
+        </Point>","-21,1271642541","55,7936464549"

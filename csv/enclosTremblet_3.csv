@@ -1,0 +1,77 @@
+id,nom,categ,description,geometry,lat,lng
+eT_v,vue piton partage,webcam," <iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wvolcan_pa.php?n=53"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.71946179104678,-21.20702305436389</coordinates>
+        </Point>","-21,2070230544","55,719461791"
+eT_v,remparts du tremblé,mountains,mont,"<Point>
+            <coordinates>55.7637635737489,-21.28345301618237</coordinates>
+        </Point>","-21,2834530162","55,7637635737"
+eT_v,nez coupé du tremblé,mountains,mont,"<Point>
+            <coordinates>55.73776393495521,-21.28335221837294</coordinates>
+        </Point>","-21,2833522184","55,737763935"
+eT_v,pointe du tremblet,mountains,mont,"<Point>
+            <coordinates>55.80528395147429,-21.29326704208474</coordinates>
+        </Point>","-21,2932670421","55,8052839515"
+eT_v,piton de sainte-rose,mountains,mont,"<Point>
+            <coordinates>55.73092698918654,-21.2000689767869</coordinates>
+        </Point>","-21,2000689768","55,7309269892"
+eT_v,piton nelson,mountains,mont,"<Point>
+            <coordinates>55.78483329744661,-21.20287896421771</coordinates>
+        </Point>","-21,2028789642","55,7848332974"
+eT_v,volcan,webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wvolcan_bo.php?n=55"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.69873019829503,-21.23598574006655</coordinates>
+        </Point>","-21,2359857401","55,6987301983"
+eT_v,info volcan,info_circle,"<a href=""http://m-r.li/info_volcan.php"" > info volcan </a>","<Point>
+            <coordinates>55.77449110663316,-21.24999029324078</coordinates>
+        </Point>","-21,2499902932","55,7744911066"
+eT_v,pointe du tremblet,mountains,mont,"<Point>
+            <coordinates>55.80784228153049,-21.28763394560989</coordinates>
+        </Point>","-21,2876339456","55,8078422815"
+eT_v,puits mi-cnullte,capital_big,pointInteret,"<Point>
+            <coordinates>55.70608385227626,-21.23036194690889</coordinates>
+        </Point>","-21,2303619469","55,7060838523"
+eT_v,cratère dolomieu,volcan,VOLCAN,"<Point>
+            <coordinates>55.71325017961594,-21.24500451491871</coordinates>
+        </Point>","-21,2450045149","55,7132501796"
+eT_v,signal de l'enclos de 1939,capital_big,pointInteret,"<Point>
+            <coordinates>55.72815114065114,-21.25115592961306</coordinates>
+        </Point>","-21,2511559296","55,7281511407"
+eT_v,les grandes pentes,volcan,ancienne coulé,"<Point>
+            <coordinates>55.76034482385968,-21.25701197135471</coordinates>
+        </Point>","-21,2570119714","55,7603448239"
+eT_v,piton de cracs,mountains,mont,"<Point>
+            <coordinates>55.75473218902414,-21.22755998914272</coordinates>
+        </Point>","-21,2275599891","55,754732189"
+eT_v,plaines des osmondes,volcan,anciennes coulées,"<Point>
+            <coordinates>55.75091072845223,-21.21575717347808</coordinates>
+        </Point>","-21,2157571735","55,7509107285"
+eT_v,cratère haug 1931,volcan,ancien volcan,"<Point>
+            <coordinates>55.73018566291657,-21.21415796344435</coordinates>
+        </Point>","-21,2141579634","55,7301856629"
+eT_v,le grand cap,capital_big,point d'intéret,"<Point>
+            <coordinates>55.80469969002909,-21.24401050387452</coordinates>
+        </Point>","-21,2440105039","55,80469969"
+eT_v,pointe du grand brulé,mountains,mont,"<Point>
+            <coordinates>55.80762339892078,-21.23633099632723</coordinates>
+        </Point>","-21,2363309963","55,8076233989"
+eT_v,forêt domeniale du grand brulé,terain,forêt,"<Point>
+            <coordinates>55.80278820503472,-21.24582204808036</coordinates>
+        </Point>","-21,2458220481","55,802788205"
+eT_v,vue piton de bert,webcam," <iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wvolcan_bo.php?n=55"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.69540933947744,-21.27527155133321</coordinates>
+        </Point>","-21,2752715513","55,6954093395"
+eT_v,piton chisny,mountains,mont,"<Point>
+            <coordinates>55.66709671980926,-21.23772176068076</coordinates>
+        </Point>","-21,2377217607","55,6670967198"
+eT_v,plaine des sables,terain,"Paysage martien, 
+c'est un long plateau parsemé d'un sable volcanique","<Point>
+            <coordinates>55.67084181341464,-21.22012340494063</coordinates>
+        </Point>","-21,2201234049","55,6708418134"
+eT_v,pas de bellecombe,mountains,mont,"<Point>
+            <coordinates>55.68733726567972,-21.22309622165187</coordinates>
+        </Point>","-21,2230962217","55,6873372657"
+eT_v,plateau de la rivière de l'est,terain,plateau,"<Point>
+            <coordinates>55.73619809492947,-21.1853489514329</coordinates>
+        </Point>","-21,1853489514","55,7361980949"
+eT_v,piton des calumets,mountains,mont,"<Point>
+            <coordinates>55.73400101000406,-21.19361421312197</coordinates>
+        </Point>","-21,1936142131","55,73400101"

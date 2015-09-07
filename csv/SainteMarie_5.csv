@@ -1,0 +1,26 @@
+id,nom,categ,description,geometry,lat,lng
+SM_a,Easy Loc,cycling,"vtt_
+tél: +262 262.53.98.38","<Point>
+            <coordinates>55.53339899990284,-20.89336699989908</coordinates>
+        </Point>","-20,8933669999","55,5333989999"
+SM_a,Le Cyclone,cycling,"vtt_
+tél: +262 262.47.64.30","<Point>
+            <coordinates>55.50998999991297,-20.91377600019047</coordinates>
+        </Point>","-20,9137760002","55,5099899999"
+SM_a,Runxland,cycling,"Location de vélos, vélos électrique
+_
+gsm: +262 692 65 87 44
+_
+mail : <a href=""runxland@orange.fr"" >mail</a>
+_Web : <a href=""http://www.runxland.com"" >http://www.runxland.com</a>","<Point>
+            <coordinates>55.56810178754604,-20.91011924131509</coordinates>
+        </Point>","-20,9101192413","55,5681017875"
+SM_a,Pranaventure,hiker*canoeing*mountains,"Randonnée pédestre, Canyoning, Escalade
+_
+gsm: 0692 24 56 58
+_
+mail : <a href=""guide974@gmail.com"" >guide974@gmail.com</a>
+_
+Web :<a href="" http://www.pranaventure.com"" > http://www.pranaventure.com</a>","<Point>
+            <coordinates>55.5490227000709,-20.92878769989265</coordinates>
+        </Point>","-20,9287876999","55,5490227001"

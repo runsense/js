@@ -1,0 +1,51 @@
+id,nom,categ,description,geometry,lat,lng
+SR_md,La Fournaise,rec_logding," hotel _
+<b>spe:spécialités créoles</b>_
+tél: +262 262 47 03 40","<Point>
+            <coordinates>55.78749615,-21.12722222222222</coordinates>
+        </Point>","-21,1272222222","55,78749615"
+SR_md,Cana Suc,realestate*gite_de_france*hdcp,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 47 23 52 _
+gsm: +262 692 77 81 96 _
+acces hdcp","<Point>
+            <coordinates>55.79885,-21.12916388888889</coordinates>
+        </Point>","-21,1291638889","55,79885"
+SR_md,Le Joyau des Laves,realestate*hdcp,"chambre d'hote, restaurant _
+<b>label: villages créoles </b>
+tél: +262 262 47 34 00 _
+acces hdcp","<Point>
+            <coordinates>55.82485277777778,-21.16515833333333</coordinates>
+        </Point>","-21,1651583333","55,8248527778"
+SR_md,Le Gingembre-Combava,dining," restaurant _
+<b>spe:Cuisine créole, Cuisine européenne</b>_
+label: <b>villages créoles </b>
+tél: +262 262 47 03 40","<Point>
+            <coordinates>55.78749615,-21.12722222222222</coordinates>
+        </Point>","-21,1272222222","55,78749615"
+SR_md,Les Deux Pitons de la Fournaise,dining,"restaurant _
+<b>spe:Cuisine asiatique, Cuisine créole</b>_
+tél: +262 262 47 23 16 _
+gsm: +262 692 36 06 49","<Point>
+            <coordinates>55.823845,-21.16114722222222</coordinates>
+        </Point>","-21,1611472222","55,823845"
+SR_md,Le Bel Air,dining,"restaurant _
+<b>spe: terroires, créoles </b>
+tél: +262 262 47 22 50","<Point><coordinates>55.824207,-21.18595</coordinates></Point>","-21,18595","55,824207"
+SR_md,La Roseraye,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 47 21 33 _
+gsm: +262 692 67 97 44","<Point>
+            <coordinates>55.79777222222221,-21.12944444444445</coordinates>
+        </Point>","-21,1294444444","55,7977722222"
+SR_md,L' Anse des Cascades,dining,"restaurant _
+tél: +262 262 47 20 42 _
+gsm: +262 692 70 32 69","<Point>
+            <coordinates>55.82681500000001,-21.18503888888889</coordinates>
+        </Point>","-21,1850388889","55,826815"
+SR_md,Le 168,dining,"restaurant _
+<b>spe: créole,  rapide</b>_
+tél: +262 262 47 20 41 _
+gsm: +262 692 64 29 39","<Point>
+            <coordinates>55.791855,-21.12793055555556</coordinates>
+        </Point>","-21,1279305556","55,791855"

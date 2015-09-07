@@ -1,0 +1,7 @@
+id,nom,categ,description,geometry,lat,lng
+SS_t,Tennis-club du Bocage,donut,tennis club,"<Point>
+            <coordinates>55.61498890744363,-20.91155173955544</coordinates>
+        </Point>","-20,9115517396","55,6149889074"
+SS_t,stade quartier,donut,stade de foot,"<Point>
+            <coordinates>55.63541434209738,-20.92733446050873</coordinates>
+        </Point>","-20,9273344605","55,6354143421"

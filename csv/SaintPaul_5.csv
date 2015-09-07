@@ -1,0 +1,99 @@
+id,nom,categ,description,geometry,lat,lng
+SPA_a,marché forain,grocery,"marché 
+période: vendredi de 4h à 20h et le samedi de 4h à 13h","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.27112621711738,-21.00664986267859 55.27114729663871,-21.00668119070324 55.27140886626645,-21.006911241415 55.27278629506071,-21.00572769371399 55.27253764609677,-21.00548200039475 55.27112621711738,-21.00664986267859</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",-21.00572769371399 ,55.27278629506071
+SPA_a,Au Vieux Plongeur,diving*dollar," vente mat plongé_
+tél: +262 262.45.57.28","<Point>
+            <coordinates>55.27710700006951,-21.0029239999441</coordinates>
+        </Point>","-21,0029239999","55,2771070001"
+SPA_a,WULFY DIVING,diving,"plongé_
+tél: +262 692.60.04.93","<Point>
+            <coordinates>55.34339899995899,-20.97785799996989</coordinates>
+        </Point>","-20,977858","55,343399"
+SPA_a,Centre Equestre du Maido,horsebackriding,"équitation_
+tél: +262 262.32.49.15","<Point>
+            <coordinates>55.31111884242172,-21.03669384135132</coordinates>
+        </Point>","-21,0366938414","55,3111188424"
+SPA_a,Ski Club de Saint-Paul,ski*water,"ski nautique_
+tél: +262 262.45.42.87","<Point>
+            <coordinates>55.28192400001041,-20.98945599990616</coordinates>
+        </Point>","-20,9894559999","55,281924"
+SPA_a,billabong surf,surf,"surf_
+tél: +262 692.31.53.16","<Point>
+            <coordinates>55.26723802469689,-21.01460836602358</coordinates>
+        </Point>","-21,014608366","55,2672380247"
+SPA_a,VTT Loisirs Maïdo,cycling,"vtt_
+tél: +262 262.32.49.15","<Point>
+            <coordinates>55.33291200022906,-21.04605999998577</coordinates>
+        </Point>","-21,04606","55,3329120002"
+SPA_a,Luge d Eté,ski*terain," luge d'été_
+tél: +262 262.32.52.52","<Point>
+            <coordinates>55.35770276421441,-21.05434647428152</coordinates>
+        </Point>","-21,0543464743","55,3577027642"
+SPA_a,Parc Amazone,sailing,"barque_
+tél: +262 262.66.50.33","<Point>
+            <coordinates>55.3000223658248,-20.99158920772986</coordinates>
+        </Point>","-20,9915892077","55,3000223658"
+SPA_a,Omega Kart,cabs," kart_
+tél: +262 262.86.50.47","<Point>
+            <coordinates>55.29766126648077,-20.97391888581576</coordinates>
+        </Point>","-20,9739188858","55,2976612665"
+SPA_a,BFO International,cabs*moutains*mc,"randonné 4x4 moto _
+tél: +262 262.33.17.18","<Point>
+            <coordinates>55.29699099978312,-20.94291800007787</coordinates>
+        </Point>","-20,9429180001","55,2969909998"
+SPA_a,La Villa Zen,realestate,"chambre d'hote_
+tél: +262 262 70 74 57_
+gsm: +262 692 41 31 58","<Point>
+            <coordinates>55.3198756,-20.99853611111111</coordinates>
+        </Point>","-20,9985361111","55,3198756"
+SPA_a,Bangalodge,realestate,"chambre d'hote_
+tél: +262 692 66 26 03","<Point>
+            <coordinates>55.325831,-20.99308611111111</coordinates>
+        </Point>","-20,9930861111","55,325831"
+SPA_a,La Caz des Orangers,realestate,"chambre d'hote_
+tél: +262 262 44 50 32_
+gsm: +262 692 08 23 12","<Point>
+            <coordinates>55.34290764999999,-20.97786666666666</coordinates>
+        </Point>","-20,9778666667","55,34290765"
+SPA_a,Au Ti Séjour,realestate,"chambre d'hote_
+tél: +262 262 32 34 17_
+gsm: +262 692 11 14 91","<Point>
+            <coordinates>55.326803,-20.99110277777778</coordinates>
+        </Point>","-20,9911027778","55,326803"
+SPA_a,L' Es-sens-ciel,realestate,"chambre d'hote_
+tél: +262 262 55 37 75_
+gsm: +262 692 03 37 98","<Point>
+            <coordinates>55.3314189308004,-21.04471665675897</coordinates>
+        </Point>","-21,0447166568","55,3314189308"
+SPA_a,Kiaora,realestate,"chambre d'hote_
+tél: +262 262 25 31 68","<Point>
+            <coordinates>55.279163,-21.00388888888889</coordinates>
+        </Point>","-21,0038888889","55,279163"
+SPA_a,L' Auberge du Pavé,realestate," chambre d'hote_
+tél: +262 262 71 92 98_
+gsm: +262 692 00 62 72","<Point>
+            <coordinates>55.29348453,-21.01585833333333</coordinates>
+        </Point>","-21,0158583333","55,29348453"
+SPA_a,Camp Marron,hiker,"visite touristique_
+tél: +262 692 85 76 73","<Point>
+            <coordinates>55.2981559094095,-21.04627512756622</coordinates>
+        </Point>","-21,0462751276","55,2981559094"
+SPA_a,Domaine des Caféiers,hiker," visite touristique_
+tél: +262 692 29 30 33","<Point>
+            <coordinates>55.34507499999999,-21.0211</coordinates>
+        </Point>","-21,0211","55,345075"
+SPA_a,Akuatiko,swimming*surf,"randonné aquatique, surf morais, rafting, canoecraft, hydrospeed_
+gsm:  +262 692 33 00 43","<Point>
+            <coordinates>55.32895,-20.98045833333333</coordinates>
+        </Point>","-20,9804583333","55,32895"
+SPA_a,Bleu Indien,sailing*dollar," location et vente de bateau_
+tél: +262 262.85.37.53","<Point>
+            <coordinates>55.3323779998881,-20.98210899989568</coordinates>
+        </Point>","-20,9821089999","55,3323779999"

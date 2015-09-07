@@ -1,0 +1,146 @@
+id,nom,categ,description,geometry,lat,lng
+SAz_md,Gîte de Bélouve,realestate,"gite de randonnée _
+tél: +262 262 41 21 23","<Point>
+            <coordinates>55.53614444444445,-21.06102777777778</coordinates>
+        </Point>","-21,0610277778","55,5361444444"
+SAz_md,Les Jardins d'Héva Hôtel Spa **,spa*dining*rec_lodging*hdcp,"restaurant, hotel, spa _
+tél: +262 262 47 87 87 _
+gsm: +262 692 86 50 67 _
+acces hdcp","<Point>
+            <coordinates>55.52057792,-21.06856944444445</coordinates>
+        </Point>","-21,0685694444","55,52057792"
+SAz_md,Le Relais des Cimes **,rec_lodging*dining*hdcp," hotel, restaurant _
+label: qualité tourisme, villages créoles _
+tél: +262 262 47 81 58 _
+acces hdcp","<Point>
+            <coordinates>55.51848337,-21.066275</coordinates>
+        </Point>","-21,066275","55,51848337"
+SAz_md,La Christophine,dining,"restaurant _
+tél: +262 262 28 89 03 _
+gsm: +262 692 52 15 46","<Point>
+            <coordinates>55.51943000000001,-21.066225</coordinates>
+        </Point>","-21,066225","55,51943"
+SAz_md,L' Orchidée Rose,rec_lodging,"hotel _
+tél: +262 262 47 87 22 _
+tél: +262 262 29 97 18 _
+gsm: 0692 82 06 77","<Point>
+            <coordinates>55.51704911,-21.06436666666667</coordinates>
+        </Point>","-21,0643666667","55,51704911"
+SAz_md,Le Faham Hôtel,rec_lodging*dining,"hotel, restaurant _
+<b>spe: européenne,  créole</b>_
+tél:  +262 262 88 47 47","<Point>
+            <coordinates>55.539815,-21.02681111111111</coordinates>
+        </Point>","-21,0268111111","55,539815"
+SAz_md,Le Bélier,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 47 72 43 _
+gsm: +262 692 72 25 10","<Point>
+            <coordinates>55.460674,-21.04531666666667</coordinates>
+        </Point>","-21,0453166667","55,460674"
+SAz_md,Le Jean Robert,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 47 73 43 _
+gsm: 0693 20 03 61","<Point>
+            <coordinates>55.468661,-21.03469444444445</coordinates>
+        </Point>","-21,0346944444","55,468661"
+SAz_md,La Tourte Dorée,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france, villages créoles </b>
+tél:  +262 262 47 70 51","<Point>
+            <coordinates>55.47749336,-21.03055833333333</coordinates>
+        </Point>","-21,0305583333","55,47749336"
+SAz_md,Bonald Liliane,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france, villages créoles </b>
+tél: +262 262 47 71 62 _
+gsm: +262 692 82 84 83","<Point>
+            <coordinates>55.474337,-21.03251666666667</coordinates>
+        </Point>","-21,0325166667","55,474337"
+SAz_md,Le Cimendef,realestate*gite_de_france," chambre d'hote _
+<b>label: gites de france, villages créoles </b>
+tél: +262 262 47 73 59 _
+gsm: +262 692 69 71 60","<Point>
+            <coordinates>55.465843,-21.03715555555556</coordinates>
+        </Point>","-21,0371555556","55,465843"
+SAz_md,P'ti Blanc des O,realestate,"gite d'étape _
+tél: +262 262 47 81 38 _
+gsm: +262 692 70 65 14","<Point>
+            <coordinates>55.5228975,-21.06465277777778</coordinates>
+        </Point>","-21,0646527778","55,5228975"
+SAz_md,La Mandoze,realestate," gite de randonnée _
+tél: +262 262 47 89 65 _
+gsm: +262 692 65 65 28","<Point>
+            <coordinates>55.51933837,-21.06448611111111</coordinates>
+        </Point>","-21,0644861111","55,51933837"
+SAz_md,Le Relais des Gouverneurs,realestate*gite_de_france," chambre d'hote, gite d'etape  _
+<b>label: gites de france </b>
+tél: +262 262 47 76 21 _
+acces hdcp","<Point>
+            <coordinates>55.52000333,-21.06731111111111</coordinates>
+        </Point>","-21,0673111111","55,52000333"
+SAz_md,Le Papangue,realestate*gite_de_france,"chambre d'hote _
+<b>label: gites de france, villages créoles </b>
+tél:  +262 262 47 96 38 _
+gsm: +262 692 60 30 67","<Point>
+            <coordinates>55.47372600000001,-21.03253611111111</coordinates>
+        </Point>","-21,0325361111","55,473726"
+SAz_md,La Campierelle,realestate*gite_de_france*hdcp,"chambre d'hote _
+<b>label: gites de france </b>
+tél: +262 262 47 70 87 _
+acces hdcp","<Point>
+            <coordinates>55.4749964,-21.03388611111111</coordinates>
+        </Point>","-21,0338861111","55,4749964"
+SAz_md,Ti' Chouchou,dining,"restaurant _
+<b>spe: créole,  européenne</b>_
+tél: +262 262 47 80 93 _
+gsm: +262 692 04 51 43","<Point>
+            <coordinates>55.5194718,-21.06558888888889</coordinates>
+        </Point>","-21,0655888889","55,5194718"
+SAz_md,La Coco Lé La,dining,"restaurant _
+tél: 0693 80 92 56","<Point>
+            <coordinates>55.51945099999999,-21.06549444444445</coordinates>
+        </Point>","-21,0654944444","55,519451"
+SAz_md,Le Grand Ilet,dining,"restaurant _
+<b>spe: créole</b>_
+tél: +262 262 47 71 19","<Point>
+            <coordinates>55.475517,-21.02908055555556</coordinates>
+        </Point>","-21,0290805556","55,475517"
+SAz_md,Le Bourbon Pointu,dining," restaurant _
+tél: +262 262 30 38 89 _
+gsm: +262 692 24 13 05","<Point>
+            <coordinates>55.52195674000001,-21.06051666666667</coordinates>
+        </Point>","-21,0605166667","55,52195674"
+SAz_md,Chez Alice,dining*lodging," restaurant, chambre meublé _
+<b>spe: créole,  européenne</b>_
+tél: +262 262 47 86 24 _
+gsm: +262 692 68 57 17","<Point>
+            <coordinates>55.51914,-21.06580833333333</coordinates>
+        </Point>","-21,0658083333","55,51914"
+SAz_md,Le P'tit Bambou,dining,"restaurant _
+<b>spe: asiatique,  créole,  européenne</b>_
+tél: +262 262 47 51 51","<Point>
+            <coordinates>55.53888304,-21.02811388888889</coordinates>
+        </Point>","-21,0281138889","55,53888304"
+SAz_md,La Cascade Blanche,dining,"restaurant _
+<b>spe: créole</b>_
+tél: +262 262 58 39 97 _
+gsm: +262 692 86 69 36 _
+acces hdcp","<Point>
+            <coordinates>55.579646,-20.99939722222223</coordinates>
+        </Point>","-20,9993972222","55,579646"
+SAz_md,La Salazienne,bread*coffee,"boulangerie, sandwicherie, salon de thé _
+<b>spe:  pâtisseries traditionnelles</b>_
+tél: +262 262 47 52 33","<Point>
+            <coordinates>55.53932635999999,-21.02705277777778</coordinates>
+        </Point>","-21,0270527778","55,53932636"
+SAz_md,Pati'Salazes,bread*snack_bar,"boulangerie, sandwicherie _
+<b>spe: rapide, pâtisseries traditionnelles</b>_
+tél: +262 262 47 85 40","<Point>
+            <coordinates>55.51973296,-21.06545555555556</coordinates>
+        </Point>","-21,0654555556","55,51973296"
+SAz_md,Maillot Arlette,realestate,"chambre d'hote _
+tél: +262 262 47 70 92","<Point>
+            <coordinates>55.4747156,-21.03028055555555</coordinates>
+        </Point>","-21,0302805556","55,4747156"
+SAz_md,L' Auberge du Passant,realestate,"chambre d'hote _
+tél: +262 262 47 86 28","<Point>
+            <coordinates>55.52063626,-21.06948333333333</coordinates>
+        </Point>","-21,0694833333","55,52063626"

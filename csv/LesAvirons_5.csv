@@ -1,0 +1,27 @@
+id,nom,categ,description,geometry,lat,lng
+Av_a,VTT Réunion,cycling,"vtt
+tél: +262 262.38.01.97","<Point>
+            <coordinates>55.34119300029821,-21.23989600006833</coordinates>
+        </Point>","-21,2398960001","55,3411930003"
+Av_a,Détend A Zot - Laurendeau Emmanuel,diving,"plongé_
+gsm:  +262 692 60 20 59","<Point>
+            <coordinates>55.33659699999999,-21.24246111111111</coordinates>
+        </Point>","-21,2424611111","55,336597"
+Av_a,Flyboard Réunion,star,"flyboard_
+gsm: 0693 92 74 27","<Point>
+            <coordinates>55.33709200000001,-21.24008333333334</coordinates>
+        </Point>","-21,2400833333","55,337092"
+Av_a,Premières Bulles,diving,"plongé_
+tél: +262 262 25 63 03_
+gsm: +262 692 85 76 57","<Point>
+            <coordinates>55.336385,-21.23324722222222</coordinates>
+        </Point>","-21,2332472222","55,336385"
+Av_a,Amandine & Claire,hiker,"Randonnée pédestre
+_
+gsm: +262 692 42 81 35
+_
+mail : <a href=""amandine.aem@gmail.com"" >amandine.aem@gmail.com</a>
+_
+Web : <a href=""http://reunioncotemontagne.com"" >http://reunioncotemontagne.com</a>","<Point>
+            <coordinates>55.34992729961233,-21.25087920019464</coordinates>
+        </Point>","-21,2508792002","55,3499272996"

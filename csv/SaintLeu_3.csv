@@ -1,0 +1,229 @@
+id,nom,categ,description,geometry,lat,lng
+SL_v,"Ancien magasin du Roi, dit aussi Hnulltel des Postes.",cbh,"historique
+","<Point>
+            <coordinates>55.33382953158801,-21.20368333777645</coordinates>
+        </Point>","-21,2036833378","55,3338295316"
+SL_v,Batterie des Sans-culottes,cbh,"historique
+_La Batterie des Sans-culottes a été construite lors des travaux de fortification de 1794.
+ Elle domine la baie de Saint-Leu.","<Point>
+            <coordinates>55.28958881323925,-21.16373426679164</coordinates>
+        </Point>","-21,1637342668","55,2895888132"
+SL_v,Chapelle Notre Dame de La Salette,church,"religion
+_
+En 1859, une grande épidémie de peste et de choléra se répandit dans l'île elle fait 2 700 morts.","<Point>
+            <coordinates>55.28979163619599,-21.16663965196508</coordinates>
+        </Point>","-21,166639652","55,2897916362"
+SL_v,Conservatoire Botanique National de Mascarin,cbh," est implanté sur l'ancien domaine colonial de la famille Châteauvieux au centre duquel trône une grande maison créole admirablement restaurée
+label: villages créoles
+tél: +262 262 24 92 27","<Point>
+            <coordinates>55.29572,-21.13574444444445</coordinates>
+        </Point>","-21,1357444444","55,29572"
+SL_v,église du Sacré cœur,church,"religion
+_Une modeste chapelle en bois est édifiée sur le site des Colimaçons à Saint-Leu.
+ Le 2 octobre 1857,
+ le marquis Joseph Antoine Sosthènes d'Armand de Chateauvieux achéte la vigie des Colimaçons, 
+un édifice rustique construit en 1794 pour servir de vigie sur un promontoire naturel qui domine la côte.","<Point>
+            <coordinates>55.294444,-21.13761111111111</coordinates>
+        </Point>","-21,1376111111","55,294444"
+SL_v,église Sainte-Ruffine null Saint-leu,church,"religion
+_La construction de l'église se termine en 1858, en avril de la même année Monseigneur Maupoint évêque de La Réunion consacre le monument à Sainte-Ruffine.
+En forme de croix latine, l'église est pourvue d'un clocher au piètrement octogonal, l'ensemble des vitraux est en dalles de verre. La toiture à longs pans compte environ 24 000 bardeaux.","<Point>
+            <coordinates>55.28814374025575,-21.16709233095196</coordinates>
+        </Point>","-21,167092331","55,2881437403"
+SL_v,Four à Chaux Meralikan,cbh,"historique
+_Le four à chaux Meralikan est inscrit aux monuments historiques le 29 mars 1992","<Point><coordinates>55.288111,-21.179</coordinates></Point>","-21,179","55,288111"
+SL_v,Hôtel de ville Place de la mairie,road_shield1,"Hôtel de ville place de la mairie. 
+La Mairie de Saint-Leu et les bâtiments alentours servaient de bureaux et d'entrepôts de la marine à la grande époque du café, puis du sucre.","<Point>
+            <coordinates>55.28693991519799,-21.16623463928399</coordinates>
+        </Point>","-21,1662346393","55,2869399152"
+SL_v,Kélonia,arts,"<b>Musée</b>
+festivals: Mohéli, l’avenir avec les tortues marines
+DU 1 JUIL 2015 AU 30 SEP 2015
+_
+60 solutions face au changement climatique
+DU 23 NOV 2015 AU 18 DÉC 2015
+_
+Kélonia centre d'études et de découverte des tortues marines à Saint-Leu île de La Réunion. 
+<a href=""http://www.kelonia.org"">www.kelonia.org</a>","<Point>
+            <coordinates>55.2804138943613,-21.15260805591773</coordinates>
+        </Point>","-21,1526080559","55,2804138944"
+SL_v,Le Jardin Naturel,terain*hiker,"Consacré à l’étude du Milieu Naturel dans sa majeure partie, et aux Plantes Succulentes pour sa partie ‘paysagère’.
+ La durée de la visite est d'environ 1h. il faut réserver.","<Point>
+            <coordinates>55.29313500016671,-21.1426940000198</coordinates>
+        </Point>","-21,142694","55,2931350002"
+SL_v,Le Souffleur,cbh,"Le Souffleur est une curiosité naturelle,
+ sous les coups répétés de la houle, un violent jet d'embruns monte dans les airs jusqu'à plusieurs mètres. 
+
+Une particularité du littoral magmatique est à l'origine de ce phénomène. En effet, il forme à cet endroit une grotte sous-marine terminée par une petite ouverture. L'eau qui s'engouffre dans la cavité met sous pression l'air présent dans celle-ci qui s'échappe par l'ouverture finale, emportant avec lui une multitude de gouttes d'eau.","<Point>
+            <coordinates>55.27173990833718,-21.14612179194361</coordinates>
+        </Point>","-21,1461217919","55,2717399083"
+SL_v,Musée Agricole et Industriel Stella Matutina,arts*cbh,"Musée Agricole et Industriel Stella Matutina 6 allée des Flamboyants 97424 Piton Saint-Leu.
+Installé dans une ancienne usine sucrière, il retrace l'histoire de la culture et de l'industrie de la canne à sucre dans ce département d'outre-mer français de l'océan Indien.","<Point>
+            <coordinates>55.29560138718048,-21.20262458262059</coordinates>
+        </Point>","-21,2026245826","55,2956013872"
+SL_v,Musée du Sel,arts*cbh,"Le musée du Sel est un musée de l'île de La Réunion, 
+département d'outre-mer français dans le sud-ouest de l'océan Indien. 
+Il est situé à Saint-Leu près des salines de la Pointe au Sel.
+tél: 0262346700","<Point>
+            <coordinates>55.29843129678446,-21.20238404112367</coordinates>
+        </Point>","-21,2023840411","55,2984312968"
+SL_v,Port de plaisance,fishing*sailing,"Le port de pêche et de plaisance de Saint-Leu et le front de mer. 
+Jusqu'au milieu du XX siècle, une marine située à proximité de la passe permettait aux chaloupes de la Compagnie des Indes d'accoster.","<Point>
+            <coordinates>55.28578948708646,-21.16818929961381</coordinates>
+        </Point>","-21,1681892996","55,2857894871"
+SL_v,Spots de surf à Saint-Leu,cbh,"La ville côtière de Saint-Leu est connue dans le monde entier par les surfeurs,
+ elle fait partie du circuit du championnat du monde de surf.
+ Plusieurs spots de surf sont répertoriés à Saint-Leu.","<Point>
+            <coordinates>55.28672725996357,-21.16395811393135</coordinates>
+        </Point>","-21,1639581139","55,28672726"
+SL_v,Distillerie de Saint-Leu,cbh,"inscrite en totalité à l'inventaire des Monuments historiques depuis le 16 avril 2002,
+avec son terrain","<Point>
+            <coordinates>55.28758300000001,-21.17580555555556</coordinates>
+        </Point>","-21,1758055556","55,287583"
+SL_v,rocher des colimaçons,mountains,mont,"<Point>
+            <coordinates>55.27073458276519,-21.14316623865622</coordinates>
+        </Point>","-21,1431662387","55,2707345828"
+SL_v,piton des roches tendres,mountains,mont,"<Point>
+            <coordinates>55.27987857851158,-21.20497853050073</coordinates>
+        </Point>","-21,2049785305","55,2798785785"
+SL_v,les colimaçons les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.30506973730594,-21.13054868718255</coordinates>
+        </Point>","-21,1305486872","55,3050697373"
+SL_v,piveteau,capital_big,quartier,"<Point>
+            <coordinates>55.29257185001274,-21.13092498373635</coordinates>
+        </Point>","-21,1309249837","55,29257185"
+SL_v,notre dame des champs,capital_big,quartier,"<Point>
+            <coordinates>55.30948881331306,-21.1361951927802</coordinates>
+        </Point>","-21,1361951928","55,3094888133"
+SL_v,les colimaçons,capital_big,quartier,"<Point>
+            <coordinates>55.29298646363254,-21.13954594657079</coordinates>
+        </Point>","-21,1395459466","55,2929864636"
+SL_v,bras mouton,capital_big,quartier,"<Point>
+            <coordinates>55.2995158909855,-21.14709457309555</coordinates>
+        </Point>","-21,1470945731","55,299515891"
+SL_v,les acacias,capital_big,quartier,"<Point>
+            <coordinates>55.27558003455279,-21.14366989966149</coordinates>
+        </Point>","-21,1436698997","55,2755800346"
+SL_v,pointe des chateaux,water*mountains,pointInteret_,"<Point>
+            <coordinates>55.27270107783177,-21.15011091226011</coordinates>
+        </Point>","-21,1501109123","55,2727010778"
+SL_v,cayenne,capital_big,quartier,"<Point>
+            <coordinates>55.28367559885678,-21.15556154291986</coordinates>
+        </Point>","-21,1555615429","55,2836755989"
+SL_v,le grand canal,capital_big,quartier,"<Point>
+            <coordinates>55.28699996543868,-21.1764842029551</coordinates>
+        </Point>","-21,176484203","55,2869999654"
+SL_v,cité des pécheurs,capital_big,quartier,"<Point>
+            <coordinates>55.28817010255398,-21.18295810479907</coordinates>
+        </Point>","-21,1829581048","55,2881701026"
+SL_v,les quatres robinets,capital_big,quartier,"<Point>
+            <coordinates>55.29080612218093,-21.19662960909267</coordinates>
+        </Point>","-21,1966296091","55,2908061222"
+SL_v,la pointe au sel,water*mountains,pointInteret_,"<Point>
+            <coordinates>55.28122302292306,-21.20167033877909</coordinates>
+        </Point>","-21,2016703388","55,2812230229"
+SL_v,stella,capital_big,quartier,"<Point>
+            <coordinates>55.29569002859154,-21.20085211811821</coordinates>
+        </Point>","-21,2008521181","55,2956900286"
+SL_v,maduran,capital_big,quartier,"<Point>
+            <coordinates>55.30028822739928,-21.20629974869871</coordinates>
+        </Point>","-21,2062997487","55,3002882274"
+SL_v,le portail,capital_big,quartier,"<Point>
+            <coordinates>55.29643021111991,-21.21207537970489</coordinates>
+        </Point>","-21,2120753797","55,2964302111"
+SL_v,le bois de nèfle piton,capital_big,quartier,"<Point>
+            <coordinates>55.30411177464056,-21.22458190241181</coordinates>
+        </Point>","-21,2245819024","55,3041117746"
+SL_v,cap du portail,water*mountains,pointInteret_,"<Point>
+            <coordinates>55.29319115562803,-21.22909337949867</coordinates>
+        </Point>","-21,2290933795","55,2931911556"
+SL_v,l'église requins,capital_big,quartier,"<Point>
+            <coordinates>55.29600954967771,-21.23065542122924</coordinates>
+        </Point>","-21,2306554212","55,2960095497"
+SL_v,le butor,capital_big,quartier,"<Point>
+            <coordinates>55.3179415016377,-21.22232488562824</coordinates>
+        </Point>","-21,2223248856","55,3179415016"
+SL_v,le plateau,capital_big,quartier,"<Point>
+            <coordinates>55.32346849114844,-21.22635787968358</coordinates>
+        </Point>","-21,2263578797","55,3234684911"
+SL_v,grande terre,capital_big,quartier,"<Point>
+            <coordinates>55.32887254585105,-21.22920551053888</coordinates>
+        </Point>","-21,2292055105","55,3288725459"
+SL_v,le plate,capital_big,quartier,"<Point>
+            <coordinates>55.33360063808082,-21.20541554505972</coordinates>
+        </Point>","-21,2054155451","55,3336006381"
+SL_v,grand fond père paillard,capital_big,quartier,"<Point>
+            <coordinates>55.30358299322478,-21.19439568822075</coordinates>
+        </Point>","-21,1943956882","55,3035829932"
+SL_v,grand fond les hauts,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.32833103092986,-21.19504247805046</coordinates>
+        </Point>","-21,1950424781","55,3283310309"
+SL_v,bac en fer,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.32853132869158,-21.18514726291442</coordinates>
+        </Point>","-21,1851472629","55,3285313287"
+SL_v,piton mare à boue,water*mountains,pointInteret_,"<Point>
+            <coordinates>55.34416706170621,-21.1830310190212</coordinates>
+        </Point>","-21,183031019","55,3441670617"
+SL_v,le cap le lièvre,capital_big,quartier,"<Point>
+            <coordinates>55.30098267671052,-21.18030576540576</coordinates>
+        </Point>","-21,1803057654","55,3009826767"
+SL_v,la pente marinard,capital_big,quartier,"<Point>
+            <coordinates>55.32805268880943,-21.17765233078966</coordinates>
+        </Point>","-21,1776523308","55,3280526888"
+SL_v,l'étang saint-leu,capital_big,quartier,"<Point>
+            <coordinates>55.30344660072587,-21.17145610949522</coordinates>
+        </Point>","-21,1714561095","55,3034466007"
+SL_v,le cap camélia,capital_big,quartier,"<Point>
+            <coordinates>55.32869298560797,-21.17167534977984</coordinates>
+        </Point>","-21,1716753498","55,3286929856"
+SL_v,le chemin diale,capital_big,quartier,"<Point>
+            <coordinates>55.30422275117034,-21.16460409436147</coordinates>
+        </Point>","-21,1646040944","55,3042227512"
+SL_v,la fontaine,capital_big,quartier,"<Point>
+            <coordinates>55.3034615559566,-21.15737994420993</coordinates>
+        </Point>","-21,1573799442","55,303461556"
+SL_v,les camélias,capital_big,quartier,"<Point>
+            <coordinates>55.32652084884631,-21.16640530113378</coordinates>
+        </Point>","-21,1664053011","55,3265208488"
+SL_v,saint-christophe ou l'étang les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.32441232801142,-21.16028323552443</coordinates>
+        </Point>","-21,1602832355","55,324412328"
+SL_v,lotissements des agapanthes,capital_big,quartier,"<Point>
+            <coordinates>55.31506136890031,-21.15033866403764</coordinates>
+        </Point>","-21,150338664","55,3150613689"
+SL_v,la chaloupe saint-leu,capital_big,quartier,"<Point>
+            <coordinates>55.31398740390264,-21.14222360321167</coordinates>
+        </Point>","-21,1422236032","55,3139874039"
+SL_v,forêt doméniale de bénares,capital_big,quartier,"<Point>
+            <coordinates>55.37860700549172,-21.12388233555136</coordinates>
+        </Point>","-21,1238823356","55,3786070055"
+SL_v,le petit bénard,capital_big,quartier,"<Point>
+            <coordinates>55.40443453155723,-21.14523105370786</coordinates>
+        </Point>","-21,1452310537","55,4044345316"
+SL_v,piton fougère,mountains,mont,"<Point>
+            <coordinates>55.36626495181883,-21.16146392442438</coordinates>
+        </Point>","-21,1614639244","55,3662649518"
+SL_v,piton rouge,mountains,mont,"<Point>
+            <coordinates>55.38996801922911,-21.13391787964494</coordinates>
+        </Point>","-21,1339178796","55,3899680192"
+SL_v,Saint-Leu,road_shield1,ville,"<Point>
+            <coordinates>55.28729332566724,-21.16746153610028</coordinates>
+        </Point>","-21,1674615361","55,2872933257"
+SL_v,le piton saint-leu,road_shield1,ville,"<Point>
+            <coordinates>55.31139764756338,-21.21971604532848</coordinates>
+        </Point>","-21,2197160453","55,3113976476"
+SL_v,Ancienne Gare ferroviaire,cbh,"historique
+_
+Pont des Colimaçons et Viaduc de La Grande Ravine. 
+Bâtiment et ouvrages pour la branche sud du chemin de fer réunionnais.","<Point>
+            <coordinates>55.28655218889823,-21.167776322496</coordinates>
+        </Point>","-21,1677763225","55,2865521889"
+SL_v,la veuve,capital_big,quartier,"<Point>
+            <coordinates>55.29921948681731,-21.23288654184785</coordinates>
+        </Point>","-21,2328865418","55,2992194868"
+SL_v,Cheminée du Portail,cbh,"historique
+_inscrite aux monuments historiques le 16 avril 2002,
+ en totalité, y compris son terrain d’assiette. 
+ Cette cheminée est l'unique vestige de la sucrerie du Portail et de sa guildiverie, nom, à l'île de la Réunion, de l'industrie qui fabrique les araks et les rhums.","<Point>
+            <coordinates>55.30297199999999,-21.215028</coordinates>
+        </Point>","-21,215028","55,302972"

@@ -1,0 +1,10 @@
+id,nom,categ,description,geometry,lat,lng
+PC_md,Auberge la Fermette,dining,"restaurant_
+tél : +262 262 27 50 08_
+gsm : +262 692 00 98 36","<Point><coordinates>55.549032,-21.210685</coordinates></Point>","-21,210685","55,549032"
+PC_md,Les Géraniums,rec_lodging*dining*hdcp,"hotel **, restaurant_
+tél:+262 262 59 11 06_
+gsm:+262 692 70 95 78_
+accès:hdcp","<Point>
+            <coordinates>55.560243,-21.21843055555555</coordinates>
+        </Point>","-21,2184305556","55,560243"

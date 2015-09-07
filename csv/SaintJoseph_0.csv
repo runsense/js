@@ -1,0 +1,13 @@
+id,nom,categ,description,geometry,lat,lng
+SJ_t,stade,play, stade loisir,"<Point>
+            <coordinates>55.60945954604146,-21.38455620176851</coordinates>
+        </Point>","-21,3845562018","55,609459546"
+SJ_t,stade,play,stade de foot,"<Point>
+            <coordinates>55.63414511856716,-21.37548023445613</coordinates>
+        </Point>","-21,3754802345","55,6341451186"
+SJ_t,Tennis-club municipal de Saint-Joseph,donut,tennis club,"<Point>
+            <coordinates>55.62497124473362,-21.37786385976776</coordinates>
+        </Point>","-21,3778638598","55,6249712447"
+SJ_t,Stade Raphaël-Babet,play,stade de foot club: AS Excelsior,"<Point>
+            <coordinates>55.614444,-21.37833333333333</coordinates>
+        </Point>","-21,3783333333","55,614444"

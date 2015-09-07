@@ -1,0 +1,23 @@
+id,nom,categ,description,geometry,lat,lng
+SAz_a,Julien Dez,canoeing*speleologie," Canyoning, balade, trekking, bivouac et visites des tunnels de lave _
+gsm: +262 692 11 50 13","<Point>
+            <coordinates>55.516339,-21.05742777777778</coordinates>
+        </Point>","-21,0574277778","55,516339"
+SAz_a,Lafable Jean Freddy,hiker*cbh,"visite du patrimoine _
+gsm: +262 692 15 32 32","<Point>
+            <coordinates>55.516445,-21.06298055555556</coordinates>
+        </Point>","-21,0629805556","55,516445"
+SAz_a,La Mare à Poule d'Eau,hiker,"visite touristique _
+<b>label: villages créoles </b>
+gsm:  +262 692 86 32 88","<Point>
+            <coordinates>55.525975,-21.04905833333334</coordinates>
+        </Point>","-21,0490583333","55,525975"
+SAz_a,"Austral Aventure
+R",hiker*canoeing," Randonnée pédestre, Canyoning, Randonnée aquatique _
+<b>label:qualité tourisme, villages créoles
+</b>
+tel: +262 262 32 40 29
+_
+gsm:0692 87 55 50","<Point>
+            <coordinates>55.51806399420924,-21.0653200474278</coordinates>
+        </Point>","-21,0653200474","55,5180639942"

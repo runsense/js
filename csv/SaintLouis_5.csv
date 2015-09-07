@@ -1,0 +1,42 @@
+id,nom,categ,description,geometry,lat,lng
+SLO_a,Centre Equestre de la Fenêtre,horsebackriding,"équitation_
+té : +262 262 37 88 74_
+gsm: +262 692 03 52 51","<Point>
+            <coordinates>55.40922792741684,-21.2100771111693</coordinates>
+        </Point>","-21,2100771112","55,4092279274"
+SLO_a,aqua gliss,swimming," aquaparc_
+tél: +262 262.26.29.93","<Point>
+            <coordinates>55.39363000016925,-21.29205499984002</coordinates>
+        </Point>","-21,2920549998","55,3936300002"
+SLO_a,gigakart,cabs,"kart_
+tél: +262 2.62.91.09.71","<Point>
+            <coordinates>55.39601562520107,-21.28422016752295</coordinates>
+        </Point>","-21,2842201675","55,3960156252"
+SLO_a,Ferme Lou-Cachet,parc*hiker,"parc animalier_
+tél: +262 262 38 09 81_
+gsm: +262 692 87 20 52","<Point>
+            <coordinates>55.45603324,-21.26230555555556</coordinates>
+        </Point>","-21,2623055556","55,45603324"
+SLO_a,marché couvert,grocery,"marché artisanal_
+période: lundi au samedi de 7h30 à 18h, dimanche 7h30 à 12h","<Point>
+            <coordinates>55.40713388557926,-21.28563329434727</coordinates>
+        </Point>","-21,2856332943","55,4071338856"
+SLO_a,marché,grocery*dollar,"marché de producteur_
+période: mercredi de 7h à 13h","<Point>
+            <coordinates>55.41826009155034,-21.28573110841409</coordinates>
+        </Point>","-21,2857311084","55,4182600916"
+SLO_a,A'RaNd'O,hiker*cycling,"Randonnée pédestre, V.T.T. - Autres cycles
+_
+tel:  +262 692 66 71 44
+ <a href=""arnorando@yahoo.fr"" >mail</a>","<Point>
+            <coordinates>55.44740232395679,-21.27378980582919</coordinates>
+        </Point>","-21,2737898058","55,447402324"
+SLO_a,Réunion Volcan Evasion,cabs*terain,"Sorties 4x4
+_
+tel: +262 262 77 70 04
+_
+gsm : +262 692 02 54 44
+_
+Web : <a href=""http://www.reve.re"" >http://www.reve.re</a>","<Point>
+            <coordinates>55.43473145414091,-21.27840564950774</coordinates>
+        </Point>","-21,2784056495","55,4347314541"

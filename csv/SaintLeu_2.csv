@@ -1,0 +1,146 @@
+id,nom,categ,description,geometry,lat,lng
+SL_md,Le Namasté,dining,"restaurant
+_
+tél: +262 262 34 99 62
+_
+festival:","<Point>
+            <coordinates>55.28795999997896,-21.16503741517444</coordinates>
+        </Point>","-21,1650374152","55,28796"
+SL_md,Bienvenue,dining," restaurant_
+tél:  +262 262 54 89 56","<Point>
+            <coordinates>55.31463151,-21.14280555555556</coordinates>
+        </Point>","-21,1428055556","55,31463151"
+SL_md,Terre du Sud,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 32 59 22_
+gsm: +262 692 77 14 52","<Point>
+            <coordinates>55.31287532,-21.21783888888889</coordinates>
+        </Point>","-21,2178388889","55,31287532"
+SL_md,Bardzour,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france, villages créoles</b>
+tél: +262 262 34 13 97_
+gsm: 0+262 692 69 94 91_
+acces hdcp","<Point>
+            <coordinates>55.29997084999999,-21.18470555555556</coordinates>
+        </Point>","-21,1847055556","55,29997085"
+SL_md,Le Moutardier,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 54 01 94_
+gsm: +262 692 65 71 70","<Point>
+            <coordinates>55.32990923,-21.20045833333333</coordinates>
+        </Point>","-21,2004583333","55,32990923"
+SL_md,Balcon Créole,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france, villages créoles</b>
+tél: +262 262 54 76 70_
+gsm: +262 692 67 62 54","<Point>
+            <coordinates>55.30285995999999,-21.14756388888889</coordinates>
+        </Point>","-21,1475638889","55,30285996"
+SL_md,Hippopotamus,dining,"restaurant_
+tél:  +262 262 34 16 16","<Point><coordinates>55.298349,-21.2167</coordinates></Point>","-21,2167","55,298349"
+SL_md,La Tana Del Lupo,dining,"restaurant, pizza_
+tél: +262 262 44 47 61","<Point>
+            <coordinates>55.30795825,-21.216525</coordinates>
+        </Point>","-21,216525","55,30795825"
+SL_md,Iloha Seaview Hôtel ***,rec_lodging*dining," hôtel, restaurant_
+<b>label: gayfriendly, villages créoles, qualité tourisme, restaurateur de france</b>
+tél: +262 262 34 89 89_
+acces hdcp","<Point>
+            <coordinates>55.27757123,-21.14798611111111</coordinates>
+        </Point>","-21,1479861111","55,27757123"
+SL_md,Blue Margouillat Seaview Hôtel ****,rec_lodging*dining*hdcp,"hotel, restaurant_
+<b>label: gayfriendly, villages créoles, qualité tourisme, restaurateur de france</b>
+tél: +262 262 34 64 00_
+acces hdcp","<Point>
+            <coordinates>55.29155300000001,-21.18395277777778</coordinates>
+        </Point>","-21,1839527778","55,291553"
+SL_md,Albertraiteur & le Domaine des Lys,dining*coffee,"restaurant, self, cafet, traiteur_
+tél:  +262 262 34 82 78_
+gsm: +262 692 67 62 44","<Point>
+            <coordinates>55.27974917,-21.14281666666667</coordinates>
+        </Point>","-21,1428166667","55,27974917"
+SL_md,La Villa Vanille,dining," restaurant_
+<b>label: maitre restaurateur</b>
+tél: +262 262 34 03 15_
+gsm: 0692 39 55 39","<Point>
+            <coordinates>55.28736369,-21.17639444444444</coordinates>
+        </Point>","-21,1763944444","55,28736369"
+SL_md,Le Mahola,dining,"restaurant_
+tél: +262 262 32 41 75","<Point>
+            <coordinates>55.28769000000001,-21.16420277777778</coordinates>
+        </Point>","-21,1642027778","55,28769"
+SL_md,Sarah Beach,dining,"restaurant_
+tél: +262 262 10 23 37","<Point>
+            <coordinates>55.287599,-21.16217222222222</coordinates>
+        </Point>","-21,1621722222","55,287599"
+SL_md,La Varangue,dining,"restaurant_
+<b>label: maitre restaurateur</b>
+tél:  +262 262 34 79 26_
+acces hdcp","<Point>
+            <coordinates>55.28695961,-21.17385277777778</coordinates>
+        </Point>","-21,1738527778","55,28695961"
+SL_md,Les Filaos,snack_bar,"snack_
+tél: +262 262 34 82 31","<Point>
+            <coordinates>55.28633055555554,-21.16921111111111</coordinates>
+        </Point>","-21,1692111111","55,2863305556"
+SL_md,Aux Bonnes Choses,dining,"restaurant_
+tél:  +262 262 34 76 26","<Point>
+            <coordinates>55.28744712,-21.176675</coordinates>
+        </Point>","-21,176675","55,28744712"
+SL_md,Auberge du Relais,dining,"restaurant_
+<b>label: villages créoles</b>
+tél: +262 262 34 81 85","<Point><coordinates>55.287787,-21.17415</coordinates></Point>","-21,17415","55,287787"
+SL_md,Chez Stéphanie,dining,"restaurant_
+
+tél: +262 262 34 89 30","<Point>
+            <coordinates>55.28819374,-21.16953888888889</coordinates>
+        </Point>","-21,1695388889","55,28819374"
+SL_md,La Trattoria,rec_lodging*dining," restaurant, hotel_
+
+tél: +262 262 34 89 89","<Point>
+            <coordinates>55.27757123,-21.14798611111111</coordinates>
+        </Point>","-21,1479861111","55,27757123"
+SL_md,Kotémer,rec_lodging*dining,"hotel, restaurant_
+<b>label: gayfriendly, villages céoles, qualité tourisme, restaurateur de france, maitre restaurateur</b>
+tél: +262 262 34 89 89","<Point>
+            <coordinates>55.27757123,-21.14798611111111</coordinates>
+        </Point>","-21,1479861111","55,27757123"
+SL_md,Passion des Z Iles,dining,"restaurant_
+gsm: +262 692 88 71 50","<Point>
+            <coordinates>55.28780824864432,-21.16348626627685</coordinates>
+        </Point>","-21,1634862663","55,2878082486"
+SL_md,Restaurant Le Mascarin Colimanullons,dining," restaurant_
+gsm: +262 692 07 73 20","<Point>
+            <coordinates>55.29003599999999,-21.13988888888889</coordinates>
+        </Point>","-21,1398888889","55,290036"
+SL_md,Tilbury Lagon,dining," restaurant_
+tél: +262 262 34 79 13_
+tél: +262 262 34 85 01","<Point><coordinates>55.286635,-21.17115</coordinates></Point>","-21,17115","55,286635"
+SL_md,le 211,bars,"bar _
+tél: +262 692 34 81 85","<Point>
+            <coordinates>55.28782199983268,-21.17410200009697</coordinates>
+        </Point>","-21,1741020001","55,2878219998"
+SL_md,Villa Mascarine,realestate,"chambre d'hote_
+<b>label: villages créoles, clé verte</b>
+tél: +262 262 55 73 17_
+gsm: 0692 93 46 49","<Point>
+            <coordinates>55.29646190999999,-21.13957016</coordinates>
+        </Point>","-21,13957016","55,29646191"
+SL_md,Chambre d'Hôte Le Fangourin,realestate,"chambre d'hote_
+tél: +262 262 34 05 17_
+gsm: +262 692 60 52 89","<Point>
+            <coordinates>55.299194,-21.20582777777778</coordinates>
+        </Point>","-21,2058277778","55,299194"
+SL_md,Leu Bleu Austral,realestate,"chambre d'hote_
+tél: +262 262 59 66 58_
+gsm: +262 692 14 64 65","<Point>
+            <coordinates>55.308049,-21.17075555555556</coordinates>
+        </Point>","-21,1707555556","55,308049"
+SL_md,Caz' Oceane,realestate,"chambre d'hote_
+tél: +262 262 54 89 40_
+gsm: +262 692 74 63 94","<Point>
+            <coordinates>55.30926689,-21.136175</coordinates>
+        </Point>","-21,136175","55,30926689"
+SL_md,La CasaFabi,realestate,"chambre d'hote_
+tél: 0693 44 72 71","<Point>
+            <coordinates>55.28692400000001,-21.17331944444445</coordinates>
+        </Point>","-21,1733194444","55,286924"

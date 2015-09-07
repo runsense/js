@@ -1,0 +1,205 @@
+id,nom,categ,description,geometry,lat,lng
+SPI_n,"<p style=""color:red;"" >Le Long Board Café</p>",bars,"festival: 
+tél: +262 262 39 17 99","<Point>
+            <coordinates>55.46987062070193,-21.34417219359032</coordinates>
+        </Point>","-21,3441721936","55,4698706207"
+SPI_n,"<p style=""color:red;"" >Little Italy</p>",4,"festival: 
+tél: +262 2 62 70 00 92","<Point>
+            <coordinates>55.47695701462881,-21.34309225592896</coordinates>
+        </Point>","-21,3430922559","55,4769570146"
+SPI_n,"<p style=""color:red;"" >ô Pub à Tapas</p>",club,"festival:
+tél: +262 262 34 61 94","<Point>
+            <coordinates>55.47229300007616,-21.34161900003539</coordinates>
+        </Point>","-21,341619","55,4722930001"
+SPI_n,Centre Culturel Lucet Langenier,arts,"festival:
+Caloubadia
+SAM 29 AOÛ 2015 - 20:00
+_
+Les 3 ruptures
+SAM 5 SEP 2015 - 20:00
+_ 
+tél: +262 262 96 24 50
+web <a href=""http://www.culture-st-pierre.fr"" >http://www.culture-st-pierre.fr</a>","<Point>
+            <coordinates>55.46585800011239,-21.33357100017616</coordinates>
+        </Point>","-21,3335710002","55,4658580001"
+SPI_n,"<p style=""color:red;"" >O’Flamboyant</p>",4,"festival
+tél: +262 2 62 35 02 15","<Point>
+            <coordinates>55.47774811795122,-21.33669381387717</coordinates>
+        </Point>","-21,3366938139","55,477748118"
+SPI_n,"<p style=""color:red;"" >Hôpital de St Pierre</p>",4,"<b>hopital</b>
+_
+tél: +262 2 62 35 90 00
+_
+festival: Griotte (peinture)
+_
+période: du 16/06/14 au 6/07/14","<Point>
+            <coordinates>55.49222120774819,-21.34684745779109</coordinates>
+        </Point>","-21,3468474578","55,4922212077"
+SPI_n,Les Sal’Gosses,bars,"<b> bar</b>
+_
+tél: +262 2 62 96 70 36
+_
+festival: Run Soul
+MER 19 AOÛ 2015 - 20:00
+_
+Les Oiseaux de Passage
+MER 26 AOÛ 2015 - 20:00","<Point>
+            <coordinates>55.47452499953742,-21.34355099981227</coordinates>
+        </Point>","-21,3435509998","55,4745249995"
+SPI_n,"<p style=""color:red;"" >Centre de langues K’osez</p>",arts,"festival: 
+_
+tél: +262 6 92 62 28 26","<Point>
+            <coordinates>55.47964600014908,-21.33466999977636</coordinates>
+        </Point>","-21,3346699998","55,4796460001"
+SPI_n,l'Africa queen,club," boite de nuits (clubbing)
+_
+période: vendredi, samedi, et veille de jour férié de 23h30
+_
+festival: passe avec tes copines (clubbing), fiesta saturday
+_
+période: vendredi, samedi
+_
+tél: +262 262 25 28 09
+gsm: +262 692 38 38 06","<Point>
+            <coordinates>55.47415579305871,-21.34400590195313</coordinates>
+        </Point>","-21,344005902","55,4741557931"
+SPI_n,le Blue Cat,bars*club,"bar, boite de nuits (clubbing)
+_
+période: du mardi au dimanche de 23h à 5h","<Point>
+            <coordinates>55.46800996674229,-21.34367613794624</coordinates>
+        </Point>","-21,3436761379","55,4680099667"
+SPI_n,le Khalif,club," boite de nuits
+_
+festival: TROPICAL OBSESSION, soirée( clubbing)
+_
+période: samedi, vendredi
+_
+gsm: 06 93 00 97 21","<Point>
+            <coordinates>55.4742479473511,-21.3437428105311</coordinates>
+        </Point>","-21,3437428105","55,4742479474"
+SPI_n,le zaza club,club,"boite de nuits
+_
+période: mercredi au samedi et les veille de jour férié de 23h","<Point>
+            <coordinates>55.47806999929678,-21.34128800007165</coordinates>
+        </Point>","-21,3412880001","55,4780699993"
+SPI_n,Lulu farfelu,"60B, rue Fran?ois de Mahy 
+97410 St Pierre","<b>magasin</b>
+expositions:
+Le monde de Dimitile et Célimène
+DU 1 JUIN 2015 AU 31 DÉC 2015
+_
+tél: +262 2 62 88 82 44",,,
+SPI_n,L’Art Home,"77, rue François De Mahy 
+97410 St Pierre","<b>bar</b>
+expositions:
+Habiter le rêve
+DU 13 JUIN 2015 AU 13 AOÛ 2015_
+tél: +262 2 62 91 98 24",,,
+SPI_n,Le Ti Coq Misik,"53, rue du Four à Chaux 
+97410 St Pierre","<b>bar</b>
+festivals:
+Black Lou sound system
+VEN 4 SEP 2015 - 21:00
+_
+tél: +262 262 01 71 25",,,
+SPI_n,Le Toit,"16, rue Auguste Babet 
+97410 St Pierre","<b>bar</b>
+festivals:
+Improvaganza
+MER 12 AOÛ 2015 - 20:00
+_
+Quatro Manos
+JEU 13 AOÛ 2015 - 21:00
+_
+Forest Pooky + Banor n Arc
+VEN 14 AOÛ 2015 - 21:00
+_
+Jean S’Agace
+SAM 15 AOÛ 2015 - 21:00
+_
+Lindy hop
+MER 19 AOÛ 2015 - 20:00
+_
+Stéphane Richez
+JEU 20 AOÛ 2015 - 21:00
+_
+Sawyer
+VEN 21 AOÛ 2015 - 21:00
+_
+The Thigh + Vi Russe
+SAM 22 AOÛ 2015 - 21:00
+_
+Démontages
+MAR 25 AOÛ 2015 - 20:00
+_
+Scène ouverte slam
+MER 26 AOÛ 2015 - 20:00
+_
+David Doré
+JEU 27 AOÛ 2015 - 21:00
+_
+Le Bruit de la Passion
+VEN 28 AOÛ 2015 - 21:00
+_
+Kaplawsé
+SAM 29 AOÛ 2015 - 21:00
+_
+Subhash Dhunoohchand
+JEU 3 SEP 2015 - 21:00
+_
+Furia
+VEN 4 SEP 2015 - 21:00
+_
+Tony Tso
+SAM 5 SEP 2015 - 21:00
+_
+Lucas Santtana
+SAM 10 OCT 2015 - 21:00
+_
+Détours
+MER 14 OCT 2015 - 20:00
+_
+tél: +262 2 62 35 55 53","<Point>
+            <coordinates>55.47852000000001,-21.34154444444445</coordinates>
+        </Point>","-21,3415444444","55,47852"
+SPI_n,Oh ! comptoir des filles,"75, rue François de Mahy 
+97410 St Pierre","<b>bar</b>
+festivals:
+Free Jam
+VEN 21 AOÛ 2015 - 21:00
+_
+tél: +262 6 92 70 03 63",,,
+SPI_n,L’Envers,"13, rue Suffren 
+97410 St Pierre","<b>restaurant</b>
+festivals:Kouleur Akoustik
+SAM 15 AOÛ 2015 - 20:00
+_
+tél: +262 2 62 24 63 68
+web <a href=""http://www.l-envers.com/"" >http://www.l-envers.com/</a>",,,
+SPI_n,Le Kerveguen,"15 rue de la République 
+97410 St Pierre","<b>bar</b>
+festivals:Skip & Die + Psychorigid
+VEN 11 SEP 2015 - 21:00
+_
+Jozefinn’ Austral View + Dyalo-Dyalo
+VEN 25 SEP 2015 - 21:00
+_
+Taïro + Zorro Chang
+VEN 2 OCT 2015 - 21:00
+_
+Davy Sicard ek Marmay l’atelier misik
+MAR 13 OCT 2015 - 21:00
+_
+Che Sudaka + Iztamma
+VEN 13 NOV 2015 - 21:00
+_
+Taraf De Haïdouks + Dièsepora
+SAM 21 NOV 2015 - 21:00
+_
+tél: +262 262 96 24 50
+gsm: +262 6 92 95 42 16
+web <a href=""http://www.culture-st-pierre.fr"" >http://www.culture-st-pierre.fr</a>",,,
+SPI_n,ô Pub à Tapas,club," pub, salsa période: mardi 22h 
+tél:+262 262 34 61 94","<Point>
+            <coordinates>55.47229158684419,-21.34165100194091</coordinates>
+        </Point>","-21,3416510019","55,4722915868"

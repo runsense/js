@@ -1,0 +1,124 @@
+id,nom,categ,description,geometry,lat,lng
+SLO_md,Corbeille d'Or,realestate*gite_de_france," chambre d'hôte_
+<b<label: gite de France</b>
+tél: +262 262 91 38 74_
+gsm: +262 692 61 62 33","<Point>
+            <coordinates>55.397617,-21.24292777777778</coordinates>
+        </Point>","-21,2429277778","55,397617"
+SLO_md,Le Z'Etoile 4 heures,dining,"restaurant_
+tél: +262 262 37 82 17","<Point>
+            <coordinates>55.405656,-21.20271111111111</coordinates>
+        </Point>","-21,2027111111","55,405656"
+SLO_md,Vavangue,dining,"restaurant_
+tél: +262 262 26 73 66","<Point><coordinates>55.451758,-21.2667</coordinates></Point>","-21,2667","55,451758"
+SLO_md,Le Cactus,dining,"restaurant_
+tél:  +262 262 39 28 26_
+gsm: +262 692 87 32 06","<Point>
+            <coordinates>55.43725906,-21.27168888888889</coordinates>
+        </Point>","-21,2716888889","55,43725906"
+SLO_md,Snack-Bar La Fenêtre ,snack_bar,"snack_
+tél: +262 262 26 41 26","<Point>
+            <coordinates>55.410377,-21.21068333333333</coordinates>
+        </Point>","-21,2106833333","55,410377"
+SLO_md,Les Arcades,dining,"restaurant_
+tél: +262 262 39 35 93","<Point>
+            <coordinates>55.438629,-21.26176666666667</coordinates>
+        </Point>","-21,2617666667","55,438629"
+SLO_md,Resto du Coin,dining,"restaurant_
+tél: +262 262 38 18 81","<Point>
+            <coordinates>55.436268,-21.26350833333333</coordinates>
+        </Point>","-21,2635083333","55,436268"
+SLO_md,Les Délices de la Rivière,dining,"restaurant_
+tél: +262 262 39 31 70","<Point>
+            <coordinates>55.437572,-21.26437222222222</coordinates>
+        </Point>","-21,2643722222","55,437572"
+SLO_md,Restaurant Leperlier,dining,"restaurant, gite, villa_
+tél: +262 262 37 82 17_
+gsm: +262 692 65 57 80","<Point>
+            <coordinates>55.40573102999999,-21.20236388888889</coordinates>
+        </Point>","-21,2023638889","55,40573103"
+SLO_md,Shérazade,dining,"restaurant_
+gsm: +262 692 38 97 58","<Point>
+            <coordinates>55.422315,-21.29009166666667</coordinates>
+        </Point>","-21,2900916667","55,422315"
+SLO_md,Restaurant Bade,dining,"restaurant_
+tél: +262 262 26 86 36","<Point>
+            <coordinates>55.40536111111111,-21.28783055555556</coordinates>
+        </Point>","-21,2878305556","55,4053611111"
+SLO_md,L' Eléphant Gourmet,dining*coffee,"restaurant, self, cafet_
+tél:  0262 91 04 68_
+gsm: 0692 86 94 77","<Point>
+            <coordinates>55.40095518999999,-21.29149166666667</coordinates>
+        </Point>","-21,2914916667","55,40095519"
+SLO_md,La Carangue II,dining,"restaurant_
+tél: +262 262 91 93 93","<Point>
+            <coordinates>55.400736,-21.29095277777778</coordinates>
+        </Point>","-21,2909527778","55,400736"
+SLO_md,Le Kaz Do,dining,"restaurant_
+tél: +262 262 26 96 99","<Point>
+            <coordinates>55.406887,-21.28890277777778</coordinates>
+        </Point>","-21,2889027778","55,406887"
+SLO_md,Meln'zo,dining,"restaurant_
+gsm: +262 692 98 36 42","<Point>
+            <coordinates>55.41468200000001,-21.28989722222222</coordinates>
+        </Point>","-21,2898972222","55,414682"
+SLO_md,Restaurant du Marché,dining,"restaurant_
+tél: +262 262 26 16 91_
+gsm: +262 692 70 94 48","<Point>
+            <coordinates>55.406241,-21.28853888888889</coordinates>
+        </Point>","-21,2885388889","55,406241"
+SLO_md,Le Louisiane,dining,"restaurant_
+tél: +262 262 44 89 95_
+gsm: +262 692 87 39 99","<Point>
+            <coordinates>55.41019116999999,-21.28675555555556</coordinates>
+        </Point>","-21,2867555556","55,41019117"
+SLO_md,Le Saint-Louis,dining,"restaurant_
+tél: +262 262 34 02 53_
+gsm: +262 692 08 60 41","<Point>
+            <coordinates>55.413821,-21.29025833333333</coordinates>
+        </Point>","-21,2902583333","55,413821"
+SLO_md,Restaurant de la Plage,dining,"restaurant_
+tél:  +262 262 26 02 52","<Point>
+            <coordinates>55.39875398,-21.29628611111111</coordinates>
+        </Point>","-21,2962861111","55,39875398"
+SLO_md,Les Bons Enfants,dining,"restaurant_
+tél: +262 262 91 06 52","<Point>
+            <coordinates>55.4059,-21.28525277777778</coordinates>
+        </Point>","-21,2852527778","55,4059"
+SLO_md,Aloha,dining,"restaurant_
+tél: +262 262 26 98 98","<Point>
+            <coordinates>55.407566,-21.28626944444445</coordinates>
+        </Point>","-21,2862694444","55,407566"
+SLO_md,Bai Hua,dining,"restaurant_
+tél:  +262 262 91 13 25","<Point>
+            <coordinates>55.40505900000001,-21.287525</coordinates>
+        </Point>","-21,287525","55,405059"
+SLO_md,Le Songe,dining,"restaurant_
+tél: +262 262 26 39 44","<Point>
+            <coordinates>55.41569811,-21.28460277777778</coordinates>
+        </Point>","-21,2846027778","55,41569811"
+SLO_md,Snack Bar Gangate,snack_bar,"snack_
+tél: +262 262 26 92 99_
+gsm: +262 692 14 98 29","<Point>
+            <coordinates>55.407266,-21.28567222222223</coordinates>
+        </Point>","-21,2856722222","55,407266"
+SLO_md,Mille Délices,dining,"restaurant_
+tél: +262 262 24 20 36","<Point>
+            <coordinates>55.40782196618427,-21.28893179344858</coordinates>
+        </Point>","-21,2889317934","55,4078219662"
+SLO_md,Chez Sarah,dining,"restaurant_
+tél: +262 262 26 08 54_
+gsm: +262 692 65 77 64","<Point>
+            <coordinates>55.41026200000001,-21.28546666666667</coordinates>
+        </Point>","-21,2854666667","55,410262"
+SLO_md,Le Chant du Coq,realestate*hdcp," ferme auberge chambre d'hote_
+tél: +262 262 37 85 37_
+gsm: +262 693 93 83 04_
+acces hdcp","<Point>
+            <coordinates>55.41034444444444,-21.20707777777778</coordinates>
+        </Point>","-21,2070777778","55,4103444444"
+SLO_md,Les Bégonias,realestate," table d'hote, chambre d'hote_
+tél: +262 262 26 26 10_
+gsm: +262 692 14 51 66","<Point>
+            <coordinates>55.45170999999999,-21.26852222222222</coordinates>
+        </Point>","-21,2685222222","55,45171"

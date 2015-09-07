@@ -1,0 +1,4 @@
+id,nom,categ,description,geometry,lat,lng
+SPh_t,stade,cbh,stade d'athlétisme,"<Point>
+            <coordinates>55.76746710745355,-21.36129384281462</coordinates>
+        </Point>","-21,3612938428","55,7674671075"

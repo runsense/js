@@ -1,0 +1,74 @@
+id,nom,categ,description,geometry,lat,lng
+Pos_md,Le Pilon d'Or,dining,"restaurant_
+tél: +262 262 32 01 56_
+tél: +262 262 44 50 48_
+gsm: +262 692 25 91 16","<Point>
+            <coordinates>55.38255810999999,-20.98082222222222</coordinates>
+        </Point>","-20,9808222222","55,38255811"
+Pos_md,L' Orizen,dining,"restaurant_
+tél: +262 262 91 48 03","<Point>
+            <coordinates>55.32911143205821,-20.95840856094086</coordinates>
+        </Point>","-20,9584085609","55,3291114321"
+Pos_md,Baies Roses,rec_lodging*dining,"restaurant, hotel_
+tél: +262 262 44 66 88_
+gsm: +262 692 44 54 86","<Point>
+            <coordinates>55.34102251,-20.94998055555556</coordinates>
+        </Point>","-20,9499805556","55,34102251"
+Pos_md,Case d'Edith,dining,"restaurant_
+tél:  +262 262 34 04 28_
+gsm: +262 692 18 48 37","<Point>
+            <coordinates>55.3342411,-20.93193888888889</coordinates>
+        </Point>","-20,9319388889","55,3342411"
+Pos_md,Hanull-Phong,dining,"restaurant_
+tél: +262 262 22 39 80_
+gsm: +262 262 22 08 20","<Point>
+            <coordinates>55.34117148,-20.92423888888889</coordinates>
+        </Point>","-20,9242388889","55,34117148"
+Pos_md,Restaurant Luxor,dining,"restaurant_
+tél: +262 262 24 44 42","<Point>
+            <coordinates>55.33491599999999,-20.93289166666667</coordinates>
+        </Point>","-20,9328916667","55,334916"
+Pos_md,L' Antre Amis,dining,"restaurant_
+té: +262 262 91 46 03","<Point>
+            <coordinates>55.329089,-20.95821666666667</coordinates>
+        </Point>","-20,9582166667","55,329089"
+Pos_md,Le Duo,dining," restaurant_
+<b>label: gayfriendly</b>
+tél: +262 262 22 17 50","<Point>
+            <coordinates>55.337316,-20.92709722222222</coordinates>
+        </Point>","-20,9270972222","55,337316"
+Pos_md,La Terrasse de la Possession,dining,"restaurant_
+tél: +262 262 22 15 44","<Point>
+            <coordinates>55.3448369,-20.925725</coordinates>
+        </Point>","-20,925725","55,3448369"
+Pos_md,C' Mon Choix,dining,"restaurant_
+gsm: +262 692 69 39 72_
+<b>kaz' maron</b>","<Point>
+            <coordinates>55.336809,-20.93236944444445</coordinates>
+        </Point>","-20,9323694444","55,336809"
+Pos_md,Les Délices du Moulin Joli,dining,"restaurant_
+tél:  +262 262 38 91 98_
+gsm: +262 692 66 24 22","<Point>
+            <coordinates>55.32435988,-20.95417222222222</coordinates>
+        </Point>","-20,9541722222","55,32435988"
+Pos_md,Jian Jiang,dining," restaurant_
+tél:  +262 262 26 09 11","<Point>
+            <coordinates>55.33855299999999,-20.92496388888889</coordinates>
+        </Point>","-20,9249638889","55,338553"
+Pos_md,Le Karousel,dining,"restaurant_
+tél: +262 262 24 36 78_
+gsm: +262 692 65 05 03","<Point>
+            <coordinates>55.33081857,-20.92931388888889</coordinates>
+        </Point>","-20,9293138889","55,33081857"
+Pos_md,Le Kaloupilé,dining," restaurant_
+tél: +262 262 22 20 05_
+gsm: +262 692 62 05 03","<Point><coordinates>55.336536,-20.925975</coordinates></Point>","-20,925975","55,336536"
+Pos_md,Chez Jacky,dining,"restaurant_
+tél:  +262 262 43 42 37","<Point><coordinates>55.322226,-20.959875</coordinates></Point>","-20,959875","55,322226"
+Pos_md,Roche Tamarin Lodges & Spa  ****,rec_lodging*spa*hdcp,"hotel, spa_
+<b>label: gayfriendly, qualité tourisme</b>
+tél: +262 262 44 66 88_
+gsm: +262 692 44 54 86_
+acces hdcp","<Point>
+            <coordinates>55.34102251,-20.94998055555556</coordinates>
+        </Point>","-20,9499805556","55,34102251"

@@ -1,0 +1,759 @@
+id,nom,categ,description,geometry,lat,lng
+SG_md,La Bodega 974,dining,"restaurant
+_
+tél: +262 2 62 35 66 69
+_
+festival:","<Point>
+            <coordinates>55.24262299987144,-21.09906800018415</coordinates>
+        </Point>","-21,0990680002","55,2426229999"
+SG_md,La Varangue du Lagon / Chez Denis,dining,"restaurant
+_
+tél: +262 2 62 32 06 15
+_
+festival: ","<Point>
+            <coordinates>55.22956799981465,-21.08639799996239</coordinates>
+        </Point>","-21,086398","55,2295679998"
+SG_md,Le Tamarinier de l'Inde,realestate*gite_de_france*hdcp,"chambre d'hote_
+label: gites de france_
+tél: +262 262 26 16 62_
+gsm: +262 692 88 02 57_
+acces hdcp","<Point>
+            <coordinates>55.253754,-21.04322777777778</coordinates>
+        </Point>","-21,0432277778","55,253754"
+SG_md,Ramassamy Anthony,realestate*gite_de_france,"chambre d'hote_
+label: gites de france_
+tél: +262 262 55 55 06","<Point>
+            <coordinates>55.26326006,-21.06308888888889</coordinates>
+        </Point>","-21,0630888889","55,26326006"
+SG_md,Le Vieux Canon de Saint-Paul,realestate*gite_de_france,"chambre d'hote_
+label: gites de france_
+tél: +262 262 55 69 13_
+gsm: 0692 66 82 15","<Point>
+            <coordinates>55.28202560999999,-21.05292777777778</coordinates>
+        </Point>","-21,0529277778","55,28202561"
+SG_md,Le grand large,dining," restaurant_
+tél: +262 2 62 27 86 35","<Point>
+            <coordinates>55.22530870243366,-21.05424085692931</coordinates>
+        </Point>","-21,0542408569","55,2253087024"
+SG_md,Planch'Alizé,dining*swimming,"restaurant, loisir nautique_
+tél: +262 262 24 62 61","<Point>
+            <coordinates>55.23461978,-21.094325</coordinates>
+        </Point>","-21,094325","55,23461978"
+SG_md,Le Saint Alexis ****,spa*rec_lodging*dining*hdcp,"hotel, spa, restaurant_
+label: qualité tourisme, restaurateur de france, _
+tél: +262 262 24 42 04_
+acces hdcp","<Point>
+            <coordinates>55.22518261000001,-21.030675</coordinates>
+        </Point>","-21,030675","55,22518261"
+SG_md,Ti Case,bars*dining*rec_lodging," bar, restaurant, hotel_
+<b>label: qualité tourisme</b>
+tél: +262 262 24 50 25","<Point>
+            <coordinates>55.2231801,-21.07618611111111</coordinates>
+        </Point>","-21,0761861111","55,2231801"
+SG_md,Le Vieux Tamarin,rec_lodging*dining," hotel, restaurant_
+label: qualité tourisme, gayfriendly, restaurateur de france_
+tél: +262 262 33 10 10","<Point>
+            <coordinates>55.22318726,-21.07153611111111</coordinates>
+        </Point>","-21,0715361111","55,22318726"
+SG_md,Le Piccolo,dining," restaurant_
+<b>label: qualité tourisme</b>
+tél: +262 262 24 51 51_
+gsm: +262 692 60 51 76","<Point>
+            <coordinates>55.22608044,-21.05153055555556</coordinates>
+        </Point>","-21,0515305556","55,22608044"
+SG_md,Au K'banon,dining,"restaurant_
+<b>label: qualité tourisme, gayfriendly, restaurateur de france</b>
+tél: +262 262 33 84 94_
+gsm: +262 692 76 05 34","<Point>
+            <coordinates>55.22318,-21.03474444444445</coordinates>
+        </Point>","-21,0347444444","55,22318"
+SG_md,Le Maloya,rec_lodging*dining,"hotel, restaurant_
+label: qualité tourisme_
+tél:  +262 262 70 01 00","<Point>
+            <coordinates>55.22995141,-21.08786388888889</coordinates>
+        </Point>","-21,0878638889","55,22995141"
+SG_md,le D.C.P,dining,"restaurant_
+<b>label qualité tourisme</b>
+tél: +262 262 33 02 96_
+gsm: +262 692 70 58 93","<Point>
+            <coordinates>55.22598888888889,-21.05273333333333</coordinates>
+        </Point>","-21,0527333333","55,2259888889"
+SG_md,Le Saint-Gilles,dining,"restaurant_
+<b>label: restaurateur de france, qualité tourisme</b>
+tél: +262 262 24 51 27_","<Point>
+            <coordinates>55.2237146,-21.05549166666667</coordinates>
+        </Point>","-21,0554916667","55,2237146"
+SG_md,Le Grand Hunier,dining," restaurant_
+tél: +262 262 24 42 04_","<Point><coordinates>55.225602,-21.030075</coordinates></Point>","-21,030075","55,225602"
+SG_md,Le Faham - La Rondavelle,dining," restaurant_
+gsm: +262 692 95 01 34","<Point>
+            <coordinates>55.221354,-21.06764722222222</coordinates>
+        </Point>","-21,0676472222","55,221354"
+SG_md,Chez Marie,dining,"restaurant_
+tél: +262 262 24 08 87","<Point>
+            <coordinates>55.22637854,-21.05398277</coordinates>
+        </Point>","-21,05398277","55,22637854"
+SG_md,"Restaurant
+Bambou Bar",bars*dining,"restaurant, bar_
+tél: +262 262 24 59 29","<Point><coordinates>55.226458,-21.02785</coordinates></Point>","-21,02785","55,226458"
+SG_md,La Maison du Macaron,dining,"La cantina_
+restaurant_
+tél:  +262 262 33 21 09","<Point>
+            <coordinates>55.22597900000001,-21.05271111111111</coordinates>
+        </Point>","-21,0527111111","55,225979"
+SG_md,Le Balneair,dining," restaurant_
+tél:  +262 262 24 46 97","<Point>
+            <coordinates>55.22648399999999,-21.05168888888889</coordinates>
+        </Point>","-21,0516888889","55,226484"
+SG_md,L' Entracte,dining,"restaurant_
+tél: +262 262 32 10 26","<Point>
+            <coordinates>55.227389,-21.05196944444445</coordinates>
+        </Point>","-21,0519694444","55,227389"
+SG_md,La Kazafrite,snack_bar,"snack_
+gsm: +262 692 43 67 61","<Point>
+            <coordinates>55.22502810372279,-21.04689583274546</coordinates>
+        </Point>","-21,0468958327","55,2250281037"
+SG_md,Chez Mit?,dining*coffee,"restaurant, self, cafet_
+tél: +262 262 24 22 92","<Point>
+            <coordinates>55.22378282,-21.05136388888889</coordinates>
+        </Point>","-21,0513638889","55,22378282"
+SG_md,La Case Vanille S.H.B.R.,rec_lodging*dining," restaurant, hotel_
+tél: +262 262 24 44 44","<Point>
+            <coordinates>55.22286763,-21.077375</coordinates>
+        </Point>","-21,077375","55,22286763"
+SG_md,Relais de l'Ermitage,snack_bar,"snack_
+tél: +262 262 33 80 04","<Point>
+            <coordinates>55.22583171348133,-21.07733611111111</coordinates>
+        </Point>","-21,0773361111","55,2258317135"
+SG_md,Le Cap,rec_lodging*dining," hotel, restaurant_
+label: restaurateur de france, qualité tourisme, maitre restaurateur_
+tél: +262 262 33 44 44","<Point>
+            <coordinates>55.22718459,-21.02734444444445</coordinates>
+        </Point>","-21,0273444444","55,22718459"
+SG_md,Chez Rosa,dining*snack_bar,"restaurant, snack_
+tél: +262 262 24 65 28","<Point>
+            <coordinates>55.22982369,-21.08077222222222</coordinates>
+        </Point>","-21,0807722222","55,22982369"
+SG_md,Le Boucanier,dining,"restaurant_
+tél: +262 262 24 53 82","<Point>
+            <coordinates>55.226703,-21.02760555555555</coordinates>
+        </Point>","-21,0276055556","55,226703"
+SG_md,Le Riad,dining,"restaurant_
+tél: +262 262 33 55 69_
+gsm: +262 692 82 76 04","<Point>
+            <coordinates>55.229548,-21.05991944444445</coordinates>
+        </Point>","-21,0599194444","55,229548"
+SG_md,La Palmeraie,dining," restaurant_
+tél: +262 262 24 42 84_
+gsm: +262 692 61 09 14","<Point>
+            <coordinates>55.22406327,-21.05286666666667</coordinates>
+        </Point>","-21,0528666667","55,22406327"
+SG_md,Case Bambou,dining,"restaurant_
+tél: : +262 262 24 48 52","<Point>
+            <coordinates>55.226458,-21.07050555555556</coordinates>
+        </Point>","-21,0705055556","55,226458"
+SG_md,Couronne Australe,dining," restaurant, pizza_
+tél: +262 262 34 61 21_
+gsm: +262 692 27 54 03","<Point>
+            <coordinates>55.25290399,-21.10688888888889</coordinates>
+        </Point>","-21,1068888889","55,25290399"
+SG_md,Le Village de Corail,bars*dining*hdcp,"restaurant, bar,<b>village vacance</b>_
+tél: +262 262 24 29 39_
+acces hdcp","<Point>
+            <coordinates>55.222032,-21.06577777777778</coordinates>
+        </Point>","-21,0657777778","55,222032"
+SG_md,La Ferme,dining,"restaurant_
+tél: +262 262 24 28 84","<Point>
+            <coordinates>55.224365,-21.05098333333334</coordinates>
+        </Point>","-21,0509833333","55,224365"
+SG_md,Chez Bobonne,dining,"restaurant_
+tél: +262 262 39 27 96","<Point>
+            <coordinates>55.22715816,-21.05233888888889</coordinates>
+        </Point>","-21,0523388889","55,22715816"
+SG_md,Le Cercle Gourmand,dining,"restaurant_
+gsm:  +262 692 16 09 55","<Point>
+            <coordinates>55.224205,-21.05153055555556</coordinates>
+        </Point>","-21,0515305556","55,224205"
+SG_md,La Gueule de Bois,bars*dining,"restaurant, bar_
+tél: +262 262 22 90 06_
+gsm: +262 692 14 13 73","<Point>
+            <coordinates>55.22187264,-21.07041111111111</coordinates>
+        </Point>","-21,0704111111","55,22187264"
+SG_md,Palais du Lagon,dining,"restaurant_
+tél: +262 262 24 35 82","<Point>
+            <coordinates>55.22252859,-21.07351666666667</coordinates>
+        </Point>","-21,0735166667","55,22252859"
+SG_md,L' Authentique,dining,"restaurant_
+tél:  +262 262 33 00 70","<Point>
+            <coordinates>55.223414,-21.05752222222222</coordinates>
+        </Point>","-21,0575222222","55,223414"
+SG_md,Le Sunset - Rondavelle,snack_bar,"snack_
+gsm: +262 692 65 13 41","<Point>
+            <coordinates>55.20675429135873,-21.08100114539948</coordinates>
+        </Point>","-21,0810011454","55,2067542914"
+SG_md,Ice Spot,ice*dining,"restaurant, glacier, snack_
+tél:  +262 262 33 26 77","<Point>
+            <coordinates>55.22409876,-21.05311944444444</coordinates>
+        </Point>","-21,0531194444","55,22409876"
+SG_md,Le Balcon,bars*dining," restaurant, bar_
+tél: +262 262 25 15 81","<Point>
+            <coordinates>55.22723021000001,-21.05194166666667</coordinates>
+        </Point>","-21,0519416667","55,22723021"
+SG_md,Sakaf,dining,"restaurant_
+tél: +262 262 33 23 42_
+gsm: +262 692 65 05 03","<Point>
+            <coordinates>55.22558029,-21.05070555555556</coordinates>
+        </Point>","-21,0507055556","55,22558029"
+SG_md,La Bobine,dining,"restaurant_
+<b>label: maitre restaurateur</b>
+tél:  +262 262 33 94 36","<Point>
+            <coordinates>55.24899043808528,-21.09001129415998</coordinates>
+        </Point>","-21,0900112942","55,2489904381"
+SG_md,Pool-Bar,bars*snack_bar," snack, bar_
+tél: : +262 262 24 05 34","<Point>
+            <coordinates>55.20792174568516,-21.08773605565004</coordinates>
+        </Point>","-21,0877360557","55,2079217457"
+SG_md,Art & Delices,dining,"restaurant_
+tél: +262 262 24 34 34_
+gsm: +262 692 87 16 81","<Point>
+            <coordinates>55.22521433,-21.05316666666667</coordinates>
+        </Point>","-21,0531666667","55,22521433"
+SG_md,Le Papayer S.H.B.R.,rec_lodging*dining,"hotel, restaurant_
+tél: +262 262 24 44 44","<Point>
+            <coordinates>55.22286763,-21.077375</coordinates>
+        </Point>","-21,077375","55,22286763"
+SG_md,Le 7 Avenue,dining,"restaurant_
+tél: +262 262 24 47 00","<Point>
+            <coordinates>55.22346504000001,-21.07083333333333</coordinates>
+        </Point>","-21,0708333333","55,22346504"
+SG_md,Capucin,dining,"restaurant_
+gsm:  +262 692 98 88 19","<Point>
+            <coordinates>55.24570679,-21.09929166666667</coordinates>
+        </Point>","-21,0992916667","55,24570679"
+SG_md,Le Mex,dining,"restaurant_
+tél: +262 262 33 04 05","<Point>
+            <coordinates>55.22718221,-21.05193055555556</coordinates>
+        </Point>","-21,0519305556","55,22718221"
+SG_md,Brasserie du Port,bars*dining,"restaurant, brasserie_
+tél: +262 262 24 02 02_
+gsm: +262 692 86 06 06","<Point>
+            <coordinates>55.223392,-21.05590277777778</coordinates>
+        </Point>","-21,0559027778","55,223392"
+SG_md,Au Bord de l'Eau,dining,"restaurant_
+tél:  +262 262 33 47 63_
+gsm: +262 692 47 12 57","<Point>
+            <coordinates>55.224967,-21.05351388888889</coordinates>
+        </Point>","-21,0535138889","55,224967"
+SG_md,Le Natur'elle,ice*dining,"restaurant, glacier_
+tél:  +262 262 33 21 09_
+gsm: +262 692 77 39 84","<Point>
+            <coordinates>55.22607,-21.05268888888889</coordinates>
+        </Point>","-21,0526888889","55,22607"
+SG_md,Au Ti Marché,dining,"restaurant_
+tél: +262 262 24 54 94","<Point>
+            <coordinates>55.2258554,-21.05265833333333</coordinates>
+        </Point>","-21,0526583333","55,2258554"
+SG_md,Cap Ouest,dining," restaurant_
+tél: +262 262 33 21 56_
+gsm: 0693 30 82 07","<Point>
+            <coordinates>55.22364618,-21.05558055555556</coordinates>
+        </Point>","-21,0555805556","55,22364618"
+SG_md,Le Grain de Sable,rec_lodging*dining,"hotel, restaurant_
+tél: +262 262 33 10 10","<Point>
+            <coordinates>55.22318726,-21.07153611111111</coordinates>
+        </Point>","-21,0715361111","55,22318726"
+SG_md,L' Eden,dining,"restaurant_
+tél: +262 262 25 52 83","<Point>
+            <coordinates>55.22817700000001,-21.0308</coordinates>
+        </Point>","-21,0308","55,228177"
+SG_md,Le Toboggan,dining*snack_bar,"restaurant, snack_
+<b>label: gayfriendly</b>
+tél:  +262 262 33 84 94","<Point>
+            <coordinates>55.224704,-21.08109444444445</coordinates>
+        </Point>","-21,0810944444","55,224704"
+SG_md,Easy Croc,dining*snack_bar,"restaurant, snack_
+gsm: +262 692 61 78 56","<Point>
+            <coordinates>55.224722,-21.05241944444445</coordinates>
+        </Point>","-21,0524194444","55,224722"
+SG_md,L' Alpha,dining,"restaurant_
+tél: +262 262 24 02 02_
+gsm: +262 692 86 06 06","<Point>
+            <coordinates>55.22377829999999,-21.05579722222222</coordinates>
+        </Point>","-21,0557972222","55,2237783"
+SG_md,La Boucantine,dining,"restaurant_
+tél: +262 262 33 62 10_
+gsm: +262 692 66 48 94","<Point>
+            <coordinates>55.22693,-21.02800833333333</coordinates>
+        </Point>","-21,0280083333","55,22693"
+SG_md,Le Glacier Gourmand,ice*snack_bar,"glacier, snack_
+gsm: +262 692 64 88 17","<Point>
+            <coordinates>55.225063,-21.05446666666667</coordinates>
+        </Point>","-21,0544666667","55,225063"
+SG_md,Oasis des Roches,lodging*bars*dining,"appartement, restaurant, glacier, bar_
+tél: +262 262 33 73 24","<Point>
+            <coordinates>55.22406711,-21.05335277777778</coordinates>
+        </Point>","-21,0533527778","55,22406711"
+SG_md,Le Grilladin,dining,"restaurant_
+tél: +262 262 24 45 82_
+gsm: +262 692 76 23 41","<Point>
+            <coordinates>55.225578,-21.05264722222222</coordinates>
+        </Point>","-21,0526472222","55,225578"
+SG_md,Chez Nous,dining*club,"restaurant, pub_
+<b>label: maitre restaurateur</b>
+tél: +262 262 24 08 08","<Point>
+            <coordinates>55.227197,-21.05197222222222</coordinates>
+        </Point>","-21,0519722222","55,227197"
+SG_md,Le Beau Rivage,dining,"restaurant_
+tél: +262 262 43 69 43_
+acces hdcp","<Point>
+            <coordinates>55.22449247,-21.031275</coordinates>
+        </Point>","-21,031275","55,22449247"
+SG_md,A Table,dining,"restaurant_
+tél:  +262 262 24 00 24","<Point>
+            <coordinates>55.225651,-21.05264166666667</coordinates>
+        </Point>","-21,0526416667","55,225651"
+SG_md,Le Récif - Rondavelle,snack_bar,"snack_
+tél:  +262 262 70 00 00","<Point>
+            <coordinates>55.22137500000001,-21.06764722222222</coordinates>
+        </Point>","-21,0676472222","55,221375"
+SG_md,Le 66 Burger Club,snack_bar,"snack_
+gsm: +262 692 96 03 96","<Point>
+            <coordinates>55.2238,-21.05200277777778</coordinates>
+        </Point>","-21,0520027778","55,2238"
+SG_md,Auberge du Bonheur,dining," restaurant_
+tél:  +262 262 24 09 97","<Point>
+            <coordinates>55.22239,-21.06450555555556</coordinates>
+        </Point>","-21,0645055556","55,22239"
+SG_md,Le Combava,bars*dining,"restaurant, bar_
+gsm: +262 692 76 67 54","<Point>
+            <coordinates>55.224176,-21.05296944444445</coordinates>
+        </Point>","-21,0529694444","55,224176"
+SG_md,Chez Loulou,dining*snack_bar*bread,"restaurant, boulangerie, sandwicherie_
+tél: +262 262 24 40 41","<Point>
+            <coordinates>55.225439,-21.05140833333334</coordinates>
+        </Point>","-21,0514083333","55,225439"
+SG_md,Cuisine du Monde,dining,"restaurant_
+tél:  +262 262 33 25 56","<Point>
+            <coordinates>55.22480600000001,-21.05286666666667</coordinates>
+        </Point>","-21,0528666667","55,224806"
+SG_md,Le Raisin de Mer,dining,"la mangouste_
+restaurant_
+tél: +262 262 24 57 26","<Point>
+            <coordinates>55.22257459,-21.06397777777778</coordinates>
+        </Point>","-21,0639777778","55,22257459"
+SG_md,Au Vieux Quimper,dining*snack_bar,"restaurant, creperie_
+tél: +262 262 24 53 48_
+gsm: +262 692 08 60 72","<Point>
+            <coordinates>55.22599,-21.05273333333333</coordinates>
+        </Point>","-21,0527333333","55,22599"
+SG_md,P'tit Zinc,dining,"restaurant_
+tél:  +262 262 24 07 50","<Point>
+            <coordinates>55.22439310000001,-21.05101666666667</coordinates>
+        </Point>","-21,0510166667","55,2243931"
+SG_md,Chez Les Filles - Rondavelle,snack_bar,"snack_
+gsm: +262 692 03 19 07","<Point>
+            <coordinates>55.23000100000001,-21.05740277777778</coordinates>
+        </Point>","-21,0574027778","55,230001"
+SG_md,Il Padrino,dining,"restaurant_
+tél: +262 262 24 40 78","<Point>
+            <coordinates>55.22350599999999,-21.07149722222222</coordinates>
+        </Point>","-21,0714972222","55,223506"
+SG_md,Not'Ile,rec_lodging*dining," hotel, restaurant_
+tél: +262 262 33 88 88","<Point>
+            <coordinates>55.23227699,-21.09059722222222</coordinates>
+        </Point>","-21,0905972222","55,23227699"
+SG_md,King Snack,dining*snack_bar,"restaurant, snack_
+tél: +262 262 24 33 43","<Point>
+            <coordinates>55.22457499999999,-21.05118888888889</coordinates>
+        </Point>","-21,0511888889","55,224575"
+SG_md,Le Victory,dining,"restaurant_
+tél: +262 262 24 47 74","<Point>
+            <coordinates>55.226882,-21.02799166666667</coordinates>
+        </Point>","-21,0279916667","55,226882"
+SG_md,Pépito,dining,"restaurant_
+tél:  +262 262 24 42 85","<Point>
+            <coordinates>55.22828400000001,-21.02980833333333</coordinates>
+        </Point>","-21,0298083333","55,228284"
+SG_md,La Playa,dining,"restaurant_
+tél: +262 262 54 93 67","<Point>
+            <coordinates>55.22423055555556,-21.08165277777778</coordinates>
+        </Point>","-21,0816527778","55,2242305556"
+SG_md,L' Oxygène,dining,"restaurant_
+tél:  +262 262 24 78 74_
+gsm: +262 692 03 40 34","<Point>
+            <coordinates>55.22400763,-21.05106666666667</coordinates>
+        </Point>","-21,0510666667","55,22400763"
+SG_md,La Marmite,dining*hdcp,"restaurant_
+tél: +262 262 33 31 37_
+acces hdcp","<Point>
+            <coordinates>55.22568745,-21.08222777777778</coordinates>
+        </Point>","-21,0822277778","55,22568745"
+SG_md,Rondavelle Cobis,dining,"restaurant_
+tél: +262 262 71 51 14","<Point>
+            <coordinates>55.22121,-21.07040555555556</coordinates>
+        </Point>","-21,0704055556","55,22121"
+SG_md,Le Bénitier - Rondavelle,dining,"restaurant_
+gsm: +262 692 18 13 75","<Point>
+            <coordinates>55.22138600000001,-21.07706111111111</coordinates>
+        </Point>","-21,0770611111","55,221386"
+SG_md,la bobine,dining,"restaurant_
+<b>label: maitre restaurateur</b>
+tél: +262 262 33 94 36","<Point>
+            <coordinates>55.22358175,-21.08125833333333</coordinates>
+        </Point>","-21,0812583333","55,22358175"
+SG_md,L' Hacienda - Cocobeach,bars*dining,"restaurant, bar_
+<b>label: gayfriendly</b>
+tél: +262 262 33 81 43","<Point>
+            <coordinates>55.22414539999999,-21.08160833333333</coordinates>
+        </Point>","-21,0816083333","55,2241454"
+SG_md,A Table,dining,"restaurant_
+tél: +262 262 24 00 24","<Point>
+            <coordinates>55.225651,-21.05264166666667</coordinates>
+        </Point>","-21,0526416667","55,225651"
+SG_md,Le Grand large,dining*hdcp,"restaurant_
+tél: +262 262 27 86 35_
+acces hdcp","<Point>
+            <coordinates>55.225106,-21.05436111111111</coordinates>
+        </Point>","-21,0543611111","55,225106"
+SG_md,Paul & Virginie,dining,"restaurant_
+tél: +262 262 33 04 53_
+gsm: +262 692 77 66 53","<Point>
+            <coordinates>55.22325473,-21.05208055555556</coordinates>
+        </Point>","-21,0520805556","55,22325473"
+SG_md,Laetizia,dining,"restaurant_
+tél: +262 262 24 49 64","<Point>
+            <coordinates>55.22597900000001,-21.05271111111111</coordinates>
+        </Point>","-21,0527111111","55,225979"
+SG_md,Le Bénitier - Rondavelle,snack_bar,"snack_
+gsm: +262 692 18 13 75","<Point>
+            <coordinates>55.22138600000001,-21.07706111111111</coordinates>
+        </Point>","-21,0770611111","55,221386"
+SG_md,L' Acacia des roches noires,bars*dining,"restaurant, bar_
+tél:  +262 262 27 36 43","<Point>
+            <coordinates>55.22427499999999,-21.05292222222222</coordinates>
+        </Point>","-21,0529222222","55,224275"
+SG_md,Le Saint Michel **,rec_lodging*dining*hdcp,"hotel, restaurant_
+tél: +262 262 33 13 33_
+acces hdcp","<Point>
+            <coordinates>55.22826752999999,-21.04640555555556</coordinates>
+        </Point>","-21,0464055556","55,22826753"
+SG_md,Paille en Queue,dining,"restaurant_
+tél: +262 262 24 55 38","<Point>
+            <coordinates>55.223049916399,-21.06987566084157</coordinates>
+        </Point>","-21,0698756608","55,2230499164"
+SG_md,Le Natur'elle,ice*dining,"restaurant, glacier_
+tél: +262 262 33 21 09_
+gsm: +262 692 77 39 84","<Point>
+            <coordinates>55.22606944444445,-21.05268888888889</coordinates>
+        </Point>","-21,0526888889","55,2260694444"
+SG_md,Te Mana Sushi,snack_bar,"snack_
+gsm:  +262 692 68 50 79","<Point>
+            <coordinates>55.224403,-21.05108055555556</coordinates>
+        </Point>","-21,0510805556","55,224403"
+SG_md,C?? Plage,dining,"restaurant_
+tél: +262 262 45 29 37","<Point>
+            <coordinates>55.22606011000001,-21.02887777777778</coordinates>
+        </Point>","-21,0288777778","55,22606011"
+SG_md,P'tit Grec,snack_bar,"snack_
+tél: +262 262 24 50 31","<Point>
+            <coordinates>55.225652,-21.05099166666667</coordinates>
+        </Point>","-21,0509916667","55,225652"
+SG_md,Ti Coq,dining,"restaurant_
+tél: +262 262 24 31 69","<Point>
+            <coordinates>55.2256673,-21.05066944444445</coordinates>
+        </Point>","-21,0506694444","55,2256673"
+SG_md,Loca Plage,snack_bar,"snack_
+tél: +262 262 33 80 28","<Point>
+            <coordinates>55.222909,-21.07849444444445</coordinates>
+        </Point>","-21,0784944444","55,222909"
+SG_md,Boucan Beach - Rondavelle,snack_bar,"snack_
+gsm: +262 692 57 39 26","<Point>
+            <coordinates>55.22577222222224,-21.02961666666667</coordinates>
+        </Point>","-21,0296166667","55,2257722222"
+SG_md,beach burger,dining*snack_bar,"restaurant, snack_
+tél: +262 262 22 17 25","<Point>
+            <coordinates>55.2238,-21.05574722222222</coordinates>
+        </Point>","-21,0557472222","55,2238"
+SG_md,La Kaz Créole,bars*dining,"restaurant, bar_
+tél:  +262 262 39 25 04_
+gsm : +262 692 70 09 05","<Point>
+            <coordinates>55.223727,-21.05259722222222</coordinates>
+        </Point>","-21,0525972222","55,223727"
+SG_md,Café du Stade,snack_bar,"snack _
+tél: +262 262 55 30 07","<Point>
+            <coordinates>55.250748,-21.04161111111111</coordinates>
+        </Point>","-21,0416111111","55,250748"
+SG_md,La Confidence,rec_lodging*dining*coffee,"restaurant, self & cafét_
+tél:  +262 262 55 57 30","<Point>
+            <coordinates>55.268333,-21.04798611111111</coordinates>
+        </Point>","-21,0479861111","55,268333"
+SG_md,L' Imprévu,dining,"restaurant_
+tél: +262 262 55 36 34_
+GSM : +262 692 87 11 55","<Point>
+            <coordinates>55.26712553,-21.04920833333334</coordinates>
+        </Point>","-21,0492083333","55,26712553"
+SG_md,Bassin Bleu Country Club,golf*dining,"restaurant, golf, salles - salons de réception_
+tél:+262 262 70 03 30","<Point>
+            <coordinates>55.25457306000001,-21.05299166666667</coordinates>
+        </Point>","-21,0529916667","55,25457306"
+SG_md,le Zamalak,dining,"restaurant_
+tél: +262 262 71 08 34","<Point>
+            <coordinates>55.26777,-21.04944166666667</coordinates>
+        </Point>","-21,0494416667","55,26777"
+SG_md,Café du Stade,snack_bar," snack_
+tél: +262 262 55 30 07","<Point>
+            <coordinates>55.250748,-21.04161111111111</coordinates>
+        </Point>","-21,0416111111","55,250748"
+SG_md,La Distillerie,dining,"restaurant_
+tél: +262 262 96 86 29","<Point>
+            <coordinates>55.27394100000001,-21.07941388888889</coordinates>
+        </Point>","-21,0794138889","55,273941"
+SG_md,Chez Denis - Rondavelle,snack_bar,"snack_
+tél: +262 262 32 06 15_
+gsm: +262 692 64 89 78","<Point>
+            <coordinates>55.230915,-21.09017222222222</coordinates>
+        </Point>","-21,0901722222","55,230915"
+SG_md,L' Albatros,dining,"restaurant_
+tél:  +262 262 33 55 00","<Point>
+            <coordinates>55.266973,-21.08830833333333</coordinates>
+        </Point>","-21,0883083333","55,266973"
+SG_md,Case Planteur,dining,"restaurant_
+tél:  +262 262 33 53 20","<Point>
+            <coordinates>55.27235900000001,-21.08360277777778</coordinates>
+        </Point>","-21,0836027778","55,272359"
+SG_md,Choka Bleu,dining,"restaurant_
+tél: +262 262 33 98 33","<Point>
+            <coordinates>55.209902448809,-21.09983778961793</coordinates>
+        </Point>","-21,0998377896","55,2099024488"
+SG_md,Célimène,dining,"restaurant_
+tél: +262 262 33 69 56","<Point>
+            <coordinates>55.23006318509992,-21.11032822200943</coordinates>
+        </Point>","-21,110328222","55,2300631851"
+SG_md,Le Rapido,snack_bar,"snack_
+tél: +262 262 39 82 49","<Point>
+            <coordinates>55.24352200000001,-21.09992222222222</coordinates>
+        </Point>","-21,0999222222","55,243522"
+SG_md,Le Bar,rec_lodging*bars*dining,"hotel, bar, restaurant_
+label: qualité tourisme_
+tél: +262 262 70 00 00","<Point>
+            <coordinates>55.22272134,-21.06701388888889</coordinates>
+        </Point>","-21,0670138889","55,22272134"
+SG_md,Orangine,rec_lodging*dining,"hotel, restaurant_
+label: qualité tourisme_
+tél: +262 262 70 00 00","<Point>
+            <coordinates>55.22272134,-21.06701388888889</coordinates>
+        </Point>","-21,0670138889","55,22272134"
+SG_md,La Cuisine,rec_lodging*dining," hotel, restaurant_
+label: qualité tourisme_
+tél: +262 262 70 00 00","<Point>
+            <coordinates>55.22272134,-21.06701388888889</coordinates>
+        </Point>","-21,0670138889","55,22272134"
+SG_md,La Bonne Marmite,dining,"restaurant_
+tél: +262 262 39 82 49","<Point>
+            <coordinates>55.24349444444444,-21.09989166666666</coordinates>
+        </Point>","-21,0998916667","55,2434944444"
+SG_md,La Plage,rec_lodging*dining,"restaurant, hotel_
+label: clé verte_
+tél: +262 262 70 00 07","<Point>
+            <coordinates>55.22272222222222,-21.06701388888889</coordinates>
+        </Point>","-21,0670138889","55,2227222222"
+SG_md,La Kaz à Crêpes,snack_bar,"snack_
+tél: +262 262 55 53 26","<Point>
+            <coordinates>55.236725,-21.09423333333333</coordinates>
+        </Point>","-21,0942333333","55,236725"
+SG_md,Le Copacabana,bars*dining,"restaurant, bar_
+tél:+262 262 24 16 31","<Point>
+            <coordinates>55.23325976,-21.09294722222222</coordinates>
+        </Point>","-21,0929472222","55,23325976"
+SG_md,Lo Zargonot,dining,"restaurant_
+tél: +262 262 57 44 56","<Point>
+            <coordinates>55.24013934,-21.09393055555556</coordinates>
+        </Point>","-21,0939305556","55,24013934"
+SG_md,La Petite Vague,dining,"restaurant_
+tél: +262 262 59 79 73_
+gsm: +262 692 08 16 76","<Point>
+            <coordinates>55.242237,-21.09972222222222</coordinates>
+        </Point>","-21,0997222222","55,242237"
+SG_md,La Petite Niçoise,dining,"restaurant_
+tél: +262 262 33 60 75","<Point>
+            <coordinates>55.243949,-21.10043611111111</coordinates>
+        </Point>","-21,1004361111","55,243949"
+SG_md,Les Cocotiers,dining,"restaurant_
+tél: +262 262 24 61 29","<Point>
+            <coordinates>55.23648899999999,-21.093525</coordinates>
+        </Point>","-21,093525","55,236489"
+SG_md,Palais de l'Orient,dining,"restaurant_
+tél: +262 262 24 68 90","<Point>
+            <coordinates>55.243535,-21.10002777777778</coordinates>
+        </Point>","-21,1000277778","55,243535"
+SG_md,Le Cercle,dining,"restaurant_
+tél: +262 262 49 46 51_
+gsm: +262 692 67 38 90","<Point>
+            <coordinates>55.239839,-21.09440277777778</coordinates>
+        </Point>","-21,0944027778","55,239839"
+SG_md,Restaurant Fuzion,dining,"restaurant_
+tél: +262 262 88 55 58_
+gsm: +262 692 95 97 98","<Point>
+            <coordinates>55.24352999999999,-21.09994166666667</coordinates>
+        </Point>","-21,0999416667","55,24353"
+SG_md,Hôtel Blue Beach ***,rec_lodging*hdcp,"hotel_
+label: qualité tourisme_
+tél: +262 262 24 50 25_
+acces hdcp","<Point>
+            <coordinates>55.2231801,-21.07618611111111</coordinates>
+        </Point>","-21,0761861111","55,2231801"
+SG_md,Le Boucan Canot ****,rec_lodging*hdcp,"hotel_
+label: qualité tourisme, gayfriendly_
+tél: +262 262 33 44 44_
+acces hdcp","<Point>
+            <coordinates>55.22718333333335,-21.02734568</coordinates>
+        </Point>","-21,02734568","55,2271833333"
+SG_md,Alamanda Hnulltel **,rec_lodging*hdcp,"hotel_
+label: qualité tourime, gayfriendly_
+tél: +262 262 33 10 10_
+acces","<Point>
+            <coordinates>55.22318726,-21.07153611111111</coordinates>
+        </Point>","-21,0715361111","55,22318726"
+SG_md,Lux Ile de La Réunion *****,rec_lodging*hdcp,"hotel_
+label: qualité tourisme_
+tél:  +262 262 70 00 00_
+acces hdcp","<Point>
+            <coordinates>55.22995141,-21.08786388888889</coordinates>
+        </Point>","-21,0878638889","55,22995141"
+SG_md,Le Kerveguen **,rec_lodging,"hotel_
+tél: +262 262 33 00 50","<Point>
+            <coordinates>55.22987544,-21.06095555555556</coordinates>
+        </Point>","-21,0609555556","55,22987544"
+SG_md,Hôtel Le Récif ***,rec_lodging*hdcp,"hotel_
+label: qualité tourisme_
+tél: +262 262 70 01 00_
+acces hdcp","<Point>
+            <coordinates>55.22272134,-21.06701388888889</coordinates>
+        </Point>","-21,0670138889","55,22272134"
+SG_md,Roche Tamarin Lodges & Spa ****,rec_lodging*hdcp,"hotel_
+label: qualité tourisme, gayfriendly_
+tél: +262 262 44 66 88_
+gsm: 0692 44 54 86_
+acces hdcp","<Point>
+            <coordinates>55.34102251,-20.94998055555556</coordinates>
+        </Point>","-20,9499805556","55,34102251"
+SG_md,Hôtel Blue Beach ***,rec_lodging*hdcp,"hotel_
+label: qualité tourisme_
+tél: +262 262 24 50 25_
+acces hdcp","<Point>
+            <coordinates>55.2231801,-21.07618611111111</coordinates>
+        </Point>","-21,0761861111","55,2231801"
+SG_md,Les Bougainvilliers **,rec_lodging*hdcp,"hotel_
+label: qualité tourisme_
+tél:  +262 262 33 82 48_
+acces hdcp","<Point>
+            <coordinates>55.2293988,-21.08170833333333</coordinates>
+        </Point>","-21,0817083333","55,2293988"
+SG_md,Le Novotel Saint-Gilles ***,rec_lodging*hdcp,"hotel_
+label: qualité tourisme_
+tél: +262 262 24 44 44_
+acces hdcp","<Point>
+            <coordinates>55.22286763,-21.077375</coordinates>
+        </Point>","-21,077375","55,22286763"
+SG_md,Hôtel Résidence Les Créoles ***,rec_lodging*hdcp,"hotel_
+tél: +262 262 26 52 65_
+acces hdcp","<Point>
+            <coordinates>55.22319900000001,-21.06655277777778</coordinates>
+        </Point>","-21,0665527778","55,223199"
+SG_md,Les Palmes **,rec_lodging*hdcp,"hotel_
+tél: +262 262 24 47 12_
+acces hdcp","<Point>
+            <coordinates>55.22356854,-21.05968888888889</coordinates>
+        </Point>","-21,0596888889","55,22356854"
+SG_md,Le Nautile ***,rec_lodging*dining*hdcp,"hotel_
+label: gayfriendly_
+tél: +262 262 33 88 88_
+acces hdcp","<Point>
+            <coordinates>55.23227699,-21.09059722222222</coordinates>
+        </Point>","-21,0905972222","55,23227699"
+SG_md,Le Grand Bleu,rec_lodging,"hotel_
+tél: +262 262 24 86 62","<Point>
+            <coordinates>55.22487793,-21.05313611111111</coordinates>
+        </Point>","-21,0531361111","55,22487793"
+SG_md,La Villa du Soleil **,rec_lodging,"hotel_
+tél: +262 262 24 38 69","<Point>
+            <coordinates>55.22449247,-21.031275</coordinates>
+        </Point>","-21,031275","55,22449247"
+SG_md,Hôtel de la Plage,rec_lodging,"hotel_
+tél: +262 262 24 06 37_
+gsm: +262 692 80 07 57","<Point>
+            <coordinates>55.22537717,-21.05160555555556</coordinates>
+        </Point>","-21,0516055556","55,22537717"
+SG_md,Le Vacoa,rec_lodging,"hotel_
+tél: +262 262 24 12 48","<Point>
+            <coordinates>55.23354904,-21.08883333333333</coordinates>
+        </Point>","-21,0888333333","55,23354904"
+SG_md,Ylang Ylang Hôtel ***,rec_lodging,"hotel_
+tél: +262 262 33 18 66_
+gsm: +262 692 08 18 42","<Point>
+            <coordinates>55.2211735,-21.04422777777778</coordinates>
+        </Point>","-21,0442277778","55,2211735"
+SG_md,Marina **,rec_lodging*hdcp,"hotel_
+tél: +262 262 33 07 07_
+acces hdcp","<Point>
+            <coordinates>55.22848158,-21.02830833333333</coordinates>
+        </Point>","-21,0283083333","55,22848158"
+SG_md,Les Filaos,rec_lodging*dining*hdcp," hotel, restaurant_
+label: gayfriendly_
+tél: +262 262 24 50 09 _
+acces hdcp
+","<Point>
+            <coordinates>55.22331295,-21.074725</coordinates>
+        </Point>","-21,074725","55,22331295"
+SG_md,Le Domaine des Mascareignes,rec_lodging,"hotel_
+tél: +262 262 49 49 90","<Point>
+            <coordinates>55.22648753,-21.03096944444445</coordinates>
+        </Point>","-21,0309694444","55,22648753"
+SG_md,Le Swalibo ***,rec_lodging*hdcp,"hotel_
+tél: +262 262 24 10 97_
+acces hdcp","<Point>
+            <coordinates>55.23695398000001,-21.09389722222222</coordinates>
+        </Point>","-21,0938972222","55,23695398"
+SG_md,La Maison du Lagon,rec_lodging,"hotel_
+tél: +262 262 24 30 14","<Point>
+            <coordinates>55.23231431,-21.09151111111111</coordinates>
+        </Point>","-21,0915111111","55,23231431"
+SG_md,Tropic Appart' Hôtel ***,rec_lodging*terain," residence de tourisme_
+tél: +262 262 22 53 53_
+acces hdcp","<Point>
+            <coordinates>55.22257888000001,-21.07495277777778</coordinates>
+        </Point>","-21,0749527778","55,22257888"
+SG_md,L' Archipel ***,rec_lodging*terain," résidence de tourisme_
+label: qualité tourisme_
+tél: +262 262 24 05 34_
+acces hdcp","<Point>
+            <coordinates>55.21954705,-21.04021944444445</coordinates>
+        </Point>","-21,0402194444","55,21954705"
+SG_md,Mister Croq,bread*snack_bar,"boulangerie, sandwicherie_
+tél: +262 262 34 71 58","<Point>
+            <coordinates>55.227541,-21.05176944444445</coordinates>
+        </Point>","-21,0517694444","55,227541"
+SG_md,La Case à Pains,bread*snack_bar,"boulangerie, sandwicherie_
+tél: +262 262 96 33 01","<Point>
+            <coordinates>55.22437099999999,-21.0535</coordinates>
+        </Point>","-21,0535","55,224371"
+SG_md,Roz'Ali,realestate,"chambre d'hote_
+label: accueil paysan_
+gsm: +262 692 78 42 82","<Point>
+            <coordinates>55.298823,-21.07563055555556</coordinates>
+        </Point>","-21,0756305556","55,298823"
+SG_md,Cadet des Iles,realestate,"chambre d'hote_
+tél: +262 262 24 63 73","<Point>
+            <coordinates>55.241095,-21.09818333333333</coordinates>
+        </Point>","-21,0981833333","55,241095"
+SG_md,L' Archipel ***,rec_lodging*hdcp,"residence de tourisme_
+label: qualité tourisme_
+tél: +262 262 24 05 34_
+acces hdcp","<Point>
+            <coordinates>55.21954705,-21.04021944444445</coordinates>
+        </Point>","-21,0402194444","55,21954705"
+SG_md,Bois d'Eden,realestate,"chambre d'hote_
+tél: +262 262 43 18 05_
+gsm: 0693 92 76 96","<Point>
+            <coordinates>55.226477,-21.07615277777778</coordinates>
+        </Point>","-21,0761527778","55,226477"

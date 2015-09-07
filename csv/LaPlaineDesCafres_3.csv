@@ -1,0 +1,165 @@
+id,nom,categ,description,geometry,lat,lng
+PC_v,nez du boeuf,mountains,mont,"<Point>
+            <coordinates>55.62092450763694,-21.20548517633063</coordinates>
+        </Point>","-21,2054851763","55,6209245076"
+PC_v,le coin tranquille,capital_big,quartier,"<Point>
+            <coordinates>55.55928234020934,-21.23436376721277</coordinates>
+        </Point>","-21,2343637672","55,5592823402"
+PC_v,vue piton de bert,webcam," <iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wvolcan_bo.php?n=55"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.69540933947744,-21.27527155133321</coordinates>
+        </Point>","-21,2752715513","55,6954093395"
+PC_v,vue piton partage,webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wvolcan_pa.php?n=53"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.71946179104678,-21.20702305436389</coordinates>
+        </Point>","-21,2070230544","55,719461791"
+PC_v,Grand piton,mountains,mont,"<Point>
+            <coordinates>55.50035603825654,-21.15934237696679</coordinates>
+        </Point>","-21,159342377","55,5003560383"
+PC_v,sommet de l'entre-deux,mountains,mont,"<Point>
+            <coordinates>55.50708756491377,-21.14027087812984</coordinates>
+        </Point>","-21,1402708781","55,5070875649"
+PC_v,piton de la source,mountains,mont,"<Point>
+            <coordinates>55.59108335091779,-21.17306700398094</coordinates>
+        </Point>","-21,173067004","55,5910833509"
+PC_v,col de bellevue,mountains,pointInteret,"<Point>
+            <coordinates>55.58675933075114,-21.16692088340139</coordinates>
+        </Point>","-21,1669208834","55,5867593308"
+PC_v,piton des moutsabismen,mountains,mont,"<Point>
+            <coordinates>55.66018534921123,-21.1753506352026</coordinates>
+        </Point>","-21,1753506352","55,6601853492"
+PC_v,Piton de l'Eau,mountains,"mont 
+Le Piton de l'Eau est partagé entre la commune de La Plaine des Palmistes
+ auquel il appartient, et les éleveurs de La Plaine des Cafres.
+ Le Piton de l'eau représente l'unique lac volcanique de La Réunion,
+ il témoigne de l'ancienne activité éruptive.","<Point>
+            <coordinates>55.68527934438642,-21.17534311475306</coordinates>
+        </Point>","-21,1753431148","55,6852793444"
+PC_v,plateau de la rivière de l'est,terain,plateau,"<Point>
+            <coordinates>55.73619809492947,-21.1853489514329</coordinates>
+        </Point>","-21,1853489514","55,7361980949"
+PC_v,piton des calumets,mountains,mont,"<Point>
+            <coordinates>55.73400101000406,-21.19361421312197</coordinates>
+        </Point>","-21,1936142131","55,73400101"
+PC_v,sommet de l'entre-deux,mountains,mont,"<Point>
+            <coordinates>55.50708756491377,-21.14027087812984</coordinates>
+        </Point>","-21,1402708781","55,5070875649"
+PC_v,plaine des remparts,capital_big,pointInteret,"<Point>
+            <coordinates>55.64784499888609,-21.20881870180472</coordinates>
+        </Point>","-21,2088187018","55,6478449989"
+PC_v,plaine des sables,terain,"Paysage martien, 
+c'est un long plateau parsemé d'un sable volcanique","<Point>
+            <coordinates>55.67084181341464,-21.22012340494063</coordinates>
+        </Point>","-21,2201234049","55,6708418134"
+PC_v,piton chisny,mountains,mont,"<Point>
+            <coordinates>55.66709671980926,-21.23772176068076</coordinates>
+        </Point>","-21,2377217607","55,6670967198"
+PC_v,puys du pas des sables,capital_big,pointInteret,"<Point>
+            <coordinates>55.64698389030063,-21.22670683722945</coordinates>
+        </Point>","-21,2267068372","55,6469838903"
+PC_v,rampe quatorze,capital_big,pointInteret,"<Point>
+            <coordinates>55.67141857619823,-21.21249560071762</coordinates>
+        </Point>","-21,2124956007","55,6714185762"
+PC_v,pas de bellecombe,mountains,mont,"<Point>
+            <coordinates>55.68733726567972,-21.22309622165187</coordinates>
+        </Point>","-21,2230962217","55,6873372657"
+PC_v,piton de partage,mountains,mont,"<Point>
+            <coordinates>55.70218942088888,-21.21919662508246</coordinates>
+        </Point>","-21,2191966251","55,7021894209"
+PC_v,fond de la rivière de l'Est,water,pointInteret,"<Point>
+            <coordinates>55.68748633523721,-21.19566740988766</coordinates>
+        </Point>","-21,1956674099","55,6874863352"
+PC_v,piton textor,mountains,mont,"<Point>
+            <coordinates>55.63642827199938,-21.1895027628858</coordinates>
+        </Point>","-21,1895027629","55,636428272"
+PC_v,piton mahot,mountains,mont,"<Point>
+            <coordinates>55.58801185182396,-21.22857742052363</coordinates>
+        </Point>","-21,2285774205","55,5880118518"
+PC_v,piton sahales,mountains,mont,"<Point>
+            <coordinates>55.55996706995693,-21.19815756945654</coordinates>
+        </Point>","-21,1981575695","55,55996707"
+PC_v,la petite ferme,capital_big,quartier,"<Point>
+            <coordinates>55.57373830943313,-21.23114630966845</coordinates>
+        </Point>","-21,2311463097","55,5737383094"
+PC_v,la grande ferme,capital_big,quartier,"<Point>
+            <coordinates>55.59277595314467,-21.21246414447194</coordinates>
+        </Point>","-21,2124641445","55,5927759531"
+PC_v,piton manuel,mountains,mont,"<Point>
+            <coordinates>55.57559975876966,-21.21533037596442</coordinates>
+        </Point>","-21,215330376","55,5755997588"
+PC_v,piton de la ravinne blanche,mountains,mont,"<Point>
+            <coordinates>55.56092792268145,-21.23040018137865</coordinates>
+        </Point>","-21,2304001814","55,5609279227"
+PC_v,le 23ème,capital_big,quartier,"<Point>
+            <coordinates>55.55554051731118,-21.22397859631811</coordinates>
+        </Point>","-21,2239785963","55,5555405173"
+PC_v,ferme de la sica-lait,capital_big,quartier,"<Point>
+            <coordinates>55.56531062352505,-21.20888280728551</coordinates>
+        </Point>","-21,2088828073","55,5653106235"
+PC_v,bourg murat,capital_big,quartier,"<Point>
+            <coordinates>55.57855598211464,-21.2016321832578</coordinates>
+        </Point>","-21,2016321833","55,5785559821"
+PC_v,piton durgain,mountains,mont,"<Point>
+            <coordinates>55.58772831599361,-21.20319161132076</coordinates>
+        </Point>","-21,2031916113","55,587728316"
+PC_v,chalets des pêtres,capital_big,quartier,"<Point>
+            <coordinates>55.59208906888775,-21.18760635027904</coordinates>
+        </Point>","-21,1876063503","55,5920890689"
+PC_v,piton des forges,mountains,mont,"<Point>
+            <coordinates>55.57472132570194,-21.19599100193919</coordinates>
+        </Point>","-21,1959910019","55,5747213257"
+PC_v,piton des villers,mountains,mont,"<Point>
+            <coordinates>55.57348216600662,-21.19052205529293</coordinates>
+        </Point>","-21,1905220553","55,573482166"
+PC_v,coteau des brèdes,capital_big,quartier,"<Point>
+            <coordinates>55.5586875501013,-21.1856122646662</coordinates>
+        </Point>","-21,1856122647","55,5586875501"
+PC_v,piton de misère,mountains,mont,"<Point>
+            <coordinates>55.61346655159354,-21.18923339175417</coordinates>
+        </Point>","-21,1892333918","55,6134665516"
+PC_v,piton argamasse,mountains,mont,"<Point>
+            <coordinates>55.6279186159936,-21.18478046328869</coordinates>
+        </Point>","-21,1847804633","55,627918616"
+PC_v,piton des herbes blanches,mountains,mont,"<Point>
+            <coordinates>55.62101802300457,-21.18785802013879</coordinates>
+        </Point>","-21,1878580201","55,621018023"
+PC_v,piton rouge,mountains,mont,"<Point>
+            <coordinates>55.60139384486336,-21.18852918814531</coordinates>
+        </Point>","-21,1885291881","55,6013938449"
+PC_v,piton tortue,mountains,mont,"<Point>
+            <coordinates>55.55016265349167,-21.14856152382153</coordinates>
+        </Point>","-21,1485615238","55,5501626535"
+PC_v,piton bleu,mountains,mont,"<Point>
+            <coordinates>55.54998151794556,-21.1622219309217</coordinates>
+        </Point>","-21,1622219309","55,5499815179"
+PC_v,îlet camille,capital_big,quartier,"<Point>
+            <coordinates>55.53541259831409,-21.17907983633327</coordinates>
+        </Point>","-21,1790798363","55,5354125983"
+PC_v,grand bassin,capital_big,quartier,"<Point>
+            <coordinates>55.5327108723489,-21.18320131498939</coordinates>
+        </Point>","-21,183201315","55,5327108723"
+PC_v,bois court,capital_big,quartier,"<Point>
+            <coordinates>55.53413138637914,-21.19584677327875</coordinates>
+        </Point>","-21,1958467733","55,5341313864"
+PC_v,le tunnel,capital_big,quartier,"<Point>
+            <coordinates>55.52399951876441,-21.20840430183018</coordinates>
+        </Point>","-21,2084043018","55,5239995188"
+PC_v,coteau de cendre,mountains,mont,"<Point>
+            <coordinates>55.53094737232922,-21.17783554816095</coordinates>
+        </Point>","-21,1778355482","55,5309473723"
+PC_v,îlet malabars,capital_big,pointInteret,"<Point>
+            <coordinates>55.51005993495432,-21.15995606644444</coordinates>
+        </Point>","-21,1599560664","55,510059935"
+PC_v,rond des chevrons,capital_big,pointInteret,"<Point>
+            <coordinates>55.51690449005794,-21.14837976649112</coordinates>
+        </Point>","-21,1483797665","55,5169044901"
+PC_v,remparts des basaltes,capital_big,pointnteret,"<Point>
+            <coordinates>55.65596707991367,-21.21057142269322</coordinates>
+        </Point>","-21,2105714227","55,6559670799"
+PC_v,îlet cicielle,capital_big,lieuDit,"<Point>
+            <coordinates>55.52718391563474,-21.18697988259417</coordinates>
+        </Point>","-21,1869798826","55,5271839156"
+PC_v,le détour,capital_big,lieuDit,"<Point>
+            <coordinates>55.52602019265768,-21.18976552828826</coordinates>
+        </Point>","-21,1897655283","55,5260201927"
+PC_v,îlet boulon,capital_big,lieuDit,"<Point>
+            <coordinates>55.52266029569741,-21.19582665854278</coordinates>
+        </Point>","-21,1958266585","55,5226602957"

@@ -1,0 +1,7 @@
+id,nom,categ,description,geometry,lat,lng
+San_t,Tennis-club de Sainte-Anne,donut,tennis club,"<Point>
+            <coordinates>55.74297210499737,-21.08518920101144</coordinates>
+        </Point>","-21,085189201","55,742972105"
+San_t,stade de saint-anne,play, stade de foot,"<Point>
+            <coordinates>55.74336833320715,-21.08627517892175</coordinates>
+        </Point>","-21,0862751789","55,7433683332"

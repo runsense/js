@@ -1,0 +1,310 @@
+id,nom,categ,description,geometry,lat,lng
+SPI_v,DRR pierrefond,webcam,"webCam <a href=""http://m-r.li/webcam/camera/Wdde.php?n=2080"" >http://m-r.li/webcam/camera/Wdde.php?n=2080</a>","<Point>
+            <coordinates>55.42927504152793,-21.30523425544279</coordinates>
+        </Point>","-21,3052342554","55,4292750415"
+SPI_v,echangeur,webcam,"webCam <a href=""http://m-r.li/webcam/camera/Wdde.php?n=2078"" >http://m-r.li/webcam/camera/Wdde.php?n=2078</a>","<Point>
+            <coordinates>55.48793917574111,-21.32227220341581</coordinates>
+        </Point>","-21,3222722034","55,4879391757"
+SPI_v,mon caprice,webcam,"webCam <a href=""http://m-r.li/webcam/camera/Wdde.php?n=2069"" >http://m-r.li/webcam/camera/Wdde.php?n=2069</a>","<Point>
+            <coordinates>55.49115455999187,-21.31707765068939</coordinates>
+        </Point>","-21,3170776507","55,49115456"
+SPI_v,azalee,webcam,"webCam <a href=""http://m-r.li/webcam/camera/Wdde.php?n=2081"" >http://m-r.li/webcam/camera/Wdde.php?n=2081</a>","<Point>
+            <coordinates>55.49943050913598,-21.30468688132381</coordinates>
+        </Point>","-21,3046868813","55,4994305091"
+SPI_v,vers cilaos,webcam,"webCam <a href=""http://m-r.li/webcam/camera/Wrdcjlib_1.php?n=39"" >http://m-r.li/webcam/camera/Wrdcjlib_1.php?n=39</a>","<Point>
+            <coordinates>55.47372995802435,-21.27756964441438</coordinates>
+        </Point>","-21,2775696444","55,473729958"
+SPI_v,vers la mer,webcam,"webCam <a href="" http://m-r.li/webcam/camera/Wrdcjlib_2.php?n=40"" > http://m-r.li/webcam/camera/Wrdcjlib_2.php?n=40</a>","<Point>
+            <coordinates>55.47270140604257,-21.27762611005377</coordinates>
+        </Point>","-21,2776261101","55,472701406"
+SPI_v,Ancien tribunal de Saint-Pierre,cbh,"L'ancien tribunal de première instance de Saint-Pierre
+ est inscrit en totalité au titre des monuments historiques le 12 janvier 2006.
+ Suite au décret impérial du 6 janvier 1857, qui transfère de Saint-Paul à Saint-Pierre le tribunal.","<Point><coordinates>55.474944,-21.33875</coordinates></Point>","-21,33875","55,474944"
+SPI_v,Ancienne gendarmerie,cbh,Il est inscrit à l'inventaire des Monuments historiques depuis le 12 janvier 2006,"<Point>
+            <coordinates>55.4773888888889,-21.342833</coordinates>
+        </Point>","-21,342833","55,4773888889"
+SPI_v,Cheminée La Vallée,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 11 juillet 2002,
+avec son terrain","<Point>
+            <coordinates>55.45561111111111,-21.30544444444444</coordinates>
+        </Point>","-21,3054444444","55,4556111111"
+SPI_v,Usine de Grands Bois,cbh,"Aujourd'hui restauré, 
+elle fut un grand centre de traitement de la canne","<Point>
+            <coordinates>55.526389,-21.35972222222222</coordinates>
+        </Point>","-21,3597222222","55,526389"
+SPI_v,Cure de l'église de Saint-Pierre,church,Inscrite en totalité au titre des monuments historiques le 22 octobre 1998,"<Point>
+            <coordinates>55.48009814889261,-21.33704797979558</coordinates>
+        </Point>","-21,3370479798","55,4800981489"
+SPI_v,Domaine du café grillé,terain*dollar,"Jardin ethnobotanique,
+parc de 4 hectares parcourus de plus de 
+800 espèces
+tél: 0262 24 15 40","<Point>
+            <coordinates>55.41980736474869,-21.30977589266295</coordinates>
+        </Point>","-21,3097758927","55,4198073647"
+SPI_v,église Saint-Paul à Saint-Pierre,church,"L'église paroissiale de Saint-Pierre, l'église Saint-Paul est inscrite aux monuments historiques le 22 octobre 1998","<Point>
+            <coordinates>55.480194,-21.33808333333333</coordinates>
+        </Point>","-21,3380833333","55,480194"
+SPI_v,Entrepot Kerveguen,cbh,"Entrepôt Kerveguen, magasin Kerveguen ou maison Roussin,
+il fut un entrepot de la compagnie des Indes.
+inscrit au monument historique","<Point>
+            <coordinates>55.478889,-21.34222222222222</coordinates>
+        </Point>","-21,3422222222","55,478889"
+SPI_v,La Saga du Rhum,arts,"Musée de l'île de la Réunion
+label: qualité tourisme
+tél: +262 262 35 81 90","<Point>
+            <coordinates>55.46569444444445,-21.31222222222222</coordinates>
+        </Point>","-21,3122222222","55,4656944444"
+SPI_v,Lavoir de Casabona et citerne,cbh,"Le Lavoir dit Casabona. Ruelle du Lavoir null Saint-Pierre.
+ est inscrit aux monuments historiques le 12 janvier 2006, en totalité,
+ y compris le terrain d’assiette et la prise d’eau du canal Saint-Étienne","<Point>
+            <coordinates>55.47124184604259,-21.3355570705579</coordinates>
+        </Point>","-21,3355570706","55,471241846"
+SPI_v,hôtel de ville de Saint-Pierre,road_shield1,"La mairie ou hôtel de ville de Saint-Pierre.
+ Place de l’Hôtel de Ville, rue Méziaires Guignard. 
+Bâtisse ou « Magasin » de la Compagnie Française des Indes Orientales, 
+sa construction fut décidée par délibération du Conseil supérieur de l’île Bourbon.","<Point>
+            <coordinates>55.477806,-21.34180555555556</coordinates>
+        </Point>","-21,3418055556","55,477806"
+SPI_v,Maison Adam de Villiers à Saint-Pierre,cbh,"Maison Adam de Villiers inscrite en totalité au titre des monuments historiques
+ le 6 juin 1988 y compris ses intérieurs et ses appentis
+elle est la plus ancienne de la ville","<Point>
+            <coordinates>55.47727800000001,-21.338583</coordinates>
+        </Point>","-21,338583","55,477278"
+SPI_v,Maison Canonville,cbh,"La maison Canonville null Saint-Pierre est inscrite au titre des monuments historiques
+ le 08 novembre 1999","<Point>
+            <coordinates>55.478806,-21.34033333333333</coordinates>
+        </Point>","-21,3403333333","55,478806"
+SPI_v,Maison Lévesque,cbh,La maison Lévesque inscrite en totalité au titre des monuments historiques le 14 août 2000,"<Point><coordinates>55.478639,-21.338556</coordinates></Point>","-21,338556","55,478639"
+SPI_v,Maison Loupy,cbh,"Maison Loupy, ou Frappier de Montbenoît,
+inscrite en totalité  aux monuments historiques le 22 octobre 1998, restaurée en 2005 - 2006","<Point>
+            <coordinates>55.478806,-21.33808333333333</coordinates>
+        </Point>","-21,3380833333","55,478806"
+SPI_v,Maison Vallée,cbh,"La Maison Vallée est inscrite en totalité le 2 octobre 1989 au titre des monuments historiques.
+Date de construction : vers 1850 - 1860.","<Point>
+            <coordinates>55.45635000009474,-21.31021599993046</coordinates>
+        </Point>","-21,3102159999","55,4563500001"
+SPI_v,Maison Vasseur,cbh,"Maison Vasseur.
+Résidence du Sous-préfet de Saint-Pierre
+La maison Vasseur inscrite en totalité au titre des monuments historiques le 22 novembre 1989","<Point>
+            <coordinates>55.4785,-21.33930555555556</coordinates>
+        </Point>","-21,3393055556","55,4785"
+SPI_v,Marché couvert,grocery,"Le marché couvert, ouvert de 7h à 18 h.
+Le marché forain tous les samedis matin de 5h à 12h30, sur le front de mer côté Ravine Blanche
+inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 22 octobre 1998","<Point>
+            <coordinates>55.47365626360944,-21.34084887255052</coordinates>
+        </Point>","-21,3408488726","55,4736562636"
+SPI_v,Médiathèque Raphaêl Barquissau,cbh*arts,"Créer en 1825 pour servir d’entrepôt à la Compagnie de indes,
+la batisse servit d'école puis de bâtiment gouvernementaux par la suite
+juqu'à devenir une Médiatèque
+en 1988","<Point>
+            <coordinates>55.47465199985778,-21.34068834136482</coordinates>
+        </Point>","-21,3406883414","55,4746519999"
+SPI_v,Mosquée Attyaboul Massadjid,islam,"de 1905 à 1913, l'ancienne mosqué fut construite,
+entre 1972 et 1975 la nouvelle fut construite","<Point>
+            <coordinates>55.47506094980418,-21.33980364510411</coordinates>
+        </Point>","-21,3398036451","55,4750609498"
+SPI_v,Parc Exotica,hiker*swimming,"Parc de découverte botanique
+et de jeu aquatique pour enfant","<Point>
+            <coordinates>55.43308373606986,-21.3015397389752</coordinates>
+        </Point>","-21,301539739","55,4330837361"
+SPI_v,Rue des bons enfants,cbh,Artère principale de la ville,"<LineString>
+            <tessellate>1</tessellate>
+            <coordinates>55.47867103459907,-21.34118696846225 55.47761822593859,-21.34089695376669 55.47649564345742,-21.34054668588754 55.47541959166865,-21.34023771168897 55.4742788831996,-21.33989121692633</coordinates>
+        </LineString>","-32,0104847012","83,2136144005"
+SPI_v,Temple Narassingua Perournal,tamoul,"Inauguré officiellement du 16 mai jusqu’au 24 mai 2010 par des swamis venus
+d’Inde, ce temple illustre parfaitement la culture indienne de l'île","<Point>
+            <coordinates>55.4581407756117,-21.33593435408492</coordinates>
+        </Point>","-21,3359343541","55,4581407756"
+SPI_v,Sucrerie de Pierrefonds,cbh,La Sucrerie de Pierrefonds est inscrite au titre des monuments historiques le 22 octobre 1998,"<Point>
+            <coordinates>55.42713409611758,-21.30077731497745</coordinates>
+        </Point>","-21,300777315","55,4271340961"
+SPI_v,Tombe sitarane,church,"De son vrai nom Simicoundza Simicourba,
+venant du mozambique il fut le bas droit de Saint-Ange (Fontaine) le Vrai instigateur lors
+ d'une série de meutre et bracage comis à la réunion 
+dans les années 1900.
+Alliant culture de magie noire Africaine
+et foi chétienne, ...","<Point>
+            <coordinates>55.56436699999999,-21.355857</coordinates>
+        </Point>","-21,355857","55,564367"
+SPI_v,Villa Motais de Narbonne,cbh,"La Villa Motais de Narbonne aujourd'hui sous préfecture de Saint-Pierre, est
+inscrite aux monuments historiques le 06 avril 1989","<Point>
+            <coordinates>55.478111,-21.33841666666667</coordinates>
+        </Point>","-21,3384166667","55,478111"
+SPI_v,Maison Motais de Narbonne,cbh,historique,"<Point>
+            <coordinates>55.48019400008473,-21.33808333178535</coordinates>
+        </Point>","-21,3380833318","55,4801940001"
+SPI_v,Piton mont vert,mountains,mont,"<Point>
+            <coordinates>55.54141554087368,-21.32803097829304</coordinates>
+        </Point>","-21,3280309783","55,5414155409"
+SPI_v,Cheminée Mon Repos 2,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 16 avril 2002,
+avec son terrain","<Point>
+            <coordinates>55.460389,-21.30822222222222</coordinates>
+        </Point>","-21,3082222222","55,460389"
+SPI_v,Cheminée Isautier,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 16 avril 2002,
+avec son terrain","<Point>
+            <coordinates>55.47330600000001,-21.34247222222222</coordinates>
+        </Point>","-21,3424722222","55,473306"
+SPI_v,Cheminée de Basse-Terre,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 10 juin 2002,
+avec son terrain","<Point><coordinates>55.476167,-21.3255</coordinates></Point>","-21,3255","55,476167"
+SPI_v,Cheminée de Ravine-des-Cabris,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 10 juin 2002,
+avec son terrain","<Point>
+            <coordinates>55.474139,-21.28316666666667</coordinates>
+        </Point>","-21,2831666667","55,474139"
+SPI_v,Cheminée La Vallée,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 11 juillet 2002,
+avec son terrain","<Point>
+            <coordinates>55.45561100000001,-21.30544444444444</coordinates>
+        </Point>","-21,3054444444","55,455611"
+SPI_v,Cheminées La Rivière-Saint-Étienne,cbh,"inscrites en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 11 juillet 2002,
+avec leur terrain","<Point><coordinates>55.450833,-21.2905</coordinates></Point>","-21,2905","55,450833"
+SPI_v,Cheminée Mahavel,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 8 juillet 2002,
+avec son terrain","<Point>
+            <coordinates>55.464,-21.28116666666667</coordinates>
+        </Point>","-21,2811666667","55,464"
+SPI_v,Propriété Mon Repos,cbh,inscrite en totalité au titre des Monuments historiques depuis le 9 janvier 2008,"<Point>
+            <coordinates>55.459917,-21.31219444444444</coordinates>
+        </Point>","-21,3121944444","55,459917"
+SPI_v,école Saint-Charles,cbh,"maison Choppy
+inscrite au titre des Monuments historiques depuis le 28 décembre 1984","<Point>
+            <coordinates>55.477444,-21.33822222222222</coordinates>
+        </Point>","-21,3382222222","55,477444"
+SPI_v,Domaine de la Vallée,cbh,"classé Monument historique, en totalité, depuis le 2 octobre 1989","<Point>
+            <coordinates>55.455,-21.30555555555556</coordinates>
+        </Point>","-21,3055555556","55,455"
+SPI_v,Maison Orré,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 22 octobre 1998,"<Point>
+            <coordinates>55.47724999999999,-21.33922222222222</coordinates>
+        </Point>","-21,3392222222","55,47725"
+SPI_v,Presbytère de l'église Saint-Pierre-Saint-Paul,église,inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 22 octobre 1998,"<Point>
+            <coordinates>55.48055999999999,-21.336972</coordinates>
+        </Point>","-21,336972","55,48056"
+SPI_v,Maison des directeurs de Grands Bois,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 22 octobre 1998,"<Point>
+            <coordinates>55.52722,-21.36041666666667</coordinates>
+        </Point>","-21,3604166667","55,52722"
+SPI_v,Bassin de radoub de Saint-Pierre,cbh*water,"inscrit à l'inventaire des Monuments historiques depuis le 12 janvier 2006, en totalité,
+bassins qui acceuil les navires pour entretien","<Point>
+            <coordinates>55.47443999999999,-21.34416944444444</coordinates>
+        </Point>","-21,3441694444","55,47444"
+SPI_v,Temple des Casernes,tamoul*cbh,"temple hindouiste
+inscrit en totalité au titre des Monuments historiques depuis le 17 septembre 2010","<Point>
+            <coordinates>55.482306,-21.33083333333333</coordinates>
+        </Point>","-21,3308333333","55,482306"
+SPI_v,Gare de Saint-Pierre,cbh,"ancienne gare ferroviaire
+ inscrite monument historique en 2012
+aujourd'hui, café de la gare","<Point><coordinates>55.474306,-21.34375</coordinates></Point>","-21,34375","55,474306"
+SPI_v,cap long,mountains*water,pointInteret,"<Point>
+            <coordinates>55.41202591119799,-21.31536311384533</coordinates>
+        </Point>","-21,3153631138","55,4120259112"
+SPI_v,pierrefonds,capital_big,quartier,"<Point>
+            <coordinates>55.42889317828637,-21.3033337901969</coordinates>
+        </Point>","-21,3033337902","55,4288931783"
+SPI_v,le syndicats,capital_big,quartier,"<Point>
+            <coordinates>55.43403107515412,-21.31431163359788</coordinates>
+        </Point>","-21,3143116336","55,4340310752"
+SPI_v,la balance,capital_big,quartier,"<Point>
+            <coordinates>55.43975602419091,-21.32676775261916</coordinates>
+        </Point>","-21,3267677526","55,4397560242"
+SPI_v,le petit paris,capital_big,quartier,"<Point>
+            <coordinates>55.45646990555888,-21.33380067298221</coordinates>
+        </Point>","-21,333800673","55,4564699056"
+SPI_v,la ravine blanche,capital_big,quartier,"<Point>
+            <coordinates>55.46354477487265,-21.33955151428637</coordinates>
+        </Point>","-21,3395515143","55,4635447749"
+SPI_v,casabona,capital_big,quartier,"<Point>
+            <coordinates>55.46544755389841,-21.33391693803181</coordinates>
+        </Point>","-21,333916938","55,4654475539"
+SPI_v,les casernes,capital_big,quartier,"<Point>
+            <coordinates>55.48279876488674,-21.32968244640804</coordinates>
+        </Point>","-21,3296824464","55,4827987649"
+SPI_v,basse terre les bas,capital_big,quartier,"<Point>
+            <coordinates>55.47740767042727,-21.32700537114355</coordinates>
+        </Point>","-21,3270053711","55,4774076704"
+SPI_v,basse terre les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.4810790975396,-21.32082520770649</coordinates>
+        </Point>","-21,3208252077","55,4810790975"
+SPI_v,terre sainte,capital_big,"quartier
+_
+Ancien village de pécheur","<Point>
+            <coordinates>55.48401979658117,-21.34502560027941</coordinates>
+        </Point>","-21,3450256003","55,4840197966"
+SPI_v,terre rouge,capital_big,quartier,"<Point>
+            <coordinates>55.50668888145474,-21.34358062728474</coordinates>
+        </Point>","-21,3435806273","55,5066888815"
+SPI_v,pointe du parc,mountains*water,pointInteret_,"<Point>
+            <coordinates>55.4845601339005,-21.35191056362983</coordinates>
+        </Point>","-21,3519105636","55,4845601339"
+SPI_v,l'asile,capital_big,quartier,"<Point>
+            <coordinates>55.4878581244965,-21.33419302489467</coordinates>
+        </Point>","-21,3341930249","55,4878581245"
+SPI_v,bassin plat,capital_big,quartier,"<Point>
+            <coordinates>55.49565312540743,-21.32606165682654</coordinates>
+        </Point>","-21,3260616568","55,4956531254"
+SPI_v,ravine des cafres les bas,capital_big,quartier,"<Point>
+            <coordinates>55.51009911646682,-21.34983556484916</coordinates>
+        </Point>","-21,3498355648","55,5100991165"
+SPI_v,ravine des cafres les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.51402909275516,-21.33950853785624</coordinates>
+        </Point>","-21,3395085379","55,5140290928"
+SPI_v,mont vert les bas,capital_big,quartier,"<Point>
+            <coordinates>55.5250427664519,-21.33260228085011</coordinates>
+        </Point>","-21,3326022809","55,5250427665"
+SPI_v,mont vert les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.54018677335549,-21.31832865533628</coordinates>
+        </Point>","-21,3183286553","55,5401867734"
+SPI_v,boissy,capital_big,quartier,"<Point>
+            <coordinates>55.53002781293714,-21.31800163122332</coordinates>
+        </Point>","-21,3180016312","55,5300278129"
+SPI_v,bérive les bas,capital_big,quartier,"<Point>
+            <coordinates>55.53546534752294,-21.31311420646149</coordinates>
+        </Point>","-21,3131142065","55,5354653475"
+SPI_v,bérive,capital_big,quartier,"<Point>
+            <coordinates>55.53825808793668,-21.30949235142346</coordinates>
+        </Point>","-21,3094923514","55,5382580879"
+SPI_v,les chênes,capital_big,quartier,"<Point>
+            <coordinates>55.55434333162373,-21.31722110741274</coordinates>
+        </Point>","-21,3172211074","55,5543433316"
+SPI_v,les hauts de mont vert,capital_big,quartier,"<Point>
+            <coordinates>55.56768349039984,-21.30759668048179</coordinates>
+        </Point>","-21,3075966805","55,5676834904"
+SPI_v,la ligne des bambous,capital_big,quartier,"<Point>
+            <coordinates>55.49338902362325,-21.30182802901866</coordinates>
+        </Point>","-21,301828029","55,4933890236"
+SPI_v,le chemin stéphane,capital_big,quartier,"<Point>
+            <coordinates>55.47923317984661,-21.28263133377515</coordinates>
+        </Point>","-21,2826313338","55,4792331798"
+SPI_v,mahavel,capital_big,quartier,"<Point>
+            <coordinates>55.46911666660082,-21.27637469344142</coordinates>
+        </Point>","-21,2763746934","55,4691166666"
+SPI_v,le chemin recherchant,capital_big,quartier,"<Point>
+            <coordinates>55.48575823815051,-21.29287815403533</coordinates>
+        </Point>","-21,292878154","55,4857582382"
+SPI_v,la ravine des cabris,capital_big,quartier,"<Point>
+            <coordinates>55.47123245200056,-21.28751867197424</coordinates>
+        </Point>","-21,287518672","55,471232452"
+SPI_v,sainte-cécile,capital_big,quartier,"<Point>
+            <coordinates>55.46475101959923,-21.2837097622132</coordinates>
+        </Point>","-21,2837097622","55,4647510196"
+SPI_v,bois noirs,capital_big,quartier,"<Point>
+            <coordinates>55.46003175573095,-21.28574233782872</coordinates>
+        </Point>","-21,2857423378","55,4600317557"
+SPI_v,les assises,capital_big,quartier,"<Point>
+            <coordinates>55.46318648689364,-21.28914245805333</coordinates>
+        </Point>","-21,2891424581","55,4631864869"
+SPI_v,bois d'olives,capital_big,quartier,"<Point>
+            <coordinates>55.4554975588193,-21.29590154261081</coordinates>
+        </Point>","-21,2959015426","55,4554975588"
+SPI_v,la vallée,capital_big,quartier,"<Point>
+            <coordinates>55.45761387255637,-21.30396193665221</coordinates>
+        </Point>","-21,3039619367","55,4576138726"
+SPI_v,chemin badamier,capital_big,quartier,"<Point>
+            <coordinates>55.4561203148529,-21.31055159446764</coordinates>
+        </Point>","-21,3105515945","55,4561203149"
+SPI_v,mon repos,capital_big,quartier,"<Point>
+            <coordinates>55.4600777392987,-21.31731833732575</coordinates>
+        </Point>","-21,3173183373","55,4600777393"
+SPI_v,la ligne paradis,capital_big,quartier,"<Point>
+            <coordinates>55.47170196053801,-21.31061322485592</coordinates>
+        </Point>","-21,3106132249","55,4717019605"
+SPI_v,la morière,capital_big,quartier,"<Point>
+            <coordinates>55.47066225265039,-21.31493609389506</coordinates>
+        </Point>","-21,3149360939","55,4706622527"
+SPI_v,les hauts de mont vert,capital_big,quartier,"<Point>
+            <coordinates>55.55522472650017,-21.31210312052342</coordinates>
+        </Point>","-21,3121031205","55,5552247265"

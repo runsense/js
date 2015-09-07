@@ -1,0 +1,266 @@
+id,nom,categ,description,geometry,lat,lng
+SJ_v,nez du boeuf,mountains,mont,"<Point>
+            <coordinates>55.62092450763694,-21.20548517633063</coordinates>
+        </Point>","-21,2054851763","55,6209245076"
+SJ_v,piton lardé,mountains,mont,"<Point>
+            <coordinates>55.68154124491308,-21.31000189771143</coordinates>
+        </Point>","-21,3100018977","55,6815412449"
+SJ_v,manapany les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.57985102819915,-21.33706547798469</coordinates>
+        </Point>","-21,337065478","55,5798510282"
+SJ_v,piton du rond,mountains,mont,"<Point>
+            <coordinates>55.60317162472279,-21.29803621575032</coordinates>
+        </Point>","-21,2980362158","55,6031716247"
+SJ_v,piton la mare,mountains,mont,"<Point>
+            <coordinates>55.60339955549183,-21.29054092641263</coordinates>
+        </Point>","-21,2905409264","55,6033995555"
+SJ_v,remparts du tremblé,mountains,mont,"<Point>
+            <coordinates>55.7637635737489,-21.28345301618237</coordinates>
+        </Point>","-21,2834530162","55,7637635737"
+SJ_v,nez coupé du tremblé,mountains,mont,"<Point>
+            <coordinates>55.73776393495521,-21.28335221837294</coordinates>
+        </Point>","-21,2833522184","55,737763935"
+SJ_v,pointe du tremblet,mountains,mont,"<Point>
+            <coordinates>55.80528395147429,-21.29326704208474</coordinates>
+        </Point>","-21,2932670421","55,8052839515"
+SJ_v,reine de bouc,mountains,mont,"<Point>
+            <coordinates>55.61988687971137,-21.25592009089523</coordinates>
+        </Point>","-21,2559200909","55,6198868797"
+SJ_v,roche plate,capital_big,quartier,"<Point>
+            <coordinates>55.61581215089877,-21.24623722166536</coordinates>
+        </Point>","-21,2462372217","55,6158121509"
+SJ_v,Cheminées Langevin,cbh,elle est inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 16 avril 2002,"<Point>
+            <coordinates>55.64675,-21.37730555555556</coordinates>
+        </Point>","-21,3773055556","55,64675"
+SJ_v,église de Saint-Joseph,church,"Lors de la création de la paroisse de Saint-Joseph, en 1795, une église en bois est édifiée près de l'embouchure de la rivière des Remparts","<Point>
+            <coordinates>55.61878590757231,-21.37938935109492,43.12730338433807</coordinates>
+        </Point>","-21,3793893511","55,6187859076"
+SJ_v,Eglise de Vincendo,church,"église Saint-Athanase à Vincendo commune de Saint-Joseph La Réunion.
+En 1861, construction d'une chapelle de Vincendo","<Point>
+            <coordinates>55.66761738788323,-21.3736749119436</coordinates>
+        </Point>","-21,3736749119","55,6676173879"
+SJ_v,église Sainte-Geneviève,church,Construite en 1858 au lieu dit les Lianes,"<Point>
+            <coordinates>55.60228092904118,-21.34631648205455</coordinates>
+        </Point>","-21,3463164821","55,602280929"
+SJ_v,Labyrinthe en champ thé,terain*cbh,montre la culture du thé lontan,"<Point>
+            <coordinates>55.63787265993953,-21.29698906645029</coordinates>
+        </Point>","-21,2969890665","55,6378726599"
+SJ_v,Le Far Far de Bésaves,cbh*hiker,Visite guidé d'une exploitation agricole de canne à sucre,"<Point>
+            <coordinates>55.61259891537749,-21.35255987812032</coordinates>
+        </Point>","-21,3525598781","55,6125989154"
+SJ_v,Le lézard vert de Manapany,info_circle,"Le lézard vert de Manapany ( Phelsuma inexpectata ) est un reptile endémique de l'île de la Réunion, et plus précisément  entre la plage de Grand-Anse et l'embouchure de la rivière Langevin
+
+Il est reconnaissable par sa silhouette longiligne, sa coloration vert pomme parcourue de petites taches rouges.","<Point>
+            <coordinates>55.58706382396287,-21.37158926402385</coordinates>
+        </Point>","-21,371589264","55,587063824"
+SJ_v,Maison du curcuma,cbh*dollar,"Situé à la plaine des Grègues,
+capital du safran Péi,
+<a href=""http://www.maisonducurcuma.fr/"">La maison du curcuma</a>
+vous invite à découvrir le processus de transformation","<Point>
+            <coordinates>55.60763576701156,-21.32685012558266</coordinates>
+        </Point>","-21,3268501256","55,607635767"
+SJ_v,Maison Vienne,cbh,pointInteret_,"<Point>
+            <coordinates>55.61805299994603,-21.37628899981057</coordinates>
+        </Point>","-21,3762889998","55,6180529999"
+SJ_v,Marine Langevin,cbh,"Debarcadère naturel 
+issus d'un couloir de lave","<Point>
+            <coordinates>55.64354628062362,-21.38686610905655</coordinates>
+        </Point>","-21,3868661091","55,6435462806"
+SJ_v,Mausolée de Scholastique Malet,cbh*church,"Situé dans le cimetière de Saint-joseph,
+ériger au milieu du 19ème siècle","<Point>
+            <coordinates>55.60855145816722,-21.3830882546246</coordinates>
+        </Point>","-21,3830882546","55,6085514582"
+SJ_v,Cheminée Manapany,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 11 juillet 2002, avec son terrain","<Point>
+            <coordinates>55.5807699998111,-21.3701099999888</coordinates>
+        </Point>","-21,37011","55,5807699998"
+SJ_v,Cheminée Le Piton,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 18 juillet 2002,"<Point><coordinates>55.619278,-21.382639</coordinates></Point>","-21,382639","55,619278"
+SJ_v,rivière de langevin,water,rivière,"<Point>
+            <coordinates>55.64640731647447,-21.36274616462257</coordinates>
+        </Point>","-21,3627461646","55,6464073165"
+SJ_v,pointe de langevin,mountains,mont,"<Point>
+            <coordinates>55.64701574799205,-21.38784308385576</coordinates>
+        </Point>","-21,3878430839","55,647015748"
+SJ_v,les quais,capital_big,quartier,"<Point>
+            <coordinates>55.6152098941686,-21.38499911138686</coordinates>
+        </Point>","-21,3849991114","55,6152098942"
+SJ_v,le butor,capital_big,quartier,"<Point>
+            <coordinates>55.61261849403535,-21.37834498188041</coordinates>
+        </Point>","-21,3783449819","55,612618494"
+SJ_v,les jacques,capital_big,quartier,"<Point>
+            <coordinates>55.63069224985072,-21.37651897015829</coordinates>
+        </Point>","-21,3765189702","55,6306922499"
+SJ_v,jean petit les bas,capital_big,quartier,"<Point>
+            <coordinates>55.6238059368093,-21.3688242921447</coordinates>
+        </Point>","-21,3688242921","55,6238059368"
+SJ_v,le goyave,capital_big,quartier,"<Point>
+            <coordinates>55.61681232759635,-21.37050669114586</coordinates>
+        </Point>","-21,3705066911","55,6168123276"
+SJ_v,les gregues,capital_big,quartier,"<Point>
+            <coordinates>55.60750438660984,-21.37158177785101</coordinates>
+        </Point>","-21,3715817779","55,6075043866"
+SJ_v,manapany,capital_big,"quartier
+_
+Baptisé par le célèbre ségatier Luc Donat, ti coin charmant,
+elle possède un magique bassins d'eau de mer","<Point>
+            <coordinates>55.59262434901874,-21.37522633060846</coordinates>
+        </Point>","-21,3752263306","55,592624349"
+SJ_v,bois noirs,capital_big,quartier,"<Point>
+            <coordinates>55.63922000438796,-21.37875299390363</coordinates>
+        </Point>","-21,3787529939","55,6392200044"
+SJ_v,le plateau,capital_big,quartier,"<Point>
+            <coordinates>55.66013850910585,-21.37883501299418</coordinates>
+        </Point>","-21,378835013","55,6601385091"
+SJ_v,piton Langevin,mountains,mont,"<Point>
+            <coordinates>55.65429848131758,-21.37244890825842</coordinates>
+        </Point>","-21,3724489083","55,6542984813"
+SJ_v,vincendo,capital_big,quartier,"<Point>
+            <coordinates>55.66748483248352,-21.3742975151583</coordinates>
+        </Point>","-21,3742975152","55,6674848325"
+SJ_v,bras panon,capital_big,quartier,"<Point>
+            <coordinates>55.67983778516079,-21.37044503983367</coordinates>
+        </Point>","-21,3704450398","55,6798377852"
+SJ_v,ligne matouta,capital_big,quartier,"<Point>
+            <coordinates>55.68546761590203,-21.36602826261571</coordinates>
+        </Point>","-21,3660282626","55,6854676159"
+SJ_v,parc mouton,capital_big,quartier,"<Point>
+            <coordinates>55.6652184973227,-21.3615332893493</coordinates>
+        </Point>","-21,3615332893","55,6652184973"
+SJ_v,la petite crète,capital_big,quartier,"<Point>
+            <coordinates>55.65167480926808,-21.35271054856021</coordinates>
+        </Point>","-21,3527105486","55,6516748093"
+SJ_v,ilet à Diable,capital_big,quartier,"<Point>
+            <coordinates>55.64637578298733,-21.34831407639637</coordinates>
+        </Point>","-21,3483140764","55,646375783"
+SJ_v,la crête,capital_big,quartier,"<Point>
+            <coordinates>55.65673333730247,-21.33614459756901</coordinates>
+        </Point>","-21,3361445976","55,6567333373"
+SJ_v,jacques payet,capital_big,quartier,"<Point>
+            <coordinates>55.67956442180057,-21.34353739645121</coordinates>
+        </Point>","-21,3435373965","55,6795644218"
+SJ_v,la passerelle,capital_big,quartier,"<Point>
+            <coordinates>55.6454156466627,-21.34139685745807</coordinates>
+        </Point>","-21,3413968575","55,6454156467"
+SJ_v,le grand défriché,capital_big,quartier,"<Point>
+            <coordinates>55.64265977393747,-21.33404022490981</coordinates>
+        </Point>","-21,3340402249","55,6426597739"
+SJ_v,ilet sylvert,capital_big,quartier,"<Point>
+            <coordinates>55.63911424864364,-21.31762816807627</coordinates>
+        </Point>","-21,3176281681","55,6391142486"
+SJ_v,fond de galet,capital_big,quartier,"<Point>
+            <coordinates>55.63974411144918,-21.31287493341945</coordinates>
+        </Point>","-21,3128749334","55,6397441114"
+SJ_v,grand malet,capital_big,quartier,"<Point>
+            <coordinates>55.64167996438264,-21.30756201173764</coordinates>
+        </Point>","-21,3075620117","55,6416799644"
+SJ_v,montagne des moutons,mountains,mont,"<Point>
+            <coordinates>55.65518539967603,-21.29489762788278</coordinates>
+        </Point>","-21,2948976279","55,6551853997"
+SJ_v,bord d'Ti trou,capital_big,quartier,"<Point>
+            <coordinates>55.63294815564295,-21.27964411299583</coordinates>
+        </Point>","-21,279644113","55,6329481556"
+SJ_v,dimitile,capital_big,quartier,"<Point>
+            <coordinates>55.61631106778154,-21.28591434451148</coordinates>
+        </Point>","-21,2859143445","55,6163110678"
+SJ_v,grand coude,capital_big,"quartier
+_
+Ilet au milieu de la rivière des remparts,
+on y cultive le thé depuis 1960","<Point>
+            <coordinates>55.63009841894411,-21.29399666347725</coordinates>
+        </Point>","-21,2939966635","55,6300984189"
+SJ_v,le bloc,capital_big,quartier,"<Point>
+            <coordinates>55.61988409341939,-21.31294388019336</coordinates>
+        </Point>","-21,3129438802","55,6198840934"
+SJ_v,îlet mallet,capital_big,quartier,"<Point>
+            <coordinates>55.62613373461213,-21.31820706708284</coordinates>
+        </Point>","-21,3182070671","55,6261337346"
+SJ_v,haut de jean petit,capital_big,quartier,"<Point>
+            <coordinates>55.6315999343244,-21.31991114048688</coordinates>
+        </Point>","-21,3199111405","55,6315999343"
+SJ_v,îlet rivière,capital_big,quartier,"<Point>
+            <coordinates>55.62562118903483,-21.3277697726334</coordinates>
+        </Point>","-21,3277697726","55,625621189"
+SJ_v,îlet banane marronne,capital_big,quartier,"<Point>
+            <coordinates>55.62493371404468,-21.33186606848401</coordinates>
+        </Point>","-21,3318660685","55,624933714"
+SJ_v,jean petit,capital_big,quartier,"<Point>
+            <coordinates>55.62895218745161,-21.33848938598326</coordinates>
+        </Point>","-21,338489386","55,6289521875"
+SJ_v,le rond,terain,pointInteret,"<Point>
+            <coordinates>55.60878204590699,-21.30897576233079</coordinates>
+        </Point>","-21,3089757623","55,6087820459"
+SJ_v,piton la mare,mountains,mont,"<Point>
+            <coordinates>55.60226448706001,-21.27549839458422</coordinates>
+        </Point>","-21,2754983946","55,6022644871"
+SJ_v,les lianes,capital_big,"quartier
+_
+On y cultive le Vétiver","<Point>
+            <coordinates>55.60074291309682,-21.34778758114181</coordinates>
+        </Point>","-21,3477875811","55,6007429131"
+SJ_v,carosse,capital_big,quartier,"<Point>
+            <coordinates>55.5913505669517,-21.36063554378554</coordinates>
+        </Point>","-21,3606355438","55,591350567"
+SJ_v,manapany,capital_big,quartier,"<Point>
+            <coordinates>55.59778500144694,-21.37608260486717</coordinates>
+        </Point>","-21,3760826049","55,5977850014"
+SJ_v,les grègues,capital_big,quartier,"<Point>
+            <coordinates>55.60740543053851,-21.36964232263328</coordinates>
+        </Point>","-21,3696423226","55,6074054305"
+SJ_v,le goyave,capital_big,quartier,"<Point>
+            <coordinates>55.61635690727046,-21.3707370174491</coordinates>
+        </Point>","-21,3707370174","55,6163569073"
+SJ_v,bésave,capital_big,quartier,"<Point>
+            <coordinates>55.60945814561407,-21.3580757015454</coordinates>
+        </Point>","-21,3580757015","55,6094581456"
+SJ_v,lianes pasages,capital_big,quartier,"<Point>
+            <coordinates>55.59374180898373,-21.34164015992282</coordinates>
+        </Point>","-21,3416401599","55,593741809"
+SJ_v,lianes bel-air,capital_big,quartier,"<Point>
+            <coordinates>55.59671844893084,-21.33621938337324</coordinates>
+        </Point>","-21,3362193834","55,5967184489"
+SJ_v,la croisèe,capital_big,quartier,"<Point>
+            <coordinates>55.61244501665888,-21.3506212597158</coordinates>
+        </Point>","-21,3506212597","55,6124450167"
+SJ_v,plaine des grègues,capital_big,quartier,"<Point>
+            <coordinates>55.60995775286921,-21.33255411681562</coordinates>
+        </Point>","-21,3325541168","55,6099577529"
+SJ_v,petite plaine,capital_big,quartier,"<Point>
+            <coordinates>55.6134963995933,-21.32467519328128</coordinates>
+        </Point>","-21,3246751933","55,6134963996"
+SJ_v,l'îlet,capital_big,quartier,"<Point>
+            <coordinates>55.60335676523877,-21.32387784015557</coordinates>
+        </Point>","-21,3238778402","55,6033567652"
+SJ_v,butor,capital_big,quartier,"<Point>
+            <coordinates>55.61522192852478,-21.38137401732122</coordinates>
+        </Point>","-21,3813740173","55,6152219285"
+SJ_v,les jacques,capital_big,quartier,"<Point>
+            <coordinates>55.63057291841129,-21.37736420878887</coordinates>
+        </Point>","-21,3773642088","55,6305729184"
+SJ_v,bois noirs,capital_big,quartier,"<Point>
+            <coordinates>55.63902662264161,-21.37926731230615</coordinates>
+        </Point>","-21,3792673123","55,6390266226"
+SJ_v,jean petit les bas,capital_big,quartier,"<Point>
+            <coordinates>55.62302438067235,-21.37047318010284</coordinates>
+        </Point>","-21,3704731801","55,6230243807"
+SJ_v,langevin,capital_big,"quartier
+_
+La rivière est un coin paisible,
+et la marine fut un lieu de pêche réputé","<Point>
+            <coordinates>55.64858712443822,-21.3824612344553</coordinates>
+        </Point>","-21,3824612345","55,6485871244"
+SJ_v,Manapany les bains,swimming,"rivière
+_
+Superbe piscinne à l'eau de mer","<Point>
+            <coordinates>55.58822848680661,-21.37332056392291</coordinates>
+        </Point>","-21,3733205639","55,5882284868"
+SJ_v,rivière des remparts,water,rivière,"<Point>
+            <coordinates>55.62325842406202,-21.34580212486391</coordinates>
+        </Point>","-21,3458021249","55,6232584241"
+SJ_v,saint-joseph,road_shield1,ville,"<Point>
+            <coordinates>55.61992270833216,-21.37704570702038</coordinates>
+        </Point>","-21,377045707","55,6199227083"
+SJ_v,marine manapany,capital_big,lieuDit,"<Point>
+            <coordinates>55.58382888040232,-21.37214915700719</coordinates>
+        </Point>","-21,372149157","55,5838288804"
+SJ_v,Marine de Vincendo,capital_big,Plage de sable noire visible que pendant la saison cyclonique,"<Point>
+            <coordinates>55.67699893770739,-21.37678403644457</coordinates>
+        </Point>","-21,3767840364","55,6769989377"

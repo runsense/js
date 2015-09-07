@@ -1,0 +1,146 @@
+id,nom,categ,description,geometry,lat,lng
+SPh_md,Le Rond de Basse Vallée,realestate*gite_de_france,"chambre d'hote
+<b>label: gite de france</b>
+tél: +262 692 85 40 37
+gsm: +262 692 69 65 51","<Point>
+            <coordinates>55.70090535,-21.34962222222222</coordinates>
+        </Point>","-21,3496222222","55,70090535"
+SPh_md,Le Pinpin d'Amour,realestate*gite_de_france*hdcp,"chambre d'hote
+<b>label: villages créoles, gite de france</b>
+tél: +262 262 37 14 86
+gsm: 0692 67 91 37
+acces hdcp","<Point>
+            <coordinates>55.72082565,-21.35981944444445</coordinates>
+        </Point>","-21,3598194444","55,72082565"
+SPh_md,Au Domaine du Vacoa,realestate*gite_de_france*hdcp," chambre d'hote
+<b>label: villages créoles, gite de france</b>
+tél:  +262 262 37 03 12
+gsm: +262 692 64 89 89
+acces hdcp","<Point>
+            <coordinates>55.7653794,-21.35860833333334</coordinates>
+        </Point>","-21,3586083333","55,7653794"
+SPh_md,Chambre d'hôte du Cap Méchant,realestate*gite_de_france*hdcp,"chambre d'hote
+<b>label: gite de france</b>
+tél: +262 262 28 57 50
+gsm: +262 692 36 26 16
+acces hdcp","<Point>
+            <coordinates>55.71023699999999,-21.373</coordinates>
+        </Point>","-21,373","55,710237"
+SPh_md,Le Crabe Sous la Varangue,realestate*gite_de_france*hdcp,"chambre d'hote
+<b>label: gite de france</b>
+tél: +262 262 98 91 85
+gsm: +262 692 92 13 56
+acces hdcp","<Point>
+            <coordinates>55.80021666666667,-21.32594166666667</coordinates>
+        </Point>","-21,3259416667","55,8002166667"
+SPh_md,Le Cap Méchant,dining*hdcp," restaurant
+tél:  +262 262 37 00 61
+gsm: +262 692 85 30 32
+acces  hdcp","<Point>
+            <coordinates>55.71114100000001,-21.374133</coordinates>
+        </Point>","-21,374133","55,711141"
+SPh_md,Le Jardin des Délices,dining*hdcp,"restaurant
+label: villages créoles
+gsm: +262 692 30 13 42
+acces hdcp","<Point>
+            <coordinates>55.72813485342355,-21.3691458050223</coordinates>
+        </Point>","-21,369145805","55,7281348534"
+SPh_md,Leu 57,dining*hdcp," restaurant
+tél: +262 262 97 16 52
+gsm: +262 692 72 67 18
+acces hdcp","<Point>
+            <coordinates>55.72621876835628,-21.36962739122077</coordinates>
+        </Point>","-21,3696273912","55,7262187684"
+SPh_md,La Vague du Sud,dining*rec_lodging*hdcp,"hotel, restaurant
+tél: +262 262 41 57 85
+gsm: 0693 93 76 28
+acces hdcp","<Point>
+            <coordinates>55.77026111111112,-21.35791</coordinates>
+        </Point>","-21,35791","55,7702611111"
+SPh_md,Restaurant des Laves,dining,"restaurant
+gsm: +262 692 72 45 39","<Point>
+            <coordinates>55.80021150584093,-21.3209632256284</coordinates>
+        </Point>","-21,3209632256","55,8002115058"
+SPh_md,Le Puits des Anglais,dining*hdcp,"restaurant
+gsm: +262 692 68 30 33
+acces hdcp","<Point>
+            <coordinates>55.73067369406731,-21.36883322713743</coordinates>
+        </Point>","-21,3688332271","55,7306736941"
+SPh_md,La Bicyclette Gourmande,dining*hdcp,"restaurant
+tél: +262 262 97 78 63
+gsm: 0693 93 71 93
+acces hdcp","<Point>
+            <coordinates>55.76657850000004,21.35945833333334</coordinates>
+        </Point>","21,3594583333","55,7665785"
+SPh_md,Le Baril,rec_lodging_dining*hdcp," hotel, restaurant
+tél: +262 262 37 01 04
+acces hdcp","<Point>
+            <coordinates>55.72791019,-21.36915</coordinates>
+        </Point>","-21,36915","55,72791019"
+SPh_md,Le Soufleur d'Angel,dining,"restaurant
+gsm: +262 692 10 16 81","<Point>
+            <coordinates>55.7363511824848,-21.36852640556317</coordinates>
+        </Point>","-21,3685264056","55,7363511825"
+SPh_md,La Mer Cassée,dining*hdcp,"snack
+tél: +262 262 46 56 18
+acces hdcp","<Point>
+            <coordinates>55.75524900000001,-21.36298888888889</coordinates>
+        </Point>","-21,3629888889","55,755249"
+SPh_md,La Marmite du Pécheur,dining*hdcp,"restaurant, traiteur
+label: villages créoles, maitre restaurateur
+tél: +262 262 37 01 01
+gsm: +262 692 85 24 84
+acces hdcp","<Point>
+            <coordinates>55.78568494,-21.35321944444445</coordinates>
+        </Point>","-21,3532194444","55,78568494"
+SPh_md,Le Vieux Port,dining*hdcp,"restaurant
+tél: +262 692 59 09 23
+gsm: +262 692 15 79 31
+acces hdcp","<Point>
+            <coordinates>55.79833929,-21.29252222222223</coordinates>
+        </Point>","-21,2925222222","55,79833929"
+SPh_md,Le Maccabit,dining*hdcp,"restaurant
+tél:+262 262 37 15 30
+acces hdcp","<Point>
+            <coordinates>55.792102,-21.34863888888889</coordinates>
+        </Point>","-21,3486388889","55,792102"
+SPh_md,Le Mascarin,dining,"restaurant
+gsm: +262 692 60 54 82","<Point>
+            <coordinates>55.73059916825764,-21.36878060202824</coordinates>
+        </Point>","-21,368780602","55,7305991683"
+SPh_md,L' Etoile de Mer,dining*hdcp,"restaurant
+tél: +262 262 37 04 60
+acces hdcp","<Point>
+            <coordinates>55.71087159999999,-21.37436944444444</coordinates>
+        </Point>","-21,3743694444","55,7108716"
+SPh_md,Ti Case Volcan,dining,"restaurant
+tél: +262 262 48 91 84
+gsm: +262 692 61 78 50","<Point>
+            <coordinates>55.79814516456329,-21.29181674278769</coordinates>
+        </Point>","-21,2918167428","55,7981451646"
+SPh_md,Chez Moustache et Rose-May,dining*hdcp,"restaurant
+gsm: +262 692 33 27 03
+acces hdcp","<Point>
+            <coordinates>55.80021760930186,-21.32288159168221</coordinates>
+        </Point>","-21,3228815917","55,8002176093"
+SPh_md,Vanille Coco,dining*hdcp,"restaurant
+tél: +262 262 29 91 12
+gsm: +262 692 00 23 91
+acces hdcp","<Point>
+            <coordinates>55.79036542244657,-21.35064463103288</coordinates>
+        </Point>","-21,350644631","55,7903654224"
+SPh_md,Le Réveil du Village,dining,"restaurant
+tél:  +262 262 37 11 28
+gsm: +262 692 20 81 37","<Point>
+            <coordinates>55.7168773139889,-21.37169424399709</coordinates>
+        </Point>","-21,371694244","55,716877314"
+SPh_md,Le Pinpin,dining*hdcp," restaurant
+<b>label: villages créoles</b>
+tél: +262 262 37 04 19
+gsm: +262 692 08 18 26
+acces hdcp","<Point>
+            <coordinates>55.70959743,-21.37449444444444</coordinates>
+        </Point>","-21,3744944444","55,70959743"
+SPh_md,gite,realestate,gite,"<Point>
+            <coordinates>55.75939581085188,-21.295135383156</coordinates>
+        </Point>","-21,2951353832","55,7593958109"

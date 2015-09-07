@@ -1,0 +1,13 @@
+id,nom,categ,description,geometry,lat,lng
+SAd_a,Distillerie de Savanna et Sucrerie de Bois Rouge,hiker,"visite touristique _
+tél:  +262 262 58 59 74","<Point>
+            <coordinates>55.63787499999999,-20.91596944444444</coordinates>
+        </Point>","-20,9159694444","55,637875"
+SAd_a,Plantation de la Vanille Roulof,hiker,"visite plantation _
+tél: +262 692 10 87 15","<Point>
+            <coordinates>55.65291666666666,-20.95000277777778</coordinates>
+        </Point>","-20,9500027778","55,6529166667"
+SAd_a,marché de saint-andré,grocery,"marché _
+période: vendredi de 4h à 12h","<Point>
+            <coordinates>55.65202193773961,-20.9626020463336</coordinates>
+        </Point>","-20,9626020463","55,6520219377"

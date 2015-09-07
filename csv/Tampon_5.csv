@@ -1,0 +1,47 @@
+id,nom,categ,description,geometry,lat,lng
+T_a,marché,grocery," marché
+période: vendredi de 6h à 17h","<Point>
+            <coordinates>55.51498299272102,-21.27837033865357</coordinates>
+        </Point>","-21,2783703387","55,5149829927"
+T_a,Sarasvathy,realestate,"chambre d'hote
+gsm: +262 692 85 21 55","<Point><coordinates>55.534535,-21.2932</coordinates></Point>","-21,2932","55,534535"
+T_a,L' Acacia Bleu,realestate,"chambre d'hote
+tél: +262 262 27 32 01
+gsm: +262 692 76 89 29","<Point>
+            <coordinates>55.51811425,-21.23597222222222</coordinates>
+        </Point>","-21,2359722222","55,51811425"
+T_a,L' Oasis des Senteurs,realestate,"chambre d'hote
+tél: +262 262 57 23 02
+tél: +262 692 30 73 42
+gsm: 0692 20 94 52","<Point>
+            <coordinates>55.56414377750455,-21.26842035157371</coordinates>
+        </Point>","-21,2684203516","55,5641437775"
+T_a,marché  couvert,grocery,"marché
+période: dimanche de 8 h à 18h","<Point>
+            <coordinates>55.51147500063794,-21.28103999998807</coordinates>
+        </Point>","-21,28104","55,5114750006"
+T_a,Allon Bat A Pat Rando,hiker,"Randonnée pédestre, Excursion touristique 
+_
+gsm: +262 692 87 95 16
+_
+mail: <a href=""allonbatapat@orange.fr"" >mail</a>
+_
+Web : <a href=""http://www.allonbatapat-rando.fr"" >http://www.allonbatapat-rando.fr</a>","<Point>
+            <coordinates>55.52098606827543,-21.26159471707809</coordinates>
+        </Point>","-21,2615947171","55,5209860683"
+T_a,Kokapat Rando,canoeing*hiker*speleologie,"Canyoning, Randonnée pédestre, Spéléologie, tunnels de lave 
+tel: +262 262 31 73 30
+gsm: +262 692 66 50 09","<Point>
+            <coordinates>55.50813,-21.25375277777778</coordinates>
+        </Point>","-21,2537527778","55,50813"
+T_a,Rando Outre Mer,hiker,"Randonnée pédestre
+_
+tel: +262 262 57 55 81
+_
+gsm : +262 692 65 32 18
+_
+mail : <a href=""rometheve@orange.fr"" >mail</a>
+_
+<a href=""http://www.rando-outre-mer.re"" >http://www.rando-outre-mer.re</a>","<Point>
+            <coordinates>55.51154130021113,-21.27211339996185</coordinates>
+        </Point>","-21,2721134","55,5115413002"

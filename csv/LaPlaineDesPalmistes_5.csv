@@ -1,0 +1,16 @@
+id,nom,categ,description,geometry,lat,lng
+PP_a,gite du pic des sables,cycling," vtt _
+tél: +262 262 51 37 33 _
+gsm: +262 692 64 54 97","<Point>
+            <coordinates>55.60201199997466,-21.14682300013108</coordinates>
+        </Point>","-21,1468230001","55,602012"
+PP_a,Le Jardin de Sérénité,spa*realestate*hdcp,"spa-massage chambre d'hote _
+tél:  +262 262 51 34 13 _
+gsm: +262 692 99 62 43 _
+acces hdcp","<Point>
+            <coordinates>55.63635299999999,-21.145732</coordinates>
+        </Point>","-21,145732","55,636353"
+PP_a,Forestia,club," parcours acrobatique _
+tél: +262 262.49.43.82","<Point>
+            <coordinates>55.61901291294817,-21.14287397131428</coordinates>
+        </Point>","-21,1428739713","55,6190129129"

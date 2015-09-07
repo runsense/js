@@ -1,0 +1,88 @@
+id,nom,categ,description,geometry,lat,lng
+ED_md,Tit Caze Gilbert,realestate,"gite_
+tél: +262 692 58 92 94_
+gsm: +262 692 25 10 34_
+Web: http://www.ot-entredeux.com/tit_caze_gilbert.html","<Point>
+            <coordinates>55.4815363055115,-21.18878529605678</coordinates>
+        </Point>","-21,1887852961","55,4815363055"
+ED_md,Gîte Emile,realestate,"gite_
+tél: +262 262 57 43 03_
+gsm: +262 692 67 24 54","<Point>
+            <coordinates>55.470131,-21.24450833333334</coordinates>
+        </Point>","-21,2445083333","55,470131"
+ED_md,Le Chalet,realestate,"gite_
+tél: +262 692 27 33 22_
+gsm: +262 692 27 33 24","<Point>
+            <coordinates>55.467173,-21.25351944444444</coordinates>
+        </Point>","-21,2535194444","55,467173"
+ED_md,L' Echappée Belle,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france, villages créoles</b>_
+tél: +262 262 22 91 31_
+gsm: 0692 55 55 37","<Point>
+            <coordinates>55.470019,-21.24704444444445</coordinates>
+        </Point>","-21,2470444444","55,470019"
+ED_md,Les Durentas,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france, villages créoles</b>_
+tél: +262 262 39 64 03_
+gsm: +262 692 68 68 82","<Point>
+            <coordinates>55.48304408,-21.24347222222222</coordinates>
+        </Point>","-21,2434722222","55,48304408"
+ED_md,Mirest,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>_
+tél: +262 262 39 65 43","<Point>
+            <coordinates>55.48034297,-21.24755</coordinates>
+        </Point>","-21,24755","55,48034297"
+ED_md,Ranch Kikouyou,realestate*gite_de_france,"chambre d'hote_
+<b>label: gites de france</b>_
+tél: +262 262 39 60 62_
+gsm: +262 692 78 51 60","<Point>
+            <coordinates>55.467815,-21.23276666666667</coordinates>
+        </Point>","-21,2327666667","55,467815"
+ED_md,Entre Nous,rec_lodging*dining*hdcp,"hotel, restaurant_
+<b>label: villages créoles, tourisme & handicap, qualité tourisme</b>_
+tél:  +262 262 39 20 00","<Point>
+            <coordinates>55.47042942,-21.244625</coordinates>
+        </Point>","-21,244625","55,47042942"
+ED_md,Le Plat Garni,snack_bar," snack_
+gsm: +262 692 86 48 49","<Point>
+            <coordinates>55.47078599999999,-21.24791111111111</coordinates>
+        </Point>","-21,2479111111","55,470786"
+ED_md,Pain d'Antan,dining,"restaurant_
+tél: +262 262 39 81 99","<Point>
+            <coordinates>55.469892,-21.24891111111111</coordinates>
+        </Point>","-21,2489111111","55,469892"
+ED_md,Le Longanis,dining,"restaurant_
+tél: +262 262 39 70 56_
+gsm: +262 692 87 84 93","<Point>
+            <coordinates>55.4708484,-21.24790555555556</coordinates>
+        </Point>","-21,2479055556","55,4708484"
+ED_md,L' Arbre à Palabres,dining,"restaurant_
+tél:  +262 262 44 47 23_
+gsm: +262 692 92 75 26","<Point>
+            <coordinates>55.469793,-21.25061111111111</coordinates>
+        </Point>","-21,2506111111","55,469793"
+ED_md,Le Cho-Cho,dining,"restaurant_
+tél: +262 262 39 71 20","<Point>
+            <coordinates>55.47074000000001,-21.24788888888889</coordinates>
+        </Point>","-21,2478888889","55,47074"
+ED_md,Bar Le Coq,snack_bar," snack_
+tél: +262 262 39 55 69","<Point><coordinates>55.470662,-21.247475</coordinates></Point>","-21,247475","55,470662"
+ED_md,Le Bambino,dining,"restaurant_
+gsm: +262 692 10 88 80","<Point>
+            <coordinates>55.47092592,-21.24973055555556</coordinates>
+        </Point>","-21,2497305556","55,47092592"
+ED_md,Snack Bar La Source,snack_bar,"snack_
+gsm: +262 692 68 27 87","<Point>
+            <coordinates>55.47573611111112,-21.21864755</coordinates>
+        </Point>","-21,21864755","55,4757361111"
+ED_md,Dimitile Hôtel ****,rec_lodging*hdcp," hotel_
+<b>label: qualité tourisme, villages créoles, tourisme et handicap</b>_
+tél: +262 262 39 20 00_
+acces hdcp","<Point>
+            <coordinates>55.47042942,-21.244625</coordinates>
+        </Point>","-21,244625","55,47042942"
+ED_md,Entre 2 Songes,2," visite touristique_
+gsm: +262 692 82 57 75_
+acces hdcp","<Point>
+            <coordinates>55.47006099999999,-21.24020555555556</coordinates>
+        </Point>","-21,2402055556","55,470061"

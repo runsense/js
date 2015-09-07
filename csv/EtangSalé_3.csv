@@ -1,0 +1,79 @@
+id,nom,categ,description,geometry,lat,lng
+ES_v,la plaine,capital_big,quartier,"<Point>
+            <coordinates>55.35724496270085,-21.25711003084323</coordinates>
+        </Point>","-21,2571100308","55,3572449627"
+ES_v,la butte guinot,capital_big,quartier,"<Point>
+            <coordinates>55.35564073408462,-21.26157898783113</coordinates>
+        </Point>","-21,2615789878","55,3556407341"
+ES_v,Ancienne étang salé,terain*water,"Marais constitué d'eau de mer,
+exploité en 1924, puis 1946 par sa descendance","<Point>
+            <coordinates>55.33584078022544,-21.27005094039686</coordinates>
+        </Point>","-21,2700509404","55,3358407802"
+ES_v,Four à chaux,cbh,"<b>historique</b>
+_le premier fût bâti en avril 1922 par Emmanuel Robin,
+le second est sous des broussaille au lieu di 'les sables'","<Point>
+            <coordinates>55.33409531137679,-21.27187326213858</coordinates>
+        </Point>","-21,2718732621","55,3340953114"
+ES_v,Monument au mort,cbh,"<b>historique</b>
+_
+11 novembre 2007, la ville de l'étang-Salé inaugure son nouveau monument aux morts place de l'église.
+Ce monument est une sculpture d'Élodie Kornheinser, qui a déjà réalisée le monument aux morts de la ville de Cilaos à La Réunion","<Point>
+            <coordinates>55.36679693718167,-21.26518647888271</coordinates>
+        </Point>","-21,2651864789","55,3667969372"
+ES_v,les canots,capital_big,quartier,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.37241970628195,-21.2369154599837 55.37236757191489,-21.23696659460757 55.36975139145678,-21.24183221215294 55.36228854452543,-21.24839733351135 55.3622922073016,-21.24853631990589 55.36142940153828,-21.25318981129908 55.35979082351925,-21.25717954861765 55.36231277215753,-21.25761743351634 55.36489544948563,-21.25426134618381 55.36776862730951,-21.24894417056811 55.371098195059,-21.24591008989443 55.37273566927476,-21.24108764225107 55.37241970628195,-21.2369154599837</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+ES_v,Ancienne Gare,cbh,"<b>historique</b>
+_Construite au lieu-dit Cité-Pétrole qui est alors un village de pêcheurs de l'Étang-Salé les Bains,
+ à côté de l'ancienne gare se trouvait encore le vestige du réservoir d'eau pour locomotives .","<Point>
+            <coordinates>55.33462999987614,-21.26733800007374</coordinates>
+        </Point>","-21,2673380001","55,3346299999"
+ES_v,Mairie,road_shield1,<b>Mairie</b> de l'étang salé,"<Point>
+            <coordinates>55.36687857164902,-21.26570743610176</coordinates>
+        </Point>","-21,2657074361","55,3668785716"
+ES_v,église Saint-Dominique étang-Salé,church,"Fondé en 1860,
+Saint-dominique fut le fondateur de l'ordre des dominicains,
+en 1175 en espagne.","<Point>
+            <coordinates>55.36702604321881,-21.26533031868857</coordinates>
+        </Point>","-21,2653303187","55,3670260432"
+ES_v,forêt de l'étang salé,terain,<b>foret</b>,"<Point>
+            <coordinates>55.34566423768446,-21.26696389422415</coordinates>
+        </Point>","-21,2669638942","55,3456642377"
+ES_v,pointe des avirons,mountains,,"<Point>
+            <coordinates>55.32113305258821,-21.25248054715408</coordinates>
+        </Point>","-21,2524805472","55,3211330526"
+ES_v,bassins pirogue,swimming,plage de sable noire,"<Point>
+            <coordinates>55.33281328326086,-21.26814003535062</coordinates>
+        </Point>","-21,2681400354","55,3328132833"
+ES_v,roche des oiseaux,mountains,pointInteret_,"<Point>
+            <coordinates>55.34119028494424,-21.28127615096711</coordinates>
+        </Point>","-21,281276151","55,3411902849"
+ES_v,piton reinette,mountains,<b>mont</b>,"<Point>
+            <coordinates>55.34559923259173,-21.27512367803409</coordinates>
+        </Point>","-21,275123678","55,3455992326"
+ES_v,les canots,capital_big,quartier,"<Point>
+            <coordinates>55.36390676747399,-21.25034896047064</coordinates>
+        </Point>","-21,2503489605","55,3639067675"
+ES_v,le lambert,capital_big,quartier,"<Point>
+            <coordinates>55.37487540586821,-21.25726270903347</coordinates>
+        </Point>","-21,257262709","55,3748754059"
+ES_v,le maniron,capital_big,quartier,"<Point>
+            <coordinates>55.39081536806265,-21.25640080679247</coordinates>
+        </Point>","-21,2564008068","55,3908153681"
+ES_v,la pièce louise,capital_big,quartier,"<Point>
+            <coordinates>55.39435332553973,-21.24136877189529</coordinates>
+        </Point>","-21,2413687719","55,3943533255"
+ES_v,l'entre-deux,capital_big,quartier,"<Point>
+            <coordinates>55.36552795690245,-21.23898670148458</coordinates>
+        </Point>","-21,2389867015","55,3655279569"
+ES_v,la pièce jeanne,capital_big,quartier,"<Point>
+            <coordinates>55.40136841848695,-21.23592594482478</coordinates>
+        </Point>","-21,2359259448","55,4013684185"
+ES_v,bel-air,capital_big,quartier,"<Point>
+            <coordinates>55.39743646811036,-21.29307587597036</coordinates>
+        </Point>","-21,293075876","55,3974364681"

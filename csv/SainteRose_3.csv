@@ -1,0 +1,132 @@
+id,nom,categ,description,geometry,lat,lng
+SR_v,piton nelson,mountains,mont,"<Point>
+            <coordinates>55.78483329744661,-21.20287896421771</coordinates>
+        </Point>","-21,2028789642","55,7848332974"
+SR_v,plateau de la rivière de l'est,mountains,mont,"<Point>
+            <coordinates>55.73619809492947,-21.1853489514329</coordinates>
+        </Point>","-21,1853489514","55,7361980949"
+SR_v,piton des calumets,mountains,mont,"<Point>
+            <coordinates>55.73400101000406,-21.19361421312197</coordinates>
+        </Point>","-21,1936142131","55,73400101"
+SR_v,piton des 3 communes,mountains,mont,"<Point>
+            <coordinates>55.724537412718,-21.16926214110299</coordinates>
+        </Point>","-21,1692621411","55,7245374127"
+SR_v,pointe de la ravinne sèche,mountains,pointInteret_,"<Point>
+            <coordinates>55.73209760785479,-21.04951210219871</coordinates>
+        </Point>","-21,0495121022","55,7320976079"
+SR_v,pont de la rivière de l'Est,cbh,"pont
+_
+Un premier pont suspendu fut construit en 1842 mais détruit par une crue le 11 février 1862.
+D'une portée maximale de 152 mètres, il était le pont le plus long du monde lors de sa livraison en 1894.","<Point>
+            <coordinates>55.74790562345457,-21.12384974608495</coordinates>
+        </Point>","-21,1238497461","55,7479056235"
+SR_v,rivire de l'Est,water,rivière,"<Point>
+            <coordinates>55.76870201379209,-21.10734382988039</coordinates>
+        </Point>","-21,1073438299","55,7687020138"
+SR_v,Batteries de Sainte-Rose,cbh,"Batterie de Sainte-Rose. 
+Des fameuses batteries qui défendirent la côte contre les Anglais, 
+il reste sur place deux canons, un français avec une fleur de lys,
+ et un anglais décoré d'une couronne.","<Point>
+            <coordinates>55.78870709006189,-21.12530005059543</coordinates>
+        </Point>","-21,1253000506","55,7887070901"
+SR_v,Eglise de Sainte-Rose,church,religion,"<Point>
+            <coordinates>55.79183233376624,-21.1275359218521</coordinates>
+        </Point>","-21,1275359219","55,7918323338"
+SR_v,Notre dame des laves,church,"L'église Notre Dame des Laves est l'un des grands lieu de culte de La Réunion.
+ En 1977, une coulée de lave brûle tout sur son passage, 
+mais encercle miraculeusement l’édifice religieux sans le consumer.","<Point>
+            <coordinates>55.82414529578904,-21.16054756298539</coordinates>
+        </Point>","-21,160547563","55,8241452958"
+SR_v,cayenne,capital_big,quartier,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.80651672100052,-21.13336286634042 55.80626294415951,-21.13398822154338 55.80630213504941,-21.13436620236187 55.80683686892313,-21.13481236721096 55.80731232995937,-21.13503400190716 55.80749798737006,-21.13479072533057 55.80743981264975,-21.13398572349704 55.80701118966475,-21.13347450466671 55.80651672100052,-21.13336286634042</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SR_v,la vierge au parasol,cbh,"La Vierge au Parasol installée autrefois au Grand Brûlé
+se trouve maintenant Piton Sainte-Rose juste à côté de l'église Notre Dame des laves.","<Point>
+            <coordinates>55.82390698336759,-21.16071462584127</coordinates>
+        </Point>","-21,1607146258","55,8239069834"
+SR_v,Monument Corbett,cbh,"Monument Corbett commodore Robert Corbett. 
+Le monument Corbett est un mausolée
+Longtemps capitaine de la Néréide, le commodore Robert Corbett est mort en 1810 
+dans une action en mer au large de Bourbon après avoir participé à un premier débarquement à Sainte-Rose.","<Point>
+            <coordinates>55.788194,-21.12563888888889</coordinates>
+        </Point>","-21,1256388889","55,788194"
+SR_v,Anse des cascades,water*cbh,"L' Anse des Cascades, 
+un site touristique qui doit son nom à une série de cascades, 
+le site renferme en effet plusieurs chutes d'eau.","<Point>
+            <coordinates>55.8295565648366,-21.18427784480936</coordinates>
+        </Point>","-21,1842778448","55,8295565648"
+SR_v,Cheminée Ravine-Glissante,cbh,"inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 2 mai 2002,
+avec son terrain","<Point>
+            <coordinates>55.80497200000001,-21.13861111111111</coordinates>
+        </Point>","-21,1386111111","55,804972"
+SR_v,piton des 3 têtes,mountains,mont,"<Point>
+            <coordinates>55.78952879201066,-21.18311471063673</coordinates>
+        </Point>","-21,1831147106","55,789528792"
+SR_v,piton moka,mountains,mont,"<Point>
+            <coordinates>55.80975376351191,-21.18650117152588</coordinates>
+        </Point>","-21,1865011715","55,8097537635"
+SR_v,anse des cascades,mountains,mont,"<Point>
+            <coordinates>55.82731499727439,-21.18581269654531</coordinates>
+        </Point>","-21,1858126965","55,8273149973"
+SR_v,pointes des cascades,mountains,mont,"<Point>
+            <coordinates>55.83622439052938,-21.18310469634888</coordinates>
+        </Point>","-21,1831046963","55,8362243905"
+SR_v,pointes des bambous,mountains,mont,"<Point>
+            <coordinates>55.83471931309872,-21.17837145059485</coordinates>
+        </Point>","-21,1783714506","55,8347193131"
+SR_v,pointe lacroix,mountains,mont,"<Point>
+            <coordinates>55.8348177856917,-21.16363696134005</coordinates>
+        </Point>","-21,1636369613","55,8348177857"
+SR_v,piton bellevue,mountains,mont,"<Point>
+            <coordinates>55.82483894174718,-21.15147855279041</coordinates>
+        </Point>","-21,1514785528","55,8248389417"
+SR_v,pointe de bellevue,mountains,mont,"<Point>
+            <coordinates>55.82647192549495,-21.1448858259174</coordinates>
+        </Point>","-21,1448858259","55,8264719255"
+SR_v,cap bernard,mountains,mont,"<Point>
+            <coordinates>55.8218445337548,-21.14111163444073</coordinates>
+        </Point>","-21,1411116344","55,8218445338"
+SR_v,piton de balmann,mountains,mont,"<Point>
+            <coordinates>55.79402090270108,-21.16315274209762</coordinates>
+        </Point>","-21,1631527421","55,7940209027"
+SR_v,pointe corail,mountains,mont,"<Point>
+            <coordinates>55.81698473012622,-21.13893923530917</coordinates>
+        </Point>","-21,1389392353","55,8169847301"
+SR_v,rivière saint-expédit,water,rivière,"<Point>
+            <coordinates>55.80706130290699,-21.13508076159619</coordinates>
+        </Point>","-21,1350807616","55,8070613029"
+SR_v,le petit brulé,capital_big,quartier,"<Point>
+            <coordinates>55.77723909414013,-21.12765039185576</coordinates>
+        </Point>","-21,1276503919","55,7772390941"
+SR_v,les bambous,capital_big,quartier,"<Point>
+            <coordinates>55.80461354609786,-21.13258754855748</coordinates>
+        </Point>","-21,1325875486","55,8046135461"
+SR_v,la ravinne glissante,capital_big,quartier,"<Point>
+            <coordinates>55.80647662237654,-21.13822330327735</coordinates>
+        </Point>","-21,1382233033","55,8064766224"
+SR_v,marocain,capital_big,quartier,"<Point>
+            <coordinates>55.81464703873941,-21.14449242949384</coordinates>
+        </Point>","-21,1444924295","55,8146470387"
+SR_v,bellevue,capital_big,quartier,"<Point>
+            <coordinates>55.81947039200604,-21.14919048870856</coordinates>
+        </Point>","-21,1491904887","55,819470392"
+SR_v,Piton Sainte-Rose,capital_big,quartier,"<Point>
+            <coordinates>55.82406537656287,-21.15681638643518</coordinates>
+        </Point>","-21,1568163864","55,8240653766"
+SR_v,bois blanc,capital_big,quartier,"<Point>
+            <coordinates>55.82012672805305,-21.19682720882231</coordinates>
+        </Point>","-21,1968272088","55,8201267281"
+SR_v,forêt de bois blanc,terain,forêt,"<Point>
+            <coordinates>55.80834697705705,-21.20752917424919</coordinates>
+        </Point>","-21,2075291742","55,8083469771"
+SR_v,piton la glace,mountains,mont,"<Point>
+            <coordinates>55.80131047965716,-21.17939981422318</coordinates>
+        </Point>","-21,1793998142","55,8013104797"
+SR_v,forêt mourouvin,terain,forêt,"<Point>
+            <coordinates>55.77100033611893,-21.16233528490441</coordinates>
+        </Point>","-21,1623352849","55,7710003361"

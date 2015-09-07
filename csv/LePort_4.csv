@@ -1,0 +1,23 @@
+id,nom,categ,description,geometry,lat,lng
+Por_n,Le Dodo Palmé,club,"festival: 
+_
+tél: +262 692 77 60 71","<Point>
+            <coordinates>55.2817515372321,-20.94598519357243</coordinates>
+        </Point>","-20,9459851936","55,2817515372"
+Por_n,Maison Grand Cour,club,festival: ,"<Point>
+            <coordinates>55.2810072843584,-21.0037491688113</coordinates>
+        </Point>","-21,0037491688","55,2810072844"
+Por_n,le Kakardock,club,"tél: +262 54 05 40 _ 
+festival: What’s up dock ? #3
+VEN 4 SEP 2015 - 21:00 _
+Furia + Riske Zéro
+VEN 11 SEP 2015 - 21:00 _
+Disiz
+SAM 12 SEP 2015 - 21:00 _
+Dyalo-Dyalo
+JEU 17 SEP 2015 - 19:00 _
+Lucas Santtana
+JEU 8 OCT 2015 - 20:00 _
+Taraf De Haïdouks
+DIM 22 NOV 2015 - 21:00
+",,,

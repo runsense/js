@@ -1,0 +1,222 @@
+id,nom,categ,description,geometry,lat,lng
+Ci_md,Le Tsilaosa ****,rec_lodging,"hotel
+<b>label: qualité tourisme, villages créoles</b>
+tél: +262 262 37 39 39
+gsm: +262 692 66 54 44
+acces hdcp","<Point>
+            <coordinates>55.47188296,-21.13233888888889</coordinates>
+        </Point>","-21,1323388889","55,47188296"
+Ci_md,Chez Lucette,realestate*lodging,"gite, villa
+tél: +262 262.31.74.18","<Point>
+            <coordinates>55.4807108331163,-21.13333905467185</coordinates>
+        </Point>","-21,1333390547","55,4807108331"
+Ci_md,Gîte du Pavillon,realestate,"gite de randonnée
+tél: +262 262 45 08 16
+gsm: +262 692 11 99 22","<Point>
+            <coordinates>55.44888568999999,-21.1906</coordinates>
+        </Point>","-21,1906","55,44888569"
+Ci_md,Le Calbanon,realestate,"gite de randonnée
+gsm: +262 692 09 27 30","<Point>
+            <coordinates>55.475,-21.13278333333333</coordinates>
+        </Point>","-21,1327833333","55,475"
+Ci_md,Piton des Neiges Refuge de la Caverne Dufour,realestate,"gite de randonnée
+tél: +262 262 51 15 26","<Point>
+            <coordinates>55.49633399999999,-21.10976666666667</coordinates>
+        </Point>","-21,1097666667","55,496334"
+Ci_md,La Case Bleue,realestate*rec_lodging,"gite d'étape, villa
+gsm: +262 692 09 27 30","<Point>
+            <coordinates>55.471466,-21.13661388888889</coordinates>
+        </Point>","-21,1366138889","55,471466"
+Ci_md,Le Cryptoméria,realestate,"gite d'étape
+tél: +262 262 31 91 03
+gsm: +262 692 09 51 88","<Point>
+            <coordinates>55.47743001,-21.13031944444445</coordinates>
+        </Point>","-21,1303194444","55,47743001"
+Ci_md,Gîte de l'Ilet,realestate*gite_de_france,"chambre d'hôte
+<b>label: gîtes de France</b>
+tél:  +262 262 25 38 57
+gsm: +262 692 64 74 48","<Point>
+            <coordinates>55.43629444444444,-21.15575277777778</coordinates>
+        </Point>","-21,1557527778","55,4362944444"
+Ci_md,Clair de Lune,realestate,"gite de randonnée
+tél: +262 262 31 88 03
+gsm: +262 692 82 47 13","<Point>
+            <coordinates>55.47344143,-21.1334</coordinates>
+        </Point>","-21,1334","55,47344143"
+Ci_md,Refuge M.A.M Anawim,realestate,"gite de randonnée
+tél: +262 262 37 54 83
+gsm: +262 692 32 76 65","<Point>
+            <coordinates>55.49556799999999,-21.13081111111111</coordinates>
+        </Point>","-21,1308111111","55,495568"
+Ci_md,Petite Fleur de Lentilles **,realestate*gite_de_france,"gite d'étape
+<b>label: gites de france</b>
+tél: +262 262 31 72 51
+gsm: +262 692 03 53 59","<Point>
+            <coordinates>55.46668785,-21.14879435</coordinates>
+        </Point>","-21,14879435","55,46668785"
+Ci_md,Les Filaos,realestate*gite_de_france,"chambre d'hôte
+<b>label: gîtes de France</b>
+tél: +262 262 73 09 34","<Point>
+            <coordinates>55.46585277777778,-21.14366666666667</coordinates>
+        </Point>","-21,1436666667","55,4658527778"
+Ci_md,Grondin Annie,realestate*gite_de_france,"chambre d'hôte
+<b>label: gîtes de France</b>
+tél: +262 262 31 90 95","<Point>
+            <coordinates>55.47317145,-21.14283611111111</coordinates>
+        </Point>","-21,1428361111","55,47317145"
+Ci_md,Gardebien Bertha,realestate*gite_de_france,"chambre d'hôte
+l<b>abel: gites de france</b>
+tél: +262 262 31 72 15","<Point>
+            <coordinates>55.47247771,-21.13630833333333</coordinates>
+        </Point>","-21,1363083333","55,47247771"
+Ci_md,Au Petit Coin Charmant,realestate*gite_de_france,"chambre d'hote
+<b>label: gites de france</b>
+tél: +262 262 35 18 13
+gsm: 0692 68 49 68","<Point>
+            <coordinates>55.43729084,-21.15428888888889</coordinates>
+        </Point>","-21,1542888889","55,43729084"
+Ci_md,Le Vieux Cep ***,rec_lodging*dining,"hotel, restaurant
+<b>label: villages créoles, qualité tourisme</b>
+tél:  +262 262 31 71 89
+acces hdcp","<Point>
+            <coordinates>55.47241605,-21.13668888888889</coordinates>
+        </Point>","-21,1366888889","55,47241605"
+Ci_md,La Pause Cilaos,rec_lodging*dining,"hotel, restaurant
+<b>label: qualité tourisme</b>
+tél: +262 262 40 19 02
+gsm: +262 692 60 27 62","<Point>
+            <coordinates>55.46946111111112,-21.137225</coordinates>
+        </Point>","-21,137225","55,4694611111"
+Ci_md,Les Physalis,rec_lodging*dining,"hotel, restaurant
+<b>label: villages créoles, qualité tourisme</b>
+tél: +262 262 31 85 85","<Point>
+            <coordinates>55.479501,-21.13588333333333</coordinates>
+        </Point>","-21,1358833333","55,479501"
+Ci_md,Le Cottage,dining,"restaurant
+<b>label: villages créoles, qualité tourisme</b>
+tél: +262 262 31 04 61","<Point>
+            <coordinates>55.47616157,-21.13385</coordinates>
+        </Point>","-21,13385","55,47616157"
+Ci_md,Le Marla,rec_lodging*dining,"hotel, restaurant
+tél: +262 262 31 72 33","<Point>
+            <coordinates>55.47477295,-21.13406111111111</coordinates>
+        </Point>","-21,1340611111","55,47477295"
+Ci_md,Le Petit Randonneur,rec_lodging*dining,"hotel, restaurant
+tél: +262 262 31 79 55","<Point>
+            <coordinates>55.47198635,-21.13258333333333</coordinates>
+        </Point>","-21,1325833333","55,47198635"
+Ci_md,Le Platane,dining*pizza,"restaurant, pizza
+tél:  +262 262 31 77 23
+gsm: +262 692 32 89 13","<Point><coordinates>55.469986,-21.136125</coordinates></Point>","-21,136125","55,469986"
+Ci_md,Chez Noé,dining*lodging,"restaurant, appartement
+<b>label: villages créoles</b>
+tél: +262 262 31 79 93
+gsm: +262 692 87 36 10","<Point>
+            <coordinates>55.47188296,-21.13233888888889</coordinates>
+        </Point>","-21,1323388889","55,47188296"
+Ci_md,Les Sentiers,dining,"restaurant
+tél: +262 262 31 71 54","<Point>
+            <coordinates>55.471997,-21.13241944444444</coordinates>
+        </Point>","-21,1324194444","55,471997"
+Ci_md,Chez Miko Fils,dining,"restaurant
+tél: +262 262 31 70 52","<Point>
+            <coordinates>55.469855,-21.13601111111111</coordinates>
+        </Point>","-21,1360111111","55,469855"
+Ci_md,Hôtel du Cirque,rec_lodging*dining,"hotel, restaurant
+tél: +262 262 31 70 68","<Point>
+            <coordinates>55.47024187,-21.135575</coordinates>
+        </Point>","-21,135575","55,47024187"
+Ci_md,Les Coeurs Bleus,dining,"restaurant
+tél: +262 262 21 39 92
+gsm: +262 692 60 84 60","<Point>
+            <coordinates>55.47066600000001,-21.13701666666667</coordinates>
+        </Point>","-21,1370166667","55,470666"
+Ci_md,Auberge Ti Bonheur,dining*hdcp,"restaurant
+tél: +262 262 28 67 54
+gsm: 0693 20 46 88
+acces hdcp","<Point>
+            <coordinates>55.47576700000001,-21.13357222222222</coordinates>
+        </Point>","-21,1335722222","55,475767"
+Ci_md,Les Chenets ***,rec_lodging,"hotel
+<b>label: qualité tourisme, villages créoles</b>
+tél: +262 262 31 85 85
+acces hdcp","<Point>
+            <coordinates>55.479501,-21.13588333333333</coordinates>
+        </Point>","-21,1358833333","55,479501"
+Ci_md,Hôtel des Neiges ***,rec_lodging,"hotel
+<b>label: villages créoles</b>
+tél: +262 262 31 72 33
+acces hdcp","<Point>
+            <coordinates>55.47477295,-21.13406111111111</coordinates>
+        </Point>","-21,1340611111","55,47477295"
+Ci_md,Les Aloès **,rec_lodging,"hotel
+<b>label: qualité tourisme, villages créoles, gayfriendly</b>
+tél: +262 262 31 81 00
+gsm: +262 692 50 50 86
+acces hdcp","<Point>
+            <coordinates>55.47002576,-21.13880555555556</coordinates>
+        </Point>","-21,1388055556","55,47002576"
+Ci_md,Casa Célina,rec_lodging,"hotel
+tél: +262 262 40 19 02
+gsm: +262 692 58 87 13","<Point><coordinates>55.46946,-21.137225</coordinates></Point>","-21,137225","55,46946"
+Ci_md,Le Tapacala,realestate,"chambre d'hote
+tél: +262 692 84 55 67","<Point>
+            <coordinates>55.43504356897663,-21.14272222222222</coordinates>
+        </Point>","-21,1427222222","55,435043569"
+Ci_md,Les Mimosas,dining,"table d'hote
+tél: +262 262 96 72 73
+gsm: +262 692 69 84 93","<Point>
+            <coordinates>55.48946877,-21.14227777777778</coordinates>
+        </Point>","-21,1422777778","55,48946877"
+Ci_md,Doris,realestate,"chambre d'hote
+gsm: +262 692 61 35 39","<Point>
+            <coordinates>55.49094800000001,-21.14195277777778</coordinates>
+        </Point>","-21,1419527778","55,490948"
+Ci_md,Galabert Jaune,realestate,"chambre d'hote
+tél:  +262 262 47 38 77
+gsm: +262 692 08 58 48","<Point>
+            <coordinates>55.47592244000001,-21.13275277777778</coordinates>
+        </Point>","-21,1327527778","55,47592244"
+Ci_md,Case Nyala,realestate,"chambre d'hote
+<b>label: villages créoles, clévacances</b>
+tél: +262 262 31 89 57
+gsm: +262 692 87 70 14","<Point>
+            <coordinates>55.46879500000001,-21.13443611111111</coordinates>
+        </Point>","-21,1344361111","55,468795"
+Ci_md,Clain Régine,realestate,"chambre d'hote
+tél: +262 692 09 04 67","<Point>
+            <coordinates>55.475313,-21.13401111111111</coordinates>
+        </Point>","-21,1340111111","55,475313"
+Ci_md,Au P'tit Bout du Monde,realestate," chambre d'hote
+tél: +262 262 25 74 57
+gsm: +262 692 86 17 70","<Point>
+            <coordinates>55.43385278,-21.15432777777778</coordinates>
+        </Point>","-21,1543277778","55,43385278"
+Ci_md,Les Calumets,realestate,"chambre d'hote
+tél: +262 262 35 40 63","<Point>
+            <coordinates>55.49215866,-21.13622222222222</coordinates>
+        </Point>","-21,1362222222","55,49215866"
+Ci_md,Le Platane,realestate,"chambre d'hote
+tél: +262 262 31 77 23
+gsm: +262 692 32 89 13","<Point>
+            <coordinates>55.469937,-21.13630555555556</coordinates>
+        </Point>","-21,1363055556","55,469937"
+Ci_md,Domaine Papangue,realestate," table d'hote chambre d'hote
+tél: +262 262 31 45 54
+gsm: +262 692 03 05 35","<Point>
+            <coordinates>55.476524,-21.16265277777778</coordinates>
+        </Point>","-21,1626527778","55,476524"
+Ci_md,Les Cimes,realestate,"chambre d'hote
+tél:  +262 262 31 72 47
+gsm: +262 692 25 05 06","<Point><coordinates>55.473237,-21.135375</coordinates></Point>","-21,135375","55,473237"
+Ci_md,Le Bois Rouge,realestate,"chambre d'hote
+<b>label: villages créole, clévacances</b>
+tél: +262 262 47 57 57
+gsm: 0692 30 57 57","<Point>
+            <coordinates>55.47303985999999,-21.13124722222222</coordinates>
+        </Point>","-21,1312472222","55,47303986"
+Ci_md,Le Vieux Pressoir,realestate,"chambre d'hote
+tél: +262 262 25 56 64
+gsm: 0693 03 89 14","<Point>
+            <coordinates>55.49131088999999,-21.139125</coordinates>
+        </Point>","-21,139125","55,43385278"

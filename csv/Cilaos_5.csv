@@ -1,0 +1,67 @@
+id,nom,categ,description,geometry,lat,lng
+Ci_a,Run Evasion,cycling,"vtt
+tél: +262 262.31.83.57","<Point>
+            <coordinates>55.469732000194,-21.1367830000698</coordinates>
+        </Point>","-21,1367830001","55,4697320002"
+Ci_a,Julmos Loisirs,swimming,"loisir nautique
+gsm: +262 692 05 38 99","<Point><coordinates>55.476632,-21.13365</coordinates></Point>","-21,13365","55,476632"
+Ci_a,marché,grocery,"marché
+période: vendredi de 4h à 12h","<Point>
+            <coordinates>55.47090120681124,-21.13507959652031</coordinates>
+        </Point>","-21,1350795965","55,4709012068"
+Ci_a,Soriano Roby,hiker*speleologie,"Randonnée pédestre, Spéléologie, tunnels de lave
+_
+label: qualité tourisme
+_
+gsm: +262 692 16 20 90
+_
+mail : roby.volcan@gmail.com
+_
+web : http://tunnelsdelave.re","<Point>
+            <coordinates>55.47002576,-21.13880555555556</coordinates>
+        </Point>","-21,1388055556","55,47002576"
+Ci_a,Bouisset Fabrice,canoeing*hiker*speleologie,"Canyoning, Randonnée pédestre, Spéléologie, tunnels de lave_
+tel: +262 262317442_
+mail : bouisset.fabrice@wanadoo.fr","<Point>
+            <coordinates>55.47809132787374,-21.13554854766656</coordinates>
+        </Point>","-21,1355485477","55,4780913279"
+Ci_a,La Roche Merveilleuse,info,"tél:  +262 262 31 82 42
+GSM : +262 692 16 64 45","<Point>
+            <coordinates>55.47444444444444,-21.132225</coordinates>
+        </Point>","-21,132225","55,4744444444"
+Ci_a,Aparksa Montagne,canoeing*hiker*speleologie,"Canyoning, Randonnée pédestre, Spéléologie, tunnels de lave
+tel:  +262 262317330
+gsm: +262 692665009","<Point>
+            <coordinates>55.470812,-21.13902222222222</coordinates>
+        </Point>","-21,1390222222","55,470812"
+Ci_a,Cilaosaventure.com,canoeing*hiker*speleologie*mountains,"Randonnée pédestre, Canyoning, Escalade_
+label: qualite tourisme, Gayfriendly  _
+gsm: +262 692 66 73 42_
+_
+mail : team@cilaosaventure.com_
+<a>href=""http://www.cilaosaventure.com"" >http://www.cilaosaventure.com</a>","<Point>
+            <coordinates>55.46854169996142,-21.13441499977039</coordinates>
+        </Point>","-21,1344149998","55,4685417"
+Ci_a,Allons Bat Carré Randos,hiker,"Randonnée pédestre
+_
+gsm: +262 692 43 06 79
+_
+mail : recif.tigus@wanadoo.fr
+<a href=""http://abcrandos.feeling974.com"" >http://abcrandos.feeling974.com</a>","<Point>
+            <coordinates>55.46937270066597,-21.14254269974405</coordinates>
+        </Point>","-21,1425426997","55,4693727007"
+Ci_a,Dulong Jean Michel,hiker,"Randonnée pédestre
+_
+gsm: +262 692 66 49 90
+_
+mail : jmdulong@live.fr","<Point>
+            <coordinates>55.45627819511178,-21.14089325159196</coordinates>
+        </Point>","-21,1408932516","55,4562781951"
+Ci_a,Lilley Marianne,hiker,"Randonnée pédestre
+_
+gsm: +262 692 02 89 10
+_
+mail : alizesmontagnes@gmail.com
+<a href=""http://www.alizesmontagnes.com"" >http://www.alizesmontagnes.com</a>","<Point>
+            <coordinates>55.45370340008629,-21.17923289994136</coordinates>
+        </Point>","-21,1792328999","55,4537034001"

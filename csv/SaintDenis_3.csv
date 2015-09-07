@@ -1,0 +1,477 @@
+id,nom,categ,description,geometry,lat,lng
+SD_v,piton tanan,mountains,pointInteret_mont,"<Point>
+            <coordinates>55.49418611978805,-20.95963267261597</coordinates>
+        </Point>","-20,9596326726","55,4941861198"
+SD_v,"Caméra Direction Régionale des Routes
+RN2 - Echangeur de Gillot",3,"webCam_<a href=""http://m-r.li/webcam/camera/Wdde.php?n=2071"" >http://m-r.li/webcam/camera/Wdde.php?n=2071</a>","<Point>
+            <coordinates>55.50445381134965,-20.89661472200405</coordinates>
+        </Point>","-20,896614722","55,5044538113"
+SD_v,grand eboulis,water,pointInteret,"<Point>
+            <coordinates>55.48779087178614,-20.98367182754092</coordinates>
+        </Point>","-20,9836718275","55,4877908718"
+SD_v,piton sartave,mountains,pointInteret_,"<Point>
+            <coordinates>55.40258269597047,-20.94114927348531</coordinates>
+        </Point>","-20,9411492735","55,402582696"
+SD_v,piton fougère,mountains,pointInteret_,"<Point>
+            <coordinates>55.4052498031584,-20.98258243204439</coordinates>
+        </Point>","-20,982582432","55,4052498032"
+SD_v,"Caméra Direction Régionale des Routes
+RN1 (RL) - Entree Ouest Saint Denis",webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wdde.php?n=2077"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.43573714909746,-20.87677672086177</coordinates>
+        </Point>","-20,8767767209","55,4357371491"
+SD_v,La Montagne vue de Saint-Denis,3,"webCam <a href=""http://www.meteoendirect.re/index.php?mode=historic&instant=xx&id_camera=30#camera"" >http://www.meteoendirect.re/index.php?mode=historic&instant=xx&id_camera=30#camera</a>","<Point>
+            <coordinates>55.44633326069587,-20.88104004867718</coordinates>
+        </Point>","-20,8810400487","55,4463332607"
+SD_v,Golf du Colorado - La Montagne,3,"webCam_ <a href=""http://www.meteoendirect.re/index.php?mode=historic&instant=xx&id_camera=1#camera"" >http://www.meteoendirect.re/index.php?mode=historic&instant=xx&id_camera=1#camera</a>","<Point>
+            <coordinates>55.425011910344,-20.89557833086363</coordinates>
+        </Point>","-20,8955783309","55,4250119103"
+SD_v,"Caméra Direction Régionale des Routes
+RN1 (RL) - La Grande Chaloupe",3,"webCam_l <a href=""http://m-r.li/webcam/camera/Wdde.php?n=2065"" >http://m-r.li/webcam/camera/Wdde.php?n=2065</a>","<Point>
+            <coordinates>55.37654099526901,-20.89628328611884</coordinates>
+        </Point>","-20,8962832861","55,3765409953"
+SD_v,"Caméra Direction Régionale des Routes
+RN2 - Jamaique",webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wdde.php?n=2082"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.49382657645738,-20.88641326767323</coordinates>
+        </Point>","-20,8864132677","55,4938265765"
+SD_v,Ancien hopital colonial felix guyons,cbh,"patrimoine_
+Il constituait le principal établissement sanitaire de la ville
+ jusqu'à l'ouverture du centre hospitalier Félix-Guyon en 1957.","<Point>
+            <coordinates>55.44587000000001,-20.88666111111111</coordinates>
+        </Point>","-20,8866611111","55,44587"
+SD_v,Ancien hopital militaire,cbh,"patrimoine_Iinscrites depuis le 3 avril 2007, au titre des monuments historiques les façades et toitures de l’ensemble des bâtiments constituant l’ancien hôpital militaire, y compris le monument à Victor Mac-Auliffe.","<Point>
+            <coordinates>55.44724889740075,-20.87582055060506</coordinates>
+        </Point>","-20,8758205506","55,4472488974"
+SD_v,Ancien parc d'artillerie,cbh,patrimoine_Ancien parc d'artillerie et maison dite du commandant de gendarmerie.,"<Point>
+            <coordinates>55.449349,-20.87292222222222</coordinates>
+        </Point>","-20,8729222222","55,449349"
+SD_v,Ancienne caserne d'artillerie,cbh,patrimoine_Ancienne caserne d'artillerie,"<Point>
+            <coordinates>55.44867261009527,-20.87307137980868</coordinates>
+        </Point>","-20,8730713798","55,4486726101"
+SD_v,Caserne Lambert,cbh,"_patrimoine_La caserne Lambert est construite par le génie militaire à côté d'un nouvel arsenal, à l'initiative du Gouverneur Mahé de La Bourdonnais. La première pierre est posée le 4 avril 1846, il vont durer quatre ans.","<Point>
+            <coordinates>55.44085086114125,-20.87823164129635</coordinates>
+        </Point>","-20,8782316413","55,4408508611"
+SD_v,chapelle de l'imaculé conception,3,"religion_Conception est inscrite le 6 juin 1988 null l'inventaire supplémentaire des Monuments historiques en totalité, y compris ses vitraux","<Point>
+            <coordinates>55.44959681344022,-20.88231309134016</coordinates>
+        </Point>","-20,8823130913","55,4495968134"
+SD_v,Cathédrale,church,"Cathédrale de Saint-Denis classé en totalité parmi les monuments historiques le 13 octobre 1975. Le 4 novembre 1829 est posée la première pierre de l'actuel édifice, construit sur les plans de l'ingénieur Jean-baptise Dumas.","<Point>
+            <coordinates>55.44848284971957,-20.87721852692003</coordinates>
+        </Point>","-20,8772185269","55,4484828497"
+SD_v,Cure de la cathédrale,3,"religion_Cette maison curiale figure sur le plan Guyomar homologué en 1742, elle est sans doute l'une des plus anciennes constructions de la ville de Saint-Denis. D'après le Père Barassin, elle date de 1747.","<Point>
+            <coordinates>55.44793176243884,-20.87733173566843</coordinates>
+        </Point>","-20,8773317357","55,4479317624"
+SD_v,Eglise notre dame de l'Assemption,3,"religion_L'église Notre Dame de l'assomption à Saint-denis correspond à l'ancienne chapelle du collège de Bourbon ( ancien collège royal ), devenue église paroissiale","<Point>
+            <coordinates>55.45267156145198,-20.88544009883763</coordinates>
+        </Point>","-20,8854400988","55,4526715615"
+SD_v,Eglise Notre dame de la Délivrance,3,religion_église Notre Dame de La Délivrance.,"<Point>
+            <coordinates>55.44333534416309,-20.87982767072507</coordinates>
+        </Point>","-20,8798276707","55,4433353442"
+SD_v,Eglise Saint-Gabriel,3,"religion_L'église Saint-Gabriel de La Montagne est consacrée pendant la seconde guerre mondiale par Monseigneur Cléret de Langavant évêque de La Réunion, et Monseigneur Le Hunsec Supérieur général de la Congrégation des Pères du Saint-Esprit","<Point>
+            <coordinates>55.42738901396631,-20.89052793056329</coordinates>
+        </Point>","-20,8905279306","55,427389014"
+SD_v,Eglise Saint-Jacque,3,"religion_église Saint-Jacques à Saint-Denis île de La Réunion. La nouvelle église en basalte enduit est consacrée par Monseigneur Maupoint le 31 mai 1858, elle est placée sous le vocable Saint-Jacques.","<Point>
+            <coordinates>55.4587261180532,-20.88392947860569</coordinates>
+        </Point>","-20,8839294786","55,4587261181"
+SD_v,Gare de la grande chaloupe,cbh,patrimoine_La gare de la grande Chaloupe inscrite en totalité à l'inventaire des monuments historiques le 22 octobre 1998.,"<Point>
+            <coordinates>55.37699856352104,-20.89630865533246</coordinates>
+        </Point>","-20,8963086553","55,3769985635"
+SD_v,Ancienne hotel de ville,cbh,patrimoine_Un carré parfait mesurant 37 mètres de côté hors oeuvre sur 13 mètres de hauteurs sous comble.,"<Point>
+            <coordinates>55.44824262085329,-20.87883801694861,49.9530765933244</coordinates>
+        </Point>","-20,8788380169","55,4482426209"
+SD_v,Hotel joinville,cbh,"patrimoine_L'hôtel Joinville est inscrit à l'inventaire supplémentaire des monuments historiques le 29 août 1989, y compris les façades, la toiture et le portail principal.","<Point>
+            <coordinates>55.44651406970973,-20.87573561875545</coordinates>
+        </Point>","-20,8757356188","55,4465140697"
+SD_v,Lazaret,cbh,"patrimoine_Deux lazarets sont construits null partir de 1860, d'une surface de 3 660 m2. Lieu de réception des indiens travailleur","<Point>
+            <coordinates>55.37494064652273,-20.89807684325733</coordinates>
+        </Point>","-20,8980768433","55,3749406465"
+SD_v,Mosqué Noor al Islam,3,"pointInteret_religion_Elle est inaugurée le 28 novembre 1905, c'est la première mosquée de France, que les fidèles baptisent Noor-e-Islam","<Point>
+            <coordinates>55.45243935462521,-20.87914263315983</coordinates>
+        </Point>","-20,8791426332","55,4524393546"
+SD_v,Musée Léon Dierx,cbh,"patrimoine_En 1911, les deux intellectuels créoles, Marius et Ary Leblond transforme cet ancien évêché en musée, le musée Léon Dierx.","<Point>
+            <coordinates>55.44990684,-20.88330277777778</coordinates>
+        </Point>","-20,8833027778","55,44990684"
+SD_v,Muséum d'histoire naturel,cbh,patrimoine_Muséum d'histoire naturelle de Saint-Denis classé en totalité parmi les monuments historiques le 29 décembre 1978.,"<Point>
+            <coordinates>55.45162332,-20.88744444444444</coordinates>
+        </Point>","-20,8874444444","55,45162332"
+SD_v,Palais Rontonay,3,"pointInteret_patrimoine_La maison est construite au début du XIXe siècle par Julien Gaultier de Rontaunay, originaire de Maurice qui est venu s'installer à La Réunion suite à la prise de l'île de France par les Britanniques.","<Point>
+            <coordinates>55.44874090399218,-20.87545418257516</coordinates>
+        </Point>","-20,8754541826","55,448740904"
+SD_v,Pavillon badat,3,"pointInteret_patrimoine_Le Pavillon Badat est un batiment commercial construit dans les années 1840 - 1845, situé dans le centre-ville de Saint-Denis au croisement des rues de Paris et Maréchal-Leclerc","<Point>
+            <coordinates>55.44911990873443,-20.88042369311737</coordinates>
+        </Point>","-20,8804236931","55,4491199087"
+SD_v,pensionat de l'immaculée conception,3,"pointInteret_religion_La construction du pensionnat de l'Immaculée Conception date de 1856, pose de la première pierre, ce sont les sœurs de Saint Joseph de Cluny qui le font construire.","<Point>
+            <coordinates>55.44940516740749,-20.88232495335951</coordinates>
+        </Point>","-20,8823249534","55,4494051674"
+SD_v,place du gouvernement,3,"pointInteret_patrimoine_La Place du Gouvernement est l'ancienne Place d'armes, le plus vieil espace public de la ville de Saint-Denis, lieu de rassemblement onull se déroulent nombre d'évènements qui marquèrent l'histoire de La Réunion","<Point>
+            <coordinates>55.44783919789298,-20.8757473336191</coordinates>
+        </Point>","-20,8757473336","55,4478391979"
+SD_v,Hotel de la prefecture,cbh,"patrimoine_Hôtel de La Préfecture de Saint-Denis classé en totalité parmi les monuments historiques le 12 août 1970. C'est la première construction publique de grande envergure sur l'île, tout à la fois entrepôt, bureaux, logement de fonction et forteresse","<Point>
+            <coordinates>55.44617643250659,-20.87568488320965</coordinates>
+        </Point>","-20,8756848832","55,4461764325"
+SD_v,la rue de paris,cbh,"patrimoine_Au-delà du rond-point de la victoire commence la rue de Paris, dans cette rue se succèdent des monuments, des maisons coloniales, des maisons créoles, des musées, une visite riche en histoire","<Point>
+            <coordinates>55.448534,-20.87876111111111</coordinates>
+        </Point>","-20,8787611111","55,448534"
+SD_v,Statut Mahé de la Bourdonnais,cbh,patrimoine_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 14 août 2000,"<Point>
+            <coordinates>55.44764167279211,-20.87580903877503</coordinates>
+        </Point>","-20,8758090388","55,4476416728"
+SD_v,temple hindou kalikambal,3,pointInteret_religion_indiens,"<Point>
+            <coordinates>55.46036560646104,-20.88169056951401</coordinates>
+        </Point>","-20,8816905695","55,4603656065"
+SD_v,Villa du département,cbh,"patrimoine_La construction de cette maison est financée entre 1793 et 1804 par Jean Baptiste de Lestrac, premier maire de Saint-Denis.","<Point>
+            <coordinates>55.44943858584559,-20.88122193942998</coordinates>
+        </Point>","-20,8812219394","55,4494385858"
+SD_v,Temple Lisi Tong et Temple Chane,cbh,"patrimoine_Le temple Cantonais Lisi Tong, ou Temple de la traversée heureuse, regroupe les familles Thiaw, Law, Tong.","<Point>
+            <coordinates>55.45585552955387,-20.88033063800625</coordinates>
+        </Point>","-20,880330638","55,4558555296"
+SD_v,Villa du Générale,cbh,patrimoine,"<Point>
+            <coordinates>55.45094418751584,-20.88550833874063</coordinates>
+        </Point>","-20,8855083387","55,4509441875"
+SD_v,La bretagne,3,"quartier_
+La Bretagne au Sud-est du centre de Saint-Denis est un quartier résidentiel situé dans les hauteurs qui dominent la ville. C'est la région voisine de Domenjod, établie entre la Ravine à Cadet et la rivière du Premier Bras. Ce nom de Bretagne lui fut donné par Sicre de Fontbrune, son premier propriétaire car le paysage lui rappelait cette province de France.","<Point>
+            <coordinates>55.49633187532011,-20.91455408088242</coordinates>
+        </Point>","-20,9145540809","55,4963318753"
+SD_v,La Redoute,3,"quartier_Le quartier de La Redoute est situé au pied des rampes qui mènent à La Montagne, le quartier est séparé du centre-ville par le lit de la Rivière Saint-Denis, qu'il surplombe. La quartier de La Redoute fut ainsi baptisé du nom du plateau où il se développa, et qui abritait autrefois une redoute.","<Point>
+            <coordinates>55.44274417743272,-20.88441895644644</coordinates>
+        </Point>","-20,8844189564","55,4427441774"
+SD_v,la Rivière,capital_big,"Le quartier de La Rivière à Saint-Denis se trouve sur la rive droite de la rivière Saint-Denis. Le quartier s'est développé près de son embouchure. C'est précisément à cet endroit que les pêcheurs de bichiques, en fin d'année principalement attendent la montée des alevins avec leurs vouves ( nom malgache qui désigne des nasses ).","<Point>
+            <coordinates>55.44597050154937,-20.87991204474109</coordinates>
+        </Point>","-20,8799120447","55,4459705015"
+SD_v,la Brulé,capital_big,"Le Brulé est un village situé sur le rempart sud de Saint-Denis délimité par la rivière Saint-Denis et la ravine des Patates à Durand. Le 
+plateau à 800 m d'altitude se prolonge par la Plaine des Chicots jusqu'au rempart de la Roche Écrite dominant le cirque de Salazie à  2 275 m d'altitude. Le village du brûlé accessible par la D42 est à environ 12 km du centre ville de Saint-Denis. Cet écart semi-rural possède une école primaire, un plateau sportif et quelques belles cases créoles qui rappellent son passé.","<Point>
+            <coordinates>55.43535303380417,-20.92290998730169</coordinates>
+        </Point>","-20,9229099873","55,4353530338"
+SD_v,le Butor,capital_big,"Le quartier du Butor est situé à l'Est du centre ville de Saint-Denis. Le Butor est situé dans le delta de la ravine des Patates 
+à Durand. La patate à Durand, Ipomoea pes-capraeest, une plante rampante qui fixe le sol.","<Point>
+            <coordinates>55.46969804324935,-20.8871028287036</coordinates>
+        </Point>","-20,8871028287","55,4696980432"
+SD_v,Le chaudron,capital_big,"Le quartier du Chaudron est situé à l'Est du centre ville de Saint-Denis. Ce quartier populaire est l'un des plus peuplés de La Réunion. Le nom de Chaudron est donné à une propriété sur laquelle se trouve une grande maison, du fait de sa proximité avec une grande cavité dans la ravine de Premier Bras ayant la forme d'un chaudron.","<Point>
+            <coordinates>55.48766192116781,-20.89235846023076</coordinates>
+        </Point>","-20,8923584602","55,4876619212"
+SD_v,le Moufia,capital_big,"Le quartier du Moufia est situé au sud-est du centre ville de Saint-Denis sur les premières pentes d'un pan de montagne qui culmine à la Roche Écrite. Quartier administratif, le siège du Conseil régional de La Réunion, en forme de pyramide inversée se trouve au Moufia, et quartier des étudiants le campus principal de l'Université de La Réunion se trouve également au Moufia.","<Point>
+            <coordinates>55.49221660935218,-20.90077381317277</coordinates>
+        </Point>","-20,9007738132","55,4922166094"
+SD_v,Petite ile,capital_big,Le quartier de Petite-île à Saint-Denis se trouve sur la rive gauche de la rivière Saint-Denis. Le quartier se développe de la Caserne Lambert jusqu'au quartier de la Redoute.,"<Point>
+            <coordinates>55.44024254904286,-20.88118561765904</coordinates>
+        </Point>","-20,8811856177","55,440242549"
+SD_v,Eglise Saint-jacque,church,"Le quartier Saint-Jacques est situé au sud-est du centre ville de Saint-Denis. Le quartier se nomme du nom de l'église consacrée par Monseigneur Maupoint le 31 mai 1858, et placée sous le vocable de Saint-Jacques.","<Point>
+            <coordinates>55.45870873966966,-20.88396335545594</coordinates>
+        </Point>","-20,8839633555","55,4587087397"
+SD_v,Sainte-clotilde,capital_big,"Le quartier de Sainte-Clotilde est situé à l'Est de Saint-Denis, entre le quartier du Butor et celui du Chaudron. Ce quartier résidentiel est l'un des deux quartiers du chef-lieu les plus peuplés avec le quartier du Chaudron. Ce bourg à l'origine distant de Saint-Denis est devenu par son urbanisation importante mitoyen de la ville, il est aujourd'hui un quartier de la ville de 
+Saint-Denis.","<Point>
+            <coordinates>55.47762943814186,-20.89362651261648</coordinates>
+        </Point>","-20,8936265126","55,4776294381"
+SD_v,Jardin de l'etat,terain,"Anciennement Jardin du Roy, il servait de jardin d'acclimatation à sa fondation en 1773 par La Compagnie des Indes. Le Jardin de l'Etat abrite un Muséum d'histoire naturelle, inauguré en 1855, il est classé Monument historique en 1978. La visite de ce jardin est l'occasion de découvrir des nombreux arbres exotiques
+tél: +262 262 20 02 19","<Point>
+            <coordinates>55.45088299999999,-20.88692222222222</coordinates>
+        </Point>","-20,8869222222","55,450883"
+SD_v,Pensionnat de l'Immaculée Conception,cbh,inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 2 février 1993,"<Point>
+            <coordinates>55.44943888888888,-20.88278055555556</coordinates>
+        </Point>","-20,8827805556","55,4494388889"
+SD_v,Maison des notaires,cbh,"inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 29 mars 1996,
+acceuil la BRED","<Point>
+            <coordinates>55.449056,-20.87622222222222</coordinates>
+        </Point>","-20,8762222222","55,449056"
+SD_v,Maison du Premier président de la cour d'appel,cbh,"Elle est en partie classée et en partie inscrite Monument historique depuis le 30 mai 1984,
+appartient au ministère de la justice","<Point>
+            <coordinates>55.45180599999999,-20.88077777777778</coordinates>
+        </Point>","-20,8807777778","55,451806"
+SD_v,Villa du Général,cbh,"classée Monument historique depuis le 5 juillet 1993,
+propriété de la Région Réunion","<Point>
+            <coordinates>55.45083,-20.88443888888889</coordinates>
+        </Point>","-20,8844388889","55,45083"
+SD_v,Maison Macé,3,"villa Macé ou villa Bulle de Bois,
+inscrite à l'inventaire supplémentaire des Monuments historiques","<Point>
+            <coordinates>55.450889,-20.87905555555556</coordinates>
+        </Point>","-20,8790555556","55,450889"
+SD_v,Domaine du Chaudron,cbh,"ou propriété Maureau
+son bâtiment principal est classé Monument historique depuis le 22 novembre 1981
+ le parc et les dépendances étant inscrits à l'inventaire supplémentaire","<Point>
+            <coordinates>55.494028,-20.88943888888889</coordinates>
+        </Point>","-20,8894388889","55,494028"
+SD_v,Domaine Bang,cbh,inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 8 novembre 1991,"<Point>
+            <coordinates>55.50236111111111,-20.91555555555555</coordinates>
+        </Point>","-20,9155555556","55,5023611111"
+SD_v,Chapelle Saint-Thomas-des-Indiens,church,"construite entre 1860 et 1865
+inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 22 octobre 1998","<Point>
+            <coordinates>55.457083,-20.88319444444445</coordinates>
+        </Point>","-20,8831944444","55,457083"
+SD_v,Villa Fourcade,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 14 août 2000,"<Point><coordinates>55.418083,-20.89125</coordinates></Point>","-20,89125","55,418083"
+SD_v,Domaine de Montgaillard,cbh,inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 14 août 2000,"<Point>
+            <coordinates>55.46375,-20.91388888888889</coordinates>
+        </Point>","-20,9138888889","55,46375"
+SD_v,Maison de la Banque de La Réunion,cbh,inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 14 août 2000,"<Point>
+            <coordinates>55.450222,-20.88277777777778</coordinates>
+        </Point>","-20,8827777778","55,450222"
+SD_v,Maison dite Bossu,cbh,inscrite à l'inventaire supplémentaire des Monuments historiques depuis le 12 janvier 2006,"<Point>
+            <coordinates>55.440333,-20.91063888888889</coordinates>
+        </Point>","-20,9106388889","55,440333"
+SD_v,Maison dite Oudin,cbh,inscrite à l'inventaire supplémentaire des Monuments historiques depuis le 12 janvier 2006,"<Point>
+            <coordinates>55.480167,-20.91961111111111</coordinates>
+        </Point>","-20,9196111111","55,480167"
+SD_v,Ancien génie militaire,cbh,inscrits ensemble à l'inventaire supplémentaire des Monuments historiques depuis le 3 avril 2007,"<Point>
+            <coordinates>55.448333,-20.87347222222222</coordinates>
+        </Point>","-20,8734722222","55,448333"
+SD_v,Chapelle de La Redoute,church,"chapelle protestante,
+inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 3 avril 2007","<Point>
+            <coordinates>55.442778,-20.88283333333333</coordinates>
+        </Point>","-20,8828333333","55,442778"
+SD_v,Direction de l'agriculture et de la forêt de La Réunion,cbh,inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 26 août 2011,"<Point>
+            <coordinates>55.456667,-20.89444444444445</coordinates>
+        </Point>","-20,8944444444","55,456667"
+SD_v,Château Morange,cbh,"inscrits en totalité au titre des Monuments historiques depuis le 13 décembre 2010
+construite par Prosper Morange au milieu du XIXe siècle
+autre demeure de la meme époque:
+la demeure Nas de Tourris, boulevard de la Providence 
+ à Montgaillard la demeure Diex-De Heaulme","<Point>
+            <coordinates>55.462083,-20.89208333333333</coordinates>
+        </Point>","-20,8920833333","55,462083"
+SD_v,Immeuble Ah-Sing,cbh,inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 26 août 2011,"<Point><coordinates>55.455194,-20.8795</coordinates></Point>","-20,8795","55,455194"
+SD_v,Maison Gôry,cbh,inscrite aux Monuments historiques depuis le 26 janvier 2012,"<Point>
+            <coordinates>55.450278,-20.88180555555556</coordinates>
+        </Point>","-20,8818055556","55,450278"
+SD_v,Maison Turquet,cbh,inscrite aux Monuments historiques depuis le 26 janvier 2012,"<Point>
+            <coordinates>55.45069400000001,-20.88305555555556</coordinates>
+        </Point>","-20,8830555556","55,450694"
+SD_v,piton de tête,mountains,pointInteret_mont,"<Point>
+            <coordinates>55.43150998094694,-20.90216588029158</coordinates>
+        </Point>","-20,9021658803","55,4315099809"
+SD_v,pic adam,mountains,pointInteret_mont,"<Point>
+            <coordinates>55.46511937011906,-20.94620467448301</coordinates>
+        </Point>","-20,9462046745","55,4651193701"
+SD_v,piton marmite,3,pointInteret_mont,"<Point>
+            <coordinates>55.47318735112624,-20.9765740148871</coordinates>
+        </Point>","-20,9765740149","55,4731873511"
+SD_v,rivière saint-denis,water,"pointInteret_eau
+_16,6 km","<Point>
+            <coordinates>55.4439229993081,-20.87566247902182</coordinates>
+        </Point>","-20,875662479","55,4439229993"
+SD_v,ravinne du butor,water,pointInteret_eau,"<Point>
+            <coordinates>55.46710338220802,-20.88364054532341</coordinates>
+        </Point>","-20,8836405453","55,4671033822"
+SD_v,ravinne patates à  durand,water,pointInteret_eau,"<Point>
+            <coordinates>55.47296014026635,-20.88495754074114</coordinates>
+        </Point>","-20,8849575407","55,4729601403"
+SD_v,rivière du chaudron,water,pointInteret_eau,"<Point>
+            <coordinates>55.49730350951816,-20.88409233787926</coordinates>
+        </Point>","-20,8840923379","55,4973035095"
+SD_v,cascade du chaudron,3,rivière,"<Point>
+            <coordinates>55.47421622467054,-20.95198875425099</coordinates>
+        </Point>","-20,9519887543","55,4742162247"
+SD_v,cascade maniquet,3,rivière,"<Point>
+            <coordinates>55.42541681940072,-20.94424383516139</coordinates>
+        </Point>","-20,9442438352","55,4254168194"
+SD_v,ravine du butor,water,pointInteret_eau,"<Point>
+            <coordinates>55.47246151255148,-20.90201871084524</coordinates>
+        </Point>","-20,9020187108","55,4724615126"
+SD_v,plaines d'affrouche,terain,lieuDit_foret,"<Point>
+            <coordinates>55.41342733704605,-20.9767675659708</coordinates>
+        </Point>","-20,976767566","55,413427337"
+SD_v,îlet à guillaume,terain*capital_big,"lieuDit_quartier
+_
+ruine d'une prison orphelinat","<Point>
+            <coordinates>55.4107719919759,-20.95032349570428</coordinates>
+        </Point>","-20,9503234957","55,410771992"
+SD_v,piton de la grande chaloupe,3,pointInteret_mont,"<Point>
+            <coordinates>55.40660547348985,-20.95553241094504</coordinates>
+        </Point>","-20,9555324109","55,4066054735"
+SD_v,le quinzième,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.40526143661326,-20.91855768797786</coordinates>
+        </Point>","-20,918557688","55,4052614366"
+SD_v,saint bernard,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.40280622104127,-20.91203076728125</coordinates>
+        </Point>","-20,9120307673","55,402806221"
+SD_v,la ravinne à jacques,3,quartier,"<Point>
+            <coordinates>55.38531457044542,-20.89170886577894</coordinates>
+        </Point>","-20,8917088658","55,3853145704"
+SD_v,ruisseau blanc,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.41033765348986,-20.89767629104053</coordinates>
+        </Point>","-20,897676291","55,4103376535"
+SD_v,moulin cader,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.41031051484929,-20.88545423736169</coordinates>
+        </Point>","-20,8854542374","55,4103105148"
+SD_v,la montagne,3,quartier,"<Point>
+            <coordinates>55.42372131475224,-20.88895136178688</coordinates>
+        </Point>","-20,8889513618","55,4237213148"
+SD_v,la vigie,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.42810248806332,-20.88531047056531</coordinates>
+        </Point>","-20,8853104706","55,4281024881"
+SD_v,les brises,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.42482585124781,-20.87869354804622</coordinates>
+        </Point>","-20,878693548","55,4248258512"
+SD_v,pointe du gouffre,3,pointInteret_mont,"<Point>
+            <coordinates>55.39536196633029,-20.88286375119481</coordinates>
+        </Point>","-20,8828637512","55,3953619663"
+SD_v,la source,3,quartier,"<Point>
+            <coordinates>55.45081531502287,-20.89110597697199</coordinates>
+        </Point>","-20,891105977","55,450815315"
+SD_v,petit île,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.44142074996557,-20.88101515289007</coordinates>
+        </Point>","-20,8810151529","55,44142075"
+SD_v,bellepierre,3,quartier,"<Point>
+            <coordinates>55.44461052554138,-20.89988316072298</coordinates>
+        </Point>","-20,8998831607","55,4446105255"
+SD_v,îlet des manguiers,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.43878247188492,-20.90451475101283</coordinates>
+        </Point>","-20,904514751","55,4387824719"
+SD_v,canal du brulé,3,quartier,"<Point>
+            <coordinates>55.44140136045743,-20.90912720300576</coordinates>
+        </Point>","-20,909127203","55,4414013605"
+SD_v,le brulé,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.43570182128494,-20.9227075419565</coordinates>
+        </Point>","-20,922707542","55,4357018213"
+SD_v,la convalescence,3,quartier,"<Point>
+            <coordinates>55.4498391763788,-20.92295252168512</coordinates>
+        </Point>","-20,9229525217","55,4498391764"
+SD_v,piton du butor,3,pointInteret_mont,"<Point>
+            <coordinates>55.44453660100379,-20.93070803648599</coordinates>
+        </Point>","-20,9307080365","55,444536601"
+SD_v,morne de saint-françois,mountains,pointInteret_,"<Point>
+            <coordinates>55.45234668100667,-20.93778422959459</coordinates>
+        </Point>","-20,9377842296","55,452346681"
+SD_v,l'évêché,3,quartier,"<Point>
+            <coordinates>55.45278691505167,-20.92476071450269</coordinates>
+        </Point>","-20,9247607145","55,4527869151"
+SD_v,saint-françois,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.46024365933884,-20.9140550505266</coordinates>
+        </Point>","-20,9140550505","55,4602436593"
+SD_v,montgaillard les hauts,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.46661164718126,-20.90834282710728</coordinates>
+        </Point>","-20,9083428271","55,4666116472"
+SD_v,bois de nèfle,3,quartier,"<Point>
+            <coordinates>55.47388582903927,-20.91322425590374</coordinates>
+        </Point>","-20,9132242559","55,473885829"
+SD_v,montgaillard,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.46787641661751,-20.90165503717289</coordinates>
+        </Point>","-20,9016550372","55,4678764166"
+SD_v,la providence,3,quartier,"<Point>
+            <coordinates>55.45746341278313,-20.89709581622749</coordinates>
+        </Point>","-20,8970958162","55,4574634128"
+SD_v,camélia,3,quartier,"<Point>
+            <coordinates>55.45878385511647,-20.89419450633887</coordinates>
+        </Point>","-20,8941945063","55,4587838551"
+SD_v,la trinité,3,quartier,"<Point>
+            <coordinates>55.46923236971877,-20.8956909032922</coordinates>
+        </Point>","-20,8956909033","55,4692323697"
+SD_v,champ fleuri,3,"quartier_Le quartier de Champ fleuri est situé au sud-est du centre-ville de Saint-Denis, à l'ouest de Sainte-Clotilde. Ce quartier résidentiel, culturel et administratif est desservi par le boulevard Jean-Jaurès.","<Point>
+            <coordinates>55.46742601475796,-20.89074991162776</coordinates>
+        </Point>","-20,8907499116","55,4674260148"
+SD_v,vauban,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.4629810056641,-20.88695871474025</coordinates>
+        </Point>","-20,8869587147","55,4629810057"
+SD_v,le butor,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.46964168090077,-20.88636015942605</coordinates>
+        </Point>","-20,8863601594","55,4696416809"
+SD_v,deux canons,3,quartier,"<Point>
+            <coordinates>55.4750796540874,-20.89069796368994</coordinates>
+        </Point>","-20,8906979637","55,4750796541"
+SD_v,"cité michel debré di "" chaudron""",3,quartier,"<Point>
+            <coordinates>55.483984039991,-20.88924069674092</coordinates>
+        </Point>","-20,8892406967","55,48398404"
+SD_v,moufia,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.48450900985762,-20.91127267355223</coordinates>
+        </Point>","-20,9112726736","55,4845090099"
+SD_v,commune prima,3,quartier,"<Point>
+            <coordinates>55.50163230799603,-20.89979421063404</coordinates>
+        </Point>","-20,8997942106","55,501632308"
+SD_v,domenjod,3,quartier,"<Point>
+            <coordinates>55.50541156246608,-20.9138552262879</coordinates>
+        </Point>","-20,9138552263","55,5054115625"
+SD_v,le bretagne,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.49352320719123,-20.92162436028906</coordinates>
+        </Point>","-20,9216243603","55,4935232072"
+SD_v,belle vue,3,quartier,"<Point>
+            <coordinates>55.49037005134688,-20.93622435371847</coordinates>
+        </Point>","-20,9362243537","55,4903700513"
+SD_v,montauban,capital_big,lieuDit_quartier,"<Point>
+            <coordinates>55.49503428466479,-20.94122377555738</coordinates>
+        </Point>","-20,9412237756","55,4950342847"
+SD_v,rivière des pluies,water,"18,2 km","<Point>
+            <coordinates>55.50122516477425,-20.88319897723293</coordinates>
+        </Point>","-20,8831989772","55,5012251648"
+SD_v,espace coeur Vert,terain,"parc de la trinité,
+vélodrome,
+aqua parc","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.4728275464624,-20.88595399045288 55.47281583460509,-20.88627583317417 55.47278836351227,-20.88707881584379 55.47267119325537,-20.887385320872 55.47256762690977,-20.88772790144105 55.47221094827467,-20.88775509306941 55.47211274710733,-20.88831607437271 55.47193502738425,-20.88979952919448 55.47174348203769,-20.89127691903773 55.47133331257275,-20.89232834122471 55.47071112240761,-20.89335727466191 55.47061304061442,-20.89375828555884 55.46918903933882,-20.8929704571716 55.46702754707087,-20.89181902068953 55.46557902673615,-20.89066747702592 55.46505124297236,-20.89041438717256 55.46415951874638,-20.89007230777119 55.46385838191135,-20.89002046200883 55.46346839797251,-20.89004472016416 55.46318261804253,-20.89013978894033 55.46345740963549,-20.89032060767075 55.46334562611806,-20.89043358297879 55.4627855392255,-20.89043335126723 55.4620922099698,-20.89041149625185 55.46207735630172,-20.89062941597003 55.46217829406621,-20.89091685154115 55.46250401024883,-20.89103970180003 55.46279437258179,-20.89109122510818 55.46316230524531,-20.89111909033227 55.46352181887555,-20.89104397358597 55.4639980457891,-20.89091910659169 55.46423473966885,-20.89083368210375 55.4643909491504,-20.89096190172744 55.46461373362315,-20.89117795151424 55.46478577861153,-20.89134040064437 55.46483759945973,-20.8913609831388 55.46499688268451,-20.89162251804234 55.46505163921898,-20.89184426466677 55.46597788476056,-20.89230614724835 55.46626444866984,-20.89239195061425 55.4664516070942,-20.89246454885263 55.46691323115488,-20.89271757027303 55.46717526654934,-20.89289626069829 55.4671785434312,-20.89336247655675 55.46731841190906,-20.89353789093689 55.46724626172724,-20.89376959698775 55.467635443688,-20.89440258099633 55.46850804336423,-20.89421098201047 55.46837121881644,-20.89377983790525 55.46874345813105,-20.89376811337605 55.4689560702778,-20.89380925615574 55.46914690143776,-20.89390065484661 55.46939414039912,-20.89419756666923 55.46964082312307,-20.89431357105907 55.46981310076404,-20.89421145155926 55.4699348882635,-20.89421804796056 55.47012144640444,-20.89433876892714 55.47012143449397,-20.89433665940878 55.47012584067655,-20.89432614005098 55.47020197292034,-20.8944234590345 55.47018289043129,-20.89463941980775 55.47004694237142,-20.89481445460708 55.47025760076625,-20.89557656020411 55.47033748286324,-20.89557295019114 55.47037411384509,-20.89574418691888 55.47034184593785,-20.89589263730019 55.47057997219638,-20.89681146656623 55.47045373428841,-20.89712212381029 55.47103592412681,-20.89734528000462 55.47125453625414,-20.89743810737087 55.47167451932798,-20.89766528115503 55.47182995011679,-20.89779894713954 55.47199558182789,-20.8980973560707 55.47236487509368,-20.89846169257505 55.47263270118344,-20.89870101622585 55.47283809431924,-20.89883574038289 55.47294179273973,-20.89888738113737 55.47302551738224,-20.89885995987234 55.4731385154668,-20.89883991828635 55.47309144674303,-20.89798898248664 55.47299128801895,-20.89649844853588 55.47294087093007,-20.89518901255887 55.47294689622895,-20.89504322140049 55.47292057839385,-20.89457405271127 55.47290061470326,-20.89389293945424 55.47286133198826,-20.89322835231378 55.47311204578614,-20.89324567577156 55.47339089754106,-20.89331695190157 55.47365124184136,-20.8934269153267 55.47393286930287,-20.89358742635412 55.47397063983903,-20.89352550570731 55.47379509740906,-20.89347550238155 55.47373671934572,-20.89332054055577 55.4736628717877,-20.89310601841146 55.47363525648219,-20.89296031407926 55.47358732281101,-20.89260923874921 55.47358373131316,-20.8924770393857 55.47355046680838,-20.89232128151813 55.47346710089722,-20.89209022135659 55.47337517457931,-20.89184528850211 55.47335024212836,-20.89160250990195 55.47334209177859,-20.89125370251529 55.47330901926778,-20.89100352360298 55.47328158426831,-20.89080656068618 55.47330702017963,-20.89057334717158 55.47327600362606,-20.89038248382475 55.47322407456525,-20.89020802099451 55.47320342604409,-20.89008127067741 55.47319539669057,-20.88996076528609 55.47320330716621,-20.88981935408674 55.4731488622719,-20.88978417052946 55.47309402631566,-20.88967479001181 55.47310326507378,-20.88956015759013 55.47310449800346,-20.88944932154982 55.47312688896916,-20.88937646169795 55.47314781967243,-20.8893259671346 55.47314099454407,-20.88923254571565 55.47317509696869,-20.88915082493405 55.47318487731848,-20.88907507895197 55.47320614986822,-20.88896994162858 55.47324376358976,-20.88888903477674 55.4732617252453,-20.88870679141093 55.47324046448835,-20.88856642762611 55.47326823803507,-20.88845958190959 55.47326834503422,-20.88827030043685 55.47329628413218,-20.88816413135535 55.47323889253384,-20.88807964784994 55.47309035165628,-20.88796981649442 55.47308516399372,-20.887895330812 55.47329999120978,-20.88779825069988 55.47331846666464,-20.88762011807964 55.47338043452517,-20.88734532037192 55.47342440151783,-20.88715891599862 55.47349946346051,-20.8869722305969 55.47357461021861,-20.88670995956846 55.47363992853331,-20.886505924271 55.47367482003885,-20.88631660746136 55.4738560816181,-20.8861893966841 55.47387591241926,-20.88598053964758 55.47397404719705,-20.88570075794358 55.47392698142279,-20.88550691997222 55.47355569576483,-20.88547707056075 55.47283197217089,-20.88537303572608 55.4728033681543,-20.88561261042347 55.47287117460437,-20.88574346237754 55.47277735258244,-20.88582605680831 55.4728275464624,-20.88595399045288</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SD_v,zone de loisir de Saint-Francois,terain*mc,"aire de repos
+descente vtt","<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.46522834423214,-20.92527728716444 55.46569122662245,-20.92539355346975 55.46610654931067,-20.92513555406221 55.4663000721856,-20.92454212492386 55.46646705078906,-20.92395171228775 55.46562375482994,-20.92388397189892 55.46637831123398,-20.92212352368767 55.46604108599905,-20.92171001383638 55.46649499183081,-20.92066440451659 55.46658488525019,-20.9199744847364 55.46601262508468,-20.92021011155127 55.46580934937881,-20.92060519850471 55.46563588719715,-20.92174026488383 55.46577827464908,-20.9226300617424 55.46554427312142,-20.92354999193439 55.46462565063355,-20.92449909093822 55.46386880120759,-20.92538980316452 55.46328514784006,-20.92614476311324 55.46256722889487,-20.92685003531897 55.46214017423985,-20.92736497524902 55.46126307573243,-20.92910293496215 55.46061846877146,-20.92990179501803 55.45984981292531,-20.93106327345394 55.46237008223765,-20.93099176826313 55.46472553339171,-20.92702000436492 55.46690260266763,-20.92606387578271 55.46600263424148,-20.92548557456184 55.46522834423214,-20.92527728716444</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SD_v,aire de repos Brulé,terain,haut du brulé,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.43489810733313,-20.94653748182765 55.43405057464646,-20.94634094486832 55.43319009902634,-20.94666043457663 55.43311125949892,-20.94735156254621 55.43322254886202,-20.94778979731542 55.4338756867277,-20.94792766147887 55.4344201883132,-20.94834132370342 55.43495118004716,-20.94805914173913 55.43523538543344,-20.9474202216348 55.43520671159314,-20.94686763495995 55.43489810733313,-20.94653748182765</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SD_v,aire De Repos,capital_big,L'ilet quinquina,"<Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>55.50681175928069,-20.92929300302635 55.5065132575245,-20.92906161450531 55.50642206255143,-20.92893880397502 55.50604435315357,-20.92904219143674 55.50617859552294,-20.92917237514 55.50612207306806,-20.92946626341459 55.50625179910421,-20.92961377118497 55.50665377773315,-20.92951385857854 55.50681175928069,-20.92929300302635</coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>",,
+SD_v,Arthotèque,arts,"Créée en 1991 sur l'initiative du Département de La Réunion, l'Arthothèque a pris une part importante dans la diffusion de l'Art Contemporain Réunionnais
+tél: +262 262 41 75 50","<Point>
+            <coordinates>55.449905,-20.88335555555555</coordinates>
+        </Point>","-20,8833555556","55,449905"
+SD_v,Banque de la réunion,cbh,"creer en  1859, la banque de La Réunion est une institution pour aider les propriétaire en faillite depuis l'abolition de l'esclavage","<Point>
+            <coordinates>55.45022427798214,-20.87897222556649</coordinates>
+        </Point>","-20,8789722256","55,450224278"
+SD_v,Magasin Aubinais,cbh,"Le Magasin Aubinais est inscrit null l'inventaire supplémentaire des monuments historiques le 25 mars 1994. Le magasin Aubinais a été construit à la fin des années 1830 par Félix Muguet, négociant à Saint-Denis également propriétaire de l'ancien théâtre","<Point>
+            <coordinates>55.44944882946096,-20.87653622224078</coordinates>
+        </Point>","-20,8765362222","55,4494488295"
+SD_v,Maison carrère,cbh,"Maison Carrère. Construit en 1905, la maison est achetée par Raphaël Carrère important négociant en sucre, et sa femme Amélie.","<Point>
+            <coordinates>55.44934122483696,-20.8809552934136</coordinates>
+        </Point>","-20,8809552934","55,4493412248"
+SD_v,Maison déramond,cbh,"La Maison Déramond est fortement caractérisée par son architecture, par son emplacement et par les personnalités qui y ont vécu, notamment les poètes Évariste de Parny et Léon Dierx, ainsi que le premier ministre Raymond Barre","<Point>
+            <coordinates>55.44908617101681,-20.88046233540744</coordinates>
+        </Point>","-20,8804623354","55,449086171"
+SD_v,Maison fock-yee,cbh,"La maison Fock-Yee est inscrite null l'inventaire supplémentaire des monuments historiques le 6 juin 1988, y compris le dallage du jardin, le portail et la grille","<Point>
+            <coordinates>55.45181624125145,-20.87564214613695</coordinates>
+        </Point>","-20,8756421461","55,4518162413"
+SD_v,Maison Isautier,cbh,"Maison Isautier.. Mitoyenne de la villa du Général, la maison Barbier Isautier borde la rue de Paris avec sa façade principale orientée à l'ouest","<Point>
+            <coordinates>55.45100471842773,-20.88547250525197</coordinates>
+        </Point>","-20,8854725053","55,4510047184"
+SD_v,Maison Ponama,cbh,"La villa Ponama, plus que tout autre, exprime la préciosité ornementale et le romantisme du style chalet de l'époque Napoléon III. La maison Ponama fut la résidence de la Reine","<Point>
+            <coordinates>55.44745946727235,-20.88387284099616</coordinates>
+        </Point>","-20,883872841","55,4474594673"
+SD_v,Maison repiquet,cbh,La maison Repiquet présente la particularité d'être entièrement construite en maçonnerie,"<Point>
+            <coordinates>55.4492767085037,-20.8816399140006</coordinates>
+        </Point>","-20,881639914","55,4492767085"
+SD_v,Mausolé de la Redoute,cbh,Les Mausolées anglais et français sont Inscrits aux monuments historiques le 3 avril 2007,"<Point>
+            <coordinates>55.44424951953096,-20.88122535822155</coordinates>
+        </Point>","-20,8812253582","55,4442495195"
+SD_v,Domenjod,capital_big,C'est la bande de terre qui s'étend entre la Rivière des Pluies et la Ravine à Cadet.,"<Point>
+            <coordinates>55.50666355752447,-20.91285729176233</coordinates>
+        </Point>","-20,9128572918","55,5066635575"
+SD_v,Prima,capital_big,"Situé au dessous de la Bretagne, le lieudit doit son nom au Capitaine d'infanterie Primat, qui avait voulu se lancer dans la culture de la canne à sucre. Il construisit une usine qu'il dut vendre par la suite","<Point>
+            <coordinates>55.50147535015761,-20.89965744181659</coordinates>
+        </Point>","-20,8996574418","55,5014753502"
+SD_v,Villa Déramond-Barre,cbh,"classée au titre des monuments historiques depuis le 6 juillet 1987,
+construite à la veille de la révolution francaise","<Point><coordinates>55.44944,-20.88</coordinates></Point>","-20,88","55,44944"
+SD_v,saint-denis,road_shield1,"lieuDit_ville
+_ anciens port, chef lieux et parsemer de riviere, le lieux idyllique","<Point>
+            <coordinates>55.44916831847553,-20.87758821121574</coordinates>
+        </Point>","-20,8775882112","55,4491683185"
+SD_v,sainte-clotilde,road_shield1,lieuDit_ville,"<Point>
+            <coordinates>55.48213238795033,-20.90007212531632</coordinates>
+        </Point>","-20,9000721253","55,482132388"
+SD_v,barachois,snack_bar,lieuDit,"<Point>
+            <coordinates>55.44939829816278,-20.8721903296023</coordinates>
+        </Point>","-20,8721903296","55,4493982982"
+SD_v,Villa Angélique,cbh,"18,2 kmainscrite à l'inventaire supplémentaire des Monuments historiques depuis le 29 mars 1996,
+établissement hotelier classé 4 étoiles","<Point>
+            <coordinates>55.45026690944125,-20.88315967160025</coordinates>
+        </Point>","-20,8831596716","55,4502669094"

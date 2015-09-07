@@ -1,0 +1,109 @@
+id,nom,categ,description,geometry,lat,lng
+SM_md,Maillot Nicole,realestate*gite_de_france," chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 53 81 64_
+gsm: +262 692 05 39 14","<Point>
+            <coordinates>55.52304074,-20.93081388888889</coordinates>
+        </Point>","-20,9308138889","55,52304074"
+SM_md,Piton Fougère,realestate*gite_de_france," chambre d'hote_
+<b>label: gites de france</b>
+tél: +262 262 53 88 04","<Point>
+            <coordinates>55.52658291,-20.96971666666667</coordinates>
+        </Point>","-20,9697166667","55,52658291"
+SM_md,Hémisphère Sud,dining,"restaurant_
+<b>label: restaurateur de france, qualité tourisme</b>
+tél: +262 262 48 81 70","<Point>
+            <coordinates>55.51273055555555,-20.89203611111111</coordinates>
+        </Point>","-20,8920361111","55,5127305556"
+SM_md,Tommy's Diner,dining,"restaurant_
+tél:  +262 262 37 21 77","<Point>
+            <coordinates>55.51631746,-20.90174166666667</coordinates>
+        </Point>","-20,9017416667","55,51631746"
+SM_md,Aux Ecuries de Gillot,dining,"restaurant_
+tél:  +262 262 56 51 78","<Point>
+            <coordinates>55.5095265,-20.89206388888889</coordinates>
+        </Point>","-20,8920638889","55,5095265"
+SM_md,Costa Caffé,dining," restaurant_
+tél: +262 262 97 09 62","<Point>
+            <coordinates>55.53340645000001,-20.89418333333333</coordinates>
+        </Point>","-20,8941833333","55,53340645"
+SM_md,Samoussas Tanulllou,snack_bar,"snack, traiteur_
+tél: +262 262 53 93 08","<Point>
+            <coordinates>55.51752144,-20.89954722222222</coordinates>
+        </Point>","-20,8995472222","55,51752144"
+SM_md,Courtepaille,dining,"restaurant_
+tél: 
++262 262 29 71 65","<Point>
+            <coordinates>55.51661518,-20.90176944444444</coordinates>
+        </Point>","-20,9017694444","55,51661518"
+SM_md,Chez Chris,dining,"restaurant_
+gsm: +262 692 61 01 05","<Point>
+            <coordinates>55.536092,-20.89324444444445</coordinates>
+        </Point>","-20,8932444444","55,536092"
+SM_md,Pass K Lou,dining," restaurant_
+gsm: +262 692 07 75 01","<Point>
+            <coordinates>55.53605499999999,-20.89316666666667</coordinates>
+        </Point>","-20,8931666667","55,536055"
+SM_md,Pizza Chez Yves,dining*pizza,"restaurant, pizza_
+tél: +262 262 53 11 88_
+gsm: +262 692 24 58 03","<Point>
+            <coordinates>55.55101317,-20.89660833333333</coordinates>
+        </Point>","-20,8966083333","55,55101317"
+SM_md,Le Senteur Vanille,snack_bar,"snack_
+tél: +262 262 48 81 10","<Point>
+            <coordinates>55.51223881,-20.89128055555555</coordinates>
+        </Point>","-20,8912805556","55,51223881"
+SM_md,L' Aérobar,snack_bar," snack_
+tél: +262 262 48 81 67","<Point>
+            <coordinates>55.51279,-20.89188333333333</coordinates>
+        </Point>","-20,8918833333","55,51279"
+SM_md,Chi Wok,snack_bar, snack,"<Point>
+            <coordinates>55.51741,-20.90008611111111</coordinates>
+        </Point>","-20,9000861111","55,51741"
+SM_md,Le P'tit Gillot,dining,"restaurant_
+<b>label: maitre restaurateur</b>
+tél: +262 262 97 18 55","<Point>
+            <coordinates>55.5094427,-20.89355277777778</coordinates>
+        </Point>","-20,8935527778","55,5094427"
+SM_md,King Dragon,dining,"restaurant_
+tél: +262 262 53 55 56","<Point>
+            <coordinates>55.50727505,-20.9072</coordinates>
+        </Point>","-20,9072","55,50727505"
+SM_md,L' Océan,dining*ice,"restaurant, glacier_
+gsm: +262 692 38 58 61","<Point><coordinates>55.536108,-20.89315</coordinates></Point>","-20,89315","55,536108"
+SM_md,La Belle Etoile,dining*bars,"restaurant, bar_
+tél: +262 262 53 40 78_
+gsm: +262 692 86 87 61","<Point>
+            <coordinates>55.57026279,-20.89717777777778</coordinates>
+        </Point>","-20,8971777778","55,57026279"
+SM_md,3 brasseurs,dining,"restaurant_
+tél: +262 262.21.17.27","<Point>
+            <coordinates>55.51608347622694,-20.90048926726473</coordinates>
+        </Point>","-20,9004892673","55,5160834762"
+SM_md,Brasserie Taïlou,dining," self_
+tél: +262 262 72 81 51","<Point>
+            <coordinates>55.51752144,-20.89954722222222</coordinates>
+        </Point>","-20,8995472222","55,51752144"
+SM_md,Les Citronnelles,realestate,"chambre d'hote_
+tél: +262 262 97 60 36_
+gsm: +262 692 67 14 19","<Point>
+            <coordinates>55.5492908,-20.92827222222222</coordinates>
+        </Point>","-20,9282722222","55,5492908"
+SM_md,Délices de Bourbon,snack_bar*bread,"boulangerie, sandwicherie","<Point>
+            <coordinates>55.51530762119182,-20.89821388888889</coordinates>
+        </Point>","-20,8982138889","55,5153076212"
+SM_md,La Place Gourmande,dining*hdcp," self_
+tél:  +262 262 48 81 68_
+acces hdcp","<Point>
+            <coordinates>55.51241262,-20.8912</coordinates>
+        </Point>","-20,8912","55,51241262"
+SM_md,La Croissanterie,snack_bar*bread,"boulangerie, sandwicherie","<Point>
+            <coordinates>55.51741,-20.90008611111111</coordinates>
+        </Point>","-20,9000861111","55,51741"
+SM_md,La Villa des Cannes,realestate,"chambre d'hote_
+<b>label: clévacances</b>
+tél: +262 692 06 45 22","<Point><coordinates>55.543978,-20.93555</coordinates></Point>","-20,93555","55,543978"
+SM_md,Mon Sushi,dining*snack_bar,"fast food_
+gsm: +262 692 04 20 20","<Point>
+            <coordinates>55.51741,-20.90008611111111</coordinates>
+        </Point>","-20,9000861111","55,51741"

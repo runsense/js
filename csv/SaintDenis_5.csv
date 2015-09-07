@@ -1,0 +1,115 @@
+id,nom,categ,description,geometry,lat,lng
+SD_a,Grand marché,grocery,"marché couvert_
+période: du lundi au dimanche de 8h à 16h
+_Grand Marché de Saint-Denis inscrit en totalité à l'inventaire supplémentaire des monuments historiques le 21 août 1997. Les travaux se terminent en 1866, le nombre de pavillon est de 8 répartis de part et d'autre d'une allée centrale couverte","<Point>
+            <coordinates>55.44788319462427,-20.88093235322974</coordinates>
+        </Point>","-20,8809323532","55,4478831946"
+SD_a,A.S Golf Club du Colorado,golf,"golf_
+tél: +262 262.23.79.50","<Point>
+            <coordinates>55.4245531204352,-20.9018442776499</coordinates>
+        </Point>","-20,9018442776","55,4245531204"
+SD_a,Centre d Equitation du Colorado,horsebackriding,"équitation_
+tél: +262 262.23.62.51","<Point>
+            <coordinates>55.42096299996918,-20.8946890001076</coordinates>
+        </Point>","-20,8946890001","55,420963"
+SD_a,Centre Equestre de la Montagne,horsebackriding," équestre_
+tél: +262 262.23.62.51","<Point>
+            <coordinates>55.39854122899489,-20.89427316061717</coordinates>
+        </Point>","-20,8942731606","55,398541229"
+SD_a,Thalassorun,spa,"balnéothérapie_
+tél: +262 262.30.15.15","<Point>
+            <coordinates>55.46429199993596,-20.89749199992036</coordinates>
+        </Point>","-20,8974919999","55,4642919999"
+SD_a,La Case d'Aymline - Flamboyant,realestate," chambre d'hote_
+tél: +262 692 71 78 03","<Point>
+            <coordinates>55.474726,-20.88720277777778</coordinates>
+        </Point>","-20,8872027778","55,474726"
+SD_a,Chez Hil,realestate,"chambre d'hote_
+tél: +262 262 52 61 34_
+gsm: +262 692 23 76 40","<Point>
+            <coordinates>55.495574,-20.93972222222222</coordinates>
+        </Point>","-20,9397222222","55,495574"
+SD_a,Samoussas Taïlou,info_circle,"samoussa, traiteur_
+tél: +262 262 92 08 36","<Point>
+            <coordinates>55.486581,-20.89335833333333</coordinates>
+        </Point>","-20,8933583333","55,486581"
+SD_a,Chez Jules,snack_bar,"boulangerie, sandwicherie_
+tél:  +262 262 21 27 66","<Point>
+            <coordinates>55.45081743,-20.877925</coordinates>
+        </Point>","-20,877925","55,45081743"
+SD_a,Mon Sushi,snack_bar," fast food_
+tél: +262 262 20 11 00 ou +262 262 20 10 00","<Point>
+            <coordinates>55.449135,-20.87698888888889</coordinates>
+        </Point>","-20,8769888889","55,449135"
+SD_a,Paul,snack_bar," boulangerie, sandwicherie_
+tél: +262 262 56 05 60","<Point>
+            <coordinates>55.44698611111111,-20.87415</coordinates>
+        </Point>","-20,87415","55,4469861111"
+SD_a,Antonetti,snack_bar,"boulangerie, sandwicherie_
+tél: +262 262 21 91 55","<Point>
+            <coordinates>55.44866099999999,-20.8786</coordinates>
+        </Point>","-20,8786","55,448661"
+SD_a,Arème Café,snack_bar," boulangerie, sandwicherie_
+tél:  +262 262 41 74 03_
+gsm: +262 692 11 50 24","<Point>
+            <coordinates>55.45033099999999,-20.87308611111111</coordinates>
+        </Point>","-20,8730861111","55,450331"
+SD_a,Top-Self,dining,"self_
+tél: +262 262 41 44 28","<Point>
+            <coordinates>55.45871388000001,-20.88116666666667</coordinates>
+        </Point>","-20,8811666667","55,45871388"
+SD_a,Le Val Rhonnais,dining," maitre restaurateur_
+tél: +262 262 41 41 70","<Point>
+            <coordinates>55.4550331,-20.88769166666667</coordinates>
+        </Point>","-20,8876916667","55,4550331"
+SD_a,Castel Montmorency,snack_bar," boulangerie, sandwicherie_
+tél: +262 262 30 48 28","<Point>
+            <coordinates>55.45970028,-20.89659722222222</coordinates>
+        </Point>","-20,8965972222","55,45970028"
+SD_a,Resto-Self Futura,dining,"self_
+tél:  +262 262 29 86 03","<Point>
+            <coordinates>55.47365099999999,-20.895</coordinates>
+        </Point>","-20,895","55,473651"
+SD_a,Régal des Iles,dining,"self_
+tél: +262 262 53 63 34_
+gsm: +262 692 69 37 69","<Point>
+            <coordinates>55.49472393,-20.89039444444444</coordinates>
+        </Point>","-20,8903944444","55,49472393"
+SD_a,marché du chaudron,grocery," marché_
+période: mercredi et dimanche de 6h à 12h","<Point>
+            <coordinates>55.48754025126412,-20.89145889869801</coordinates>
+        </Point>","-20,8914588987","55,4875402513"
+SD_a,marché de la source,grocery," marché_
+période: jeudi de 6h à 12h","<Point>
+            <coordinates>55.44913138336905,-20.89084532269048</coordinates>
+        </Point>","-20,8908453227","55,4491313834"
+SD_a,marché des camélias,grocery,"marché_
+période: vendredi de 6h à 12h","<Point>
+            <coordinates>55.46118460720593,-20.89354717824105</coordinates>
+        </Point>","-20,8935471782","55,4611846072"
+SD_a,marché nocture,grocery," fête commerciales_
+période: 1er samedi /mois","<Point>
+            <coordinates>55.44925445440699,-20.87246712329667</coordinates>
+        </Point>","-20,8724671233","55,4492544544"
+SD_a,Le 109,arts,"musée, galerie _
+gsm: +262 6 92 14 66 64  _
+gsm: +262 6 92 86 19 12","<Point>
+            <coordinates>55.47961527458309,-20.88614659943874</coordinates>
+        </Point>","-20,8861465994","55,4796152746"
+SD_a,l'after height,bars,"bar, billard _
+tél: +262 2 62 53 63 09","<Point>
+            <coordinates>55.46912995552658,-20.88597349287134</coordinates>
+        </Point>","-20,8859734929","55,4691299555"
+SD_a,le petit marché,grocery,"marché couvert_
+période: du lundi au dimanche de 8h à 16h","<Point>
+            <coordinates>55.45685239645599,-20.88040785211967</coordinates>
+        </Point>","-20,8804078521","55,4568523965"
+SD_a,Chambry Thierry,hiker,"Randonnée pédestre
+_
+gsm: +262 692 60 77 40
+_
+mail : <a href=""dom.t@wanadoo.fr"" >dom.t@wanadoo.fr</a>
+_
+Web : <a href=""http://dom.t.over-blog.com"" >http://dom.t.over-blog.com</a>","<Point>
+            <coordinates>55.44473560027169,-20.89458609991424</coordinates>
+        </Point>","-20,8945860999","55,4447356003"

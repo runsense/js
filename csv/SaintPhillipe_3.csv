@@ -1,0 +1,85 @@
+id,nom,categ,description,geometry,lat,lng
+SPh_v,Ecomusée Au Bon Roi Louis,cbh*arts,En l'honneur de Louis-phillippe qui décréta la création de la commune de Saint-Philippe en 1830.,"<Point>
+            <coordinates>55.76770200003282,-21.36374600003947</coordinates>
+        </Point>","-21,363746","55,767702"
+SPh_v,église Saint-Philippe.,church,"religion
+_
+Naissant d'une première chapelle en bois de 1823
+Sur la gauche de l'église de Saint-Philippe se trouve le calvaire","<Point>
+            <coordinates>55.76941100006854,-21.3582240000921</coordinates>
+        </Point>","-21,3582240001","55,7694110001"
+SPh_v,Jardin des Parfums et des épices,hicker*terain,plus de 1500 éspèces,"<Point>
+            <coordinates>55.74154999935055,-21.35479599984441</coordinates>
+        </Point>","-21,3547959998","55,7415499994"
+SPh_v,Maison du domaine du baril,cbh,historique,"<Point>
+            <coordinates>55.73086396167332,-21.36760346903206</coordinates>
+        </Point>","-21,367603469","55,7308639617"
+SPh_v,Puits francais,cbh,historique,"<Point>
+            <coordinates>55.71087031943996,-21.3750831403246</coordinates>
+        </Point>","-21,3750831403","55,7108703194"
+SPh_v,Puits des anglais,cbh,historique,"<Point>
+            <coordinates>55.72593874765603,-21.36984243756524</coordinates>
+        </Point>","-21,3698424376","55,7259387477"
+SPh_v,Le Souffleur d'arbonne,cbh,pointInteret_,"<Point>
+            <coordinates>55.72952941671715,-21.37007827222425</coordinates>
+        </Point>","-21,3700782722","55,7295294167"
+SPh_v,Pointe de la table,water*mountains,pointInteret_,"<Point>
+            <coordinates>55.80914305491567,-21.3309167272509</coordinates>
+        </Point>","-21,3309167273","55,8091430549"
+SPh_v,puits arabe,cbh,historique,"<Point>
+            <coordinates>55.8042897269054,-21.33850013756258</coordinates>
+        </Point>","-21,3385001376","55,8042897269"
+SPh_v,Cheminée de La Trinité,cbh,"historique
+_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 14 juin 2002,
+avec son terrain","<Point>
+            <coordinates>55.77036100000001,-21.35838888888889</coordinates>
+        </Point>","-21,3583888889","55,770361"
+SPh_v,Ancien cimetière de Basse Vallée,cbh,"historique
+_inscrit en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 26 janvier 2012","<Point>
+            <coordinates>55.712583,-21.37344444444445</coordinates>
+        </Point>","-21,3734444444","55,712583"
+SPh_v,vallée heureuse,terain,pointInteret_,"<Point>
+            <coordinates>55.69627061857993,-21.32429219218449</coordinates>
+        </Point>","-21,3242921922","55,6962706186"
+SPh_v,puys ramond,terain,pointInteret_,"<Point>
+            <coordinates>55.70544994327253,-21.29603437206623</coordinates>
+        </Point>","-21,2960343721","55,7054499433"
+SPh_v,piton gueule ronde,mountains,mont,"<Point>
+            <coordinates>55.74111598002661,-21.29742898425045</coordinates>
+        </Point>","-21,2974289843","55,74111598"
+SPh_v,piton de la fourche,mountains,mont,"<Point>
+            <coordinates>55.74373547497368,-21.30759979419101</coordinates>
+        </Point>","-21,3075997942","55,743735475"
+SPh_v,piton takamaka,mountains,mont,"<Point>
+            <coordinates>55.7690817371709,-21.30749120491901</coordinates>
+        </Point>","-21,3074912049","55,7690817372"
+SPh_v,piton ango,mountains,mont,"<Point>
+            <coordinates>55.75989195803211,-21.32212899477021</coordinates>
+        </Point>","-21,3221289948","55,759891958"
+SPh_v,piton mare d'arzule,mountains,mont,"<Point>
+            <coordinates>55.76491091817164,-21.33734984811694</coordinates>
+        </Point>","-21,3373498481","55,7649109182"
+SPh_v,quai d'henri d'alzute,terain,pointInteret_,"<Point>
+            <coordinates>55.7829789012841,-21.36108594576341</coordinates>
+        </Point>","-21,3610859458","55,7829789013"
+SPh_v,la porte,mountains,pointInteret_,"<Point>
+            <coordinates>55.79626124233625,-21.35046051276572</coordinates>
+        </Point>","-21,3504605128","55,7962612423"
+SPh_v,forêt de mare longue,mountains,"forêt
+_vestige de la foret primaire réunionnaise,
+implémenté d'une coulé volcanique de moins de 400 ans","<Point>
+            <coordinates>55.73688194415689,-21.32085236093183</coordinates>
+        </Point>","-21,3208523609","55,7368819442"
+SPh_v,la basse vallée,capital_big,"quartier
+_Célébrant la fete du vacoas courant aout,
+il met en l'honneur ce fruit venant d'indonésie
+grace à l'artisanat locales","<Point>
+            <coordinates>55.70911879154364,-21.37437869919955</coordinates>
+        </Point>","-21,3743786992","55,7091187915"
+SPh_v,cap méchant,terain,lieuDit_,"<Point>
+            <coordinates>55.71960018666523,-21.36703304712354</coordinates>
+        </Point>","-21,3670330471","55,7196001867"
+SPh_v,la marinne saint-phillippe,terain,"lieuDit_La place du Warren Hastings,
+ du naufragé","<Point>
+            <coordinates>55.7673873837362,-21.3641347591409</coordinates>
+        </Point>","-21,3641347591","55,7673873837"

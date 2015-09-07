@@ -1,0 +1,12 @@
+id,nom,categ,description,geometry,lat,lng
+SLO_t,STADE LUDOVIC VIADERE LE,play," stade de foot _
+STADE LUDOVIC VIADÈRE LE BOURG 97450 ST LOUIS","<Point><coordinates>55.438006,-21.267752</coordinates></Point>","-21,267752","55,438006"
+SLO_t,Tennis-club de Saint-Louis,donut,"tennis club _
+tél:+262  0262 26 78 62 _
+mail: http://www.club.fft.fr/tcsl974","<Point>
+            <coordinates>55.40488270029924,-21.28827719891629</coordinates>
+        </Point>","-21,2882771989","55,4048827003"
+SLO_t,Stade Théophile-Hoarau,play,"stade de foot _
+club: SS Saint-Louisienne","<Point>
+            <coordinates>55.403889,-21.28777777777778</coordinates>
+        </Point>","-21,2877777778","55,403889"

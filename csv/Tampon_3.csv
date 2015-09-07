@@ -1,0 +1,142 @@
+id,nom,categ,description,geometry,lat,lng
+T_v,la bergerie,capital_big,quartier,"<Point>
+            <coordinates>55.59789277829481,-21.25836856158431</coordinates>
+        </Point>","-21,2583685616","55,5978927783"
+T_v,la pointe,capital_big,quartier,"<Point>
+            <coordinates>55.51499236321636,-21.2966824277222</coordinates>
+        </Point>","-21,2966824277","55,5149923632"
+T_v,la bergerie,capital_big,quartier,"<Point>
+            <coordinates>55.5238769536931,-21.29233035839258</coordinates>
+        </Point>","-21,2923303584","55,5238769537"
+T_v,terrain fleuri,capital_big,quartier,"<Point>
+            <coordinates>55.52325753880444,-21.28672579084511</coordinates>
+        </Point>","-21,2867257908","55,5232575388"
+T_v,bel-air,capital_big,quartier,"<Point>
+            <coordinates>55.51712940805035,-21.28676647178777</coordinates>
+        </Point>","-21,2867664718","55,5171294081"
+T_v,le petit tampon,capital_big,quartier,"<Point>
+            <coordinates>55.54040896625957,-21.28035945056087</coordinates>
+        </Point>","-21,2803594506","55,5404089663"
+T_v,la ligne murier,capital_big,quartier,"<Point>
+            <coordinates>55.55169459423647,-21.27279847539833</coordinates>
+        </Point>","-21,2727984754","55,5516945942"
+T_v,grand tampon les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.56664667115674,-21.28245211565045</coordinates>
+        </Point>","-21,2824521157","55,5666466712"
+T_v,la bergerie,capital_big,quartier,"<Point>
+            <coordinates>55.59838320118505,-21.26073748460197</coordinates>
+        </Point>","-21,2607374846","55,5983832012"
+T_v,le chatoire,capital_big,quartier,"<Point>
+            <coordinates>55.50677216519878,-21.27515679535688</coordinates>
+        </Point>","-21,2751567954","55,5067721652"
+T_v,kerveguen,capital_big,quartier,"<Point>
+            <coordinates>55.51604035400358,-21.27070269535593</coordinates>
+        </Point>","-21,2707026954","55,516040354"
+T_v,les quatre cents,capital_big,quartier,"<Point>
+            <coordinates>55.50146385829015,-21.2711737667733</coordinates>
+        </Point>","-21,2711737668","55,5014638583"
+T_v,la concession,capital_big,quartier,"<Point>
+            <coordinates>55.50278869756598,-21.29699708794382</coordinates>
+        </Point>","-21,2969970879","55,5027886976"
+T_v,condé,capital_big,quartier,"<Point>
+            <coordinates>55.50650492694334,-21.29224889421548</coordinates>
+        </Point>","-21,2922488942","55,5065049269"
+T_v,mon caprice,capital_big,quartier,"<Point>
+            <coordinates>55.49976957533126,-21.30563665448027</coordinates>
+        </Point>","-21,3056366545","55,4997695753"
+T_v,vers la mer,webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src=""http://m-r.li/webcam/camera/Wmeteorun.php?n=43 "" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.51376385527862,-21.24015767733845</coordinates>
+        </Point>","-21,2401576773","55,5137638553"
+T_v,vers les hauts,webcam,"<iframe width=""auto"" height=""auto"" frameborder=""0"" style=""border:0"" src="" http://m-r.li/webcam/camera/Wmeteotampon.php?n=51"" allowfullscreen> </iframe>","<Point>
+            <coordinates>55.52021435779123,-21.24009059545201</coordinates>
+        </Point>","-21,2400905955","55,5202143578"
+T_v,Alambic,cbh,"historique
+_Alambic. Vestige de l'histoire florissante de la commune du Tampon,
+ vous pouvez voir un ancien Alambic dans le Parc Jean de Cambiaire au centre ville du Tampon.","<Point>
+            <coordinates>55.51937780423769,-21.28079860659569,564.1013342165868</coordinates>
+        </Point>","-21,2807986066","55,5193778042"
+T_v,C.A.H.E.B,cbh*dollar,Coopérative Agricole des Huiles Essentielles de Bourbon,"<Point>
+            <coordinates>55.52153901867961,-21.28671954611922</coordinates>
+        </Point>","-21,2867195461","55,5215390187"
+T_v,église Saint-François de Sales église du Tampon,church,"église Saint-François de Sales église du Tampon . 
+L'église est construite vers 1910, par les soins de l'abbé Rognard, alors curé du Tampon.","<Point>
+            <coordinates>55.51944599987278,-21.28186999999963,567.4292414998838</coordinates>
+        </Point>","-21,28187","55,5194459999"
+T_v,Mosquée Noor-ul-Islam du Tampon,islam,Mosquée Noor-ul-Islam du Tampon. Dans les années 1950 une dizaine de familles musulmanes habitent au Tampon.,"<Point>
+            <coordinates>55.53250847331161,-21.30010278466403</coordinates>
+        </Point>","-21,3001027847","55,5325084733"
+T_v,Cheminée établissement du Tampon,cbh,"historique
+_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 10 juin 2002,
+avec son terrain","<Point><coordinates>55.535028,-21.29325</coordinates></Point>","-21,29325","55,535028"
+T_v,Chateau Bel-Air,cbh,"historique
+_inscrit à l'inventaire supplémentaire des Monuments historiques depuis le 13 septembre 1984,
+accueille le consulat  des Seychelles","<Point>
+            <coordinates>55.51561099999999,-21.28916666666667</coordinates>
+        </Point>","-21,2891666667","55,515611"
+T_v,Maison Roussel,cbh,"historique
+_inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 12 janvier 2006","<Point>
+            <coordinates>55.504806,-21.26091666666667</coordinates>
+        </Point>","-21,2609166667","55,504806"
+T_v,piton bassins martins,mountains,mont,"<Point>
+            <coordinates>55.5114996759398,-21.31636717896415</coordinates>
+        </Point>","-21,316367179","55,5114996759"
+T_v,notre dame de la paix,capital_big,quartier,"<Point>
+            <coordinates>55.59346537717507,-21.24553269565474</coordinates>
+        </Point>","-21,2455326957","55,5934653772"
+T_v,maison james bigey,capital_big,quartier,"<Point>
+            <coordinates>55.51497697356842,-21.21519858385994</coordinates>
+        </Point>","-21,2151985839","55,5149769736"
+T_v,piton hyacinthe,capital_big,quartier,"<Point>
+            <coordinates>55.52948272889806,-21.22123237189044</coordinates>
+        </Point>","-21,2212323719","55,5294827289"
+T_v,bassin martin,capital_big,quartier,"<Point>
+            <coordinates>55.50829332922854,-21.30954530044486</coordinates>
+        </Point>","-21,3095453004","55,5082933292"
+T_v,trois mares,capital_big,quartier,"<Point>
+            <coordinates>55.50605902734274,-21.26282846516943</coordinates>
+        </Point>","-21,2628284652","55,5060590273"
+T_v,l'ermitage,capital_big,quartier,"<Point>
+            <coordinates>55.51197771381275,-21.26135286043801</coordinates>
+        </Point>","-21,2613528604","55,5119777138"
+T_v,le dassy,capital_big,quartier,"<Point>
+            <coordinates>55.48795877856912,-21.25653569891657</coordinates>
+        </Point>","-21,2565356989","55,4879587786"
+T_v,le bras de ponton,capital_big,quartier,"<Point>
+            <coordinates>55.49286177656286,-21.24323454622162</coordinates>
+        </Point>","-21,2432345462","55,4928617766"
+T_v,le pont d'yves,capital_big,quartier,"<Point>
+            <coordinates>55.50436982988785,-21.23709053550393</coordinates>
+        </Point>","-21,2370905355","55,5043698299"
+T_v,trois mares les hauts,capital_big,quartier,"<Point>
+            <coordinates>55.51362373998257,-21.24440698115068</coordinates>
+        </Point>","-21,2444069812","55,51362374"
+T_v,le onzième,capital_big,quartier,"<Point>
+            <coordinates>55.52311117761223,-21.26323402385824</coordinates>
+        </Point>","-21,2632340239","55,5231111776"
+T_v,le douzième,capital_big,quartier,"<Point>
+            <coordinates>55.52044053723069,-21.25835570526857</coordinates>
+        </Point>","-21,2583557053","55,5204405372"
+T_v,le quatorzième,capital_big,quartier,"<Point>
+            <coordinates>55.52309563521462,-21.25191448430262</coordinates>
+        </Point>","-21,2519144843","55,5230956352"
+T_v,le bras creux,capital_big,quartier,"<Point>
+            <coordinates>55.53090697202274,-21.25978224466747</coordinates>
+        </Point>","-21,2597822447","55,530906972"
+T_v,le dix-septième,capital_big,quartier,"<Point>
+            <coordinates>55.53232530120001,-21.23754242564638</coordinates>
+        </Point>","-21,2375424256","55,5323253012"
+T_v,terrain hammerer,capital_big,quartier,"<Point>
+            <coordinates>55.56148835434049,-21.25043080630083</coordinates>
+        </Point>","-21,2504308063","55,5614883543"
+T_v,notre dame de la paix,capital_big,quartier,"<Point>
+            <coordinates>55.59270460339451,-21.24579065291012</coordinates>
+        </Point>","-21,2457906529","55,5927046034"
+T_v,le coin tranquille,capital_big,quartier,"<Point>
+            <coordinates>55.56135394468473,-21.23615844412772</coordinates>
+        </Point>","-21,2361584441","55,5613539447"
+T_v,chemin barbot,capital_big,quartier,"<Point>
+            <coordinates>55.53022987562606,-21.2279306810056</coordinates>
+        </Point>","-21,227930681","55,5302298756"
+T_v,le tunnel,capital_big,quartier,"<Point>
+            <coordinates>55.52280270643919,-21.20832551079539</coordinates>
+        </Point>","-21,2083255108","55,5228027064"

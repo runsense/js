@@ -1,0 +1,10 @@
+id,nom,categ,description,geometry,lat,lng
+ES_n,"<p style=""color:red;"" >Atelier Aurellll’Art</p>",arts,"festival: 
+_
+tél: 06 92 41 28 70","<Point>
+            <coordinates>55.36483106908338,-21.26356483714391</coordinates>
+        </Point>","-21,2635648371","55,3648310691"
+ES_n,Le Bambou,arts,"festival: 
+tél: 02 62 91 70 28","<Point>
+            <coordinates>55.33410998361968,-21.26564337217453</coordinates>
+        </Point>","-21,2656433722","55,3341099836"

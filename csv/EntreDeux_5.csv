@@ -1,0 +1,23 @@
+id,nom,categ,description,geometry,lat,lng
+ED_a,Brisset Michel,arts,"exposition artistique_
+tél: +262 262 49 70 55_
+gsm: +262 692 20 53 12","<Point>
+            <coordinates>55.47165699999999,-21.24102777777778</coordinates>
+        </Point>","-21,2410277778","55,471657"
+ED_a,Kréolie 4x4,cabs,"4*4
+<b>label: qualité tourisme</b>
+_
+tel: Tél. : +262 262 39 50 87
+_
+gsm : +262 692 86 52 26
+_
+mail : kreolie4x4@hotmail.fr
+_
+<a href=""http://www.kreolie4x4.com"" >http://www.kreolie4x4.com</a>","<Point>
+            <coordinates>55.46716318643807,-21.2404737958546</coordinates>
+        </Point>","-21,2404737959","55,4671631864"
+ED_a,Entre 2 Songes,hiker*hdcp,"visite touristique_
+gsm: +262 692 82 57 75_
+acces hdcp","<Point>
+            <coordinates>55.47006099999999,-21.24020555555556</coordinates>
+        </Point>","-21,2402055556","55,470061"

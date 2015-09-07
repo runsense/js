@@ -1,0 +1,17 @@
+id,nom,categ,description,geometry,lat,lng
+ES_t,stade,play,stade de foot,"<Point>
+            <coordinates>55.36999954419724,-21.26652722732229</coordinates>
+        </Point>","-21,2665272273","55,3699995442"
+ES_t,stade d'athlétisme,play,stade d'athlétisme,"<Point>
+            <coordinates>55.37321295083609,-21.26998585752414</coordinates>
+        </Point>","-21,2699858575","55,3732129508"
+ES_t,Tennis-club Dominicain,donut, tennis club,"<Point>
+            <coordinates>55.37399825018483,-21.26976683343312</coordinates>
+        </Point>","-21,2697668334","55,3739982502"
+ES_t,Tennis-club de L’étang-Salé,donut, tennis club,"<Point>
+            <coordinates>55.33404829209064,-21.27193176262744</coordinates>
+        </Point>","-21,2719317626","55,3340482921"
+ES_t,golf-bourbon,golf," golf
+tél: +262 262.26.33.39","<Point>
+            <coordinates>55.35817381258312,-21.27296479979087</coordinates>
+        </Point>","-21,2729647998","55,3581738126"

@@ -1,0 +1,20 @@
+id,nom,categ,description,geometry,lat,lng
+PC_a,Atmosphère Péi,cycling,"V.T.T. - Autres cycles
+_
+gsm: +262 692 44 47 17
+_
+mail : <a href=""contact@atmospherepei.com"" >contact@atmospherepei.com</a>
+_
+Web : <a href=""http://www.atmospherepei.com"" >""http://www.atmospherepei.com</a>","<Point>
+            <coordinates>55.52754178918258,-21.20955832496819</coordinates>
+        </Point>","-21,209558325","55,5275417892"
+PC_a,Les Ecuries du Volcan,horsebackriding,"Centre d'équitation
+<b>label: villages créoles
+</b>
+tel: +262 262 35 10 56
+_
+gsm: +262 692 66 62 90
+_mail :<a href=""ecuriesduvolcan@orange.fr"" > ecuriesduvolcan@orange.fr</a>
+_acces hdcp","<Point>
+            <coordinates>55.57590878582523,-21.19301766979404</coordinates>
+        </Point>","-21,1930176698","55,5759087858"

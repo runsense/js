@@ -1,0 +1,48 @@
+id,nom,categ,description,geometry,lat,lng
+ES_a,Centre Equestre de l' Etalon Blanc,horsebackriding,"équitation
+tél: +262 262.26.55.65","<Point>
+            <coordinates>55.38811554170877,-21.24599024600025</coordinates>
+        </Point>","-21,245990246","55,3881155417"
+ES_a,Equirun,horsebackriding,"équitation
+tél: +262 262.26.56.53","<Point>
+            <coordinates>55.359431291067,-21.26215965863204</coordinates>
+        </Point>","-21,2621596586","55,3594312911"
+ES_a,centre équestre eldorado,horsebackriding,"équitation
+tél: +262 692877448","<Point>
+            <coordinates>55.3649787397904,-21.26736086961033</coordinates>
+        </Point>","-21,2673608696","55,3649787398"
+ES_a,Passion Glisse,surf," surf
+tél: +262 262.26.60.96","<Point>
+            <coordinates>55.33523699985148,-21.27250999988265</coordinates>
+        </Point>","-21,2725099999","55,3352369999"
+ES_a,Chemin Ban Colon,hiker,"randonné
+tél: +262 262.26.33.41","<Point>
+            <coordinates>55.35885055947902,-21.26738559321752</coordinates>
+        </Point>","-21,2673855932","55,3588505595"
+ES_a,Ecole de Surf Extreme Sud,surf,"surf morey
+tél: +262 262 26 67 02
+gsm: +262 692 64 45 14","<Point>
+            <coordinates>55.33474630000001,-21.27234166666667</coordinates>
+        </Point>","-21,2723416667","55,3347463"
+ES_a,Plongée Salée,swimming,"plongé
+tél: +262 262 91 71 23
+gsm: +262 692 34 44 35","<Point>
+            <coordinates>55.333671,-21.26606388888889</coordinates>
+        </Point>","-21,2660638889","55,333671"
+ES_a,Rando Run Trekking,hiker,"Randonnée pédestre
+_
+tel: +262 262 26 31 31
+_
+gsm : +262 692 85 22 56
+_
+mail :<a href=""gilbert.aureche@gmail.com"">gilbert.aureche@gmail.com</a>
+_
+Web : <a href=""http://www.randorun-trekking.com"" >http://www.randorun-trekking.com</a>","<Point>
+            <coordinates>55.36628570600875,-21.26107673544965</coordinates>
+        </Point>","-21,2610767354","55,366285706"
+ES_a,Croc Parc. Parc animalier Ferme de crocodiles,terain,"<a href=""http://www.crocparc.re/"" >crocparc.re</a>
+peuplé de 160 espèce de crocodile venu du ni de 6 à 30 ans,
+elle renferme aussi un parc animalier
+et un parcours botanique","<Point>
+            <coordinates>55.352747,-21.26693888888889</coordinates>
+        </Point>","-21,2669388889","55,352747"

@@ -1,0 +1,89 @@
+id,nom,categ,description,geometry,lat,lng
+SAn_v,pont de la rivière de l'Est,cbh*water,"pont
+_
+Un premier pont suspendu fut construit en 1842 mais détruit par une crue le 11 février 1862.
+D'une portée maximale de 152 mètres, il était le pont le plus long du monde lors de sa livraison en 1894.","<Point>
+            <coordinates>55.74790562345457,-21.12384974608495</coordinates>
+        </Point>","-21,1238497461","55,7479056235"
+SAn_v,rivière de l'Est,water,rivière,"<Point>
+            <coordinates>55.76870201379209,-21.10734382988039</coordinates>
+        </Point>","-21,1073438299","55,7687020138"
+SAn_v,Temple de Morange,cbh,inscrit en totalité au titre des Monuments historiques depuis le 17 septembre 2010,"<Point>
+            <coordinates>55.733167,-21.10002777777778</coordinates>
+        </Point>","-21,1000277778","55,733167"
+SAn_v,Oratoire Notre Dame de Lourde,church,"pointInteret_religion
+_
+En 1954 c'est l'année d'édification de l'oratoire de Notre Dame de Lourdes à Bras-Panon. Construit en maçonnerie recouvert de carrelage, ce monument contient une statue de Marie","<Point>
+            <coordinates>55.73831690622575,-21.07130872558132</coordinates>
+        </Point>","-21,0713087256","55,7383169062"
+SAn_v,Cheminée Morange,cbh,"historique
+_
+inscrite en totalité à l'inventaire supplémentaire des Monuments historiques depuis le 27 juin 2002","<Point>
+            <coordinates>55.73386111111111,-21.09977777777778</coordinates>
+        </Point>","-21,0997777778","55,7338611111"
+SAn_v,Domaine coco,cbh*grocery,"cueillette maraichére_
+ historique_
+Le Domaine de Coco est situé dans une des campagnes créoles de la commune de Saint-Benoît, à 10 minutes de la splendide église de Sainte-Anne.
+
+A l'origine espace réserver à la monoculture de la canne à sucre, son paysage est aujourd'hui parsemé de petits bosquets composés d'arbres fruitiers et autres plantes tropicales.
+
+Facilement accessible depuis la Route Nationale et ouvert toute l'année, les propriétaires de la plantation invitant les visiteurs à découvrir cet intéressant projet agrotouristique.","<Point>
+            <coordinates>55.72277676622456,-21.07967777560251</coordinates>
+        </Point>","-21,0796777756","55,7227767662"
+SAn_v,Eglise de sainte-anne,church,"religion
+_
+En 1857, elle a été édifié,
+par le Monseigneur Desprez et à l’abbé Corne,
+puis a évolué par le père Daubenberger et les filles de marie","<Point>
+            <coordinates>55.74281853767119,-21.08024158909898</coordinates>
+        </Point>","-21,0802415891","55,7428185377"
+SAn_v,piton belle rive,mountains,mont,"<Point>
+            <coordinates>55.73853796790027,-21.11930744341089</coordinates>
+        </Point>","-21,1193074434","55,7385379679"
+SAn_v,piton armand,mountains,mont,"<Point>
+            <coordinates>55.70563291587821,-21.10778572349243</coordinates>
+        </Point>","-21,1077857235","55,7056329159"
+SAn_v,piton armand les hauts,mountains,mont,"<Point>
+            <coordinates>55.68559648249251,-21.12202631355718</coordinates>
+        </Point>","-21,1220263136","55,6855964825"
+SAn_v,cabanon,capital_big,"quartier
+","<Point>
+            <coordinates>55.71077333710847,-21.07286199722352</coordinates>
+        </Point>","-21,0728619972","55,7107733371"
+SAn_v,le cap,capital_big,quartier,"<Point>
+            <coordinates>55.72464967568893,-21.07794752651314</coordinates>
+        </Point>","-21,0779475265","55,7246496757"
+SAn_v,chemin morange,capital_big,quartier,"<Point>
+            <coordinates>55.73917973406658,-21.08841988714053</coordinates>
+        </Point>","-21,0884198871","55,7391797341"
+SAn_v,petit saint-pierre,capital_big,quartier,"<Point>
+            <coordinates>55.74950572304006,-21.08869614847134</coordinates>
+        </Point>","-21,0886961485","55,749505723"
+SAn_v,le Bassin Bleu,water,"bassin
+_
+bassins d'un bleu turquoise
+prisé des réunionnais","<Point>
+            <coordinates>55.74893690132756,-21.08360347541976</coordinates>
+        </Point>","-21,0836034754","55,7489369013"
+SAn_v,morange,capital_big,quartier,"<Point>
+            <coordinates>55.73521730725393,-21.09413017696501</coordinates>
+        </Point>","-21,094130177","55,7352173073"
+SAn_v,îlet des orangers,capital_big,quartier,"<Point>
+            <coordinates>55.74935393595448,-21.10354873092286</coordinates>
+        </Point>","-21,1035487309","55,749353936"
+SAn_v,les orangers,capital_big,quartier,"<Point>
+            <coordinates>55.75118480339062,-21.11117076381254</coordinates>
+        </Point>","-21,1111707638","55,7511848034"
+SAn_v,les chicots,capital_big,quartier,"<Point>
+            <coordinates>55.74955603979015,-21.1147677682325</coordinates>
+        </Point>","-21,1147677682","55,7495560398"
+SAn_v,cambourg,capital_big,quartier,"<Point>
+            <coordinates>55.72663280910189,-21.11310565747935</coordinates>
+        </Point>","-21,1131056575","55,7266328091"
+SAn_v,Saint-François,road_shield1,"ville
+_","<Point>
+            <coordinates>55.73444379947053,-21.06849803992171</coordinates>
+        </Point>","-21,0684980399","55,7344437995"
+SAn_v,Sainte-Anne,road_shield1,ville,"<Point>
+            <coordinates>55.74341498269456,-21.07909198544541</coordinates>
+        </Point>","-21,0790919854","55,7434149827"
