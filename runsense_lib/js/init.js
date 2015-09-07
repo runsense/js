@@ -1,6 +1,5 @@
 $(window).resize(function () { var h = $(window).height();var offsetTop = 105; $(FuncInit.idmap).css('height', (h - offsetTop));}).resize();
 $(function(){
-<<<<<<< HEAD
 
 FuncInit.anex=["TRAIL","Grand Raid","Trail de Bourbon","La Mascareignes"];
 FuncInit.srcZn=['NORD','OUEST','EST','SUD','TRAIL'];FuncInit.srcId=[{label:'Mafate',value:'Mafate',id:'Ma'},{label:'Saint-Gilles',value:'Saint-Gilles',id:'SG'},{label:'Saint-Leu',value:'Saint-Leu',id:'SL'},{label:'Trois-Bassins',value:'TroisBassins',id:'TB'},{label:'Saint-Paul',value:'Saint-Paul',id:'SPA'},{label:'l Etang Salé',value:'EtangSalé',id:'ES'},{label:'Entre-Deux',value:'Entre-Deux',id:'ED'},{label:'Les Avirons',value:'LesAvirons',id:'AV'},{label:'Saint-Pierre',value:'Saint-Pierre',id:'SPI'},{label:'Saint-Joseph',value:'Saint-Joseph',id:'SJ'},{label:'Petite Ile',value:'PetiteIle',id:'PI'},{label:'Saint-Louis',value:'Saint-Louis',id:'SLO'},{label:'Cilaos',value:'Cilaos',id:'CI'},{label:'Tampon',value:'Tampon',id:'T'},{label:'La Plaine des Cafres',value:'LaPlaineDesCafres',id:'PC'},{label:'Volcan' ,value:'enclosduTremblet',id:'ET'},{label:'Saint-Phillippe',value:'Saint-Phillippe',id:'SPH'},{label:'Saint-Denis',value:'Saint-Denis',id:'SD'},{label:'Sainte-Marie',value:'Sainte-Marie',id:'SM'},{label:'Sainte-Suzanne',value:'Sainte-Suzanne',id:'SS'},{label:'La Possession',value:'LaPossession',id:'Pos'},{label:'Le Port',value:'LePort',id:'Por'},{label:'Bras-Panon',value:'Bras-Panon',id:'BPn'},{label:'Saint-André',value:'Saint-André',id:'SAd'},{label:'Saint-Benoit',value:'Saint-Benoit',id:'SB'},{label:'Sainte-Anne',value:'Sainte-Anne',id:'SAn'},{label:'Sainte-Rose',value:'Sainte-Rose',id:'SR'},{label:'La Plaine des Palmistes',value:'LaPlaineDesPalmistes',id:'PP'},{label:'Salazie',value:'Salazie',id:'SAz'},
@@ -20,9 +19,7 @@ srcStyle=[{label: FuncInit.txtInit[0],value: "play"},{label: FuncInit.txtInit[1]
 ,{label:FuncInit.anex[0],value:"#3300CC",lien:FuncInit.txtInit[6]+"trail.png"},{label:FuncInit.anex[1],value:"poi"},{label:FuncInit.anex[2],value:"poi"},{label:FuncInit.anex[3],value:"poi"}];
 
 FuncTree.init();MapsLib.initialize();
-=======
-FuncInit.init();FuncTree.init();MapsLib.initialize();
->>>>>>> e49289f844d77e4056db6c6dee31a7ccdd650860
+
 //if it's too fast for navigator!!
 if (typeof google !== 'object' && typeof google.maps !== 'object') {location.reload(false);} });
 google.maps.visualRefresh = true;
