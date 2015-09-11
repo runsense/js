@@ -60,3 +60,27 @@ Version online
 
 HTTP://runsense.re
 or www
+
+help:
+
+	"nom" in fusionTableLayer is "ID" in jqxTree & "nom" in DataTable JQuery generate 
+	
+	"id" in datatable is "ID" in fusionTL & "ID" in jqxTree
+
+for version 1.1
+
+	var opacity, map[ background, color]
+	
+	lib min with /out jqxtree, datatable, search fusiontableLayer
+	
+	"ID" of Country / Place is "ID" [id,color,background]
+	
+	"ID" categ is "CO"/"PLa"+"_"+ first letter of categ
+	
+for version 1.2 (jqx ev, fusiontable ev)
+
+	multiple icon in view, multiple map possible on one view (same simple api)
+	
+	NO backGround in tree & object "superposition" environment
+	
+	Map v3 have tilt and head operationel??
