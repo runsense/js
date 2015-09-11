@@ -63,9 +63,10 @@ or www
 
 help:
 
-	"nom" in fusionTableLayer is "ID" in jqxTree & "nom" in DataTable JQuery generate 
+	"id" in fusionTableLayer is "ID" in jqxTree & "id" in DataTable JQuery generate 
 	
-	"id" in datatable is "ID" in fusionTL & "ID" in jqxTree
+	"nom" in ftl appear on map and table and IF be in jqxtree
+
 
 for version 1.1
 
@@ -73,7 +74,7 @@ for version 1.1
 	
 	lib min with /out jqxtree, datatable, search fusiontableLayer
 	
-	"ID" of Country / Place is "ID" [id,color,background]
+	"ID" of Country / Place is "ID" [id,color,background] & name jqxtree "NOM" FTL
 	
 	"ID" categ is "CO"/"PLa"+"_"+ first letter of categ
 	
