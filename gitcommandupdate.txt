@@ -3,3 +3,4 @@ git add . -A
 git commit -m "message"
 git pull origin gh-pages
 git push origin gh-pages
+
