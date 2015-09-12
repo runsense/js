@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+ <title id='Description'>Test Runsense lib</title>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><meta name="Keywords" content="presentation lib" />
+ <!--mobile--><meta name="viewport" content="width=device-width" />
+ <link rel="shortcut icon" href="favicon.ico">
+ <!--css lib-->
+ <link rel="stylesheet" href="./runsense_lib/jqx/jqx.summer.css" type="text/css" />
+    <!--custom for font and override for mobile-->
+ <link rel="stylesheet" href="./runsense_lib/jqx/jqx.base.css" type="text/css" />
+    <!--personal css-->
+ <link rel="stylesheet" href="./runsense_lib/css/runsense.css" type="text/css" />
+    
+ <link rel="stylesheet" href="./runsense_lib/js/jquery/jquery-ui.css" type="text/css" >
+ <!--jqx css-->
+    <link rel="stylesheet" href="./runsense_lib/js/jquery/jquery.selectBox.css" type="text/css" >
+ <!--table css-->
+    <link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
+ <!--impl. mobile css-->
+ <link rel="stylesheet" media="all and (orientation:portrait)" href="./runsense_lib/js/jqx/jqx.mobile.css" />
+ <link rel="stylesheet" media="all and (orientation:landscape)" href="./runsense_lib/js/jqx/jqx.mobile.css" />
+ <link rel="stylesheet" media="all and (max-width: 768px)" href="./runsense_lib/css/mob.css" /><link rel="stylesheet" media="all and (max-width: 1024px)" href="./runsense_lib/css/tablet.css" />
+ <link rel="stylesheet" media="all and (max-width: 1200px)" href="./runsense_lib/css/largeSize.css" />
+ <!--js lib-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script><script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxcore.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxbuttons.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxscrollbar.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxexpander.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxpanel.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxtree.js"></script><script type="text/javascript" src="./runsense_lib/jqx/jqxcheckbox.js"></script><script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script><script type="text/javascript" src="./runsense_lib/js/jquery/jquery.selectBox.js"></script><script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script><script type="text/javascript" src="./runsense_lib/js/maps_lib.js"></script>
+</head>
+<body class='default'> 
+	<div id="map_canvas" title="DOUBLE clic for zoom"></div>
+	<div id="pano"><button id='btn'  >return normal view</button></div>
+        <div id="panel" title='(GO ON RIGHT PANEL FOR MAP)' >
+			<button id='fl'> Oussa mi l&egrave;</button>
+			<form><table id="accs"><tr><td><input id="r_tab" title="shortcut search map" placeholder="TabSearch " onclick="this.value=''" type="text" /></td><td><input id="r_bdd" title="If U want play!!" placeholder="search di..." onclick="this.value=''" type="text" /></td>
+				</tr><tr><td><a style="color:red;" href="http://runsense.re/mob.rar">download version mobile</a></td></tr>
+					<tr>				
+						<td><label for="r_lieu">for place </label><br/><select id="r_lieu" style="width: 200px;" ><optgroup label="ZONE"><option value="OUEST">OUEST(l&grave;O&egrave;st)</option></optgroup><optgroup label="WEST"><option value="Mafate">Mafate(maron lontan)</option><option value="Saint-Gilles">Saint-Gilles(zoreilLand)</option><option value="Saint-Leu">Saint-Leu(sin blé)</option><option value="TroisBassins">Trois Bassins(di2bassyns)</option><option value="Saint-Paul">Saint-Paul(Santa Apolonia)</option><option value="EtangSale">Etang Sal&eacute;(bassins pirogue)</option><option value="Entre-Deux">Entre-Deux(dimitile)</option><option value="LesAvirons">Les Avirons(t&eacute;velave)</option></optgroup><optgroup label="ZONE"><option value="SUD">SUD(lo sud)</option></optgroup><optgroup label="SOUTH"><option value="Saint-Pierre">Saint-Pierre(miami)</option><option value="Saint-Joseph">Saint-Joseph(sin-jo)</option><option value="PetiteIle">Petite Ile(la r&eacute;inion)</option><option value="Saint-Louis">Saint-Louis(ti li)</option><option value="Cilaos">Cilaos(tsilaosa)</option><option value="Tampon">Tampon(15&egrave;me KM...)</option><option value="LaPlaineDesCafres">La Plaine Des Cafres(l&grave;pl&egrave;n)</option><option value="enclosduTremblet">Volcan(i p&egrave;t)</option><option value="Saint-Phillippe">Saint-Phillippe(au bon roi)</option></optgroup><optgroup label="ZONE"><option value="NORD">NORD(l&grave;nor)</option></optgroup><optgroup label="NORTH"><option value="Saint-Denis">Saint-Denis(sin-dnis)</option><option value="Sainte-Marie">Sainte-Marie(Vi&egrave;rj noir)</option><option value="Sainte-Suzanne">Sainte-Suzanne(bois rouz)</option><option value="LaPossession">La Possession(dos d'ane)</option><option value="LePort">Le Port(quartier sensible!!)</option></optgroup><optgroup label="ZONE"><option value="EST">EST(l&grave;&egrave;sth)</option></optgroup><optgroup label="EAST"><option value="Bras-Panon">Bras-Panon(ruel panon)</option><option value="Saint-Andre">Saint-Andr&eacute;(le colosse)</option><option value="Saint-Benoit">Saint-Benoit(takamaka)</option><option value="Sainte-Anne">Sainte-Anne(chapelbon di&eacute;)</option><option value="Sainte-Rose">Sainte-Rose(sinT roz)</option><option value="LaPlaineDesPalmistes">La Plaine Des Palmistes(l&grave;pl&egrave;n)</option><option value="Salazie">Salazie(quarti&eacute; chouChou..cristophine)</option></optgroup><optgroup label="ZONE"><option value="TRAIL">TRAIL santi&egrave;</option></optgroup><optgroup label="TRAIL"><option value="trail_grandraid">Grand Raid</option><option value="trail_debourbon">Trail de Bourbon</option><option value="trail_mascareignes">La Mascareignes</option></optgroup></select></td>					
+						<td ><label for="r_theme">for theme </label><br/><select id="r_theme" style="width: 200px;" ><option value="">Z&eacute;n&eacute;ral(ALL)</option><option value="t">Footz, tennis, golf, billard,terrain</option><option value="s">senti&eacute; vek l&agrave; c&ograve;t PATH & ROAD</option><option value="md">hotel, restaurant, gite EAT & SLEEP</option><option value="v">Li&eacute; & cit&eacute; PLACE & QUARTER</option><option value="n">l&grave;embians NIGHT CLUB & FESTIVALS</option><option value="a">zaf&egrave;r tourist ENTERTAINEMENT & PLEASURE</option></select></td>
+					</tr></table></form>
+			<div id="info" ></div><div id="search"> <button id='clear'title="clear" style='background: none;float:right' ><span id="a">C</span><span id="z">l</span><span id="e">e</span><span id="r">a</span><span id="t">r </span><span id="r">c</span><span id="e">h</span><span id="z">e</span><span id="a">c</span><span id="a">K </span><span id="a">B</span><span id="z">a</span><span id="e">c</span><span id="r">k</span><span id="t">z</span><span id="y">o</span><span id="u">O</span><span id="i">M</span></button></div><div id='jqxTree'></div>
+			<table id="itinv"><tr><td><input id="dep" title="(ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="(START) :"/></td><td rowspan="2"><button id='iti' >(route)</button></td></tr><tr><td><input id="arv" title="(ENTER ADRESSE OR CLICK MAP)" type="text" placeholder="(END):"/></td></tr></table>
+			<a title="mine" href="mailto:runsense974@gmail" target="_top"> runsense974@gmail </a>
+		</div>
+		
+	<div id="listv"  title="( GO ON RIGHT PANEL FOR MAP)" ></div>
+        <!--implement in end for have dom and lib-->
+	<script type='text/javascript' src="./runsense_lib/js/init.js">
+</script></body></html>
+
