@@ -60,3 +60,28 @@ Version online
 
 HTTP://runsense.re
 or www
+
+help:
+
+	"id" in fusionTableLayer is "ID" in jqxTree & "id" in DataTable JQuery generate 
+	
+	"nom" in ftl appear on map and table and IF be in jqxtree
+
+
+for version 1.1
+
+	var opacity, map[ background, color]
+	
+	lib min with /out jqxtree, datatable, search fusiontableLayer
+	
+	"ID" of Country / Place is "ID" [id,color,background] & name jqxtree "NOM" FTL
+	
+	"ID" categ is "CO"/"PLa"+"_"+ first letter of categ
+	
+for version 1.2 (jqx ev, fusiontable ev)
+
+	multiple icon in view, multiple map possible on one view (same simple api)
+	
+	NO backGround in tree & object "superposition" environment
+	
+	Map v3 have tilt and head operationel??
