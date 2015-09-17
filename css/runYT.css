@@ -1,5 +1,6 @@
 html,body {height:100%!important;margin:0px!important;padding:0px!important;background-color:black;}
 #jqxTree{position:static;float:right;top:0px;z-index:4}
+#hide_ply{position:static;top:100%;}
 #player{position:static;top:0px;float:left;margin:0px;padding:0px;border-top-left-radius:3em;border-top-right-radius:3em;border-bottom-left-radius:3em;border-bottom-right-radius:3em;}
 
 .jqx-widget-content {background:rgba(255,250,18,0.4)!important;}
