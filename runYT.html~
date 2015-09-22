@@ -36,7 +36,7 @@
  <script type="text/javascript" src="./js/functs_lib.js"></script>
 </head>
 <body class='default'> 
-	<a id="lk" href="http://youtube.runsense.re"><img src="ryt.png" title="tab mix" /></a>
+	<a id="lk" href="http://youtube.runsense.re"><img src="ryt.gif" title="tab mix" /></a>
 	<div id="player" title="info song"></div>
     <div id='jqxTree'></div>
 	<a href="http://www.mon-compteur.fr" style="visibility:hidden;"><img src="http://www.mon-compteur.fr/html_c01genv2-176481-5" border="0" /></a>	
