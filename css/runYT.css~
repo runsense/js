@@ -1,7 +1,0 @@
-html,body {height:100%!important;margin:0px!important;padding:0px!important;background-color:black;}
-#jqxTree{float:right;top:0px;}
-#player{position:absolute;top:0px;float:left;margin:0px;padding:0px;border-top-left-radius:3em;border-top-right-radius:3em;border-bottom-left-radius:3em;border-bottom-right-radius:3em;top:0px;z-index:-1!important;}
-#lk{position:absolute;z-index:1;}
-.jqx-widget-content {background:rgba(255,250,18,0.4)!important;}
-.jqx-fill-state-hover {font-size:180%!important;}
-.jqx-tree,.jqx-tree-item,.pagination,#iti,#btn,#clear {border-top-left-radius:2em!important;border-bottom-right-radius:1em!important;}
