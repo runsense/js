@@ -5,9 +5,8 @@
  *
  */
 var bnm=true;var initl='auto';
-$.urlParam=function(name){
-	var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);
-	try{return results[1]||0;}catch(e){return null;}};if($('#map_canvas').css('width')==='800px'){bnm=false;}
+$.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
+	if($('#map_canvas').css('width')==='800px'){bnm=false;}
 var FuncInit=FuncInit||{};var FuncInit={/*blockzoom*/
 	anex:["TRAIL","Grand Raid","Trail de Bourbon","La Mascareignes"],
 	srcZn:['NORD','OUEST','EST','SUD','TRAIL'],
