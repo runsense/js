@@ -7,11 +7,10 @@
 var bnm=true;var initl='auto';
 	if($('#map_canvas').css('width')==='800px'){bnm=false;}
 var FuncInit=FuncInit||{};var FuncInit={
-	gak:'15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a',ref:'FI.refcb',
 	anex:["TRAIL","Grand Raid","Trail de Bourbon","La Mascareignes"],
-	srcZn:['America','Africa','Europa','Orient','Asia','Oceania'],
-	srcId:[{label:'Mafate',value:'Mafate',id:'Ma'},{label:'Saint-Gilles',value:'Saint-Gilles',id:'SG'},{label:'Saint-Leu',value:'Saint-Leu',id:'SL'},{label:'Trois-Bassins',value:'TroisBassins',id:'TB'},{label:'Saint-Paul',value:'Saint-Paul',id:'SPA'},{label:'l Etang Salé',value:'EtangSalé',id:'ES'},{label:'Entre-Deux',value:'Entre-Deux',id:'ED'},{label:'Les Avirons',value:'LesAvirons',id:'AV'},{label:'Saint-Pierre',value:'Saint-Pierre',id:'SPI'},{label:'Saint-Joseph',value:'Saint-Joseph',id:'SJ'},{label:'Petite Ile',value:'PetiteIle',id:'PI'},{label:'Saint-Louis',value:'Saint-Louis',id:'SLO'},{label:'Cilaos',value:'Cilaos',id:'CI'},{label:'Tampon',value:'Tampon',id:'T'},{label:'La Plaine des Cafres',value:'LaPlaineDesCafres',id:'PC'},{label:'Volcan' ,value:'enclosduTremblet',id:'ET'},{label:'Saint-Phillippe',value:'Saint-Phillippe',id:'SPH'},{label:'Saint-Denis',value:'Saint-Denis',id:'SD'},{label:'Sainte-Marie',value:'Sainte-Marie',id:'SM'},{label:'Sainte-Suzanne',value:'Sainte-Suzanne',id:'SS'},{label:'La Possession',value:'LaPossession',id:'Pos'},{label:'Le Port',value:'LePort',id:'Por'},{label:'Bras-Panon',value:'Bras-Panon',id:'BPn'},{label:'Saint-André',value:'Saint-André',id:'SAd'},{label:'Saint-Benoit',value:'Saint-Benoit',id:'SB'},{label:'Sainte-Anne',value:'Sainte-Anne',id:'SAn'},{label:'Sainte-Rose',value:'Sainte-Rose',id:'SR'},{label:'La Plaine des Palmistes',value:'LaPlaineDesPalmistes',id:'PP'},{label:'Salazie',value:'Salazie',id:'SAz'},{label:'Grand Raid',value:'la diagonale des fous',id:'trail_grandraid'},{label:'Trail de Bourbon',value:'Trail de Bourbon',id:'trail_debourbon'},{label:'La Mascareignes',value:'La Mascareignes',id:'trail_mascareignes'}],
-	initSrch:'',bxt:false,ak:'',src:'',zm:10,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",idrbb:"#r_bdd",bstyle:"http://runsense.Re/f.png",
+	srcZn:['America','Africa','Europa','Orient','Asia','Oceania'],	
+	srcId:[{label:'America',value:'America',id:'am'},{label:'Africa',value:'Africa',id:'af'},{label:'Asia',value:'Asia',id:'as'},{label:'Europa',value:'Europa',id:'eu'},{label:'Oceania',value:'Oceania',id:'or'},{label:'Orient',value:'Orient',id:'or'}],
+	initSrch:'',bxt:false,ak:'AIzaSyBwN-ZobOGzBEHQjPZNpb5DmD4z1oTrbF0',src:'',zm:7,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",idrbb:"#r_bdd",bstyle:"http://runsense.Re/ryt.png",
 	txtInit:["reggae newRoots"/*0*/,
 	"ragga dancehall"/*1*/,
 	"pop poprock rock hardRock "/*2*/,
@@ -22,9 +21,21 @@ var FuncInit=FuncInit||{};var FuncInit={
 	"http://maps.google.com/mapfiles/kml/shapes/"/*7*/,
 	".png"/*8*/,"<span style='background-color: #FFF;'>"/*9*/,
 	"</span>"/*10*/,"http://runsense.Re/img/blason/"/*11*/,".gif"/*12*/],
+	srcStyle:[],
 	tmp:'',
 	exturi:function(){
-			FuncInit.ak="AIzaSyBt_AYP2XcqjnOMLb6_tX6LyQRE1CXRYR0";
+		FuncInit.srcStyle=[{label:FuncInit.txtInit[0],value:"sunny"},
+	{label:FuncInit.txtInit[1],value:"partly_cloudy"},
+	{label:FuncInit.txtInit[2],value:"museum"},
+	{label:FuncInit.txtInit[3],value:"bars"},
+	{label:FuncInit.txtInit[4],value:"firedept"},
+	{label:FuncInit.txtInit[5],value:"parks"},
+	{label:FuncInit.srcZn[0],value:"",lien:""},
+	{label:FuncInit.srcZn[1],value:"",lien:""},
+	{label:FuncInit.srcZn[2],value:"",lien:""},
+	{label:FuncInit.srcZn[3],value:"",lien:""},
+	{label:FuncInit.srcZn[4],value:"",lien:""},
+	{label:FuncInit.srcZn[5],value:"",lien:""}];
 			FuncInit.src=[
 			{id:"America",icon:FuncInit.txtInit[11]+"America"+FuncInit.txtInit[12],html:"<span title='America' style='background-color: #FFF; #8B0000;'>America</span> ",
 			value:"",items:[]},
@@ -39,18 +50,19 @@ var FuncInit=FuncInit||{};var FuncInit={
 			{id:"Orient",icon:FuncInit.txtInit[11]+"Orient"+FuncInit.txtInit[12],html:"<span title='Orient' style='background-color: #FFF; #8B0000;'>Orient</span> ",
 			value:"",items:[]}
 			];
+			FuncInit.srch();
 		},
 	srch:function(){
-		var queryStr=[];queryStr.push("SELECT nom,id,genre");
-		queryStr.push(" FROM  1T0BfA6ltQWg18UVSTTN5J-xtX5OjsAY3MJV1au6A	");var sql=encodeURIComponent(queryStr.join(" "));
-		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+FuncInit.ref+"&key="+FuncInit.gak,dataType:"jsonp"});},
+		var queryStr=[];queryStr.push("SELECT nom,id,dsc,lat,lng");
+		queryStr.push(" FROM  15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a	");var sql=encodeURIComponent(queryStr.join(" "));
+		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback=FuncInit.refcb&key="+FuncInit.ak,dataType:"jsonp"});},
 	refcb:function(json){
-		try{FI.handleError(json);}catch(e){;}
+		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");
 		var i=0;
-		$.each(msk,function(){FuncInit.src[i].value=this[1];i=i+1;});},
+	$.each(msk,function(){FuncInit.src[i].value=this[1];FuncInit.srcStyle[i+6].lien=this[2];i=i+1;});},
 	refland:function(json){
-		try{FI.handleError(json);}catch(e){;}
+		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");
 		var i=0;
 		$.each(msk,function(){
@@ -61,7 +73,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 		if(json["error"]!=undefined){
 			var error=json["error"]["errors"];console.log("Error in Fusion Table call!");
 			for(var row in error){console.log("Domain: "+error[row]["domain"]);console.log(" Reason: "+error[row]["reason"]);console.log(" Message: "+error[row]["message"]);}}},
-	init:function(){
+	init:function(){		
 		$("#r_tab").change(function (){
 			FuncTree.bms=false;FuncTab.fsearch(this.value);
 			$(FuncInit.idtab).mouseover();});
@@ -338,21 +350,9 @@ var FuncRoute=FuncRoute||{};var FuncRoute={
 }}};
 FuncInit.exturi();
 var FuncTree=FuncTree||{};var FuncTree={
-	bchk:false,bgrow:false,bms:true,updBackG:"body",ptbid:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
+	bchk:false,bgrow:false,bms:true,updBackG:"body",ptbid:['15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a'],
 	styles:["grocery",FuncInit.bstyle],zoom:2,rvzoom:5,
 	theme:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'r'},{label:FuncInit.txtInit[1],value:'d'},{label:FuncInit.txtInit[2],value:'h'},{label:FuncInit.txtInit[3],value:'p'},{label:FuncInit.txtInit[4],value:'c'},{label:FuncInit.txtInit[5],value:'t'}],
-	srcStyle:[{label:FuncInit.txtInit[0],value:"sunny"},
-	{label:FuncInit.txtInit[1],value:"partly_cloudy"},
-	{label:FuncInit.txtInit[2],value:"museum"},
-	{label:FuncInit.txtInit[3],value:"bars"},
-	{label:FuncInit.txtInit[4],value:"firedept"},
-	{label:FuncInit.txtInit[5],value:"parks"},
-	{label:FuncInit.srcZn[0],value:"sunny"},
-	{label:FuncInit.srcZn[1],value:"",lien:""},
-	{label:FuncInit.srcZn[2],value:"",lien:""},
-	{label:FuncInit.srcZn[3],value:"",lien:""},
-	{label:FuncInit.srcZn[4],value:"",lien:""},
-	{label:FuncInit.srcZn[5],value:"",lien:""}],
 	applyChild:function(items){
 		for(var i in items){FuncTree.chkItm(items[i]);}},
 	chkItm:function(elmt){
@@ -380,9 +380,9 @@ var FuncTree=FuncTree||{};var FuncTree={
 			FuncTree.ptbid=tmp;FuncTree.styles=stmp;}
 		MapsLib.doSearch();},
 	chStyle:function(l){var rslt;
-		for(var i=0;i<FuncTree.srcStyle.length;i++){if(FuncTree.srcStyle[i].label===l){rslt=FuncTree.srcStyle[i].value;}}return rslt;},
+		for(var i=0;i<FuncInit.srcStyle.length;i++){if(FuncInit.srcStyle[i].label===l){rslt=FuncInit.srcStyle[i].value;}}return rslt;},
 	chURL:function(l){var rslt;
-		for(var i=0;i<FuncTree.srcStyle.length;i++){if(FuncTree.srcStyle[i].label===l){rslt=FuncTree.srcStyle[i].lien;}}return rslt;},
+		for(var i=0;i<FuncInit.srcStyle.length;i++){if(FuncInit.srcStyle[i].label===l){rslt=FuncInit.srcStyle[i].lien;}}return rslt;},
 	append:function(txt,color){
 		$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);},
 	selectBox:function(i){
@@ -451,7 +451,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 	colSrch:'description',s:null,e:null,cpte:0,chad:'',datajson:['',''],
 	geocoder:new google.maps.Geocoder(),
 	polygonTableID:[],polygon:new Array(),
-	googleApiKey:FuncInit.ak,locationColumn:"lat",
+	locationColumn:"lat",
 	map_centroid:new google.maps.LatLng(0,0),
 	locationScope:"reunion",defaultZoom:FuncInit.zm,row:[],
 	addSrchMarker:new google.maps.Marker(),
@@ -523,17 +523,17 @@ var MapsLib=MapsLib||{};var MapsLib={
 		}else{FuncTree.append('Lo l\'action fo config!!Configurate your Position','red');}},
 	getSearch:function(value){
 		var callback="MapsLib.addrow";
-		var slcCol="nom,description,lat,lng,categ,id";
+		var slcCol="nom,id,dsc,lat,lng";
 		var queryStr=[];queryStr.push("SELECT " + slcCol);
 		queryStr.push(" FROM "+value);queryStr.push(" WHERE "+MapsLib.colSrch+" CONTAINS '"+FuncTab.search+"' ");
 		var sql=encodeURIComponent(queryStr.join(" "));
-		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});},
-		query:function(slcCol,limit,callback){
+		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FuncInit.ak, dataType: "jsonp"});},
+	query:function(slcCol,limit,callback){
 			for(var i in MapsLib.polygonTableID){
 				if(MapsLib.polygonTableID[i]!="NO"){
 					MapsLib.cpte=i;$(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
 					var queryStr=[];queryStr.push("SELECT "+slcCol);queryStr.push(" FROM "+MapsLib.polygonTableID[i]);var sql=encodeURIComponent(queryStr.join(" "));
-					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey,dataType:"jsonp"});
+					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FuncInit.ak,dataType:"jsonp"});
 				}else{
 					$(FuncInit.idtab).empty();$(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}
 			$(FuncInit.idinf).empty();
@@ -563,13 +563,13 @@ var MapsLib=MapsLib||{};var MapsLib={
 		for(var i=0;i<MapsLib.polygon.length;i++){if(MapsLib.polygon[i] != null){MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null;}}
 		map.setCenter(MapsLib.map_centroid);map.setZoom(FuncTree.zoom);},
 	getList:function(){
-		var slcCol="categ,nom,description,lat,lng,id";MapsLib.query(slcCol, 10, "FuncTab.displayList");},
+		var slcCol="nom,id,dsc,lat,lng";MapsLib.query(slcCol, 10, "FuncTab.displayList");},
 	srchOnAll:function(txt){
-		MapsLib.colSrch="description";var th=$( "#r_theme" ).val();var li= $("#r_lieu").val();
+		MapsLib.colSrch="nom";var th=$( "#r_theme" ).val();var li= $("#r_lieu").val();
 		if(txt!=''){try{
 			FuncTab.search=txt;MapsLib.row=[];MapsLib.cpte= 0;
-			var fsrc=FuncInit.src;var bsrc=true;
-			FuncTab.crTb();var ssrcMap;
+			var fsrc=FuncInit.src;var bsrc=true;			
+			FuncTab.crTb();var ssrcMap="15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a";
 			for(var i in fsrc){if(bsrc){
 				var src= fsrc[i];var items= src.items;
 				for(var j in items){

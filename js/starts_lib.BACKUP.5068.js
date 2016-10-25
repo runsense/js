@@ -1,37 +1,73 @@
 var bnm=true;var initl='auto';
 	if($('#map_canvas').css('width')==='800px'){bnm=false;}
-var FuncInit=FuncInit||{};var FuncInit={/*blockzoom*/
+var FuncInit=FuncInit||{};var FuncInit={
 	anex:["TRAIL","Grand Raid","Trail de Bourbon","La Mascareignes"],
-	srcZn:['America','Africa','Europa','India','Asia','Oceania'],
-	srcId:[{label:'Mafate',value:'Mafate',id:'Ma'},{label:'Saint-Gilles',value:'Saint-Gilles',id:'SG'},{label:'Saint-Leu',value:'Saint-Leu',id:'SL'},{label:'Trois-Bassins',value:'TroisBassins',id:'TB'},{label:'Saint-Paul',value:'Saint-Paul',id:'SPA'},{label:'l Etang Salé',value:'EtangSalé',id:'ES'},{label:'Entre-Deux',value:'Entre-Deux',id:'ED'},{label:'Les Avirons',value:'LesAvirons',id:'AV'},{label:'Saint-Pierre',value:'Saint-Pierre',id:'SPI'},{label:'Saint-Joseph',value:'Saint-Joseph',id:'SJ'},{label:'Petite Ile',value:'PetiteIle',id:'PI'},{label:'Saint-Louis',value:'Saint-Louis',id:'SLO'},{label:'Cilaos',value:'Cilaos',id:'CI'},{label:'Tampon',value:'Tampon',id:'T'},{label:'La Plaine des Cafres',value:'LaPlaineDesCafres',id:'PC'},{label:'Volcan' ,value:'enclosduTremblet',id:'ET'},{label:'Saint-Phillippe',value:'Saint-Phillippe',id:'SPH'},{label:'Saint-Denis',value:'Saint-Denis',id:'SD'},{label:'Sainte-Marie',value:'Sainte-Marie',id:'SM'},{label:'Sainte-Suzanne',value:'Sainte-Suzanne',id:'SS'},{label:'La Possession',value:'LaPossession',id:'Pos'},{label:'Le Port',value:'LePort',id:'Por'},{label:'Bras-Panon',value:'Bras-Panon',id:'BPn'},{label:'Saint-André',value:'Saint-André',id:'SAd'},{label:'Saint-Benoit',value:'Saint-Benoit',id:'SB'},{label:'Sainte-Anne',value:'Sainte-Anne',id:'SAn'},{label:'Sainte-Rose',value:'Sainte-Rose',id:'SR'},{label:'La Plaine des Palmistes',value:'LaPlaineDesPalmistes',id:'PP'},{label:'Salazie',value:'Salazie',id:'SAz'},{label:'Grand Raid',value:'la diagonale des fous',id:'trail_grandraid'},{label:'Trail de Bourbon',value:'Trail de Bourbon',id:'trail_debourbon'},{label:'La Mascareignes',value:'La Mascareignes',id:'trail_mascareignes'}],
-	initSrch:'',bxt:false,ak:'',src:'',zm:10,rvzm:10,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",idrbb:"#r_bdd",bstyle:"http://runsense.github.io/js/f.png",
+	srcZn:['America','Africa','Europa','Orient','Asia','Oceania'],	
+	srcId:[{label:'America',value:'America',id:'am'},{label:'Africa',value:'Africa',id:'af'},{label:'Asia',value:'Asia',id:'as'},{label:'Europa',value:'Europa',id:'eu'},{label:'Oceania',value:'Oceania',id:'or'},{label:'Orient',value:'Orient',id:'or'}],
+	initSrch:'',bxt:false,ak:'AIzaSyBwN-ZobOGzBEHQjPZNpb5DmD4z1oTrbF0',src:'',zm:7,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",idrbb:"#r_bdd",bstyle:"http://runsense.Re/ryt.png",
 	txtInit:["reggae newRoots"/*0*/,
 	"ragga dancehall"/*1*/,
-	"rock hardRock"/*2*/,
-	"pop poprock"/*3*/,
+	"pop poprock rock hardRock "/*2*/,
+	"Hip-Hop"/*3*/,
 	"dance electro house"/*4*/,
-	"traditional latino zouk "/*5*/,
+	"traditional latino zouk classic"/*5*/,
 	"http://runsense.Re/img/"/*6*/,
 	"http://maps.google.com/mapfiles/kml/shapes/"/*7*/,
 	".png"/*8*/,"<span style='background-color: #FFF;'>"/*9*/,
 	"</span>"/*10*/,"http://runsense.Re/img/blason/"/*11*/,".gif"/*12*/],
+	srcStyle:[],
 	tmp:'',
 	exturi:function(){
-			FuncInit.ak="AIzaSyBt_AYP2XcqjnOMLb6_tX6LyQRE1CXRYR0";
+		FuncInit.srcStyle=[{label:FuncInit.txtInit[0],value:"sunny"},
+	{label:FuncInit.txtInit[1],value:"partly_cloudy"},
+	{label:FuncInit.txtInit[2],value:"museum"},
+	{label:FuncInit.txtInit[3],value:"bars"},
+	{label:FuncInit.txtInit[4],value:"firedept"},
+	{label:FuncInit.txtInit[5],value:"parks"},
+	{label:FuncInit.srcZn[0],value:"",lien:""},
+	{label:FuncInit.srcZn[1],value:"",lien:""},
+	{label:FuncInit.srcZn[2],value:"",lien:""},
+	{label:FuncInit.srcZn[3],value:"",lien:""},
+	{label:FuncInit.srcZn[4],value:"",lien:""},
+	{label:FuncInit.srcZn[5],value:"",lien:""}];
 			FuncInit.src=[
 			{id:"America",icon:FuncInit.txtInit[11]+"America"+FuncInit.txtInit[12],html:"<span title='America' style='background-color: #FFF; #8B0000;'>America</span> ",
 			value:"",items:[]},
 			{id:"Africa",icon:FuncInit.txtInit[11]+"Africa"+FuncInit.txtInit[12],html:"<span title='Africa' style='background-color: #FFF; #8B0000;'>Africa</span> ",
 			value:"",items:[]},
-			{id:"India",icon:FuncInit.txtInit[11]+"India"+FuncInit.txtInit[12],html:"<span title='India' style='background-color: #FFF; #8B0000;'>India</span> ",
+			{id:"Europa",icon:FuncInit.txtInit[11]+"Europa"+FuncInit.txtInit[12],html:"<span title='Europa' style='background-color: #FFF; #8B0000;'>Europa</span> ",
 			value:"",items:[]},
 			{id:"Asia",icon:FuncInit.txtInit[11]+"Asia"+FuncInit.txtInit[12],html:"<span title='Asia' style='background-color: #FFF; #8B0000;'>Asia</span> ",
 			value:"",items:[]},
 			{id:"Oceania",icon:FuncInit.txtInit[11]+"Oceania"+FuncInit.txtInit[12],html:"<span title='Oceania' style='background-color: #FFF; #8B0000;'>Oceania</span> ",
+			value:"",items:[]},
+			{id:"Orient",icon:FuncInit.txtInit[11]+"Orient"+FuncInit.txtInit[12],html:"<span title='Orient' style='background-color: #FFF; #8B0000;'>Orient</span> ",
 			value:"",items:[]}
 			];
+			FuncInit.srch();
 		},
-	init:function(){
+	srch:function(){
+		var queryStr=[];queryStr.push("SELECT nom,id,dsc,lat,lng");
+		queryStr.push(" FROM  15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a	");var sql=encodeURIComponent(queryStr.join(" "));
+		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback=FuncInit.refcb&key="+FuncInit.ak,dataType:"jsonp"});},
+	refcb:function(json){
+		try{FuncInit.handleError(json);}catch(e){;}
+		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");
+		var i=0;
+	$.each(msk,function(){FuncInit.src[i].value=this[1];FuncInit.srcStyle[i+6].lien=this[2];i=i+1;});},
+	refland:function(json){
+		try{FuncInit.handleError(json);}catch(e){;}
+		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");
+		var i=0;
+		$.each(msk,function(){
+			$.each(FuncInit.src,function(){FuncInit.src[i].value=this[1];i=i+1;});
+			});
+		},
+	handleError:function(json){
+		if(json["error"]!=undefined){
+			var error=json["error"]["errors"];console.log("Error in Fusion Table call!");
+			for(var row in error){console.log("Domain: "+error[row]["domain"]);console.log(" Reason: "+error[row]["reason"]);console.log(" Message: "+error[row]["message"]);}}},
+	init:function(){		
 		$("#r_tab").change(function (){
 			FuncTree.bms=false;FuncTab.fsearch(this.value);
 			$(FuncInit.idtab).mouseover();});
@@ -139,10 +175,6 @@ var FuncInit=FuncInit||{};var FuncInit={/*blockzoom*/
 			$(FuncInit.idmap).mouseleave(function(){
 			if(map.getMapTypeId()===google.maps.MapTypeId.ROADMAP){map.setMapTypeId(google.maps.MapTypeId.HYBRID);}
 			else if(map.getMapTypeId()===google.maps.MapTypeId.HYBRID){map.setMapTypeId(google.maps.MapTypeId.SATELLITE);}else{map.setMapTypeId(google.maps.MapTypeId.ROADMAP);}
-			if(map.getZoom===FuncTree.rvzoom){
-				if(FuncTree.rvzoom<11){map.setZoom(FuncInit.rvzm+2);}
-				else{map.setZoom(FuncInit.rvzm-2);}}
-			else{map.setZoom(FuncTree.rvzoom);}
 			FuncRoute.calcRoute();return true;});
 		$(FuncInit.iditi).click(function(){
 			FuncRoute.calcRoute();return true;});
@@ -312,10 +344,9 @@ var FuncRoute=FuncRoute||{};var FuncRoute={
 }}};
 FuncInit.exturi();
 var FuncTree=FuncTree||{};var FuncTree={
-	bchk:false,bgrow:false,bms:true,updBackG:"body",ptbid:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
-	styles:["grocery",FuncInit.bstyle],zoom:10,rvzoom:11,
-	theme:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'}],
-	srcStyle:[{label:FuncInit.txtInit[0],value:"play"},{label:FuncInit.txtInit[1],value:"hiker"},{label:FuncInit.txtInit[2],value:"dining"},{label:FuncInit.txtInit[3],value:"realestate"},{label:FuncInit.txtInit[4],value:"star"},{label:FuncInit.txtInit[5],value:"ranger_station"},{label:"EST",value:"#DAA520",lien:FuncInit.txtInit[6]+"Est.png"},{label:"Bras-Panon",value:"#4B0082",lien:FuncInit.txtInit[6]+"brasPanon.png"},{label:"Saint-Andre",value:"#006400",lien:FuncInit.txtInit[6]+"saintAndre.png"},{label:"Saint-Benoit",value:"#008B8B",lien:FuncInit.txtInit[6]+"saintBenoit.png"},{label:"Sainte-Anne",value:"#800000",lien:FuncInit.txtInit[6]+"sainteAnne.png"},{label:"Sainte-Rose",value:"#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sainte-Rose_eglise.jpg/800px-Sainte-Rose_eglise.jpg"},{label:"La Plaine Des Palmistes",value:"#CD5C5C",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b3/Ppalmistes2.jpg"},{label:"Salazie",value:"#000080",lien:"http://www.transeet.fr/wp-content/uploads/2013/05/Ile-de-la-Reunion-510x350.jpg"},{label:"OUEST",value:"#CD5C5C",lien:FuncInit.txtInit[6]+"Ouest.png"},{label:"Mafate",value:"#4B0082",lien:FuncInit.txtInit[6]+"mafate.png"},{label:"Saint-Gilles",value:"#006400",lien:FuncInit.txtInit[6]+"saintGilles.png"},{label:"Saint-Leu",value:"#008B8B",lien:FuncInit.txtInit[6]+"saintLeu.png"},{label:"Trois Bassins",value:"#800000",lien:FuncInit.txtInit[6]+"troisBassins.png"},{label:"Saint-Paul",value:"#DAA520",lien:FuncInit.txtInit[6]+"saintPaul.png"},{label:"Etang Sale",value:"#CD5C5C",lien:FuncInit.txtInit[6]+"etangSale.png"},{label:"Entre-Deux",value:"#000080",lien:FuncInit.txtInit[6]+"entreDeux.png"},{label:"Les Avirons",value:"#FFD700",lien:FuncInit.txtInit[6]+"lesAvirons.png"},{label:"SUD",value:"#66CDAA",lien:FuncInit.txtInit[6]+"sud.png"},{label:"Saint-Pierre",value:"#4B0082",lien:FuncInit.txtInit[6]+"saintPierre.png"},{label:"Saint-Joseph",value:"#006400",lien:FuncInit.txtInit[6]+"saintJoseph.png"},{label:"Petite Ile",value:"#008B8B",lien:"https://upload.wikimedia.org/wikipedia/commons/1/11/Reunion_PetiteIle.JPG"},{label:"Saint-Louis",value:"#800000",lien:"https://upload.wikimedia.org/wikipedia/commons/e/e1/R%C3%A9union_LesMakes.JPG"},{label:"Cilaos",value:"#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/4/43/Cirque_De_Cilaos_On_Reunion.jpg"},{label:"Tampon",value:"#CD5C5C",lien:FuncInit.txtInit[6]+"tampon.png"},{label:"La Plaine Des Cafres",value:"#000080",lien:FuncInit.txtInit[6]+"laPlaineDesCafres.png"},{label:"enclos du Tremblet",value:"#FFD700",lien:"https://upload.wikimedia.org/wikipedia/commons/3/37/Piton_de_la_Fournaise%2C_R%C3%A9union_Island_%28High_Resolution%29.jpg"},{label:"Saint-Phillippe",value:"#66CDAA",lien:FuncInit.txtInit[6]+"saintPhillippe.png"},{label:"NORD",value:"#4169E1",lien:FuncInit.txtInit[6]+"rocheEcrite.png"},{label:"Saint-Denis",value:"#4B0082",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b9/SaintDenisReunion003.jpg"},{label:"Sainte-Marie",value:"#006400",lien:FuncInit.txtInit[6]+"sainteMarie.png"},{label:"Sainte-Suzanne",value:"#008B8B",lien:FuncInit.txtInit[6]+"sainteSuzanne.png"},{label:"La Possession",value:"#800000",lien:FuncInit.txtInit[6]+"laPossession.png"},{label:"Le Port",value:"#DAA520",lien:FuncInit.txtInit[6]+"lePort.png"},{label:FuncInit.anex[0],value:"#3300CC",lien:FuncInit.txtInit[6]+"trail.png"},{label:FuncInit.anex[1],value:"poi"},{label:FuncInit.anex[2],value:"poi"},{label:FuncInit.anex[3],value:"poi"}],
+	bchk:false,bgrow:false,bms:true,updBackG:"body",ptbid:['15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a'],
+	styles:["grocery",FuncInit.bstyle],zoom:2,rvzoom:5,
+	theme:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'r'},{label:FuncInit.txtInit[1],value:'d'},{label:FuncInit.txtInit[2],value:'h'},{label:FuncInit.txtInit[3],value:'p'},{label:FuncInit.txtInit[4],value:'c'},{label:FuncInit.txtInit[5],value:'t'}],
 	applyChild:function(items){
 		for(var i in items){FuncTree.chkItm(items[i]);}},
 	chkItm:function(elmt){
@@ -325,9 +356,9 @@ var FuncTree=FuncTree||{};var FuncTree={
 	applysrch:function(i){
 		var tmp=FuncTree.ptbid;var stmp=FuncTree.styles;
 		FuncTree.ptbid=new Array();FuncTree.styles=new Array();
-		try{FuncTree.ptbid.push(i.value);FuncTree.styles.push(FuncTree.chStyle(i.label));var u=FuncTree.chURL(i.label);
-			if(u!=null){FuncTree.styles.push(FuncTree.chURL(i.label));}
-			else{FuncTree.styles.push(FuncInit.bstyle);}
+		try{FuncTree.ptbid.push(i.value);
+		var u=FuncTree.chStyle(i.label);FuncTree.styles.push(u);
+		 u=FuncTree.chURL(i.label);if(u){FuncTree.styles.push(u);}else{FuncTree.styles.push(FuncInit.bstyle);}
 		}catch(e){FuncTree.ptbid=tmp;FuncTree.styles=stmp;}},
 	applyMob:function(rplc){
 		var tmp=FuncTree.ptbid;var stmp=FuncTree.styles;
@@ -337,15 +368,15 @@ var FuncTree=FuncTree||{};var FuncTree={
 				var i=src[c];i.html=i.html.split('>')[1].split('<')[0];
 				FuncTree.ptbid.push(i.value);FuncTree.styles.push(FuncTree.chStyle(i.html));
 				var u=FuncTree.chURL(i.html);
-			if(u!=null){FuncTree.styles.push(FuncTree.chURL(i.html));}
+			if(u){FuncTree.styles.push(u);}
 			else{FuncTree.styles.push(FuncInit.bstyle);}
 		}}}catch(e){
 			FuncTree.ptbid=tmp;FuncTree.styles=stmp;}
 		MapsLib.doSearch();},
 	chStyle:function(l){var rslt;
-		for(var i=0;i<FuncTree.srcStyle.length;i++){if(FuncTree.srcStyle[i].label===l){rslt=FuncTree.srcStyle[i].value;}}return rslt;},
+		for(var i=0;i<FuncInit.srcStyle.length;i++){if(FuncInit.srcStyle[i].label===l){rslt=FuncInit.srcStyle[i].value;}}return rslt;},
 	chURL:function(l){var rslt;
-		for(var i=0;i<FuncTree.srcStyle.length;i++){if(FuncTree.srcStyle[i].label===l){rslt=FuncTree.srcStyle[i].lien;}}return rslt;},
+		for(var i=0;i<FuncInit.srcStyle.length;i++){if(FuncInit.srcStyle[i].label===l){rslt=FuncInit.srcStyle[i].lien;}}return rslt;},
 	append:function(txt,color){
 		$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);},
 	selectBox:function(i){
@@ -360,22 +391,7 @@ var FuncTree=FuncTree||{};var FuncTree={
 		}else{var slc=i.id.split('_')[1];$("#r_theme").selectBox('value',slc);FuncTree.bms=false;}},
 	init:function(){
 		$(FuncInit.idtree).jqxTree({checkboxes:true,source:FuncInit.src,width:'100%',height:FuncTree.initl,theme:'summer'});
-		$('#jqxTree .jqx-tree-item').mouseenter(function (event){
-			event.stopPropagation();
-			var text=event.target.textContent;
-			var i;if(FuncInit.bnm&&FuncTree.bms){try{
-				text=text.replace(/ /g,'').replace(/'/g,'');
-				rplc ='#'+text;i=$(FuncInit.idtree).jqxTree('getItem',$(rplc)[0]);
-				$("#r_lieu").val(text);
-			}catch(e){
-				for(var j in FuncTree.theme){
-					var rplc=FuncTree.theme[j].label.replace(/ /g,'').replace(/'/g,'');
-					if(rplc===text){
-						var slval=FuncTree.theme[j].value;
-						var id='#'+FuncInit.tmp+'_'+slval;
-						i=$(FuncInit.idtree).jqxTree('getItem',$(id)[0]);$("#r_theme").val(slval);}
-				}
-			}finally{FuncTree.applysrch(i);MapsLib.doSearch();}}});
+		
 		$(FuncInit.idtree).on('expand',function(ev){
 			if(FuncInit.bnm){var e=ev.args.element;
 			var i=$(FuncInit.idtree).jqxTree('getItem',e );
@@ -392,7 +408,7 @@ var FuncTree=FuncTree||{};var FuncTree={
 				FuncTree.ptbid=new Array();$(FuncInit.idtab).empty();
 				FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch();}});
 		$(FuncInit.idtree).bind('select',function(ev){
-			ev.stopPropagation();FuncTree.zoom=FuncInit.rvzm;
+			ev.stopPropagation();
 			var a=ev.args;var e=a.element;
 			if($(e).find("li").length>1){FuncTree.bms=true;}
 			var i=$(FuncInit.idtree).jqxTree('getItem', e);
@@ -429,12 +445,12 @@ var MapsLib=MapsLib||{};var MapsLib={
 	colSrch:'description',s:null,e:null,cpte:0,chad:'',datajson:['',''],
 	geocoder:new google.maps.Geocoder(),
 	polygonTableID:[],polygon:new Array(),
-	googleApiKey:FuncInit.ak,locationColumn:"lat",
-	map_centroid:new google.maps.LatLng(-21.137472,55.546906),
+	locationColumn:"lat",
+	map_centroid:new google.maps.LatLng(0,0),
 	locationScope:"reunion",defaultZoom:FuncInit.zm,row:[],
 	addSrchMarker:new google.maps.Marker(),
 	h:34,p:10,
-	strVw:new google.maps.StreetViewPanorama(document.getElementById("strvw"),{
+	strVw:new google.maps.StreetViewPanorama(document.getElementById("pano"),{
 		position: MapsLib.map_centroid,pov:{heading:34,pitch:10}}),
 	initialize:function(){
 		try{MapsLib.geocoder=new google.maps.Geocoder();
@@ -442,7 +458,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 		}catch(e){;}
 		var myOptions={zoom:MapsLib.defaultZoom,center:MapsLib.map_centroid,mapTypeId:google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1};
 		map=new google.maps.Map($("#map_canvas")[0],myOptions);
-		/*Streetview*/MapsLib.strVw=new google.maps.StreetViewPanorama(document.getElementById("pano"),{position: MapsLib.map_centroid,pov:{heading:34,pitch:10}});/*Streetview*/
+		
 		map.setStreetView(MapsLib.strVw);google.maps.event.addListener(map, "click",function(event){ MapsLib.clickmap(event); });
 		google.maps.event.addDomListener(window,'resize',function(){
 			map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom);});
@@ -501,17 +517,17 @@ var MapsLib=MapsLib||{};var MapsLib={
 		}else{FuncTree.append('Lo l\'action fo config!!Configurate your Position','red');}},
 	getSearch:function(value){
 		var callback="MapsLib.addrow";
-		var slcCol="nom,description,lat,lng,categ,id";
+		var slcCol="nom,id,dsc,lat,lng";
 		var queryStr=[];queryStr.push("SELECT " + slcCol);
 		queryStr.push(" FROM "+value);queryStr.push(" WHERE "+MapsLib.colSrch+" CONTAINS '"+FuncTab.search+"' ");
 		var sql=encodeURIComponent(queryStr.join(" "));
-		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});},
-		query:function(slcCol,limit,callback){
+		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FuncInit.ak, dataType: "jsonp"});},
+	query:function(slcCol,limit,callback){
 			for(var i in MapsLib.polygonTableID){
 				if(MapsLib.polygonTableID[i]!="NO"){
 					MapsLib.cpte=i;$(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");
 					var queryStr=[];queryStr.push("SELECT "+slcCol);queryStr.push(" FROM "+MapsLib.polygonTableID[i]);var sql=encodeURIComponent(queryStr.join(" "));
-					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey,dataType:"jsonp"});
+					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FuncInit.ak,dataType:"jsonp"});
 				}else{
 					$(FuncInit.idtab).empty();$(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}
 			$(FuncInit.idinf).empty();
@@ -541,13 +557,13 @@ var MapsLib=MapsLib||{};var MapsLib={
 		for(var i=0;i<MapsLib.polygon.length;i++){if(MapsLib.polygon[i] != null){MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null;}}
 		map.setCenter(MapsLib.map_centroid);map.setZoom(FuncTree.zoom);},
 	getList:function(){
-		var slcCol="categ,nom,description,lat,lng,id";MapsLib.query(slcCol, 10, "FuncTab.displayList");},
+		var slcCol="nom,id,dsc,lat,lng";MapsLib.query(slcCol, 10, "FuncTab.displayList");},
 	srchOnAll:function(txt){
-		MapsLib.colSrch="description";var th=$( "#r_theme" ).val();var li= $("#r_lieu").val();
+		MapsLib.colSrch="nom";var th=$( "#r_theme" ).val();var li= $("#r_lieu").val();
 		if(txt!=''){try{
 			FuncTab.search=txt;MapsLib.row=[];MapsLib.cpte= 0;
-			var fsrc=FuncInit.src;var bsrc=true;
-			FuncTab.crTb();var ssrcMap;
+			var fsrc=FuncInit.src;var bsrc=true;			
+			FuncTab.crTb();var ssrcMap="15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a";
 			for(var i in fsrc){if(bsrc){
 				var src= fsrc[i];var items= src.items;
 				for(var j in items){
