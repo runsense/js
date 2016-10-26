@@ -365,7 +365,7 @@ var FuncTree=FuncTree||{};var FuncTree={
 				FuncTree.applysrch(null);$('small').hide();FuncTree.zoom=10;MapsLib.doSearch();}});
 		$(FuncInit.idtree).bind('select',function(ev){
 			ev.stopPropagation();
-			var a=ev.args;var e=a.element;
+			var e=ev.args.element;
 			if($(e).find("li").length>1){FuncTree.bms=true;}
 			var i=$(FuncInit.idtree).jqxTree('getItem', e);
 			if(i!=null){
