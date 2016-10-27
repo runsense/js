@@ -116,12 +116,9 @@ var FuncInit=FuncInit||{};var FuncInit={/*blockzoom*/
 			$('#clear').bind('click',function(){
 				MapsLib.map_centroid=new google.maps.LatLng(-21.137472,55.546906);
 				FuncTree.zoom=10;MapsLib.doSearch();
-				var items=$(FuncInit.idtree).jqxTree('getCheckedItems');
-				for(var i in items){
-					var e=items[i].element;
-					$(FuncInit.idtree).jqxTree('uncheckItem',e);
-					$(FuncInit.idtree).jqxTree('collapseItem',e);}
-				$(FuncInit.idtree).jqxTree('refresh');});
+				$(FuncInit.idtree).jqxTree('collapseAll');$(FuncInit.idtree).jqxTree('uncheckAll');
+				$(FuncInit.idtree).jqxTree('refresh');
+				});
 			$('#find_me').click(function(){
 				MapsLib.findMe();return false;});
 			$('#dep').click(function(){
@@ -301,7 +298,7 @@ var FuncRoute=FuncRoute||{};var FuncRoute={
 FuncInit.exturi();
 var FuncTree=FuncTree||{};var FuncTree={
 	bchk:false,bgrow:false,bms:true,updBackG:"body",ptbid:['1So5MDh-kSSDOudH6iznmgC3DTfn4SBKiilMj27DI'],
-	styles:["grocery",FuncInit.bstyle],zoom:1,rvzoom:11,
+	styles:["grocery",FuncInit.bstyle],zoom:2,rvzoom:11,
 	theme:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'t'},{label:FuncInit.txtInit[1],value:'s'},{label:FuncInit.txtInit[2],value:'md'},{label:FuncInit.txtInit[3],value:'v'},{label:FuncInit.txtInit[4],value:'n'},{label:FuncInit.txtInit[5],value:'a'}],
 	srcStyle:[{label:FuncInit.txtInit[0],value:"play"},{label:FuncInit.txtInit[1],value:"hiker"},{label:FuncInit.txtInit[2],value:"dining"},{label:FuncInit.txtInit[3],value:"realestate"},{label:FuncInit.txtInit[4],value:"star"},{label:FuncInit.txtInit[5],value:"ranger_station"},{label:"EST",value:"#DAA520",lien:FuncInit.txtInit[6]+"Est.png"},{label:"Bras-Panon",value:"#4B0082",lien:FuncInit.txtInit[6]+"brasPanon.png"},{label:"Saint-Andre",value:"#006400",lien:FuncInit.txtInit[6]+"saintAndre.png"},{label:"Saint-Benoit",value:"#008B8B",lien:FuncInit.txtInit[6]+"saintBenoit.png"},{label:"Sainte-Anne",value:"#800000",lien:FuncInit.txtInit[6]+"sainteAnne.png"},{label:"Sainte-Rose",value:"#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sainte-Rose_eglise.jpg/800px-Sainte-Rose_eglise.jpg"},{label:"La Plaine Des Palmistes",value:"#CD5C5C",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b3/Ppalmistes2.jpg"},{label:"Salazie",value:"#000080",lien:"http://www.transeet.fr/wp-content/uploads/2013/05/Ile-de-la-Reunion-510x350.jpg"},{label:"OUEST",value:"#CD5C5C",lien:FuncInit.txtInit[6]+"Ouest.png"},{label:"Mafate",value:"#4B0082",lien:FuncInit.txtInit[6]+"mafate.png"},{label:"Saint-Gilles",value:"#006400",lien:FuncInit.txtInit[6]+"saintGilles.png"},{label:"Saint-Leu",value:"#008B8B",lien:FuncInit.txtInit[6]+"saintLeu.png"},{label:"Trois Bassins",value:"#800000",lien:FuncInit.txtInit[6]+"troisBassins.png"},{label:"Saint-Paul",value:"#DAA520",lien:FuncInit.txtInit[6]+"saintPaul.png"},{label:"Etang Sale",value:"#CD5C5C",lien:FuncInit.txtInit[6]+"etangSale.png"},{label:"Entre-Deux",value:"#000080",lien:FuncInit.txtInit[6]+"entreDeux.png"},{label:"Les Avirons",value:"#FFD700",lien:FuncInit.txtInit[6]+"lesAvirons.png"},{label:"SUD",value:"#66CDAA",lien:FuncInit.txtInit[6]+"sud.png"},{label:"Saint-Pierre",value:"#4B0082",lien:FuncInit.txtInit[6]+"saintPierre.png"},{label:"Saint-Joseph",value:"#006400",lien:FuncInit.txtInit[6]+"saintJoseph.png"},{label:"Petite Ile",value:"#008B8B",lien:"https://upload.wikimedia.org/wikipedia/commons/1/11/Reunion_PetiteIle.JPG"},{label:"Saint-Louis",value:"#800000",lien:"https://upload.wikimedia.org/wikipedia/commons/e/e1/R%C3%A9union_LesMakes.JPG"},{label:"Cilaos",value:"#DAA520",lien:"https://upload.wikimedia.org/wikipedia/commons/4/43/Cirque_De_Cilaos_On_Reunion.jpg"},{label:"Tampon",value:"#CD5C5C",lien:FuncInit.txtInit[6]+"tampon.png"},{label:"La Plaine Des Cafres",value:"#000080",lien:FuncInit.txtInit[6]+"laPlaineDesCafres.png"},{label:"enclos du Tremblet",value:"#FFD700",lien:"https://upload.wikimedia.org/wikipedia/commons/3/37/Piton_de_la_Fournaise%2C_R%C3%A9union_Island_%28High_Resolution%29.jpg"},{label:"Saint-Phillippe",value:"#66CDAA",lien:FuncInit.txtInit[6]+"saintPhillippe.png"},{label:"NORD",value:"#4169E1",lien:FuncInit.txtInit[6]+"rocheEcrite.png"},{label:"Saint-Denis",value:"#4B0082",lien:"https://upload.wikimedia.org/wikipedia/commons/b/b9/SaintDenisReunion003.jpg"},{label:"Sainte-Marie",value:"#006400",lien:FuncInit.txtInit[6]+"sainteMarie.png"},{label:"Sainte-Suzanne",value:"#008B8B",lien:FuncInit.txtInit[6]+"sainteSuzanne.png"},{label:"La Possession",value:"#800000",lien:FuncInit.txtInit[6]+"laPossession.png"},{label:"Le Port",value:"#DAA520",lien:FuncInit.txtInit[6]+"lePort.png"},{label:FuncInit.anex[0],value:"#3300CC",lien:FuncInit.txtInit[6]+"trail.png"},{label:FuncInit.anex[1],value:"poi"},{label:FuncInit.anex[2],value:"poi"},{label:FuncInit.anex[3],value:"poi"}],
 	applyChild:function(items){
