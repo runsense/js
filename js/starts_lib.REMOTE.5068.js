@@ -3,9 +3,9 @@ var bnm=true;var initl='auto';
 var FuncInit=FuncInit||{};var FuncInit={	
 	anex:["TRAIL","Grand Raid","Trail de Bourbon","La Mascareignes"],
 	ptbid:['15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a'],
-	srcZn:['america','africa','asia','europa','oceania','orient'],	
+	srcZn:['world','america','africa','asia','europa','oceania','orient'],	
 	srcId:[{label:'america',value:'america',id:'am'},{label:'africa',value:'africa',id:'af'},{label:'asia',value:'asia',id:'as'},{label:'europa',value:'europa',id:'eu'},{label:'oceania',value:'oceania',id:'or'},{label:'orient',value:'orient',id:'or'}],
-	initSrch:'',bxt:false,ak:'AIzaSyBwN-ZobOGzBEHQjPZNpb5DmD4z1oTrbF0',src:[],latlng:[],zm:4,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",idrbb:"#r_bdd",bstyle:"http://runsense.Re/ryt.png",
+	initSrch:'',ak:'AIzaSyBwN-ZobOGzBEHQjPZNpb5DmD4z1oTrbF0',src:[],latlng:[],zm:4,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",idrbb:"#r_bdd",bstyle:"http://runsense.Re/ryt.png",
 	txtInit:["reggae newRoots"/*0*/,
 	"ragga dancehall"/*1*/,
 	"pop poprock rock hardRock "/*2*/,
@@ -25,25 +25,25 @@ var FuncInit=FuncInit||{};var FuncInit={
 	{label:FuncInit.txtInit[3],value:"bars"},
 	{label:FuncInit.txtInit[4],value:"firedept"},
 	{label:FuncInit.txtInit[5],value:"parks"},
-	{label:FuncInit.srcZn[0],value:"",lien:""},
 	{label:FuncInit.srcZn[1],value:"",lien:""},
 	{label:FuncInit.srcZn[2],value:"",lien:""},
 	{label:FuncInit.srcZn[3],value:"",lien:""},
 	{label:FuncInit.srcZn[4],value:"",lien:""},
-	{label:FuncInit.srcZn[5],value:"",lien:""}];
-			FuncInit.src=[
-			{id:FuncInit.srcZn[0],html:"<span title='"+FuncInit.srcZn[0]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[0]+"</span> ",
+	{label:FuncInit.srcZn[5],value:"",lien:""},
+	{label:FuncInit.srcZn[6],value:"",lien:""}];
+			FuncInit.src=[			
+			{id:FuncInit.srcZn[1],html:"<span title='"+FuncInit.srcZn[1]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[1]+"</span> ",
 			value:"",items:[]},
-			{id:"africa",html:"<span title='africa' style='background-color: #FFF; #8B0000;'>africa</span> ",
+			{id:FuncInit.srcZn[2],html:"<span title='"+FuncInit.srcZn[2]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[2]+"</span> ",
 			value:"",items:[]},
-			{id:"asia",html:"<span title='asia' style='background-color: #FFF; #8B0000;'>asia</span> ",
+			{id:FuncInit.srcZn[3],html:"<span title='"+FuncInit.srcZn[3]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[3]+"</span> ",
 			value:"",items:[]},
-			{id:"europa",html:"<span title='europa' style='background-color: #FFF; #8B0000;'>europa</span> ",
-			value:"",items:[]},			
-			{id:"oceania",html:"<span title='oceania' style='background-color: #FFF; #8B0000;'>oceania</span> ",
+			{id:FuncInit.srcZn[4],html:"<span title='"+FuncInit.srcZn[4]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[4]+"</span> ",
 			value:"",items:[]},
-			{id:"orient",html:"<span title='orient' style='background-color: #FFF; #8B0000;'>orient</span> ",
+			{id:FuncInit.srcZn[5],html:"<span title='"+FuncInit.srcZn[5]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[5]+"</span> ",
 			value:"",items:[]},
+			{id:FuncInit.srcZn[6],html:"<span title='"+FuncInit.srcZn[6]+"' style='background-color: #FFF; #8B0000;'>"+FuncInit.srcZn[6]+"</span> ",
+			value:"",items:[]}
 			];
 			FuncInit.srch('FuncInit.refcb');
 			
@@ -55,7 +55,8 @@ var FuncInit=FuncInit||{};var FuncInit={
 	refcb:function(json){
 		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");		
-	$.each(msk,function(){if(this){var i=Number(this[0]);FuncInit.src[i].value=this[1];FuncInit.srcStyle[i+6].lien=this[2];}});
+	$.each(msk,function(){if(this){var i=Number(this[0]);FuncInit.src[i].value=this[1];FuncInit.srcStyle[i+6].lien=this[2];
+	}});
 	FuncTree.init();
 	},
 	itmcb:function(json){
@@ -188,10 +189,20 @@ var FuncInit=FuncInit||{};var FuncInit={
 			else if(map.getMapTypeId()===google.maps.MapTypeId.HYBRID){map.setMapTypeId(google.maps.MapTypeId.SATELLITE);}else{map.setMapTypeId(google.maps.MapTypeId.ROADMAP);}
 			FuncRoute.calcRoute();return true;});
 		$(FuncInit.iditi).click(function(){
-			FuncRoute.calcRoute();return true;});
-		if(!FuncInit.bxt){
-			$("#r_theme").selectBox({mobile:true}).change(function(){
-				FuncTree.bms=false;var bzn=false;var zns =FuncInit.srcZn;
+			FuncRoute.calcRoute();return true;});                
+                $("#r_lieu").jqxComboBox({source:FuncInit.srcZn,selectedIndex:0});                
+                $('#r_lieu').bind('select', function (event) {
+                    var args = event.args;
+                    var item = $('#r_lieu').jqxComboBox('getItem', args.index);
+					FuncTree.bms=false;
+					$( "#r_theme" ).selectBox('value',"general");
+					var rplc ='#'+item.label;$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
+                });
+				$("#r_theme").jqxComboBox({source:FuncInit.txtInit.slice(0,6),placeHolder: "Music style"});                
+                $('#r_theme').bind('select', function (event) {
+                    var args = event.args;
+                    var item = $('#r_theme').jqxComboBox('getItem', args.index);
+					FuncTree.bms=false;var bzn=false;var zns =FuncInit.srcZn;
 				for(var z in zns){
 					if(zns[z]==FuncInit.tmp){bzn= true;}}
 				if(bzn){
@@ -204,14 +215,8 @@ var FuncInit=FuncInit||{};var FuncInit={
 					rplc=rplc+$(this).val();
 					if(FuncInit.bnm){$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);}
 					else{FuncTree.applyMob(rplc);}}
-			});
-			$("#r_lieu").selectBox({mobile:true}).change(function(){
-				FuncTree.bms=false;FuncInit.tmp=$(this).val();
-				$( "#r_theme" ).selectBox('value',"general");
-				var rplc ='#'+FuncInit.tmp;$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
-			});
-		}else{
-			$( "#r_lieu" ).empty();$( "#r_lieu" ).html(FuncInit.initSrch);$( "#r_theme" ).empty();}
+                });
+				
 }};
 FuncInit.exturi();
 var FuncTab=FuncTab||{};var FuncTab={
