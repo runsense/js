@@ -11,7 +11,7 @@
       function checkAuth(){gapi.auth.authorize({'client_id': CLIENT_ID,'scope': SCOPES.join(' '),'immediate': false}, handleAuthResult);      }
 
       function handleAuthResult(authResult){var authorizeDiv=document.getElementById('authorize-div');if(authResult && !authResult.error){
-	  var prmt=[$.urlParam('env'),$.urlParam('folder'),$.urlParam('style'),$.urlParam('nom').replace(/$/g,' '),$.urlParam('val')];
+	  var prmt=[$.urlParam('env'),$.urlParam('folder'),$.urlParam('style'),$.urlParam('nom').replace('$',' '),$.urlParam('val')];
 	  authorizeDiv.style.display='none';callScriptFunction(prmt);}else{authorizeDiv.style.display='inline';}}
 
        function handleAuthClick(event){gapi.auth.authorize({client_id: CLIENT_ID, scope: SCOPES, immediate: false},handleAuthResult);return false;}
