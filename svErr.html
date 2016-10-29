@@ -47,15 +47,8 @@
               }
             }
           } else {
-            var folderSet = resp.response.result;
-            if (Object.keys(folderSet).length == 0) {
-                appendPre('No folders returned!');
-            } else {
-              appendPre('Folders under your root folder:');
-              Object.keys(folderSet).forEach(function(id){
-                appendPre('\t' + folderSet[id] + ' (' + id  + ')');
-              });
-            }
+            var error = resp.response.result;           
+              appendPre('error is send'+error);            
           }
         });
       }
