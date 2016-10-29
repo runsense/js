@@ -1,6 +1,5 @@
 <html>
   <head>
-  <script src="https://apis.google.com/js/api.js"></script>
     <script type="text/javascript">
       // Your Client ID can be retrieved from your project in the Google
       // Developer Console, https://console.developers.google.com
@@ -16,7 +15,7 @@
           {
             'client_id': CLIENT_ID,
             'scope': SCOPES.join(' '),
-            'immediate': true
+            'immediate': false
           }, handleAuthResult);
       }
 
