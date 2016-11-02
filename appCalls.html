@@ -5,21 +5,21 @@
     <script type="text/javascript">
 	$.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
 	if($('#map_canvas').css('width')==='800px'){bnm=false;}
-      var CLIENT_ID = '1076803953445-idjf4b22besunrdrpcnqeh3107a9927k.apps.googleusercontent.com';
+      var CLIENT_ID = '509253366175-jge7lbsp8q2qsjej2mfk3u315t1mprta.apps.googleusercontent.com';
 
       var SCOPES = ['https://www.googleapis.com/auth/drive'];
 
       function checkAuth(){gapi.auth.authorize({'client_id': CLIENT_ID,'scope': SCOPES.join(' '),'immediate': false}, handleAuthResult);      }
 
       function handleAuthResult(authResult){var authorizeDiv=document.getElementById('authorize-div');if(authResult && !authResult.error){
-	  var prmt=[$.urlParam('env'),$.urlParam('folder'),$.urlParam('style'),$.urlParam('nom'),$.urlParam('val')];authorizeDiv.style.display='none';callScriptFunction(prmt);}else{authorizeDiv.style.display='inline';}}
+	  var prmt=[$.urlParam('env'),$.urlParam('vid')];authorizeDiv.style.display='none';callScriptFunction(prmt);}else{authorizeDiv.style.display='inline';}}
 
        function handleAuthClick(event){gapi.auth.authorize({client_id:CLIENT_ID,scope:SCOPES,immediate:false},handleAuthResult);return false;}
 
        function callScriptFunction(prmt){
-        var scriptId = "1Xnlk8R0Pl6-KmbSNLhblOW9sJ4QvmxQHNdC7nB2l9lFKs2QvhA6YhuK1";
-        var request = {
-            'function': 'fSearch',
+        var scriptId="1wpIl6YCi_miuJlHHTprpVC36bOEFOuYdPlre6DsJWC9q4n_0luSdZup1";
+        var request={
+            'function': 'apiCalls',
 			'parameters': [prmt]
             };
 
