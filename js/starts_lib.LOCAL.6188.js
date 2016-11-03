@@ -58,7 +58,9 @@ var FuncInit=FuncInit||{};var FuncInit={
 		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");		
 		$.each(msk,function(){
-			if(this){var i=Number(this[0]);FuncInit.src[i].value=this[1];FuncInit.srcStyle[i+6].lien=this[2];
+			if(this){var i=Number(this[0]);
+			FuncInit.src[i].value=this[1];
+			FuncInit.srcStyle[i+6].lien=this[2];
 			}
 		});
 		FuncInit.dCmp=FuncInit.src.length;
@@ -234,11 +236,12 @@ var FuncTab=FuncTab||{};var FuncTab={
 		$(rplc).mouseover();},
 	displayList:function(json){
 		try{MapsLib.handleError(json);}catch(e){;}
-		var columns=json["columns"];var rows=json["rows"];
+		var columns=json["columns"];var rows=json["rows"];		
 		var rplc="#"+MapsLib.cpte;FuncTab.results=$(rplc);
 		FuncTab.results.empty();
 		if(rows===null){FuncTab.results.append("<span class='lead'>No results found</span>");}
-		else{FuncTab.crTb();FuncTab.cRows(rows);FuncTab.fnsTb();}FuncInit.bIni=true;},
+		else{FuncTab.crTb();FuncTab.cRows(rows);FuncTab.fnsTb();}
+		},
 	crTb:function(){
 		var rplc="#"+0;FuncTab.results=$(rplc);
 		FuncTab.results.empty();FuncTab.list_table="<table class='table' id ='list_table'><tbody>";},
@@ -275,14 +278,14 @@ var FuncTab=FuncTab||{};var FuncTab={
 					$(this).css("background","");$(this).css("fontSize","100%");
 				});},
 	cRows:function(rows){
-		for(var row in rows){
+		try{for(var row in rows){
 			var nom=rows[row][1];var ctg;var desc;var lat;var lng;
 			try{ctg=rows[row][0];lat=rows[row][3];lng=rows[row][4];}catch(ex){;}try{desc=rows[row][2];}catch(ex){;}
 			if(row<1){FuncTab.lat=rows[row][3];FuncTab.lng=rows[row][4];}			
-			FuncTab.list_table+="<tr id="+nom+"><td >"+nom;
-			if(FuncInit.bIn){FuncTab.list_table+="</td><td >"+rows[row][5]+"</td><td >"+rows[row][6];}
-			FuncTab.list_table+="</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td><td style='visibility:hidden;' >"+ctg+"</td></tr>";
-		}},
+			FuncTab.list_table=FuncTab.list_table+"<tr id="+nom+"><td >"+nom;
+			if(rows[row][5]){FuncTab.list_table=FuncTab.list_table+"</td><td >"+rows[row][5]+"</td><td ><b>"+rows[row][6];+"</b>"}
+			FuncTab.list_table=FuncTab.list_table+"</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td><td style='visibility:hidden;' >"+ctg+"</td></tr>";
+		}}finally{FuncInit.bIni=true;}},
 	fnsTb:function(){
 		FuncTab.list_table+="</tbody></table>";
 		if(FuncTab.lat!=""&&FuncTab.lng!=""){			
@@ -571,7 +574,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 		for(var i=0;i<MapsLib.polygon.length;i++){if(MapsLib.polygon[i] != null){MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null;}}
 		map.setCenter(MapsLib.map_centroid);map.setZoom(FuncTree.zoom);},
 	getList:function(){
-	FuncTab.slcCol="id,nom,dsc,lat,lng";if(FuncInit.bIni){FuncTab.slcCol+=",land,ref";}MapsLib.query(FuncTab.slcCol, 10, "FuncTab.displayList");},
+	FuncTab.slcCol="id,nom,dsc,lat,lng";if(FuncInit.bIni){FuncTab.slcCol=FuncTab.slcCol+",date,land,ref";}MapsLib.query(FuncTab.slcCol, 10, "FuncTab.displayList");},
 	srchOnAll:function(txt){
 		MapsLib.colSrch="nom";var th=$( "#r_theme" ).val();var li= $("#r_lieu").val();
 		if(txt!=''){try{
@@ -626,3 +629,4 @@ var MapsLib=MapsLib||{};var MapsLib={
 			for(var row in error){
 				console.log("Domain: "+error[row]["domain"]);
 				console.log(" Reason: "+error[row]["reason"]);console.log(" Message: "+error[row]["message"]);}}}};
+
