@@ -76,12 +76,13 @@ var FuncInit=FuncInit||{};var FuncInit={
 		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");
 		var i;		
-		$.each(msk,function(){if(this){i=Number(this[0]);var nm=this[3];
-		FuncInit.src[i].items.push({id:nm,html:"<span title='"+nm+"' style='background-color: #FFF; #8B0000;'>"+nm+"</span> ",value:this[1],items:[]});
-		FuncInit.srcStyle.push({label:nm,value:'',lien:this[2]});
-		if(this[4])
-		FuncInit.srcZn[i].itm.push(this[4]);
-		
+		$.each(msk,function(){if(this){try{
+			if(isNaN(this[0])){i=Number(this[0]);}var nm=this[3];
+			FuncInit.src[i].items.push({id:nm,html:"<span title='"+nm+"' style='background-color: #FFF; #8B0000;'>"+nm+"</span> ",value:this[1],items:[]});
+			FuncInit.srcStyle.push({label:nm,value:'',lien:this[2]});
+			if(this[4])
+			FuncInit.srcZn[i].itm.push(this[4]);
+		}catch(e){;}
 		}});
 		if(FuncInit.dCmp==0){FuncTree.init();}
 	},
@@ -629,4 +630,3 @@ var MapsLib=MapsLib||{};var MapsLib={
 			for(var row in error){
 				console.log("Domain: "+error[row]["domain"]);
 				console.log(" Reason: "+error[row]["reason"]);console.log(" Message: "+error[row]["message"]);}}}};
-
