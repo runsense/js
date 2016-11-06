@@ -65,8 +65,8 @@ var FuncInit=FuncInit||{};var FuncInit={
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");		
 		$.each(msk,function(){
 			if(this){var i=Number(this[0]);
-			FuncInit.src[i].value=this[1];
-			FuncInit.srcStyle[i+6].lien=this[2];
+			try{FuncInit.src[i].value=this[1];
+			FuncInit.srcStyle[i+6].lien=this[2];}catch(e){;}
 			}
 		});
 		FuncInit.dCmp=FuncInit.src.length;
@@ -80,7 +80,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 	itmRef:function(json){
 		FuncInit.dCmp=FuncInit.dCmp-1;
 		try{FuncInit.handleError(json);}catch(e){;}
-		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");
+		var msk=json["rows"];if(msk&&msk.length==0) msk.push("choice another table");
 		var i;		
 		$.each(msk,function(){if(this){try{
 			if(!isNaN(this[0])){i=Number(this[0]);}var nm=this[3];
@@ -439,12 +439,11 @@ var FuncTree=FuncTree||{};var FuncTree={
 			var spl=FuncTab.slcCol.split(',');			
 			if(i||i.value.length!=spl.length){
 				FuncTree.selectBox(i);
-				FuncTree.applysrch(i);	
+				FuncTree.applysrch(i);
 						try{var rplc="#"+FuncInit.src[i.id].id;
 						$(FuncInit.idtree).jqxTree('expandItem',$(rplc)[0]);}catch(ex){;}	
-			FuncInit.ptbid=[i.value];						
-				MapsLib.doSearch();
-				
+			FuncInit.ptbid=[i.value];	
+				MapsLib.doSearch();				
 				}});
 		
 				
@@ -548,8 +547,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 			for(var i in MapsLib.polygonTableID){
 				if(MapsLib.polygonTableID[i]!="NO"){
 					MapsLib.cpte=i;$(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");					
-					var sql="SELECT "+slcCol+" FROM "+MapsLib.polygonTableID[i];
-					
+					var sql="SELECT "+slcCol+" FROM "+MapsLib.polygonTableID[i];					
 					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FuncInit.ak,dataType:"jsonp"});
 				}else{
 					$(FuncInit.idtab).empty();$(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}
