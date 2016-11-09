@@ -7,7 +7,7 @@
 	if($('#map_canvas').css('width')==='800px'){bnm=false;}
       var CLIENT_ID = '1076803953445-idjf4b22besunrdrpcnqeh3107a9927k.apps.googleusercontent.com';
 
-      var SCOPES = ['https://www.googleapis.com/auth/drive'];
+      var SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/gmail.send'];
 
       function checkAuth(){gapi.auth.authorize({'client_id': CLIENT_ID,'scope': SCOPES.join(' '),'immediate': false}, handleAuthResult);      }
 

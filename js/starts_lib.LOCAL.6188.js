@@ -55,20 +55,21 @@ var FuncInit=FuncInit||{};var FuncInit={
 		queryStr.push(" FROM  "+FuncInit.ptbid[0]);var sql=encodeURIComponent(queryStr.join(" "));
 		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+cb+"&key="+FuncInit.ak,dataType:"jsonp"});},
 	refcb:function(json){
+		var rfB=[];
 		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");		
 		$.each(msk,function(){
 			if(this){var i=Number(this[0]);
-			try{FuncInit.src[i].value=this[1];
+			try{FuncInit.src[i].value=this[1];if(i<6){rfB.push(this[1]);}
 			FuncInit.srcStyle[i+6].lien=this[2];}catch(e){;}
 			}
 		});
 		FuncInit.dCmp=FuncInit.src.length;
-		$.each(FuncInit.src,function(){
+		for(var rw=0;rw<6;rw++){
 			var queryStr=[];queryStr.push("SELECT id,ref,font,nom,land");
-			queryStr.push(" FROM  "+this.value);var sql=encodeURIComponent(queryStr.join(" "));
+			queryStr.push(" FROM  "+rfB[rw]);var sql=encodeURIComponent(queryStr.join(" "));
 			$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback=FuncInit.itmRef&key="+FuncInit.ak,dataType:"jsonp"});
-		});
+		}
 		
 	},
 	itmRef:function(json){
