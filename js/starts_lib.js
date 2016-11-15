@@ -61,12 +61,12 @@ var FuncInit=FuncInit||{};var FuncInit={
 		queryStr.push(" FROM  "+FuncInit.ptbid[0]);var sql=encodeURIComponent(queryStr.join(" "));
 		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+cb+"&key="+FuncInit.ak,dataType:"jsonp"});},
 	refcb:function(json){
-		var rfB=[];
+		var rfB=['','','','',''];
 		try{FuncInit.handleError(json);}catch(e){;}
 		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");		
 		$.each(msk,function(){
 			if(this){var i=Number(this[0]);
-			try{FuncInit.src[i].value=this[1];if(i<6){rfB.push(this[1]);}
+			try{FuncInit.src[i].value=this[1];if(i<6){rfB[i]=this[1];}
 			FuncInit.srcStyle[i+6].lien=this[2];}catch(e){;}
 			}
 		});
@@ -199,7 +199,9 @@ var FuncInit=FuncInit||{};var FuncInit={
 				MapsLib.map_centroid=new google.maps.LatLng(-0,0);
 				FuncTree.zoom=10;MapsLib.doSearch();
 				$(FuncInit.idtree).jqxTree('collapseAll');
+				$('#jqxTree').jqxTree('ensureVisible', FuncTree.re);
 				$(FuncInit.idtree).jqxTree('refresh');});
+				
 			$('#find_me').click(function(){
 				MapsLib.findMe();return false;});
 			$('#dep').click(function(){
@@ -235,7 +237,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 }};
 FuncInit.exturi();
 var FuncTab=FuncTab||{};var FuncTab={
-	bmrk:false,results:null,idx:0,search:"",list_table:"",lat:null,lng:null,
+	bmrk:false,results:null,idx:0,search:"",list_table:"",lat:'',lng:'',
 	slcCol:'',
 	msg:"Pour Afficher les donners, cliquer ailleurs!!",
 	fsearch:function(s){
@@ -255,9 +257,9 @@ var FuncTab=FuncTab||{};var FuncTab={
 		FuncTab.results.empty();FuncTab.list_table="<table class='table' id ='list_table'><tbody>";},
 	fshBDD:function(){
 		FuncTab.list_table+="</tbody></table>";
-		if(FuncTab.lat!=""&&FuncTab.lng!=""){			
+		/*if(FuncTab.lat!=""&&FuncTab.lng!=""){			
 				MapsLib.map_centroid=new google.maps.LatLng(FuncTab.lat,FuncTab.lng);				
-				map.setCenter(MapsLib.map_centroid);}
+				map.setCenter(MapsLib.map_centroid);}*/
 		FuncTab.results.append(FuncTab.list_table);
 		$("#list_table").dataTable({
 			"aoColumns":[null,null,null,null,null],
@@ -270,7 +272,7 @@ var FuncTab=FuncTab||{};var FuncTab={
 		$(".table tbody").on('click','tr',function(){
 			
 				MapsLib.addSrchMarker.setMap(null);
-				var lat=$(this).children('td:nth-child(4)').text();var lng=$(this).children('td:nth-child(5)').text();var nm='#'+$(this).children('td:nth-child(0)').text();
+				var lat=$(this).children('td:nth-child(3)').text();var lng=$(this).children('td:nth-child(4)').text();var nm='#'+$(this).children('td:nth-child(1)').text();
 				FuncTab.tabToMap(lat,lng);
 				$(FuncInit.idtree).jqxTree('selectItem',$(nm)[0]);
 				$(FuncInit.idtree).jqxTree('expandItem',$(nm)[0]);
@@ -287,22 +289,22 @@ var FuncTab=FuncTab||{};var FuncTab={
 				});},
 	cRows:function(rows){
 		try{for(var row in rows){
-			var nom=rows[row][1];var ctg;var desc;var lat;var lng;var lk;
+			var nom=rows[row][1];var ctg;var desc;var lk;var lat;var lng;
 			try{ctg=rows[row][0];lat=rows[row][3];lng=rows[row][4];}catch(ex){;}try{desc=rows[row][2];lk=rows[row][8];}catch(ex){;}
-			if(row<1){FuncTab.lat=rows[row][3];FuncTab.lng=rows[row][4];}			
-			FuncTab.list_table=FuncTab.list_table+"<tr id="+nom+"><td >"+nom;
-			if(rows[row][5]){FuncTab.list_table=FuncTab.list_table+"</td><td >"+rows[row][5]+"</td><td ><b>"+rows[row][6]+"</b><td >"+lk;}
-			FuncTab.list_table=FuncTab.list_table+"</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td></tr>";
+			if(row<1){FuncTab.lat=rows[row][3];FuncTab.lng=rows[row][4];}		
+			FuncTab.list_table=FuncTab.list_table+"<tr id="+nom.replace(/ /g,'')+"><td >"+nom;
+			if(rows[row][5]){FuncTab.list_table=FuncTab.list_table+"</td><td >"+rows[row][7]+"</td><td >"+rows[row][5]+"</td><td ><b>"+rows[row][6]+"</b><td >"+lk;}
+			else{FuncTab.list_table=FuncTab.list_table+"</td><td ></td><td ><b></b><td >";}
+			FuncTab.list_table=FuncTab.list_table+"</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td><td ></td></tr>";
 		}}finally{FuncInit.bIni=true;}},
 	fnsTb:function(){
 		FuncTab.list_table+="</tbody></table>";
 		if(FuncTab.lat!=""&&FuncTab.lng!=""){			
 				MapsLib.map_centroid=new google.maps.LatLng(FuncTab.lat,FuncTab.lng);
 				map.setCenter(MapsLib.map_centroid);}
-		FuncTab.results.append(FuncTab.list_table);
-		var spl=FuncTab.slcCol.split(',');
+		FuncTab.results.append(FuncTab.list_table);		
 		$("#list_table").dataTable({
-			"aoColumns":spl,
+			"aoColumns":['','','','','','','',''],//id,nom,dsc,lat,lng,date,land,ref,link
 			"sDom":'<"top"pf>rt<"bottom"lip><"clear">',
 			"language":{
 				"infoEmpty":"La patience reste en vertus!!Wait and move mouse",
@@ -310,10 +312,11 @@ var FuncTab=FuncTab||{};var FuncTab={
 			},"oSearch":{
 				"sSearch":FuncTab.search},
 			"bFilter":true,"bInfo":true,"scrollY":"450px","scrollCollapse":true,"paging":true,"bAutoWidth":false});
-		$(".table tbody").on('click','tr',function(){			
+		$("#list_table.table tbody").on('click','tr',function(){			
 				MapsLib.addSrchMarker.setMap(null);
-				var nm=$(this).children('td:nth-child(0)').text().replace(/ /g,'');var lat=$(this).children('td:nth-child(4)').text();
-				var lng=$(this).children('td:nth-child(5)').text();//var idref=$(this).children('td:nth-child(7)').text();
+				var nm=$(this).children('td:nth-child(1)').text().replace(/ /g,'');var lat=$(this).children('td:nth-child(7)').text();
+				
+				var lng=$(this).children('td:nth-child(8)').text();//var idref=$(this).children('td:nth-child(7)').text();
 				var ids=FuncInit.srcId;
 			//for(var id in ids){if(ids[id].label===nm){FuncTab.bmrk=true;nm='#'+idref;}}
 			if(!FuncTab.bmrk){
@@ -321,21 +324,21 @@ var FuncTab=FuncTab||{};var FuncTab={
 				for(var id in ids){if(ids[id]===nm){FuncTab.bmrk=true;nm='#'+nm;}}};
 			FuncTab.tabToMap(lat,lng);FuncTab.bmrk=false;
 			$(FuncInit.idtree).jqxTree('selectItem',$(nm)[0]);
-			FuncTree.bchk=false;$(FuncInit.idmap).focus();
-		}).on('mouseover','tr',function(){
+			$(FuncInit.idmap).focus();
+		})/*.on('mouseover','tr',function(){
 			$(this).css("background","#0404B4");
 		}).on('mouseleave','tr',function(){
 			$(this).css("background","");
 		}).on('mouseover','td',function(){
 			$(this).css("background","#B8860B");$(this).css("fontSize","180%");
 		}).on('mouseleave','td',function(){
-			$(this).css("background","");$(this).css("fontSize","100%");});},	
+			$(this).css("background","");$(this).css("fontSize","100%");})*/;},	
 	tabToMap:function(lat,lng){
 		if(lat>-22){
 			if(lng<55.8){
 				MapsLib.map_centroid=new google.maps.LatLng(lat,lng);
 				map.setCenter(MapsLib.map_centroid);
-				if(FuncTree.zoom!=10){FuncTree.zoom=16;}
+				if(FuncTree.zoom==2){FuncTree.zoom=4;}else{FuncTree.zoom=7;}
 				map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
 				map.setZoom(FuncTree.zoom);
 				if(FuncInit.bnm){$(FuncInit.idtab).animate({opacity:'0.3',height:'30%'});$(FuncInit.idmap).animate({opacity:'1'});}
@@ -369,7 +372,7 @@ var FuncRoute=FuncRoute||{};var FuncRoute={
 				MapsLib.doSearch();
 }}};
 var FuncTree=FuncTree||{};var FuncTree={
-	bchk:false,bgrow:false,bms:true,updBackG:"body",
+	re:'',bchk:false,bgrow:false,bms:true,updBackG:"body",
 	styles:["grocery",FuncInit.bstyle],zoom:2,rvzoom:4,
 	theme:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'r'},{label:FuncInit.txtInit[1],value:'d'},{label:FuncInit.txtInit[2],value:'h'},{label:FuncInit.txtInit[3],value:'p'},{label:FuncInit.txtInit[4],value:'c'},{label:FuncInit.txtInit[5],value:'t'}],
 	applyChild:function(items){
@@ -420,8 +423,8 @@ var FuncTree=FuncTree||{};var FuncTree={
 		$(FuncInit.idtree).on('expand',function(ev){
 			if(FuncInit.bnm){var e=ev.args.element;
 			var i=$(FuncInit.idtree).jqxTree('getItem',e );
-			if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null){FuncTree.zoom=4;}
-			else{FuncTree.zoom=3;}
+			if($(FuncInit.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null){FuncTree.zoom=10;}
+			else{FuncTree.zoom=4;}
 			if(!FuncTree.bgrow){
 				FuncTree.selectBox(i);FuncTree.bgrow=true;
 				//$(FuncInit.idtree).jqxTree('checkItem', e, true);
@@ -438,16 +441,14 @@ var FuncTree=FuncTree||{};var FuncTree={
 			if($(e).find("li").length>1){FuncTree.bms=true;}
 			var i=$(FuncInit.idtree).jqxTree('getItem', e);
 			var spl=FuncTab.slcCol.split(',');			
-			if(i||i.value.length!=spl.length){
+			if($(e).find("li").length>=1){
+				FuncTree.re=e;
 				FuncTree.selectBox(i);
 				FuncTree.applysrch(i);
-						try{var rplc="#"+FuncInit.src[i.id].id;
-						$(FuncInit.idtree).jqxTree('expandItem',$(rplc)[0]);}catch(ex){;}	
-			FuncInit.ptbid=[i.value];	
-				MapsLib.doSearch();				
-				}});
-		
-				
+				try{var rplc="#"+FuncInit.src[i.id];$(FuncInit.idtree).jqxTree('expandItem',$(rplc)[0]);}catch(ex){;}	
+			FuncInit.ptbid=[i.value];MapsLib.doSearch();									
+				}else{var rplc="#"+i.id.replace(/ /g,'');$(rplc).click();}
+				});				
 		var source=[];
 		$.each(FuncInit.srcZn,function(){var gp=this;var tmp=[];
 			$.each(gp.itm,function(){var v=this;var c;$.each(tmp,function(){if(this==v){c=1;}});
@@ -492,7 +493,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 		if(FuncInit.initSrch!=''){
 			MapsLib.colSrch="nom";var srch=FuncInit.initSrch;FuncTree.bms=false;
 			$("#r_lieu").val(FuncInit.initl);$("#r_theme").val(FuncInit.initl);
-			$(FuncInit.idrbb).val(srch);MapsLib.srchOnAll(srch);
+			$(FuncInit.idrbb).val(srch);//MapsLib.srchOnAll(srch);
 			$(FuncInit.idrbb).focus();
 			$(FuncInit.idrbb).mouseenter();
 			$(FuncInit.idinf).empty();
@@ -531,7 +532,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 			FuncTree.bchk=true;FuncTab.fsearch(s);
 			var rplc='#'+s.replace(/ /g,'').replace(/'/g,'');
 			console.log(rplc);$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
-			MapsLib.chad='#arv'; MapsLib.addrFromLatLng(e.latLng);FuncTree.bchk=false;return s;}},
+			MapsLib.chad='#arv';/* MapsLib.addrFromLatLng(e.latLng);*/FuncTree.bchk=false;return s;}},
 	findMe:function(){
 		if(navigator.geolocation){
 			navigator.geolocation.getCurrentPosition(function(position){
@@ -547,6 +548,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 	query:function(slcCol,limit,callback){
 			for(var i in MapsLib.polygonTableID){
 				if(MapsLib.polygonTableID[i]!="NO"){
+					
 					MapsLib.cpte=i;$(FuncInit.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");					
 					var sql="SELECT "+slcCol+" FROM "+MapsLib.polygonTableID[i];					
 					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FuncInit.ak,dataType:"jsonp"});
@@ -578,8 +580,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 		MapsLib.row=[];MapsLib.polygonTableID=null;
 		for(var i=0;i<MapsLib.polygon.length;i++){if(MapsLib.polygon[i] != null){MapsLib.polygon[i].setMap(null); MapsLib.polygon[i]=null;}}
 		map.setCenter(MapsLib.map_centroid);map.setZoom(FuncTree.zoom);},
-	getList:function(){
-	FuncTab.slcCol="id,nom,dsc,lat,lng";if(FuncInit.bIni){FuncTab.slcCol=FuncTab.slcCol+",date,land,ref,link";}MapsLib.query(FuncTab.slcCol, 10, "FuncTab.displayList");},
+	getList:function(){FuncTab.slcCol="id,nom,dsc,lat,lng";if(FuncInit.bIni){FuncTab.slcCol=FuncTab.slcCol+",date,land,ref,link";}MapsLib.query(FuncTab.slcCol,10,"FuncTab.displayList");},
 	srchOnAll:function(txt){
 		MapsLib.colSrch="nom";var th=$( "#r_theme" ).val();var li= $("#r_lieu").val();
 		if(txt!=''){try{
