@@ -1,3 +1,9 @@
+/*!
+ * Runsense 97Kafr
+ *
+ * Copyright 2018, Dalleau Pascal
+ *
+ */
 var bnm=true;var initl='auto';
 	if($('#map_canvas').css('width')==='800px'){bnm=false;}
 var FuncInit=FuncInit||{};var FuncInit={
@@ -66,7 +72,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 		});
 		FuncInit.dCmp=FuncInit.src.length;
 		for(var rw=0;rw<6;rw++){
-			var queryStr=[];queryStr.push("SELECT id,ref,font,nom,land");
+			var queryStr=[];queryStr.push("SELECT id,ref,font,nom,land,lat,lng");
 			queryStr.push(" FROM  "+rfB[rw]);var sql=encodeURIComponent(queryStr.join(" "));
 			$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback=FuncInit.itmRef&key="+FuncInit.ak,dataType:"jsonp"});
 		}
@@ -78,8 +84,8 @@ var FuncInit=FuncInit||{};var FuncInit={
 		var msk=json["rows"];if(msk&&msk.length==0) msk.push("choice another table");
 		var i;		
 		$.each(msk,function(){if(this){try{
-			if(!isNaN(this[0])){i=Number(this[0]);}var nm=this[3];
-			FuncInit.src[i].items.push({id:nm,html:"<span title='"+nm+"' style='background-color: #FFF; #8B0000;'>"+nm+"</span> ",value:this[1],items:[]});
+			if(!isNaN(this[0])){i=Number(this[0]);}else{i=this[0];}var nm=this[3].replace(/\W/g,'');
+			FuncInit.src[i].items.push({id:nm,html:"<span title='"+nm+"' style='background-color: #FFF; #8B0000;'>"+nm+"</span> ",value:this[5]+','+this[6],items:[]});
 			FuncInit.srcStyle.push({label:nm,value:'',lien:this[2]});
 			if(this[4])
 			FuncInit.srcZn[i].itm.push(this[4]);
@@ -126,7 +132,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 					$(FuncInit.idmap).animate({zIndex:'0'});
 					$(FuncInit.idp).animate({zIndex:'0'});
 			}});
-		});*/
+		});
 		$(FuncInit.idinf).bind('click',function(){
 			if(FuncInit.bnm){
 				$(FuncInit.idtab).animate({opacity: '0.75',height: '100%',width: '70%'});
@@ -136,7 +142,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 				$(FuncInit.idtab).animate({zIndex:'1'});
 				$(FuncInit.idmap).animate({zIndex:'0'});
 				$(FuncInit.idp).animate({zIndex:'0'});
-		}});
+		}});*/
 		$(FuncInit.idp).hover(function(){
 			if(FuncInit.bnm){
 				$(FuncInit.idtab).animate({opacity: '1',height: '15%',width: '100%'});
@@ -157,8 +163,8 @@ var FuncInit=FuncInit||{};var FuncInit={
 			MapsLib.colSrch="description";
 			MapsLib.srchOnAll(this.value);
 			$(FuncInit.idinf).empty();
-			FuncTab.msg= 'BOUZ For see, move mouse!!';
-			FuncTree.append(FuncTab.msg,'red');});
+			/*FuncTab.msg= 'BOUZ For see, move mouse!!';
+			FuncTree.append(FuncTab.msg,'red');*/});
 		$(FuncInit.idrbb).mouseleave(function(){
 			FuncTab.crTb();MapsLib.displayList();
 			FuncTab.fshBDD();FuncTab.search='';});
@@ -169,8 +175,8 @@ var FuncInit=FuncInit||{};var FuncInit={
 			FuncTab.crTb();MapsLib.displayList();
 			FuncTab.fshBDD();FuncTab.search='';});
 		$(FuncInit.idrbb).click(function(){
-			$(FuncInit.idinf).empty();FuncTab.msg= 'Bouz en bas Move down on transparent!!';
-			FuncTree.append(FuncTab.msg,'blue');});
+			$(FuncInit.idinf).empty();/*FuncTab.msg= 'Bouz en bas Move down on transparent!!';
+			FuncTree.append(FuncTab.msg,'blue');*/});
 		$(FuncInit.idbtn).bind('click',function(){
 			$(FuncInit.idsup).empty();
 			$(FuncInit.idsup).animate({ width: '0%' });$(FuncInit.idp).animate({left: '70%'});
@@ -182,12 +188,12 @@ var FuncInit=FuncInit||{};var FuncInit={
 			MapsLib.s=null;MapsLib.e=null;
 			$(FuncInit.idbtn).hide();MapsLib.initialize();
 			$(FuncInit.idtab).show();});
-		$(FuncInit.idinf).bind('click',function(){
+		/*$(FuncInit.idinf).bind('click',function(){
 			if(FuncInit.bnm){
 				$(FuncInit.idtab).animate({opacity: '1',height: '15%',width: '100%'});
 				$(FuncInit.idmap).animate({opacity: '1'});$(FuncInit.idp).animate({opacity: '1'});
 			}else{
-				$(FuncInit.idtab).animate({zIndex:'1'});$(FuncInit.idmap).animate({zIndex:'0'});$(FuncInit.idp).animate({zIndex:'0'});}});
+				$(FuncInit.idtab).animate({zIndex:'1'});$(FuncInit.idmap).animate({zIndex:'0'});$(FuncInit.idp).animate({zIndex:'0'});}});*/
 			$('#clear').css('color','blue');
 			$('#clear').bind('click',function(){
 				MapsLib.map_centroid=new google.maps.LatLng(-0,0);
@@ -220,7 +226,7 @@ var FuncInit=FuncInit||{};var FuncInit={
 					MapsLib.srchOnAll(this.value);
 					$(FuncInit.idinf).empty();
 					FuncTab.msg= 'R\'gard champ rouz, &eacute;crits &agrave; o&ugrave;, ou play plus bas!!';
-					FuncTree.append(FuncTab.msg,'red');}
+					/*FuncTree.append(FuncTab.msg,'red');*/}
 				else{
 					var ids=FuncInit.srcId;var rplc='#'+FuncInit.tmp+'_';
 					rplc=rplc+$(this).val();
@@ -235,7 +241,7 @@ var FuncTab=FuncTab||{};var FuncTab={
 	slcCol:'',
 	msg:"Pour Afficher les donners, cliquer ailleurs!!",
 	fsearch:function(s){
-		var rplc='#'+s.replace(/ /g,'').replace(/'/g,'');
+		var rplc='#'+s;
 		var table=$("#list_table").dataTable();table.fnFilter(s);
 		$(rplc).mouseover();},
 	displayList:function(json){
@@ -256,7 +262,7 @@ var FuncTab=FuncTab||{};var FuncTab={
 				map.setCenter(MapsLib.map_centroid);}*/
 		FuncTab.results.append(FuncTab.list_table);
 		$("#list_table").dataTable({
-			"aoColumns":[null,null,null,null,null],
+			"aoColumns":['','','','','','','',''],
 			"sDom":'<"top"pf>rt<"bottom"lip><"clear">',
 			"language":{
 				"sProcessing":"T ou plane!!",
@@ -267,6 +273,7 @@ var FuncTab=FuncTab||{};var FuncTab={
 			
 				MapsLib.addSrchMarker.setMap(null);
 				var lat=$(this).children('td:nth-child(3)').text();var lng=$(this).children('td:nth-child(4)').text();var nm='#'+$(this).children('td:nth-child(1)').text();
+				FuncTab.search=nm;
 				FuncTab.tabToMap(lat,lng);
 				$(FuncInit.idtree).jqxTree('selectItem',$(nm)[0]);
 				$(FuncInit.idtree).jqxTree('expandItem',$(nm)[0]);
@@ -283,11 +290,12 @@ var FuncTab=FuncTab||{};var FuncTab={
 				});},
 	cRows:function(rows){
 		try{for(var row in rows){
-			var nom=rows[row][1];var ctg;var desc;var lk;var lat;var lng;
-			try{ctg=rows[row][0];lat=rows[row][3];lng=rows[row][4];}catch(ex){;}try{desc=rows[row][2];lk=rows[row][8];}catch(ex){;}
+			var nom=rows[row][1];var ctg='';var desc;var lk;var lat;var lng;
+			try{ctg=rows[row][7];lat=rows[row][3];lng=rows[row][4];}catch(ex){;}try{desc=rows[row][2];lk=rows[row][8];}catch(ex){;}
+			
 			if(row<1){FuncTab.lat=rows[row][3];FuncTab.lng=rows[row][4];}		
-			FuncTab.list_table=FuncTab.list_table+"<tr id="+nom.replace(/ /g,'')+"><td >"+nom;
-			if(rows[row][5]){FuncTab.list_table=FuncTab.list_table+"</td><td >"+rows[row][7]+"</td><td >"+rows[row][5]+"</td><td ><b>"+rows[row][6]+"</b><td >"+lk;}
+			FuncTab.list_table=FuncTab.list_table+"<tr id="+nom.replace(/\W/g,'')+"><td >"+nom;
+			if(rows[row][5]){FuncTab.list_table=FuncTab.list_table+"</td><td >"+ctg+"</td><td >"+rows[row][5]+"</td><td ><b>"+rows[row][6]+"</b><td >"+lk;}
 			else{FuncTab.list_table=FuncTab.list_table+"</td><td ></td><td ><b></b><td >";}
 			FuncTab.list_table=FuncTab.list_table+"</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td><td ></td></tr>";
 		}}finally{FuncInit.bIni=true;}},
@@ -308,28 +316,21 @@ var FuncTab=FuncTab||{};var FuncTab={
 			"bFilter":true,"bInfo":true,"scrollY":"450px","scrollCollapse":true,"paging":true,"bAutoWidth":false});
 		$("#list_table.table tbody").on('click','tr',function(){			
 				MapsLib.addSrchMarker.setMap(null);
-				var nm=$(this).children('td:nth-child(1)').text().replace(/ /g,'');var lat=$(this).children('td:nth-child(7)').text();
-				
+				var nm=$(this).children('td:nth-child(1)').text();var lat=$(this).children('td:nth-child(7)').text();				
 				var lng=$(this).children('td:nth-child(8)').text();//var idref=$(this).children('td:nth-child(7)').text();
 				var ids=FuncInit.srcId;
 			//for(var id in ids){if(ids[id].label===nm){FuncTab.bmrk=true;nm='#'+idref;}}
 			if(!FuncTab.bmrk){
 				ids=FuncInit.srcZn;
-				for(var id in ids){if(ids[id]===nm){FuncTab.bmrk=true;nm='#'+nm;}}};
+				for(var id in ids){if(ids[id].val===nm){FuncTab.bmrk=true;nm='#'+nm;}}};
 			FuncTab.tabToMap(lat,lng);FuncTab.bmrk=false;
 			$(FuncInit.idtree).jqxTree('selectItem',$(nm)[0]);
 			$(FuncInit.idmap).focus();
-		})/*.on('mouseover','tr',function(){
-			$(this).css("background","#0404B4");
-		}).on('mouseleave','tr',function(){
-			$(this).css("background","");
-		}).on('mouseover','td',function(){
-			$(this).css("background","#B8860B");$(this).css("fontSize","180%");
-		}).on('mouseleave','td',function(){
-			$(this).css("background","");$(this).css("fontSize","100%");})*/;},	
-	tabToMap:function(lat,lng){
-		if(lat>-22){
-			if(lng<55.8){
+			}).on('mouseover','tr',function(){$(this).css("background","#0404B4");
+			}).on('mouseleave','tr',function(){$(this).css("background","");
+			}).on('mouseover','td',function(){$(this).css("background","#B8860B");$(this).css("fontSize","180%");
+			}).on('mouseleave','td',function(){$(this).css("background","");$(this).css("fontSize","100%");});},	
+	tabToMap:function(lat,lng){		
 				MapsLib.map_centroid=new google.maps.LatLng(lat,lng);
 				map.setCenter(MapsLib.map_centroid);
 				if(FuncTree.zoom==2){FuncTree.zoom=4;}else{FuncTree.zoom=7;}
@@ -341,7 +342,7 @@ var FuncTab=FuncTab||{};var FuncTab={
 				if(!FuncTab.bmrk){
 					var ad=$(MapsLib.chad).val();
 					MapsLib.addSrchMarker=new google.maps.Marker({position:MapsLib.map_centroid,map:map,animation:google.maps.Animation.DROP,title:ad});
-			}}
+			
 }}}
 var FuncRoute=FuncRoute||{};var FuncRoute={
 	directionsDisplay:new google.maps.DirectionsRenderer(),
@@ -367,7 +368,7 @@ var FuncRoute=FuncRoute||{};var FuncRoute={
 }}};
 var FuncTree=FuncTree||{};var FuncTree={
 	re:'',bchk:false,bgrow:false,bms:true,updBackG:"body",
-	styles:["grocery",FuncInit.bstyle],zoom:2,rvzoom:4,
+	styles:["info",FuncInit.bstyle],zoom:2,rvzoom:4,
 	theme:[{label:'general',value:''},{label:FuncInit.txtInit[0],value:'r'},{label:FuncInit.txtInit[1],value:'d'},{label:FuncInit.txtInit[2],value:'h'},{label:FuncInit.txtInit[3],value:'p'},{label:FuncInit.txtInit[4],value:'c'},{label:FuncInit.txtInit[5],value:'t'}],
 	applyChild:function(items){
 		for(var i in items){FuncTree.chkItm(items[i]);}},
@@ -401,13 +402,13 @@ var FuncTree=FuncTree||{};var FuncTree={
 	chURL:function(l){var rslt;
 		for(var i=0;i<FuncInit.srcStyle.length;i++){if(FuncInit.srcStyle[i].label===l){rslt=FuncInit.srcStyle[i].lien;}}return rslt;},
 	append:function(txt,color){
-		$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);},
+		/*$(FuncInit.idinf).append(txt);$(FuncInit.idinf).css("color","white");$(FuncInit.idinf).css("background-color",color);*/},
 	selectBox:function(i){
 		if(i.id.match('_')===null){
 			var itmid=i.id;FuncInit.tmp='';
 			$("#r_lieu").selectBox('value',itmid);
 			var zns=FuncInit.srcZn;
-			for(var z in zns){if(zns[z]==itmid) FuncInit.tmp=itmid;}
+			for(var z in zns){if(zns[z].val==itmid){FuncInit.tmp=itmid;}}
 			if(FuncInit.tmp===''){var ids=FuncInit.srcId;for(var id in ids){if(ids[id].label===itmid){FuncInit.tmp=ids[id].id;}}}
 			if(FuncInit.tmp==''){FuncInit.tmp=itmid.split('_')[0];}
 			FuncTree.bms=true;
@@ -441,7 +442,7 @@ var FuncTree=FuncTree||{};var FuncTree={
 				FuncTree.applysrch(i);
 				try{var rplc="#"+FuncInit.src[i.id];$(FuncInit.idtree).jqxTree('expandItem',$(rplc)[0]);}catch(ex){;}	
 			FuncInit.ptbid=[i.value];MapsLib.doSearch();									
-				}else{var rplc="#"+i.id.replace(/ /g,'');$(rplc).click();}
+				}else{var spl=i.value.split(',');FuncTab.tabToMap(spl[0],spl[1]);}
 				});				
 		var source=[];
 		$.each(FuncInit.srcZn,function(){var gp=this;var tmp=[];
@@ -457,8 +458,8 @@ var FuncTree=FuncTree||{};var FuncTree={
 					$( "#r_theme" ).selectBox('value',"general");
 					var rplc ='#'+item.label;$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
                 });
-		}};
-		google.maps.visualRefresh=true;
+		MapsLib.initialize();}};
+		
 
 var MapsLib=MapsLib||{};var MapsLib={
 	colSrch:'description',s:null,e:null,cpte:0,chad:'',datajson:['',''],
@@ -469,15 +470,16 @@ var MapsLib=MapsLib||{};var MapsLib={
 	locationScope:"reunion",defaultZoom:FuncInit.zm,row:[],
 	addSrchMarker:new google.maps.Marker(),
 	h:34,p:10,
-	strVw:new google.maps.StreetViewPanorama(document.getElementById("pano"),{
-		position: MapsLib.map_centroid,pov:{heading:34,pitch:10}}),
+	/*strVw:new google.maps.StreetViewPanorama(document.getElementById("map_canvas"),{
+		position: MapsLib.map_centroid,pov:{heading:34,pitch:10}}),*/
 	initialize:function(){
 		try{MapsLib.geocoder=new google.maps.Geocoder();
 		FuncRoute.directionsDisplay=new google.maps.DirectionsRenderer();
 		}catch(e){;}
 		var myOptions={zoom:MapsLib.defaultZoom,center:MapsLib.map_centroid,mapTypeId:google.maps.MapTypeId.ROADMAP,styleId:2,templateId:1};
 		map=new google.maps.Map($("#map_canvas")[0],myOptions);		
-		map.setStreetView(MapsLib.strVw);google.maps.event.addListener(map, "click",function(event){ MapsLib.clickmap(event); });
+		//map.setStreetView(MapsLib.strVw);
+		google.maps.event.addListener(map,"click",function(event){MapsLib.clickmap(event);});
 		google.maps.event.addDomListener(window,'resize',function(){
 			map.setCenter(MapsLib.map_centroid); map.setZoom(FuncTree.zoom);});
 		try{FuncRoute.directionsDisplay.setMap(map);}catch(e){;}
@@ -491,7 +493,10 @@ var MapsLib=MapsLib||{};var MapsLib={
 			$(FuncInit.idrbb).focus();
 			$(FuncInit.idrbb).mouseenter();
 			$(FuncInit.idinf).empty();
-			FuncTree.append('PLAY WITH MOUSE for search go top right and left down!!Y GAGN ZOUER POU FE LE RECHERCHE EN HAUT A DROITE EN BAS A GAUCHE','#660066');}},
+			/*FuncTree.append('PLAY WITH MOUSE for search go top right and left down!!Y GAGN ZOUER POU FE LE RECHERCHE EN HAUT A DROITE EN BAS A GAUCHE','#660066');*/}
+			/*if(typeof google !=='object'&&typeof google.maps !=='object'){MapsLib.initialize();};*/google.maps.visualRefresh=true;
+		//try{if(map.features.gm_bindings_==undefined)MapsLib.initialize();}catch(e){window.location.reload();}
+		},
 	doSearch:function(location){
 		FuncTree.bgrow=false;MapsLib.clearSearch();
 		MapsLib.polygonTableID=FuncInit.ptbid;MapsLib.polygon=new Array();
@@ -524,7 +529,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 		if(!FuncTree.bchk&&!FuncTree.bgrow){
 			var s=e.infoWindowHtml.split('<b>nom:</b> ')[1].split('<br>')[0];
 			FuncTree.bchk=true;FuncTab.fsearch(s);
-			var rplc='#'+s.replace(/ /g,'').replace(/'/g,'');
+			var rplc='#'+s.replace(/\W/g,'');
 			console.log(rplc);$(FuncInit.idtree).jqxTree('selectItem',$(rplc)[0]);
 			MapsLib.chad='#arv';/* MapsLib.addrFromLatLng(e.latLng);*/FuncTree.bchk=false;return s;}},
 	findMe:function(){
@@ -532,7 +537,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 			navigator.geolocation.getCurrentPosition(function(position){
 				fl=new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 				MapsLib.chad='#dep';MapsLib.addrFromLatLng(fl);map.setCenter(fl);},null);
-		}else{FuncTree.append('Lo l\'action fo config!!Configurate your Position','red');}},
+		}else{/*FuncTree.append('Lo l\'action fo config!!Configurate your Position','red');*/}},
 	getSearch:function(value){
 		var callback="MapsLib.addrow";
 		var queryStr=[];queryStr.push("SELECT " + FuncTab.slcCol);
@@ -548,7 +553,7 @@ var MapsLib=MapsLib||{};var MapsLib={
 				}else{
 					$(FuncInit.idtab).empty();$(FuncInit.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}
 			$(FuncInit.idinf).empty();
-			FuncTree.append("D\'scend en bas po&ugrave; l&egrave;v lo l'act </br> (GO ON TRANSPARENT  left down panel)","blue");},
+			/*FuncTree.append("D\'scend en bas po&ugrave; l&egrave;v lo l'act </br> (GO ON TRANSPARENT  left down panel)","blue");*/},
 	addrFromLatLng:function(latLngPoint){
 		/*Sortie lat long console*/console.log(latLngPoint);
 		MapsLib.geocoder.geocode({'latLng':latLngPoint},function(results, status){
@@ -628,3 +633,5 @@ var MapsLib=MapsLib||{};var MapsLib={
 			for(var row in error){
 				console.log("Domain: "+error[row]["domain"]);
 				console.log(" Reason: "+error[row]["reason"]);console.log(" Message: "+error[row]["message"]);}}}};
+
+
