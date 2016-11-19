@@ -10,7 +10,7 @@ var FI=FI||{};FI={
 	dCmp:0,bIni:false,	
 	anex:["TRAIL","Grand Raid","Trail de Bourbon","La Mascareignes"],
 	ptbid:['15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a'],
-	srcZn:[{val:'america',itm:[]},{val:'africa',itm:[]},{val:'asia',itm:[]},{val:'europa',itm:[]},{val:'oceania',itm:[]},{val:'orient',itm:[]}],	
+	srcZn:[{val:'america',itm:['berkley','Chicago','Toronto']},{val:'africa',itm:[]},{val:'asia',itm:[]},{val:'europa',itm:[]},{val:'oceania',itm:[]},{val:'orient',itm:[]}],	
 	srcId:[{label:'america',value:'america',id:'am'},{label:'africa',value:'africa',id:'af'},{label:'asia',value:'asia',id:'as'},{label:'europa',value:'europa',id:'eu'},{label:'oceania',value:'oceania',id:'or'},{label:'orient',value:'orient',id:'or'}],
 	initSrch:'',ak:'AIzaSyBwN-ZobOGzBEHQjPZNpb5DmD4z1oTrbF0',src:[],latlng:[],zm:4,bnm:bnm,initl:initl,idtree:"#jqxTree",idtab:"#listv",idmap:"#map_canvas",idp:"#panel",idinf:"#info",iditi:"#iti",idbtn:"#btn",idsup:"#pano",bstyle:"http://runsense.Re/ryt.png",
 	txtInit:["reggae newRoots"/*0*/,
@@ -231,7 +231,7 @@ var FTa=FTa||{};var FTa={
 		},
 	crTb:function(){
 		var rplc="#"+0;FTa.results=$(rplc);
-		FTa.results.empty();FTa.list_table="<table class='table' id ='list_table'><tbody>";},
+		FTa.results.empty();FTa.list_table="<table class='table' id ='list_table' width="+$(window).width()/3.4+"><tbody>";},
 	fshBDD:function(){
 		FTa.list_table+="</tbody></table>";
 		/*if(FTa.lat!=""&&FTa.lng!=""){			
@@ -290,7 +290,7 @@ var FTa=FTa||{};var FTa={
 			"sDom":'<"top"pf>rt<"bottom"><"clear">',
 			"language":{
 				"infoEmpty":"La patience reste en vertus!!Wait and move mouse",
-				"zeroRecords":"PLAY WITH MOUSE for search go top right and left down!!Y GAGN ZOUER POU FE LE RECHERCHE EN HAUT A DROITE EN BAS A GAUCHE"
+				"zeroRecords":"CLICK on right TREE for Search"
 			},
 			"bFilter":true,"bInfo":true,"scrollY":"450px","scrollCollapse":true,"paging":true,"bAutoWidth":false});
 		$("#list_table.table tbody").on('click','tr',function(){			
@@ -320,6 +320,7 @@ var FTa=FTa||{};var FTa={
 				/*if(FI.bnm){$(FI.idtab).animate({opacity:'0.3',height:'30%'});$(FI.idmap).animate({opacity:'1'});}
 				else{$(FI.idtab).animate({zIndex:'0'});$(FI.idmap).animate({zIndex:'1'});$(FI.idp).animate({zIndex:'1'});}*/
 				FM.chad='#arv';FM.addrFromLatLng(FM.map_centroid);
+				FTa.fsearch(str);
 				if(!FTa.bmrk){
 					var ad=$(FM.chad).val();
 					var infowindow=new google.maps.InfoWindow({content:str+'</br>'+ad});
@@ -392,8 +393,8 @@ var FTr=FTr||{};var FTr={
 			if(FI.tmp==''){FI.tmp=itmid.split('_')[0];}
 			FTr.bms=true;
 		}else{var slc=i.id.split('_')[1];$("#r_theme").selectBox('value',slc);FTr.bms=false;}},
-	init:function(){
-		$(FI.idtree).jqxTree({source:FI.src,width:'100%',height:'600px',theme:'summer'});
+	init:function(){var w=$(window).width()/3.5;
+		$(FI.idtree).jqxTree({source:FI.src,width:w+'px',height:'600px',theme:'summer'});
 		$(FI.idtree).on('expand',function(ev){
 			if(FI.bnm){var e=ev.args.element;
 			var i=$(FI.idtree).jqxTree('getItem',e );
@@ -422,10 +423,9 @@ var FTr=FTr||{};var FTr={
 				FTr.selectBox(i);
 				FTr.applysrch(i);
 				try{var rplc="#"+i.id;$(FI.idtree).jqxTree('expandItem',$(rplc)[0]);$(FI.idtree).jqxTree('refresh');}catch(ex){;}	
-			if(tstref){FI.ptbid=[i.value.substring(1)];}else{FI.ptbid=[i.value];}FM.doSearch();									
-				}else{FTr.styles.push(FTr.chStyle(i.html));var u=FTr.chURL(i.html);if(u){FTr.styles[1]=u;}
-				var spl=i.value.split(',');FTa.tabToMap(spl[0],spl[1],i.id);
-				}				
+				if(tstref){FI.ptbid=[i.value.substring(1)];}else{FI.ptbid=[i.value];}FM.doSearch();}
+			else{FTr.styles.push(FTr.chStyle(i.html));var u=FTr.chURL(i.html);if(u){FTr.styles[1]=u;}
+				var spl=i.value.split(',');FTa.tabToMap(spl[0],spl[1],i.id);}				
 				});				
 		var source=[];
 		$.each(FI.srcZn,function(){var gp=this;var tmp=[];
