@@ -33,48 +33,39 @@ var FI=FI||{};FI={
 	{label:FI.txtInit[3],value:"bars"},
 	{label:FI.txtInit[4],value:"firedept"},
 	{label:FI.txtInit[5],value:"parks"},
-	{label:FI.srcZn[0].val,value:"",lien:""},
-	{label:FI.srcZn[1].val,value:"",lien:""},
-	{label:FI.srcZn[2].val,value:"",lien:""},
-	{label:FI.srcZn[3].val,value:"",lien:""},
-	{label:FI.srcZn[4].val,value:"",lien:""},
-	{label:FI.srcZn[5].val,value:"",lien:""}];
+	{label:FI.srcZn[0].val,value:"#FFD700",lien:""},
+	{label:FI.srcZn[1].val,value:"#FFD700",lien:""},
+	{label:FI.srcZn[2].val,value:"#FFD700",lien:""},
+	{label:FI.srcZn[3].val,value:"#FFD700",lien:""},
+	{label:FI.srcZn[4].val,value:"#FFD700",lien:""},
+	{label:FI.srcZn[5].val,value:"#FFD700",lien:""}];
 			FI.src=[			
 			{id:FI.srcZn[0].val,html:"<span title='"+FI.srcZn[0].val+"' style='background-color: #FFF; #8B0000;'>"+FI.srcZn[0].val+"</span> ",
-			value:"",items:[]},
+			value:"1zSpljlSAgTTot2X48Mx6yfG9LWjd8aMYUSX1LKLR",items:[]},
 			{id:FI.srcZn[1].val,html:"<span title='"+FI.srcZn[1].val+"' style='background-color: #FFF; #8B0000;'>"+FI.srcZn[1].val+"</span> ",
-			value:"",items:[]},
+			value:"1dH1duiufLT1S-cRB9wvJxInS_1q66_ZUpdDy3GJJ",items:[]},
 			{id:FI.srcZn[2].val,html:"<span title='"+FI.srcZn[2].val+"' style='background-color: #FFF; #8B0000;'>"+FI.srcZn[2].val+"</span> ",
-			value:"",items:[]},
+			value:"19E1eFUuxhe0YvoUblrRvFobDSHvWUK4YbYzsQxCm",items:[]},
 			{id:FI.srcZn[3].val,html:"<span title='"+FI.srcZn[3].val+"' style='background-color: #FFF; #8B0000;'>"+FI.srcZn[3].val+"</span> ",
-			value:"",items:[]},
+			value:"1gKRGL9638tVyUJ5kcVOGRzSqQT-sqYSbkGG7LS6y",items:[]},
 			{id:FI.srcZn[4].val,html:"<span title='"+FI.srcZn[4].val+"' style='background-color: #FFF; #8B0000;'>"+FI.srcZn[4].val+"</span> ",
-			value:"",items:[]},
+			value:"1Q4qH3_0RnxF3usaZ2Avjtt7W38h4NwTa9gUYQKrI",items:[]},
 			{id:FI.srcZn[5].val,html:"<span title='"+FI.srcZn[5].val+"' style='background-color: #FFF; #8B0000;'>"+FI.srcZn[5].val+"</span> ",
-			value:"",items:[]}
+			value:"1H1o4IiK5jSJnQh1572OqscGSRRv6K5Do86aKld0W",items:[]}
 			];
-			FI.srch('FI.refcb');			
+			FI.refcb();			
 		},
-	srch:function(cb){		
-		var queryStr=[];queryStr.push("SELECT id,ref,font,nom");
-		queryStr.push(" FROM  "+FI.ptbid[0]);var sql=encodeURIComponent(queryStr.join(" "));
-		$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+cb+"&key="+FI.ak,dataType:"jsonp"});},
-	refcb:function(json){
-		var rfB=['','','','',''];
-		try{FI.handleError(json);}catch(e){;}
-		var msk=json["rows"];if(msk.length==0) msk.push("choice another table");		
-		$.each(msk,function(){
-			if(this){var i=Number(this[0]);
-			try{FI.src[i].value=this[1];if(i<6){rfB[i]=this[1];}
-			FI.srcStyle[i+6].lien=this[2];}catch(e){;}
-			}
-		});
+	refcb:function(){
+		var rfB=[];
+		for(var i=0;i<6;i++){
+			rfB.push(FI.src[i].value);
+		}			
 		FI.dCmp=FI.src.length;
 		for(var rw=0;rw<6;rw++){
-			var queryStr=[];queryStr.push("SELECT id,ref,font,nom,land,lat,lng");
+			var queryStr=[];queryStr.push("SELECT id,ref,font,nom,land,lat,lng,date");
 			queryStr.push(" FROM  "+rfB[rw]);var sql=encodeURIComponent(queryStr.join(" "));
 			$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback=FI.itmRef&key="+FI.ak,dataType:"jsonp"});
-		}		
+		}	
 	},
 	itmRef:function(json){
 		FI.dCmp=FI.dCmp-1;
@@ -82,9 +73,9 @@ var FI=FI||{};FI={
 		var msk=json["rows"];if(msk&&msk.length==0) msk.push("choice another table");
 		var i;		
 		$.each(msk,function(){if(this){try{
-			if(!isNaN(this[0])){i=Number(this[0]);}else{i=this[0];}var nm=this[3];
-			var val;if(this[1].charAt(0)=='*'){val=this[1]}else{val=this[5]+','+this[6];}
-			FI.src[i].items.push({id:nm,html:"<span title='"+nm+"' style='background-color: #FFF; #8B0000;'>"+nm+"</span> ",value:val,items:[]});
+			if(!isNaN(this[0])){i=Number(this[0]);}else{i=this[0];}var nm=this[3];var tt;if(this[7]){tt=this[7]+' '+this[4];}else{tt=this[4];}
+			var val,dt;if(this[1].charAt(0)=='*'){val=this[1]}else{val=this[5]+','+this[6];}try{dt=this[7]+' '+this[4];}catch(e){;}
+			FI.src[i].items.push({id:nm,html:"<span title='"+tt+"' style='background-color: #FFF; #8B0000;'>"+nm+"</span> ",value:val,items:[]});
 			if(this[2]){FI.srcStyle.push({label:nm.replace(/\W/g,''),value:'',lien:this[2]});}
 			
 		}catch(e){;}
@@ -140,17 +131,9 @@ var FI=FI||{};FI={
 				$(FI.idtab).animate({zIndex:'1'});
 				$(FI.idmap).animate({zIndex:'0'});
 				$(FI.idp).animate({zIndex:'0'});
-		}});
-		$(FI.idp).hover(function(){
-			if(FI.bnm){
-				$(FI.idtab).animate({opacity: '1',height: '15%',width: '100%'});
-				$(FI.idmap).animate({opacity: '1'});
-				$(FI.idp).animate({opacity: '1'});
-			}else{
-				$(FI.idtab).animate({zIndex:'1'});
-				$(FI.idmap).animate({zIndex:'0'});
-				$(FI.idp).animate({zIndex:'0'});
 		}});*/
+		$(FI.idp).hover(function(){
+			$('body').scrollLeft(600);});
 		
 		
 		$(FI.idbtn).bind('click',function(){
@@ -239,7 +222,7 @@ var FTa=FTa||{};var FTa={
 				map.setCenter(FM.map_centroid);}*/
 		FTa.results.append(FTa.list_table);
 		$("#list_table").dataTable({
-			"aoColumns":['','','','','','','',''],
+			"aoColumns":['','','','','','','','',''],
 			"sDom":'<"top"pf>rt<"bottom"lip><"clear">',
 			"language":{
 				"sProcessing":"T ou plane!!",
@@ -270,15 +253,14 @@ var FTa=FTa||{};var FTa={
 				});},
 	cRows:function(rows){
 		try{for(var row in rows){
-			var nom=rows[row][1];var ctg='';var desc;var lk;var lat;var lng;
-			try{ctg=rows[row][7];lat=rows[row][3];lng=rows[row][4];}catch(ex){;}try{desc=rows[row][2];lk=rows[row][8];}catch(ex){;}
-			
+			var nom=rows[row][1];var ctg='',desc,lk,lat,lng,rdt;
+			try{ctg=rows[row][7];rdt=rows[row][9];lat=rows[row][3];lng=rows[row][4];}catch(ex){;}try{desc=rows[row][2];lk=rows[row][8];}catch(ex){;}
 			if(row<1){FTa.lat=rows[row][3];FTa.lng=rows[row][4];}		
-			FTa.list_table=FTa.list_table+"<tr id="+nom.replace(/\W/g,'')+"><td >"+nom;
+			if(nom!=''){FTa.list_table=FTa.list_table+"<tr id="+nom.replace(/\W/g,'')+"><td >"+nom;
 			if(rows[row][5]){FTa.list_table=FTa.list_table+"</td><td >"+ctg+"</td><td >"+rows[row][5]+"</td><td ><b>"+rows[row][6]+"</b><td >"+lk;}
 			else{FTa.list_table=FTa.list_table+"</td><td ></td><td ><b></b><td >";}
-			FTa.list_table=FTa.list_table+"</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td><td ></td></tr>";
-		}}finally{FI.bIni=true;}},
+			FTa.list_table=FTa.list_table+"</td><td >"+desc+"</td><td style='visibility:hidden;' >"+lat+"</td><td style='visibility:hidden;' >"+lng+"</td><td style='visibility:hidden;'>"+rdt+"</td></tr>";
+			}}}finally{FI.bIni=true;}},
 	fnsTb:function(){
 		FTa.list_table+="</tbody></table>";
 		if(FTa.lat!=""&&FTa.lng!=""){			
@@ -286,13 +268,14 @@ var FTa=FTa||{};var FTa={
 				map.setCenter(FM.map_centroid);}
 		FTa.results.append(FTa.list_table);		
 		$("#list_table").dataTable({
-			"aoColumns":['','','','','','','',''],//id,nom,dsc,lat,lng,date,land,ref,link
+			"aoColumns":['','','','','','','',''],//id,nom,dsc,lat,lng,date,land,ref,link,rdt
 			"sDom":'<"top"pf>rt<"bottom"><"clear">',
+			"order": [[1, "desc"], [7, "desc"]],
 			"language":{
 				"infoEmpty":"La patience reste en vertus!!Wait and move mouse",
 				"zeroRecords":"CLICK on right TREE for Search"
 			},
-			"bFilter":true,"bInfo":true,"scrollY":"450px","scrollCollapse":true,"paging":true,"bAutoWidth":false});
+			"bFilter":true,"bInfo":true,"scrollY":"450px","scrollCollapse":true,"paging":true,"bAutoWidth":false});	
 		$("#list_table.table tbody").on('click','tr',function(){			
 				FM.addSrchMarker.setMap(null);
 				var nm=$(this).children('td:nth-child(1)').text();var lat=$(this).children('td:nth-child(7)').text();				
@@ -395,6 +378,12 @@ var FTr=FTr||{};var FTr={
 		}else{var slc=i.id.split('_')[1];$("#r_theme").selectBox('value',slc);FTr.bms=false;}},
 	init:function(){var w=$(window).width()/3.5;
 		$(FI.idtree).jqxTree({source:FI.src,width:w+'px',height:'600px',theme:'summer'});
+		/*$('#exp').jqxExpander({showArrow: false, toggleMode: 'none'});
+            $(FI.idtree+" .jqx-tree-item").mouseenter(function (event){
+				var itm = event.toElement.parentElement;
+				var rplc='#'+itm.id;
+				$(FI.idtree).jqxTree('selectItem',$(rplc)[0]);
+			});*/
 		$(FI.idtree).on('expand',function(ev){
 			if(FI.bnm){var e=ev.args.element;
 			var i=$(FI.idtree).jqxTree('getItem',e );
@@ -473,7 +462,7 @@ var FM=FM||{};var FM={
 			var tl=FM.polygonTableID.length;map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
 			for(var i=0;i<tl;i++){
 				var stl=FTr.styles[i];
-				if(stl=="dining"||stl=="star"){map.setMapTypeId(google.maps.MapTypeId.HYBRID);}
+				//if(stl=="dining"||stl=="star"){map.setMapTypeId(google.maps.MapTypeId.HYBRID);}
 				var layer=new google.maps.FusionTablesLayer({
 					query:{from:FM.polygonTableID[i],select: "geometry"},
 					styles:[{markerOptions:{iconName: stl,},polygonOptions:{fillColor:stl,fillOpacity:0.4,strokeColor:"#FFFFF0",strokeWeight:"int"},
@@ -517,20 +506,20 @@ var FM=FM||{};var FM={
 			for(var i in FM.polygonTableID){
 				if(FM.polygonTableID[i]!="NO"){					
 					FM.cpte=i;$(FI.idtab).append("<div title='Revenir MAP A DROITE(View MAP RIGHT)' id="+i+" style='background-color: #FFFFFF;'/>");					
-					var sql="SELECT "+slcCol+" FROM "+FM.polygonTableID[i];					
+					var sql="SELECT "+slcCol+" FROM "+FM.polygonTableID[i];						
 					$.ajax({url:"https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+FI.ak,dataType:"jsonp"});
 				}else{
 					$(FI.idtab).empty();$(FI.idtab).append("<div  id="+i+" style='background-color: #FF0000;>NO DATA</div>");}}
 			$(FI.idinf).empty();
 			/*FTr.append("D\'scend en bas po&ugrave; l&egrave;v lo l'act </br> (GO ON TRANSPARENT  left down panel)","blue");*/},
 	addrFromLatLng:function(latLngPoint){
-		/*Sortie lat long console*/console.log(latLngPoint);
+		try{
 		FM.geocoder.geocode({'latLng':latLngPoint},function(results, status){
 			if(status===google.maps.GeocoderStatus.OK){
 				if(results.length>1){$(FM.chad).val(results[0].formatted_address.split(',')[0]+','+results[1].formatted_address);}
 				else{$(FM.chad).val(results[0].formatted_address);}
 				if(FM.chad=='#dep'){FM.s=results[0].formatted_address;$(FI.iditi).css('font-size','20px');$(FI.iditi).css('font-weight','bold');}
-				else{FM.e=results[0].formatted_address;$(FI.iditi).css('color','red');$(FI.iditi).css('border-color','green');}}});},
+		else{FM.e=results[0].formatted_address;$(FI.iditi).css('color','red');$(FI.iditi).css('border-color','green');}}});}catch(e){;}},
 	zoom:function(map){
 		var bounds=new google.maps.LatLngBounds();
 		map.data.forEach(function(feature){
@@ -547,7 +536,7 @@ var FM=FM||{};var FM={
 		FM.row=[];FM.polygonTableID=null;
 		for(var i=0;i<FM.polygon.length;i++){if(FM.polygon[i] != null){FM.polygon[i].setMap(null); FM.polygon[i]=null;}}
 		map.setCenter(FM.map_centroid);map.setZoom(FTr.zoom);},
-	getList:function(){FTa.slcCol="id,nom,dsc,lat,lng";if(FI.bIni){FTa.slcCol=FTa.slcCol+",date,land,ref,link";}FM.query(FTa.slcCol,10,"FTa.displayList");},
+	getList:function(){FTa.slcCol="id,nom,dsc,lat,lng";if(FI.bIni){FTa.slcCol=FTa.slcCol+",date,land,ref,link,rdt";}FM.query(FTa.slcCol,10,"FTa.displayList");},
 	addrow:function(json){
 		try{FM.handleError(json);}catch(e){;}
 		try{
