@@ -12,11 +12,13 @@ label {color:white;}#a{font-size:150%;}#z{font-size:140%;}#e{font-size:130%;}#r{
  #fl{display:none;} 
  #pano {position:absolute;left:68%;width:0%;height:800px;background-color:rgba(173,216,230,0.63);} 
  #pano.adp-substep:hover{color:red;border-color:green;background-color:rgba(184,134,11,0.63);}
-@keyframes textanm{9%,45%,81%{opacity:0.18;color:rgba(0,0,252,1);box-shadow: 0px 18px 81px #CC0000;text-shadow: 2px 7px 4px #CC0000;} 20%{color:rgba(0,0,252,1);}  18%,54%,90% {opacity:0.81;color:rgba(255,255,9,1);box-shadow: -9px 18px 108px #9999D6;text-shadow: 4px 2px 7px #9999D6;} 55%{color:rgba(255,255,9,1);} 70%{color:rgba(252,252,252,1);} 27%,72%,99%{color:rgba(9,9,9,1);box-shadow: -18px 18px 180px #004200;text-shadow: 2px 7px 4px #004200;}}
+ @keyframes boxanm{9%,45%{color:rgba(192,192,192,0.4);box-shadow: 2px 7px 4px #CC0000;}   27%,72%{color:rgba(0,255,255,0.6);box-shadow: 4px 2px 7px #9999D6;} 90%{color:rgba(212,175,55);}}
+ @keyframes textanm{9%,45%,81%{opacity:0.18;color:rgba(0,0,252,1);box-shadow: 0px 18px 81px #CC0000;text-shadow: 2px 7px 4px #CC0000;} 20%{color:rgba(0,0,252,1);}  18%,54%,90% {opacity:0.81;color:rgba(255,255,9,1);box-shadow: -9px 18px 108px #9999D6;text-shadow: 4px 2px 7px #9999D6;} 55%{color:rgba(255,255,9,1);} 70%{color:rgba(252,252,252,1);} 27%,72%,99%{color:rgba(9,9,9,1);box-shadow: -18px 18px 180px #004200;text-shadow: 2px 7px 4px #004200;}}
  #r_lieu .jqx-widget-content {background:rgba(255,255,0,0.3)!important;} 
  .jqx-widget-content {background:rgba(182,174,174,0.1)!important;} 
  .jqx-fill-state-hover {font-size:180%!important;} 
  .jqx-tree,.jqx-tree-item,.pagination,#iti,#btn,#clear {border-top-left-radius:2em!important;border-bottom-right-radius:1em!important;} 
  .textanm.jqx-tree-item{animation: textanm 3s ease-in-out 1s alternate 2;}
  #dep,#arv,.form-control,.input-sm {border-bottom-left-radius:1em!important;border-top-right-radius:2em!important;}
- #pop{position:absolute;font-family: Lucida Bright,Georgia,serif;z-index:-1;font-size:200%;top:30%;left:30%;color:white;animation: textanm 4s ease-in-out 1s infinite;}
+#pop{position:absolute;font-family: Lucida Bright,Georgia,serif;z-index:-1;font-size:200%;top:30%;left:30%;color:white;animation: textanm 4s ease-in-out 1s infinite;}
+ .sorting{animation: boxanm 2s ease-out 5s infinite;}
