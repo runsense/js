@@ -1,20 +1,13 @@
-html,body {height:100%!important;margin:0px!important;padding:0px!important;background-color:black;}
-label {color:white;}#a{font-size:150%;}#z{font-size:140%;}#e{font-size:130%;}#r{font-size:120%;}#t{font-size:110%;}#y{font-size:100%;}#u{font-size:90%;}#i{font-size:80%;}
- #map_canvas {position:absolute;float:left;width:70%;margin:0px;padding:0px;
- border-top-left-radius:3em;border-top-right-radius:2em;border-bottom-left-radius:1em;border-bottom-right-radius:18em;}
- #panel {position:absolute;top:5px;left:70%;z-index:5;background:none;border:2pxsolid#999;}
- #listv {position:absolute;bottom:1px;height:15%;width:100%;}
- #btn {display:none;text-align:center;size:100px;background-color:red;} 
- #iti,#clear {background:none;}
+html,body{height:100%!important;margin:0px!important;padding:0px!important;background-color:black;}label {color:white;}#a{font-size:150%;}#z{font-size:140%;}#e{font-size:130%;}#r{font-size:120%;}#t{font-size:110%;}#y{font-size:100%;}#u{font-size:90%;}#i{font-size:80%;}
+ #map_canvas{position:absolute;float:left;width:70%;margin:0px;padding:0px;border-top-left-radius:3em;border-top-right-radius:2em;border-bottom-left-radius:1em;border-bottom-right-radius:18em;}
+ #panel{position:absolute;top:5px;left:70%;z-index:5;background:none;border:2pxsolid#999;}#listv{position:absolute;bottom:1px;height:15%;width:100%;}
+ #btn{display:none;text-align:center;size:100px;background-color:red;}#iti,#clear {background:none;}
  #rtrm {position:absolute;top:95%;width:100%;color:red;font-weight:bold;font-size:20px;} 
- #info {float:left;height:50px;border-top-left-radius:2em;border-bottom-right-radius:1em;}
- #itinv {float:left;} 
- #fl{display:none;} 
- #pano {position:absolute;left:68%;width:0%;height:800px;background-color:rgba(173,216,230,0.63);} 
+ #info{float:left;height:50px;border-top-left-radius:2em;border-bottom-right-radius:1em;}#itinv{float:left;}#fl{display:none;} 
+ #pano{position:absolute;left:68%;width:0%;height:800px;background-color:rgba(173,216,230,0.63);} 
  #pano.adp-substep:hover{color:red;border-color:green;background-color:rgba(184,134,11,0.63);}
  #r_lieu .jqx-widget-content {background:rgba(255,255,0,0.3)!important;} 
- .jqx-widget-content {background:rgba(182,174,174,0.1)!important;} 
- .jqx-fill-state-hover {font-size:180%!important;} 
+ .jqx-widget-content {background:rgba(182,174,174,0.1)!important;}.jqx-fill-state-hover {font-size:180%!important;} 
  .jqx-tree,.jqx-tree-item,.pagination,#iti,#btn,#clear {border-top-left-radius:2em!important;border-bottom-right-radius:1em!important;} 
  #dep,#arv,.form-control,.input-sm {border-bottom-left-radius:1em!important;border-top-right-radius:2em!important;}
 #pop{position:absolute;font-family: Lucida Bright,Georgia,serif;z-index:-1;font-size:200%;top:30%;left:30%;color:white;animation: textanm 4s ease-in-out 1s infinite;}
