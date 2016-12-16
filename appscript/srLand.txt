@@ -1,0 +1,182 @@
+var TABLE_ID='1eoC-J6ky4MXDhNh_usEvM04UJNn9JiggRHUum1AG';
+var FIRST_DATA_ROW=2;
+var REQUIRE_SAME_COLUMNS=false;
+function add(rw){FA.sh.appendRow(rw);}
+function dRmv(){ FA.dateRemove();}
+function searchSpe(){FP.searchSpe();}
+function addCalend(){
+  var b={id:4,nm:'Oceania',ref:'New Zealand'};var x=FA.anx;
+  var fod=DriveApp.getFoldersByName(b.nm).next();var f=fod.getFilesByName(b.ref).next();
+  FE.sEventToCalend(f,b.nm);
+}
+function sync(){ 
+    var tasks = FusionTables.Task.list(TABLE_ID);
+    if (tasks.totalItems === 0) {
+        var sheet = SpreadsheetApp.getActiveSheet();
+        var wholeSheet = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn());
+        var values = wholeSheet.getValues();
+        if (values.length > 1) {
+            var csvBlob = Utilities.newBlob(convertToCsv_(values), 'application/octet-stream');
+            FusionTables.Table.replaceRows(TABLE_ID, csvBlob, { isStrict: REQUIRE_SAME_COLUMNS, startLine: FIRST_DATA_ROW - 1 });
+            Browser.msgBox('Replaced ' + values.length + ' rows in your Fusion Table', Browser.Buttons.OK);
+        }
+    } else {
+        Logger.log('Skipping row replacement because of ' + tasks.totalItems + ' active background task(s)');
+    }
+};
+
+function convertToCsv_(data) {
+    var csv = '';
+    for (var row = 0; row < data.length; row++) {
+        for (var col = 0; col < data[row].length; col++) {
+            var value = data[row][col].toString();
+            if (value.indexOf(',') != -1 ||
+                value.indexOf('\r') != -1 ||
+                value.indexOf('"') != -1) {
+                    value = '"' + value.replace(/"/g, '""') + '"';
+                    data[row][col] = value;
+            }
+        };
+        if (row < data.length - 1) {
+            csv += data[row].join(',') + '\r\n';
+        } else {
+            csv += data[row];
+        };
+    };
+    return csv;
+};
+
+var FA=FA||{};FA={
+  sh:null,tb:[{id:0,nm:'America',ref:'refAm'},{id:1,nm:'Africa',ref:'refAf'},{id:2,nm:'Asia',ref:'refAs'},{id:3,nm:'Europa',ref:'refEu'},{id:4,nm:'Oceania',ref:'refOc'},{id:5,nm:'Orient',ref:'refOr'},{id:6,nm:'concertMap',ref:'refCF'}],
+	geocode:function(street){var tbl=['',''];Utilities.sleep(1000);var response=Maps.newGeocoder().geocode(street);                          
+		for(var i=0;i<response.results.length;i++){var result=response.results[i];tbl[0]=result.geometry.location.lat;tbl[1]=result.geometry.location.lng;}
+	  return tbl;
+	},
+	addLand:function(nm,data,sh){var bpf=true;data[4]=data[4].replace(/\s+/g,'');
+	  if(data[0]===data[0]+1-1){bpf=false;
+			var spl=[];try{spl=data[3].split(' to ');}catch(ex){;}
+                       if(spl.length>1){                            
+                             try{Logger.log(spl[0],new Date(spl[0]));
+                               data[3]=new Date(spl[0]).toDateString()+' to '+new Date(spl[1]).toDateString();var dt=new Date(spl[1]);try{data[11]=dt.getFullYear()+'-'+(Number(dt.getMonth())+1)+"-"+dt.getDate();}catch(e){;}
+                             }catch(e){
+                               var fdt=spl[0].split('/');
+                               var dspl=spl[1].split('/');
+                               data[11]=new Date();
+                               var y='';if(dspl.length==3){y=spl[2];}
+                                else{y=data[11].getFullYear();}
+                               data[3]=new Date(y,fdt[1]-1,fdt[0]).toDateString()+' to '+new Date(y,dspl[1]-1,dspl[0]).toDateString();
+                               data[11]=y+'-'+dspl[1]+"-"+dspl[0];
+                             }}
+			else{var dt=new Date(data[3]);try{data[11]=dt.getFullYear()+'-'+(Number(dt.getMonth())+1)+"-"+dt.getDate();}catch(e){;}data[3]=new Date(data[3]).toDateString();}
+			if(data[5]==''){data[5]=nm;}
+			if(data[7]=='undefined'||data[7]==''||data[8]==''){data[7]='';data[8]='';data[9]='';}
+            try{if(data[9]=='undefined'||data[9]==''){var tbl=FA.geocode(data[5]);Logger.log(tbl);data[7]=tbl[0];data[8]=tbl[1];data[9]="<Point>"+"<coordinates>"+tbl[1]+","+tbl[0]+"</coordinates>"+"</Point>";}}catch(e){;}
+	  }else{data=null;}
+	 return data;
+	},
+    init:function(t){      
+		var fod=DriveApp.getFoldersByName(t.nm).next();var f=fod.getFilesByName(t.ref).next();FA.sh=SpreadsheetApp.open(f); 
+		var n=2;FA.sh.setFrozenRows(n);
+      return fod;
+    },
+	dateRemove:function(){var bPass=true;
+    var t={id:4,nm:'Oceania',ref:'New Zealand'};                     
+        FA.init(t);var n=2;FA.sh.setFrozenRows(n);
+      FA.sh.sort(6,true); FA.sh.sort(12,true);
+		 var today=new Date();today.setDate(today.getDate()-1);
+      today.setHours(0,0,0,0);today=today.getTime();
+         sfdata=FA.sh.getDataRange().getValues();
+		var ss=FA.sh.getSheets()[0];ss.clear();add(sfdata[0]);add(sfdata[1]);
+		for(var i=n;i<sfdata.length;i++){var dt;sfdata[i][6]=sfdata[i][6].replace(/(\\[rn]|\\)+/g,'');
+		  var cmp=new Date(sfdata[i][11]).getTime();
+		  if(sfdata[i][1]!=sfdata[i-1][1]||sfdata[i][3]!=sfdata[i-1][3]){Logger.log(cmp+' '+today);        
+			if(bPass&&sfdata[i][11]!=''){
+			  if(cmp<=today){;}
+			  else{ bPass=false;dt=FA.addLand(t.ref,sfdata[i],FA.sh);if(dt){add(dt);}}}
+			else{dt=FA.addLand(FA.tb[0].nm,sfdata[i],FA.sh);if(dt){add(dt);}}}}	  
+	}
+}
+
+var FP=FP||{};FP={speChar:[{id:'u00a0',val:' '},{id:'u20ac',val:'€'},{id:'u2606',val:'?'},{id:'u2022',val:'•'},{id:'u2018',val:'‘'},{id:'u2019',val:'’'},{id:'u00f9',val:'ù'},{id:'u00fe',val:'þ'},
+      {id:'u00fd',val:'y´'},{id:'u00fc',val:'ü'},{id:'u00fb',val:'û'},{id:'u00fa',val:'ú'},{id:'u00f8',val:'ø'},{id:'u00f6',val:'ö'},
+               {id:'u00f5',val:'õ'},{id:'u00f4',val:'ô'},{id:'u00f3',val:'ó'},{id:'u00f2',val:'ò'},{id:'u00f1',val:'n~'},{id:'u00f0',val:'ð'},
+               {id:'u00ee',val:'î'},{id:'u00ef',val:'ï'},{id:'u00ed',val:'í'},{id:'u00ec',val:'ì'},{id:'u00eb',val:'ë'},{id:'u00ea',val:'ê'},
+               {id:'u00e9',val:'é'},{id:'u00e8',val:'e`'},{id:'u00e7',val:'ç'},{id:'u00e6',val:'æ'},{id:'u00e5',val:'å'},{id:'u00e4',val:'a¨'},
+               {id:'u00e3',val:'ã'},{id:'u00e2',val:'â'},{id:'u00e1',val:'a´'},{id:'u00e0',val:'à'}],
+                  nSpeChar:[{id:'&#128;',val:'€'},
+               {id:'&#x80;',val:'€'},
+               {id:'&#36;',val:'$'},{id:'&#x24;',val:'$'},               
+              {id:'&#39;',val:"'"},{id:'&#..;',val:' '},{id:'&#...;',val:' '},{id:'&amp;',val:' '}], 
+  searchSpe:function(){
+  var mr=/((u00)|(u20))+/g;var t={id:4,nm:'Oceania',ref:'New Zealand'};FA.init(t);
+  var mrn=/&/g;
+  sfdata=FA.sh.getDataRange().getValues();
+  var ss=FA.sh.getSheets()[0];
+  ss.clear();add(sfdata[0]);
+  for(var i=1;i<sfdata.length;i++){var dt=sfdata[i];
+    if(dt[1].split(mr).length>1){dt[1]=FP.rplc(dt[1]);}if(dt[1].split(mrn).length>1){dt[1]=FP.rplcn(dt[1]);}
+    if(dt[5].split(mr).length>1){dt[5]=FP.rplc(dt[5]);}if(dt[5].split(mrn).length>1){dt[5]=FP.rplcn(dt[5]);}
+    if(dt[6].split(mr).length>1){dt[6]=FP.rplc(dt[6]);}if(dt[6].split(mrn).length>1){dt[6]=FP.rplcn(dt[6]);}
+    add(dt);}},
+  rplc:function(text){  
+      for(var sp in FP.speChar){var v=FP.speChar[sp];
+        if(text.split(v.id).length>1){var r=new RegExp(v.id,'g');text=text.replace(r,v.val);}
+      }return text;},
+  rplcn:function(text){  
+      for(var sp in FP.nSpeChar){var v=FP.nSpeChar[sp];
+        if(text.split(v.id).length>1){var r=new RegExp(v.id,'g');text=text.replace(r,v.val);}
+      }return text;}
+}
+
+var FE=FE||{};FE={
+  createEvent:function(ci,nm,loc,desc,start,end){
+    var event={
+      summary:nm,
+      location:loc,
+      description:desc,
+      start:{dateTime:start.toISOString()},
+      end:{dateTime:end.toISOString()},    
+      colorId:11
+    };event=Calendar.Events.insert(event, ci);
+  return event;},
+  cCalend:function(nm,loc){
+  return CalendarApp.createCalendar(nm, {
+    summary:'runConcert, on http://runsense.Re/rconcert.html ....follow of http://youtube.runsense.re',
+   location:loc,
+   color:CalendarApp.Color.SEA_BLUE
+ });},
+    vrfEvent:function(cal,src,dt){
+  var b=true;var rtr=cal.getEvents(dt,dt);
+  for(var i in rtr){    
+    if(rtr[i].summary==src){
+      if(!b){rtr[i].deleteEvent();}b=false;}
+    }
+  return b;
+  },
+sEventToCalend:function(f,loc){var calend;
+       var sh=SpreadsheetApp.open(f);
+       var data=sh.getDataRange().getValues();
+       var cal=CalendarApp.getCalendarsByName(f.getName());if(cal[0]&&cal[0]!=undefined){calend=cal[0];}else{calend=FE.cCalend(f.getName(),loc)}
+       var nw=new Date();var twn=new Date();twn.setFullYear(nw.getFullYear()+1);
+       var e=calend.getEvents(nw, twn);
+var sve={};
+       if(e&&e.length>0){
+    for(var i in e){      
+      var k=e[i].getTitle();
+      if(sve[k]){e[i].deleteEvent();}
+      sve[k]=e[i].getStartTime();
+      }}
+       
+    for(var i=1;i<data.length;i++){
+         var rg=data[i];var str=String(rg[2]);
+         if(str.charAt(0)!='*'){var std, eed='';
+           var spl=String(rg[3]).split(' to ');
+           if(spl.length>1){std=new Date(spl[0]);eed=new Date(spl[1]);rg[6]=rg[3]+'  '+rg[6];}else{std=new Date(rg[3]);}
+                                var dt=new Date(rg[11]);var test=sve[rg[1]];if(test&&test==dt){Logger.log(test);}
+             else{FE.createEvent(calend.getId(),rg[1],rg[5],rg[6],dt,dt);}}}
+                              }
+}
+function onOpen(){
+var ss=SpreadsheetApp.getActiveSpreadsheet();
+var menuEntries=[{name:"Sync sheet/Ftable",functionName:"sync"},{name:"removeOld&SearchDatePlace",functionName:"dRmv"},{name:"srchSpe",functionName:"searchSpe"},{name:"addCalend",functionName:"addCalend"}];
+ss.addMenu("Special",menuEntries);};

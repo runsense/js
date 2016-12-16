@@ -1,0 +1,98 @@
+var glbNm;
+function do0(){
+  doF(3,[{id:'England',ref:'3A226',ctn:'Europa'},{id:'Portugal',ref:'3A173',ctn:'Europa'},{id:'Ireland',ref:'3A104',ctn:'Europa'}]);
+  doF(1,[{id:'Morocco',ref:'3A145',ctn:'Africa'},{id:'Ghana',ref:'3A82',ctn:'Africa'}]);}
+function do1(){
+  doF(3,[{id:'France',ref:'3A74',ctn:'Europa'},{id:'Espagne',ref:'3A200',ctn:'Europa'},{id:'Austria',ref:'3A15',ctn:'Europa'},{id:'Hollande',ref:'3A151',ctn:'Europa'},{id:'Italy',ref:'3A106',ctn:'Europa'}]);
+  doF(1,[{id:'Tunisia',ref:'3A218',ctn:'Africa'},{id:'Nigéria',ref:'3A157',ctn:'Africa'}]);}
+function do2(){
+  doF(3,[{id:'Germany',ref:'3A81',ctn:'Europa'},{id:'Romania',ref:'3A177',ctn:'Europa'},{id:'Poland',ref:'3A172',ctn:'Europa'},{id:'Greece',ref:'3A84',ctn:'Europa'},{id:'Sweden',ref:'3A206',ctn:'Europa'},{id:'Norway',ref:'3A161',ctn:'Europa'},{id:'Ukraine',ref:'3A224',ctn:'Europa'},{id:'Russia',ref:'3A178',ctn:'Europa'}]);
+  doF(1,[{id:'Egypt',ref:'3A64',ctn:'Africa'},{id:'Israel',ref:'3A105',ctn:'Africa'},{id:'South Africa',ref:'3A198',ctn:'Africa'},{id:'Gabon',ref:'3A78',ctn:'Africa'},{id:'Zambia',ref:'3A239',ctn:'Africa'},{id:'Botswana',ref:'3A29',ctn:'Africa'},{id:'Zimbabwe',ref:'3A240',ctn:'Africa'},{id:'Tanzania',ref:'3A211',ctn:'Africa'},{id:'Cameroon',ref:'3A38',ctn:'Africa'},{id:'Mozambique',ref:'3A146',ctn:'Africa'},{id:'Algéria',ref:'3A4',ctn:'Africa'}]);
+  doF(5,[{id:'Jordan',ref:'3A109',ctn:'Orient'}]);}
+function do3(){
+  doF(3,[{id:'Russia',ref:'3A178',ctn:'Europa'}]);
+  doF(5,[{id:'Iran',ref:'3A102',ctn:'Orient'}, {id:'Arabie saoudite',ref:'3A188',ctn:'Orient'},{id:'Turkey',ref:'3A219',ctn:'Orient'}]);
+  doF(1,[{id:'Sudan',ref:'3A202',ctn:'Africa'},{id:'Ethiopia',ref:'3A69',ctn:'Africa'},{id:'Erithrea',ref:'3A67',ctn:'Africa'},{id:'Ugunda',ref:'3A223',ctn:'Africa'},{id:'Kenya',ref:'3A111',ctn:'Africa'}]);}
+function do4(){
+  doF(1,[{id:'Reunion',ref:'3A176',ctn:'Africa'},{id:'Maurituis',ref:'3A137',ctn:'Africa'}]);
+  doF(5,[{id:'Sri Lanka',ref:'3A201'},{id:'Pakistan',ref:'3A163',ctn:'Orient'},{id:'India',ref:'3A100',ctn:'Orient'},{id:'Bangladesh',ref:'3A19',ctn:'Orient'},{id:'Nepal',ref:'3A150',ctn:'Orient'}]);}
+function do7(){
+  doF(4,[{id:'Indonesia',ref:'3A101',ctn:'Oceania'}]);
+  doF(2,[{id:'Vietnam',ref:'3A233',ctn:'Asia'},{id:'Laos',ref:'3A117',ctn:'Asia'},{id:'Cambodia',ref:'3A37',ctn:'Asia'},{id:'Thailand',ref:'3A212',ctn:'Asia'},{id:'Taiwan',ref:'3A209',ctn:'Asia'},{id:'China',ref:'3A45',ctn:'Asia'},{id:'Philipine',ref:'3A170',ctn:'Asia'},{id:'Malaysia',ref:'3A130',ctn:'Asia'},{id:'Mongolia',ref:'3A143',ctn:'Asia'}]);}
+function do9(){
+  doF(2,[{id:'South Korea',ref:'3A114',ctn:'Asia'},{id:'Japan',ref:'3A108',ctn:'Asia'}]);
+  doF(0,[{id:'California',ref:'3A833',ctn:'America'},{id:'Colorado',ref:'3A834',ctn:'America'}]);
+  doF(5,[{id:'Australia',ref:'3A14',ctn:'Oceania'},{id:'new guinea',ref:'3A143',ctn:'Oceania'},{id:'New Zealand',ref:'3A154',ctn:'Oceania'}]);}
+function do18(){
+  doF(0,[{id:'Costa rica',ref:'3A53',ctn:'America'},{id:'Chicago',ref:'3A843',ctn:'America'},{id:'berkley',ref:'3A848',ctn:'America'},{id:'Toronto',ref:'3A39',ctn:'America'},{id:'mexico',ref:'3A139',ctn:'America'},{id:'Guatemala',ref:'3A89',ctn:'America'},{id:'Honduras',ref:'3A96',ctn:'America'},{id:'Nicaragua',ref:'3A155',ctn:'America'}]);}
+function do19(){
+  doF(0,[{id:'Republic Dominican',ref:'3A62',ctn:'America'},{id:'Puerto rico',ref:'3A174',ctn:'America'},{id:'florida',ref:'3A838',ctn:'America'},{id:'Jamaica',ref:'3A107',ctn:'America'},{id:'Panama',ref:'3A166',ctn:'America'},{id:'Columbia',ref:'3A48',ctn:'America'},{id:'Ecuador',ref:'3A63',ctn:'America'},{id:'Peru',ref:'3A169',ctn:'America'},{id:'Cuba',ref:'3A56',ctn:'America'},{id:'Venezuela',ref:'3A232',ctn:'America'}]);}
+function do20(){
+  doF(0,[{id:'Brazil',ref:'3A31',ctn:'America'},{id:'Bolivia',ref:'3A27',ctn:'America'},{id:'Paraguay',ref:'3A168',ctn:'America'},{id:'Chile',ref:'3A44',ctn:'America'},{id:'Uruguay',ref:'3A229',ctn:'America'},{id:'Argentina',ref:'3A11',ctn:'America'}]);}
+var FS=FS||{};FS={fd:'',    
+sh:null,nom:'',ctg:'',date:'',land:'',def:'',img:'',rdt:'',	
+badXml:function(t,r,city,catg,orLk){
+  FS.fd=DriveApp.getFoldersByName(t.nm).next();var f=FS.fd.getFilesByName(t.ref).next();FS.sh=SpreadsheetApp.open(f);
+	   FS.land=city;
+      var refToSplit=['<category scheme="http://eventful.com/events/tags/" term="','<media:text type="html">','<content type="html">','<gd:where','<georss:where>','<gd:when','<title>','<link href='];
+  var itms=r.split('<gd:entryLink>');
+	  for(var i=0;i<itms.length-1;i=i+1){
+        FS.ctg=catg;FS.def='';var c=itms[i];var rs;var latlong;var geo;var splc=['','']; 
+		for(var j=0;j<refToSplit.length;j=j+1){
+          var toSpl=refToSplit[j];var spl=c.split(toSpl);c=spl[0];rs=spl[1];
+          if(rs){
+          if(toSpl=='<title>'){
+            rs=rs.split('" type')[0];FS.nom=rs.split('</title>')[0];}
+		  else if(toSpl=='<link href='){
+            rs=rs.replace('</title>','');orLk=rs.split('"')[1];FS.img=c.split('<id>')[1];FS.img=FS.img.replace('</id>','');}
+		  else if(toSpl=='<gd:when'&&rs){
+            var spD=rs.split('endTime="');
+            var stD=spD[0].replace(/(startTime=")|"/g,'').split('T')[0];var stF=spD[1].replace(/"|\/>/g,'').split('T')[0];
+            if(stD!=stF){ FS.date=new Date(stD.replace(/-+/g,'/')).toDateString()+" to "+new Date(stF.replace(/-+/g,'/')).toDateString();}else{ FS.date=stD;}FS.rdt=stD;}
+		  else if(toSpl=='<georss:where>'&&rs){
+            rs=rs.split('</gml:pos>')[0];FS.latlong=rs.split('<gml:pos>')[1];
+           splc=FS.latlong.split(' ');
+        geo='<Point><coordinates>'+splc[1]+','+splc[0]+'</coordinates></Point>';}
+		  else if(toSpl=='<gd:where'&&rs){
+            FS.land=rs.split('valueString=')[1];FS.land=FS.land.replace(/"+|>/g,'');}
+          else if(toSpl==refToSplit[0]&&rs){
+            var c=rs.split('" label=')[0];if(Number(c)){;}else{FS.ctg=FS.ctg+c;}}
+        }}            
+        if(FS.nom.split(/[Event Search]/).length=1){FS.sh.appendRow([t.id,FS.nom,FS.ctg,FS.date,FS.img,FS.land,FS.def,splc[0],splc[1],geo,orLk,FS.rdt]);}}}};
+function doF(n,lnds){
+  var url;var r;var ctg;var tbctg=['concert','festival','sport','science',''];
+   //var ctn=FS.tb[n]; 
+    for(var l in lnds){
+      var lnd=lnds[l];Utilities.sleep(1000);
+        for(var k=0;k<tbctg.length;k++){ctg=tbctg[k];
+      url='http://eventful.com/atom/events?geo=country_id%'+lnd.ref+'&q='+ctg;
+     r=UrlFetchApp.fetch(url).getContentText();FS.badXml({id:3,nm:lnd.ctn,ref:lnd.id},r,lnd.id,ctg,'');}}}
+function myFunction(){
+  var scFile;
+  var re= /.+(-)/g;///(\w+)\s+(\w+)/ -> '$1,$2' by replace    /:\w+/g; -> array of after :   \xhh    /.+(?:-)/g
+    var rsup=/(feat)|\s[x]\s|(ft)|(\&)|(\$)|(\|)|"|[(]/g;
+    var rep=/-|(\|)/g;
+  var raw=[];var tRef=[{fod:'music',refs:['old','Nov','new']}
+                       /*,{fod:'vip',refs:['vip_old','vip_Nov','vip_new']},{fod:'hiphop',refs:['hiphop_old','hiphop_Nov','hiphop_new']}*/];
+  for(var t in tRef){
+  var ref=tRef[t];var shrs=ref.refs;
+  var shg,fdg;
+     fdg=DriveApp.getFoldersByName('concertMap').next();
+   scFile =fdg.getFilesByName('test').next();
+  var she=SpreadsheetApp.open(scFile);
+    fdg=DriveApp.getFoldersByName(ref.fod).next();
+  for(var s in shrs){
+    var val;var f=fdg.getFilesByName(shrs[s]).next();
+    shg=SpreadsheetApp.open(f);
+    var f=fdg.getFiles().next();
+    var vals=shg.getDataRange().getValues();
+    for(var i in vals){
+      var str=vals[i][0];var tb =str.match(re);var comp=tb&&vals[i][2]!='video'&&vals[i][2]!='trailers';
+      if(comp){var tab;
+        if(tb[0].length==1){tab=tb[0]+'-'+tb[1];}
+        else{tab=tb[0];}
+        tab=tab.toLowerCase();var sup=tab.split(rsup);
+        if(sup.length>2){val=sup[0].replace(rep,'');if(val.length>2){she.appendRow([val,vals[i][1]]);}}
+        else{val=tab.replace(rep,'').toLowerCase();if(val.length>2){she.appendRow([val,vals[i][1]]);}
+    }}}}}} 
+
