@@ -15,4 +15,5 @@ html,body{height:100%!important;margin:0px!important;padding:0px!important;backg
  #dep,#arv,.form-control,.input-sm {border-bottom-left-radius:1em!important;border-top-right-radius:2em!important;}
 #pop{position:absolute;font-family: Lucida Bright,Georgia,serif;z-index:-1;font-size:200%;top:30%;left:30%;color:white;}
 #list_table thead{width:30px!important;}
-#wait{box-shadow: 2px 7px 4px #CC0000;color:rgba(158,20,20,1)}
+#wait{box-shadow: 2px 7px 4px #CC0000;color:rgba(158,20,20,1);}
+select:option:{background-color:red;color:gold;}
