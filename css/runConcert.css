@@ -20,3 +20,4 @@ html,body{height:100%!important;margin:0px!important;padding:0px!important;backg
 #list_table thead{width:30px!important;}
 #wait{box-shadow: 2px 7px 4px #CC0000;color:rgba(158,20,20,1);}
 select:option:{background-color:red;color:gold;}
+#lr_th{animation: textanm 12s ease-out 5s infinite;}
