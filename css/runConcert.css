@@ -11,7 +11,10 @@ html,body{height:100%!important;margin:0px!important;padding:0px!important;backg
  #r_lieu .jqx-widget-content {background:rgba(255,255,0,0.3)!important;} 
  .jqx-widget-content {background:rgba(182,174,174,0.1)!important;}.jqx-fill-state-hover {font-size:180%!important;} 
  .pagination,#iti,#btn,#clear {border-top-left-radius:2em!important;border-bottom-right-radius:1em!important;animation: anm 2s ease-out 5s infinite;}
-.jqx-tree,.jqx-tree-item{border-top-left-radius:2em!important;border-bottom-right-radius:1em!important;}  
+.jqx-tree,.jqx-tree-item{border-top-left-radius:2em!important;border-bottom-right-radius:1em!important;}
+.jqx-tree-item{text-shadow: 2px 7px 4px #CC0000;font-size:x-large;color:rgba(0,0,252,1);}
+.jqx-item.jqx-tree-item span{background:transparent!important;}
+.jqx-tree-item-hover{background:#00ffff;}
  #dep,#arv,.form-control,.input-sm {border-bottom-left-radius:1em!important;border-top-right-radius:2em!important;}
 #pop{position:absolute;font-family: Lucida Bright,Georgia,serif;z-index:-1;font-size:200%;top:30%;left:30%;color:white;}
 #list_table thead{width:30px!important;}
