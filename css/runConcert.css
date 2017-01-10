@@ -1,6 +1,6 @@
 @keyframes anm{9%,45%{color:rgba(0,0,252,1);box-shadow: 2px 7px 4px #CC0000;} 20%{color:rgba(0,0,252,1);}  18%,54%{color:rgba(255,255,9,1);box-shadow: 4px 2px 7px #9999D6;} 55%{color:rgba(153,76,9,1);} 27%{color:rgba(9,9,9,1);box-shadow: 2px 7px 4px #00ffff;}}
 @keyframes textanm{9%,45%,81%{color:rgba(158,20,20,1);text-shadow: 2px 7px 4px #CC0000;} 20%{color:rgba(158,20,20,1);}  18%,54%,90% {color:rgba(255,255,9,1);text-shadow: 4px 2px 7px #9999D6;} 55%{color:rgba(255,255,9,1);} 70%{color:rgba(61,249,249,1);} 27%,72%,99%{color:rgba(9,9,9,1);text-shadow: 2px 7px 4px #9E1414;}}
-html,body{height:100%!important;margin:0px!important;padding:0px!important;background-color:black;}label {color:white;}#a{font-size:150%;}#z{font-size:140%;}#e{font-size:130%;}#r{font-size:120%;}#t{font-size:110%;}#y{font-size:100%;}#u{font-size:90%;}#i{font-size:80%;}
+html,body{height:100%!important;margin:0px!important;padding:0px!important;background-color:#000000;}label {color:white;}#a{font-size:150%;}#z{font-size:140%;}#e{font-size:130%;}#r{font-size:120%;}#t{font-size:110%;}#y{font-size:100%;}#u{font-size:90%;}#i{font-size:80%;}
  #map_canvas{position:absolute;float:left;width:70%;margin:0px;padding:0px;border-top-left-radius:3em;border-top-right-radius:2em;border-bottom-left-radius:1em;border-bottom-right-radius:18em;box-shadow: 2px 7px 4px #CC0000, 6px 21px 12px #00ffff;}
  #panel{position:absolute;top:5px;left:70%;z-index:5;background:none;border:2pxsolid#999;}#listv{position:absolute;bottom:1px;height:15%;width:100%;}
  #btn{display:none;text-align:center;size:100px;background-color:red;}#iti,#clear {background:none;}
@@ -23,6 +23,6 @@ select:option:{background-color:red;color:gold;}
 #lr_th,#lr_ctg{animation:textanm 12s ease-out 5s infinite;}
 #r_theme{box-shadow:2px 5px 3px #00ffff,6px 15px 9px #CC0000}
 #lr_ctg{position:relative;left:45%;z-index:1;}
-#r_ctg{position:relative;left:45%;z-index:1;box-shadow:2px 7px 4px #CC0000}
+#r_ctg{position:relative;left:45%;z-index:1;width:50px;background:#000000;color:gold;box-shadow:2px 7px 4px #CC0000}
 .anm{animation: textanm 1s ease-out 1s infinite;background:none;border:none;}
 .bleu{color:#00ffff;}
