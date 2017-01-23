@@ -316,32 +316,9 @@ var FTr=FTr||{};var FTr={
 		}else{var slc=i.id.split('_')[1];$("#r_theme").selectBox('value',slc);FTr.bms=false;}},
 	init:function(){
 		$(FI.idtree).jqxTree({checkboxes:true,source:FI.src,width:'100%',height:FTr.initl,theme:'summer'}),		
-		$(FI.idtree).on('expand',function(ev){
-			if(FI.bnm){var e=ev.args.element;
-			var i=$(FI.idtree).jqxTree('getItem',e );
-			if($(FI.idtree).jqxTree('getItem',e.parentElement.parentElement)!=null){FTr.zoom=12;}
-			else{FTr.zoom=10;}
-			if(!FTr.bgrow){
-				FTr.selectBox(i);FTr.bgrow=true;
-				$(FI.idtree).jqxTree('checkItem', e, true);
-				$('small').show();FTr.applysrch(i);M.doSearch();
-				$(FI.idtree).jqxTree('ensureVisible', e);}}}),
-		$(FI.idtree).on('collapse', function(ev){
-			FTr.bms=true;if(!FTr.bgrow){
-				FTr.bgrow=true;
-				FTr.ptbid=new Array();$(FI.idtab).empty();
-				FTr.applysrch(null);$('small').hide();FTr.zoom=10;M.doSearch();}}),
-		$(FI.idtree).bind('select',function(ev){
-			ev.stopPropagation();
-			var e=ev.args.element;
-			if($(e).find("li").length>1){FTr.bms=true;}
-			var i=$(FI.idtree).jqxTree('getItem', e);
-			if(i!=null){
-				FTr.selectBox(i);
-				for(var cpt in FI.txtInit){if(FI.txtInit[cpt]===i.label){FTr.bgrow=true;}}
-				$(FI.idtree).jqxTree('checkItem', e, true);
-				FTr.applysrch(i);
-				M.doSearch();}}),
+		$(FI.idtree).on('expand',function(ev){if(FI.bnm){var e=ev.args.element;var i=$(FI.idtree).jqxTree('getItem',e);FTr.zoom=$(FI.idtree).jqxTree('getItem',e.parentElement.parentElement)?12:10;FTr.bgrow=!FTr.bgrow?[true,FTr.selectBox(i),$(FI.idtree).jqxTree('checkItem',e, true),$('small').show(),FTr.applysrch(i),M.doSearch(),$(FI.idtree).jqxTree('ensureVisible',e)].shift():FTr.bgrow;}}),
+		$(FI.idtree).on('collapse', function(ev){FTr.bms=true;if(!FTr.bgrow){FTr.bgrow=true;FTr.ptbid=new Array();FTr.zoom=10;$(FI.idtab).empty(),FTr.applysrch(null),$('small').hide(),M.doSearch();}}),
+		$(FI.idtree).bind('select',function(ev){ev.preventDefault(),ev.stopPropagation();var e=ev.args.element;FTr.bms=$(e).find("li").length>1?true:FTr.bms;var i=$(FI.idtree).jqxTree('getItem',e);i?[FTr.selectBox(i),$.each(FI.txtInit,function(){FTr.bgrow=this===i.label?true:FTr.bgrow;}),$(FI.idtree).jqxTree('checkItem',e,true),FTr.applysrch(i),M.doSearch()]:'';}),
 		$(FI.idtree).on('checkChange',function(ev){
 			if(!FTr.bgrow){
 				$('#clear').css('color','red');$('#clear').css('border-color','green');
@@ -355,13 +332,13 @@ var FTr=FTr||{};var FTr={
 					FI.tmp=item.label;var items=$(FI.idtree).jqxTree('getCheckedItems');
 					var pre=e.parentElement.parentElement;
 					var	prei=$(FI.idtree).jqxTree('getItem',pre);
-					if(prei!=null)for(var i in items){
-						if(items[i].element!=pre&&items[i].element!=e){$(FI.idtree).jqxTree('uncheckItem', items[i].element); }}}
+					if(prei!=null) for(var i in items){
+						if(items[i].element!=pre&&items[i].element!=e){$(FI.idtree).jqxTree('uncheckItem', items[i].element);}}
+						}
 				FTr.bgrow=true;
-				if(a.checked){$(FI.idtree).jqxTree('expandItem', e);}
-				else{$(FI.idtree).jqxTree('collapseItem', e);}
+				a.checked?$(FI.idtree).jqxTree('expandItem',e):$(FI.idtree).jqxTree('collapseItem',e);
 			}else{
-				$('#clear').css('font-weight','bold');$('#clear').css('font-size','18px');}});
+				$('#clear').css('font-weight','bold'),$('#clear').css('font-size','18px');}});
 		}};
 		google.maps.visualRefresh=true;
 var M=M||{};var M={
