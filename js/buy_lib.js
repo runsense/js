@@ -1,45 +1,44 @@
 $.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
 var A=A||{};
-var A={ak:'AKIAI5LRTOJW7RFXOMEA',
+var A={ak:'AKIAIY7CLRS7CJX5X5YA',
 id:'',
 m:'FR',
 dt:new Date().toISOString(),
-mag:function(m){switch(m){case 'BR':return 'http://webservices.amazon.com.br/onca/xml';case 'bCA':return 'http://webservices.amazon.ca/onca/xml';
-case 'CN':return 'http://webservices.amazon.cn';
-case 'DE':return 'http://webservices.amazon.de';
-case 'ES':return 'http://webservices.amazon.es';
-case 'FR':return 'http://webservices.amazon.fr';
-case 'IN':return 'http://webservices.amazon.in';
-case 'IT':return 'http://webservices.amazon.it';
-case 'JP':return 'http://webservices.amazon.co.jp';
-case 'MX':return 'http://webservices.amazon.com.mx';
-case 'UK':return 'http://webservices.amazon.co.uk';
-case 'US':return 'http://webservices.amazon.com';
-default:break;}},
+mag:function(m){return m=='BR'?'http://webservices.amazon.com.br/onca/xml':m=='bCA'?'http://webservices.amazon.ca/onca/xml':m=='CN'?'http://webservices.amazon.cn/onca/xml':m=='DE'?'http://webservices.amazon.de/onca/xml':m=='ES'?'http://webservices.amazon.es/onca/xml':m=='FR'?'http://webservices.amazon.fr/onca/xml':m=='IN'?'http://webservices.amazon.in/onca/xml':m=='IT'?'http://webservices.amazon.it/onca/xml':m=='JP'?'http://webservices.amazon.co.jp/onca/xml':m=='MX'?'http://webservices.amazon.com.mx/onca/xml':m=='UK'?'http://webservices.amazon.co.uk/onca/xml':m=='US'?'http://webservices.amazon.com/onca/xml':'';
+},
 itmFc:{a:'ItemSearch',b:'SimilarityLookup',c:'ItemLookup'},
-srcEng:{a:'SearchIndex=FashionMen&Keywords=',b:'&ItemId='},
-tx:'reunion'};
+srcEng:{a:'SearchIndex=Music&Keywords=',b:'&ItemId='},
+tx:'sizzla'};
 var F=F||{};
 var F={
-query:'AWSAccessKeyId='+A.ak+'&AssociateTag=rICB9qNUTtahGA0+H+7qozsF+koYLE2g7u+hyRSA&'+A.srcEng.a+A.tx+'&Sort=price&Keywords='+A.tx+'&ResponseGroup=Accessories%2CImages%2CItemAttributes&Timestamp='+A.dt.replace(/:/g,'%3A'),
-srch:function(query,mkp) {
-    hash_data = ['GET',mkp, '/onca/xml', query].join("\n")
-    secret = "xfKMIJlIqrwNSRtYX+a7MrPw8wQh/cWBQq+rABEX"
-    hmac=F.hmac_(hash_data, secret);
-    var sign=$.base64.encode(hmac);
+query:'Service=AWSECommerceService&Operation='+A.itmFc.a+
+'&AWSAccessKeyId='+A.ak+'&AssociateTag=runbuy09-21&'+
+A.srcEng.a+A.tx+'&Sort=price&ResponseGroup=Accessories%2CImages%2CItemAttributes&Timestamp='+A.dt.replace(/:/g,'%3A'),
+srch:function(query,mkp){
+	A.tx=query;
+	F.query='Service=AWSECommerceService&AWSAccessKeyId=AKIAIY7CLRS7CJX5X5YA&AssociateTag=runbuy09-21&Operation=ItemSearch&SearchIndex=Music&Keywords=sizzla&Timestamp='+A.dt.replace(/:/g,'%3A');
+	var pv=F.query.split(/&/g).sort().join('&');
+	console.log(F.query);
+	console.log(pv);
+    hash_data = ['GET',mkp, '/onca/xml', pv].join("\n")
+    secret ='kS0iNAmbNBFAs+QJaytfhUwR08mP1wgyjQtWRBDT';
+    var hmac=F.hmac_(hash_data, secret);
+    var sign=hmac.toString(CryptoJS.enc.Base64);
+	sign=sign.replace(/\+/g,'%2B').replace(/=/g,'%3D');
     console.log("js_sign="+sign);	
-	alert(mkp+'?Service=AWSECommerceService&Operation='+A.itmFc.a+'&'+F.query+'&Signature='+sign);
+	window.open(mkp+'?'+F.query+'&Signature='+sign);
 	$.ajaxSetup({
 	headers:{   
 		'Access-Control-Allow-Origin: *':mkp
 	  }
 	});
-$.ajax({url:mkp+'?Service=AWSECommerceService&Operation='+A.itmFc.a+'&'+F.query+'&Signature='+sign,
+	
+$.ajax({url:mkp+'?'+F.query+'&Signature='+sign,
 	success:F.load});
 	},
-hmac_:function(message,secret) {
-		var newHMAC=CryptoJS.HmacSHA256(message,secret);
-		return newHMAC;
+hmac_:function(m,secret) {
+	m=CryptoJS.HmacSHA256(m,secret);
+		return /*CryptoJS.enc.Utf8.parse(m)*/m;
 	},
 load:function(data,statut,xhr){
 	alert(data);
@@ -47,8 +46,8 @@ load:function(data,statut,xhr){
 }
 }
 
-F.srch($.urlParam('tx'),A.mag(A.m));
-
+F.srch('sizzla',A.mag(A.m));
+//F.srch($.urlParam('tx'),A.mag(A.m));
 
 
 
