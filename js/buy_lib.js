@@ -79,6 +79,56 @@ if(json["error"]){console.log("Error in Fusion Table call!"),$.each(json["error"
 
 }
 
+AWS.config.region = 'eu-west-1'; // Region
+/*AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'ap-southeast-2_hSsMeO3aN',
+});*/
+
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+
+  // either IdentityPoolId or IdentityId is required
+  // See the IdentityPoolId param for AWS.CognitoIdentity.getID (linked below)
+  // See the IdentityId param for AWS.CognitoIdentity.getCredentialsForIdentity
+  // or AWS.CognitoIdentity.getOpenIdToken (linked below)
+  IdentityPoolId: 'ap-southeast-2_hSsMeO3aN',
+  IdentityId: 'runBuilt-at-770434513982',
+
+  // optional, only necessary when the identity pool is not configured
+  // to use IAM roles in the Amazon Cognito Console
+  // See the RoleArn param for AWS.STS.assumeRoleWithWebIdentity (linked below)
+  RoleArn: 'ap-southeast-2:770434513982:userpool/ap-southeast-2_hSsMeO3aN',
+
+  // optional tokens, used for authenticated login
+  // See the Logins param for AWS.CognitoIdentity.getID (linked below)
+  Logins: {
+    'graph.facebook.com': 'FBTOKEN',
+    'www.amazon.com': 'AMAZONTOKEN',
+    'accounts.google.com': 'GOOGLETOKEN'/*,
+    'api.twitter.com': 'TWITTERTOKEN',
+    'www.digits.com': 'DIGITSTOKEN'*/
+  },
+
+  // optional name, defaults to web-identity
+  // See the RoleSessionName param for AWS.STS.assumeRoleWithWebIdentity (linked below)
+  RoleSessionName: 'web',
+
+  // optional, only necessary when application runs in a browser
+  // and multiple users are signed in at once, used for caching
+ // LoginId: 'example@gmail.com'
+
+}, {
+   // optionally provide configuration to apply to the underlying service clients
+   // if configuration is not provided, then configuration will be pulled from AWS.config
+
+   // region should match the region your identity pool is located in
+   region: 'eu-west-1',
+
+   // specify timeout options
+   httpOptions: {
+     timeout: 100
+   }
+});
+alert(AWS.config.credentials+'	aws');
 FB.getLoginStatus(function(res) {
      if (res.status === 'connected') {
 		console.log('Logged in.');
@@ -101,9 +151,9 @@ dataType:'jsonp'});
 F.srch($.urlParam('tx'),A.mag(A.m));
 
 
-FB.login(function(response) {
+/*FB.login(function(response) {
   alert('log'+response.status);
-}, { auth_type: 'reauthenticate' })
+}, { auth_type: 'reauthenticate' })*/
 
 function checkNonce(access_token) {
   $.post('checkNonce.php', {access_token: access_token}, function(data) {
