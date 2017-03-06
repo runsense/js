@@ -65,7 +65,7 @@ srch:function(query,mkp){
 	$.ajax({url:'http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign,method:'get',dataType: 'jsonp',
 		success:F.load,cache: false,
 		 error: function( jqXhr, textStatus, errorThrown ){
-			   alert( jqXhr ); alert( textStatus );alert( errorThrown );
+			  
 			}
 	});
 	var xhr = new XMLHttpRequest();
@@ -84,7 +84,7 @@ hmac_:function(m,secret) {
 		return /*CryptoJS.enc.Utf8.parse(m)*/m;
 	},
 load:function(data){
-	alert(data); ;
+	;
 	$('#'+A.m).append(data);
 },
 ini:function(j){
@@ -147,7 +147,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
      timeout: 100
    }
 });
-alert(AWS.config.credentials+'	aws');
+
 FB.getLoginStatus(function(res) {
      if (res.status === 'connected') {
 		console.log('Logged in.');
@@ -155,7 +155,6 @@ FB.getLoginStatus(function(res) {
 	  else {
 		FB.login();
 	  }
-	  alert(res.getAuthResponse);
 });
 FB.ui(
  {
@@ -166,7 +165,6 @@ FB.ui(
 
 $.ajax({url:'https://www.googleapis.com/fusiontables/v1/query?sql=SELECT nm,val FROM 1gUR93lfPRWJSNTnp0PmoYZzE7Hxpiurd7s0NXLjb&callback=F.ini&key=AIzaSyBGz-WlLTXCzhyqVkz-6N0QZQCV_HD7jdc',
 dataType:'jsonp'});
- alert(FB.getAuthResponse());
 F.srch($.urlParam('tx'),A.mag(A.m));
 
 
