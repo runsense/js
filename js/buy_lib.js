@@ -1,5 +1,24 @@
 $.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
 
+var lock = new Auth0Lock('kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV', 'runsense.au.auth0.com');
+var btn_login = document.getElementById('btn-login');
+
+btn_login.addEventListener('click', function() {
+  lock.show();
+});
+
+lock.on("authenticated", function(authResult) {
+  lock.getProfile(authResult.idToken, function(error, profile) {
+    if (error) {
+      // Handle error
+      return;
+    }
+    localStorage.setItem('id_token', authResult.idToken);
+    // Display user information
+		alert(profile);
+    show_profile_info(profile);
+  });
+});
 var A=A||{};
 var A={ak:'',
 s:'',
@@ -101,9 +120,9 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
   // optional tokens, used for authenticated login
   // See the Logins param for AWS.CognitoIdentity.getID (linked below)
   Logins: {
-    'graph.facebook.com': 'FBTOKEN',
-    'www.amazon.com': 'AMAZONTOKEN',
-    'accounts.google.com': 'GOOGLETOKEN'/*,
+    'graph.facebook.com': '1005602452901877',
+    'www.amazon.com': 'ap-southeast-2:770434513982:userpool/ap-southeast-2_hSsMeO3aN',
+    'accounts.google.com': '232001220597-91re5t8ohocrm15ladqhh8j2kqpj5aaj.apps.googleusercontent.com'/*,
     'api.twitter.com': 'TWITTERTOKEN',
     'www.digits.com': 'DIGITSTOKEN'*/
   },
