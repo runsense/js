@@ -1,0 +1,23 @@
+<EntityDescriptor entityID="urn:runsense.au.auth0.com" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIC8jCCAdqgAwIBAgIJYg63djlBRvqqMA0GCSqGSIb3DQEBCwUAMCAxHjAcBgNVBAMTFXJ1bnNlbnNlLmF1LmF1dGgwLmNvbTAeFw0xNzAzMDYwNTA0NDlaFw0zMDExMTMwNTA0NDlaMCAxHjAcBgNVBAMTFXJ1bnNlbnNlLmF1LmF1dGgwLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANYslXFyAo0otVeaKWXb3QtTS18PEW0y+FqaPdxXX+XkCGOO+FaitPdXEmXgw6cGUDaz0BFcVi8zp0wtmQvzmGEuie7erPKWU96bkHVzd+USGNMDPOc4QxGSgCxWxP4VWQ+f6djQJDSmkVNRxOxpSZJ5hT5yiKQQ++6jq5TjMqNMGNK4X6coJ7WkxJS+pz4HcPT6ZpKM3vomv24q2YnK1ul90ulLW/KR6UVgo0F/jDi0He5u/nR8I2GPfTVseRpFfQVFZQTCHLqoDb82cDHCnMhkAr9lwBnwxJeuSE5jlWQiKlVeo8TedBiaoGTrBtytmhcLqWJRPWbI6cwzT03pItMCAwEAAaMvMC0wDAYDVR0TBAUwAwEB/zAdBgNVHQ4EFgQU7vBfx2pVDJuImq9nu4FnaO7TvKkwDQYJKoZIhvcNAQELBQADggEBACXBfJ59MLW3vLaBU3HpCy6sMeSa23wz8i1PgFPNLM6iSh6oAmtr8Fp0GoAIfLc2P4AWcae0aOj2o6sxkIkeK2hywUn2YwTeQ7zEEjkAlIDf1APKO5GHgX/j6D7ZuHKvl8S9ISUYGW2ATgwHBdS3JUX8isLA0Bj8QFVpu0tzY1btch5LUj/dR6iOD5ePjkMfbYC8p/720UL/Cn3ue/I2KMg9zHXp33rTHzmekdxFOagLc2IyYSmk5avbIHSEo/UstsSU/sGj8ky16I1VOMoBL1WWrVX3CzisBv/NrQdKqc0TnavusRJ+jrjz/fE/sW30UQzDbwvpiwlc06NjiRiGSTE=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://runsense.au.auth0.com/samlp/kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV/logout"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://runsense.au.auth0.com/samlp/kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV/logout"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://runsense.au.auth0.com/samlp/kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://runsense.au.auth0.com/samlp/kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="E-Mail Address" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Given Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Surname" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name ID" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>

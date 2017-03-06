@@ -1,6 +1,12 @@
 $.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
 
-var lock = new Auth0Lock('kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV', 'runsense.au.auth0.com');
+var lock = new Auth0Lock('kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV', 'runsense.au.auth0.com');new Auth0Lock('kpDDBx1p1Kbl9cBnb6Ews4bvU2S6uDPV', 'runsense.au.auth0.com',{
+        auth: {
+          redirectUrl: 'http://jwt.io',
+          responseType: 'token',
+          params: {scope: 'openid'}
+        }
+    });
 var btn_login = document.getElementById('btn-login');
 
 btn_login.addEventListener('click', function() {
@@ -49,7 +55,7 @@ srch:function(query,mkp){
     var sign=hmac.toString(CryptoJS.enc.Base64);
 	sign=sign.replace(/\+/g,'%2B').replace(/=/g,'%3D');
     console.log("js_sign="+sign);	
-	window.open('http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign);
+	//window.open('http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign);
 	$.ajaxSetup({
 		headers:{   
 			'Access-Control-Allow-Origin':'*'
