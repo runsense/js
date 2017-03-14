@@ -34,21 +34,7 @@ btn_login.addEventListener('click', function() {
   lock.show({auth: {params: {state: 'credAct'}}});
 });
 
-lock.on("authenticated", function(authResult) {
-  lock.getProfile(authResult.idToken, function(error, profile) {
-    if (error) {
-      // Handle error
-	  alert("error"+error);
-      return;
-    }
-	alert('id_token'+authResult.idToken);
-    localStorage.setItem('id_token', authResult.idToken);
-    localStorage.setItem("accessToken", authResult.accessToken);
-    localStorage.setItem("profile", JSON.stringify(profile));
-		alert("JSON.stringify(profile"+JSON.stringify(profile);
-		credAct(authResult.idToken);
-  });
-});
+
 
 //identityId = credentialsProvider.getIdentityId();
 credAct=function(tok){
@@ -164,7 +150,7 @@ ini:function(j){
 	var d=j["rows"];
 	A.ak=d[0][0];
 	A.s=d[0][1];
-	//F.srch('sizzla',A.mag(A.m));},
+	/*F.srch('sizzla',A.mag(A.m));*/},
 handleError:function(json){
 if(json["error"]){console.log("Error in Fusion Table call!"),$.each(json["error"]["errors"],function(){console.log("Domain: "+this["domain"]),console.log(" Reason: "+this["reason"]),console.log(" Message: "+this["message"]);});}}
 
