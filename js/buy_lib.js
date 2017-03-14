@@ -87,7 +87,7 @@ credAct=function(tok){
 	   });
 
 	});*/
-	F.srch($.urlParam('tx'),A.mag(A.m));
+	F.srch($.urlParam('tx'),A.mag(A.m),tok);
 }
 
 
@@ -109,7 +109,7 @@ var F={
 query:'Service=AWSECommerceService&Operation='+A.itmFc.a+
 '&AWSAccessKeyId='+A.ak+'&AssociateTag=runbuy09-21&'+
 A.srcEng.a+A.tx+'&Sort=price&ResponseGroup=Accessories%2CImages%2CItemAttributes&Timestamp='+A.dt.replace(/:/g,'%3A'),
-srch:function(query,mkp){
+srch:function(query,mkp,tok){
 	A.tx=query;
 	F.query='AWSAccessKeyId='+A.ak+'&AssociateTag=mixyoutube-21&Keywords=sizzla&Operation=ItemSearch&SearchIndex=Music&Service=AWSECommerceService&Timestamp='+A.dt.replace(/:/g,'%3A')+'&Version=2011-08-01';
 	F.query=F.query.split(/&/g).sort().join('&');
@@ -132,13 +132,16 @@ srch:function(query,mkp){
 		cache: false
 	});
 	
-	$.ajax({url:'http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign,method:'get',dataType: 'jsonp',
+	$.ajax({
+		url:'http://'+mkp+'/onca/xml?'+F.query+'&Signature='+tok,method:'get',
+		dataType: 'jsonp',
 		success:F.load,cache: false,
-		 error: function( jqXhr, textStatus, errorThrown ){
-			  alert('errorThrown'+errorThrown);
+		error: function( xhr, textStatus, errorThrown ){
+			alert('status'+xhr.status);
+			alert('responseText'+xhr.responseText);
 			}
 	});
-	var xhr = new XMLHttpRequest();
+	/*var xhr = new XMLHttpRequest();
 	
 	xhr.open("GET", 'http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign, false);
 	xhr.setRequestHeader('Access-Control-Allow-Origin', 'http://'+mkp+'/onca/xml');
@@ -147,14 +150,14 @@ srch:function(query,mkp){
 	xhr.onload = function () {
 		console.log(xhr.responseText);
 	};
-	xhr.send();
+	xhr.send();*/
 	},
 hmac_:function(m,secret) {
 	m=CryptoJS.HmacSHA256(m,secret);
 		return /*CryptoJS.enc.Utf8.parse(m)*/m;
 	},
 load:function(data){
-	;
+	alert('data'+data);
 	$('#'+A.m).append(data);
 },
 ini:function(j){
