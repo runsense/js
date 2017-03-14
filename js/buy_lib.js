@@ -45,7 +45,7 @@ lock.on("authenticated", function(authResult) {
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem("accessToken", authResult.accessToken);
     localStorage.setItem("profile", JSON.stringify(profile));
-		alert("token"+authResult.idToken);
+		alert("JSON.stringify(profile"+JSON.stringify(profile);
 		credAct(authResult.idToken);
   });
 });
@@ -87,7 +87,7 @@ credAct=function(tok){
 	   });
 
 	});*/
-	F.srch($.urlParam('tx'),A.mag(A.m),tok);
+	F.srch('sizzla',A.mag(A.m),tok);//$.urlParam('tx')
 }
 
 
@@ -115,13 +115,12 @@ srch:function(query,mkp,tok){
 	F.query=F.query.split(/&/g).sort().join('&');
 	console.log(F.query);
     hash_data = ['GET',mkp, '/onca/xml', F.query].join("\n");
-    //A.s ='cwG+fEW+2Ju8D+Mli7/cp3ADL+YLNeTBwb0/IMvE';
 	console.log(hash_data);
     var hmac=F.hmac_(hash_data,  A.s);
     var sign=hmac.toString(CryptoJS.enc.Base64);
 	sign=sign.replace(/\+/g,'%2B').replace(/=/g,'%3D');
     console.log("js_sign="+sign);	
-	//window.open('http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign);
+	window.open('http://'+mkp+'/onca/xml?'+F.query+'&Signature='+sign);
 	$.ajaxSetup({
 		
 		 xhrFields: { withCredentials: true },
@@ -165,7 +164,7 @@ ini:function(j){
 	var d=j["rows"];
 	A.ak=d[0][0];
 	A.s=d[0][1];
-	F.srch('sizzla',A.mag(A.m));},
+	//F.srch('sizzla',A.mag(A.m));},
 handleError:function(json){
 if(json["error"]){console.log("Error in Fusion Table call!"),$.each(json["error"]["errors"],function(){console.log("Domain: "+this["domain"]),console.log(" Reason: "+this["reason"]),console.log(" Message: "+this["message"]);});}}
 
