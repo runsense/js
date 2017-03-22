@@ -1,19 +1,17 @@
 $.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
-var A=A||{};
-var A={ak:'',
-s:'',
-id:'',
-tok:'',
-m:'FR',
-dt:new Date().toISOString(),
 
-mag:function(m){return m=='BR'?'webservices.amazon.com.br':m=='bCA'?'webservices.amazon.ca':m=='CN'?'webservices.amazon.cn':m=='DE'?'webservices.amazon.de':m=='ES'?'webservices.amazon.es':m=='FR'?'webservices.amazon.fr':m=='IN'?'webservices.amazon.in':m=='IT'?'webservices.amazon.it':m=='JP'?'webservices.amazon.co.jp':m=='MX'?'webservices.amazon.com.mx':m=='UK'?'webservices.amazon.co.uk':m=='US'?'webservices.amazon.com':'';
-},
-itmFc:{a:'ItemSearch',b:'SimilarityLookup',c:'ItemLookup'},
-srcEng:{a:'SearchIndex=Music&Keywords=',b:'&ItemId='},
-tx:$.urlParam('tx')};
+var tx=$.urlParam('tx');
 
-var bucket = new AWS.S3({
+var s=tx.split('+');
+s[1]?s.push(tx):'';
+for(var i in s){var d=$('<div>').html(s[i]);
+d.click(function(){
+	$.ajax({url:'https://itunes.apple.com/search?term='+$(this).text()+'&entity=musicVideo&callback=aff'});
+});d.appendTo('body');}
+
+aff=function(json){alert(json);}
+$.ajax({url:'https://itunes.apple.com/search?term='+s+'&entity=musicVideo&callback=aff',success:aff});
+/*var bucket = new AWS.S3({
 
             params: {
 
@@ -115,7 +113,7 @@ credAct=function(tok){
 
 	   });
 
-	});*/
+	});
 	
 }
 
@@ -167,11 +165,11 @@ srch:function(query,mkp){
 	xhr.onload = function () {
 		console.log(xhr.responseText);
 	};
-	xhr.send();*/
+	xhr.send();
 	},
 hmac_:function(m,secret) {
 	m=CryptoJS.HmacSHA256(m,secret);
-		return /*CryptoJS.enc.Utf8.parse(m)*/m;
+		return /*CryptoJS.enc.Utf8.parse(m);
 	},
 load:function(data){
 	alert('data'+data);
