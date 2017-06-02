@@ -5,14 +5,14 @@
     <script type="text/javascript">
 	$.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
     var FuncTab=FuncTab||{};var FuncTab={
-	  var CLIENT_ID = '1076803953445-idjf4b22besunrdrpcnqeh3107a9927k.apps.googleusercontent.com';
+	  var CLIENT_ID = '1076803953445-apq2kp8mjcsasv5ipro28idh23kf5rfm.apps.googleusercontent.com';
 
       var SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/gmail.send'];
 
       function checkAuth(){gapi.auth.authorize({'client_id': CLIENT_ID,'scope': SCOPES.join(' '),'immediate': false}, handleAuthResult);      }
 
       function handleAuthResult(authResult){var authorizeDiv=document.getElementById('authorize-div');if(authResult && !authResult.error){
-	  var prmt=[$.urlParam('env'),$.urlParam('folder'),$.urlParam('style'),$.urlParam('nom'),$.urlParam('val')];authorizeDiv.style.display='none';callScriptFunction(prmt);}else{authorizeDiv.style.display='inline';}}
+	  var prmt=[$.urlParam('nom')];authorizeDiv.style.display='none';callScriptFunction(prmt);}else{authorizeDiv.style.display='inline';}}
 
        function handleAuthClick(event){gapi.auth.authorize({client_id:CLIENT_ID,scope:SCOPES,immediate:false},handleAuthResult);return false;}
 
