@@ -25,7 +25,8 @@
             'method': 'POST',
             'body': request
         });
-        op.execute(function(resp) {
+        op.execute(function(resp){
+		alert(resp);
           if (resp.error && resp.error.status) {
             F.appd('Error calling API:');
             F.appd(JSON.stringify(resp, null, 2));
