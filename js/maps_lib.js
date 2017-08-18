@@ -17,7 +17,7 @@ I:{x:'#jqxTree',t:'#listv',m:'#map',p:'#panel',i:'#info',r:'#iti',b:'#btn',o:'#p
 rf:['15JWgv5XJiGI7iqzsLQKOakEniw04ydBtvQYx2M0a'],
 srcZn:{america:{val:Z.x[13],itm:['berkley','Chicago','Toronto'],i:0},africa:{val:Z.x[14],itm:[],i:1},asia:{val:Z.x[15],itm:[],i:2},europa:{val:Z.x[16],itm:[],i:3},oceania:{val:Z.x[17],itm:[],i:4},orient:{val:Z.x[18],itm:[],i:5}},
 srcId:[{label:Z.x[13],value:Z.x[13],id:'am'},{label:Z.x[14],value:Z.x[14],id:'af'},{label:Z.x[15],value:Z.x[15],id:'as'},{label:Z.x[16],value:Z.x[16],id:'eu'},{label:Z.x[17],value:Z.x[17],id:'or'},{label:Z.x[18],value:Z.x[18],id:'or'}],
-initSrch:'',ak:'AIzaSyBGCmv9Ef1ZZ1ZNydPdJL66JHHgA-FNgRE',src:[],latlng:[],zm:4,bnm:bnm,initl:initl,bstyle:"http://runsense.Re/img/viMayi.jpg",
+initSrch:'',ak:'AIzaSyBGCmv9Ef1ZZ1ZNydPdJL66JHHgA-FNgRE',src:[],latlng:[],zm:4,bnm:bnm,initl:initl,bstyle:"https://external-cdg2-1.xx.fbcdn.net/safe_image.php?d=AQCNzGc2JHFqCuw9&w=487&h=471&url=https%3A%2F%2Fwww.templepurohit.com%2Fwp-content%2Fuploads%2F2015%2F12%2FLord-Bhairav-Incarnation-of-Lord-Shiva-e1450418131966.jpg&_nc_hash=AQC0SFeWHhQoCnwm",
 srcStyle:[],tmp:'',
 exturi:function(){
 	F.srcStyle=[{label:Z.x[0],value:"sunny"},{label:Z.x[1],value:"partly_cloudy"},{label:Z.x[2],value:"museum"},{label:Z.x[3],value:"bars"},{label:Z.x[4],value:"firedept"},{label:Z.x[5],value:"parks"},{label:Z.x[13],value:"#FFD700",lien:""},{label:Z.x[14],value:"#FFD700",lien:""},{label:Z.x[15],value:"#FFD700",lien:""},{label:Z.x[16],value:"#FFD700",lien:""},{label:Z.x[17],value:"#FFD700",lien:""},{label:Z.x[18],value:"#FFD700",lien:""}];
