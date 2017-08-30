@@ -1,20 +1,21 @@
 <html>
   <head>
-  <title>gestion</title>
+  <title>FaceCook..facebook in bug!!</title>
 	<script src="http://code.jquery.com/jquery-3.1.1.min.js"  ></script>
     <script type="text/javascript">
+	chckA=function(){F.chckA();}
 	$.urlParam=function(name){var results=new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);try{return results[1]||0;}catch(e){return null;}};
     var F=F||{};var F={
 	  clid:'1076803953445-apq2kp8mjcsasv5ipro28idh23kf5rfm.apps.googleusercontent.com',
-      scp:['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/gmail.send'],
+      scp:['https://www.googleapis.com/auth/drive'],
       chckA:function(){gapi.auth.authorize({'client_id': F.clid,'scope': F.scp.join(' '),'immediate': false}, F.hdl);},
       hdl:function(authResult){
 		  var authorizeDiv=document.getElementById('authorize-div');if(authResult && !authResult.error){
-		  var prmt=[$.urlParam('nom'),$.urlParam('id')];authorizeDiv.style.display='none';F.cllSc(prmt);}else{authorizeDiv.style.display='inline';}
+		  $(F.I.x).jqxTree({source:F.src,width:w+'px',height:F.H/2}}else{authorizeDiv.style.display='inline';}
 	  },
       hdlCldk:function(event){gapi.auth.authorize({client_id:F.clid,scope:F.scp,immediate:false},F.hdl);return false;},
       cllSc:function (prmt){
-        var scriptId = "1Xnlk8R0Pl6-KmbSNLhblOW9sJ4QvmxQHNdC7nB2l9lFKs2QvhA6YhuK1";
+        var scriptId = "1xWplyl1gLile690_9BTEIKoX1KtvJVYXQnwKAjrnUkCL4kkfP58L3Pvp";
         var request = {
             'function': 'fSearch',
 			'parameters':prmt
@@ -50,7 +51,7 @@
       appd:function(message){var pre=document.getElementById('output');var textContent=document.createTextNode(message+'\n');pre.appendChild(textContent);}
 	}
     </script>
-    <script src="https://apis.google.com/js/client.js?onload=F.chckA">
+    <script src="https://apis.google.com/js/client.js?onload=chckA">
     </script>
   </head>
   <body>
@@ -60,6 +61,7 @@
       <button id="authorize-button" onclick="F.hdlCldk(event)">
         Authorize
       </button>
+	  
     </div>
     <pre id="output"></pre>
   </body>
