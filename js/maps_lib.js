@@ -37,7 +37,10 @@ $("#list_table.table").on('mouseover',function(){if(b){$(F.I.m).animate({opacity
 		map.setZoom(
 			H.zoom
 			);
-		M.chad='#arv';
+		if(M.chad=='#dep')
+			M.chad='#arv';
+		else
+			M.chad='#dep';
 		M.addrFromLatLng(
 			M.map_centroid
 			);
